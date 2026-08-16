@@ -1,0 +1,72 @@
+[
+  {
+    "german": "der Mann",
+    "english": "man",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "example": "Der Mann arbeitet heute."
+  },
+  {
+    "german": "die Frau",
+    "english": "woman",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "example": "Die Frau wohnt in Berlin."
+  },
+  {
+    "german": "das Kind",
+    "english": "child",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "example": "Das Kind spielt im Garten."
+  },
+  {
+    "german": "essen",
+    "english": "to eat",
+    "part_of_speech": "verb",
+    "cefr": "A1",
+    "example": "Ich esse einen Apfel."
+  },
+  {
+    "german": "trinken",
+    "english": "to drink",
+    "part_of_speech": "verb",
+    "cefr": "A1",
+    "example": "Sie trinkt Wasser."
+  },
+  {
+    "german": "lernen",
+    "english": "to learn",
+    "part_of_speech": "verb",
+    "cefr": "A1",
+    "example": "Ich lerne Deutsch."
+  },
+  {
+    "german": "arbeiten",
+    "english": "to work",
+    "part_of_speech": "verb",
+    "cefr": "A1",
+    "example": "Sie arbeitet heute."
+  },
+  {
+    "german": "sprechen",
+    "english": "to speak",
+    "part_of_speech": "verb",
+    "cefr": "A1",
+    "example": "Er spricht Deutsch."
+  },
+  {
+    "german": "gut",
+    "english": "good",
+    "part_of_speech": "adjective",
+    "cefr": "A1",
+    "example": "Das Essen ist gut."
+  },
+  {
+    "german": "heute",
+    "english": "today",
+    "part_of_speech": "adverb",
+    "cefr": "A1",
+    "example": "Ich arbeite heute."
+  }
+]
