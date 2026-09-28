@@ -21,6 +21,9 @@ This project provides structured materials for learning German from A1 to advanc
 - Accusative case
 - Dative case
 
+### B1 Book (in German)
+- [100 B1-Fehler – Korrigiere sie vor B2](B1/buch/README.md): 100 recurring intermediate-learner mistakes with corrections, one rule each, examples, mini-tests and B2 upgrades, plus a placement test, a final test and reference tables
+
 ### Structured Data
 - A1 vocabulary dataset in CSV format
 - A1 vocabulary dataset in JSON format
