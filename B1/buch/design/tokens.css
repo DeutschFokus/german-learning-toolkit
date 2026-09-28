@@ -1,0 +1,85 @@
+/* ==========================================================================
+   100 B1-Fehler — Design tokens
+   One source of truth for colour, type, spacing and the page grid.
+   Colours were defined in OKLCH (equal lightness/chroma per role) and baked
+   to sRGB hex so Chrome's PDF output is predictable.
+   ========================================================================== */
+:root {
+  /* ---- Neutrals ---------------------------------------------------------- */
+  --ink:          #1A2024;   /* body text, warm-cool charcoal, not pure black */
+  --ink-soft:     #4F575B;   /* secondary text, captions */
+  --ink-faint:    #80878B;   /* folios, running heads */
+  --rule:         #D8D3CC;   /* hairlines */
+  --rule-strong:  #282F33;   /* table heads, key rules */
+  --paper:        #FDFAF4;   /* warm off-white page tone (screen edition) */
+  --paper-deep:   #F4F0E6;   /* recessed panels */
+
+  /* ---- Brand ------------------------------------------------------------- */
+  --primary:      #095255;   /* deep petrol teal */
+  --primary-ink:  #003B3E;
+  --primary-tint: #DDF0F0;
+  --accent:       #B07932;   /* muted ochre — the "teacher's pen" warmth */
+  --accent-ink:   #80521F;   /* ochre safe for small text */
+  --accent-tint:  #F9EDD9;
+
+  /* ---- Semantics (never colour-only: each pairs with a shape/decoration) -- */
+  --wrong:        #A8372E;  --wrong-ink: #6E2922;  --wrong-tint: #FFEFED;
+  --right:        #095C34;  --right-ink: #05381E;  --right-tint: #D6EFDE;
+  --maybe:        #976712;  --maybe-ink: #633F0C;  --maybe-tint: #F9EFDA;
+  --style:        #445282;  --style-tint: #E9EEFC;
+
+  /* ---- Chapter tints: 11 hues, identical OKLCH lightness 0.50 / chroma 0.085,
+          skipping the red and green hue bands reserved for wrong/right ------- */
+  --ch1: #017272;  --ch1-tint: #DFF3F3;
+  --ch2: #0E6F81;  --ch2-tint: #DFF3F8;
+  --ch3: #296B8D;  --ch3-tint: #E1F1FB;
+  --ch4: #416593;  --ch4-tint: #E5F0FE;
+  --ch5: #555F94;  --ch5-tint: #EAEEFE;
+  --ch6: #67598F;  --ch6-tint: #EFECFC;
+  --ch7: #755485;  --ch7-tint: #F4EAF9;
+  --ch8: #815076;  --ch8-tint: #F8E9F4;
+  --ch9: #84582A;  --ch9-tint: #F9ECE0;
+  --ch10: #766122;  --ch10-tint: #F4EEDE;
+  --ch11: #62692B;  --ch11-tint: #EEF1E0;
+
+  /* ---- Type families (static instances, embedded) ------------------------ */
+  --font-text:    "B1 Serif Text", "B1 Symbols", serif;      /* Source Serif 4, opsz 11 */
+  --font-display: "B1 Serif Display", "B1 Symbols", serif;   /* Source Serif 4, opsz 60 */
+  --font-sans:    "B1 Sans", "B1 Symbols", sans-serif;       /* Inter */
+  --font-symbol:  "B1 Symbols";
+
+  /* ---- Type scale: major third (×1.25) from a 10.5pt body --------------- */
+  --fs-label:     7.25pt;   /* small caps chips, eyebrows (sans, tracked) */
+  --fs-caption:   8.4pt;    /* body ÷ 1.25 — captions, folios, table heads */
+  --fs-small:     9.4pt;    /* notes, solutions, dense tables */
+  --fs-body:      10.5pt;   /* running text */
+  --fs-lead:      13.1pt;   /* entry titles, ✗/✓ lines */
+  --fs-h2:        16.4pt;   /* section heads */
+  --fs-h1:        25.6pt;   /* chapter / part titles */
+  --fs-display:   51.2pt;   /* opener numbers, title page */
+  --fs-giant:     128pt;    /* chapter-opener numeral, cover */
+
+  --lh-body:      15.5pt;   /* 1.476 — the baseline unit */
+  --lh-tight:     1.15;
+  --lh-snug:      1.3;
+
+  /* ---- Spacing: multiples of the half-line keep the baseline rhythm ------ */
+  --sp-0: 1.9375pt;   /* ⅛ line */
+  --sp-1: 3.875pt;    /* ¼ line */
+  --sp-2: 7.75pt;     /* ½ line */
+  --sp-3: 15.5pt;     /* 1 line */
+  --sp-4: 23.25pt;    /* 1½ lines */
+  --sp-5: 31pt;       /* 2 lines */
+  --sp-6: 46.5pt;     /* 3 lines */
+
+  /* ---- Page grid (A4 210 × 297 mm) --------------------------------------- */
+  --page-w: 210mm;  --page-h: 297mm;
+  --m-top: 23mm;    --m-bottom: 26mm;
+  --m-inner: 25mm;  --m-outer: 19mm;          /* inner > outer for binding */
+  --block-w: 166mm;                            /* 210 − 25 − 19 */
+  --rail-w: 30mm;   --gutter: 6mm;             /* left rail for numbers/labels */
+  --measure: 130mm;                            /* main column ≈ 72–78 characters */
+
+  /* ---- Details ----------------------------------------------------------- */
+  --hair: 0.5pt;  --rule-w: 0.75pt;  --radius: 1.2mm;
+}
