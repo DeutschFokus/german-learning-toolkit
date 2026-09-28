@@ -10,8 +10,9 @@ OUT = Path(sys.argv[1])
 CHROME = "/opt/pw-browsers/chromium-1194/chrome-linux/chrome"
 
 # Placeholders the author replaces before print.
-SERIES = "DeutschFokus · Fehlerwerkstatt"
-AUTHOR = "Vorname Nachname"
+SERIES = "Fehlerwerkstatt Deutsch · Band B1"
+AUTHOR = "DeutschFokus"
+IMPRINT = "DeutschFokus"
 AUDIENCE = "Für Lernende auf Niveau B1, die den Sprung zu B2 schaffen wollen"
 
 # Spine estimate: ~112 pages, 90 g/m² book paper, ~0.117 mm per leaf.
@@ -215,7 +216,7 @@ BACK = f"""
   {correction("bk-corr")}
   <div class="bk-bottom">
     {badge("#095255", "24mm")}
-    <div class="bk-imprint"><p class="tracked">{SERIES.split(" · ")[0]}</p><p class="sans">Niveau B1 → B2 · Deutsch als Fremdsprache</p></div>
+    <div class="bk-imprint"><p class="tracked">{IMPRINT}</p><p class="sans">Niveau B1 → B2 · Deutsch als Fremdsprache</p></div>
     <div class="bk-isbn"><div class="bk-bars"></div><p class="sans">ISBN 978-3-XXXX-XXXX-X</p><p class="sans bk-ph">Platzhalter · EAN-13-Strichcode 50 × 30 mm</p></div>
   </div>
 </section>"""
@@ -259,7 +260,7 @@ def spread_html():
   <div class="g safe" style="left:{BLEED + 6}mm;top:{BLEED + 6}mm;width:198mm;height:285mm"></div>
   <div class="g safe" style="left:{BLEED + 210 + SPINE + 6}mm;top:{BLEED + 6}mm;width:198mm;height:285mm"></div>
   <div class="g spine" style="left:{BLEED + 210}mm;top:0;width:{SPINE}mm;height:{h}mm">
-    <div class="spine-t"><span>{AUTHOR}</span><b>100 B1-Fehler</b><i>Korrigiere sie vor B2</i><span>DeutschFokus</span></div></div>
+    <div class="spine-t"><span>{AUTHOR}</span><b>100 B1-Fehler</b><i>Korrigiere sie vor B2</i><span>{IMPRINT}</span></div></div>
   <div class="ghost-panel" style="left:{BLEED + 60}mm;top:110mm">Rücken-<br>seite</div>
   <div class="ghost-panel" style="left:{BLEED + 210 + SPINE + 40}mm;top:110mm">Vorder-<br>seite</div>
   <div class="lab" style="left:{BLEED + 2}mm;top:{BLEED + 1}mm">Beschnitt (Trim) · blau</div>
@@ -282,8 +283,37 @@ def render(name, html):
     return pdf
 
 
+def final(pages):
+    """Concept A as print-ready files: front, back (screen edition) and the full spread with bleed."""
+    spine = round(pages / 2 * LEAF_MM + 0.4, 1)
+    w, h = BLEED + 210 + spine + 210 + BLEED, BLEED + 297 + BLEED
+    base = css(210, 297) + A_CSS + BACK_CSS
+    one = lambda body: f'<!doctype html><html lang="de"><head><meta charset="utf-8"><style>{base}</style></head><body>{body}</body></html>'
+    render("front", one(A))
+    render("back", one(BACK))
+    spread = f"""<!doctype html><html lang="de"><head><meta charset="utf-8"><style>{css(w, h)}{A_CSS}{BACK_CSS}
+.sp {{ width: {w}mm; height: {h}mm; position: relative; background: var(--cream); background-image: {GRAIN}; }}
+.slot {{ position: absolute; top: {BLEED}mm; }}
+.slot .page {{ break-after: auto; width: 210mm; height: 297mm; }}
+.spine {{ position: absolute; top: 0; height: {h}mm; left: {BLEED + 210}mm; width: {spine}mm; background: var(--primary); }}
+.spine-t {{ position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%) rotate(90deg); white-space: nowrap; color: #F4EDDF; display: flex; gap: 8mm; align-items: baseline; }}
+.spine-t b {{ font-family: var(--font-display); font-weight: 600; font-size: {min(13, spine * 1.55):.1f}pt; }}
+.spine-t i {{ font-family: var(--font-display); font-size: {min(9.5, spine * 1.15):.1f}pt; color: #D9A55B; }}
+.spine-t span {{ font-family: var(--font-sans); font-size: 6.2pt; letter-spacing: .2em; text-transform: uppercase; }}
+</style></head><body><div class="sp">
+<div class="slot" style="left:{BLEED}mm">{BACK}</div>
+<div class="spine"><div class="spine-t"><b>100 B1-Fehler</b><i>Korrigiere sie vor B2</i><span>{IMPRINT}</span></div></div>
+<div class="slot" style="left:{BLEED + 210 + spine}mm">{A}</div>
+</div></body></html>"""
+    render("umschlag-druck", spread)
+    return spine
+
+
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
+    if len(sys.argv) > 2:
+        print("spine", final(int(sys.argv[2])), "mm")
+        return
     base = css(210, 297) + A_CSS + B_CSS + C_CSS + BACK_CSS
     doc = lambda body: f'<!doctype html><html lang="de"><head><meta charset="utf-8"><style>{base}</style></head><body>{body}</body></html>'
     render("covers", doc(A + B + C + BACK))
