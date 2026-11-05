@@ -1,0 +1,11 @@
+# The repo root ignores every build/ folder (Python template); an episode's
+# production/build/ holds source assets (timeline, narration, stems), so keep it.
+!episodes/*/production/build/
+
+# regenerable build intermediates
+episodes/*/production/build/stills/
+episodes/*/production/build/mix_*.wav
+episodes/*/production/build/bed_*.wav
+episodes/*/production/build/test_*/
+__pycache__/
+*.pyc

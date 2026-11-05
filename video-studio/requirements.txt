@@ -1,0 +1,11 @@
+numpy>=2.0
+scipy>=1.13
+pycairo>=1.26
+opencv-python-headless>=4.10
+soundfile>=0.12
+pyloudnorm>=0.1.1
+kokoro-onnx>=0.4
+onnxruntime>=1.18
+pocketsphinx>=5.0
+global-land-mask>=1.0
+praat-parselmouth>=0.4   # only for voice auditioning (pitch/HNR checks)

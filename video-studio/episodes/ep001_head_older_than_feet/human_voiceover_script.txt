@@ -1,0 +1,180 @@
+EP001 — YOUR HEAD IS OLDER THAN YOUR FEET
+Recording-ready voiceover script (deep, calm male narrator)
+========================================================================
+Video length: 60 s   |   Spoken words: 132   |   Narration window: 00:00.08 – 00:59.40
+
+THE VOICE
+  Intelligent, calm, quietly fascinated. Authority without lecturing; a close-mic,
+  one-to-one conversation, not a trailer. Deep does not mean slow: keep momentum
+  (about 165–175 words per minute inside sentences) and let the PAUSES do the drama.
+  Smile slightly on the playful lines (Tiny. / And you?). Never push or shout.
+
+MARKS
+  CAPS      = lean on this word (pitch or weight, not volume)
+  /         = short breath, about 0.2–0.4 s
+  //        = beat, about 0.4–0.8 s
+  ///       = let it land, 0.8 s or more
+  ...       = suspend the pitch: the thought continues
+
+HOW TO RECORD
+  1. Quiet, soft room (closet or duvet fort beats a bare room). Mic 15–20 cm away,
+     slightly off-axis to avoid plosives. Peaks around -10 dBFS, never above -3.
+  2. Record the whole script in one take as WAV (48 kHz, 24-bit, mono).
+     Leave 2 s of silence at the start. Do a second full take if a line slips.
+  3. The timings below are a GUIDE from the AI reference read, not a click track.
+     Read naturally. The pipeline aligns your take word by word, keeps your voice
+     at its natural speed, and re-times the scenes, captions and sound design to it.
+  4. If your read runs long, the pipeline tightens the pauses first. If it still
+     overruns 60 s it tells you which lines to trim; it never speeds your voice up.
+  5. Then run:  python3 production/build.py human path/to/your_take.wav
+
+========================================================================
+TIMED SCRIPT
+========================================================================
+
+--- SCENE: HOOK: HEAD VS FEET --------------------------------------
+
+[00:00.08 – 00:02.09]  L01
+   Your head is OLDER than your feet. //
+   Delivery: Calm and certain, like letting someone in on a secret. Hint of a smile. Land 'feet' with a clean downward finish.
+   Pause after: 0.50 s
+
+[00:02.59 – 00:03.77]  L02
+   NOT a metaphor. /
+   Delivery: Dry, matter-of-fact. Short and clipped.
+   Pause after: 0.18 s
+
+[00:03.96 – 00:05.97]  L03
+   Up there, time REALLY runs FASTER. ///
+   Delivery: Lift the pitch slightly on 'Up there' as if pointing upward. Lean on 'really'.
+   Pause after: 0.83 s
+
+--- SCENE: EINSTEIN: GRAVITY SLOWS TIME ----------------------------
+
+[00:06.80 – 00:10.15]  L04
+   Einstein predicted it: GRAVITY SLOWS time down. //
+   Delivery: Authoritative, unhurried. Tiny beat after the colon.
+   Say it:   Einstein = EYEN-stine
+   Pause after: 0.42 s
+
+[00:10.58 – 00:13.77]  L05
+   The CLOSER you are to Earth, the SLOWER your clock ticks. ///
+   Delivery: Two balanced halves. Ease off the tempo on 'the slower your clock ticks'.
+   Pause after: 0.91 s
+
+--- SCENE: 2010: THE 33 CM EXPERIMENT ------------------------------
+
+[00:14.68 – 00:16.93]  L06
+   In twenty ten, physicists MEASURED it. /
+   (on screen: "In 2010, physicists measured it.")
+   Delivery: Shift into investigator mode: crisp, a little faster.
+   Say it:   2010 = twenty ten; physicists = FIZZ-ih-sists
+   Pause after: 0.33 s
+
+[00:17.27 – 00:20.82]  L07
+   They lifted an atomic clock JUST THIRTY-THREE centimeters... //
+   (on screen: "They lifted an atomic clock just 33 centimeters...")
+   Delivery: Slow down on 'just thirty-three centimeters' so the smallness registers. Suspend the pitch: the sentence is not finished.
+   Pause after: 0.48 s
+
+[00:21.30 – 00:22.65]  L08
+   and it ticked FASTER. ///
+   Delivery: Quiet amazement. Let 'faster' resolve.
+   Pause after: 0.94 s
+
+--- SCENE: GPS CLOCKS IN ORBIT -------------------------------------
+
+[00:23.59 – 00:25.33]  L09
+   Your PHONE depends on this. /
+   Delivery: Direct and conversational. Lean toward the mic.
+   Pause after: 0.25 s
+
+[00:25.58 – 00:30.89]  L10
+   Up in orbit, GPS clocks gain THIRTY-EIGHT MILLIONTHS of a second, EVERY DAY. //
+   (on screen: "Up in orbit, GPS clocks gain 38 millionths of a second, every day.")
+   Delivery: Steady pace. Give 'thirty-eight millionths' weight, then a light touch on 'every day'.
+   Say it:   GPS = G-P-S; millionths = MIL-yunths
+   Pause after: 0.53 s
+
+--- SCENE: 11 KM OF LIGHT ------------------------------------------
+
+[00:31.42 – 00:34.16]  L11
+   Light travels ELEVEN KILOMETERS in that time. //
+   (on screen: "Light travels 11 kilometers in that time.")
+   Delivery: This is the turn: tiny becomes huge. Punch 'eleven kilometers'.
+   Say it:   kilometers = kih-LOM-ih-ters (US) — keep it consistent
+   Pause after: 0.42 s
+
+[00:34.58 – 00:37.77]  L12
+   So every satellite is BUILT to correct for EINSTEIN. ///
+   Delivery: Satisfied resolution. Clean ending; music swells after.
+   Pause after: 1.21 s
+
+--- SCENE: REVELATION: EARTH'S YOUNG CENTER ------------------------
+
+[00:38.98 – 00:40.09]  L13
+   Now go DOWN. ///
+   Delivery: Lower and slower. Ominous, almost a whisper on 'down'.
+   Pause after: 1.06 s
+
+[00:41.15 – 00:47.05]  L14
+   Deep in the gravity well, the center of the Earth is about TWO and a HALF YEARS YOUNGER than its surface. ///
+   Delivery: The big reveal. Build gently through 'deep in the gravity well', then slow right down on 'two and a half years younger'. Let it land.
+   Pause after: 1.44 s
+
+--- SCENE: YOUR LIFETIME -------------------------------------------
+
+[00:48.49 – 00:49.34]  L15
+   And YOU? //
+   Delivery: Soft and personal, slight upward lilt. Talking to one person.
+   Pause after: 0.45 s
+
+[00:49.79 – 00:54.14]  L16
+   Over a lifetime, your HEAD gains a FEW HUNDRED BILLIONTHS of a second. ///
+   Delivery: Warm, a little playful. Savor 'a few hundred billionths'.
+   Say it:   billionths = BIL-yunths
+   Pause after: 0.83 s
+
+--- SCENE: PAYOFF AND LOOP -----------------------------------------
+
+[00:54.98 – 00:55.70]  L17
+   TINY. //
+   Delivery: Almost under your breath, with a smile.
+   Pause after: 0.53 s
+
+[00:56.23 – 00:57.17]  L18
+   But REAL. //
+   Delivery: Firm and grounded. Full stop.
+   Pause after: 0.68 s
+
+[00:57.86 – 00:59.40]  L19
+   Which means, RIGHT NOW...
+   Delivery: Lean in and trail off. Keep the pitch suspended, no downward resolution: the video loops straight into 'Your head is older than your feet.'
+
+========================================================================
+PRONUNCIATION GUIDE
+========================================================================
+  Einstein     EYEN-stine
+  2010         twenty ten
+  physicists   FIZZ-ih-sists
+  GPS          G-P-S
+  millionths   MIL-yunths
+  kilometers   kih-LOM-ih-ters (US) — keep it consistent
+  billionths   BIL-yunths
+
+========================================================================
+CLEAN READ (no marks) — for a first run-through
+========================================================================
+  Your head is older than your feet. Not a metaphor. Up there, time
+  really runs faster. Einstein predicted it: gravity slows time down.
+  The closer you are to Earth, the slower your clock ticks. In twenty
+  ten, physicists measured it. They lifted an atomic clock just
+  thirty-three centimeters... and it ticked faster. Your phone depends
+  on this. Up in orbit, GPS clocks gain thirty-eight millionths of a
+  second, every day. Light travels eleven kilometers in that time. So
+  every satellite is built to correct for Einstein. Now go down. Deep in
+  the gravity well, the center of the Earth is about two and a half
+  years younger than its surface. And you? Over a lifetime, your head
+  gains a few hundred billionths of a second. Tiny. But real. Which
+  means, right now...
+

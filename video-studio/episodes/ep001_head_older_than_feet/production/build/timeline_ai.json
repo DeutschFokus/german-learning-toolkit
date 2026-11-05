@@ -1,0 +1,979 @@
+{
+ "source": "ai",
+ "voice": "narration_ai.wav",
+ "sample_rate": 24000,
+ "duration": 60.0,
+ "fps": 30,
+ "speed": 0.9,
+ "layout": {
+  "speech": 47.31133333333333,
+  "room_for_pauses": 12.00866666666667,
+  "pref_pauses": 8.25,
+  "status": "fits",
+  "speech_end": 59.400000000000006,
+  "tail": 0.5999999999999943,
+  "pauses": [
+   0.5,
+   0.18,
+   0.8324134790528236,
+   0.4237741347905284,
+   0.9080874316939893,
+   0.3329653916211294,
+   0.48431329690346103,
+   0.9383570127504557,
+   0.25,
+   0.5297176684881604,
+   0.4237741347905284,
+   1.2107832422586524,
+   1.0594353369763208,
+   1.4378051001821497,
+   0.45404371584699466,
+   0.8324134790528236,
+   0.5297176684881604,
+   0.681065573770492
+  ]
+ },
+ "scenes": [
+  {
+   "id": "hook",
+   "first_line": "L01",
+   "name": "Hook: head vs feet"
+  },
+  {
+   "id": "well",
+   "first_line": "L04",
+   "name": "Einstein: gravity slows time"
+  },
+  {
+   "id": "lab",
+   "first_line": "L06",
+   "name": "2010: the 33 cm experiment"
+  },
+  {
+   "id": "gps",
+   "first_line": "L09",
+   "name": "GPS clocks in orbit"
+  },
+  {
+   "id": "light",
+   "first_line": "L11",
+   "name": "11 km of light"
+  },
+  {
+   "id": "dive",
+   "first_line": "L13",
+   "name": "Revelation: Earth's young center"
+  },
+  {
+   "id": "you",
+   "first_line": "L15",
+   "name": "Your lifetime"
+  },
+  {
+   "id": "outro",
+   "first_line": "L17",
+   "name": "Payoff and loop"
+  }
+ ],
+ "lines": [
+  {
+   "id": "L01",
+   "text": "Your head is older than your feet.",
+   "start": 0.08,
+   "end": 2.092,
+   "caption": false,
+   "emphasis": [
+    "older"
+   ],
+   "tokens": [
+    {
+     "display": "Your",
+     "start": 0.08,
+     "end": 0.26
+    },
+    {
+     "display": "head",
+     "start": 0.26,
+     "end": 0.54
+    },
+    {
+     "display": "is",
+     "start": 0.54,
+     "end": 0.73
+    },
+    {
+     "display": "older",
+     "start": 0.73,
+     "end": 1.24
+    },
+    {
+     "display": "than",
+     "start": 1.24,
+     "end": 1.4
+    },
+    {
+     "display": "your",
+     "start": 1.4,
+     "end": 1.52
+    },
+    {
+     "display": "feet.",
+     "start": 1.52,
+     "end": 2.08
+    }
+   ]
+  },
+  {
+   "id": "L02",
+   "text": "Not a metaphor.",
+   "start": 2.592,
+   "end": 3.775,
+   "caption": true,
+   "emphasis": [
+    "Not"
+   ],
+   "tokens": [
+    {
+     "display": "Not",
+     "start": 2.592,
+     "end": 2.922
+    },
+    {
+     "display": "a",
+     "start": 2.922,
+     "end": 2.962
+    },
+    {
+     "display": "metaphor.",
+     "start": 2.962,
+     "end": 3.762
+    }
+   ]
+  },
+  {
+   "id": "L03",
+   "text": "Up there, time really runs faster.",
+   "start": 3.955,
+   "end": 5.968,
+   "caption": true,
+   "emphasis": [
+    "really",
+    "faster"
+   ],
+   "tokens": [
+    {
+     "display": "Up",
+     "start": 3.955,
+     "end": 4.125
+    },
+    {
+     "display": "there,",
+     "start": 4.125,
+     "end": 4.385
+    },
+    {
+     "display": "time",
+     "start": 4.385,
+     "end": 4.705
+    },
+    {
+     "display": "really",
+     "start": 4.705,
+     "end": 5.005
+    },
+    {
+     "display": "runs",
+     "start": 5.005,
+     "end": 5.325
+    },
+    {
+     "display": "faster.",
+     "start": 5.325,
+     "end": 5.955
+    }
+   ]
+  },
+  {
+   "id": "L04",
+   "text": "Einstein predicted it: gravity slows time down.",
+   "start": 6.801,
+   "end": 10.153,
+   "caption": true,
+   "emphasis": [
+    "gravity",
+    "slows"
+   ],
+   "tokens": [
+    {
+     "display": "Einstein",
+     "start": 6.801,
+     "end": 7.441
+    },
+    {
+     "display": "predicted",
+     "start": 7.441,
+     "end": 7.941
+    },
+    {
+     "display": "it:",
+     "start": 7.941,
+     "end": 8.101
+    },
+    {
+     "display": "gravity",
+     "start": 8.381,
+     "end": 8.841
+    },
+    {
+     "display": "slows",
+     "start": 8.841,
+     "end": 9.311
+    },
+    {
+     "display": "time",
+     "start": 9.311,
+     "end": 9.631
+    },
+    {
+     "display": "down.",
+     "start": 9.631,
+     "end": 10.141
+    }
+   ]
+  },
+  {
+   "id": "L05",
+   "text": "The closer you are to Earth, the slower your clock ticks.",
+   "start": 10.577,
+   "end": 13.767,
+   "caption": true,
+   "emphasis": [
+    "closer",
+    "slower"
+   ],
+   "tokens": [
+    {
+     "display": "The",
+     "start": 10.577,
+     "end": 10.677
+    },
+    {
+     "display": "closer",
+     "start": 10.677,
+     "end": 11.077
+    },
+    {
+     "display": "you",
+     "start": 11.077,
+     "end": 11.267
+    },
+    {
+     "display": "are",
+     "start": 11.267,
+     "end": 11.377
+    },
+    {
+     "display": "to",
+     "start": 11.377,
+     "end": 11.527
+    },
+    {
+     "display": "Earth,",
+     "start": 11.527,
+     "end": 12.047
+    },
+    {
+     "display": "the",
+     "start": 12.117,
+     "end": 12.227
+    },
+    {
+     "display": "slower",
+     "start": 12.227,
+     "end": 12.687
+    },
+    {
+     "display": "your",
+     "start": 12.687,
+     "end": 12.827
+    },
+    {
+     "display": "clock",
+     "start": 12.827,
+     "end": 13.197
+    },
+    {
+     "display": "ticks.",
+     "start": 13.197,
+     "end": 13.757
+    }
+   ]
+  },
+  {
+   "id": "L06",
+   "text": "In 2010, physicists measured it.",
+   "start": 14.675,
+   "end": 16.934,
+   "caption": true,
+   "emphasis": [
+    "measured"
+   ],
+   "tokens": [
+    {
+     "display": "In",
+     "start": 14.675,
+     "end": 14.835
+    },
+    {
+     "display": "2010,",
+     "start": 14.835,
+     "end": 15.585
+    },
+    {
+     "display": "physicists",
+     "start": 15.695,
+     "end": 16.295
+    },
+    {
+     "display": "measured",
+     "start": 16.295,
+     "end": 16.775
+    },
+    {
+     "display": "it.",
+     "start": 16.775,
+     "end": 16.925
+    }
+   ]
+  },
+  {
+   "id": "L07",
+   "text": "They lifted an atomic clock just 33 centimeters...",
+   "start": 17.267,
+   "end": 20.82,
+   "caption": true,
+   "emphasis": [
+    "just",
+    "33"
+   ],
+   "tokens": [
+    {
+     "display": "They",
+     "start": 17.267,
+     "end": 17.437
+    },
+    {
+     "display": "lifted",
+     "start": 17.437,
+     "end": 17.837
+    },
+    {
+     "display": "an",
+     "start": 17.837,
+     "end": 17.927
+    },
+    {
+     "display": "atomic",
+     "start": 17.927,
+     "end": 18.407
+    },
+    {
+     "display": "clock",
+     "start": 18.407,
+     "end": 18.927
+    },
+    {
+     "display": "just",
+     "start": 18.927,
+     "end": 19.277
+    },
+    {
+     "display": "33",
+     "start": 19.277,
+     "end": 19.947
+    },
+    {
+     "display": "centimeters...",
+     "start": 19.947,
+     "end": 20.807
+    }
+   ]
+  },
+  {
+   "id": "L08",
+   "text": "and it ticked faster.",
+   "start": 21.304,
+   "end": 22.652,
+   "caption": true,
+   "emphasis": [
+    "faster"
+   ],
+   "tokens": [
+    {
+     "display": "and",
+     "start": 21.304,
+     "end": 21.484
+    },
+    {
+     "display": "it",
+     "start": 21.484,
+     "end": 21.574
+    },
+    {
+     "display": "ticked",
+     "start": 21.574,
+     "end": 21.844
+    },
+    {
+     "display": "faster.",
+     "start": 21.844,
+     "end": 22.644
+    }
+   ]
+  },
+  {
+   "id": "L09",
+   "text": "Your phone depends on this.",
+   "start": 23.591,
+   "end": 25.331,
+   "caption": true,
+   "emphasis": [
+    "phone"
+   ],
+   "tokens": [
+    {
+     "display": "Your",
+     "start": 23.591,
+     "end": 23.761
+    },
+    {
+     "display": "phone",
+     "start": 23.761,
+     "end": 24.261
+    },
+    {
+     "display": "depends",
+     "start": 24.261,
+     "end": 24.741
+    },
+    {
+     "display": "on",
+     "start": 24.741,
+     "end": 24.941
+    },
+    {
+     "display": "this.",
+     "start": 24.941,
+     "end": 25.321
+    }
+   ]
+  },
+  {
+   "id": "L10",
+   "text": "Up in orbit, GPS clocks gain 38 millionths of a second, every day.",
+   "start": 25.581,
+   "end": 30.886,
+   "caption": true,
+   "emphasis": [
+    "38",
+    "millionths",
+    "every",
+    "day."
+   ],
+   "tokens": [
+    {
+     "display": "Up",
+     "start": 25.581,
+     "end": 25.761
+    },
+    {
+     "display": "in",
+     "start": 25.761,
+     "end": 25.891
+    },
+    {
+     "display": "orbit,",
+     "start": 25.891,
+     "end": 26.521
+    },
+    {
+     "display": "GPS",
+     "start": 26.521,
+     "end": 27.261
+    },
+    {
+     "display": "clocks",
+     "start": 27.261,
+     "end": 27.681
+    },
+    {
+     "display": "gain",
+     "start": 27.681,
+     "end": 28.001
+    },
+    {
+     "display": "38",
+     "start": 28.001,
+     "end": 28.731
+    },
+    {
+     "display": "millionths",
+     "start": 28.731,
+     "end": 29.251
+    },
+    {
+     "display": "of",
+     "start": 29.251,
+     "end": 29.351
+    },
+    {
+     "display": "a",
+     "start": 29.351,
+     "end": 29.391
+    },
+    {
+     "display": "second,",
+     "start": 29.381,
+     "end": 29.931
+    },
+    {
+     "display": "every",
+     "start": 30.191,
+     "end": 30.451
+    },
+    {
+     "display": "day.",
+     "start": 30.451,
+     "end": 30.871
+    }
+   ]
+  },
+  {
+   "id": "L11",
+   "text": "Light travels 11 kilometers in that time.",
+   "start": 31.416,
+   "end": 34.16,
+   "caption": true,
+   "emphasis": [
+    "11",
+    "kilometers"
+   ],
+   "tokens": [
+    {
+     "display": "Light",
+     "start": 31.416,
+     "end": 31.736
+    },
+    {
+     "display": "travels",
+     "start": 31.736,
+     "end": 32.296
+    },
+    {
+     "display": "11",
+     "start": 32.296,
+     "end": 32.716
+    },
+    {
+     "display": "kilometers",
+     "start": 32.716,
+     "end": 33.396
+    },
+    {
+     "display": "in",
+     "start": 33.396,
+     "end": 33.516
+    },
+    {
+     "display": "that",
+     "start": 33.516,
+     "end": 33.706
+    },
+    {
+     "display": "time.",
+     "start": 33.706,
+     "end": 34.146
+    }
+   ]
+  },
+  {
+   "id": "L12",
+   "text": "So every satellite is built to correct for Einstein.",
+   "start": 34.584,
+   "end": 37.77,
+   "caption": true,
+   "emphasis": [
+    "built",
+    "Einstein."
+   ],
+   "tokens": [
+    {
+     "display": "So",
+     "start": 34.584,
+     "end": 34.814
+    },
+    {
+     "display": "every",
+     "start": 34.814,
+     "end": 35.104
+    },
+    {
+     "display": "satellite",
+     "start": 35.104,
+     "end": 35.754
+    },
+    {
+     "display": "is",
+     "start": 35.754,
+     "end": 35.884
+    },
+    {
+     "display": "built",
+     "start": 35.884,
+     "end": 36.194
+    },
+    {
+     "display": "to",
+     "start": 36.194,
+     "end": 36.324
+    },
+    {
+     "display": "correct",
+     "start": 36.324,
+     "end": 36.754
+    },
+    {
+     "display": "for",
+     "start": 36.754,
+     "end": 36.964
+    },
+    {
+     "display": "Einstein.",
+     "start": 36.964,
+     "end": 37.764
+    }
+   ]
+  },
+  {
+   "id": "L13",
+   "text": "Now go down.",
+   "start": 38.981,
+   "end": 40.089,
+   "caption": true,
+   "emphasis": [
+    "down."
+   ],
+   "tokens": [
+    {
+     "display": "Now",
+     "start": 38.981,
+     "end": 39.241
+    },
+    {
+     "display": "go",
+     "start": 39.241,
+     "end": 39.491
+    },
+    {
+     "display": "down.",
+     "start": 39.491,
+     "end": 40.081
+    }
+   ]
+  },
+  {
+   "id": "L14",
+   "text": "Deep in the gravity well, the center of the Earth is about two and a half years younger than its surface.",
+   "start": 41.148,
+   "end": 47.055,
+   "caption": true,
+   "emphasis": [
+    "two",
+    "half",
+    "years",
+    "younger"
+   ],
+   "tokens": [
+    {
+     "display": "Deep",
+     "start": 41.148,
+     "end": 41.528
+    },
+    {
+     "display": "in",
+     "start": 41.528,
+     "end": 41.638
+    },
+    {
+     "display": "the",
+     "start": 41.638,
+     "end": 41.708
+    },
+    {
+     "display": "gravity",
+     "start": 41.708,
+     "end": 42.228
+    },
+    {
+     "display": "well,",
+     "start": 42.228,
+     "end": 42.718
+    },
+    {
+     "display": "the",
+     "start": 42.908,
+     "end": 42.998
+    },
+    {
+     "display": "center",
+     "start": 42.998,
+     "end": 43.398
+    },
+    {
+     "display": "of",
+     "start": 43.398,
+     "end": 43.498
+    },
+    {
+     "display": "the",
+     "start": 43.498,
+     "end": 43.678
+    },
+    {
+     "display": "Earth",
+     "start": 43.678,
+     "end": 44.078
+    },
+    {
+     "display": "is",
+     "start": 44.078,
+     "end": 44.268
+    },
+    {
+     "display": "about",
+     "start": 44.268,
+     "end": 44.588
+    },
+    {
+     "display": "two",
+     "start": 44.588,
+     "end": 44.858
+    },
+    {
+     "display": "and",
+     "start": 44.858,
+     "end": 44.948
+    },
+    {
+     "display": "a",
+     "start": 44.948,
+     "end": 44.988
+    },
+    {
+     "display": "half",
+     "start": 44.978,
+     "end": 45.298
+    },
+    {
+     "display": "years",
+     "start": 45.298,
+     "end": 45.578
+    },
+    {
+     "display": "younger",
+     "start": 45.578,
+     "end": 46.018
+    },
+    {
+     "display": "than",
+     "start": 46.018,
+     "end": 46.208
+    },
+    {
+     "display": "its",
+     "start": 46.208,
+     "end": 46.398
+    },
+    {
+     "display": "surface.",
+     "start": 46.398,
+     "end": 47.048
+    }
+   ]
+  },
+  {
+   "id": "L15",
+   "text": "And you?",
+   "start": 48.493,
+   "end": 49.339,
+   "caption": true,
+   "emphasis": [
+    "you?"
+   ],
+   "tokens": [
+    {
+     "display": "And",
+     "start": 48.493,
+     "end": 48.853
+    },
+    {
+     "display": "you?",
+     "start": 48.853,
+     "end": 49.333
+    }
+   ]
+  },
+  {
+   "id": "L16",
+   "text": "Over a lifetime, your head gains a few hundred billionths of a second.",
+   "start": 49.793,
+   "end": 54.144,
+   "caption": true,
+   "emphasis": [
+    "head",
+    "few",
+    "hundred",
+    "billionths"
+   ],
+   "tokens": [
+    {
+     "display": "Over",
+     "start": 49.793,
+     "end": 50.113
+    },
+    {
+     "display": "a",
+     "start": 50.113,
+     "end": 50.153
+    },
+    {
+     "display": "lifetime,",
+     "start": 50.143,
+     "end": 51.013
+    },
+    {
+     "display": "your",
+     "start": 51.233,
+     "end": 51.393
+    },
+    {
+     "display": "head",
+     "start": 51.393,
+     "end": 51.633
+    },
+    {
+     "display": "gains",
+     "start": 51.633,
+     "end": 52.053
+    },
+    {
+     "display": "a",
+     "start": 52.053,
+     "end": 52.103
+    },
+    {
+     "display": "few",
+     "start": 52.103,
+     "end": 52.393
+    },
+    {
+     "display": "hundred",
+     "start": 52.393,
+     "end": 52.793
+    },
+    {
+     "display": "billionths",
+     "start": 52.793,
+     "end": 53.363
+    },
+    {
+     "display": "of",
+     "start": 53.363,
+     "end": 53.493
+    },
+    {
+     "display": "a",
+     "start": 53.493,
+     "end": 53.533
+    },
+    {
+     "display": "second.",
+     "start": 53.533,
+     "end": 54.133
+    }
+   ]
+  },
+  {
+   "id": "L17",
+   "text": "Tiny.",
+   "start": 54.976,
+   "end": 55.703,
+   "caption": true,
+   "emphasis": [
+    "Tiny."
+   ],
+   "tokens": [
+    {
+     "display": "Tiny.",
+     "start": 54.976,
+     "end": 55.696
+    }
+   ]
+  },
+  {
+   "id": "L18",
+   "text": "But real.",
+   "start": 56.233,
+   "end": 57.175,
+   "caption": true,
+   "emphasis": [
+    "real."
+   ],
+   "tokens": [
+    {
+     "display": "But",
+     "start": 56.233,
+     "end": 56.463
+    },
+    {
+     "display": "real.",
+     "start": 56.463,
+     "end": 57.163
+    }
+   ]
+  },
+  {
+   "id": "L19",
+   "text": "Which means, right now...",
+   "start": 57.856,
+   "end": 59.4,
+   "caption": true,
+   "emphasis": [
+    "right",
+    "now..."
+   ],
+   "tokens": [
+    {
+     "display": "Which",
+     "start": 57.856,
+     "end": 58.136
+    },
+    {
+     "display": "means,",
+     "start": 58.136,
+     "end": 58.576
+    },
+    {
+     "display": "right",
+     "start": 58.576,
+     "end": 58.846
+    },
+    {
+     "display": "now...",
+     "start": 58.846,
+     "end": 59.386
+    }
+   ]
+  }
+ ]
+}

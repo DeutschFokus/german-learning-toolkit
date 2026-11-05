@@ -1,0 +1,290 @@
+{
+ "episode": "ep001",
+ "slug": "head-older-than-feet",
+ "title": "Your Head Is Older Than Your Feet",
+ "duration": 60.0,
+ "fps": 30,
+ "lead_in": 0.08,
+ "tail_min": 0.6,
+ "voice": {
+  "engine": "kokoro-82m (onnx)",
+  "blend": {
+   "am_michael": 0.6,
+   "am_onyx": 0.25,
+   "am_puck": 0.15
+  },
+  "speed": 0.9,
+  "lang": "en-us"
+ },
+ "scenes": [
+  {
+   "id": "hook",
+   "first_line": "L01",
+   "name": "Hook: head vs feet"
+  },
+  {
+   "id": "well",
+   "first_line": "L04",
+   "name": "Einstein: gravity slows time"
+  },
+  {
+   "id": "lab",
+   "first_line": "L06",
+   "name": "2010: the 33 cm experiment"
+  },
+  {
+   "id": "gps",
+   "first_line": "L09",
+   "name": "GPS clocks in orbit"
+  },
+  {
+   "id": "light",
+   "first_line": "L11",
+   "name": "11 km of light"
+  },
+  {
+   "id": "dive",
+   "first_line": "L13",
+   "name": "Revelation: Earth's young center"
+  },
+  {
+   "id": "you",
+   "first_line": "L15",
+   "name": "Your lifetime"
+  },
+  {
+   "id": "outro",
+   "first_line": "L17",
+   "name": "Payoff and loop"
+  }
+ ],
+ "lines": [
+  {
+   "id": "L01",
+   "text": "Your head is older than your feet.",
+   "pause_after": 0.5,
+   "min_pause": 0.3,
+   "emphasis": [
+    "older"
+   ],
+   "caption": false,
+   "delivery": "Calm and certain, like letting someone in on a secret. Hint of a smile. Land 'feet' with a clean downward finish.",
+   "pause_max": 0.5
+  },
+  {
+   "id": "L02",
+   "text": "Not a metaphor.",
+   "pause_after": 0.18,
+   "min_pause": 0.12,
+   "emphasis": [
+    "Not"
+   ],
+   "delivery": "Dry, matter-of-fact. Short and clipped.",
+   "pause_max": 0.18
+  },
+  {
+   "id": "L03",
+   "text": "Up there, time really runs faster.",
+   "pause_after": 0.55,
+   "min_pause": 0.3,
+   "emphasis": [
+    "really",
+    "faster"
+   ],
+   "delivery": "Lift the pitch slightly on 'Up there' as if pointing upward. Lean on 'really'."
+  },
+  {
+   "id": "L04",
+   "text": "Einstein predicted it: gravity slows time down.",
+   "pause_after": 0.28,
+   "min_pause": 0.18,
+   "emphasis": [
+    "gravity",
+    "slows"
+   ],
+   "delivery": "Authoritative, unhurried. Tiny beat after the colon.",
+   "pronounce": {
+    "Einstein": "EYEN-stine"
+   }
+  },
+  {
+   "id": "L05",
+   "text": "The closer you are to Earth, the slower your clock ticks.",
+   "pause_after": 0.6,
+   "min_pause": 0.35,
+   "emphasis": [
+    "closer",
+    "slower"
+   ],
+   "delivery": "Two balanced halves. Ease off the tempo on 'the slower your clock ticks'."
+  },
+  {
+   "id": "L06",
+   "text": "In {2010|twenty ten}, physicists measured it.",
+   "pause_after": 0.22,
+   "min_pause": 0.15,
+   "emphasis": [
+    "measured"
+   ],
+   "delivery": "Shift into investigator mode: crisp, a little faster.",
+   "pronounce": {
+    "2010": "twenty ten",
+    "physicists": "FIZZ-ih-sists"
+   }
+  },
+  {
+   "id": "L07",
+   "text": "They lifted an atomic clock just {33|thirty-three} centimeters...",
+   "pause_after": 0.32,
+   "min_pause": 0.25,
+   "emphasis": [
+    "just",
+    "33"
+   ],
+   "delivery": "Slow down on 'just thirty-three centimeters' so the smallness registers. Suspend the pitch: the sentence is not finished."
+  },
+  {
+   "id": "L08",
+   "text": "and it ticked faster.",
+   "pause_after": 0.62,
+   "min_pause": 0.35,
+   "emphasis": [
+    "faster"
+   ],
+   "delivery": "Quiet amazement. Let 'faster' resolve."
+  },
+  {
+   "id": "L09",
+   "text": "Your phone depends on this.",
+   "pause_after": 0.25,
+   "min_pause": 0.15,
+   "emphasis": [
+    "phone"
+   ],
+   "delivery": "Direct and conversational. Lean toward the mic.",
+   "pause_max": 0.25
+  },
+  {
+   "id": "L10",
+   "text": "Up in orbit, {GPS|GPS} clocks gain {38|thirty-eight} millionths of a second, every day.",
+   "pause_after": 0.35,
+   "min_pause": 0.22,
+   "emphasis": [
+    "38",
+    "millionths",
+    "every",
+    "day."
+   ],
+   "delivery": "Steady pace. Give 'thirty-eight millionths' weight, then a light touch on 'every day'.",
+   "pronounce": {
+    "GPS": "G-P-S",
+    "millionths": "MIL-yunths"
+   }
+  },
+  {
+   "id": "L11",
+   "text": "Light travels {11|eleven} kilometers in that time.",
+   "pause_after": 0.28,
+   "min_pause": 0.18,
+   "emphasis": [
+    "11",
+    "kilometers"
+   ],
+   "delivery": "This is the turn: tiny becomes huge. Punch 'eleven kilometers'.",
+   "pronounce": {
+    "kilometers": "kih-LOM-ih-ters (US) \u2014 keep it consistent"
+   }
+  },
+  {
+   "id": "L12",
+   "text": "So every satellite is built to correct for Einstein.",
+   "pause_after": 0.8,
+   "min_pause": 0.45,
+   "emphasis": [
+    "built",
+    "Einstein."
+   ],
+   "delivery": "Satisfied resolution. Clean ending; music swells after."
+  },
+  {
+   "id": "L13",
+   "text": "Now go down.",
+   "pause_after": 0.7,
+   "min_pause": 0.4,
+   "emphasis": [
+    "down."
+   ],
+   "delivery": "Lower and slower. Ominous, almost a whisper on 'down'."
+  },
+  {
+   "id": "L14",
+   "text": "Deep in the gravity well, the center of the Earth is about two and a half years younger than its surface.",
+   "pause_after": 0.95,
+   "min_pause": 0.5,
+   "emphasis": [
+    "two",
+    "half",
+    "years",
+    "younger"
+   ],
+   "delivery": "The big reveal. Build gently through 'deep in the gravity well', then slow right down on 'two and a half years younger'. Let it land."
+  },
+  {
+   "id": "L15",
+   "text": "And you?",
+   "pause_after": 0.3,
+   "min_pause": 0.2,
+   "emphasis": [
+    "you?"
+   ],
+   "delivery": "Soft and personal, slight upward lilt. Talking to one person."
+  },
+  {
+   "id": "L16",
+   "text": "Over a lifetime, your head gains a few hundred billionths of a second.",
+   "pause_after": 0.55,
+   "min_pause": 0.3,
+   "emphasis": [
+    "head",
+    "few",
+    "hundred",
+    "billionths"
+   ],
+   "delivery": "Warm, a little playful. Savor 'a few hundred billionths'.",
+   "pronounce": {
+    "billionths": "BIL-yunths"
+   }
+  },
+  {
+   "id": "L17",
+   "text": "Tiny.",
+   "pause_after": 0.35,
+   "min_pause": 0.25,
+   "emphasis": [
+    "Tiny."
+   ],
+   "delivery": "Almost under your breath, with a smile."
+  },
+  {
+   "id": "L18",
+   "text": "But real.",
+   "pause_after": 0.45,
+   "min_pause": 0.3,
+   "emphasis": [
+    "real."
+   ],
+   "delivery": "Firm and grounded. Full stop."
+  },
+  {
+   "id": "L19",
+   "text": "Which means, right now...",
+   "pause_after": 0.0,
+   "min_pause": 0.0,
+   "emphasis": [
+    "right",
+    "now..."
+   ],
+   "delivery": "Lean in and trail off. Keep the pitch suspended, no downward resolution: the video loops straight into 'Your head is older than your feet.'"
+  }
+ ]
+}

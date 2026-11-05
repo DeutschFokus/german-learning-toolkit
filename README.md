@@ -28,3 +28,7 @@ This project provides structured materials for learning German from A1 to advanc
 - Part-of-speech labels
 - CEFR metadata
 - Example sentences
+
+## Video Studio
+
+`video-studio/` holds a reusable pipeline for 60-second vertical edutainment videos (Shorts, TikTok, Reels): AI or human narration, procedural motion graphics, original score, word-synced captions. Episode 1 lives in `video-studio/episodes/ep001_head_older_than_feet/`. See `video-studio/README.md`.
