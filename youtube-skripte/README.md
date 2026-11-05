@@ -6,13 +6,19 @@
 | 2 | [Warum du trotz Vollzeitjob nie reich wirst](02-geld-inflation.md) | 107 | 5,8 s | ~10:21 |
 | 3 | [Dein Gehirn wird gehackt](03-gehirn-gehackt.md) | 104 | 5,7 s | ~9:55 |
 | 4 | [Warum die Deutsche Bahn nie pünktlich ist](04-deutsche-bahn.md) | 96 | 5,7 s | ~9:10 |
+| 5 | [Al-Biruni: Er hat die Erde mit einem Berg vermessen](05-al-biruni-erde-vermessen.md) | 85 | 7,1 s | ~10:02 |
+| 6 | [So dachten die reichsten Händler der Geschichte](06-reichste-haendler.md) | 80 | 7,4 s | ~9:48 |
+| 7 | [Konzentration in 30 Tagen zurücktrainieren](07-konzentration-30-tage.md) | 74 | 7,8 s | ~9:40 |
+| 8 | [Warum das deutsche Internet so langsam ist](08-deutsches-internet.md) | 75 | 7,8 s | ~9:44 |
+
+Die Skripte 5–8 sind die Folgevideos, die in den Outros von 1–4 angekündigt werden (1→5, 2→6, 3→7, 4→8). Jedes Folgevideo kündigt im Outro schon das nächste Thema an: Ibn Battuta, islamische Finanzierung ohne Zinsen, Gedächtnistechniken der Koran-Hafiz und die Bargeld-Liebe der Deutschen.
 
 \*Gemessen bei 135 Wörtern/Min. (ruhige Doku-Stimme). Bei einer schnelleren KI-Stimme werden die Bilder kürzer und das Video kürzer. Dann zwischen den Abschnitten kurze Pausen lassen, damit es über 8 Minuten bleibt (Mid-Roll-Werbung).
 
 ## Bild-Regeln
 
 - Jeder Block = **ein Bild**: Nummer · geschätzte Standzeit · *Bild-Prompt*, darunter der Sprechertext, der während dieses Bildes läuft.
-- Kein Bild steht länger als ca. 12 Sekunden, der Schnitt liegt im Schnitt bei 5–7 Sekunden. Der Hook ist absichtlich schneller geschnitten (2–6 s), weil die ersten 30 Sekunden über die Watchtime entscheiden.
+- Kein Bild steht länger als ca. 12 Sekunden. Im Durchschnitt wechselt das Bild alle 6–8 Sekunden. Der Hook ist absichtlich schneller geschnitten (2–6 s), weil die ersten 30 Sekunden über die Watchtime entscheiden.
 - Jedes Bild mit leichtem Zoom oder Schwenk (Ken Burns) animieren, damit nichts statisch wirkt.
 - Die Abschnitts-Überschriften zeigen die ungefähre Startzeit, damit du die Bilder beim Schneiden schnell zur Tonspur zuordnen kannst.
 
@@ -25,5 +31,6 @@ Halal-Hinweise: Propheten werden nie dargestellt (nur Orte, Licht, Kalligrafie).
 ## Hochladen und Monetarisierung
 
 - **Reihenfolge:** Skript 4 (Bahn) zuerst für Reichweite, dann Skript 2 (Geld, höchster CPM), danach 1 und 3.
-- **Shorts:** Aus jedem Skript 3–5 Shorts schneiden, z. B. „5:59 gilt als pünktlich“, „Algorithmus ist der Name eines Muslims“, „Die Taube in deinem Handy“, „Dein Dönerpreis erklärt Inflation“. Am Ende jedes Shorts: „Ganzes Video auf dem Kanal“.
+- **Folgevideos:** Lade jedes Folgevideo 1–2 Wochen nach seinem Vorgänger hoch und verlinke beide gegenseitig über Endscreen und angepinnten Kommentar. So schauen die Zuschauer direkt das nächste Video.
+- **Shorts:** Aus jedem Skript 3–5 Shorts schneiden, z. B. „5:59 gilt als pünktlich“, „Algorithmus ist der Name eines Muslims“, „Die Taube in deinem Handy“, „Dein Dönerpreis erklärt Inflation“, „Er vermaß die Erde mit einem Berg“, „88 Cent Miete im Jahr“, „Die Übung, die fast niemand macht“, „Geld zurück bei langsamem Internet“. Am Ende jedes Shorts: „Ganzes Video auf dem Kanal“.
 - **Fakten vor Veröffentlichung kurz prüfen**, vor allem Bahn-Pünktlichkeit, Inflationszahlen und Fahrgastrechte, weil sich diese Werte jedes Jahr ändern.
