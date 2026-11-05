@@ -50,10 +50,11 @@ class Captions:
             start = ch[0]["start"] - 0.06
             end = ch[-1]["end"] + 0.6
             if i + 1 < len(self.chunks):
+                # hand over exactly when the next chunk appears: never two chunks on screen at once
                 end = min(end, self.chunks[i + 1][0]["start"] - 0.06)
             for w in ch:
                 w["text"] = w["text"].replace("...", "…")
-            self.chunks[i] = {"words": ch, "start": start, "end": max(end, ch[-1]["end"])}
+            self.chunks[i] = {"words": ch, "start": start, "end": max(end, start + 0.05)}
 
     def draw(self, cv: Canvas, t, alpha=1.0, y=None):
         y = self.y if y is None else y

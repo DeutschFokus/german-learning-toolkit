@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""EP001 build orchestrator.
+"""Episode build orchestrator.
 
   python3 build.py voice                 # AI narration -> build/timeline_ai.json
   python3 build.py audio                 # score + SFX + mix for the AI voice

@@ -50,7 +50,7 @@ def main():
     words = sum(len(markup.spoken_text(l["text"]).split()) for l in script["lines"])
     first, last = tl["lines"][0]["start"], tl["lines"][-1]["end"]
     o = []
-    o.append("EP001 — YOUR HEAD IS OLDER THAN YOUR FEET")
+    o.append(f"{script['episode'].upper()} — {script['title'].upper()}")
     o.append("Recording-ready voiceover script (deep, calm male narrator)")
     o.append("=" * 72)
     o.append(f"Video length: {script['duration']:.0f} s   |   Spoken words: {words}   |   "

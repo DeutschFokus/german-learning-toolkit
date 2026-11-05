@@ -389,7 +389,7 @@ class Starfield:
                      rng.uniform(0.04, 0.12, m), np.zeros(m),
                      -rng.integers(1, 3, m) * (H + 40) / 60.0)
 
-    def draw(self, cv: Canvas, t, cam_x=0.0, cam_y=0.0, cam_s=1.0, alpha=1.0, warp=0.0):
+    def draw(self, cv: Canvas, t, cam_x=0.0, cam_y=0.0, cam_s=1.0, alpha=1.0, warp=0.0, dust_alpha=1.0):
         c = cv.b
         for xs, ys, rs, al, ph, sp, tint, depth in self.layers:
             ox, oy = -cam_x * depth, -cam_y * depth
@@ -418,7 +418,9 @@ class Starfield:
                     cv.g.arc(px, py, r * 2.2, 0, 2 * math.pi)
                     cv.g.fill()
         xs, ys, rs, al, vx, vy = self.dust
-        for x, y, r, a, ux, uy in zip(xs, ys, rs, al, vx, vy):
+        if dust_alpha <= 0.003:
+            return
+        for x, y, r, a, ux, uy in zip(xs, ys, rs, al * dust_alpha, vx, vy):
             px = (x + ux * t - cam_x * 0.9) % (W + 40) - 20
             py = (y + uy * t - cam_y * 0.9) % (H + 40) - 20
             pat = cairo.RadialGradient(px, py, 0, px, py, r * 3)

@@ -9,3 +9,4 @@ episodes/*/production/build/bed_*.wav
 episodes/*/production/build/test_*/
 __pycache__/
 *.pyc
+*.partial.mp4

@@ -14,12 +14,16 @@ video-studio/
     gfx.py                LUMEN look, easing, cairo canvas (base / glow / ui layers), shared props
     figure.py             hologram human figure
     props.py              dotted real-geography Earth, planet limb, satellite, phone, 3D grid, Earth cross-section
+    anatomy.py            eye cross-section (retina, optic disc, nerve), blinking front-view eye, iris glyph
+    ui.py                 instruction chips, editor timeline, film strip, analog clock, gaze reticle
     postfx.py             bloom, grade, vignette, grain
     captions.py           word-synced burned-in captions + SRT export
     render.py             parallel frame renderer -> ffmpeg (H.264 High, BT.709, faststart)
-    audio.py              synths, SFX, reverb, ducking, limiter, loudness mastering
+    audio.py              synths, SFX, reverb, ducking, limiter, loudness mastering, stutter/dip "edits"
+    verify.py             technical QA of finished files (streams, loudness, black/frozen/silence, loop check)
   presets/LUMEN_STYLE_GUIDE.md
-  episodes/ep001_head_older_than_feet/
+  episodes/ep001_head_older_than_feet/   "Your Head Is Older Than Your Feet" (gravity slows time)
+  episodes/ep002_hole_in_your_vision/    "There's a Hole in Your Vision Right Now" (your brain edits reality)
     final_video_ai_voice.mp4, final_video_no_voice.mp4, subtitles.srt,
     human_voiceover_script.txt, storyboard.md, publishing_kit.md, quality_report.md,
     thumbnail_cover.png
@@ -50,7 +54,11 @@ cd video-studio/episodes/ep001_head_older_than_feet/production
 python3 build.py all
 ```
 
-That runs: AI narration and timeline (`voice`), score/SFX/mix (`audio`), `subtitles.srt` (`srt`), and both videos (`video`). A full 60 s render takes about 3–4 minutes per video on 4 CPU cores. To look at frames without rendering video:
+That runs: AI narration and timeline (`voice`), score/SFX/mix (`audio`), `subtitles.srt` (`srt`), and both videos (`video`). A full 60 s render takes about 3–4 minutes per video on 4 CPU cores. Renders write to a `.partial.mp4` first and only replace the deliverable when the encode finished. Check finished files with:
+
+```bash
+python3 -m engine.verify episodes/ep002_hole_in_your_vision/final_video_ai_voice.mp4
+``` To look at frames without rendering video:
 
 ```bash
 python3 build.py stills 0,12.5,44.8
@@ -65,7 +73,7 @@ python3 build.py stills 0,12.5,44.8
 python3 build.py human /path/to/your_take.wav
 ```
 
-The aligner finds every word of the script in your take, cuts it per line (10 ms fades, no time-stretching), lays the lines on the 60 s canvas by tightening or relaxing only the pauses, re-times every scene, caption and sound cue, ducks the music under *your* voice, masters to -14 LUFS, and renders `final_video_human_voice.mp4` plus `subtitles_human.srt`. If your read is too long even with minimum pauses, the build reports the overrun so you can trim a line; it never speeds your voice up.
+The aligner finds every word of the script in your take, cuts it per line (10 ms fades, no time-stretching), lays the lines on the 60 s canvas by tightening or relaxing only the pauses (long silences inside lines first, then the loop tail, then the gaps between lines — a line marked `"protect": true`, like EP002's try-it pause, keeps its minimum), re-times every scene, caption and sound cue, ducks the music under *your* voice, masters to -14 LUFS, and renders `final_video_human_voice.mp4` plus `subtitles_human.srt`. If your read is too long even with minimum pauses, the build reports the overrun so you can trim a line; it never speeds your voice up.
 
 ## Make the next episode
 

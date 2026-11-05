@@ -35,6 +35,7 @@ These are my editorial judgements after four review passes, not audience data. W
 | Mix | True peak −0.92 dBTP. | Limiter ceiling lowered: −1.4 dBTP measured after AAC encoding. |
 | Edit | Text-on-text dissolves looked muddy (EINSTEIN over the hook headline; legs over the Earth core). | 0.36 s directional dissolves, Einstein card delayed past the cut, bespoke "sink" transition from the core to the figure. |
 | Delivery | First render was 122 MB at 16 Mbps (too big for GitHub and wasteful). | Grain 0.020 → 0.007, CRF 19, 12 Mbps cap: 39.9 MB at 5.3 Mbps, checked at 4× contrast for banding. |
+| Captions (found while making EP002) | When one word ran straight into the next, two caption chunks overlapped for up to 2 frames: a brief doubled-text flicker at 28 of 52 caption changes. | Engine fix (a chunk now hands over exactly when the next appears; 0 overlaps measured), `final_video_ai_voice.mp4` re-rendered. |
 
 ## 3. Verified technical checks
 
@@ -47,7 +48,7 @@ Measured on the delivered files with `python3 -m engine.verify` (ffprobe + ffmpe
 | Resolution / aspect | 1080×1920, 9:16 | 1080×1920, 9:16 |
 | Video codec | H.264 High, yuv420p, BT.709 tagged, +faststart | same |
 | Audio | AAC-LC 48 kHz stereo, ~300 kb/s | same |
-| File size / bitrate | 39.90 MB / 5.32 Mb/s | 39.49 MB / 5.26 Mb/s |
+| File size / bitrate | 39.86 MB / 5.31 Mb/s | 39.49 MB / 5.26 Mb/s |
 | Integrated loudness | −14.0 LUFS | −27.3 LUFS (bed kept at its in-mix level, so a voice dropped on top lands at ≈ −14) |
 | True peak | −1.4 dBFS | −6.6 dBFS |
 | Loudness range | 2.6 LU | 8.3 LU |

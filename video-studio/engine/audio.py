@@ -446,3 +446,69 @@ def master(x, target_lufs=-14.0, ceiling_db=-1.2):
         x = x * 10 ** ((target_lufs - lufs) / 20)
         x = limiter(x, ceiling_db)
     return x, loudness(x), true_peak(x)
+
+
+# --------------------------------------------------------------------------- EP002 additions
+
+def sfx_shutter(seed=21):
+    """Camera-shutter-like double click (blink)."""
+    rng = np.random.default_rng(seed)
+    out = np.zeros(int(0.16 * SR))
+    for k, (t0, f) in enumerate(((0.0, 3200), (0.075, 2200))):
+        n = int(0.05 * SR)
+        x = bp(rng.normal(0, 1, n), f * 0.6, min(f * 2.2, 20000)) * env_exp(n, 0.008, 0.0005)
+        i0 = int(t0 * SR)
+        out[i0:i0 + n] += x * (0.8 if k == 0 else 0.6)
+    return out * 0.6
+
+
+def sfx_zip(dur=0.11, f0=900, f1=3800, seed=23):
+    """A tiny fast swish for one eye jump."""
+    n = int(dur * SR)
+    rng = np.random.default_rng(seed)
+    x = sweep_filter(rng.normal(0, 1, n), f0, f1, "bandpass", q=2.5, block=128)
+    env = np.sin(np.linspace(0, np.pi, n)) ** 1.5
+    return x * env * 0.5
+
+
+def sfx_snip(seed=25):
+    """Scissors: two bright metallic snips."""
+    out = np.zeros(int(0.35 * SR))
+    for k, t0 in enumerate((0.0, 0.14)):
+        n = int(0.09 * SR)
+        tt = np.arange(n) / SR
+        rng = np.random.default_rng(seed + k)
+        x = (bp(rng.normal(0, 1, n), 3500, 9000) * env_exp(n, 0.012, 0.0005) * 0.8
+             + np.sin(2 * np.pi * 5200 * tt) * env_exp(n, 0.02, 0.0005) * 0.3)
+        i0 = int(t0 * SR)
+        out[i0:i0 + n] += x
+    return out * 0.6
+
+
+def reverse(x):
+    return x[::-1].copy()
+
+
+def stutter(buf, t0, slice_s=0.07, repeats=4, sr=SR):
+    """Repeat a short slice of a stereo buffer in place (a deliberate 'edit' glitch)."""
+    i0, n = int(t0 * sr), int(slice_s * sr)
+    sl = buf[i0:i0 + n].copy()
+    fade = np.linspace(0, 1, min(64, n))[:, None]
+    sl[:len(fade)] *= fade
+    sl[-len(fade):] *= fade[::-1]
+    for k in range(repeats):
+        j = i0 + k * n
+        buf[j:j + n] = sl * (1 - 0.12 * k)
+    return buf
+
+
+def dip(buf, t0, dur, depth_db=-12.0, sr=SR):
+    """Momentary duck (blink darkness)."""
+    i0, n = int(t0 * sr), int(dur * sr)
+    if i0 >= len(buf):
+        return buf
+    n = min(n, len(buf) - i0)
+    g = 10 ** (depth_db / 20)
+    env = 1 - (1 - g) * np.sin(np.linspace(0, np.pi, n))
+    buf[i0:i0 + n] *= env[:, None]
+    return buf

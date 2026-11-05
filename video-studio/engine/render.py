@@ -59,7 +59,9 @@ def render_video(module_path, timeline_path, out_path, audio_path=None, workers=
     fps, n_total = ep.fps, int(round(ep.duration * ep.fps))
     end_frame = n_total if end_frame is None else min(end_frame, n_total)
     frames = list(range(start_frame, end_frame))
-    cmd = encode_cmd(Path(out_path), fps, Path(audio_path) if audio_path else None, crf)
+    final_path = Path(out_path)
+    tmp_path = final_path.with_name(final_path.stem + ".partial" + final_path.suffix)
+    cmd = encode_cmd(tmp_path, fps, Path(audio_path) if audio_path else None, crf)
     cmd[cmd.index("-t") + 1] = "%.3f" % (len(frames) / fps)
     if audio_path and start_frame:
         i = cmd.index(str(audio_path))
@@ -76,10 +78,11 @@ def render_video(module_path, timeline_path, out_path, audio_path=None, workers=
                       f"({(k + 1) / max(el, 1e-6):4.1f} fps)", flush=True)
     proc.stdin.close()
     rc = proc.wait()
-    print(f"[render] done {out_path} in {time.time() - t0:.1f}s rc={rc}")
     if rc:
-        raise SystemExit(f"ffmpeg failed with {rc}")
-    return out_path
+        raise SystemExit(f"ffmpeg failed with {rc}; {final_path} left untouched")
+    tmp_path.replace(final_path)      # only a finished encode ever replaces a deliverable
+    print(f"[render] done {final_path} in {time.time() - t0:.1f}s rc={rc}")
+    return final_path
 
 
 def render_stills(module_path, timeline_path, times, out_dir, opts=None, scale=1.0):

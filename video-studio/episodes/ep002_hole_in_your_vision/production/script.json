@@ -1,0 +1,234 @@
+{
+ "episode": "ep002",
+ "slug": "hole-in-your-vision",
+ "title": "There's a Hole in Your Vision Right Now",
+ "duration": 60.0,
+ "fps": 30,
+ "lead_in": 0.08,
+ "tail_min": 0.6,
+ "voice": {
+  "engine": "kokoro-82m (onnx)",
+  "blend": {
+   "am_michael": 0.6,
+   "am_onyx": 0.25,
+   "am_puck": 0.15
+  },
+  "speed": 0.88,
+  "lang": "en-us"
+ },
+ "scenes": [
+  {
+   "id": "test",
+   "first_line": "L01",
+   "name": "Hook + find your blind spot"
+  },
+  {
+   "id": "anatomy",
+   "first_line": "L05",
+   "name": "Where the optic nerve leaves"
+  },
+  {
+   "id": "paint",
+   "first_line": "L06",
+   "name": "The brain paints over it"
+  },
+  {
+   "id": "blink",
+   "first_line": "L07",
+   "name": "Not the only edit: blinks"
+  },
+  {
+   "id": "saccade",
+   "first_line": "L09",
+   "name": "Eyes jump, blur gets cut"
+  },
+  {
+   "id": "stretch",
+   "first_line": "L11",
+   "name": "Stretched back in time"
+  },
+  {
+   "id": "clock",
+   "first_line": "L12",
+   "name": "Revelation: the stopped clock"
+  },
+  {
+   "id": "outro",
+   "first_line": "L14",
+   "name": "Payoff: you're watching an edit"
+  }
+ ],
+ "lines": [
+  {
+   "id": "L01",
+   "text": "There's a hole in your vision. Right now.",
+   "pause_after": 0.45,
+   "pause_max": 0.45,
+   "min_pause": 0.3,
+   "emphasis": [
+    "hole",
+    "now."
+   ],
+   "caption": false,
+   "delivery": "Quiet certainty, almost conspiratorial. Small beat between 'vision' and 'Right now'."
+  },
+  {
+   "id": "L02",
+   "text": "Want to find it? Close your left eye. Stare at the cross.",
+   "pause_after": 0.4,
+   "min_pause": 0.3,
+   "emphasis": [
+    "left",
+    "cross."
+   ],
+   "delivery": "Friendly and practical, like guiding someone through a magic trick. Give them a moment after each instruction."
+  },
+  {
+   "id": "L03",
+   "text": "Now slowly bring your phone closer...",
+   "pause_after": 0.35,
+   "min_pause": 0.25,
+   "emphasis": [
+    "slowly",
+    "closer..."
+   ],
+   "delivery": "Slow down with the instruction itself. Suspend the pitch: the sentence continues."
+  },
+  {
+   "id": "L04",
+   "text": "until the dot disappears.",
+   "pause_after": 2.2,
+   "pause_max": 2.2,
+   "min_pause": 1.4,
+   "emphasis": [
+    "disappears."
+   ],
+   "delivery": "Soft, a little amused. Then LEAVE SPACE: this pause is for the viewer to try it.",
+   "protect": true
+  },
+  {
+   "id": "L05",
+   "text": "That's your blind spot: where your optic nerve leaves the eye, nothing detects light.",
+   "pause_after": 0.4,
+   "min_pause": 0.25,
+   "emphasis": [
+    "blind",
+    "spot:",
+    "nothing"
+   ],
+   "delivery": "Reveal tone, a touch of 'gotcha'. Clean and clear on 'nothing detects light'.",
+   "pronounce": {
+    "optic": "OP-tik"
+   }
+  },
+  {
+   "id": "L06",
+   "text": "You never notice, because your brain paints over it.",
+   "pause_after": 0.55,
+   "min_pause": 0.3,
+   "emphasis": [
+    "paints"
+   ],
+   "delivery": "Warm admiration for the brain. Lean on 'paints'."
+  },
+  {
+   "id": "L07",
+   "text": "And that's not the only edit.",
+   "pause_after": 0.35,
+   "min_pause": 0.25,
+   "emphasis": [
+    "only",
+    "edit."
+   ],
+   "delivery": "Lower, intriguing. A teaser."
+  },
+  {
+   "id": "L08",
+   "text": "You blink about fifteen times a minute, and never see the darkness.",
+   "pause_after": 0.4,
+   "min_pause": 0.25,
+   "emphasis": [
+    "fifteen",
+    "darkness."
+   ],
+   "delivery": "Light and conversational; let 'never see the darkness' sound slightly eerie."
+  },
+  {
+   "id": "L09",
+   "text": "Your eyes jump about three times a second. Even now, reading this.",
+   "pause_after": 0.35,
+   "min_pause": 0.25,
+   "emphasis": [
+    "three",
+    "now,"
+   ],
+   "delivery": "Matter-of-fact, then personal on 'Even now, reading this' — as if catching them in the act."
+  },
+  {
+   "id": "L10",
+   "text": "Each jump smears the image, so your brain cuts the blur...",
+   "pause_after": 0.25,
+   "min_pause": 0.18,
+   "emphasis": [
+    "smears",
+    "cuts"
+   ],
+   "delivery": "Crisp consonants on 'cuts'. Suspend the pitch at the end: the thought continues."
+  },
+  {
+   "id": "L11",
+   "text": "then covers the gap by stretching the next image back in time.",
+   "pause_after": 0.65,
+   "min_pause": 0.35,
+   "emphasis": [
+    "stretching",
+    "back",
+    "time."
+   ],
+   "delivery": "Slow down on 'back in time' and let it land: this is the strange part."
+  },
+  {
+   "id": "L12",
+   "text": "That's why, when you glance at a clock, the second hand seems to freeze.",
+   "pause_after": 0.45,
+   "min_pause": 0.3,
+   "emphasis": [
+    "freeze."
+   ],
+   "delivery": "Recognition: most people have seen this. Slight smile, then hold 'freeze'."
+  },
+  {
+   "id": "L13",
+   "text": "It didn't. Your brain stretched it.",
+   "pause_after": 0.8,
+   "min_pause": 0.45,
+   "emphasis": [
+    "didn't.",
+    "stretched"
+   ],
+   "delivery": "Two short beats. Firm on 'didn't', then intimate on 'Your brain stretched it'."
+  },
+  {
+   "id": "L14",
+   "text": "You're not seeing the world live. You're seeing an edit.",
+   "pause_after": 0.5,
+   "min_pause": 0.3,
+   "emphasis": [
+    "live.",
+    "edit."
+   ],
+   "delivery": "The thesis. Calm, deliberate, slightly slower. Contrast 'live' and 'edit'."
+  },
+  {
+   "id": "L15",
+   "text": "One so good, you never noticed the hole...",
+   "pause_after": 0.0,
+   "min_pause": 0.0,
+   "emphasis": [
+    "never",
+    "hole..."
+   ],
+   "delivery": "Trail off with the pitch suspended: the video loops straight into 'There's a hole in your vision. Right now.'"
+  }
+ ]
+}

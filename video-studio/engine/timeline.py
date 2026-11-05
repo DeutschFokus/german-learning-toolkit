@@ -48,9 +48,11 @@ def layout(lines: list[dict], seg_lens: list[float], duration: float, lead_in: f
         k = (room - sum(mins)) / max(1e-9, sum(pref) - sum(mins))
         pauses = [m + k * (p - m) for p, m in zip(pref, mins)]
         info["status"] = "pauses tightened"
-    elif floor is not None and room >= floor * len(mins):
-        k = (room - floor * len(mins)) / max(1e-9, sum(mins) - floor * len(mins))
-        pauses = [floor + k * (m - floor) for m in mins]
+    elif floor is not None and room >= sum(_floors(lines, mins, floor)):
+        # lines marked "protect" (e.g. a try-it-yourself pause) never go below their own minimum
+        fl = _floors(lines, mins, floor)
+        k = (room - sum(fl)) / max(1e-9, sum(mins) - sum(fl))
+        pauses = [f + k * (m - f) for m, f in zip(mins, fl)]
         info["status"] = "pauses compressed below script minimums"
     else:
         pauses = mins
@@ -63,6 +65,10 @@ def layout(lines: list[dict], seg_lens: list[float], duration: float, lead_in: f
     info["tail"] = duration - t
     info["pauses"] = pauses
     return starts, info
+
+
+def _floors(lines, mins, floor):
+    return [m if l.get("protect") else min(m, floor) for l, m in zip(lines[:-1], mins)]
 
 
 def _place(lines, segs, words_rel, starts, sr, duration):

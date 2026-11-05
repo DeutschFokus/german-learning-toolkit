@@ -1,0 +1,146 @@
+EP002 — THERE'S A HOLE IN YOUR VISION RIGHT NOW
+Recording-ready voiceover script (deep, calm male narrator)
+========================================================================
+Video length: 60 s   |   Spoken words: 144   |   Narration window: 00:00.08 – 00:59.40
+
+THE VOICE
+  Intelligent, calm, quietly fascinated. Authority without lecturing; a close-mic,
+  one-to-one conversation, not a trailer. Deep does not mean slow: keep momentum
+  (about 165–175 words per minute inside sentences) and let the PAUSES do the drama.
+  Smile slightly on the playful lines (Tiny. / And you?). Never push or shout.
+
+MARKS
+  CAPS      = lean on this word (pitch or weight, not volume)
+  /         = short breath, about 0.2–0.4 s
+  //        = beat, about 0.4–0.8 s
+  ///       = let it land, 0.8 s or more
+  ...       = suspend the pitch: the thought continues
+
+HOW TO RECORD
+  1. Quiet, soft room (closet or duvet fort beats a bare room). Mic 15–20 cm away,
+     slightly off-axis to avoid plosives. Peaks around -10 dBFS, never above -3.
+  2. Record the whole script in one take as WAV (48 kHz, 24-bit, mono).
+     Leave 2 s of silence at the start. Do a second full take if a line slips.
+  3. The timings below are a GUIDE from the AI reference read, not a click track.
+     Read naturally. The pipeline aligns your take word by word, keeps your voice
+     at its natural speed, and re-times the scenes, captions and sound design to it.
+  4. If your read runs long, the pipeline tightens the pauses first. If it still
+     overruns 60 s it tells you which lines to trim; it never speeds your voice up.
+  5. Then run:  python3 production/build.py human path/to/your_take.wav
+
+========================================================================
+TIMED SCRIPT
+========================================================================
+
+--- SCENE: HOOK + FIND YOUR BLIND SPOT -----------------------------
+
+[00:00.08 – 00:02.62]  L01
+   There's a HOLE in your vision. Right NOW. //
+   Delivery: Quiet certainty, almost conspiratorial. Small beat between 'vision' and 'Right now'.
+   Pause after: 0.45 s
+
+[00:03.06 – 00:06.37]  L02
+   Want to find it? Close your LEFT eye. Stare at the CROSS. //
+   Delivery: Friendly and practical, like guiding someone through a magic trick. Give them a moment after each instruction.
+   Pause after: 0.64 s
+
+[00:07.00 – 00:09.21]  L03
+   Now SLOWLY bring your phone CLOSER... //
+   Delivery: Slow down with the instruction itself. Suspend the pitch: the sentence continues.
+   Pause after: 0.56 s
+
+[00:09.77 – 00:11.57]  L04
+   until the dot DISAPPEARS. ///
+   Delivery: Soft, a little amused. Then LEAVE SPACE: this pause is for the viewer to try it.
+   Pause after: 2.20 s
+
+--- SCENE: WHERE THE OPTIC NERVE LEAVES ----------------------------
+
+[00:13.77 – 00:18.99]  L05
+   That's your BLIND SPOT: where your optic nerve leaves the eye, NOTHING detects light. //
+   Delivery: Reveal tone, a touch of 'gotcha'. Clean and clear on 'nothing detects light'.
+   Say it:   optic = OP-tik
+   Pause after: 0.64 s
+
+--- SCENE: THE BRAIN PAINTS OVER IT --------------------------------
+
+[00:19.63 – 00:22.61]  L06
+   You never notice, because your brain PAINTS over it. ///
+   Delivery: Warm admiration for the brain. Lean on 'paints'.
+   Pause after: 0.88 s
+
+--- SCENE: NOT THE ONLY EDIT: BLINKS -------------------------------
+
+[00:23.49 – 00:25.24]  L07
+   And that's not the ONLY EDIT. //
+   Delivery: Lower, intriguing. A teaser.
+   Pause after: 0.56 s
+
+[00:25.80 – 00:29.81]  L08
+   You blink about FIFTEEN times a minute, and never see the DARKNESS. //
+   Delivery: Light and conversational; let 'never see the darkness' sound slightly eerie.
+   Pause after: 0.64 s
+
+--- SCENE: EYES JUMP, BLUR GETS CUT --------------------------------
+
+[00:30.45 – 00:35.08]  L09
+   Your eyes jump about THREE times a second. Even NOW, reading this. //
+   Delivery: Matter-of-fact, then personal on 'Even now, reading this' — as if catching them in the act.
+   Pause after: 0.56 s
+
+[00:35.64 – 00:39.38]  L10
+   Each jump SMEARS the image, so your brain CUTS the blur... /
+   Delivery: Crisp consonants on 'cuts'. Suspend the pitch at the end: the thought continues.
+   Pause after: 0.40 s
+
+--- SCENE: STRETCHED BACK IN TIME ----------------------------------
+
+[00:39.78 – 00:43.55]  L11
+   then covers the gap by STRETCHING the next image BACK in TIME. ///
+   Delivery: Slow down on 'back in time' and let it land: this is the strange part.
+   Pause after: 1.04 s
+
+--- SCENE: REVELATION: THE STOPPED CLOCK ---------------------------
+
+[00:44.59 – 00:48.95]  L12
+   That's why, when you glance at a clock, the second hand seems to FREEZE. //
+   Delivery: Recognition: most people have seen this. Slight smile, then hold 'freeze'.
+   Pause after: 0.72 s
+
+[00:49.67 – 00:51.63]  L13
+   It DIDN'T. Your brain STRETCHED it. ///
+   Delivery: Two short beats. Firm on 'didn't', then intimate on 'Your brain stretched it'.
+   Pause after: 1.28 s
+
+--- SCENE: PAYOFF: YOU'RE WATCHING AN EDIT -------------------------
+
+[00:52.90 – 00:56.12]  L14
+   You're not seeing the world LIVE. You're seeing an EDIT. //
+   Delivery: The thesis. Calm, deliberate, slightly slower. Contrast 'live' and 'edit'.
+   Pause after: 0.80 s
+
+[00:56.91 – 00:59.40]  L15
+   One so good, you NEVER noticed the HOLE...
+   Delivery: Trail off with the pitch suspended: the video loops straight into 'There's a hole in your vision. Right now.'
+
+========================================================================
+PRONUNCIATION GUIDE
+========================================================================
+  optic        OP-tik
+
+========================================================================
+CLEAN READ (no marks) — for a first run-through
+========================================================================
+  There's a hole in your vision. Right now. Want to find it? Close your
+  left eye. Stare at the cross. Now slowly bring your phone closer...
+  until the dot disappears. That's your blind spot: where your optic
+  nerve leaves the eye, nothing detects light. You never notice, because
+  your brain paints over it. And that's not the only edit. You blink
+  about fifteen times a minute, and never see the darkness. Your eyes
+  jump about three times a second. Even now, reading this. Each jump
+  smears the image, so your brain cuts the blur... then covers the gap
+  by stretching the next image back in time. That's why, when you glance
+  at a clock, the second hand seems to freeze. It didn't. Your brain
+  stretched it. You're not seeing the world live. You're seeing an edit.
+  One so good, you never noticed the hole...
+
