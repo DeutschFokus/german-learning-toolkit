@@ -13,7 +13,7 @@ Split composition, on the left a glowing modern smartphone in a dark room, on th
 
 **Hinweis:** Muslimische Gelehrte sind bewusst von hinten, im Schatten oder nur als Hände gezeigt. Propheten werden nie dargestellt.
 
-**88 Bilder · ca. 1.472 Wörter Sprechtext · ca. 10,5 Min.** (ruhiges Doku-Tempo, 140 Wörter/Min.)
+**89 Bilder · ca. 1.472 Wörter Sprechtext · ca. 10,5 Min.** (ruhiges Doku-Tempo, 140 Wörter/Min.)
 
 So gehst du vor: Prompt kopieren → Bild generieren → im Schnitt jedes Bild so lange zeigen, wie du den Sprechtext darunter sprichst. Jeder Prompt endet mit `--ar 16:9` (Midjourney-Format) – in anderen Tools stört das nicht, dort einfach 16:9 einstellen. Ganz unten steht der komplette Sprechtext am Stück zum Einsprechen.
 
@@ -615,17 +615,25 @@ A modern satellite orbiting the earth with sunlight reflecting on its solar pane
 
 **Sprechtext:** Sein Ergebnis liegt erstaunlich nah am heutigen Wert. Ohne Satellit. Ohne Flugzeug. Nur mit Mathematik, Geduld und einem Berg.
 
-### Bild 73 · 8:33 · ca. 13 Sek.
+### Bild 73 · 8:33 · ca. 4 Sek.
 
 ```text
 A starry night sky over the desert with the Milky Way, the silhouette of a scholar sitting next to an open book, spiritual atmosphere, cinematic digital painting, dramatic lighting, rich deep colors, highly detailed, atmospheric, epic documentary look, 16:9 widescreen --ar 16:9
 ```
 
-**Sprechtext:** Für diese Menschen war Wissenschaft kein Widerspruch zum Glauben. Der Koran fordert immer wieder dazu auf, nachzudenken und die Schöpfung zu betrachten. Forschung war für sie eine Form der Anbetung.
+**Sprechtext:** Für diese Menschen war Wissenschaft kein Widerspruch zum Glauben.
+
+### Bild 74 · 8:36 · ca. 9 Sek.
+
+```text
+An astrolabe and old astronomy instruments on the rooftop of a medieval observatory under a sky full of stars and the Milky Way, spiritual atmosphere, no people, cinematic digital painting, dramatic lighting, rich deep colors, highly detailed, atmospheric, epic documentary look, 16:9 widescreen --ar 16:9
+```
+
+**Sprechtext:** Der Koran fordert immer wieder dazu auf, nachzudenken und die Schöpfung zu betrachten. Forschung war für sie eine Form der Anbetung.
 
 ## DER UNTERGANG
 
-### Bild 74 · 8:45 · ca. 4 Sek.
+### Bild 75 · 8:45 · ca. 4 Sek.
 
 ```text
 Baghdad burning at night in 1258, smoke rising over domes, an army of horsemen on the horizon, red apocalyptic sky, cinematic digital painting, dramatic lighting, rich deep colors, highly detailed, atmospheric, epic documentary look, 16:9 widescreen --ar 16:9
@@ -633,7 +641,7 @@ Baghdad burning at night in 1258, smoke rising over domes, an army of horsemen o
 
 **Sprechtext:** Doch dann kommt das Jahr 1258. Die Mongolen erobern Bagdad.
 
-### Bild 75 · 8:50 · ca. 9 Sek.
+### Bild 76 · 8:50 · ca. 9 Sek.
 
 ```text
 A dark river with countless book pages and manuscripts floating in the water, ink spreading like black clouds, tragic mood, cinematic digital painting, dramatic lighting, rich deep colors, highly detailed, atmospheric, epic documentary look, 16:9 widescreen --ar 16:9
@@ -641,7 +649,7 @@ A dark river with countless book pages and manuscripts floating in the water, in
 
 **Sprechtext:** Chronisten berichten, der Tigris sei tagelang schwarz gewesen. Von der Tinte der Bücher, die man in den Fluss geworfen hatte.
 
-### Bild 76 · 8:58 · ca. 6 Sek.
+### Bild 77 · 8:58 · ca. 6 Sek.
 
 ```text
 An empty ruined library hall with fallen shelves and scattered burned pages, dust and smoke in beams of light, cinematic digital painting, dramatic lighting, rich deep colors, highly detailed, atmospheric, epic documentary look, 16:9 widescreen --ar 16:9
@@ -651,7 +659,7 @@ An empty ruined library hall with fallen shelves and scattered burned pages, dus
 
 ## DIE BRÜCKE NACH EUROPA
 
-### Bild 77 · 9:04 · ca. 6 Sek.
+### Bild 78 · 9:04 · ca. 6 Sek.
 
 ```text
 The medieval city of Toledo in Spain on a hill above the Tagus river, golden sunset, old walls and towers, cinematic digital painting, dramatic lighting, rich deep colors, highly detailed, atmospheric, epic documentary look, 16:9 widescreen --ar 16:9
@@ -659,7 +667,7 @@ The medieval city of Toledo in Spain on a hill above the Tagus river, golden sun
 
 **Sprechtext:** Doch das Wissen überlebte. Eine der wichtigsten Brücken war die Stadt Toledo in Spanien.
 
-### Bild 78 · 9:10 · ca. 6 Sek.
+### Bild 79 · 9:10 · ca. 6 Sek.
 
 ```text
 A candlelit hall in Toledo where translators in different robes sit together at a long table with Arabic and Latin books, faces softly in shadow, cinematic digital painting, dramatic lighting, rich deep colors, highly detailed, atmospheric, epic documentary look, 16:9 widescreen --ar 16:9
@@ -667,7 +675,7 @@ A candlelit hall in Toledo where translators in different robes sit together at 
 
 **Sprechtext:** Im 12. Jahrhundert übersetzen Gelehrte hier arabische Werke ins Lateinische. Mathematik, Medizin, Astronomie, Philosophie.
 
-### Bild 79 · 9:16 · ca. 11 Sek.
+### Bild 80 · 9:16 · ca. 11 Sek.
 
 ```text
 Travelers on horseback from all over Europe arriving at the gates of Toledo carrying books and bags, early morning mist, cinematic digital painting, dramatic lighting, rich deep colors, highly detailed, atmospheric, epic documentary look, 16:9 widescreen --ar 16:9
@@ -675,7 +683,7 @@ Travelers on horseback from all over Europe arriving at the gates of Toledo carr
 
 **Sprechtext:** Studenten aus ganz Europa reisen an, um dieses Wissen zu lernen. Viele Historiker sind sich einig: Ohne diese Übersetzungen hätte es die Renaissance so nicht gegeben.
 
-### Bild 80 · 9:27 · ca. 9 Sek.
+### Bild 81 · 9:27 · ca. 9 Sek.
 
 ```text
 An open German dictionary on a desk with golden Arabic calligraphy softly glowing and floating above the pages, magical realism, cinematic digital painting, dramatic lighting, rich deep colors, highly detailed, atmospheric, epic documentary look, 16:9 widescreen --ar 16:9
@@ -685,7 +693,7 @@ An open German dictionary on a desk with golden Arabic calligraphy softly glowin
 
 ## DIE LETZTE ERFINDUNG
 
-### Bild 81 · 9:36 · ca. 9 Sek.
+### Bild 82 · 9:36 · ca. 9 Sek.
 
 ```text
 A steaming cup of coffee on a modern desk next to a laptop, morning sunlight through a window, cozy, cinematic digital painting, dramatic lighting, rich deep colors, highly detailed, atmospheric, epic documentary look, 16:9 widescreen --ar 16:9
@@ -693,7 +701,7 @@ A steaming cup of coffee on a modern desk next to a laptop, morning sunlight thr
 
 **Sprechtext:** Und erinnerst du dich an den Anfang? Ich habe dir gesagt, die letzte Erfindung hattest du heute wahrscheinlich schon in der Hand.
 
-### Bild 82 · 9:45 · ca. 3 Sek.
+### Bild 83 · 9:45 · ca. 3 Sek.
 
 ```text
 Close-up of dark roasted coffee beans next to a traditional brass coffee pot, warm light, rich texture, cinematic digital painting, dramatic lighting, rich deep colors, highly detailed, atmospheric, epic documentary look, 16:9 widescreen --ar 16:9
@@ -701,7 +709,7 @@ Close-up of dark roasted coffee beans next to a traditional brass coffee pot, wa
 
 **Sprechtext:** Hattest du heute schon einen Kaffee?
 
-### Bild 83 · 9:48 · ca. 9 Sek.
+### Bild 84 · 9:48 · ca. 9 Sek.
 
 ```text
 Yemen in the 15th century at night, men in traditional clothes seen from behind sitting in a mosque courtyard drinking from small cups, lanterns, starry sky, cinematic digital painting, dramatic lighting, rich deep colors, highly detailed, atmospheric, epic documentary look, 16:9 widescreen --ar 16:9
@@ -709,7 +717,7 @@ Yemen in the 15th century at night, men in traditional clothes seen from behind 
 
 **Sprechtext:** Im 15. Jahrhundert tranken Sufis im Jemen Kaffee, um nachts wach zu bleiben. Für das Gebet und das Gedenken an Allah.
 
-### Bild 84 · 9:57 · ca. 7 Sek.
+### Bild 85 · 9:57 · ca. 7 Sek.
 
 ```text
 A bustling 16th century Istanbul coffeehouse with ornate carpets and copper pots, men in conversation, warm lamplight, faces in soft shadow, cinematic digital painting, dramatic lighting, rich deep colors, highly detailed, atmospheric, epic documentary look, 16:9 widescreen --ar 16:9
@@ -719,7 +727,7 @@ A bustling 16th century Istanbul coffeehouse with ornate carpets and copper pots
 
 ## OUTRO
 
-### Bild 85 · 10:03 · ca. 4 Sek.
+### Bild 86 · 10:03 · ca. 4 Sek.
 
 ```text
 An astrolabe, surgical tools, an open book, a coffee cup and a smartphone arranged together on dark marble, golden light, symbolic still life, cinematic digital painting, dramatic lighting, rich deep colors, highly detailed, atmospheric, epic documentary look, 16:9 widescreen --ar 16:9
@@ -727,7 +735,7 @@ An astrolabe, surgical tools, an open book, a coffee cup and a smartphone arrang
 
 **Sprechtext:** Algorithmus. Algebra. Die Null. Die Kamera. Chirurgie. Krankenhäuser. Universitäten. Kaffee.
 
-### Bild 86 · 10:08 · ca. 7 Sek.
+### Bild 87 · 10:08 · ca. 7 Sek.
 
 ```text
 A child in modern clothes opening an old book, golden light pouring out of the pages onto the amazed face, magical, cinematic digital painting, dramatic lighting, rich deep colors, highly detailed, atmospheric, epic documentary look, 16:9 widescreen --ar 16:9
@@ -735,7 +743,7 @@ A child in modern clothes opening an old book, golden light pouring out of the p
 
 **Sprechtext:** Alles hat eine Geschichte, die oft vergessen wird. Und alles begann mit einem einzigen Wort: Lies.
 
-### Bild 87 · 10:15 · ca. 10 Sek.
+### Bild 88 · 10:15 · ca. 10 Sek.
 
 ```text
 A wide cinematic shot of a quiet modern library at night with a single reading lamp glowing over an open book, inviting, cinematic digital painting, dramatic lighting, rich deep colors, highly detailed, atmospheric, epic documentary look, 16:9 widescreen --ar 16:9
@@ -743,7 +751,7 @@ A wide cinematic shot of a quiet modern library at night with a single reading l
 
 **Sprechtext:** Wenn du wissen willst, welche Erfindungen noch aus dieser Zeit stammen, schreib es in die Kommentare und abonniere den Kanal. Teil 2 kommt bald.
 
-### Bild 88 · 10:25 · ca. 6 Sek.
+### Bild 89 · 10:25 · ca. 6 Sek.
 
 ```text
 Two friends sitting together in a cozy room at night, one showing the other something on a smartphone, warm lamp light, curious faces, cinematic digital painting, dramatic lighting, rich deep colors, highly detailed, atmospheric, epic documentary look, 16:9 widescreen --ar 16:9
@@ -817,4 +825,4 @@ Algorithmus. Algebra. Die Null. Die Kamera. Chirurgie. Krankenhäuser. Universit
 
 **Tags:** islamisches goldenes zeitalter, haus der weisheit, al-khwarizmi, ibn al-haytham, fatima al-fihri, erfindungen muslime, geschichte doku deutsch, wissen, edutainment
 
-**Shorts-Schnitte:** Bild 01–07 + 18–27 (Algorithmus) · Bild 59–64 (Fatima al-Fihri) · Bild 81–84 (Kaffee-Twist)
+**Shorts-Schnitte:** Bild 01–07 + 18–27 (Algorithmus) · Bild 59–64 (Fatima al-Fihri) · Bild 82–85 (Kaffee-Twist)

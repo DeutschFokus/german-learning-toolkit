@@ -13,7 +13,7 @@ A red and white German high-speed train stopped at a Swiss border station, a ste
 
 **Hinweis:** Keine DB-Logos im Bild – die Prompts beschreiben die Züge bewusst neutral. Zahlen vor Upload mit dem aktuellen DB-Pünktlichkeitsbericht und Allianz pro Schiene abgleichen.
 
-**83 Bilder · ca. 1.427 Wörter Sprechtext · ca. 10,2 Min.** (ruhiges Doku-Tempo, 140 Wörter/Min.)
+**84 Bilder · ca. 1.427 Wörter Sprechtext · ca. 10,2 Min.** (ruhiges Doku-Tempo, 140 Wörter/Min.)
 
 So gehst du vor: Prompt kopieren → Bild generieren → im Schnitt jedes Bild so lange zeigen, wie du den Sprechtext darunter sprichst. Jeder Prompt endet mit `--ar 16:9` (Midjourney-Format) – in anderen Tools stört das nicht, dort einfach 16:9 einstellen. Ganz unten steht der komplette Sprechtext am Stück zum Einsprechen.
 
@@ -135,17 +135,25 @@ A ghostly transparent train fading into thick fog on empty tracks, surreal, cine
 
 **Sprechtext:** Ein Zug, der nicht fährt, kann ja schließlich auch nicht zu spät kommen.
 
-### Bild 15 · 1:31 · ca. 15 Sek.
+### Bild 15 · 1:31 · ca. 4 Sek.
 
 ```text
 A frustrated passenger in the rain on a platform looking at a delay notification on his phone, cinematic photorealistic, dramatic lighting, rich detail, documentary style, 16:9 widescreen --ar 16:9
 ```
 
-**Sprechtext:** Und für viele Fahrgäste fühlt es sich noch schlimmer an. Denn wenn dein Zug zehn Minuten zu spät ist und du deshalb den Anschluss verpasst, kommst du am Ende oft eine Stunde später an.
+**Sprechtext:** Und für viele Fahrgäste fühlt es sich noch schlimmer an.
+
+### Bild 16 · 1:35 · ca. 10 Sek.
+
+```text
+A connecting train pulling away from the opposite platform while a running passenger with a suitcase arrives seconds too late, dusk, cinematic photorealistic, dramatic lighting, rich detail, documentary style, 16:9 widescreen --ar 16:9
+```
+
+**Sprechtext:** Denn wenn dein Zug zehn Minuten zu spät ist und du deshalb den Anschluss verpasst, kommst du am Ende oft eine Stunde später an.
 
 ## DER GROSSE PLAN: DIE BAHN AN DIE BÖRSE
 
-### Bild 16 · 1:45 · ca. 8 Sek.
+### Bild 17 · 1:45 · ca. 8 Sek.
 
 ```text
 An old West German train in blue and beige and an old East German train in red standing side by side in a station, early 1990s, nostalgic, cinematic photorealistic, dramatic lighting, rich detail, documentary style, 16:9 widescreen --ar 16:9
@@ -153,7 +161,7 @@ An old West German train in blue and beige and an old East German train in red s
 
 **Sprechtext:** Um zu verstehen, was passiert ist, müssen wir ins Jahr 1994. Nach der Wiedervereinigung gibt es zwei Staatsbahnen.
 
-### Bild 17 · 1:53 · ca. 7 Sek.
+### Bild 18 · 1:53 · ca. 7 Sek.
 
 ```text
 A mountain of paper files and debt documents in an old government office, 1990s, dusty light, cinematic photorealistic, dramatic lighting, rich detail, documentary style, 16:9 widescreen --ar 16:9
@@ -161,7 +169,7 @@ A mountain of paper files and debt documents in an old government office, 1990s,
 
 **Sprechtext:** Die Bundesbahn im Westen und die Reichsbahn im Osten. Beide mit riesigen Schulden und vielen Problemen.
 
-### Bild 18 · 2:00 · ca. 8 Sek.
+### Bild 19 · 2:00 · ca. 8 Sek.
 
 ```text
 Politicians in 1990s suits cutting a red ribbon in front of a train, confetti, press cameras flashing, cinematic photorealistic, dramatic lighting, rich detail, documentary style, 16:9 widescreen --ar 16:9
@@ -169,7 +177,7 @@ Politicians in 1990s suits cutting a red ribbon in front of a train, confetti, p
 
 **Sprechtext:** Die Politik entscheidet: Wir machen eine Firma daraus. Die Bahnreform. Aus den Behörden wird die Deutsche Bahn AG.
 
-### Bild 19 · 2:08 · ca. 10 Sek.
+### Bild 20 · 2:08 · ca. 10 Sek.
 
 ```text
 Managers in suits in a glass boardroom looking at a presentation of profit charts, 2000s, cinematic photorealistic, dramatic lighting, rich detail, documentary style, 16:9 widescreen --ar 16:9
@@ -177,7 +185,7 @@ Managers in suits in a glass boardroom looking at a presentation of profit chart
 
 **Sprechtext:** Sie gehört weiter komplett dem Staat, soll aber arbeiten wie ein Unternehmen. Und in den 2000er-Jahren gibt es ein großes Ziel: den Börsengang.
 
-### Bild 20 · 2:18 · ca. 7 Sek.
+### Bild 21 · 2:18 · ca. 7 Sek.
 
 ```text
 Close-up of a red pen crossing out lines on a railway map, dramatic light, cinematic photorealistic, dramatic lighting, rich detail, documentary style, 16:9 widescreen --ar 16:9
@@ -185,7 +193,7 @@ Close-up of a red pen crossing out lines on a railway map, dramatic light, cinem
 
 **Sprechtext:** Und was macht man, wenn man an die Börse will? Man muss Gewinne zeigen. Also wird gespart.
 
-### Bild 21 · 2:25 · ca. 4 Sek.
+### Bild 22 · 2:25 · ca. 4 Sek.
 
 ```text
 An abandoned overgrown railway track in a small German village with an old station building with broken windows, melancholic, cinematic photorealistic, dramatic lighting, rich detail, documentary style, 16:9 widescreen --ar 16:9
@@ -193,7 +201,7 @@ An abandoned overgrown railway track in a small German village with an old stati
 
 **Sprechtext:** Strecken, die sich nicht lohnen, werden stillgelegt. Kleine Bahnhöfe geschlossen.
 
-### Bild 22 · 2:29 · ca. 6 Sek.
+### Bild 23 · 2:29 · ca. 6 Sek.
 
 ```text
 Workers removing old railway switches and side tracks with a crane, rusty metal pieces piled up, cinematic photorealistic, dramatic lighting, rich detail, documentary style, 16:9 widescreen --ar 16:9
@@ -201,7 +209,7 @@ Workers removing old railway switches and side tracks with a crane, rusty metal 
 
 **Sprechtext:** Weichen und Überholgleise werden abgebaut, weil ihre Wartung Geld kostet. Personal wird reduziert.
 
-### Bild 23 · 2:35 · ca. 10 Sek.
+### Bild 24 · 2:35 · ca. 10 Sek.
 
 ```text
 Drone view of a single railway line without passing tracks, one broken-down train blocking it and several trains waiting behind, cinematic photorealistic, dramatic lighting, rich detail, documentary style, 16:9 widescreen --ar 16:9
@@ -209,7 +217,7 @@ Drone view of a single railway line without passing tracks, one broken-down trai
 
 **Sprechtext:** Auf dem Papier sieht das effizient aus. Aber in der Realität heißt das: Bleibt heute ein Zug liegen, gibt es oft kein Ausweichgleis mehr.
 
-### Bild 24 · 2:45 · ca. 9 Sek.
+### Bild 25 · 2:45 · ca. 9 Sek.
 
 ```text
 A long queue of trains on a single track at dusk seen from a drone, red signals glowing, cinematic photorealistic, dramatic lighting, rich detail, documentary style, 16:9 widescreen --ar 16:9
@@ -217,7 +225,7 @@ A long queue of trains on a single track at dusk seen from a drone, red signals 
 
 **Sprechtext:** Ein Problem an einer Stelle – und dahinter stauen sich alle. Das Netz ist heute deutlich kleiner als zur Zeit der Bahnreform.
 
-### Bild 25 · 2:54 · ca. 7 Sek.
+### Bild 26 · 2:54 · ca. 7 Sek.
 
 ```text
 Traders in 2008 holding their heads in front of screens showing crashing red charts, dramatic, cinematic photorealistic, dramatic lighting, rich detail, documentary style, 16:9 widescreen --ar 16:9
@@ -225,7 +233,7 @@ Traders in 2008 holding their heads in front of screens showing crashing red cha
 
 **Sprechtext:** 2008 soll es dann so weit sein. Doch dann kommt die Finanzkrise. Der Börsengang wird abgesagt.
 
-### Bild 26 · 3:01 · ca. 6 Sek.
+### Bild 27 · 3:01 · ca. 6 Sek.
 
 ```text
 A lonely rusty railway signal standing in the rain next to a weedy track, symbol of neglect, cinematic photorealistic, dramatic lighting, rich detail, documentary style, 16:9 widescreen --ar 16:9
@@ -233,7 +241,7 @@ A lonely rusty railway signal standing in the rain next to a weedy track, symbol
 
 **Sprechtext:** Die Bahn kam nie an die Börse. Aber die Sparjahre hatten ihre Spuren längst hinterlassen.
 
-### Bild 27 · 3:08 · ca. 12 Sek.
+### Bild 28 · 3:08 · ca. 12 Sek.
 
 ```text
 A gigantic underground railway station construction site with huge concrete chalice-shaped pillars, cranes and workers, dramatic light, cinematic photorealistic, dramatic lighting, rich detail, documentary style, 16:9 widescreen --ar 16:9
@@ -241,7 +249,7 @@ A gigantic underground railway station construction site with huge concrete chal
 
 **Sprechtext:** Und während beim alten Netz gespart wurde, floss viel Geld in Prestigeprojekte. Das bekannteste: Stuttgart 21. Ein Bahnhofsprojekt, dessen Kosten sich über die Jahre mehr als verdoppelt haben.
 
-### Bild 28 · 3:20 · ca. 8 Sek.
+### Bild 29 · 3:20 · ca. 8 Sek.
 
 ```text
 A shiny architectural model of a modern station on a table next to a window showing an old overgrown railway line outside, symbolic contrast, cinematic photorealistic, dramatic lighting, rich detail, documentary style, 16:9 widescreen --ar 16:9
@@ -251,7 +259,7 @@ A shiny architectural model of a modern station on a table next to a window show
 
 ## TECHNIK AUS DER KAISERZEIT
 
-### Bild 29 · 3:27 · ca. 8 Sek.
+### Bild 30 · 3:27 · ca. 8 Sek.
 
 ```text
 Interior of an old mechanical railway signal box with rows of large iron levers, wood and brass, warm light, cinematic photorealistic, dramatic lighting, rich detail, documentary style, 16:9 widescreen --ar 16:9
@@ -259,7 +267,7 @@ Interior of an old mechanical railway signal box with rows of large iron levers,
 
 **Sprechtext:** Und jetzt etwas, das kaum jemand weiß. Damit Züge sicher fahren können, steuern Stellwerke die Weichen und Signale.
 
-### Bild 30 · 3:35 · ca. 4 Sek.
+### Bild 31 · 3:35 · ca. 4 Sek.
 
 ```text
 A modern digital railway control center with large screens showing track diagrams, operators at their desks, cool blue light, cinematic photorealistic, dramatic lighting, rich detail, documentary style, 16:9 widescreen --ar 16:9
@@ -267,7 +275,7 @@ A modern digital railway control center with large screens showing track diagram
 
 **Sprechtext:** In der Schweiz sind die meisten davon modern und digital.
 
-### Bild 31 · 3:39 · ca. 10 Sek.
+### Bild 32 · 3:39 · ca. 10 Sek.
 
 ```text
 A wide control room screen showing a glowing map of an entire railway region with hundreds of moving train symbols, cinematic photorealistic, dramatic lighting, rich detail, documentary style, 16:9 widescreen --ar 16:9
@@ -275,7 +283,7 @@ A wide control room screen showing a glowing map of an entire railway region wit
 
 **Sprechtext:** Ein modernes digitales Stellwerk kann große Teile eines Netzes von einem einzigen Raum aus steuern. Ein altes mechanisches oft nur ein paar Kilometer.
 
-### Bild 32 · 3:49 · ca. 8 Sek.
+### Bild 33 · 3:49 · ca. 8 Sek.
 
 ```text
 An elderly signalman pulling a heavy iron lever in an old signal box, concentrated, sunlight through dusty windows, cinematic photorealistic, dramatic lighting, rich detail, documentary style, 16:9 widescreen --ar 16:9
@@ -283,7 +291,7 @@ An elderly signalman pulling a heavy iron lever in an old signal box, concentrat
 
 **Sprechtext:** In Deutschland dagegen sind immer noch viele alte Stellwerke im Einsatz. Manche werden noch mechanisch mit Hebeln bedient.
 
-### Bild 33 · 3:57 · ca. 6 Sek.
+### Bild 34 · 3:57 · ca. 6 Sek.
 
 ```text
 An old brick signal box building from the early 1900s next to the tracks, ivy on the walls, nostalgic, cinematic photorealistic, dramatic lighting, rich detail, documentary style, 16:9 widescreen --ar 16:9
@@ -291,7 +299,7 @@ An old brick signal box building from the early 1900s next to the tracks, ivy on
 
 **Sprechtext:** Und einige davon sind über 100 Jahre alt. Aus der Zeit von Kaiser Wilhelm.
 
-### Bild 34 · 4:03 · ca. 9 Sek.
+### Bild 35 · 4:03 · ca. 9 Sek.
 
 ```text
 A retired railway worker handing an old instruction manual to a young trainee inside a signal box, cinematic photorealistic, dramatic lighting, rich detail, documentary style, 16:9 widescreen --ar 16:9
@@ -299,7 +307,7 @@ A retired railway worker handing an old instruction manual to a young trainee in
 
 **Sprechtext:** Für diese Technik braucht man Fachleute, die sie überhaupt noch bedienen können. Und die gehen nach und nach in Rente.
 
-### Bild 35 · 4:12 · ca. 6 Sek.
+### Bild 36 · 4:12 · ca. 6 Sek.
 
 ```text
 An empty signal box with an empty chair in front of the levers, nobody there, gloomy light, cinematic photorealistic, dramatic lighting, rich detail, documentary style, 16:9 widescreen --ar 16:9
@@ -307,7 +315,7 @@ An empty signal box with an empty chair in front of the levers, nobody there, gl
 
 **Sprechtext:** Ist ein Fahrdienstleiter krank, kann es passieren, dass eine ganze Strecke nicht befahren werden kann.
 
-### Bild 36 · 4:18 · ca. 5 Sek.
+### Bild 37 · 4:18 · ca. 5 Sek.
 
 ```text
 An old railway bridge with moss on its stone pillars, a train crossing slowly over a misty valley, cinematic photorealistic, dramatic lighting, rich detail, documentary style, 16:9 widescreen --ar 16:9
@@ -315,7 +323,7 @@ An old railway bridge with moss on its stone pillars, a train crossing slowly ov
 
 **Sprechtext:** Dazu kommen tausende Brücken, viele davon ebenfalls über 100 Jahre alt.
 
-### Bild 37 · 4:23 · ca. 9 Sek.
+### Bild 38 · 4:23 · ca. 9 Sek.
 
 ```text
 Close-up of worn rusty railway tracks with cracks, a speed restriction sign next to the track, cinematic photorealistic, dramatic lighting, rich detail, documentary style, 16:9 widescreen --ar 16:9
@@ -325,7 +333,7 @@ Close-up of worn rusty railway tracks with cracks, a speed restriction sign next
 
 ## DER VERGLEICH, DER WEHTUT
 
-### Bild 38 · 4:31 · ca. 3 Sek.
+### Bild 39 · 4:31 · ca. 3 Sek.
 
 ```text
 A shiny Swiss train passing through a perfect alpine landscape with green meadows and snowy peaks, cinematic photorealistic, dramatic lighting, rich detail, documentary style, 16:9 widescreen --ar 16:9
@@ -333,7 +341,7 @@ A shiny Swiss train passing through a perfect alpine landscape with green meadow
 
 **Sprechtext:** Jetzt der Vergleich, der wehtut. Die Schweiz.
 
-### Bild 39 · 4:34 · ca. 9 Sek.
+### Bild 40 · 4:34 · ca. 9 Sek.
 
 ```text
 Three stacks of gold coins of very different heights with tiny Swiss, Austrian and German flags on top, the German stack much smaller, cinematic photorealistic, dramatic lighting, rich detail, documentary style, 16:9 widescreen --ar 16:9
@@ -341,7 +349,7 @@ Three stacks of gold coins of very different heights with tiny Swiss, Austrian a
 
 **Sprechtext:** Laut Allianz pro Schiene hat die Schweiz 2023 pro Einwohner rund viermal so viel Geld in die Schiene investiert wie Deutschland.
 
-### Bild 40 · 4:43 · ca. 9 Sek.
+### Bild 41 · 4:43 · ca. 9 Sek.
 
 ```text
 A modern Austrian train in a green valley with a church and mountains behind, sunny day, cinematic photorealistic, dramatic lighting, rich detail, documentary style, 16:9 widescreen --ar 16:9
@@ -349,7 +357,7 @@ A modern Austrian train in a green valley with a church and mountains behind, su
 
 **Sprechtext:** Auch Österreich investiert pro Kopf fast dreimal so viel. Inzwischen steckt Deutschland mehr Geld hinein – aber der Rückstand ist riesig.
 
-### Bild 41 · 4:52 · ca. 9 Sek.
+### Bild 42 · 4:52 · ca. 9 Sek.
 
 ```text
 Railway planners in a bright Swiss office discussing in front of a large wall chart with clock faces and train connections, cinematic photorealistic, dramatic lighting, rich detail, documentary style, 16:9 widescreen --ar 16:9
@@ -357,7 +365,7 @@ Railway planners in a bright Swiss office discussing in front of a large wall ch
 
 **Sprechtext:** Und die Schweiz hat ein einfaches Prinzip. Zuerst wird der Fahrplan festgelegt: Wann fahren die Züge? Wo steigt man um?
 
-### Bild 42 · 5:01 · ca. 6 Sek.
+### Bild 43 · 5:01 · ca. 6 Sek.
 
 ```text
 Two trains arriving at the same time on both sides of one platform in a Swiss station, passengers switching quickly, cinematic photorealistic, dramatic lighting, rich detail, documentary style, 16:9 widescreen --ar 16:9
@@ -365,7 +373,7 @@ Two trains arriving at the same time on both sides of one platform in a Swiss st
 
 **Sprechtext:** Und dann wird die Infrastruktur genau dafür gebaut. Damit Anschlüsse auf die Minute passen.
 
-### Bild 43 · 5:07 · ca. 8 Sek.
+### Bild 44 · 5:07 · ca. 8 Sek.
 
 ```text
 Aerial view of a busy German railway junction with dozens of crossing tracks, freight and passenger trains mixed, cinematic photorealistic, dramatic lighting, rich detail, documentary style, 16:9 widescreen --ar 16:9
@@ -373,7 +381,7 @@ Aerial view of a busy German railway junction with dozens of crossing tracks, fr
 
 **Sprechtext:** In Deutschland lief es lange eher umgekehrt. Und es gibt noch ein Problem, das die Schweiz so nicht hat.
 
-### Bild 44 · 5:15 · ca. 7 Sek.
+### Bild 45 · 5:15 · ca. 7 Sek.
 
 ```text
 A long freight train with colorful containers passing through the German countryside, cloudy sky, cinematic photorealistic, dramatic lighting, rich detail, documentary style, 16:9 widescreen --ar 16:9
@@ -381,7 +389,7 @@ A long freight train with colorful containers passing through the German country
 
 **Sprechtext:** Deutschland ist das Transitland Europas. Güterzüge fahren von den Niederlanden nach Italien, von Polen nach Frankreich.
 
-### Bild 45 · 5:22 · ca. 4 Sek.
+### Bild 46 · 5:22 · ca. 4 Sek.
 
 ```text
 A regional train, a freight train and a high-speed train squeezed side by side on parallel tracks near a station, congestion, cinematic photorealistic, dramatic lighting, rich detail, documentary style, 16:9 widescreen --ar 16:9
@@ -389,7 +397,7 @@ A regional train, a freight train and a high-speed train squeezed side by side o
 
 **Sprechtext:** Personenzüge, Regionalzüge und Güterzüge teilen sich oft dieselben Gleise.
 
-### Bild 46 · 5:26 · ca. 4 Sek.
+### Bild 47 · 5:26 · ca. 4 Sek.
 
 ```text
 Aerial view of Cologne main station and the cathedral at dusk with many trains waiting on the Rhine bridge, cinematic photorealistic, dramatic lighting, rich detail, documentary style, 16:9 widescreen --ar 16:9
@@ -399,7 +407,7 @@ Aerial view of Cologne main station and the cathedral at dusk with many trains w
 
 ## DER DOMINO-EFFEKT
 
-### Bild 47 · 5:30 · ca. 5 Sek.
+### Bild 48 · 5:30 · ca. 5 Sek.
 
 ```text
 Macro shot of a row of falling dominoes where each domino is a small model train, cinematic photorealistic, dramatic lighting, rich detail, documentary style, 16:9 widescreen --ar 16:9
@@ -407,7 +415,7 @@ Macro shot of a row of falling dominoes where each domino is a small model train
 
 **Sprechtext:** Stell dir vor, ein ICE fährt in München los. Ziel: Hamburg.
 
-### Bild 48 · 5:35 · ca. 1 Sek.
+### Bild 49 · 5:35 · ca. 1 Sek.
 
 ```text
 A construction site next to the tracks with orange warning lights, a high-speed train passing slowly, cinematic photorealistic, dramatic lighting, rich detail, documentary style, 16:9 widescreen --ar 16:9
@@ -415,7 +423,7 @@ A construction site next to the tracks with orange warning lights, a high-speed 
 
 **Sprechtext:** Unterwegs: eine Baustelle.
 
-### Bild 49 · 5:36 · ca. 2 Sek.
+### Bild 50 · 5:36 · ca. 2 Sek.
 
 ```text
 A railway signal flashing red in the rain while a technician inspects an open cable box, cinematic photorealistic, dramatic lighting, rich detail, documentary style, 16:9 widescreen --ar 16:9
@@ -423,7 +431,7 @@ A railway signal flashing red in the rain while a technician inspects an open ca
 
 **Sprechtext:** Eine Signalstörung bei Würzburg.
 
-### Bild 50 · 5:38 · ca. 7 Sek.
+### Bild 51 · 5:38 · ca. 7 Sek.
 
 ```text
 A high-speed train waiting at a red signal while a long freight train passes in front of it, cinematic photorealistic, dramatic lighting, rich detail, documentary style, 16:9 widescreen --ar 16:9
@@ -431,7 +439,7 @@ A high-speed train waiting at a red signal while a long freight train passes in 
 
 **Sprechtext:** Vor Frankfurt eine überlastete Strecke. Der ICE muss Güterzüge vorlassen und verliert seinen Platz im Fahrplan.
 
-### Bild 51 · 5:44 · ca. 6 Sek.
+### Bild 52 · 5:44 · ca. 6 Sek.
 
 ```text
 Frustrated passengers on a regional platform watching their connecting train leave without them, cinematic photorealistic, dramatic lighting, rich detail, documentary style, 16:9 widescreen --ar 16:9
@@ -439,7 +447,7 @@ Frustrated passengers on a regional platform watching their connecting train lea
 
 **Sprechtext:** Und alle Züge, die auf ihn warten – Anschlüsse, Regionalzüge – verspäten sich mit.
 
-### Bild 52 · 5:50 · ca. 9 Sek.
+### Bild 53 · 5:50 · ca. 9 Sek.
 
 ```text
 A completely full railway timetable chart on a wall with no free slots, colored lines densely packed, conceptual, cinematic photorealistic, dramatic lighting, rich detail, documentary style, 16:9 widescreen --ar 16:9
@@ -447,7 +455,7 @@ A completely full railway timetable chart on a wall with no free slots, colored 
 
 **Sprechtext:** Und weil viele Strecken komplett ausgelastet sind, gibt es keine Lücke, in der ein verspäteter Zug seine Zeit wieder aufholen kann.
 
-### Bild 53 · 5:59 · ca. 6 Sek.
+### Bild 54 · 5:59 · ca. 6 Sek.
 
 ```text
 A dark map of Germany with glowing red lines spreading from the south to the north like cracks, cinematic photorealistic, dramatic lighting, rich detail, documentary style, 16:9 widescreen --ar 16:9
@@ -455,7 +463,7 @@ A dark map of Germany with glowing red lines spreading from the south to the nor
 
 **Sprechtext:** So kann ein Fehler in Bayern am Ende eine Verspätung in Schleswig-Holstein auslösen.
 
-### Bild 54 · 6:05 · ca. 11 Sek.
+### Bild 55 · 6:05 · ca. 11 Sek.
 
 ```text
 A border station at night with a German high-speed train ending its journey on one track and a Swiss train waiting on the other, cinematic photorealistic, dramatic lighting, rich detail, documentary style, 16:9 widescreen --ar 16:9
@@ -465,7 +473,7 @@ A border station at night with a German high-speed train ending its journey on o
 
 ## DIE MENSCHEN HINTER DER VERSPÄTUNG
 
-### Bild 55 · 6:16 · ca. 7 Sek.
+### Bild 56 · 6:16 · ca. 7 Sek.
 
 ```text
 A tired train driver in the cab at night, rain on the windshield, signal lights ahead, cinematic photorealistic, dramatic lighting, rich detail, documentary style, 16:9 widescreen --ar 16:9
@@ -473,7 +481,7 @@ A tired train driver in the cab at night, rain on the windshield, signal lights 
 
 **Sprechtext:** Kurze Frage an dich: Wem gibst du die Schuld, wenn dein Zug zu spät kommt? Dem Lokführer?
 
-### Bild 56 · 6:23 · ca. 6 Sek.
+### Bild 57 · 6:23 · ca. 6 Sek.
 
 ```text
 A train attendant surrounded by angry passengers inside a train, staying calm, tense atmosphere, cinematic photorealistic, dramatic lighting, rich detail, documentary style, 16:9 widescreen --ar 16:9
@@ -481,7 +489,7 @@ A train attendant surrounded by angry passengers inside a train, staying calm, t
 
 **Sprechtext:** Dem Zugbegleiter? Die meisten Menschen tun das. Und das ist ein riesiges Missverständnis.
 
-### Bild 57 · 6:29 · ca. 7 Sek.
+### Bild 58 · 6:29 · ca. 7 Sek.
 
 ```text
 A nearly empty training room for train drivers with simulators, only a few trainees, quiet, cinematic photorealistic, dramatic lighting, rich detail, documentary style, 16:9 widescreen --ar 16:9
@@ -489,7 +497,7 @@ A nearly empty training room for train drivers with simulators, only a few train
 
 **Sprechtext:** Die Bahn hat, wie viele Branchen in Deutschland, ein massives Personalproblem. Es fehlen Lokführer, Fahrdienstleiter und Techniker.
 
-### Bild 58 · 6:36 · ca. 9 Sek.
+### Bild 59 · 6:36 · ca. 9 Sek.
 
 ```text
 Close-up of an experienced railway worker's wrinkled hands on old control levers, warm light, cinematic photorealistic, dramatic lighting, rich detail, documentary style, 16:9 widescreen --ar 16:9
@@ -497,7 +505,7 @@ Close-up of an experienced railway worker's wrinkled hands on old control levers
 
 **Sprechtext:** Ein Fahrdienstleiter in einem alten Stellwerk muss genau dieses Stellwerk kennen. Jede Weiche, jedes Signal. Das lernt man nicht in einer Woche.
 
-### Bild 59 · 6:46 · ca. 9 Sek.
+### Bild 60 · 6:46 · ca. 9 Sek.
 
 ```text
 A train attendant alone in an empty train corridor after a long shift, exhausted, dim lights, cinematic photorealistic, dramatic lighting, rich detail, documentary style, 16:9 widescreen --ar 16:9
@@ -505,7 +513,7 @@ A train attendant alone in an empty train corridor after a long shift, exhausted
 
 **Sprechtext:** Und die Zugbegleiter bekommen den ganzen Frust ab – obwohl sie selbst oft keine besseren Informationen haben als die Fahrgäste.
 
-### Bild 60 · 6:54 · ca. 5 Sek.
+### Bild 61 · 6:54 · ca. 5 Sek.
 
 ```text
 A fallen tree lying on an overhead railway power line after a storm, workers in helmets inspecting, grey sky, cinematic photorealistic, dramatic lighting, rich detail, documentary style, 16:9 widescreen --ar 16:9
@@ -513,7 +521,7 @@ A fallen tree lying on an overhead railway power line after a storm, workers in 
 
 **Sprechtext:** Dazu kommen äußere Faktoren. Stürme, die Bäume auf die Oberleitung werfen.
 
-### Bild 61 · 6:59 · ca. 2 Sek.
+### Bild 62 · 6:59 · ca. 2 Sek.
 
 ```text
 Railway tracks shimmering in extreme summer heat with heat haze over the rails, bright sun, cinematic photorealistic, dramatic lighting, rich detail, documentary style, 16:9 widescreen --ar 16:9
@@ -521,7 +529,7 @@ Railway tracks shimmering in extreme summer heat with heat haze over the rails, 
 
 **Sprechtext:** Hitze, die Gleise verformt.
 
-### Bild 62 · 7:01 · ca. 4 Sek.
+### Bild 63 · 7:01 · ca. 4 Sek.
 
 ```text
 A cut copper cable in a railway cable trench at night lit by a flashlight beam, crime scene mood, cinematic photorealistic, dramatic lighting, rich detail, documentary style, 16:9 widescreen --ar 16:9
@@ -529,7 +537,7 @@ A cut copper cable in a railway cable trench at night lit by a flashlight beam, 
 
 **Sprechtext:** Kabeldiebe, die Kupferkabel klauen und damit ganze Signalanlagen lahmlegen.
 
-### Bild 63 · 7:05 · ca. 9 Sek.
+### Bild 64 · 7:05 · ca. 9 Sek.
 
 ```text
 A railway network map printed on a stretched rubber band that is about to snap, conceptual photograph, cinematic photorealistic, dramatic lighting, rich detail, documentary style, 16:9 widescreen --ar 16:9
@@ -539,7 +547,7 @@ A railway network map printed on a stretched rubber band that is about to snap, 
 
 ## DAS DEUTSCHLANDTICKET
 
-### Bild 64 · 7:14 · ca. 5 Sek.
+### Bild 65 · 7:14 · ca. 5 Sek.
 
 ```text
 A hand holding a smartphone showing a digital monthly train ticket with a QR code, train platform in the background, cinematic photorealistic, dramatic lighting, rich detail, documentary style, 16:9 widescreen --ar 16:9
@@ -547,7 +555,7 @@ A hand holding a smartphone showing a digital monthly train ticket with a QR cod
 
 **Sprechtext:** Und dann kam 2023 etwas, das ganz Europa aufhorchen ließ: das Deutschlandticket.
 
-### Bild 65 · 7:19 · ca. 9 Sek.
+### Bild 66 · 7:19 · ca. 9 Sek.
 
 ```text
 A happy family with children and backpacks boarding a regional train for a summer day trip, cinematic photorealistic, dramatic lighting, rich detail, documentary style, 16:9 widescreen --ar 16:9
@@ -555,7 +563,7 @@ A happy family with children and backpacks boarding a regional train for a summe
 
 **Sprechtext:** Ein einziges Monatsticket für den gesamten Nah- und Regionalverkehr in ganz Deutschland. Zum Start für 49 Euro im Monat, inzwischen teurer.
 
-### Bild 66 · 7:28 · ca. 7 Sek.
+### Bild 67 · 7:28 · ca. 7 Sek.
 
 ```text
 A smiling commuter with a coffee cup on a morning platform, relaxed, cinematic photorealistic, dramatic lighting, rich detail, documentary style, 16:9 widescreen --ar 16:9
@@ -563,7 +571,7 @@ A smiling commuter with a coffee cup on a morning platform, relaxed, cinematic p
 
 **Sprechtext:** Für Millionen Menschen war das eine echte Entlastung. Manche Pendler sparten über hundert Euro im Monat.
 
-### Bild 67 · 7:35 · ca. 7 Sek.
+### Bild 68 · 7:35 · ca. 7 Sek.
 
 ```text
 An overcrowded regional train in summer with people standing tightly and bicycles in the aisle, cinematic photorealistic, dramatic lighting, rich detail, documentary style, 16:9 widescreen --ar 16:9
@@ -571,7 +579,7 @@ An overcrowded regional train in summer with people standing tightly and bicycle
 
 **Sprechtext:** Aber genau hier zeigt sich das Problem. Mehr Fahrgäste brauchen mehr Züge, mehr Personal und mehr Gleise.
 
-### Bild 68 · 7:42 · ca. 6 Sek.
+### Bild 69 · 7:42 · ca. 6 Sek.
 
 ```text
 Disappointed passengers left behind on a platform as a full train departs, summer evening, cinematic photorealistic, dramatic lighting, rich detail, documentary style, 16:9 widescreen --ar 16:9
@@ -579,7 +587,7 @@ Disappointed passengers left behind on a platform as a full train departs, summe
 
 **Sprechtext:** Im Sommer waren manche Regionalzüge so voll, dass Menschen am Bahnsteig zurückbleiben mussten.
 
-### Bild 69 · 7:47 · ca. 10 Sek.
+### Bild 70 · 7:47 · ca. 10 Sek.
 
 ```text
 A giant funnel with crowds of people pouring in at the top and only a thin stream coming out at the bottom onto train tracks, conceptual, cinematic photorealistic, dramatic lighting, rich detail, documentary style, 16:9 widescreen --ar 16:9
@@ -589,7 +597,7 @@ A giant funnel with crowds of people pouring in at the top and only a thin strea
 
 ## DIE RETTUNG?
 
-### Bild 70 · 7:57 · ca. 7 Sek.
+### Bild 71 · 7:57 · ca. 7 Sek.
 
 ```text
 A massive railway construction site at night under floodlights, excavators and workers in orange vests renewing the tracks, cinematic photorealistic, dramatic lighting, rich detail, documentary style, 16:9 widescreen --ar 16:9
@@ -597,7 +605,7 @@ A massive railway construction site at night under floodlights, excavators and w
 
 **Sprechtext:** Gibt es Hoffnung? Ja. Aber sie wird erst mal wehtun. Seit 2024 läuft die sogenannte Generalsanierung.
 
-### Bild 71 · 8:04 · ca. 7 Sek.
+### Bild 72 · 8:04 · ca. 7 Sek.
 
 ```text
 Aerial view of a long railway corridor completely under construction with new tracks being laid, daylight, cinematic photorealistic, dramatic lighting, rich detail, documentary style, 16:9 widescreen --ar 16:9
@@ -605,7 +613,7 @@ Aerial view of a long railway corridor completely under construction with new tr
 
 **Sprechtext:** Den Anfang machte die Riedbahn zwischen Frankfurt und Mannheim. Eine der meistbefahrenen Strecken Deutschlands. Monatelang komplett gesperrt.
 
-### Bild 72 · 8:11 · ca. 10 Sek.
+### Bild 73 · 8:11 · ca. 10 Sek.
 
 ```text
 A row of replacement buses lined up in front of a train station, passengers boarding in the morning, cinematic photorealistic, dramatic lighting, rich detail, documentary style, 16:9 widescreen --ar 16:9
@@ -613,7 +621,7 @@ A row of replacement buses lined up in front of a train station, passengers boar
 
 **Sprechtext:** Insgesamt sollen über 40 wichtige Strecken nach und nach saniert werden. Für die nächsten Jahre heißt das: viele Sperrungen und viel Ersatzverkehr mit Bussen.
 
-### Bild 73 · 8:22 · ca. 10 Sek.
+### Bild 74 · 8:22 · ca. 10 Sek.
 
 ```text
 The German parliament building in Berlin with its glass dome at dusk, dramatic sky, cinematic photorealistic, dramatic lighting, rich detail, documentary style, 16:9 widescreen --ar 16:9
@@ -621,7 +629,7 @@ The German parliament building in Berlin with its glass dome at dusk, dramatic s
 
 **Sprechtext:** Und 2025 hat der Bundestag ein riesiges Sondervermögen für Infrastruktur beschlossen. 500 Milliarden Euro – ein Teil davon ist für die Schiene gedacht.
 
-### Bild 74 · 8:32 · ca. 9 Sek.
+### Bild 75 · 8:32 · ca. 9 Sek.
 
 ```text
 A modern high-speed train driver's cab with digital screens showing signal information instead of trackside lights, futuristic but realistic, cinematic photorealistic, dramatic lighting, rich detail, documentary style, 16:9 widescreen --ar 16:9
@@ -629,7 +637,7 @@ A modern high-speed train driver's cab with digital screens showing signal infor
 
 **Sprechtext:** Dazu kommt die Digitalisierung. Digitale Stellwerke und das europäische Zugsicherungssystem ETCS sollen dafür sorgen, dass mehr Züge auf dieselben Gleise passen.
 
-### Bild 75 · 8:41 · ca. 9 Sek.
+### Bild 76 · 8:41 · ca. 9 Sek.
 
 ```text
 Brand new shiny railway tracks leading straight into a glowing sunrise, hopeful, cinematic photorealistic, dramatic lighting, rich detail, documentary style, 16:9 widescreen --ar 16:9
@@ -639,7 +647,7 @@ Brand new shiny railway tracks leading straight into a glowing sunrise, hopeful,
 
 ## OUTRO
 
-### Bild 76 · 8:50 · ca. 8 Sek.
+### Bild 77 · 8:50 · ca. 8 Sek.
 
 ```text
 An elderly woman sitting patiently on a platform bench with a thermos flask, smiling calmly, autumn light, cinematic photorealistic, dramatic lighting, rich detail, documentary style, 16:9 widescreen --ar 16:9
@@ -647,7 +655,7 @@ An elderly woman sitting patiently on a platform bench with a thermos flask, smi
 
 **Sprechtext:** Die Bahn ist also nicht unpünktlich, weil die Lokführer faul sind oder weil die Deutschen es nicht können.
 
-### Bild 77 · 8:58 · ca. 12 Sek.
+### Bild 78 · 8:58 · ca. 12 Sek.
 
 ```text
 A layered cinematic composition of an abandoned track, an old signal box lever and a crowded train fading into each other, cinematic photorealistic, dramatic lighting, rich detail, documentary style, 16:9 widescreen --ar 16:9
@@ -655,7 +663,7 @@ A layered cinematic composition of an abandoned track, an old signal box lever a
 
 **Sprechtext:** Sie ist unpünktlich, weil jahrzehntelang zu wenig investiert wurde. Weil Gleise für einen Börsengang abgebaut wurden, der nie stattfand. Und weil zu viele Züge auf zu wenig Gleis fahren.
 
-### Bild 78 · 9:10 · ca. 11 Sek.
+### Bild 79 · 9:10 · ca. 11 Sek.
 
 ```text
 A passenger smiling ironically under a departure board showing a 20 minute delay at sunset, cinematic photorealistic, dramatic lighting, rich detail, documentary style, 16:9 widescreen --ar 16:9
@@ -663,7 +671,7 @@ A passenger smiling ironically under a departure board showing a 20 minute delay
 
 **Sprechtext:** Wenn du also das nächste Mal auf dem Bahnsteig stehst und da „plus 20 Minuten“ steht, weißt du: Das ist die Rechnung für 30 Jahre Sparen.
 
-### Bild 79 · 9:21 · ca. 11 Sek.
+### Bild 80 · 9:21 · ca. 11 Sek.
 
 ```text
 Close-up of a smartphone showing a refund form next to a paper train ticket on a café table, cinematic photorealistic, dramatic lighting, rich detail, documentary style, 16:9 widescreen --ar 16:9
@@ -671,7 +679,7 @@ Close-up of a smartphone showing a refund form next to a paper train ticket on a
 
 **Sprechtext:** Und noch ein Tipp, den viele nicht kennen: Ab 60 Minuten Verspätung bekommst du 25 Prozent deines Fahrpreises zurück. Ab 120 Minuten sogar die Hälfte.
 
-### Bild 80 · 9:32 · ca. 11 Sek.
+### Bild 81 · 9:32 · ca. 11 Sek.
 
 ```text
 A smiling passenger at a station holding a train ticket in one hand and a few euro coins in the other, cinematic photorealistic, dramatic lighting, rich detail, documentary style, 16:9 widescreen --ar 16:9
@@ -679,7 +687,7 @@ A smiling passenger at a station holding a train ticket in one hand and a few eu
 
 **Sprechtext:** Das Geld kommt aber nicht von allein. Du musst es beantragen – online oder in der App. Viele Menschen verschenken so jedes Jahr bares Geld.
 
-### Bild 81 · 9:43 · ca. 11 Sek.
+### Bild 82 · 9:43 · ca. 11 Sek.
 
 ```text
 A high-speed train finally arriving at a platform at sunset in golden light, relieved passengers, cinematic photorealistic, dramatic lighting, rich detail, documentary style, 16:9 widescreen --ar 16:9
@@ -687,7 +695,7 @@ A high-speed train finally arriving at a platform at sunset in golden light, rel
 
 **Sprechtext:** Und jetzt will ich es wissen: Was war deine längste Verspätung mit der Bahn? Schreib es in die Kommentare. Die verrückteste Geschichte pinne ich oben an.
 
-### Bild 82 · 9:54 · ca. 6 Sek.
+### Bild 83 · 9:54 · ca. 6 Sek.
 
 ```text
 A commuter on a morning platform laughing while showing his phone to a frustrated colleague, light humor, cinematic photorealistic, dramatic lighting, rich detail, documentary style, 16:9 widescreen --ar 16:9
@@ -695,7 +703,7 @@ A commuter on a morning platform laughing while showing his phone to a frustrate
 
 **Sprechtext:** Und schick dieses Video der einen Person, die sich jeden Morgen über die Bahn aufregt.
 
-### Bild 83 · 10:00 · ca. 11 Sek.
+### Bild 84 · 10:00 · ca. 11 Sek.
 
 ```text
 A Japanese bullet train speeding past Mount Fuji with cherry blossoms in the foreground, sharp and clean, cinematic photorealistic, dramatic lighting, rich detail, documentary style, 16:9 widescreen --ar 16:9
@@ -753,4 +761,4 @@ Die Bahn ist also nicht unpünktlich, weil die Lokführer faul sind oder weil di
 
 **Tags:** deutsche bahn verspätung, warum ist die bahn zu spät, bahnreform 1994, schweiz bahn, stellwerk, generalsanierung, riedbahn, deutschlandticket, infrastruktur deutschland, doku deutsch
 
-**Shorts-Schnitte:** Bild 01–07 (Schweiz-Hook) · Bild 08–15 („5:59 = pünktlich“) · Bild 29–37 (Kaiserzeit-Stellwerke)
+**Shorts-Schnitte:** Bild 01–07 (Schweiz-Hook) · Bild 08–16 („5:59 = pünktlich“) · Bild 30–38 (Kaiserzeit-Stellwerke)

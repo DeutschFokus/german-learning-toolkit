@@ -13,7 +13,7 @@ A 1923 German man in a worn coat pushing a wheelbarrow overflowing with banknote
 
 **Hinweis:** Dieses Video ist die Fortsetzung, die in Skript 2 am Ende angekündigt wird. Bei den Bildern zum Putsch in München kurz prüfen, dass keine NS-Symbole drauf sind (Demonetarisierung, in Deutschland zusätzlich rechtlich heikel) – die Prompts sind bewusst neutral formuliert.
 
-**87 Bilder · ca. 1.581 Wörter Sprechtext · ca. 11,3 Min.** (ruhiges Doku-Tempo, 140 Wörter/Min.)
+**89 Bilder · ca. 1.581 Wörter Sprechtext · ca. 11,3 Min.** (ruhiges Doku-Tempo, 140 Wörter/Min.)
 
 So gehst du vor: Prompt kopieren → Bild generieren → im Schnitt jedes Bild so lange zeigen, wie du den Sprechtext darunter sprichst. Jeder Prompt endet mit `--ar 16:9` (Midjourney-Format) – in anderen Tools stört das nicht, dort einfach 16:9 einstellen. Ganz unten steht der komplette Sprechtext am Stück zum Einsprechen.
 
@@ -601,15 +601,23 @@ A modern German grandmother counting cash from her wallet at a supermarket check
 
 **Sprechtext:** Hast du dich mal gefragt, warum so viele Deutsche bis heute lieber bar bezahlen? Und warum das Wort „Inflation“ hier so viel Angst macht?
 
-### Bild 71 · 8:46 · ca. 13 Sek.
+### Bild 71 · 8:46 · ca. 9 Sek.
 
 ```text
 The modern European Central Bank tower in Frankfurt at dusk with the city lights, cinematic, cinematic photorealistic, dramatic lighting, subtle film grain, rich detail, documentary style, 16:9 widescreen --ar 16:9
 ```
 
-**Sprechtext:** Das hat viel mit 1923 zu tun. Nach dem Zweiten Weltkrieg wurde die Notenbank in Deutschland bewusst unabhängig von der Politik gemacht. Keine Regierung sollte je wieder einfach Geld drucken können.
+**Sprechtext:** Das hat viel mit 1923 zu tun. Nach dem Zweiten Weltkrieg wurde die Notenbank in Deutschland bewusst unabhängig von der Politik gemacht.
 
-### Bild 72 · 9:00 · ca. 9 Sek.
+### Bild 72 · 8:56 · ca. 4 Sek.
+
+```text
+An old banknote printing press locked with a heavy chain and padlock in a quiet museum hall, dramatic light, cinematic photorealistic, dramatic lighting, subtle film grain, rich detail, documentary style, 16:9 widescreen --ar 16:9
+```
+
+**Sprechtext:** Keine Regierung sollte je wieder einfach Geld drucken können.
+
+### Bild 73 · 9:00 · ca. 9 Sek.
 
 ```text
 Politicians and economists in the 1990s negotiating at a long table with documents and euro coin designs, serious atmosphere, cinematic photorealistic, dramatic lighting, subtle film grain, rich detail, documentary style, 16:9 widescreen --ar 16:9
@@ -617,7 +625,7 @@ Politicians and economists in the 1990s negotiating at a long table with documen
 
 **Sprechtext:** Und als der Euro kam, bestand Deutschland darauf, dass auch die Europäische Zentralbank unabhängig ist und stabile Preise an erster Stelle stehen.
 
-### Bild 73 · 9:09 · ca. 9 Sek.
+### Bild 74 · 9:09 · ca. 9 Sek.
 
 ```text
 Shocked shoppers looking at price tags in a bright modern German supermarket in 2022, cinematic photorealistic, dramatic lighting, subtle film grain, rich detail, documentary style, 16:9 widescreen --ar 16:9
@@ -627,7 +635,7 @@ Shocked shoppers looking at price tags in a bright modern German supermarket in 
 
 ## KÖNNTE DAS WIEDER PASSIEREN?
 
-### Bild 74 · 9:18 · ca. 4 Sek.
+### Bild 75 · 9:18 · ca. 4 Sek.
 
 ```text
 Split composition comparing a 1923 street with piles of banknotes on the left and a modern German street with people paying by card on the right, cinematic photorealistic, dramatic lighting, subtle film grain, rich detail, documentary style, 16:9 widescreen --ar 16:9
@@ -635,7 +643,7 @@ Split composition comparing a 1923 street with piles of banknotes on the left an
 
 **Sprechtext:** Also: Könnte das heute wieder passieren? Lass uns ehrlich vergleichen.
 
-### Bild 75 · 9:22 · ca. 10 Sek.
+### Bild 76 · 9:22 · ca. 10 Sek.
 
 ```text
 A modern price tag with a small red arrow next to a yellowed 1923 price tag with an absurdly long number, side by side, cinematic photorealistic, dramatic lighting, subtle film grain, rich detail, documentary style, 16:9 widescreen --ar 16:9
@@ -643,7 +651,7 @@ A modern price tag with a small red arrow next to a yellowed 1923 price tag with
 
 **Sprechtext:** 2022 lag die Inflation bei knapp sieben Prozent. Im ganzen Jahr. Im Oktober 1923 lag sie bei fast 30.000 Prozent. In einem einzigen Monat.
 
-### Bild 76 · 9:33 · ca. 8 Sek.
+### Bild 77 · 9:33 · ca. 8 Sek.
 
 ```text
 A man in Zimbabwe holding a thick stack of banknotes with huge denominations in front of an almost empty shop, documentary photograph, cinematic photorealistic, dramatic lighting, subtle film grain, rich detail, documentary style, 16:9 widescreen --ar 16:9
@@ -651,7 +659,7 @@ A man in Zimbabwe holding a thick stack of banknotes with huge denominations in 
 
 **Sprechtext:** Hyperinflation gibt es aber bis heute. In Simbabwe wurde 2009 sogar ein Schein über 100 Billionen Dollar gedruckt.
 
-### Bild 77 · 9:40 · ca. 7 Sek.
+### Bild 78 · 9:40 · ca. 7 Sek.
 
 ```text
 People standing in a long line in front of a supermarket in Venezuela in hot daylight, documentary photograph, cinematic photorealistic, dramatic lighting, subtle film grain, rich detail, documentary style, 16:9 widescreen --ar 16:9
@@ -659,7 +667,7 @@ People standing in a long line in front of a supermarket in Venezuela in hot day
 
 **Sprechtext:** In Venezuela mussten Menschen vor wenigen Jahren Berge von Geldscheinen tragen, um ein einziges Huhn zu kaufen.
 
-### Bild 78 · 9:48 · ca. 6 Sek.
+### Bild 79 · 9:48 · ca. 6 Sek.
 
 ```text
 Street cleaners sweeping worthless banknotes from a Budapest street like garbage in 1946, black and white archival photo look, cinematic photorealistic, dramatic lighting, subtle film grain, rich detail, documentary style, 16:9 widescreen --ar 16:9
@@ -667,15 +675,23 @@ Street cleaners sweeping worthless banknotes from a Budapest street like garbage
 
 **Sprechtext:** Und der absolute Rekord? Ungarn 1946. Dort verdoppelten sich die Preise etwa alle 15 Stunden.
 
-### Bild 79 · 9:54 · ca. 13 Sek.
+### Bild 80 · 9:54 · ca. 9 Sek.
 
 ```text
 Economists discussing charts in a modern central bank meeting room, serious atmosphere, cool light, cinematic photorealistic, dramatic lighting, subtle film grain, rich detail, documentary style, 16:9 widescreen --ar 16:9
 ```
 
-**Sprechtext:** Die gute Nachricht: In Deutschland und im Euroraum sind die Bedingungen heute ganz anders. Unabhängige Zentralbank, eine starke Wirtschaft, kein verlorener Weltkrieg. Eine Hyperinflation wie 1923 gilt als extrem unwahrscheinlich.
+**Sprechtext:** Die gute Nachricht: In Deutschland und im Euroraum sind die Bedingungen heute ganz anders. Unabhängige Zentralbank, eine starke Wirtschaft, kein verlorener Weltkrieg.
 
-### Bild 80 · 10:07 · ca. 11 Sek.
+### Bild 81 · 10:03 · ca. 3 Sek.
+
+```text
+A calm modern German shopping street on a sunny day with relaxed people shopping and paying by card, cinematic photorealistic, dramatic lighting, subtle film grain, rich detail, documentary style, 16:9 widescreen --ar 16:9
+```
+
+**Sprechtext:** Eine Hyperinflation wie 1923 gilt als extrem unwahrscheinlich.
+
+### Bild 82 · 10:07 · ca. 11 Sek.
 
 ```text
 A modern piggy bank slowly shrinking under a magnifying glass, conceptual, soft light, cinematic photorealistic, dramatic lighting, subtle film grain, rich detail, documentary style, 16:9 widescreen --ar 16:9
@@ -685,7 +701,7 @@ A modern piggy bank slowly shrinking under a magnifying glass, conceptual, soft 
 
 ## DIE LEHRE AUS 1923
 
-### Bild 81 · 10:18 · ca. 3 Sek.
+### Bild 83 · 10:18 · ca. 3 Sek.
 
 ```text
 An old man passing a small wooden box to his grandson in a warm living room, emotional, golden light, cinematic photorealistic, dramatic lighting, subtle film grain, rich detail, documentary style, 16:9 widescreen --ar 16:9
@@ -693,7 +709,7 @@ An old man passing a small wooden box to his grandson in a warm living room, emo
 
 **Sprechtext:** Was können wir also aus 1923 lernen?
 
-### Bild 82 · 10:21 · ca. 9 Sek.
+### Bild 84 · 10:21 · ca. 9 Sek.
 
 ```text
 A paper banknote floating in the air above an open hand with light shining through it, conceptual, cinematic photorealistic, dramatic lighting, subtle film grain, rich detail, documentary style, 16:9 widescreen --ar 16:9
@@ -701,7 +717,7 @@ A paper banknote floating in the air above an open hand with light shining throu
 
 **Sprechtext:** Erstens: Geld ist am Ende nur Papier. Sein Wert hängt allein am Vertrauen, dass andere es morgen auch noch annehmen.
 
-### Bild 83 · 10:29 · ca. 11 Sek.
+### Bild 85 · 10:29 · ca. 11 Sek.
 
 ```text
 A craftsman teaching an apprentice in a sunny workshop, both focused on the work, cinematic photorealistic, dramatic lighting, subtle film grain, rich detail, documentary style, 16:9 widescreen --ar 16:9
@@ -709,7 +725,7 @@ A craftsman teaching an apprentice in a sunny workshop, both focused on the work
 
 **Sprechtext:** Zweitens: Was dir niemand nehmen kann, ist das, was du weißt und kannst. Viele, die 1923 alles verloren hatten, fingen mit ihren Fähigkeiten wieder neu an.
 
-### Bild 84 · 10:40 · ca. 11 Sek.
+### Bild 86 · 10:40 · ca. 11 Sek.
 
 ```text
 A family planting crops on their own small field at sunrise, 1920s clothing, hopeful mood, cinematic photorealistic, dramatic lighting, subtle film grain, rich detail, documentary style, 16:9 widescreen --ar 16:9
@@ -719,7 +735,7 @@ A family planting crops on their own small field at sunrise, 1920s clothing, hop
 
 ## OUTRO
 
-### Bild 85 · 10:51 · ca. 8 Sek.
+### Bild 87 · 10:51 · ca. 8 Sek.
 
 ```text
 The single loaf of rye bread from the beginning on a bakery counter, now with a small simple price tag, warm hopeful light, cinematic photorealistic, dramatic lighting, subtle film grain, rich detail, documentary style, 16:9 widescreen --ar 16:9
@@ -727,7 +743,7 @@ The single loaf of rye bread from the beginning on a bakery counter, now with a 
 
 **Sprechtext:** Ein Brot für über 200 Milliarden Mark. Klingt heute wie ein Witz. Für Millionen Menschen war es bittere Realität.
 
-### Bild 86 · 10:59 · ca. 8 Sek.
+### Bild 88 · 10:59 · ca. 8 Sek.
 
 ```text
 A person typing a comment on a smartphone in a cozy living room, warm lamp light, cinematic photorealistic, dramatic lighting, subtle film grain, rich detail, documentary style, 16:9 widescreen --ar 16:9
@@ -735,7 +751,7 @@ A person typing a comment on a smartphone in a cozy living room, warm lamp light
 
 **Sprechtext:** Schreib in die Kommentare: Hast du von deinen Großeltern oder Urgroßeltern Geschichten aus dieser Zeit gehört? Ich bin gespannt.
 
-### Bild 87 · 11:07 · ca. 10 Sek.
+### Bild 89 · 11:07 · ca. 10 Sek.
 
 ```text
 Banknotes lying in the gutter of a Budapest street in 1946, black and white archival photo look, cliffhanger mood, cinematic photorealistic, dramatic lighting, subtle film grain, rich detail, documentary style, 16:9 widescreen --ar 16:9
