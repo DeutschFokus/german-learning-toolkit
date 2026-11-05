@@ -10,8 +10,14 @@
 | 6 | [So dachten die reichsten Händler der Geschichte](06-reichste-haendler.md) | 80 | 7,4 s | ~9:48 |
 | 7 | [Konzentration in 30 Tagen zurücktrainieren](07-konzentration-30-tage.md) | 74 | 7,8 s | ~9:40 |
 | 8 | [Warum das deutsche Internet so langsam ist](08-deutsches-internet.md) | 75 | 7,8 s | ~9:44 |
+| 9 | [Ibn Battuta: 24 Jahre unterwegs](09-ibn-battuta.md) | 76 | 7,6 s | ~9:36 |
+| 10 | [Geld ohne Zinsen: islamisches Finanzwesen](10-islamische-finanzierung.md) | 80 | 7,4 s | ~9:55 |
+| 11 | [Wie Kinder 600 Seiten auswendig lernen](11-hafiz-gedaechtnis.md) | 78 | 7,4 s | ~9:35 |
+| 12 | [Warum die Deutschen ihr Bargeld so lieben](12-bargeld-1923.md) | 73 | 7,8 s | ~9:33 |
 
 Die Skripte 5–8 sind die Folgevideos, die in den Outros von 1–4 angekündigt werden (1→5, 2→6, 3→7, 4→8). Jedes Folgevideo kündigt im Outro schon das nächste Thema an: Ibn Battuta, islamische Finanzierung ohne Zinsen, Gedächtnistechniken der Koran-Hafiz und die Bargeld-Liebe der Deutschen.
+
+Die Skripte 9–12 sind genau diese Themen (5→9, 6→10, 7→11, 8→12). Ihre Outros kündigen wiederum an: Zheng He, den muslimischen Admiral aus China, Zakat richtig berechnen, Schlaf als Lernhack und warum so viele Deutsche zur Miete wohnen.
 
 \*Gemessen bei 135 Wörtern/Min. (ruhige Doku-Stimme). Bei einer schnelleren KI-Stimme werden die Bilder kürzer und das Video kürzer. Dann zwischen den Abschnitten kurze Pausen lassen, damit es über 8 Minuten bleibt (Mid-Roll-Werbung).
 
