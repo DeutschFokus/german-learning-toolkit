@@ -1,12 +1,14 @@
 # YouTube-Skripte (Edutainment, Deutsch, 16:9, nur Bilder)
 
-| # | Datei | Thema | Hook-Typ |
-|---|-------|-------|----------|
-| 1 | `01-haus-der-weisheit.md` | Islamisches Goldenes Zeitalter – Erfindungen aus Bagdad & Andalusien | „Du benutzt es gerade jetzt“ + offene Schleife bis zum Ende |
-| 2 | `02-reiches-land-arme-deutsche.md` | Warum Deutsche weniger Vermögen haben als Italiener | Paradox + Nationalstolz-Trigger |
-| 3 | `03-supermarkt-psychologie.md` | 9 Psycho-Tricks im Supermarkt | Persönliche Alltagsszene + „beim letzten ärgerst du dich“ |
-| 4 | `04-deutsche-bahn.md` | Warum die Bahn nie pünktlich ist | Schockfakt (Schweiz stoppt deutsche Züge) |
+Jede Datei ist Bild für Bild aufgebaut: ein fertiger Bild-Prompt zum Kopieren (Stil und 16:9 sind schon drin) und genau der Sprechtext, den du sprichst, während dieses Bild zu sehen ist. Am Ende jeder Datei steht der komplette Sprechtext am Stück zum Einsprechen, danach Beschreibung, Tags und Shorts-Schnitte.
 
-Jedes Skript: ~1.300–1.350 Wörter Sprechertext (≈ 9:20–9:40 Min. bei 140 Wörtern/Min.), Bildprompts pro Szene, On-Screen-Text, Titel-Varianten, Thumbnail-Idee, SEO-Beschreibung, Tags, Shorts-Schnittpunkte.
+| # | Datei | Thema | Bilder | Länge |
+|---|-------|-------|--------|-------|
+| 1 | `01-haus-der-weisheit.md` | Erfindungen aus der islamischen Welt (Bagdad, Andalusien, Fès) | 88 | ca. 10,5 Min. |
+| 2 | `02-reiches-land-arme-deutsche.md` | Warum Deutsche weniger Vermögen haben als Italiener | 85 | ca. 10,2 Min. |
+| 3 | `03-supermarkt-psychologie.md` | 9 Psycho-Tricks im Supermarkt | 84 | ca. 10,2 Min. |
+| 4 | `04-deutsche-bahn.md` | Warum die Bahn nie pünktlich ist | 83 | ca. 10,2 Min. |
 
-Produktion: Sprechertext in TTS/Voiceover, je Bild 15–25 Sek. mit Ken-Burns-Zoom, Hook-Bilder schneller (3–5 Sek.). Zahlen vor dem Upload auf den neuesten Stand prüfen.
+Längen bei ruhigem Doku-Tempo (140 Wörter/Min.). Auch mit einer schnelleren TTS-Stimme (ca. 155 Wörter/Min.) bleibt jedes Video über 9 Minuten.
+
+Jeder Prompt endet mit `--ar 16:9` (Midjourney). In ChatGPT, Leonardo, Ideogram usw. stört das nicht – dort einfach 16:9 als Format einstellen.
