@@ -9,6 +9,7 @@ Jede Datei ist Bild für Bild aufgebaut: ein fertiger Bild-Prompt zum Kopieren (
 | 3 | `03-supermarkt-psychologie.md` | 9 Psycho-Tricks im Supermarkt | 84 | ca. 10,2 Min. |
 | 4 | `04-deutsche-bahn.md` | Warum die Bahn nie pünktlich ist | 83 | ca. 10,2 Min. |
 | 5 | `05-hyperinflation-1923.md` | Hyperinflation 1923 – als ein Brot 200 Milliarden Mark kostete (Fortsetzung von Skript 2) | 87 | ca. 11,3 Min. |
+| 6 | `06-ungarn-1946.md` | Ungarn 1946 – die schlimmste Inflation der Geschichte (Fortsetzung von Skript 5) | 80 | ca. 10,7 Min. |
 
 Längen bei ruhigem Doku-Tempo (140 Wörter/Min.). Auch mit einer schnelleren TTS-Stimme (ca. 155 Wörter/Min.) bleibt jedes Video über 9 Minuten.
 
