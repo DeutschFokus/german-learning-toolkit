@@ -1,6 +1,6 @@
 # Virale Edutainment-Skripte (Deutsch, 16:9, nur Bilder)
 
-Format für alle 4 Skripte: Jede Szene = 1 Bild (Ken-Burns-Zoom/Pan im Schnitt). `[BILD]` = Bild-Prompt für Midjourney/Flux/Leonardo, darunter der Sprechertext. Sprechtempo ca. 145–150 Wörter/Min. → jedes Skript ca. 9–10 Min.
+Format für alle 4 Skripte: Jede Szene = 1 Bild (Ken-Burns-Zoom/Pan im Schnitt). `[BILD]` = Bild-Prompt für Midjourney/Flux/Leonardo, darunter der Sprechertext. Sprechtempo ca. 135 Wörter/Min. (ruhige Doku-Stimme mit Pausen) → jedes Skript ca. 9–11 Min. Bei schnellerer Stimme die Pausen zwischen den Bildern verlängern.
 
 Bildstil-Tipp für alle: „cinematic, dramatic lighting, 16:9, hyper-detailed, muted colors with one strong accent color“. Keine Gesichter von Propheten, keine freizügigen Bilder, keine Musik nötig (Ambient-Sounds oder Nasheed-freie Soundscapes reichen).
 
@@ -85,6 +85,18 @@ Und jetzt Person Nummer sechs. Der, den ich dir am Anfang versprochen habe. Al-D
 
 Seine Wasserpumpe nutzte ein Prinzip, bei dem eine Drehbewegung in eine Hin-und-Her-Bewegung umgewandelt wird, ein Vorläufer der Kurbelmechanik. Genau dieses Prinzip steckt bis heute in Motoren und Maschinen. Wenn du also heute Auto oder Bus fährst, dann sitzt du auf einer Idee, die schon in diesem Buch vor über 800 Jahren beschrieben wurde.
 
+**[BILD 18a]** Eine riesige silberne Weltkarte auf einem Tisch in einem normannischen Palast auf Sizilien, der Süden ist oben.
+
+Und bevor wir zur großen Frage kommen, noch drei Bonus-Geschichten, die fast niemand kennt. Bonus Nummer eins: Im Jahr 1154 erstellt der Gelehrte al-Idrisi im Auftrag des christlichen Königs Roger II. von Sizilien eine Weltkarte. Er sammelt dafür jahrelang Berichte von Reisenden, Händlern und Seeleuten. Das Ergebnis gehört zu den genauesten Weltkarten des gesamten Mittelalters. Ein Muslim und ein christlicher König, die zusammen die Welt vermessen. Und das Verrückte: Auf seiner Karte ist der Süden oben.
+
+**[BILD 18b]** Eine Frau in einer Werkstatt in Aleppo, sie graviert feine Linien in ein goldenes Astrolabium.
+
+Bonus Nummer zwei: Mariam al-Asturlabi. Im 10. Jahrhundert baut sie in Aleppo Astrolabien, also Instrumente, mit denen man die Position der Sterne bestimmen, die Uhrzeit berechnen und die Gebetsrichtung finden konnte. Ihre Instrumente waren so präzise, dass sie am Hof des Herrschers gefragt waren. Ein Astrolabium war so etwas wie das GPS des Mittelalters. Und eine Frau gehörte zu den besten Herstellern ihrer Zeit.
+
+**[BILD 18c]** Eine dampfende Tasse Kaffee auf einem alten Holztisch, daneben eine Gebetskette und eine Öllampe, Jemen bei Nacht.
+
+Und Bonus Nummer drei, den du vielleicht gerade in der Hand hältst: Kaffee. Im 15. Jahrhundert tranken Sufis im Jemen ein dunkles Getränk, um in der Nacht wach zu bleiben und länger beten zu können. Über Mekka, Kairo und Istanbul verbreitete es sich in der ganzen islamischen Welt. Und als es Europa erreichte, wurde aus dem arabischen Wort „qahwa“ irgendwann unser Wort Kaffee. Das erste Kaffeehaus in Wien? Soll laut Legende mit Kaffeebohnen entstanden sein, die die osmanische Armee bei der Belagerung 1683 zurückließ. Jeder Coffee-to-go in Deutschland hat also eine Geschichte, die in einer Moschee im Jemen beginnt.
+
 **[BILD 19]** Eine Moschee, deren Säulen aus Bücherstapeln bestehen, Licht fällt durch Fenster.
 
 Jetzt fragst du dich vielleicht: Warum waren gerade diese Menschen so wissbegierig? Die Antwort steckt in ihrer Religion. Das erste Wort, das dem Propheten Muhammad, Friede sei mit ihm, offenbart wurde, war „Iqra“. Lies. Nicht „kämpfe“. Nicht „bete“. Sondern: Lies.
@@ -137,6 +149,14 @@ Grund Nummer eins: Inflation. Erinnerst du dich, was ein Döner vor ein paar Jah
 
 Viele Menschen denken: Ich spare, also bin ich sicher. Aber Geld, das einfach nur herumliegt, verliert jedes Jahr an Kaufkraft. Sparen allein ist wichtig, aber es reicht nicht. Merk dir diesen Satz: Geld, das nicht arbeitet, schmilzt.
 
+**[BILD 5a]** Eine große leuchtende Zahl „72“ über einer Sanduhr, in der Geldscheine statt Sand fallen.
+
+Es gibt eine einfache Rechnung, mit der du das selbst ausrechnen kannst. Die 72er-Regel. Du teilst 72 durch die Inflationsrate, und das Ergebnis zeigt dir ungefähr, nach wie vielen Jahren dein Geld nur noch die Hälfte wert ist. Bei drei Prozent Inflation: 72 geteilt durch drei, das sind 24 Jahre. Das heißt, wenn du heute 30 bist und dein Erspartes einfach auf dem Konto liegen lässt, kannst du dir mit 54 nur noch etwa die Hälfte davon kaufen. Ohne dass du einen einzigen Euro ausgegeben hast.
+
+**[BILD 5b]** Eine Großmutter, die einem Kind lächelnd eine D-Mark-Münze in die Hand legt, Fotos aus den 80ern im Hintergrund.
+
+Frag mal deine Eltern oder Großeltern, was früher ein Brötchen, ein Liter Milch oder eine Kugel Eis gekostet hat. Die Antworten werden dich schockieren. Das ist keine Nostalgie. Das ist Inflation über Jahrzehnte, ganz still, Jahr für Jahr. Und genau deshalb fühlt es sich für viele so an, als würden sie rennen und trotzdem auf der Stelle stehen.
+
 **[BILD 6]** Ein glänzender Sportwagen, angekettet mit einer schweren Eisenkette an einem Menschen.
 
 Grund Nummer zwei: Schulden für Dinge, die du nicht brauchst. Das neue Handy auf Raten. Das Auto finanziert. „Jetzt kaufen, später bezahlen“ mit einem Klick. Das Problem: Diese Dinge verlieren sofort an Wert. Ein Neuwagen verliert oft schon in den ersten Jahren einen großen Teil seines Wertes. Die Schulden dafür bleiben.
@@ -180,6 +200,14 @@ Was kannst du also konkret tun? Hier ist eine einfache Regel, die viele nutzen: 
 **[BILD 16]** Ein Glas mit der Aufschrift „Notgroschen“, gefüllt mit Münzen, steht sicher auf einem Regal, während draußen Sturm herrscht.
 
 Schritt eins: Baue einen Notgroschen auf. Drei bis sechs Monatsausgaben. Das ist dein Schutzschild. Wenn die Waschmaschine kaputtgeht oder du den Job verlierst, musst du keinen Kredit aufnehmen. Allein dieser Schritt nimmt dir unglaublich viel Stress.
+
+**[BILD 16a]** Ein Kalender, auf dem der Zahltag markiert ist, ein Pfeil führt automatisch Geld in ein separates Sparglas, bevor der Rest aufs Hauptkonto fließt.
+
+Und hier ist der wichtigste Trick, um das wirklich durchzuziehen: Bezahl dich zuerst selbst. Die meisten Menschen sparen das, was am Ende des Monats übrig bleibt. Und am Ende des Monats bleibt nie etwas übrig. Dreh es um. Richte einen Dauerauftrag ein, der am Tag nach dem Gehaltseingang automatisch einen festen Betrag auf ein separates Konto schiebt. Fang mit 50 Euro an, wenn es nicht mehr geht. Der Punkt ist nicht die Höhe. Der Punkt ist, dass du die Entscheidung nicht jeden Monat neu treffen musst. Was du nicht siehst, gibst du nicht aus.
+
+**[BILD 16b]** Ein Mensch steht im Supermarkt vor einem Regal und hält inne, über ihm eine Sprechblase mit einer Uhr: „48 Stunden“.
+
+Und für spontane Käufe gibt es die 48-Stunden-Regel. Du willst etwas, das mehr als 50 Euro kostet und nicht geplant war? Leg es in den Warenkorb und warte zwei Tage. In den meisten Fällen ist der Wunsch danach verschwunden. Online-Shops wissen genau, dass der Kaufimpuls nur kurz anhält. Deshalb gibt es Countdowns, „Nur noch 2 auf Lager“ und Ein-Klick-Kaufen. Die 48-Stunden-Regel ist dein Schutz dagegen.
 
 **[BILD 17]** Eine Kette, deren Glieder nacheinander zerbrechen.
 
@@ -260,6 +288,14 @@ Trick Nummer vier: FOMO. Fear of missing out, die Angst, etwas zu verpassen. Sto
 
 Trick Nummer fünf: Soziale Bestätigung. Jedes Like ist eine kleine Belohnung, eine Mini-Bestätigung: Du bist gesehen. Du gehörst dazu. Und weil die Likes unregelmäßig kommen, mal viele, mal wenige, sind wir wieder beim Skinner-Prinzip. Variable Belohnung. Immer wieder.
 
+**[BILD 11a]** Ein Fernseher, auf dem ein Countdown „Nächste Folge in 5… 4… 3…“ läuft, davor ein Mensch auf dem Sofa, draußen geht schon die Sonne auf.
+
+Trick Nummer sechs: Autoplay. Du wolltest nur eine Folge schauen. Dann läuft ein Countdown. Fünf Sekunden. Und bevor du dich entscheiden kannst, läuft schon die nächste Folge. Das ist kein Service. Das ist Psychologie. Die Plattform hat erkannt, dass Nichtstun die einfachste Entscheidung ist. Aufhören erfordert eine aktive Handlung. Weitermachen erfordert nichts. Und unser Gehirn wählt fast immer den Weg mit dem geringsten Widerstand.
+
+**[BILD 11b]** Ein Kontrollraum mit Bildschirmen voller Daten, Graphen und kleinen Profilbildern, ein Algorithmus als leuchtendes Netz darüber.
+
+Und dann der mächtigste Trick von allen: Personalisierung. Jedes Mal, wenn du bei einem Video kurz innehältst, wenn du etwas länger anschaust, wenn du zurückscrollst, wird das gemessen. Wie lange du bei einem Video bleibst, wann du abspringst, was du teilst. Aus Tausenden dieser kleinen Signale entsteht ein Profil, das manchmal besser weiß, was dich fesselt, als du selbst. Deshalb fühlt sich dein Feed so an, als würde er dich kennen. Weil er es in gewisser Weise tut.
+
 **[BILD 12]** Ein Uhrzeiger, der Stunden verschlingt, die als kleine Sanduhren in einen Abgrund fallen.
 
 Und was kostet uns das? Viele Menschen verbringen mehrere Stunden am Tag am Handy. Rechne das mal hoch. Drei Stunden am Tag sind über tausend Stunden im Jahr. Das sind über 45 volle Tage. Jedes Jahr. In tausend Stunden kannst du eine neue Sprache auf ein gutes Niveau bringen, ein Handwerk lernen oder ein kleines Business aufbauen.
@@ -291,6 +327,14 @@ Gegenmittel vier: Die erste und letzte Stunde gehört dir. Wer morgens als Erste
 **[BILD 19]** Ein leeres Blatt Papier und ein Stift auf einem Holztisch, daneben eine Tasse Tee, Morgenlicht.
 
 Gegenmittel fünf: Ersetze, statt nur zu verbieten. Wenn du nur sagst „Ich darf nicht aufs Handy“, entsteht ein Loch. Und das füllt dein Gehirn sofort wieder mit dem Handy. Plane bewusst etwas anderes: ein Buch auf dem Nachttisch, einen Spaziergang nach dem Essen, ein Hobby mit den Händen.
+
+**[BILD 19a]** Ein Kalender mit sieben Tagen, jeder Tag bekommt einen grünen Haken, am siebten Tag ein kleiner Pokal.
+
+Und wenn du es wirklich wissen willst, mach diese Woche die 7-Tage-Challenge. Tag eins: Schau in die Bildschirmzeit-Statistik deines Handys und schreib die Zahl auf. Ohne dich zu verurteilen. Tag zwei: Alle Benachrichtigungen aus, außer von echten Menschen. Tag drei: Graustufen an. Tag vier: Lösch die eine App, die dich am meisten Zeit kostet, vom Startbildschirm. Nicht vom Handy, nur vom Startbildschirm. Tag fünf: Das Handy schläft außerhalb des Schlafzimmers. Tag sechs: Eine Stunde am Stück ohne Handy, nur du und eine Aufgabe. Und Tag sieben: Schau wieder in die Bildschirmzeit und vergleiche. Die meisten Menschen sind überrascht, wie viel Zeit sie plötzlich zurückhaben.
+
+**[BILD 19b]** Ein Mensch beim Spaziergang durch einen Wald im Herbst, ohne Handy, entspannt, Sonnenstrahlen zwischen den Bäumen.
+
+Und das Interessanteste: Nach ein paar Tagen fühlt sich Langeweile nicht mehr wie ein Problem an. Sie fühlt sich an wie Ruhe. Viele berichten, dass sie besser schlafen, sich besser konzentrieren und mehr im Moment sind. Du wirst nicht zum Mönch. Du benutzt dein Handy immer noch. Aber du benutzt es, statt dass es dich benutzt.
 
 **[BILD 20]** Ein Mensch, der die Marionettenfäden von seinem Kopf abschneidet, Licht strömt herein.
 
@@ -333,7 +377,15 @@ Und es wird noch besser. Züge, die komplett ausfallen, tauchen in der Pünktlic
 
 **[BILD 6]** Ein Zeitsprung: links eine glänzende Bahn der 1990er, rechts dieselbe Strecke heute, mit Rost und Unkraut.
 
-Aber warum ist das so? Um das zu verstehen, müssen wir ins Jahr 1994. Damals wurden die Deutsche Bundesbahn und die Deutsche Reichsbahn der DDR zur Deutschen Bahn AG zusammengelegt. Die Idee: Die Bahn soll wie ein Unternehmen geführt werden. Effizient. Profitabel. Und irgendwann vielleicht sogar an die Börse.
+**[BILD 5a]** Die historische Lokomotive „Adler“ von 1835 dampft zwischen Nürnberg und Fürth, Menschen in Kleidung des 19. Jahrhunderts jubeln am Rand.
+
+Dabei war Deutschland einmal ein echtes Bahnland. 1835 fuhr zwischen Nürnberg und Fürth die erste deutsche Eisenbahn, die Lokomotive „Adler“. Gerade mal sechs Kilometer. Aber danach ging es rasend schnell. Innerhalb weniger Jahrzehnte zog sich ein dichtes Netz aus Gleisen durch das ganze Land. Die Eisenbahn machte Deutschland zur Industriemacht. Kohle, Stahl, Waren, Menschen, alles bewegte sich plötzlich in einem Tempo, das vorher unvorstellbar war. Fast jedes kleine Dorf bekam einen Bahnhof.
+
+**[BILD 5b]** Ein verlassener, zugewachsener Dorfbahnhof, Efeu an der Wand, Gleise unter Gras verschwunden.
+
+Und genau viele dieser kleinen Bahnhöfe gibt es heute nicht mehr. Wenn du in einem Dorf in Deutschland aufgewachsen bist, gibt es vielleicht bei dir in der Nähe ein altes Bahnhofsgebäude, in dem heute ein Restaurant, eine Wohnung oder gar nichts mehr ist. Das ist kein Zufall. Und damit kommen wir zur eigentlichen Ursache.
+
+Um das zu verstehen, müssen wir ins Jahr 1994. Damals wurden die Deutsche Bundesbahn und die Deutsche Reichsbahn der DDR zur Deutschen Bahn AG zusammengelegt. Die Idee: Die Bahn soll wie ein Unternehmen geführt werden. Effizient. Profitabel. Und irgendwann vielleicht sogar an die Börse.
 
 **[BILD 7]** Ein Mann im Anzug, der mit einer Schere Gleise durchschneidet, im Hintergrund Geldscheine.
 
@@ -370,6 +422,14 @@ Aber es gibt auch Hoffnung. Die Bahn hat angefangen, wichtige Strecken komplett 
 **[BILD 15]** Ein Bus mit Aufschrift „Schienenersatzverkehr“ vor einem Bahnhof, Menschen mit Koffern.
 
 Das bedeutet kurzfristig: Noch mehr Schienenersatzverkehr. Noch mehr Umwege. Noch mehr Nerven. Aber langfristig sollen diese Strecken deutlich zuverlässiger werden. Ob der Plan aufgeht? Das wird sich erst in den nächsten Jahren zeigen.
+
+**[BILD 15a]** Eine riesige unterirdische Baustelle unter Stuttgart, Betonkelche, Kräne, ein Schild mit durchgestrichenen Jahreszahlen.
+
+Und dann gibt es da noch die Großprojekte. Das bekannteste: Stuttgart 21. Der Stuttgarter Hauptbahnhof soll unter die Erde verlegt werden. Als das Projekt geplant wurde, sprach man von Kosten in Höhe von wenigen Milliarden Euro. Inzwischen liegen die geschätzten Kosten um ein Vielfaches höher, und die Eröffnung wurde immer wieder verschoben. Stuttgart 21 ist für viele zum Symbol geworden: Deutschland plant groß, aber baut langsam.
+
+**[BILD 15b]** Ein dicker Stapel Akten und Genehmigungsformulare, der höher ist als ein Bauarbeiter, der daneben steht.
+
+Warum dauert in Deutschland alles so lange? Ein großer Grund sind Planungs- und Genehmigungsverfahren. Bevor ein neues Gleis gebaut werden darf, müssen Gutachten erstellt, Einwände geprüft und manchmal Gerichtsverfahren abgewartet werden. Das ist in einem Rechtsstaat wichtig. Aber es führt dazu, dass zwischen der Idee und dem ersten Zug manchmal Jahrzehnte vergehen. Die Politik hat zwar angekündigt, Verfahren zu beschleunigen. Aber bis das auf der Schiene ankommt, vergeht wieder Zeit.
 
 **[BILD 16]** Ein Lokführer in seinem Führerstand, müde, Blick auf eine lange, leere Strecke.
 
