@@ -10,6 +10,7 @@ Jede Datei ist Bild für Bild aufgebaut: ein fertiger Bild-Prompt zum Kopieren (
 | 4 | `04-deutsche-bahn.md` | Warum die Bahn nie pünktlich ist | 84 | ca. 10,2 Min. |
 | 5 | `05-hyperinflation-1923.md` | Hyperinflation 1923 – als ein Brot 200 Milliarden Mark kostete (Fortsetzung von Skript 2) | 89 | ca. 11,3 Min. |
 | 6 | `06-ungarn-1946.md` | Ungarn 1946 – die schlimmste Inflation der Geschichte (Fortsetzung von Skript 5) | 83 | ca. 10,7 Min. |
+| 7 | `07-simbabwe.md` | Simbabwe – 100 Billionen Dollar und trotzdem pleite (Fortsetzung von Skript 6) | 88 | ca. 10,4 Min. |
 
 Längen bei ruhigem Doku-Tempo (140 Wörter/Min.). Kein Bild steht länger als ca. 12 Sekunden. Auch mit einer schnelleren TTS-Stimme (ca. 155 Wörter/Min.) bleibt jedes Video über 9 Minuten.
 
