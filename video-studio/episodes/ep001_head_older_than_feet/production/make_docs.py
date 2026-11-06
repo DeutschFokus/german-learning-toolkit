@@ -60,7 +60,7 @@ def main():
     o.append("  Intelligent, calm, quietly fascinated. Authority without lecturing; a close-mic,")
     o.append("  one-to-one conversation, not a trailer. Deep does not mean slow: keep momentum")
     o.append("  (about 165–175 words per minute inside sentences) and let the PAUSES do the drama.")
-    o.append("  Smile slightly on the playful lines (Tiny. / And you?). Never push or shout.")
+    o.append("  Let a slight smile in on the lighter lines. Never push or shout.")
     o.append("")
     o.append("MARKS")
     o.append("  CAPS      = lean on this word (pitch or weight, not volume)")

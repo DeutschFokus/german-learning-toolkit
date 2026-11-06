@@ -1,0 +1,150 @@
+EP003 — HE CUT DOWN THE OLDEST TREE ON EARTH
+Recording-ready voiceover script (deep, calm male narrator)
+========================================================================
+Video length: 60 s   |   Spoken words: 123   |   Narration window: 00:00.08 – 00:58.97
+
+THE VOICE
+  Intelligent, calm, quietly fascinated. Authority without lecturing; a close-mic,
+  one-to-one conversation, not a trailer. Deep does not mean slow: keep momentum
+  (about 165–175 words per minute inside sentences) and let the PAUSES do the drama.
+  Let a slight smile in on the lighter lines. Never push or shout.
+
+MARKS
+  CAPS      = lean on this word (pitch or weight, not volume)
+  /         = short breath, about 0.2–0.4 s
+  //        = beat, about 0.4–0.8 s
+  ///       = let it land, 0.8 s or more
+  ...       = suspend the pitch: the thought continues
+
+HOW TO RECORD
+  1. Quiet, soft room (closet or duvet fort beats a bare room). Mic 15–20 cm away,
+     slightly off-axis to avoid plosives. Peaks around -10 dBFS, never above -3.
+  2. Record the whole script in one take as WAV (48 kHz, 24-bit, mono).
+     Leave 2 s of silence at the start. Do a second full take if a line slips.
+  3. The timings below are a GUIDE (they match guide_record_along.mp4), not a click track.
+     Read naturally. The pipeline aligns your take word by word, keeps your voice
+     at its natural speed, and re-times the scenes, captions and sound design to it.
+  4. If your read runs long, the pipeline tightens the pauses first. If it still
+     overruns 60 s it tells you which lines to trim; it never speeds your voice up.
+  5. Optional: play guide_record_along.mp4 on a second screen (muted or quiet) and read
+     along with the teleprompter at the top. Then run:
+     python3 production/build.py human path/to/your_take.wav
+
+========================================================================
+TIMED SCRIPT
+========================================================================
+
+--- SCENE: HOOK: 1964 ----------------------------------------------
+
+[00:00.08 – 00:05.39]  L01
+   In NINETEEN SIXTY-FOUR, a student cut down the OLDEST known tree on Earth. //
+   (on screen: "In 1964, a student cut down the oldest known tree on Earth.")
+   Delivery: Quiet and grave, like the first line of a true-crime story. Slow down on 'the oldest known tree on Earth'.
+   Say it:   1964 = nineteen sixty-four
+   Pause after: 0.60 s
+
+--- SCENE: A SCIENTIST, WITH PERMISSION ----------------------------
+
+[00:05.99 – 00:07.43]  L02
+   He wasn't a VANDAL. //
+   Delivery: Matter-of-fact, defending him a little. Small beat after.
+   Pause after: 0.60 s
+
+[00:08.03 – 00:11.33]  L03
+   He was a SCIENTIST, and he needed to count its RINGS. //
+   Delivery: Even and reasonable: it sounds like a perfectly good idea.
+   Pause after: 0.70 s
+
+[00:12.03 – 00:14.43]  L04
+   So, with PERMISSION, they cut it DOWN. ///
+   Delivery: Flat, almost reluctant. Then silence: the tree falls in that pause.
+   Pause after: 1.60 s
+
+--- SCENE: 4,844 RINGS ---------------------------------------------
+
+[00:16.02 – 00:20.09]  L05
+   Then he counted: FOUR THOUSAND EIGHT HUNDRED FORTY-FOUR rings. ///
+   (on screen: "Then he counted: 4,844 rings.")
+   Delivery: Slow and precise on the number, a touch of awe. Let it hang.
+   Say it:   4,844 = four thousand, eight hundred forty-four
+   Pause after: 1.70 s
+
+--- SCENE: ALIVE THROUGH ONE STRIP OF BARK -------------------------
+
+[00:21.79 – 00:25.75]  L06
+   Bristlecone pines survive by letting MOST of the tree DIE. //
+   Delivery: Curious, slightly darker tone on 'letting most of the tree die'.
+   Say it:   Bristlecone = BRISS-ul-cone
+   Pause after: 0.60 s
+
+[00:26.35 – 00:29.52]  L07
+   This one was alive through a SINGLE STRIP of bark. ///
+   Delivery: Soft, almost tender. Lean on 'single strip'.
+   Pause after: 1.20 s
+
+--- SCENE: RINGS THAT CORRECTED CARBON DATING ----------------------
+
+[00:30.72 – 00:35.94]  L08
+   Their rings are so reliable, scientists used them to CORRECT CARBON DATING. ///
+   Delivery: Impressed, a little proud of the tree. Crisp on 'carbon dating'.
+   Pause after: 1.50 s
+
+--- SCENE: REVELATION: OLDER THAN THE GREAT PYRAMID ----------------
+
+[00:37.44 – 00:41.62]  L09
+   Another one, Methuselah, is STILL ALIVE in California. //
+   Delivery: Turn the page: lighter, a hint of hope on 'still alive'.
+   Say it:   Methuselah = meh-THOO-zeh-luh
+   Pause after: 0.60 s
+
+[00:42.22 – 00:45.55]  L10
+   It was a seedling BEFORE the GREAT PYRAMID was built. ///
+   Delivery: The revelation. Slow right down on 'before the Great Pyramid was built' and let it sink in.
+   Pause after: 1.70 s
+
+--- SCENE: LOCATION: SECRET ----------------------------------------
+
+[00:47.25 – 00:49.75]  L11
+   Its exact location is a SECRET. //
+   Delivery: Lower, conspiratorial.
+   Pause after: 0.60 s
+
+[00:50.35 – 00:53.03]  L12
+   The Forest Service WON'T say which tree it is. ///
+   Delivery: Plain statement. Tiny pause before the next line.
+   Pause after: 0.90 s
+
+--- SCENE: CAN YOU BLAME THEM? (LOOP) ------------------------------
+
+[00:53.93 – 00:55.20]  L13
+   Can you BLAME them? ///
+   Delivery: Wry, half a smile.
+   Pause after: 0.80 s
+
+[00:56.00 – 00:58.97]  L14
+   The LAST time we found the OLDEST tree on Earth...
+   Delivery: Trail off with the pitch suspended: the video loops straight into 'In 1964, a student cut down the oldest known tree on Earth.'
+
+========================================================================
+PRONUNCIATION GUIDE
+========================================================================
+  1964         nineteen sixty-four
+  4,844        four thousand, eight hundred forty-four
+  Bristlecone  BRISS-ul-cone
+  Methuselah   meh-THOO-zeh-luh
+
+========================================================================
+CLEAN READ (no marks) — for a first run-through
+========================================================================
+  In nineteen sixty-four, a student cut down the oldest known tree on
+  Earth. He wasn't a vandal. He was a scientist, and he needed to count
+  its rings. So, with permission, they cut it down. Then he counted:
+  four thousand eight hundred forty-four rings. Bristlecone pines
+  survive by letting most of the tree die. This one was alive through a
+  single strip of bark. Their rings are so reliable, scientists used
+  them to correct carbon dating. Another one, Methuselah, is still alive
+  in California. It was a seedling before the Great Pyramid was built.
+  Its exact location is a secret. The Forest Service won't say which
+  tree it is. Can you blame them? The last time we found the oldest tree
+  on Earth...
+

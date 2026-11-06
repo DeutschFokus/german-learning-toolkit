@@ -16,6 +16,7 @@ video-studio/
     props.py              dotted real-geography Earth, planet limb, satellite, phone, 3D grid, Earth cross-section
     anatomy.py            eye cross-section (retina, optic disc, nerve), blinking front-view eye, iris glyph
     ui.py                 instruction chips, editor timeline, film strip, analog clock, gaze reticle
+    nature.py             procedural bristlecone (cached silhouette, cut/fall), ridges, moon, tree-ring section, pyramid, stamp
     postfx.py             bloom, grade, vignette, grain
     captions.py           word-synced burned-in captions + SRT export
     render.py             parallel frame renderer -> ffmpeg (H.264 High, BT.709, faststart)
@@ -24,6 +25,7 @@ video-studio/
   presets/LUMEN_STYLE_GUIDE.md
   episodes/ep001_head_older_than_feet/   "Your Head Is Older Than Your Feet" (gravity slows time)
   episodes/ep002_hole_in_your_vision/    "There's a Hole in Your Vision Right Now" (your brain edits reality)
+  episodes/ep003_oldest_tree/            "He Cut Down the Oldest Tree on Earth" (creator-narrated: no AI voice)
     final_video_ai_voice.mp4, final_video_no_voice.mp4, subtitles.srt,
     human_voiceover_script.txt, storyboard.md, publishing_kit.md, quality_report.md,
     thumbnail_cover.png
@@ -74,6 +76,10 @@ python3 build.py human /path/to/your_take.wav
 ```
 
 The aligner finds every word of the script in your take, cuts it per line (10 ms fades, no time-stretching), lays the lines on the 60 s canvas by tightening or relaxing only the pauses (long silences inside lines first, then the loop tail, then the gaps between lines — a line marked `"protect": true`, like EP002's try-it pause, keeps its minimum), re-times every scene, caption and sound cue, ducks the music under *your* voice, masters to -14 LUFS, and renders `final_video_human_voice.mp4` plus `subtitles_human.srt`. If your read is too long even with minimum pauses, the build reports the overrun so you can trim a line; it never speeds your voice up.
+
+## Creator-narrated episodes (EP003 onward)
+
+No AI voice ships. A scratch read (`build.py scratch`) only times the animation; `build.py video` then renders `final_video_no_voice.mp4` and `guide_record_along.mp4` (captions + a teleprompter band with the current line, the next line and a count-in dot). Record the script, run `build.py human your_take.wav`, and publish `final_video_human_voice.mp4` with the `subtitles.srt` written from your take. Words the aligner doesn't know go in the script's `"lexicon"` (ARPAbet), e.g. `"bristlecone": "B R IH S AH L K OW N"`.
 
 ## Make the next episode
 

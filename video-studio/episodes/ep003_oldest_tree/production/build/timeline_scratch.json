@@ -1,0 +1,844 @@
+{
+ "source": "scratch",
+ "voice": "narration_scratch.wav",
+ "sample_rate": 24000,
+ "duration": 60.0,
+ "fps": 30,
+ "speed": 0.83,
+ "layout": {
+  "speech": 45.786,
+  "room_for_pauses": 13.533999999999999,
+  "pref_pauses": 6.85,
+  "status": "fits",
+  "speech_end": 58.96600000000001,
+  "tail": 1.0339999999999918,
+  "pauses": [
+   0.6,
+   0.6,
+   0.7,
+   1.6,
+   1.7,
+   0.6,
+   1.2,
+   1.5,
+   0.6,
+   1.7,
+   0.6,
+   0.9,
+   0.8
+  ]
+ },
+ "scenes": [
+  {
+   "id": "hook",
+   "first_line": "L01",
+   "name": "Hook: 1964"
+  },
+  {
+   "id": "cut",
+   "first_line": "L02",
+   "name": "A scientist, with permission"
+  },
+  {
+   "id": "count",
+   "first_line": "L05",
+   "name": "4,844 rings"
+  },
+  {
+   "id": "strip",
+   "first_line": "L06",
+   "name": "Alive through one strip of bark"
+  },
+  {
+   "id": "carbon",
+   "first_line": "L08",
+   "name": "Rings that corrected carbon dating"
+  },
+  {
+   "id": "methuselah",
+   "first_line": "L09",
+   "name": "Revelation: older than the Great Pyramid"
+  },
+  {
+   "id": "secret",
+   "first_line": "L11",
+   "name": "Location: secret"
+  },
+  {
+   "id": "outro",
+   "first_line": "L13",
+   "name": "Can you blame them? (loop)"
+  }
+ ],
+ "lines": [
+  {
+   "id": "L01",
+   "text": "In 1964, a student cut down the oldest known tree on Earth.",
+   "start": 0.08,
+   "end": 5.386,
+   "caption": false,
+   "emphasis": [
+    "1964,",
+    "oldest"
+   ],
+   "tokens": [
+    {
+     "display": "In",
+     "start": 0.08,
+     "end": 0.23
+    },
+    {
+     "display": "1964,",
+     "start": 0.23,
+     "end": 1.79
+    },
+    {
+     "display": "a",
+     "start": 2.15,
+     "end": 2.2
+    },
+    {
+     "display": "student",
+     "start": 2.2,
+     "end": 2.74
+    },
+    {
+     "display": "cut",
+     "start": 2.74,
+     "end": 3.0
+    },
+    {
+     "display": "down",
+     "start": 3.0,
+     "end": 3.33
+    },
+    {
+     "display": "the",
+     "start": 3.33,
+     "end": 3.42
+    },
+    {
+     "display": "oldest",
+     "start": 3.42,
+     "end": 3.91
+    },
+    {
+     "display": "known",
+     "start": 3.91,
+     "end": 4.23
+    },
+    {
+     "display": "tree",
+     "start": 4.23,
+     "end": 4.65
+    },
+    {
+     "display": "on",
+     "start": 4.65,
+     "end": 4.86
+    },
+    {
+     "display": "Earth.",
+     "start": 4.86,
+     "end": 5.38
+    }
+   ]
+  },
+  {
+   "id": "L02",
+   "text": "He wasn't a vandal.",
+   "start": 5.986,
+   "end": 7.432,
+   "caption": true,
+   "emphasis": [
+    "vandal."
+   ],
+   "tokens": [
+    {
+     "display": "He",
+     "start": 5.986,
+     "end": 6.186
+    },
+    {
+     "display": "wasn't",
+     "start": 6.186,
+     "end": 6.626
+    },
+    {
+     "display": "a",
+     "start": 6.626,
+     "end": 6.676
+    },
+    {
+     "display": "vandal.",
+     "start": 6.676,
+     "end": 7.426
+    }
+   ]
+  },
+  {
+   "id": "L03",
+   "text": "He was a scientist, and he needed to count its rings.",
+   "start": 8.032,
+   "end": 11.327,
+   "caption": true,
+   "emphasis": [
+    "scientist,",
+    "rings."
+   ],
+   "tokens": [
+    {
+     "display": "He",
+     "start": 8.032,
+     "end": 8.162
+    },
+    {
+     "display": "was",
+     "start": 8.162,
+     "end": 8.312
+    },
+    {
+     "display": "a",
+     "start": 8.312,
+     "end": 8.362
+    },
+    {
+     "display": "scientist,",
+     "start": 8.362,
+     "end": 9.372
+    },
+    {
+     "display": "and",
+     "start": 9.522,
+     "end": 9.672
+    },
+    {
+     "display": "he",
+     "start": 9.672,
+     "end": 9.742
+    },
+    {
+     "display": "needed",
+     "start": 9.742,
+     "end": 10.082
+    },
+    {
+     "display": "to",
+     "start": 10.082,
+     "end": 10.152
+    },
+    {
+     "display": "count",
+     "start": 10.152,
+     "end": 10.522
+    },
+    {
+     "display": "its",
+     "start": 10.522,
+     "end": 10.672
+    },
+    {
+     "display": "rings.",
+     "start": 10.672,
+     "end": 11.312
+    }
+   ]
+  },
+  {
+   "id": "L04",
+   "text": "So, with permission, they cut it down.",
+   "start": 12.027,
+   "end": 14.425,
+   "caption": true,
+   "emphasis": [
+    "permission,",
+    "down."
+   ],
+   "tokens": [
+    {
+     "display": "So,",
+     "start": 12.027,
+     "end": 12.287
+    },
+    {
+     "display": "with",
+     "start": 12.287,
+     "end": 12.467
+    },
+    {
+     "display": "permission,",
+     "start": 12.467,
+     "end": 13.197
+    },
+    {
+     "display": "they",
+     "start": 13.197,
+     "end": 13.407
+    },
+    {
+     "display": "cut",
+     "start": 13.407,
+     "end": 13.667
+    },
+    {
+     "display": "it",
+     "start": 13.667,
+     "end": 13.777
+    },
+    {
+     "display": "down.",
+     "start": 13.777,
+     "end": 14.417
+    }
+   ]
+  },
+  {
+   "id": "L05",
+   "text": "Then he counted: 4,844 rings.",
+   "start": 16.025,
+   "end": 20.093,
+   "caption": true,
+   "emphasis": [
+    "4,844"
+   ],
+   "tokens": [
+    {
+     "display": "Then",
+     "start": 16.025,
+     "end": 16.285
+    },
+    {
+     "display": "he",
+     "start": 16.285,
+     "end": 16.425
+    },
+    {
+     "display": "counted:",
+     "start": 16.425,
+     "end": 17.105
+    },
+    {
+     "display": "4,844",
+     "start": 17.355,
+     "end": 19.425
+    },
+    {
+     "display": "rings.",
+     "start": 19.425,
+     "end": 20.085
+    }
+   ]
+  },
+  {
+   "id": "L06",
+   "text": "Bristlecone pines survive by letting most of the tree die.",
+   "start": 21.793,
+   "end": 25.753,
+   "caption": true,
+   "emphasis": [
+    "most",
+    "die."
+   ],
+   "tokens": [
+    {
+     "display": "Bristlecone",
+     "start": 21.793,
+     "end": 22.503
+    },
+    {
+     "display": "pines",
+     "start": 22.503,
+     "end": 23.083
+    },
+    {
+     "display": "survive",
+     "start": 23.083,
+     "end": 23.923
+    },
+    {
+     "display": "by",
+     "start": 23.923,
+     "end": 24.133
+    },
+    {
+     "display": "letting",
+     "start": 24.133,
+     "end": 24.453
+    },
+    {
+     "display": "most",
+     "start": 24.453,
+     "end": 24.823
+    },
+    {
+     "display": "of",
+     "start": 24.823,
+     "end": 24.893
+    },
+    {
+     "display": "the",
+     "start": 24.893,
+     "end": 24.963
+    },
+    {
+     "display": "tree",
+     "start": 24.963,
+     "end": 25.273
+    },
+    {
+     "display": "die.",
+     "start": 25.273,
+     "end": 25.743
+    }
+   ]
+  },
+  {
+   "id": "L07",
+   "text": "This one was alive through a single strip of bark.",
+   "start": 26.353,
+   "end": 29.522,
+   "caption": true,
+   "emphasis": [
+    "single",
+    "strip"
+   ],
+   "tokens": [
+    {
+     "display": "This",
+     "start": 26.353,
+     "end": 26.643
+    },
+    {
+     "display": "one",
+     "start": 26.643,
+     "end": 26.903
+    },
+    {
+     "display": "was",
+     "start": 26.903,
+     "end": 27.063
+    },
+    {
+     "display": "alive",
+     "start": 27.063,
+     "end": 27.693
+    },
+    {
+     "display": "through",
+     "start": 27.693,
+     "end": 27.993
+    },
+    {
+     "display": "a",
+     "start": 27.993,
+     "end": 28.033
+    },
+    {
+     "display": "single",
+     "start": 28.033,
+     "end": 28.493
+    },
+    {
+     "display": "strip",
+     "start": 28.493,
+     "end": 28.833
+    },
+    {
+     "display": "of",
+     "start": 28.833,
+     "end": 28.953
+    },
+    {
+     "display": "bark.",
+     "start": 28.953,
+     "end": 29.513
+    }
+   ]
+  },
+  {
+   "id": "L08",
+   "text": "Their rings are so reliable, scientists used them to correct carbon dating.",
+   "start": 30.722,
+   "end": 35.944,
+   "caption": true,
+   "emphasis": [
+    "correct",
+    "carbon",
+    "dating."
+   ],
+   "tokens": [
+    {
+     "display": "Their",
+     "start": 30.722,
+     "end": 30.912
+    },
+    {
+     "display": "rings",
+     "start": 30.912,
+     "end": 31.432
+    },
+    {
+     "display": "are",
+     "start": 31.432,
+     "end": 31.542
+    },
+    {
+     "display": "so",
+     "start": 31.542,
+     "end": 31.842
+    },
+    {
+     "display": "reliable,",
+     "start": 31.842,
+     "end": 32.652
+    },
+    {
+     "display": "scientists",
+     "start": 33.022,
+     "end": 33.802
+    },
+    {
+     "display": "used",
+     "start": 33.802,
+     "end": 34.172
+    },
+    {
+     "display": "them",
+     "start": 34.172,
+     "end": 34.382
+    },
+    {
+     "display": "to",
+     "start": 34.382,
+     "end": 34.482
+    },
+    {
+     "display": "correct",
+     "start": 34.482,
+     "end": 34.962
+    },
+    {
+     "display": "carbon",
+     "start": 34.962,
+     "end": 35.422
+    },
+    {
+     "display": "dating.",
+     "start": 35.422,
+     "end": 35.932
+    }
+   ]
+  },
+  {
+   "id": "L09",
+   "text": "Another one, Methuselah, is still alive in California.",
+   "start": 37.444,
+   "end": 41.623,
+   "caption": true,
+   "emphasis": [
+    "still",
+    "alive"
+   ],
+   "tokens": [
+    {
+     "display": "Another",
+     "start": 37.444,
+     "end": 37.814
+    },
+    {
+     "display": "one,",
+     "start": 37.814,
+     "end": 38.114
+    },
+    {
+     "display": "Methuselah,",
+     "start": 38.114,
+     "end": 39.084
+    },
+    {
+     "display": "is",
+     "start": 39.454,
+     "end": 39.564
+    },
+    {
+     "display": "still",
+     "start": 39.564,
+     "end": 39.884
+    },
+    {
+     "display": "alive",
+     "start": 39.884,
+     "end": 40.504
+    },
+    {
+     "display": "in",
+     "start": 40.504,
+     "end": 40.634
+    },
+    {
+     "display": "California.",
+     "start": 40.634,
+     "end": 41.614
+    }
+   ]
+  },
+  {
+   "id": "L10",
+   "text": "It was a seedling before the Great Pyramid was built.",
+   "start": 42.223,
+   "end": 45.552,
+   "caption": true,
+   "emphasis": [
+    "before",
+    "Great",
+    "Pyramid"
+   ],
+   "tokens": [
+    {
+     "display": "It",
+     "start": 42.223,
+     "end": 42.343
+    },
+    {
+     "display": "was",
+     "start": 42.343,
+     "end": 42.553
+    },
+    {
+     "display": "a",
+     "start": 42.553,
+     "end": 42.603
+    },
+    {
+     "display": "seedling",
+     "start": 42.603,
+     "end": 43.423
+    },
+    {
+     "display": "before",
+     "start": 43.423,
+     "end": 43.713
+    },
+    {
+     "display": "the",
+     "start": 43.713,
+     "end": 43.803
+    },
+    {
+     "display": "Great",
+     "start": 43.803,
+     "end": 44.143
+    },
+    {
+     "display": "Pyramid",
+     "start": 44.143,
+     "end": 44.773
+    },
+    {
+     "display": "was",
+     "start": 44.773,
+     "end": 45.003
+    },
+    {
+     "display": "built.",
+     "start": 45.003,
+     "end": 45.543
+    }
+   ]
+  },
+  {
+   "id": "L11",
+   "text": "Its exact location is a secret.",
+   "start": 47.252,
+   "end": 49.751,
+   "caption": true,
+   "emphasis": [
+    "secret."
+   ],
+   "tokens": [
+    {
+     "display": "Its",
+     "start": 47.252,
+     "end": 47.442
+    },
+    {
+     "display": "exact",
+     "start": 47.442,
+     "end": 48.022
+    },
+    {
+     "display": "location",
+     "start": 48.022,
+     "end": 48.852
+    },
+    {
+     "display": "is",
+     "start": 48.852,
+     "end": 49.042
+    },
+    {
+     "display": "a",
+     "start": 49.042,
+     "end": 49.102
+    },
+    {
+     "display": "secret.",
+     "start": 49.102,
+     "end": 49.742
+    }
+   ]
+  },
+  {
+   "id": "L12",
+   "text": "The Forest Service won't say which tree it is.",
+   "start": 50.351,
+   "end": 53.026,
+   "caption": true,
+   "emphasis": [
+    "won't"
+   ],
+   "tokens": [
+    {
+     "display": "The",
+     "start": 50.351,
+     "end": 50.461
+    },
+    {
+     "display": "Forest",
+     "start": 50.461,
+     "end": 50.931
+    },
+    {
+     "display": "Service",
+     "start": 50.931,
+     "end": 51.311
+    },
+    {
+     "display": "won't",
+     "start": 51.311,
+     "end": 51.621
+    },
+    {
+     "display": "say",
+     "start": 51.621,
+     "end": 51.891
+    },
+    {
+     "display": "which",
+     "start": 51.891,
+     "end": 52.171
+    },
+    {
+     "display": "tree",
+     "start": 52.171,
+     "end": 52.431
+    },
+    {
+     "display": "it",
+     "start": 52.431,
+     "end": 52.541
+    },
+    {
+     "display": "is.",
+     "start": 52.541,
+     "end": 53.011
+    }
+   ]
+  },
+  {
+   "id": "L13",
+   "text": "Can you blame them?",
+   "start": 53.926,
+   "end": 55.198,
+   "caption": true,
+   "emphasis": [
+    "blame"
+   ],
+   "tokens": [
+    {
+     "display": "Can",
+     "start": 53.926,
+     "end": 54.146
+    },
+    {
+     "display": "you",
+     "start": 54.146,
+     "end": 54.356
+    },
+    {
+     "display": "blame",
+     "start": 54.356,
+     "end": 54.806
+    },
+    {
+     "display": "them?",
+     "start": 54.806,
+     "end": 55.186
+    }
+   ]
+  },
+  {
+   "id": "L14",
+   "text": "The last time we found the oldest tree on Earth...",
+   "start": 55.998,
+   "end": 58.966,
+   "caption": true,
+   "emphasis": [
+    "last",
+    "oldest"
+   ],
+   "tokens": [
+    {
+     "display": "The",
+     "start": 55.998,
+     "end": 56.108
+    },
+    {
+     "display": "last",
+     "start": 56.108,
+     "end": 56.518
+    },
+    {
+     "display": "time",
+     "start": 56.518,
+     "end": 56.908
+    },
+    {
+     "display": "we",
+     "start": 56.908,
+     "end": 57.008
+    },
+    {
+     "display": "found",
+     "start": 57.008,
+     "end": 57.358
+    },
+    {
+     "display": "the",
+     "start": 57.358,
+     "end": 57.448
+    },
+    {
+     "display": "oldest",
+     "start": 57.448,
+     "end": 57.968
+    },
+    {
+     "display": "tree",
+     "start": 57.968,
+     "end": 58.238
+    },
+    {
+     "display": "on",
+     "start": 58.238,
+     "end": 58.418
+    },
+    {
+     "display": "Earth...",
+     "start": 58.418,
+     "end": 58.958
+    }
+   ]
+  }
+ ]
+}

@@ -19,7 +19,7 @@ def _pcm16k(audio: np.ndarray, sr: int) -> bytes:
     return (np.clip(a, -1, 1) * 32767).astype(np.int16).tobytes()
 
 
-def align(audio: np.ndarray, sr: int, words: list[str]) -> list[dict]:
+def align(audio: np.ndarray, sr: int, words: list[str], lexicon: dict | None = None) -> list[dict]:
     """Returns [{'word', 'start', 'end'}] for each requested word, in order.
 
     Pocketsphinx reports silences and alternate pronunciations ("the(2)");
@@ -27,10 +27,13 @@ def align(audio: np.ndarray, sr: int, words: list[str]) -> list[dict]:
     """
     from pocketsphinx import Decoder
     dec = Decoder(bestpath=False, loglevel="FATAL")
+    for w, phones in (lexicon or {}).items():      # script-supplied pronunciations (ARPAbet)
+        if dec.lookup_word(w.lower()) is None:
+            dec.add_word(w.lower(), phones, True)
     for w in words:
         if dec.lookup_word(w) is None:
-            raise ValueError(f"word not in aligner dictionary: {w!r} — add it to the script as "
-                             f"{{display|spelled out}} or extend the dictionary")
+            raise ValueError(f"word not in aligner dictionary: {w!r} — add it to the script's "
+                             f'"lexicon" (ARPAbet, e.g. "B R IH S AH L K OW N") or respell it as {{display|spoken}}')
     dec.set_align_text(" ".join(words))
     dec.start_utt()
     dec.process_raw(_pcm16k(audio, sr), full_utt=True)

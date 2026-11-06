@@ -1,0 +1,233 @@
+{
+ "episode": "ep003",
+ "slug": "oldest-tree",
+ "title": "He Cut Down the Oldest Tree on Earth",
+ "duration": 60.0,
+ "fps": 30,
+ "lead_in": 0.08,
+ "tail_min": 0.6,
+ "narration": "human",
+ "voice": {
+  "engine": "kokoro-82m (onnx) — SCRATCH timing reference only, never published",
+  "blend": {
+   "am_michael": 0.6,
+   "am_onyx": 0.25,
+   "am_puck": 0.15
+  },
+  "speed": 0.83,
+  "lang": "en-us"
+ },
+ "lexicon": {
+  "bristlecone": "B R IH S AH L K OW N"
+ },
+ "scenes": [
+  {
+   "id": "hook",
+   "first_line": "L01",
+   "name": "Hook: 1964"
+  },
+  {
+   "id": "cut",
+   "first_line": "L02",
+   "name": "A scientist, with permission"
+  },
+  {
+   "id": "count",
+   "first_line": "L05",
+   "name": "4,844 rings"
+  },
+  {
+   "id": "strip",
+   "first_line": "L06",
+   "name": "Alive through one strip of bark"
+  },
+  {
+   "id": "carbon",
+   "first_line": "L08",
+   "name": "Rings that corrected carbon dating"
+  },
+  {
+   "id": "methuselah",
+   "first_line": "L09",
+   "name": "Revelation: older than the Great Pyramid"
+  },
+  {
+   "id": "secret",
+   "first_line": "L11",
+   "name": "Location: secret"
+  },
+  {
+   "id": "outro",
+   "first_line": "L13",
+   "name": "Can you blame them? (loop)"
+  }
+ ],
+ "lines": [
+  {
+   "id": "L01",
+   "text": "In {1964|nineteen sixty-four}, a student cut down the oldest known tree on Earth.",
+   "pause_after": 0.6,
+   "pause_max": 0.6,
+   "min_pause": 0.35,
+   "emphasis": [
+    "1964,",
+    "oldest"
+   ],
+   "caption": false,
+   "delivery": "Quiet and grave, like the first line of a true-crime story. Slow down on 'the oldest known tree on Earth'.",
+   "pronounce": {
+    "1964": "nineteen sixty-four"
+   }
+  },
+  {
+   "id": "L02",
+   "text": "He wasn't a vandal.",
+   "pause_after": 0.3,
+   "min_pause": 0.2,
+   "emphasis": [
+    "vandal."
+   ],
+   "delivery": "Matter-of-fact, defending him a little. Small beat after."
+  },
+  {
+   "id": "L03",
+   "text": "He was a scientist, and he needed to count its rings.",
+   "pause_after": 0.35,
+   "min_pause": 0.25,
+   "emphasis": [
+    "scientist,",
+    "rings."
+   ],
+   "delivery": "Even and reasonable: it sounds like a perfectly good idea."
+  },
+  {
+   "id": "L04",
+   "text": "So, with permission, they cut it down.",
+   "pause_after": 0.8,
+   "min_pause": 0.45,
+   "emphasis": [
+    "permission,",
+    "down."
+   ],
+   "delivery": "Flat, almost reluctant. Then silence: the tree falls in that pause."
+  },
+  {
+   "id": "L05",
+   "text": "Then he counted: {4,844|four thousand eight hundred forty-four} rings.",
+   "pause_after": 0.85,
+   "min_pause": 0.5,
+   "emphasis": [
+    "4,844"
+   ],
+   "delivery": "Slow and precise on the number, a touch of awe. Let it hang.",
+   "pronounce": {
+    "4,844": "four thousand, eight hundred forty-four"
+   }
+  },
+  {
+   "id": "L06",
+   "text": "Bristlecone pines survive by letting most of the tree die.",
+   "pause_after": 0.3,
+   "min_pause": 0.2,
+   "emphasis": [
+    "most",
+    "die."
+   ],
+   "delivery": "Curious, slightly darker tone on 'letting most of the tree die'.",
+   "pronounce": {
+    "Bristlecone": "BRISS-ul-cone"
+   }
+  },
+  {
+   "id": "L07",
+   "text": "This one was alive through a single strip of bark.",
+   "pause_after": 0.6,
+   "min_pause": 0.35,
+   "emphasis": [
+    "single",
+    "strip"
+   ],
+   "delivery": "Soft, almost tender. Lean on 'single strip'."
+  },
+  {
+   "id": "L08",
+   "text": "Their rings are so reliable, scientists used them to correct carbon dating.",
+   "pause_after": 0.75,
+   "min_pause": 0.4,
+   "emphasis": [
+    "correct",
+    "carbon",
+    "dating."
+   ],
+   "delivery": "Impressed, a little proud of the tree. Crisp on 'carbon dating'."
+  },
+  {
+   "id": "L09",
+   "text": "Another one, Methuselah, is still alive in California.",
+   "pause_after": 0.3,
+   "min_pause": 0.2,
+   "emphasis": [
+    "still",
+    "alive"
+   ],
+   "delivery": "Turn the page: lighter, a hint of hope on 'still alive'.",
+   "pronounce": {
+    "Methuselah": "meh-THOO-zeh-luh"
+   }
+  },
+  {
+   "id": "L10",
+   "text": "It was a seedling before the Great Pyramid was built.",
+   "pause_after": 0.85,
+   "min_pause": 0.45,
+   "emphasis": [
+    "before",
+    "Great",
+    "Pyramid"
+   ],
+   "delivery": "The revelation. Slow right down on 'before the Great Pyramid was built' and let it sink in."
+  },
+  {
+   "id": "L11",
+   "text": "Its exact location is a secret.",
+   "pause_after": 0.3,
+   "min_pause": 0.2,
+   "emphasis": [
+    "secret."
+   ],
+   "delivery": "Lower, conspiratorial."
+  },
+  {
+   "id": "L12",
+   "text": "The Forest Service won't say which tree it is.",
+   "pause_after": 0.45,
+   "min_pause": 0.3,
+   "emphasis": [
+    "won't"
+   ],
+   "delivery": "Plain statement. Tiny pause before the next line."
+  },
+  {
+   "id": "L13",
+   "text": "Can you blame them?",
+   "pause_after": 0.4,
+   "min_pause": 0.25,
+   "emphasis": [
+    "blame"
+   ],
+   "delivery": "Wry, half a smile."
+  },
+  {
+   "id": "L14",
+   "text": "The last time we found the oldest tree on Earth...",
+   "pause_after": 0.0,
+   "min_pause": 0.0,
+   "emphasis": [
+    "last",
+    "oldest"
+   ],
+   "delivery": "Trail off with the pitch suspended: the video loops straight into 'In 1964, a student cut down the oldest known tree on Earth.'"
+  }
+ ],
+ "pause_grow_max": 1.0
+}

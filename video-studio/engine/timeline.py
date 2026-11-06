@@ -26,7 +26,8 @@ from .align import align
 # --------------------------------------------------------------------------- layout
 
 def layout(lines: list[dict], seg_lens: list[float], duration: float, lead_in: float,
-           tail_min: float, tail_max: float = 1.4, floor: float | None = None) -> tuple[list[float], dict]:
+           tail_min: float, tail_max: float = 1.4, floor: float | None = None,
+           grow_max: float = 0.6) -> tuple[list[float], dict]:
     """Choose a start time for every line so the narration fills `duration`.
 
     Preferred pauses come from the script; they shrink toward `min_pause`
@@ -41,7 +42,7 @@ def layout(lines: list[dict], seg_lens: list[float], duration: float, lead_in: f
     if room >= sum(pref):
         extra = room - sum(pref)
         flex = [0.0 if "pause_max" in l else p for l, p in zip(lines[:-1], pref)]
-        grow = min(extra, 0.6 * sum(flex))
+        grow = min(extra, grow_max * sum(flex))
         pauses = [p + grow * f / max(1e-9, sum(flex)) for p, f in zip(pref, flex)]
         info["status"] = "fits"
     elif room >= sum(mins):
@@ -145,7 +146,8 @@ def _word_fix(ws: list[dict], seg_len: float) -> list[dict]:
 
 # --------------------------------------------------------------------------- AI voice
 
-def build_ai(script_path: Path, out_dir: Path, max_tries: int = 4) -> Path:
+def build_ai(script_path: Path, out_dir: Path, max_tries: int = 4, tag: str = "ai") -> Path:
+    """AI narration. tag="scratch" makes a timing-only reference read (not a deliverable)."""
     from .tts import Narrator
     script = json.loads(Path(script_path).read_text())
     v = script["voice"]
@@ -156,11 +158,11 @@ def build_ai(script_path: Path, out_dir: Path, max_tries: int = 4) -> Path:
         for L in script["lines"]:
             a = nar.say(markup.spoken_text(L["text"]), speed=speed)
             segs.append(a)
-            ws = align(a, nar.sr, markup.align_words(L["text"]))
+            ws = align(a, nar.sr, markup.align_words(L["text"]), script.get("lexicon"))
             words_rel.append(_word_fix(ws, len(a) / nar.sr))
         lens = [len(s) / nar.sr for s in segs]
         starts, info = layout(script["lines"], lens, script["duration"], script.get("lead_in", 0.1),
-                              script.get("tail_min", 0.6))
+                              script.get("tail_min", 0.6), grow_max=script.get("pause_grow_max", 0.6))
         print(f"[timeline] speed={speed:.3f} speech={info['speech']:.2f}s status={info['status']} "
               f"tail={info['tail']:.2f}s")
         if not info["status"].startswith("OVERRUN"):
@@ -168,12 +170,12 @@ def build_ai(script_path: Path, out_dir: Path, max_tries: int = 4) -> Path:
         speed *= 1.03  # an AI read may be nudged; a human read never is
     audio, tl_lines = _place(script["lines"], segs, words_rel, starts, nar.sr, script["duration"])
     out_dir.mkdir(parents=True, exist_ok=True)
-    wav = out_dir / "narration_ai.wav"
+    wav = out_dir / f"narration_{tag}.wav"
     sf.write(wav, audio, nar.sr, subtype="PCM_16")
-    tl = {"source": "ai", "voice": wav.name, "sample_rate": nar.sr, "duration": script["duration"],
+    tl = {"source": tag, "voice": wav.name, "sample_rate": nar.sr, "duration": script["duration"],
           "fps": script["fps"], "speed": speed, "layout": info, "scenes": script["scenes"],
           "lines": tl_lines}
-    p = out_dir / "timeline_ai.json"
+    p = out_dir / f"timeline_{tag}.json"
     p.write_text(json.dumps(tl, indent=1))
     return p
 
@@ -191,7 +193,7 @@ def build_human(script_path: Path, voice_path: Path, out_dir: Path) -> Path:
         w = markup.align_words(L["text"])
         words_all += w
         owner += [i] * len(w)
-    ws = align(audio, sr, words_all)
+    ws = align(audio, sr, words_all, script.get("lexicon"))
     segs, words_rel = [], []
     n = len(script["lines"])
     pad_in, pad_out = 0.06, 0.12
@@ -211,14 +213,15 @@ def build_human(script_path: Path, voice_path: Path, out_dir: Path) -> Path:
                                     for w in mine], len(seg) / sr))
     lead_in, tail_min = script.get("lead_in", 0.1), script.get("tail_min", 0.6)
     lens = [len(s) / sr for s in segs]
-    starts, info = layout(script["lines"], lens, script["duration"], lead_in, tail_min)
+    gm = script.get("pause_grow_max", 0.6)
+    starts, info = layout(script["lines"], lens, script["duration"], lead_in, tail_min, grow_max=gm)
     print(f"[timeline/human] speech={info['speech']:.2f}s status={info['status']} tail={info['tail']:.2f}s")
     if info["status"].startswith("OVERRUN"):
         # 1) shorten long silences *inside* lines (between words) — never the speech itself
         need = tail_min - info["tail"]
         saved = _tighten_gaps(segs, words_rel, sr, need)
         lens = [len(s) / sr for s in segs]
-        starts, info = layout(script["lines"], lens, script["duration"], lead_in, tail_min)
+        starts, info = layout(script["lines"], lens, script["duration"], lead_in, tail_min, grow_max=gm)
         print(f"[timeline/human] tightened in-line pauses by {saved:.2f}s -> status={info['status']} "
               f"tail={info['tail']:.2f}s")
     if info["status"].startswith("OVERRUN"):
