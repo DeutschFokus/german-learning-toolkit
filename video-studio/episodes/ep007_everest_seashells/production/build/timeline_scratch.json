@@ -1,0 +1,849 @@
+{
+ "source": "scratch",
+ "voice": "narration_scratch.wav",
+ "sample_rate": 24000,
+ "duration": 60.0,
+ "fps": 30,
+ "speed": 0.8,
+ "layout": {
+  "speech": 55.208,
+  "room_for_pauses": 4.112000000000002,
+  "pref_pauses": 5.8,
+  "status": "pauses tightened",
+  "speech_end": 59.4,
+  "tail": 0.6000000000000014,
+  "pauses": [
+   0.4191428571428574,
+   0.35957142857142865,
+   0.4191428571428574,
+   0.37942857142857156,
+   0.39928571428571447,
+   0.37942857142857156,
+   0.4985714285714289,
+   0.4191428571428574,
+   0.4191428571428574,
+   0.4191428571428574
+  ]
+ },
+ "scenes": [
+  {
+   "id": "hook",
+   "first_line": "L01",
+   "name": "Hook: seashells on the summit"
+  },
+  {
+   "id": "summit",
+   "first_line": "L02",
+   "name": "Summit limestone, fossils in the rock"
+  },
+  {
+   "id": "sea",
+   "first_line": "L03",
+   "name": "450 million years ago: a shallow sea"
+  },
+  {
+   "id": "drift",
+   "first_line": "L04",
+   "name": "India races north"
+  },
+  {
+   "id": "crash",
+   "first_line": "L05",
+   "name": "Collision"
+  },
+  {
+   "id": "rise",
+   "first_line": "L06",
+   "name": "Seafloor rises nine kilometers"
+  },
+  {
+   "id": "grow",
+   "first_line": "L07",
+   "name": "Still rising"
+  },
+  {
+   "id": "climbers",
+   "first_line": "L08",
+   "name": "1924: Mallory and Irvine"
+  },
+  {
+   "id": "boot",
+   "first_line": "L09",
+   "name": "2024: the boot in the ice"
+  },
+  {
+   "id": "camera",
+   "first_line": "L10",
+   "name": "The missing camera"
+  },
+  {
+   "id": "outro",
+   "first_line": "L11",
+   "name": "They stood on seashells (loop)"
+  }
+ ],
+ "lines": [
+  {
+   "id": "L01",
+   "text": "There are seashells on top of Mount Everest.",
+   "start": 0.08,
+   "end": 3.192,
+   "caption": false,
+   "emphasis": [
+    "seashells",
+    "top"
+   ],
+   "tokens": [
+    {
+     "display": "There",
+     "start": 0.08,
+     "end": 0.27
+    },
+    {
+     "display": "are",
+     "start": 0.27,
+     "end": 0.39
+    },
+    {
+     "display": "seashells",
+     "start": 0.39,
+     "end": 1.17
+    },
+    {
+     "display": "on",
+     "start": 1.17,
+     "end": 1.39
+    },
+    {
+     "display": "top",
+     "start": 1.39,
+     "end": 1.84
+    },
+    {
+     "display": "of",
+     "start": 1.84,
+     "end": 1.99
+    },
+    {
+     "display": "Mount",
+     "start": 1.99,
+     "end": 2.45
+    },
+    {
+     "display": "Everest.",
+     "start": 2.45,
+     "end": 3.18
+    }
+   ]
+  },
+  {
+   "id": "L02",
+   "text": "The summit rock is limestone, full of fossil sea creatures.",
+   "start": 3.611,
+   "end": 8.245,
+   "caption": true,
+   "emphasis": [
+    "limestone,",
+    "sea"
+   ],
+   "tokens": [
+    {
+     "display": "The",
+     "start": 3.611,
+     "end": 3.771
+    },
+    {
+     "display": "summit",
+     "start": 3.771,
+     "end": 4.181
+    },
+    {
+     "display": "rock",
+     "start": 4.181,
+     "end": 4.591
+    },
+    {
+     "display": "is",
+     "start": 4.591,
+     "end": 4.741
+    },
+    {
+     "display": "limestone,",
+     "start": 4.741,
+     "end": 5.751
+    },
+    {
+     "display": "full",
+     "start": 6.021,
+     "end": 6.371
+    },
+    {
+     "display": "of",
+     "start": 6.371,
+     "end": 6.451
+    },
+    {
+     "display": "fossil",
+     "start": 6.451,
+     "end": 7.101
+    },
+    {
+     "display": "sea",
+     "start": 7.101,
+     "end": 7.401
+    },
+    {
+     "display": "creatures.",
+     "start": 7.401,
+     "end": 8.231
+    }
+   ]
+  },
+  {
+   "id": "L03",
+   "text": "More than 450 million years ago, this was the floor of a shallow sea.",
+   "start": 8.604,
+   "end": 14.89,
+   "caption": true,
+   "emphasis": [
+    "floor",
+    "sea."
+   ],
+   "tokens": [
+    {
+     "display": "More",
+     "start": 8.604,
+     "end": 8.954
+    },
+    {
+     "display": "than",
+     "start": 8.954,
+     "end": 9.144
+    },
+    {
+     "display": "450",
+     "start": 9.144,
+     "end": 10.394
+    },
+    {
+     "display": "million",
+     "start": 10.394,
+     "end": 10.964
+    },
+    {
+     "display": "years",
+     "start": 10.964,
+     "end": 11.334
+    },
+    {
+     "display": "ago,",
+     "start": 11.334,
+     "end": 11.864
+    },
+    {
+     "display": "this",
+     "start": 12.204,
+     "end": 12.454
+    },
+    {
+     "display": "was",
+     "start": 12.454,
+     "end": 12.724
+    },
+    {
+     "display": "the",
+     "start": 12.724,
+     "end": 12.824
+    },
+    {
+     "display": "floor",
+     "start": 12.824,
+     "end": 13.444
+    },
+    {
+     "display": "of",
+     "start": 13.444,
+     "end": 13.574
+    },
+    {
+     "display": "a",
+     "start": 13.574,
+     "end": 13.624
+    },
+    {
+     "display": "shallow",
+     "start": 13.624,
+     "end": 14.244
+    },
+    {
+     "display": "sea.",
+     "start": 14.244,
+     "end": 14.874
+    }
+   ]
+  },
+  {
+   "id": "L04",
+   "text": "Then India broke loose and raced north, four times faster than your fingernails grow.",
+   "start": 15.309,
+   "end": 22.13,
+   "caption": true,
+   "emphasis": [
+    "raced",
+    "fingernails"
+   ],
+   "tokens": [
+    {
+     "display": "Then",
+     "start": 15.309,
+     "end": 15.579
+    },
+    {
+     "display": "India",
+     "start": 15.579,
+     "end": 16.089
+    },
+    {
+     "display": "broke",
+     "start": 16.089,
+     "end": 16.499
+    },
+    {
+     "display": "loose",
+     "start": 16.499,
+     "end": 17.019
+    },
+    {
+     "display": "and",
+     "start": 17.019,
+     "end": 17.179
+    },
+    {
+     "display": "raced",
+     "start": 17.179,
+     "end": 17.649
+    },
+    {
+     "display": "north,",
+     "start": 17.649,
+     "end": 18.339
+    },
+    {
+     "display": "four",
+     "start": 18.709,
+     "end": 19.069
+    },
+    {
+     "display": "times",
+     "start": 19.069,
+     "end": 19.669
+    },
+    {
+     "display": "faster",
+     "start": 19.669,
+     "end": 20.309
+    },
+    {
+     "display": "than",
+     "start": 20.309,
+     "end": 20.469
+    },
+    {
+     "display": "your",
+     "start": 20.469,
+     "end": 20.579
+    },
+    {
+     "display": "fingernails",
+     "start": 20.579,
+     "end": 21.449
+    },
+    {
+     "display": "grow.",
+     "start": 21.449,
+     "end": 22.119
+    }
+   ]
+  },
+  {
+   "id": "L05",
+   "text": "About 50 million years ago, it slammed into Asia.",
+   "start": 22.509,
+   "end": 26.551,
+   "caption": true,
+   "emphasis": [
+    "slammed"
+   ],
+   "tokens": [
+    {
+     "display": "About",
+     "start": 22.509,
+     "end": 22.859
+    },
+    {
+     "display": "50",
+     "start": 22.859,
+     "end": 23.309
+    },
+    {
+     "display": "million",
+     "start": 23.309,
+     "end": 23.799
+    },
+    {
+     "display": "years",
+     "start": 23.799,
+     "end": 24.129
+    },
+    {
+     "display": "ago,",
+     "start": 24.129,
+     "end": 24.649
+    },
+    {
+     "display": "it",
+     "start": 24.899,
+     "end": 25.029
+    },
+    {
+     "display": "slammed",
+     "start": 25.029,
+     "end": 25.679
+    },
+    {
+     "display": "into",
+     "start": 25.679,
+     "end": 25.919
+    },
+    {
+     "display": "Asia.",
+     "start": 25.919,
+     "end": 26.539
+    }
+   ]
+  },
+  {
+   "id": "L06",
+   "text": "The old seafloor crumpled and rose nearly nine kilometers.",
+   "start": 26.95,
+   "end": 31.6,
+   "caption": true,
+   "emphasis": [
+    "crumpled",
+    "nine kilometers."
+   ],
+   "tokens": [
+    {
+     "display": "The",
+     "start": 26.95,
+     "end": 27.14
+    },
+    {
+     "display": "old",
+     "start": 27.14,
+     "end": 27.38
+    },
+    {
+     "display": "seafloor",
+     "start": 27.38,
+     "end": 27.99
+    },
+    {
+     "display": "crumpled",
+     "start": 27.99,
+     "end": 28.71
+    },
+    {
+     "display": "and",
+     "start": 28.99,
+     "end": 29.16
+    },
+    {
+     "display": "rose",
+     "start": 29.16,
+     "end": 29.61
+    },
+    {
+     "display": "nearly",
+     "start": 29.61,
+     "end": 30.0
+    },
+    {
+     "display": "nine",
+     "start": 30.0,
+     "end": 30.53
+    },
+    {
+     "display": "kilometers.",
+     "start": 30.53,
+     "end": 31.59
+    }
+   ]
+  },
+  {
+   "id": "L07",
+   "text": "And it's still rising, about two millimeters a year.",
+   "start": 31.979,
+   "end": 35.503,
+   "caption": true,
+   "emphasis": [
+    "still",
+    "two millimeters"
+   ],
+   "tokens": [
+    {
+     "display": "And",
+     "start": 31.979,
+     "end": 32.159
+    },
+    {
+     "display": "it's",
+     "start": 32.159,
+     "end": 32.319
+    },
+    {
+     "display": "still",
+     "start": 32.319,
+     "end": 32.649
+    },
+    {
+     "display": "rising,",
+     "start": 32.649,
+     "end": 33.479
+    },
+    {
+     "display": "about",
+     "start": 33.659,
+     "end": 34.009
+    },
+    {
+     "display": "two",
+     "start": 34.009,
+     "end": 34.249
+    },
+    {
+     "display": "millimeters",
+     "start": 34.249,
+     "end": 34.919
+    },
+    {
+     "display": "a",
+     "start": 34.919,
+     "end": 34.969
+    },
+    {
+     "display": "year.",
+     "start": 34.969,
+     "end": 35.489
+    }
+   ]
+  },
+  {
+   "id": "L08",
+   "text": "In 1924, Mallory and Irvine were last seen climbing toward the top.",
+   "start": 36.001,
+   "end": 42.041,
+   "caption": true,
+   "emphasis": [
+    "last seen",
+    "top."
+   ],
+   "tokens": [
+    {
+     "display": "In",
+     "start": 36.001,
+     "end": 36.141
+    },
+    {
+     "display": "1924,",
+     "start": 36.141,
+     "end": 37.521
+    },
+    {
+     "display": "Mallory",
+     "start": 37.931,
+     "end": 38.611
+    },
+    {
+     "display": "and",
+     "start": 38.611,
+     "end": 38.751
+    },
+    {
+     "display": "Irvine",
+     "start": 38.751,
+     "end": 39.341
+    },
+    {
+     "display": "were",
+     "start": 39.341,
+     "end": 39.471
+    },
+    {
+     "display": "last",
+     "start": 39.471,
+     "end": 40.031
+    },
+    {
+     "display": "seen",
+     "start": 40.031,
+     "end": 40.341
+    },
+    {
+     "display": "climbing",
+     "start": 40.341,
+     "end": 41.021
+    },
+    {
+     "display": "toward",
+     "start": 41.021,
+     "end": 41.341
+    },
+    {
+     "display": "the",
+     "start": 41.341,
+     "end": 41.411
+    },
+    {
+     "display": "top.",
+     "start": 41.411,
+     "end": 42.031
+    }
+   ]
+  },
+  {
+   "id": "L09",
+   "text": "They never came back. In 2024, a boot melted out of the ice, Irvine's name stitched into the sock.",
+   "start": 42.46,
+   "end": 50.823,
+   "caption": true,
+   "emphasis": [
+    "never",
+    "name"
+   ],
+   "tokens": [
+    {
+     "display": "They",
+     "start": 42.46,
+     "end": 42.64
+    },
+    {
+     "display": "never",
+     "start": 42.64,
+     "end": 42.97
+    },
+    {
+     "display": "came",
+     "start": 42.97,
+     "end": 43.37
+    },
+    {
+     "display": "back.",
+     "start": 43.37,
+     "end": 43.89
+    },
+    {
+     "display": "In",
+     "start": 44.39,
+     "end": 44.54
+    },
+    {
+     "display": "2024,",
+     "start": 44.54,
+     "end": 45.82
+    },
+    {
+     "display": "a",
+     "start": 45.85,
+     "end": 45.93
+    },
+    {
+     "display": "boot",
+     "start": 45.93,
+     "end": 46.33
+    },
+    {
+     "display": "melted",
+     "start": 46.33,
+     "end": 46.97
+    },
+    {
+     "display": "out",
+     "start": 46.97,
+     "end": 47.1
+    },
+    {
+     "display": "of",
+     "start": 47.1,
+     "end": 47.19
+    },
+    {
+     "display": "the",
+     "start": 47.19,
+     "end": 47.36
+    },
+    {
+     "display": "ice,",
+     "start": 47.36,
+     "end": 47.88
+    },
+    {
+     "display": "Irvine's",
+     "start": 48.2,
+     "end": 48.87
+    },
+    {
+     "display": "name",
+     "start": 48.87,
+     "end": 49.34
+    },
+    {
+     "display": "stitched",
+     "start": 49.34,
+     "end": 49.83
+    },
+    {
+     "display": "into",
+     "start": 49.83,
+     "end": 50.03
+    },
+    {
+     "display": "the",
+     "start": 50.03,
+     "end": 50.14
+    },
+    {
+     "display": "sock.",
+     "start": 50.14,
+     "end": 50.81
+    }
+   ]
+  },
+  {
+   "id": "L10",
+   "text": "Their camera was never found. Nobody knows if they reached the summit.",
+   "start": 51.242,
+   "end": 56.32,
+   "caption": true,
+   "emphasis": [
+    "camera",
+    "Nobody knows"
+   ],
+   "tokens": [
+    {
+     "display": "Their",
+     "start": 51.242,
+     "end": 51.432
+    },
+    {
+     "display": "camera",
+     "start": 51.432,
+     "end": 52.062
+    },
+    {
+     "display": "was",
+     "start": 52.062,
+     "end": 52.322
+    },
+    {
+     "display": "never",
+     "start": 52.322,
+     "end": 52.682
+    },
+    {
+     "display": "found.",
+     "start": 52.682,
+     "end": 53.382
+    },
+    {
+     "display": "Nobody",
+     "start": 53.782,
+     "end": 54.312
+    },
+    {
+     "display": "knows",
+     "start": 54.312,
+     "end": 54.852
+    },
+    {
+     "display": "if",
+     "start": 54.852,
+     "end": 54.982
+    },
+    {
+     "display": "they",
+     "start": 54.982,
+     "end": 55.162
+    },
+    {
+     "display": "reached",
+     "start": 55.162,
+     "end": 55.552
+    },
+    {
+     "display": "the",
+     "start": 55.552,
+     "end": 55.652
+    },
+    {
+     "display": "summit.",
+     "start": 55.652,
+     "end": 56.312
+    }
+   ]
+  },
+  {
+   "id": "L11",
+   "text": "But if they did, they stood on seashells.",
+   "start": 56.739,
+   "end": 59.4,
+   "caption": true,
+   "emphasis": [
+    "did,",
+    "seashells."
+   ],
+   "tokens": [
+    {
+     "display": "But",
+     "start": 56.739,
+     "end": 56.899
+    },
+    {
+     "display": "if",
+     "start": 56.899,
+     "end": 57.019
+    },
+    {
+     "display": "they",
+     "start": 57.019,
+     "end": 57.219
+    },
+    {
+     "display": "did,",
+     "start": 57.219,
+     "end": 57.769
+    },
+    {
+     "display": "they",
+     "start": 57.769,
+     "end": 57.909
+    },
+    {
+     "display": "stood",
+     "start": 57.909,
+     "end": 58.209
+    },
+    {
+     "display": "on",
+     "start": 58.209,
+     "end": 58.399
+    },
+    {
+     "display": "seashells.",
+     "start": 58.399,
+     "end": 59.389
+    }
+   ]
+  }
+ ]
+}

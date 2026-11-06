@@ -1,0 +1,219 @@
+{
+ "episode": "ep007",
+ "slug": "everest-seashells",
+ "title": "There Are Seashells on Top of Everest",
+ "duration": 60.0,
+ "fps": 30,
+ "lead_in": 0.08,
+ "tail_min": 0.6,
+ "narration": "human",
+ "pause_grow_max": 1.0,
+ "voice": {
+  "engine": "kokoro-82m (onnx) — SCRATCH timing reference only, never published",
+  "blend": {
+   "am_michael": 0.6,
+   "am_onyx": 0.25,
+   "am_puck": 0.15
+  },
+  "speed": 0.8,
+  "lang": "en-us"
+ },
+ "lexicon": {
+  "mallory": "M AE L ER IY",
+  "irvine": "ER V AY N",
+  "seafloor": "S IY F L AO R",
+  "irvine's": "ER V AY N Z"
+ },
+ "scenes": [
+  {
+   "id": "hook",
+   "first_line": "L01",
+   "name": "Hook: seashells on the summit"
+  },
+  {
+   "id": "summit",
+   "first_line": "L02",
+   "name": "Summit limestone, fossils in the rock"
+  },
+  {
+   "id": "sea",
+   "first_line": "L03",
+   "name": "450 million years ago: a shallow sea"
+  },
+  {
+   "id": "drift",
+   "first_line": "L04",
+   "name": "India races north"
+  },
+  {
+   "id": "crash",
+   "first_line": "L05",
+   "name": "Collision"
+  },
+  {
+   "id": "rise",
+   "first_line": "L06",
+   "name": "Seafloor rises nine kilometers"
+  },
+  {
+   "id": "grow",
+   "first_line": "L07",
+   "name": "Still rising"
+  },
+  {
+   "id": "climbers",
+   "first_line": "L08",
+   "name": "1924: Mallory and Irvine"
+  },
+  {
+   "id": "boot",
+   "first_line": "L09",
+   "name": "2024: the boot in the ice"
+  },
+  {
+   "id": "camera",
+   "first_line": "L10",
+   "name": "The missing camera"
+  },
+  {
+   "id": "outro",
+   "first_line": "L11",
+   "name": "They stood on seashells (loop)"
+  }
+ ],
+ "lines": [
+  {
+   "id": "L01",
+   "text": "There are seashells on top of Mount Everest.",
+   "pause_after": 0.6,
+   "min_pause": 0.3,
+   "emphasis": [
+    "seashells",
+    "top"
+   ],
+   "delivery": "Matter-of-fact, quietly amazed. Let 'seashells' sit for a beat.",
+   "pause_max": 0.65,
+   "caption": false
+  },
+  {
+   "id": "L02",
+   "text": "The summit rock is limestone, full of fossil sea creatures.",
+   "pause_after": 0.45,
+   "min_pause": 0.3,
+   "emphasis": [
+    "limestone,",
+    "sea"
+   ],
+   "delivery": "Calm, explaining. Slight lift on 'sea creatures'."
+  },
+  {
+   "id": "L03",
+   "text": "More than {450|four hundred fifty} million years ago, this was the floor of a shallow sea.",
+   "pause_after": 0.6,
+   "min_pause": 0.3,
+   "emphasis": [
+    "floor",
+    "sea."
+   ],
+   "delivery": "Slow down: paint the picture. Warm on 'shallow sea'.",
+   "pronounce": {
+    "450": "four hundred fifty"
+   }
+  },
+  {
+   "id": "L04",
+   "text": "Then India broke loose and raced north, four times faster than your fingernails grow.",
+   "pause_after": 0.5,
+   "min_pause": 0.3,
+   "emphasis": [
+    "raced",
+    "fingernails"
+   ],
+   "delivery": "Energy up. A small smile on 'fingernails'."
+  },
+  {
+   "id": "L05",
+   "text": "About {50|fifty} million years ago, it slammed into Asia.",
+   "pause_after": 0.55,
+   "min_pause": 0.3,
+   "emphasis": [
+    "slammed"
+   ],
+   "delivery": "Punch 'slammed', then stop."
+  },
+  {
+   "id": "L06",
+   "text": "The old seafloor crumpled and rose nearly nine kilometers.",
+   "pause_after": 0.5,
+   "min_pause": 0.3,
+   "emphasis": [
+    "crumpled",
+    "nine kilometers."
+   ],
+   "delivery": "Building, rising pitch toward 'sky'."
+  },
+  {
+   "id": "L07",
+   "text": "And it's still rising, about two millimeters a year.",
+   "pause_after": 0.8,
+   "min_pause": 0.3,
+   "emphasis": [
+    "still",
+    "two millimeters"
+   ],
+   "delivery": "Lighter, almost amused. Long breath after: the story turns."
+  },
+  {
+   "id": "L08",
+   "text": "In {1924|nineteen twenty-four}, Mallory and Irvine were last seen climbing toward the top.",
+   "pause_after": 0.6,
+   "min_pause": 0.3,
+   "emphasis": [
+    "last seen",
+    "top."
+   ],
+   "delivery": "Lower, slower. Storyteller voice.",
+   "pronounce": {
+    "1924": "nineteen twenty-four",
+    "Mallory": "MAL-uh-ree",
+    "Irvine": "UR-vine"
+   }
+  },
+  {
+   "id": "L09",
+   "text": "They never came back. In {2024|twenty twenty-four}, a boot melted out of the ice, Irvine's name stitched into the sock.",
+   "pause_after": 0.6,
+   "min_pause": 0.3,
+   "emphasis": [
+    "never",
+    "name"
+   ],
+   "delivery": "Quiet. Pause after 'never came back'. Gentle on 'stitched into the sock'.",
+   "pronounce": {
+    "2024": "twenty twenty-four"
+   }
+  },
+  {
+   "id": "L10",
+   "text": "Their camera was never found. Nobody knows if they reached the summit.",
+   "pause_after": 0.6,
+   "min_pause": 0.3,
+   "emphasis": [
+    "camera",
+    "Nobody knows"
+   ],
+   "delivery": "Mystery. Hold 'Nobody knows'."
+  },
+  {
+   "id": "L11",
+   "text": "But if they did, they stood on seashells.",
+   "pause_after": 0.0,
+   "min_pause": 0.0,
+   "emphasis": [
+    "did,",
+    "seashells."
+   ],
+   "delivery": "Soft, almost a whisper, with a smile. Loops straight into 'There are seashells on top of Mount Everest.'"
+  }
+ ]
+}

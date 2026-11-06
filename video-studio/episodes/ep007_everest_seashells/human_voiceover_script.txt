@@ -1,0 +1,144 @@
+EP007 — THERE ARE SEASHELLS ON TOP OF EVEREST
+Recording-ready voiceover script (deep, calm male narrator)
+========================================================================
+Video length: 60 s   |   Spoken words: 128   |   Narration window: 00:00.08 – 00:59.40
+
+THE VOICE
+  Intelligent, calm, quietly fascinated. Authority without lecturing; a close-mic,
+  one-to-one conversation, not a trailer. Deep does not mean slow: keep momentum
+  (about 165–175 words per minute inside sentences) and let the PAUSES do the drama.
+  Let a slight smile in on the lighter lines. Never push or shout.
+
+MARKS
+  CAPS      = lean on this word (pitch or weight, not volume)
+  /         = short breath, about 0.2–0.4 s
+  //        = beat, about 0.4–0.8 s
+  ///       = let it land, 0.8 s or more
+  ...       = suspend the pitch: the thought continues
+
+HOW TO RECORD
+  1. Quiet, soft room (closet or duvet fort beats a bare room). Mic 15–20 cm away,
+     slightly off-axis to avoid plosives. Peaks around -10 dBFS, never above -3.
+  2. Record the whole script in one take as WAV (48 kHz, 24-bit, mono).
+     Leave 2 s of silence at the start. Do a second full take if a line slips.
+  3. The timings below are a GUIDE (they match guide_record_along.mp4), not a click track.
+     Read naturally. The pipeline aligns your take word by word, keeps your voice
+     at its natural speed, and re-times the scenes, captions and sound design to it.
+  4. If your read runs long, the pipeline tightens the pauses first. If it still
+     overruns 60 s it tells you which lines to trim; it never speeds your voice up.
+  5. Optional: play guide_record_along.mp4 on a second screen (muted or quiet) and read
+     along with the teleprompter at the top. Then run:
+     python3 production/build.py human path/to/your_take.wav
+
+========================================================================
+TIMED SCRIPT
+========================================================================
+
+--- SCENE: HOOK: SEASHELLS ON THE SUMMIT ---------------------------
+
+[00:00.08 – 00:03.19]  L01
+   There are SEASHELLS on TOP of Mount Everest. //
+   Delivery: Matter-of-fact, quietly amazed. Let 'seashells' sit for a beat.
+   Pause after: 0.42 s
+
+--- SCENE: SUMMIT LIMESTONE, FOSSILS IN THE ROCK -------------------
+
+[00:03.61 – 00:08.24]  L02
+   The summit rock is LIMESTONE, full of fossil SEA creatures. /
+   Delivery: Calm, explaining. Slight lift on 'sea creatures'.
+   Pause after: 0.36 s
+
+--- SCENE: 450 MILLION YEARS AGO: A SHALLOW SEA --------------------
+
+[00:08.60 – 00:14.89]  L03
+   More than four hundred fifty million years ago, this was the FLOOR of a shallow SEA. //
+   (on screen: "More than 450 million years ago, this was the floor of a shallow sea.")
+   Delivery: Slow down: paint the picture. Warm on 'shallow sea'.
+   Say it:   450 = four hundred fifty
+   Pause after: 0.42 s
+
+--- SCENE: INDIA RACES NORTH ---------------------------------------
+
+[00:15.31 – 00:22.13]  L04
+   Then India broke loose and RACED north, four times faster than your FINGERNAILS grow. /
+   Delivery: Energy up. A small smile on 'fingernails'.
+   Pause after: 0.38 s
+
+--- SCENE: COLLISION -----------------------------------------------
+
+[00:22.51 – 00:26.55]  L05
+   About fifty million years ago, it SLAMMED into Asia. /
+   (on screen: "About 50 million years ago, it slammed into Asia.")
+   Delivery: Punch 'slammed', then stop.
+   Pause after: 0.40 s
+
+--- SCENE: SEAFLOOR RISES NINE KILOMETERS --------------------------
+
+[00:26.95 – 00:31.60]  L06
+   The old seafloor CRUMPLED and rose nearly nine kilometers. /
+   Delivery: Building, rising pitch toward 'sky'.
+   Pause after: 0.38 s
+
+--- SCENE: STILL RISING --------------------------------------------
+
+[00:31.98 – 00:35.50]  L07
+   And it's STILL rising, about two millimeters a year. //
+   Delivery: Lighter, almost amused. Long breath after: the story turns.
+   Pause after: 0.50 s
+
+--- SCENE: 1924: MALLORY AND IRVINE --------------------------------
+
+[00:36.00 – 00:42.04]  L08
+   In nineteen twenty-four, Mallory and Irvine were last seen climbing toward the TOP. //
+   (on screen: "In 1924, Mallory and Irvine were last seen climbing toward the top.")
+   Delivery: Lower, slower. Storyteller voice.
+   Say it:   1924 = nineteen twenty-four; Mallory = MAL-uh-ree; Irvine = UR-vine
+   Pause after: 0.42 s
+
+--- SCENE: 2024: THE BOOT IN THE ICE -------------------------------
+
+[00:42.46 – 00:50.82]  L09
+   They NEVER came back. In twenty twenty-four, a boot melted out of the ice, Irvine's NAME stitched into the sock. //
+   (on screen: "They never came back. In 2024, a boot melted out of the ice, Irvine's name stitched into the sock.")
+   Delivery: Quiet. Pause after 'never came back'. Gentle on 'stitched into the sock'.
+   Say it:   2024 = twenty twenty-four
+   Pause after: 0.42 s
+
+--- SCENE: THE MISSING CAMERA --------------------------------------
+
+[00:51.24 – 00:56.32]  L10
+   Their CAMERA was never found. Nobody knows if they reached the summit. //
+   Delivery: Mystery. Hold 'Nobody knows'.
+   Pause after: 0.42 s
+
+--- SCENE: THEY STOOD ON SEASHELLS (LOOP) --------------------------
+
+[00:56.74 – 00:59.40]  L11
+   But if they DID, they stood on SEASHELLS.
+   Delivery: Soft, almost a whisper, with a smile. Loops straight into 'There are seashells on top of Mount Everest.'
+
+========================================================================
+PRONUNCIATION GUIDE
+========================================================================
+  450          four hundred fifty
+  1924         nineteen twenty-four
+  Mallory      MAL-uh-ree
+  Irvine       UR-vine
+  2024         twenty twenty-four
+
+========================================================================
+CLEAN READ (no marks) — for a first run-through
+========================================================================
+  There are seashells on top of Mount Everest. The summit rock is
+  limestone, full of fossil sea creatures. More than four hundred fifty
+  million years ago, this was the floor of a shallow sea. Then India
+  broke loose and raced north, four times faster than your fingernails
+  grow. About fifty million years ago, it slammed into Asia. The old
+  seafloor crumpled and rose nearly nine kilometers. And it's still
+  rising, about two millimeters a year. In nineteen twenty-four, Mallory
+  and Irvine were last seen climbing toward the top. They never came
+  back. In twenty twenty-four, a boot melted out of the ice, Irvine's
+  name stitched into the sock. Their camera was never found. Nobody
+  knows if they reached the summit. But if they did, they stood on
+  seashells.
+
