@@ -1,0 +1,807 @@
+{
+ "source": "scratch",
+ "voice": "narration_scratch.wav",
+ "sample_rate": 24000,
+ "duration": 60.0,
+ "fps": 30,
+ "speed": 0.8,
+ "layout": {
+  "speech": 51.89625,
+  "room_for_pauses": 7.423749999999998,
+  "pref_pauses": 6.4,
+  "status": "fits",
+  "speech_end": 59.4,
+  "tail": 0.6000000000000014,
+  "pauses": [
+   0.55,
+   0.5874999999999998,
+   0.8224999999999997,
+   0.6462499999999999,
+   0.8812499999999998,
+   0.5287499999999998,
+   0.6462499999999999,
+   0.9399999999999997,
+   0.8812499999999998,
+   0.9399999999999997
+  ]
+ },
+ "scenes": [
+  {
+   "id": "hook",
+   "first_line": "L01",
+   "name": "Hook: it would hear you tomorrow"
+  },
+  {
+   "id": "launch",
+   "first_line": "L02",
+   "name": "1977: the launch"
+  },
+  {
+   "id": "lightday",
+   "first_line": "L03",
+   "name": "One full light-day from home"
+  },
+  {
+   "id": "bulb",
+   "first_line": "L04",
+   "name": "A fridge-bulb transmitter"
+  },
+  {
+   "id": "dot",
+   "first_line": "L05",
+   "name": "1990: the pale blue dot"
+  },
+  {
+   "id": "record",
+   "first_line": "L06",
+   "name": "The golden record"
+  },
+  {
+   "id": "love",
+   "first_line": "L08",
+   "name": "Brainwaves of a woman in love"
+  },
+  {
+   "id": "star",
+   "first_line": "L10",
+   "name": "40,000 years: another star"
+  },
+  {
+   "id": "outro",
+   "first_line": "L11",
+   "name": "Still listening (loop)"
+  }
+ ],
+ "lines": [
+  {
+   "id": "L01",
+   "text": "If you said hello to this spacecraft right now, it would hear you tomorrow.",
+   "start": 0.08,
+   "end": 5.377,
+   "caption": false,
+   "emphasis": [
+    "hello",
+    "tomorrow."
+   ],
+   "tokens": [
+    {
+     "display": "If",
+     "start": 0.08,
+     "end": 0.25
+    },
+    {
+     "display": "you",
+     "start": 0.25,
+     "end": 0.4
+    },
+    {
+     "display": "said",
+     "start": 0.4,
+     "end": 0.71
+    },
+    {
+     "display": "hello",
+     "start": 0.71,
+     "end": 1.23
+    },
+    {
+     "display": "to",
+     "start": 1.23,
+     "end": 1.36
+    },
+    {
+     "display": "this",
+     "start": 1.36,
+     "end": 1.56
+    },
+    {
+     "display": "spacecraft",
+     "start": 1.56,
+     "end": 2.43
+    },
+    {
+     "display": "right",
+     "start": 2.43,
+     "end": 2.77
+    },
+    {
+     "display": "now,",
+     "start": 2.77,
+     "end": 3.33
+    },
+    {
+     "display": "it",
+     "start": 3.68,
+     "end": 3.77
+    },
+    {
+     "display": "would",
+     "start": 3.77,
+     "end": 3.94
+    },
+    {
+     "display": "hear",
+     "start": 3.94,
+     "end": 4.29
+    },
+    {
+     "display": "you",
+     "start": 4.29,
+     "end": 4.53
+    },
+    {
+     "display": "tomorrow.",
+     "start": 4.53,
+     "end": 5.37
+    }
+   ]
+  },
+  {
+   "id": "L02",
+   "text": "Voyager 1 left Earth in 1977.",
+   "start": 5.927,
+   "end": 9.783,
+   "caption": true,
+   "emphasis": [
+    "Voyager",
+    "1977."
+   ],
+   "tokens": [
+    {
+     "display": "Voyager",
+     "start": 5.927,
+     "end": 6.597
+    },
+    {
+     "display": "1",
+     "start": 6.597,
+     "end": 6.997
+    },
+    {
+     "display": "left",
+     "start": 6.997,
+     "end": 7.397
+    },
+    {
+     "display": "Earth",
+     "start": 7.397,
+     "end": 7.867
+    },
+    {
+     "display": "in",
+     "start": 7.867,
+     "end": 8.047
+    },
+    {
+     "display": "1977.",
+     "start": 8.047,
+     "end": 9.777
+    }
+   ]
+  },
+  {
+   "id": "L03",
+   "text": "On November 18, 2026, it crosses a full light-day from home.",
+   "start": 10.371,
+   "end": 16.424,
+   "caption": true,
+   "emphasis": [
+    "full",
+    "light-day"
+   ],
+   "tokens": [
+    {
+     "display": "On",
+     "start": 10.371,
+     "end": 10.591
+    },
+    {
+     "display": "November 18, 2026,",
+     "start": 10.591,
+     "end": 13.331
+    },
+    {
+     "display": "it",
+     "start": 13.671,
+     "end": 13.801
+    },
+    {
+     "display": "crosses",
+     "start": 13.801,
+     "end": 14.431
+    },
+    {
+     "display": "a",
+     "start": 14.431,
+     "end": 14.481
+    },
+    {
+     "display": "full",
+     "start": 14.481,
+     "end": 14.901
+    },
+    {
+     "display": "light-day",
+     "start": 14.901,
+     "end": 15.541
+    },
+    {
+     "display": "from",
+     "start": 15.541,
+     "end": 15.801
+    },
+    {
+     "display": "home.",
+     "start": 15.801,
+     "end": 16.411
+    }
+   ]
+  },
+  {
+   "id": "L04",
+   "text": "It still calls home on about the power of a fridge light bulb.",
+   "start": 17.247,
+   "end": 21.549,
+   "caption": true,
+   "emphasis": [
+    "still",
+    "fridge"
+   ],
+   "tokens": [
+    {
+     "display": "It",
+     "start": 17.247,
+     "end": 17.377
+    },
+    {
+     "display": "still",
+     "start": 17.377,
+     "end": 17.657
+    },
+    {
+     "display": "calls",
+     "start": 17.657,
+     "end": 18.107
+    },
+    {
+     "display": "home",
+     "start": 18.107,
+     "end": 18.587
+    },
+    {
+     "display": "on",
+     "start": 18.587,
+     "end": 18.857
+    },
+    {
+     "display": "about",
+     "start": 18.857,
+     "end": 19.147
+    },
+    {
+     "display": "the",
+     "start": 19.147,
+     "end": 19.227
+    },
+    {
+     "display": "power",
+     "start": 19.227,
+     "end": 19.937
+    },
+    {
+     "display": "of",
+     "start": 19.937,
+     "end": 20.087
+    },
+    {
+     "display": "a",
+     "start": 20.087,
+     "end": 20.127
+    },
+    {
+     "display": "fridge",
+     "start": 20.127,
+     "end": 20.657
+    },
+    {
+     "display": "light",
+     "start": 20.657,
+     "end": 20.997
+    },
+    {
+     "display": "bulb.",
+     "start": 20.997,
+     "end": 21.537
+    }
+   ]
+  },
+  {
+   "id": "L05",
+   "text": "In 1990, it turned around and took a photo of us: a pale blue dot.",
+   "start": 22.195,
+   "end": 28.018,
+   "caption": true,
+   "emphasis": [
+    "turned",
+    "pale",
+    "dot."
+   ],
+   "tokens": [
+    {
+     "display": "In",
+     "start": 22.195,
+     "end": 22.355
+    },
+    {
+     "display": "1990,",
+     "start": 22.355,
+     "end": 23.445
+    },
+    {
+     "display": "it",
+     "start": 23.445,
+     "end": 23.585
+    },
+    {
+     "display": "turned",
+     "start": 23.585,
+     "end": 23.955
+    },
+    {
+     "display": "around",
+     "start": 23.955,
+     "end": 24.425
+    },
+    {
+     "display": "and",
+     "start": 24.425,
+     "end": 24.535
+    },
+    {
+     "display": "took",
+     "start": 24.535,
+     "end": 24.705
+    },
+    {
+     "display": "a",
+     "start": 24.705,
+     "end": 24.745
+    },
+    {
+     "display": "photo",
+     "start": 24.735,
+     "end": 25.425
+    },
+    {
+     "display": "of",
+     "start": 25.425,
+     "end": 25.555
+    },
+    {
+     "display": "us:",
+     "start": 25.555,
+     "end": 25.905
+    },
+    {
+     "display": "a",
+     "start": 26.335,
+     "end": 26.405
+    },
+    {
+     "display": "pale",
+     "start": 26.405,
+     "end": 27.025
+    },
+    {
+     "display": "blue",
+     "start": 27.025,
+     "end": 27.395
+    },
+    {
+     "display": "dot.",
+     "start": 27.395,
+     "end": 28.005
+    }
+   ]
+  },
+  {
+   "id": "L06",
+   "text": "It also carries a golden record, for whoever finds it.",
+   "start": 28.899,
+   "end": 33.195,
+   "caption": true,
+   "emphasis": [
+    "golden",
+    "whoever"
+   ],
+   "tokens": [
+    {
+     "display": "It",
+     "start": 28.899,
+     "end": 29.069
+    },
+    {
+     "display": "also",
+     "start": 29.069,
+     "end": 29.499
+    },
+    {
+     "display": "carries",
+     "start": 29.499,
+     "end": 30.089
+    },
+    {
+     "display": "a",
+     "start": 30.089,
+     "end": 30.139
+    },
+    {
+     "display": "golden",
+     "start": 30.139,
+     "end": 30.759
+    },
+    {
+     "display": "record,",
+     "start": 30.759,
+     "end": 31.419
+    },
+    {
+     "display": "for",
+     "start": 31.709,
+     "end": 31.849
+    },
+    {
+     "display": "whoever",
+     "start": 31.849,
+     "end": 32.269
+    },
+    {
+     "display": "finds",
+     "start": 32.269,
+     "end": 32.949
+    },
+    {
+     "display": "it.",
+     "start": 32.949,
+     "end": 33.189
+    }
+   ]
+  },
+  {
+   "id": "L07",
+   "text": "Music. Greetings in 55 languages. A heartbeat.",
+   "start": 33.724,
+   "end": 38.21,
+   "caption": true,
+   "emphasis": [
+    "Music.",
+    "55",
+    "heartbeat."
+   ],
+   "tokens": [
+    {
+     "display": "Music.",
+     "start": 33.724,
+     "end": 34.384
+    },
+    {
+     "display": "Greetings",
+     "start": 34.384,
+     "end": 34.994
+    },
+    {
+     "display": "in",
+     "start": 34.994,
+     "end": 35.114
+    },
+    {
+     "display": "55",
+     "start": 35.114,
+     "end": 35.964
+    },
+    {
+     "display": "languages.",
+     "start": 35.964,
+     "end": 36.864
+    },
+    {
+     "display": "A",
+     "start": 37.214,
+     "end": 37.274
+    },
+    {
+     "display": "heartbeat.",
+     "start": 37.274,
+     "end": 38.204
+    }
+   ]
+  },
+  {
+   "id": "L08",
+   "text": "And the brainwaves of a woman who had just fallen in love.",
+   "start": 38.856,
+   "end": 42.663,
+   "caption": true,
+   "emphasis": [
+    "brainwaves",
+    "love."
+   ],
+   "tokens": [
+    {
+     "display": "And",
+     "start": 38.856,
+     "end": 38.996
+    },
+    {
+     "display": "the",
+     "start": 38.996,
+     "end": 39.056
+    },
+    {
+     "display": "brainwaves",
+     "start": 39.056,
+     "end": 40.016
+    },
+    {
+     "display": "of",
+     "start": 40.016,
+     "end": 40.166
+    },
+    {
+     "display": "a",
+     "start": 40.166,
+     "end": 40.206
+    },
+    {
+     "display": "woman",
+     "start": 40.196,
+     "end": 40.816
+    },
+    {
+     "display": "who",
+     "start": 40.816,
+     "end": 40.966
+    },
+    {
+     "display": "had",
+     "start": 40.966,
+     "end": 41.086
+    },
+    {
+     "display": "just",
+     "start": 41.086,
+     "end": 41.346
+    },
+    {
+     "display": "fallen",
+     "start": 41.346,
+     "end": 41.936
+    },
+    {
+     "display": "in",
+     "start": 41.936,
+     "end": 42.086
+    },
+    {
+     "display": "love.",
+     "start": 42.086,
+     "end": 42.656
+    }
+   ]
+  },
+  {
+   "id": "L09",
+   "text": "Ann Druyan. The man she loved, Carl Sagan, led the project.",
+   "start": 43.603,
+   "end": 48.417,
+   "caption": true,
+   "emphasis": [
+    "Druyan.",
+    "Sagan,"
+   ],
+   "tokens": [
+    {
+     "display": "Ann",
+     "start": 43.603,
+     "end": 43.953
+    },
+    {
+     "display": "Druyan.",
+     "start": 43.953,
+     "end": 44.683
+    },
+    {
+     "display": "The",
+     "start": 45.013,
+     "end": 45.083
+    },
+    {
+     "display": "man",
+     "start": 45.083,
+     "end": 45.423
+    },
+    {
+     "display": "she",
+     "start": 45.423,
+     "end": 45.633
+    },
+    {
+     "display": "loved,",
+     "start": 45.633,
+     "end": 46.123
+    },
+    {
+     "display": "Carl",
+     "start": 46.123,
+     "end": 46.523
+    },
+    {
+     "display": "Sagan,",
+     "start": 46.523,
+     "end": 47.153
+    },
+    {
+     "display": "led",
+     "start": 47.153,
+     "end": 47.393
+    },
+    {
+     "display": "the",
+     "start": 47.393,
+     "end": 47.453
+    },
+    {
+     "display": "project.",
+     "start": 47.453,
+     "end": 48.403
+    }
+   ]
+  },
+  {
+   "id": "L10",
+   "text": "In 40,000 years, it will drift past another star, still carrying their love story.",
+   "start": 49.298,
+   "end": 56.216,
+   "caption": true,
+   "emphasis": [
+    "40,000",
+    "love"
+   ],
+   "tokens": [
+    {
+     "display": "In",
+     "start": 49.298,
+     "end": 49.468
+    },
+    {
+     "display": "40,000",
+     "start": 49.468,
+     "end": 50.498
+    },
+    {
+     "display": "years,",
+     "start": 50.498,
+     "end": 51.068
+    },
+    {
+     "display": "it",
+     "start": 51.248,
+     "end": 51.378
+    },
+    {
+     "display": "will",
+     "start": 51.378,
+     "end": 51.558
+    },
+    {
+     "display": "drift",
+     "start": 51.558,
+     "end": 52.018
+    },
+    {
+     "display": "past",
+     "start": 52.018,
+     "end": 52.498
+    },
+    {
+     "display": "another",
+     "start": 52.498,
+     "end": 52.878
+    },
+    {
+     "display": "star,",
+     "start": 52.878,
+     "end": 53.578
+    },
+    {
+     "display": "still",
+     "start": 53.938,
+     "end": 54.308
+    },
+    {
+     "display": "carrying",
+     "start": 54.308,
+     "end": 54.998
+    },
+    {
+     "display": "their",
+     "start": 54.998,
+     "end": 55.138
+    },
+    {
+     "display": "love",
+     "start": 55.138,
+     "end": 55.488
+    },
+    {
+     "display": "story.",
+     "start": 55.488,
+     "end": 56.208
+    }
+   ]
+  },
+  {
+   "id": "L11",
+   "text": "And for now... it's still listening.",
+   "start": 57.156,
+   "end": 59.4,
+   "caption": true,
+   "emphasis": [
+    "now...",
+    "listening."
+   ],
+   "tokens": [
+    {
+     "display": "And",
+     "start": 57.156,
+     "end": 57.336
+    },
+    {
+     "display": "for",
+     "start": 57.336,
+     "end": 57.476
+    },
+    {
+     "display": "now...",
+     "start": 57.476,
+     "end": 58.036
+    },
+    {
+     "display": "it's",
+     "start": 58.076,
+     "end": 58.296
+    },
+    {
+     "display": "still",
+     "start": 58.296,
+     "end": 58.646
+    },
+    {
+     "display": "listening.",
+     "start": 58.646,
+     "end": 59.386
+    }
+   ]
+  }
+ ]
+}

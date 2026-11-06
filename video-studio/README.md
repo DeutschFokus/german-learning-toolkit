@@ -25,6 +25,8 @@ video-studio/
     bio.py                real atmospheric carbon-14 record (+ clock morph), leaf, cell division, DNA helix, fat cells,
                           heart, brain, eye-lens growth shells, hologram silhouettes
     hud.py                crisp UI-layer text/lines/cards that follow scene transitions
+    space.py              Milky Way sky, detailed 3D-projected Voyager, golden record, DSN dish, bulb,
+                          pale-blue-dot frame, EEG/EKG traces
     data/                 c14_nh1_monthly.txt (Hua et al. 2022, Northern Hemisphere atmospheric 14C)
     postfx.py             bloom, light rays, motion blur, depth of field, heat haze, grade, vignette, grain
     captions.py           word-synced burned-in captions + SRT export
@@ -37,6 +39,7 @@ video-studio/
   episodes/ep003_oldest_tree/            "He Cut Down the Oldest Tree on Earth" (creator-narrated: no AI voice)
   episodes/ep004_deepest_hole/           "The Deepest Hole Ever Dug" (creator-narrated: one continuous dive, 0 → 12 km → the whole Earth)
   episodes/ep005_bomb_timestamp/         "Nuclear Tests Left a Timestamp in Your Body" (creator-narrated: bomb-pulse dating of your cells)
+  episodes/ep006_voyager_light_day/      "It Would Hear You Tomorrow" (creator-narrated: Voyager 1 one light-day away, Nov 18, 2026)
     final_video_ai_voice.mp4, final_video_no_voice.mp4, subtitles.srt,
     human_voiceover_script.txt, storyboard.md, publishing_kit.md, quality_report.md,
     thumbnail_cover.png

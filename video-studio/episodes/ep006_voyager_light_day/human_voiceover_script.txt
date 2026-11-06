@@ -1,0 +1,142 @@
+EP006 — IT WOULD HEAR YOU TOMORROW
+Recording-ready voiceover script (deep, calm male narrator)
+========================================================================
+Video length: 60 s   |   Spoken words: 123   |   Narration window: 00:00.08 – 00:59.40
+
+THE VOICE
+  Intelligent, calm, quietly fascinated. Authority without lecturing; a close-mic,
+  one-to-one conversation, not a trailer. Deep does not mean slow: keep momentum
+  (about 165–175 words per minute inside sentences) and let the PAUSES do the drama.
+  Let a slight smile in on the lighter lines. Never push or shout.
+
+MARKS
+  CAPS      = lean on this word (pitch or weight, not volume)
+  /         = short breath, about 0.2–0.4 s
+  //        = beat, about 0.4–0.8 s
+  ///       = let it land, 0.8 s or more
+  ...       = suspend the pitch: the thought continues
+
+HOW TO RECORD
+  1. Quiet, soft room (closet or duvet fort beats a bare room). Mic 15–20 cm away,
+     slightly off-axis to avoid plosives. Peaks around -10 dBFS, never above -3.
+  2. Record the whole script in one take as WAV (48 kHz, 24-bit, mono).
+     Leave 2 s of silence at the start. Do a second full take if a line slips.
+  3. The timings below are a GUIDE (they match guide_record_along.mp4), not a click track.
+     Read naturally. The pipeline aligns your take word by word, keeps your voice
+     at its natural speed, and re-times the scenes, captions and sound design to it.
+  4. If your read runs long, the pipeline tightens the pauses first. If it still
+     overruns 60 s it tells you which lines to trim; it never speeds your voice up.
+  5. Optional: play guide_record_along.mp4 on a second screen (muted or quiet) and read
+     along with the teleprompter at the top. Then run:
+     python3 production/build.py human path/to/your_take.wav
+
+========================================================================
+TIMED SCRIPT
+========================================================================
+
+--- SCENE: HOOK: IT WOULD HEAR YOU TOMORROW ------------------------
+
+[00:00.08 – 00:05.38]  L01
+   If you said HELLO to this spacecraft right now, it would hear you TOMORROW. //
+   Delivery: Intimate, a half-smile, as if telling a secret. Let 'tomorrow' land softly but clearly.
+   Pause after: 0.55 s
+
+--- SCENE: 1977: THE LAUNCH ----------------------------------------
+
+[00:05.93 – 00:09.78]  L02
+   VOYAGER one left Earth in NINETEEN SEVENTY-SEVEN. //
+   (on screen: "Voyager 1 left Earth in 1977.")
+   Delivery: Documentary, warm. A little pride on 'Voyager one'.
+   Say it:   Voyager 1 = VOY-ij-er one; 1977 = nineteen seventy-seven
+   Pause after: 0.59 s
+
+--- SCENE: ONE FULL LIGHT-DAY FROM HOME ----------------------------
+
+[00:10.37 – 00:16.42]  L03
+   On November eighteenth, twenty twenty-six, it crosses a FULL LIGHT-DAY from home. ///
+   (on screen: "On November 18, 2026, it crosses a full light-day from home.")
+   Delivery: The milestone. Slow down on 'a full light-day', then let it breathe.
+   Say it:   November 18, 2026 = November eighteenth, twenty twenty-six
+   Pause after: 0.82 s
+
+--- SCENE: A FRIDGE-BULB TRANSMITTER -------------------------------
+
+[00:17.25 – 00:21.55]  L04
+   It STILL calls home on about the power of a FRIDGE light bulb. //
+   Delivery: Amused admiration. 'A fridge light bulb' should sound almost absurd.
+   Pause after: 0.65 s
+
+--- SCENE: 1990: THE PALE BLUE DOT ---------------------------------
+
+[00:22.20 – 00:28.02]  L05
+   In nineteen ninety, it TURNED around and took a photo of us: a PALE blue DOT. ///
+   (on screen: "In 1990, it turned around and took a photo of us: a pale blue dot.")
+   Delivery: Quieter. A beat before 'a pale blue dot', and say it gently, like a name.
+   Say it:   1990 = nineteen ninety
+   Pause after: 0.88 s
+
+--- SCENE: THE GOLDEN RECORD ---------------------------------------
+
+[00:28.90 – 00:33.20]  L06
+   It also carries a GOLDEN record, for WHOEVER finds it. //
+   Delivery: Wonder, a little mystery on 'whoever finds it'.
+   Pause after: 0.53 s
+
+[00:33.72 – 00:38.21]  L07
+   MUSIC. Greetings in FIFTY-FIVE languages. A HEARTBEAT. //
+   (on screen: "Music. Greetings in 55 languages. A heartbeat.")
+   Delivery: A list, each item its own small picture. Slow and soft on 'a heartbeat'.
+   Pause after: 0.65 s
+
+--- SCENE: BRAINWAVES OF A WOMAN IN LOVE ---------------------------
+
+[00:38.86 – 00:42.66]  L08
+   And the BRAINWAVES of a woman who had just fallen in LOVE. ///
+   Delivery: The turn. Tender, unhurried; smile on 'just fallen in love'.
+   Pause after: 0.94 s
+
+[00:43.60 – 00:48.42]  L09
+   Ann DRUYAN. The man she loved, Carl SAGAN, led the project. ///
+   Delivery: Warm, matter-of-fact. Names said with respect.
+   Say it:   Druyan = DRY-an; Sagan = SAY-gun
+   Pause after: 0.88 s
+
+--- SCENE: 40,000 YEARS: ANOTHER STAR ------------------------------
+
+[00:49.30 – 00:56.22]  L10
+   In FORTY THOUSAND years, it will drift past another star, still carrying their LOVE story. ///
+   (on screen: "In 40,000 years, it will drift past another star, still carrying their love story.")
+   Delivery: Expansive, then intimate: the scale of time against something very small and human.
+   Pause after: 0.94 s
+
+--- SCENE: STILL LISTENING (LOOP) ----------------------------------
+
+[00:57.16 – 00:59.40]  L11
+   And for NOW... it's still LISTENING.
+   Delivery: Almost a whisper. The video loops straight back to 'If you said hello to this spacecraft right now…'
+
+========================================================================
+PRONUNCIATION GUIDE
+========================================================================
+  Voyager 1    VOY-ij-er one
+  1977         nineteen seventy-seven
+  November 18, 2026 November eighteenth, twenty twenty-six
+  1990         nineteen ninety
+  Druyan       DRY-an
+  Sagan        SAY-gun
+
+========================================================================
+CLEAN READ (no marks) — for a first run-through
+========================================================================
+  If you said hello to this spacecraft right now, it would hear you
+  tomorrow. Voyager one left Earth in nineteen seventy-seven. On
+  November eighteenth, twenty twenty-six, it crosses a full light-day
+  from home. It still calls home on about the power of a fridge light
+  bulb. In nineteen ninety, it turned around and took a photo of us: a
+  pale blue dot. It also carries a golden record, for whoever finds it.
+  Music. Greetings in fifty-five languages. A heartbeat. And the
+  brainwaves of a woman who had just fallen in love. Ann Druyan. The man
+  she loved, Carl Sagan, led the project. In forty thousand years, it
+  will drift past another star, still carrying their love story. And for
+  now... it's still listening.
+
