@@ -20,6 +20,12 @@ video-studio/
     geo.py                painted 14.6 km rock column (strata, fracture sets, water glints, parallax edges, squeezable borehole),
                           drill rig, tricone bit, rusty cap, snowfield, dinner plate, microfossils, Voyager
     particles.py          loop-safe snow / dust / embers with depth parallax, numpy aurora curtains
+    volume.py             ray-marched volumetric mushroom cloud (puffs splatted into a 3D grid, self-shadowed, loop-safe)
+    eye.py                photographic-style eye close-up (polar-space iris, lashes, lid shadow, corneal reflection slot)
+    bio.py                real atmospheric carbon-14 record (+ clock morph), leaf, cell division, DNA helix, fat cells,
+                          heart, brain, eye-lens growth shells, hologram silhouettes
+    hud.py                crisp UI-layer text/lines/cards that follow scene transitions
+    data/                 c14_nh1_monthly.txt (Hua et al. 2022, Northern Hemisphere atmospheric 14C)
     postfx.py             bloom, light rays, motion blur, depth of field, heat haze, grade, vignette, grain
     captions.py           word-synced burned-in captions + SRT export
     render.py             parallel frame renderer -> ffmpeg (H.264 High, BT.709, faststart)
@@ -30,6 +36,7 @@ video-studio/
   episodes/ep002_hole_in_your_vision/    "There's a Hole in Your Vision Right Now" (your brain edits reality)
   episodes/ep003_oldest_tree/            "He Cut Down the Oldest Tree on Earth" (creator-narrated: no AI voice)
   episodes/ep004_deepest_hole/           "The Deepest Hole Ever Dug" (creator-narrated: one continuous dive, 0 → 12 km → the whole Earth)
+  episodes/ep005_bomb_timestamp/         "Nuclear Tests Left a Timestamp in Your Body" (creator-narrated: bomb-pulse dating of your cells)
     final_video_ai_voice.mp4, final_video_no_voice.mp4, subtitles.srt,
     human_voiceover_script.txt, storyboard.md, publishing_kit.md, quality_report.md,
     thumbnail_cover.png

@@ -1,0 +1,145 @@
+EP005 — NUCLEAR TESTS LEFT A TIMESTAMP IN YOUR BODY
+Recording-ready voiceover script (deep, calm male narrator)
+========================================================================
+Video length: 60 s   |   Spoken words: 126   |   Narration window: 00:00.08 – 00:59.40
+
+THE VOICE
+  Intelligent, calm, quietly fascinated. Authority without lecturing; a close-mic,
+  one-to-one conversation, not a trailer. Deep does not mean slow: keep momentum
+  (about 165–175 words per minute inside sentences) and let the PAUSES do the drama.
+  Let a slight smile in on the lighter lines. Never push or shout.
+
+MARKS
+  CAPS      = lean on this word (pitch or weight, not volume)
+  /         = short breath, about 0.2–0.4 s
+  //        = beat, about 0.4–0.8 s
+  ///       = let it land, 0.8 s or more
+  ...       = suspend the pitch: the thought continues
+
+HOW TO RECORD
+  1. Quiet, soft room (closet or duvet fort beats a bare room). Mic 15–20 cm away,
+     slightly off-axis to avoid plosives. Peaks around -10 dBFS, never above -3.
+  2. Record the whole script in one take as WAV (48 kHz, 24-bit, mono).
+     Leave 2 s of silence at the start. Do a second full take if a line slips.
+  3. The timings below are a GUIDE (they match guide_record_along.mp4), not a click track.
+     Read naturally. The pipeline aligns your take word by word, keeps your voice
+     at its natural speed, and re-times the scenes, captions and sound design to it.
+  4. If your read runs long, the pipeline tightens the pauses first. If it still
+     overruns 60 s it tells you which lines to trim; it never speeds your voice up.
+  5. Optional: play guide_record_along.mp4 on a second screen (muted or quiet) and read
+     along with the teleprompter at the top. Then run:
+     python3 production/build.py human path/to/your_take.wav
+
+========================================================================
+TIMED SCRIPT
+========================================================================
+
+--- SCENE: HOOK: A TIMESTAMP IN YOUR BODY --------------------------
+
+[00:00.08 – 00:04.08]  L01
+   Nuclear bomb tests left a TIMESTAMP in YOUR body. //
+   Delivery: Quiet and close, like a secret. Lean on 'timestamp', then put a little weight on 'your body'.
+   Pause after: 0.55 s
+
+--- SCENE: THE TESTS DOUBLE THE CARBON IN THE AIR ------------------
+
+[00:04.63 – 00:10.90]  L02
+   In the fifties and sixties, they nearly DOUBLED the radioactive carbon in the AIR. //
+   Delivery: Documentary, steady. Let 'nearly doubled' sound genuinely surprising.
+   Pause after: 0.74 s
+
+--- SCENE: 1963: THE BAN, AND THE SLOW FADE ------------------------
+
+[00:11.65 – 00:17.43]  L03
+   In NINETEEN SIXTY-THREE, most were banned, and it began to FADE, year by year. ///
+   (on screen: "In 1963, most were banned, and it began to fade, year by year.")
+   Delivery: Slower on 'year... by... year'. That rhythm is the whole trick of the story.
+   Say it:   1963 = nineteen sixty-three
+   Pause after: 1.04 s
+
+--- SCENE: AIR, PLANTS, ANIMALS, YOU -------------------------------
+
+[00:18.47 – 00:22.81]  L04
+   PLANTS breathed it in. ANIMALS ate the PLANTS. So did YOU. ///
+   Delivery: Three steps, each a touch lower. A small smile on 'So did you.'
+   Pause after: 0.82 s
+
+--- SCENE: EVERY NEW CELL LOCKS IN THE YEAR ------------------------
+
+[00:23.63 – 00:28.03]  L05
+   Every new cell you make LOCKS that year's level into its DNA. //
+   Delivery: Clear and confident: this is the key idea. 'D-N-A' spelled out, unhurried.
+   Say it:   DNA = D-N-A
+   Pause after: 0.74 s
+
+--- SCENE: STOCKHOLM: A CLOCK FOR YOUR CELLS -----------------------
+
+[00:28.78 – 00:33.26]  L06
+   So scientists in Stockholm turned it into a CLOCK for your cells. ///
+   Delivery: A turn: wonder. Land 'a clock for your cells' warmly.
+   Say it:   Stockholm = STOCK-holm
+   Pause after: 1.04 s
+
+--- SCENE: FAT, HEART, CORTEX --------------------------------------
+
+[00:34.30 – 00:38.46]  L07
+   Your FAT cells? About TEN percent replaced every year. //
+   Delivery: Light, almost playful. The question mark is a real question.
+   Pause after: 0.67 s
+
+[00:39.13 – 00:41.73]  L08
+   Your HEART? BARELY one percent a year. //
+   Delivery: Softer and slower: this one is a little moving.
+   Pause after: 0.67 s
+
+[00:42.40 – 00:46.16]  L09
+   The neurons in your CORTEX? As OLD as you are. ///
+   Delivery: Matter-of-fact, then let 'as old as you are' sit for a beat.
+   Say it:   cortex = KOR-tex
+   Pause after: 1.19 s
+
+--- SCENE: REVELATION: THE CORE OF YOUR EYE LENS -------------------
+
+[00:47.34 – 00:49.61]  L10
+   And the CENTER of your eye LENS... /
+   Delivery: Lower, building. Suspend the pitch: the sentence continues.
+   Pause after: 0.37 s
+
+[00:49.98 – 00:52.11]  L11
+   was made BEFORE you were BORN. ///
+   Delivery: The revelation. Slow, clean, almost a whisper on 'before you were born'.
+   Pause after: 1.11 s
+
+[00:53.23 – 00:55.59]  L12
+   You're reading this THROUGH it, right NOW. ///
+   Delivery: Personal, intimate. Let the viewer feel it. Pause properly afterwards.
+   Pause after: 1.34 s
+
+--- SCENE: LOOP ----------------------------------------------------
+
+[00:56.93 – 00:59.40]  L13
+   And we can MEASURE all of it BECAUSE...
+   Delivery: Pick the energy back up, then hang on 'because...': the video loops straight into 'Nuclear bomb tests left a timestamp in your body.'
+
+========================================================================
+PRONUNCIATION GUIDE
+========================================================================
+  1963         nineteen sixty-three
+  DNA          D-N-A
+  Stockholm    STOCK-holm
+  cortex       KOR-tex
+
+========================================================================
+CLEAN READ (no marks) — for a first run-through
+========================================================================
+  Nuclear bomb tests left a timestamp in your body. In the fifties and
+  sixties, they nearly doubled the radioactive carbon in the air. In
+  nineteen sixty-three, most were banned, and it began to fade, year by
+  year. Plants breathed it in. Animals ate the plants. So did you. Every
+  new cell you make locks that year's level into its DNA. So scientists
+  in Stockholm turned it into a clock for your cells. Your fat cells?
+  About ten percent replaced every year. Your heart? Barely one percent
+  a year. The neurons in your cortex? As old as you are. And the center
+  of your eye lens... was made before you were born. You're reading this
+  through it, right now. And we can measure all of it because...
+

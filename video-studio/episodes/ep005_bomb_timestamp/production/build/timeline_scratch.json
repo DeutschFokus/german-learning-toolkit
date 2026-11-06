@@ -1,0 +1,873 @@
+{
+ "source": "scratch",
+ "voice": "narration_scratch.wav",
+ "sample_rate": 24000,
+ "duration": 60.0,
+ "fps": 30,
+ "speed": 0.8,
+ "layout": {
+  "speech": 49.034083333333335,
+  "room_for_pauses": 10.285916666666665,
+  "pref_pauses": 7.1,
+  "status": "fits",
+  "speech_end": 59.39999999999999,
+  "tail": 0.6000000000000085,
+  "pauses": [
+   0.55,
+   0.7431997455470737,
+   1.0404796437659032,
+   0.8175197201017812,
+   0.7431997455470737,
+   1.0404796437659032,
+   0.6688797709923664,
+   0.6688797709923664,
+   1.189119592875318,
+   0.37159987277353684,
+   1.1147996183206106,
+   1.3377595419847328
+  ]
+ },
+ "scenes": [
+  {
+   "id": "hook",
+   "first_line": "L01",
+   "name": "Hook: a timestamp in your body"
+  },
+  {
+   "id": "bomb",
+   "first_line": "L02",
+   "name": "The tests double the carbon in the air"
+  },
+  {
+   "id": "curve",
+   "first_line": "L03",
+   "name": "1963: the ban, and the slow fade"
+  },
+  {
+   "id": "chain",
+   "first_line": "L04",
+   "name": "Air, plants, animals, you"
+  },
+  {
+   "id": "dna",
+   "first_line": "L05",
+   "name": "Every new cell locks in the year"
+  },
+  {
+   "id": "clock",
+   "first_line": "L06",
+   "name": "Stockholm: a clock for your cells"
+  },
+  {
+   "id": "body",
+   "first_line": "L07",
+   "name": "Fat, heart, cortex"
+  },
+  {
+   "id": "lens",
+   "first_line": "L10",
+   "name": "Revelation: the core of your eye lens"
+  },
+  {
+   "id": "outro",
+   "first_line": "L13",
+   "name": "Loop"
+  }
+ ],
+ "lines": [
+  {
+   "id": "L01",
+   "text": "Nuclear bomb tests left a timestamp in your body.",
+   "start": 0.08,
+   "end": 4.082,
+   "caption": false,
+   "emphasis": [
+    "timestamp",
+    "your"
+   ],
+   "tokens": [
+    {
+     "display": "Nuclear",
+     "start": 0.08,
+     "end": 0.66
+    },
+    {
+     "display": "bomb",
+     "start": 0.66,
+     "end": 1.15
+    },
+    {
+     "display": "tests",
+     "start": 1.15,
+     "end": 1.82
+    },
+    {
+     "display": "left",
+     "start": 2.0,
+     "end": 2.29
+    },
+    {
+     "display": "a",
+     "start": 2.29,
+     "end": 2.34
+    },
+    {
+     "display": "timestamp",
+     "start": 2.34,
+     "end": 3.3
+    },
+    {
+     "display": "in",
+     "start": 3.3,
+     "end": 3.37
+    },
+    {
+     "display": "your",
+     "start": 3.37,
+     "end": 3.48
+    },
+    {
+     "display": "body.",
+     "start": 3.48,
+     "end": 4.07
+    }
+   ]
+  },
+  {
+   "id": "L02",
+   "text": "In the fifties and sixties, they nearly doubled the radioactive carbon in the air.",
+   "start": 4.632,
+   "end": 10.904,
+   "caption": true,
+   "emphasis": [
+    "doubled",
+    "air."
+   ],
+   "tokens": [
+    {
+     "display": "In",
+     "start": 4.632,
+     "end": 4.822
+    },
+    {
+     "display": "the",
+     "start": 4.822,
+     "end": 4.892
+    },
+    {
+     "display": "fifties",
+     "start": 4.892,
+     "end": 5.642
+    },
+    {
+     "display": "and",
+     "start": 5.642,
+     "end": 5.782
+    },
+    {
+     "display": "sixties,",
+     "start": 5.782,
+     "end": 6.652
+    },
+    {
+     "display": "they",
+     "start": 7.032,
+     "end": 7.192
+    },
+    {
+     "display": "nearly",
+     "start": 7.192,
+     "end": 7.712
+    },
+    {
+     "display": "doubled",
+     "start": 7.712,
+     "end": 8.262
+    },
+    {
+     "display": "the",
+     "start": 8.262,
+     "end": 8.342
+    },
+    {
+     "display": "radioactive",
+     "start": 8.342,
+     "end": 9.442
+    },
+    {
+     "display": "carbon",
+     "start": 9.442,
+     "end": 10.082
+    },
+    {
+     "display": "in",
+     "start": 10.082,
+     "end": 10.222
+    },
+    {
+     "display": "the",
+     "start": 10.222,
+     "end": 10.402
+    },
+    {
+     "display": "air.",
+     "start": 10.402,
+     "end": 10.892
+    }
+   ]
+  },
+  {
+   "id": "L03",
+   "text": "In 1963, most were banned, and it began to fade, year by year.",
+   "start": 11.648,
+   "end": 17.426,
+   "caption": true,
+   "emphasis": [
+    "1963,",
+    "fade,"
+   ],
+   "tokens": [
+    {
+     "display": "In",
+     "start": 11.648,
+     "end": 11.788
+    },
+    {
+     "display": "1963,",
+     "start": 11.788,
+     "end": 13.168
+    },
+    {
+     "display": "most",
+     "start": 13.168,
+     "end": 13.518
+    },
+    {
+     "display": "were",
+     "start": 13.518,
+     "end": 13.658
+    },
+    {
+     "display": "banned,",
+     "start": 13.658,
+     "end": 14.318
+    },
+    {
+     "display": "and",
+     "start": 14.688,
+     "end": 14.818
+    },
+    {
+     "display": "it",
+     "start": 14.818,
+     "end": 14.908
+    },
+    {
+     "display": "began",
+     "start": 14.908,
+     "end": 15.328
+    },
+    {
+     "display": "to",
+     "start": 15.328,
+     "end": 15.428
+    },
+    {
+     "display": "fade,",
+     "start": 15.428,
+     "end": 16.218
+    },
+    {
+     "display": "year",
+     "start": 16.218,
+     "end": 16.518
+    },
+    {
+     "display": "by",
+     "start": 16.518,
+     "end": 16.838
+    },
+    {
+     "display": "year.",
+     "start": 16.838,
+     "end": 17.418
+    }
+   ]
+  },
+  {
+   "id": "L04",
+   "text": "Plants breathed it in. Animals ate the plants. So did you.",
+   "start": 18.467,
+   "end": 22.809,
+   "caption": true,
+   "emphasis": [
+    "Plants",
+    "Animals",
+    "you."
+   ],
+   "tokens": [
+    {
+     "display": "Plants",
+     "start": 18.467,
+     "end": 18.907
+    },
+    {
+     "display": "breathed",
+     "start": 18.907,
+     "end": 19.367
+    },
+    {
+     "display": "it",
+     "start": 19.367,
+     "end": 19.497
+    },
+    {
+     "display": "in.",
+     "start": 19.497,
+     "end": 19.877
+    },
+    {
+     "display": "Animals",
+     "start": 20.277,
+     "end": 20.877
+    },
+    {
+     "display": "ate",
+     "start": 20.877,
+     "end": 21.107
+    },
+    {
+     "display": "the",
+     "start": 21.107,
+     "end": 21.207
+    },
+    {
+     "display": "plants.",
+     "start": 21.207,
+     "end": 21.807
+    },
+    {
+     "display": "So",
+     "start": 21.807,
+     "end": 22.037
+    },
+    {
+     "display": "did",
+     "start": 22.037,
+     "end": 22.327
+    },
+    {
+     "display": "you.",
+     "start": 22.327,
+     "end": 22.797
+    }
+   ]
+  },
+  {
+   "id": "L05",
+   "text": "Every new cell you make locks that year's level into its DNA.",
+   "start": 23.627,
+   "end": 28.032,
+   "caption": true,
+   "emphasis": [
+    "locks",
+    "DNA."
+   ],
+   "tokens": [
+    {
+     "display": "Every",
+     "start": 23.627,
+     "end": 23.927
+    },
+    {
+     "display": "new",
+     "start": 23.927,
+     "end": 24.177
+    },
+    {
+     "display": "cell",
+     "start": 24.177,
+     "end": 24.617
+    },
+    {
+     "display": "you",
+     "start": 24.617,
+     "end": 24.767
+    },
+    {
+     "display": "make",
+     "start": 24.767,
+     "end": 25.047
+    },
+    {
+     "display": "locks",
+     "start": 25.047,
+     "end": 25.647
+    },
+    {
+     "display": "that",
+     "start": 25.647,
+     "end": 25.837
+    },
+    {
+     "display": "year's",
+     "start": 25.837,
+     "end": 26.337
+    },
+    {
+     "display": "level",
+     "start": 26.337,
+     "end": 26.707
+    },
+    {
+     "display": "into",
+     "start": 26.707,
+     "end": 27.027
+    },
+    {
+     "display": "its",
+     "start": 27.027,
+     "end": 27.217
+    },
+    {
+     "display": "DNA.",
+     "start": 27.217,
+     "end": 28.027
+    }
+   ]
+  },
+  {
+   "id": "L06",
+   "text": "So scientists in Stockholm turned it into a clock for your cells.",
+   "start": 28.776,
+   "end": 33.263,
+   "caption": true,
+   "emphasis": [
+    "clock"
+   ],
+   "tokens": [
+    {
+     "display": "So",
+     "start": 28.776,
+     "end": 29.026
+    },
+    {
+     "display": "scientists",
+     "start": 29.026,
+     "end": 29.946
+    },
+    {
+     "display": "in",
+     "start": 29.946,
+     "end": 30.126
+    },
+    {
+     "display": "Stockholm",
+     "start": 30.126,
+     "end": 30.986
+    },
+    {
+     "display": "turned",
+     "start": 30.986,
+     "end": 31.326
+    },
+    {
+     "display": "it",
+     "start": 31.326,
+     "end": 31.426
+    },
+    {
+     "display": "into",
+     "start": 31.426,
+     "end": 31.726
+    },
+    {
+     "display": "a",
+     "start": 31.726,
+     "end": 31.766
+    },
+    {
+     "display": "clock",
+     "start": 31.756,
+     "end": 32.256
+    },
+    {
+     "display": "for",
+     "start": 32.256,
+     "end": 32.396
+    },
+    {
+     "display": "your",
+     "start": 32.396,
+     "end": 32.576
+    },
+    {
+     "display": "cells.",
+     "start": 32.576,
+     "end": 33.256
+    }
+   ]
+  },
+  {
+   "id": "L07",
+   "text": "Your fat cells? About ten percent replaced every year.",
+   "start": 34.304,
+   "end": 38.464,
+   "caption": true,
+   "emphasis": [
+    "fat",
+    "ten"
+   ],
+   "tokens": [
+    {
+     "display": "Your",
+     "start": 34.304,
+     "end": 34.484
+    },
+    {
+     "display": "fat",
+     "start": 34.484,
+     "end": 34.854
+    },
+    {
+     "display": "cells?",
+     "start": 34.854,
+     "end": 35.514
+    },
+    {
+     "display": "About",
+     "start": 35.764,
+     "end": 36.124
+    },
+    {
+     "display": "ten",
+     "start": 36.124,
+     "end": 36.484
+    },
+    {
+     "display": "percent",
+     "start": 36.484,
+     "end": 36.954
+    },
+    {
+     "display": "replaced",
+     "start": 36.954,
+     "end": 37.564
+    },
+    {
+     "display": "every",
+     "start": 37.564,
+     "end": 37.904
+    },
+    {
+     "display": "year.",
+     "start": 37.904,
+     "end": 38.454
+    }
+   ]
+  },
+  {
+   "id": "L08",
+   "text": "Your heart? Barely one percent a year.",
+   "start": 39.133,
+   "end": 41.735,
+   "caption": true,
+   "emphasis": [
+    "heart?",
+    "Barely"
+   ],
+   "tokens": [
+    {
+     "display": "Your",
+     "start": 39.133,
+     "end": 39.313
+    },
+    {
+     "display": "heart?",
+     "start": 39.313,
+     "end": 39.853
+    },
+    {
+     "display": "Barely",
+     "start": 39.853,
+     "end": 40.373
+    },
+    {
+     "display": "one",
+     "start": 40.373,
+     "end": 40.703
+    },
+    {
+     "display": "percent",
+     "start": 40.703,
+     "end": 41.163
+    },
+    {
+     "display": "a",
+     "start": 41.163,
+     "end": 41.203
+    },
+    {
+     "display": "year.",
+     "start": 41.203,
+     "end": 41.723
+    }
+   ]
+  },
+  {
+   "id": "L09",
+   "text": "The neurons in your cortex? As old as you are.",
+   "start": 42.403,
+   "end": 46.156,
+   "caption": true,
+   "emphasis": [
+    "cortex?",
+    "old"
+   ],
+   "tokens": [
+    {
+     "display": "The",
+     "start": 42.403,
+     "end": 42.513
+    },
+    {
+     "display": "neurons",
+     "start": 42.513,
+     "end": 43.273
+    },
+    {
+     "display": "in",
+     "start": 43.273,
+     "end": 43.363
+    },
+    {
+     "display": "your",
+     "start": 43.363,
+     "end": 43.473
+    },
+    {
+     "display": "cortex?",
+     "start": 43.473,
+     "end": 44.303
+    },
+    {
+     "display": "As",
+     "start": 44.543,
+     "end": 44.823
+    },
+    {
+     "display": "old",
+     "start": 44.823,
+     "end": 45.243
+    },
+    {
+     "display": "as",
+     "start": 45.243,
+     "end": 45.473
+    },
+    {
+     "display": "you",
+     "start": 45.473,
+     "end": 45.703
+    },
+    {
+     "display": "are.",
+     "start": 45.703,
+     "end": 46.143
+    }
+   ]
+  },
+  {
+   "id": "L10",
+   "text": "And the center of your eye lens...",
+   "start": 47.345,
+   "end": 49.611,
+   "caption": true,
+   "emphasis": [
+    "center",
+    "lens..."
+   ],
+   "tokens": [
+    {
+     "display": "And",
+     "start": 47.345,
+     "end": 47.545
+    },
+    {
+     "display": "the",
+     "start": 47.545,
+     "end": 47.605
+    },
+    {
+     "display": "center",
+     "start": 47.605,
+     "end": 48.215
+    },
+    {
+     "display": "of",
+     "start": 48.215,
+     "end": 48.325
+    },
+    {
+     "display": "your",
+     "start": 48.325,
+     "end": 48.515
+    },
+    {
+     "display": "eye",
+     "start": 48.515,
+     "end": 48.845
+    },
+    {
+     "display": "lens...",
+     "start": 48.845,
+     "end": 49.605
+    }
+   ]
+  },
+  {
+   "id": "L11",
+   "text": "was made before you were born.",
+   "start": 49.983,
+   "end": 52.114,
+   "caption": true,
+   "emphasis": [
+    "before",
+    "born."
+   ],
+   "tokens": [
+    {
+     "display": "was",
+     "start": 49.983,
+     "end": 50.193
+    },
+    {
+     "display": "made",
+     "start": 50.193,
+     "end": 50.583
+    },
+    {
+     "display": "before",
+     "start": 50.583,
+     "end": 51.013
+    },
+    {
+     "display": "you",
+     "start": 51.013,
+     "end": 51.233
+    },
+    {
+     "display": "were",
+     "start": 51.233,
+     "end": 51.363
+    },
+    {
+     "display": "born.",
+     "start": 51.363,
+     "end": 52.103
+    }
+   ]
+  },
+  {
+   "id": "L12",
+   "text": "You're reading this through it, right now.",
+   "start": 53.229,
+   "end": 55.595,
+   "caption": true,
+   "emphasis": [
+    "through",
+    "now."
+   ],
+   "tokens": [
+    {
+     "display": "You're",
+     "start": 53.229,
+     "end": 53.419
+    },
+    {
+     "display": "reading",
+     "start": 53.419,
+     "end": 53.859
+    },
+    {
+     "display": "this",
+     "start": 53.859,
+     "end": 54.139
+    },
+    {
+     "display": "through",
+     "start": 54.139,
+     "end": 54.569
+    },
+    {
+     "display": "it,",
+     "start": 54.569,
+     "end": 54.749
+    },
+    {
+     "display": "right",
+     "start": 54.749,
+     "end": 55.019
+    },
+    {
+     "display": "now.",
+     "start": 55.019,
+     "end": 55.589
+    }
+   ]
+  },
+  {
+   "id": "L13",
+   "text": "And we can measure all of it because...",
+   "start": 56.933,
+   "end": 59.4,
+   "caption": true,
+   "emphasis": [
+    "measure",
+    "because..."
+   ],
+   "tokens": [
+    {
+     "display": "And",
+     "start": 56.933,
+     "end": 57.163
+    },
+    {
+     "display": "we",
+     "start": 57.163,
+     "end": 57.293
+    },
+    {
+     "display": "can",
+     "start": 57.293,
+     "end": 57.483
+    },
+    {
+     "display": "measure",
+     "start": 57.483,
+     "end": 58.013
+    },
+    {
+     "display": "all",
+     "start": 58.013,
+     "end": 58.403
+    },
+    {
+     "display": "of",
+     "start": 58.403,
+     "end": 58.503
+    },
+    {
+     "display": "it",
+     "start": 58.503,
+     "end": 58.623
+    },
+    {
+     "display": "because...",
+     "start": 58.623,
+     "end": 59.393
+    }
+   ]
+  }
+ ]
+}
