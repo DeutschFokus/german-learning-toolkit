@@ -17,7 +17,10 @@ video-studio/
     anatomy.py            eye cross-section (retina, optic disc, nerve), blinking front-view eye, iris glyph
     ui.py                 instruction chips, editor timeline, film strip, analog clock, gaze reticle
     nature.py             procedural bristlecone (cached silhouette, cut/fall), ridges, moon, tree-ring section, pyramid, stamp
-    postfx.py             bloom, grade, vignette, grain
+    geo.py                painted 14.6 km rock column (strata, fracture sets, water glints, parallax edges, squeezable borehole),
+                          drill rig, tricone bit, rusty cap, snowfield, dinner plate, microfossils, Voyager
+    particles.py          loop-safe snow / dust / embers with depth parallax, numpy aurora curtains
+    postfx.py             bloom, light rays, motion blur, depth of field, heat haze, grade, vignette, grain
     captions.py           word-synced burned-in captions + SRT export
     render.py             parallel frame renderer -> ffmpeg (H.264 High, BT.709, faststart)
     audio.py              synths, SFX, reverb, ducking, limiter, loudness mastering, stutter/dip "edits"
@@ -26,6 +29,7 @@ video-studio/
   episodes/ep001_head_older_than_feet/   "Your Head Is Older Than Your Feet" (gravity slows time)
   episodes/ep002_hole_in_your_vision/    "There's a Hole in Your Vision Right Now" (your brain edits reality)
   episodes/ep003_oldest_tree/            "He Cut Down the Oldest Tree on Earth" (creator-narrated: no AI voice)
+  episodes/ep004_deepest_hole/           "The Deepest Hole Ever Dug" (creator-narrated: one continuous dive, 0 → 12 km → the whole Earth)
     final_video_ai_voice.mp4, final_video_no_voice.mp4, subtitles.srt,
     human_voiceover_script.txt, storyboard.md, publishing_kit.md, quality_report.md,
     thumbnail_cover.png
@@ -60,7 +64,9 @@ That runs: AI narration and timeline (`voice`), score/SFX/mix (`audio`), `subtit
 
 ```bash
 python3 -m engine.verify episodes/ep002_hole_in_your_vision/final_video_ai_voice.mp4
-``` To look at frames without rendering video:
+```
+
+To look at frames without rendering video:
 
 ```bash
 python3 build.py stills 0,12.5,44.8
@@ -80,6 +86,17 @@ The aligner finds every word of the script in your take, cuts it per line (10 ms
 ## Creator-narrated episodes (EP003 onward)
 
 No AI voice ships. A scratch read (`build.py scratch`) only times the animation; `build.py video` then renders `final_video_no_voice.mp4` and `guide_record_along.mp4` (captions + a teleprompter band with the current line, the next line and a count-in dot). Record the script, run `build.py human your_take.wav`, and publish `final_video_human_voice.mp4` with the `subtitles.srt` written from your take. Words the aligner doesn't know go in the script's `"lexicon"` (ARPAbet), e.g. `"bristlecone": "B R IH S AH L K OW N"`.
+
+## Camera and light effects (EP004 onward)
+
+A scene can set these on the canvas and `postfx` applies them to the scene layers only (captions and HUD on the UI layer stay crisp):
+
+- `cv.motion = (dx, dy)` — directional motion blur, pixels of travel during the shutter (use the camera's per-frame velocity × ~0.5).
+- `cv.dof = (focus_y, band, sigma)` — tilt-shift depth of field: sharp around `focus_y`, softer toward the top and bottom.
+- `cv.heat = (amount, y0, y1)` — heat shimmer growing from `y0` to `y1`.
+- `cv.rays = (x, y, strength)` — volumetric light shafts from whatever glows, toward a light at (x, y).
+
+Particles and the aurora take the video length as `loop`, so everything ambient completes whole cycles and the last frame flows into the first.
 
 ## Make the next episode
 

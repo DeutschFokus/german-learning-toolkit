@@ -1,0 +1,156 @@
+EP004 — THE DEEPEST HOLE EVER DUG
+Recording-ready voiceover script (deep, calm male narrator)
+========================================================================
+Video length: 60 s   |   Spoken words: 127   |   Narration window: 00:00.08 – 00:59.40
+
+THE VOICE
+  Intelligent, calm, quietly fascinated. Authority without lecturing; a close-mic,
+  one-to-one conversation, not a trailer. Deep does not mean slow: keep momentum
+  (about 165–175 words per minute inside sentences) and let the PAUSES do the drama.
+  Let a slight smile in on the lighter lines. Never push or shout.
+
+MARKS
+  CAPS      = lean on this word (pitch or weight, not volume)
+  /         = short breath, about 0.2–0.4 s
+  //        = beat, about 0.4–0.8 s
+  ///       = let it land, 0.8 s or more
+  ...       = suspend the pitch: the thought continues
+
+HOW TO RECORD
+  1. Quiet, soft room (closet or duvet fort beats a bare room). Mic 15–20 cm away,
+     slightly off-axis to avoid plosives. Peaks around -10 dBFS, never above -3.
+  2. Record the whole script in one take as WAV (48 kHz, 24-bit, mono).
+     Leave 2 s of silence at the start. Do a second full take if a line slips.
+  3. The timings below are a GUIDE (they match guide_record_along.mp4), not a click track.
+     Read naturally. The pipeline aligns your take word by word, keeps your voice
+     at its natural speed, and re-times the scenes, captions and sound design to it.
+  4. If your read runs long, the pipeline tightens the pauses first. If it still
+     overruns 60 s it tells you which lines to trim; it never speeds your voice up.
+  5. Optional: play guide_record_along.mp4 on a second screen (muted or quiet) and read
+     along with the teleprompter at the top. Then run:
+     python3 production/build.py human path/to/your_take.wav
+
+========================================================================
+TIMED SCRIPT
+========================================================================
+
+--- SCENE: HOOK: 12 KM DEEP, NARROWER THAN A PLATE -----------------
+
+[00:00.08 – 00:04.36]  L01
+   The DEEPEST hole humans ever dug is TWELVE kilometers deep. /
+   (on screen: "The deepest hole humans ever dug is 12 kilometers deep.")
+   Delivery: Calm and certain. Lean on 'deepest', then give 'twelve kilometers' real weight.
+   Pause after: 0.40 s
+
+[00:04.76 – 00:06.95]  L02
+   And it's NARROWER than a dinner PLATE. //
+   Delivery: A small smile: it sounds absurd. Land 'dinner plate' lightly.
+   Pause after: 0.70 s
+
+--- SCENE: 1970: THE DRILLING BEGINS -------------------------------
+
+[00:07.65 – 00:13.82]  L03
+   In NINETEEN SEVENTY, Soviet scientists started drilling, aiming for FIFTEEN kilometers. //
+   (on screen: "In 1970, Soviet scientists started drilling, aiming for 15 kilometers.")
+   Delivery: Story mode: documentary, measured. A slight lift on 'fifteen kilometers' (the ambition).
+   Say it:   1970 = nineteen seventy
+   Pause after: 0.60 s
+
+--- SCENE: DOWN THROUGH THE CRUST ----------------------------------
+
+[00:14.42 – 00:18.64]  L04
+   At six kilometers: FOSSILS of microscopic PLANKTON. //
+   (on screen: "At 6 kilometers: fossils of microscopic plankton.")
+   Delivery: Wonder, quietly. 'Plankton' with a hint of 'how?'.
+   Say it:   plankton = PLANK-ton
+   Pause after: 0.45 s
+
+[00:19.09 – 00:22.43]  L05
+   At seven, the rock they'd predicted simply WASN'T THERE. /
+   (on screen: "At 7, the rock they'd predicted simply wasn't there.")
+   Delivery: A plot twist. Slow down on 'simply wasn't there'.
+   Pause after: 0.35 s
+
+[00:22.78 – 00:26.72]  L06
+   Instead: cracked rock, soaked with WATER NOBODY expected. //
+   Delivery: Lower, intrigued. Let 'nobody expected' hang.
+   Pause after: 0.75 s
+
+--- SCENE: 180 °C AND ROCK LIKE PLASTIC ----------------------------
+
+[00:27.47 – 00:32.42]  L07
+   At the bottom: ONE HUNDRED EIGHTY degrees. Almost TWICE what they expected. /
+   (on screen: "At the bottom: 180 degrees. Almost twice what they expected.")
+   Delivery: The heat rises: a touch more intensity. 'One hundred eighty degrees' slow and heavy (Celsius, shown on screen).
+   Pause after: 0.40 s
+
+[00:32.82 – 00:36.25]  L08
+   The rock got so SOFT, the hole kept SQUEEZING SHUT. //
+   Delivery: Slightly unsettling, almost physical: you can feel the walls closing in.
+   Pause after: 0.75 s
+
+--- SCENE: 12,262 M: NO FURTHER ------------------------------------
+
+[00:37.00 – 00:41.85]  L09
+   At TWELVE THOUSAND TWO HUNDRED SIXTY-TWO meters, they could go no FURTHER. ///
+   (on screen: "At 12,262 meters, they could go no further.")
+   Delivery: Precise on the number, then a quiet, final 'they could go no further'.
+   Say it:   12,262 = twelve thousand, two hundred sixty-two
+   Pause after: 0.85 s
+
+--- SCENE: REVELATION: 0.2% OF THE WAY -----------------------------
+
+[00:42.70 – 00:44.81]  L10
+   Deeper than the DEEPEST OCEAN... /
+   Delivery: Build: proud, a little impressed. Pitch suspended — it continues.
+   Pause after: 0.25 s
+
+[00:45.06 – 00:48.67]  L11
+   but just ZERO POINT TWO PERCENT of the way to Earth's center. ///
+   (on screen: "but just 0.2% of the way to Earth's center.")
+   Delivery: The revelation. Deflate gently; slow and clear on 'zero point two percent'.
+   Say it:   0.2% = zero point two percent
+   Pause after: 0.85 s
+
+--- SCENE: SEALED UNDER A RUSTY CAP --------------------------------
+
+[00:49.52 – 00:52.32]  L12
+   Today, it's sealed under a RUSTY metal CAP. //
+   Delivery: Matter-of-fact, a little melancholy.
+   Pause after: 0.60 s
+
+--- SCENE: SPACE VS. OUR OWN PLANET (LOOP) -------------------------
+
+[00:52.92 – 00:56.02]  L13
+   We've sent a spacecraft into INTERSTELLAR space... /
+   Delivery: Lift: wide and open, like looking up at the night sky.
+   Pause after: 0.30 s
+
+[00:56.32 – 00:59.40]  L14
+   but we've NEVER gone deeper into our OWN PLANET.
+   Delivery: Bring it home, quiet and thoughtful. Clean ending: the video loops straight back to 'The deepest hole humans ever dug…'
+
+========================================================================
+PRONUNCIATION GUIDE
+========================================================================
+  1970         nineteen seventy
+  plankton     PLANK-ton
+  12,262       twelve thousand, two hundred sixty-two
+  0.2%         zero point two percent
+
+========================================================================
+CLEAN READ (no marks) — for a first run-through
+========================================================================
+  The deepest hole humans ever dug is twelve kilometers deep. And it's
+  narrower than a dinner plate. In nineteen seventy, Soviet scientists
+  started drilling, aiming for fifteen kilometers. At six kilometers:
+  fossils of microscopic plankton. At seven, the rock they'd predicted
+  simply wasn't there. Instead: cracked rock, soaked with water nobody
+  expected. At the bottom: one hundred eighty degrees. Almost twice what
+  they expected. The rock got so soft, the hole kept squeezing shut. At
+  twelve thousand two hundred sixty-two meters, they could go no
+  further. Deeper than the deepest ocean... but just zero point two
+  percent of the way to Earth's center. Today, it's sealed under a rusty
+  metal cap. We've sent a spacecraft into interstellar space... but
+  we've never gone deeper into our own planet.
+

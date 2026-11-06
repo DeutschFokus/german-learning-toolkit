@@ -1,0 +1,842 @@
+{
+ "source": "scratch",
+ "voice": "narration_scratch.wav",
+ "sample_rate": 24000,
+ "duration": 60.0,
+ "fps": 30,
+ "speed": 0.85,
+ "layout": {
+  "speech": 52.07783333333333,
+  "room_for_pauses": 7.2421666666666695,
+  "pref_pauses": 7.25,
+  "status": "pauses tightened",
+  "speech_end": 59.400000000000006,
+  "tail": 0.5999999999999943,
+  "pauses": [
+   0.3996269841269843,
+   0.6992539682539685,
+   0.5993783068783071,
+   0.44950264550264574,
+   0.34962698412698423,
+   0.7491296296296299,
+   0.3996269841269843,
+   0.7491296296296299,
+   0.8490052910052914,
+   0.24975132275132284,
+   0.8490052910052914,
+   0.5993783068783071,
+   0.2997513227513228
+  ]
+ },
+ "scenes": [
+  {
+   "id": "hook",
+   "first_line": "L01",
+   "name": "Hook: 12 km deep, narrower than a plate"
+  },
+  {
+   "id": "rig",
+   "first_line": "L03",
+   "name": "1970: the drilling begins"
+  },
+  {
+   "id": "descent",
+   "first_line": "L04",
+   "name": "Down through the crust"
+  },
+  {
+   "id": "heat",
+   "first_line": "L07",
+   "name": "180 \u00b0C and rock like plastic"
+  },
+  {
+   "id": "stop",
+   "first_line": "L09",
+   "name": "12,262 m: no further"
+  },
+  {
+   "id": "scale",
+   "first_line": "L10",
+   "name": "Revelation: 0.2% of the way"
+  },
+  {
+   "id": "cap",
+   "first_line": "L12",
+   "name": "Sealed under a rusty cap"
+  },
+  {
+   "id": "outro",
+   "first_line": "L13",
+   "name": "Space vs. our own planet (loop)"
+  }
+ ],
+ "lines": [
+  {
+   "id": "L01",
+   "text": "The deepest hole humans ever dug is 12 kilometers deep.",
+   "start": 0.08,
+   "end": 4.363,
+   "caption": false,
+   "emphasis": [
+    "deepest",
+    "12"
+   ],
+   "tokens": [
+    {
+     "display": "The",
+     "start": 0.08,
+     "end": 0.2
+    },
+    {
+     "display": "deepest",
+     "start": 0.2,
+     "end": 0.68
+    },
+    {
+     "display": "hole",
+     "start": 0.68,
+     "end": 0.99
+    },
+    {
+     "display": "humans",
+     "start": 0.99,
+     "end": 1.47
+    },
+    {
+     "display": "ever",
+     "start": 1.47,
+     "end": 1.75
+    },
+    {
+     "display": "dug",
+     "start": 1.75,
+     "end": 2.24
+    },
+    {
+     "display": "is",
+     "start": 2.54,
+     "end": 2.7
+    },
+    {
+     "display": "12",
+     "start": 2.7,
+     "end": 3.08
+    },
+    {
+     "display": "kilometers",
+     "start": 3.08,
+     "end": 3.84
+    },
+    {
+     "display": "deep.",
+     "start": 3.84,
+     "end": 4.35
+    }
+   ]
+  },
+  {
+   "id": "L02",
+   "text": "And it's narrower than a dinner plate.",
+   "start": 4.762,
+   "end": 6.948,
+   "caption": true,
+   "emphasis": [
+    "narrower",
+    "plate."
+   ],
+   "tokens": [
+    {
+     "display": "And",
+     "start": 4.762,
+     "end": 4.902
+    },
+    {
+     "display": "it's",
+     "start": 4.902,
+     "end": 5.072
+    },
+    {
+     "display": "narrower",
+     "start": 5.072,
+     "end": 5.722
+    },
+    {
+     "display": "than",
+     "start": 5.722,
+     "end": 5.922
+    },
+    {
+     "display": "a",
+     "start": 5.922,
+     "end": 5.972
+    },
+    {
+     "display": "dinner",
+     "start": 5.972,
+     "end": 6.382
+    },
+    {
+     "display": "plate.",
+     "start": 6.382,
+     "end": 6.932
+    }
+   ]
+  },
+  {
+   "id": "L03",
+   "text": "In 1970, Soviet scientists started drilling, aiming for 15 kilometers.",
+   "start": 7.647,
+   "end": 13.822,
+   "caption": true,
+   "emphasis": [
+    "1970,",
+    "15"
+   ],
+   "tokens": [
+    {
+     "display": "In",
+     "start": 7.647,
+     "end": 7.797
+    },
+    {
+     "display": "1970,",
+     "start": 7.797,
+     "end": 8.927
+    },
+    {
+     "display": "Soviet",
+     "start": 9.217,
+     "end": 9.777
+    },
+    {
+     "display": "scientists",
+     "start": 9.777,
+     "end": 10.527
+    },
+    {
+     "display": "started",
+     "start": 10.527,
+     "end": 10.977
+    },
+    {
+     "display": "drilling,",
+     "start": 10.977,
+     "end": 11.557
+    },
+    {
+     "display": "aiming",
+     "start": 11.887,
+     "end": 12.237
+    },
+    {
+     "display": "for",
+     "start": 12.237,
+     "end": 12.377
+    },
+    {
+     "display": "15",
+     "start": 12.377,
+     "end": 12.917
+    },
+    {
+     "display": "kilometers.",
+     "start": 12.917,
+     "end": 13.807
+    }
+   ]
+  },
+  {
+   "id": "L04",
+   "text": "At 6 kilometers: fossils of microscopic plankton.",
+   "start": 14.421,
+   "end": 18.638,
+   "caption": true,
+   "emphasis": [
+    "fossils",
+    "plankton."
+   ],
+   "tokens": [
+    {
+     "display": "At",
+     "start": 14.421,
+     "end": 14.611
+    },
+    {
+     "display": "6",
+     "start": 14.611,
+     "end": 14.961
+    },
+    {
+     "display": "kilometers:",
+     "start": 14.961,
+     "end": 15.801
+    },
+    {
+     "display": "fossils",
+     "start": 16.061,
+     "end": 16.841
+    },
+    {
+     "display": "of",
+     "start": 16.841,
+     "end": 16.961
+    },
+    {
+     "display": "microscopic",
+     "start": 16.961,
+     "end": 17.911
+    },
+    {
+     "display": "plankton.",
+     "start": 17.911,
+     "end": 18.631
+    }
+   ]
+  },
+  {
+   "id": "L05",
+   "text": "At 7, the rock they'd predicted simply wasn't there.",
+   "start": 19.087,
+   "end": 22.435,
+   "caption": true,
+   "emphasis": [
+    "wasn't",
+    "there."
+   ],
+   "tokens": [
+    {
+     "display": "At",
+     "start": 19.087,
+     "end": 19.277
+    },
+    {
+     "display": "7,",
+     "start": 19.277,
+     "end": 19.797
+    },
+    {
+     "display": "the",
+     "start": 19.797,
+     "end": 19.987
+    },
+    {
+     "display": "rock",
+     "start": 19.987,
+     "end": 20.377
+    },
+    {
+     "display": "they'd",
+     "start": 20.377,
+     "end": 20.637
+    },
+    {
+     "display": "predicted",
+     "start": 20.637,
+     "end": 21.187
+    },
+    {
+     "display": "simply",
+     "start": 21.187,
+     "end": 21.567
+    },
+    {
+     "display": "wasn't",
+     "start": 21.567,
+     "end": 21.977
+    },
+    {
+     "display": "there.",
+     "start": 21.977,
+     "end": 22.427
+    }
+   ]
+  },
+  {
+   "id": "L06",
+   "text": "Instead: cracked rock, soaked with water nobody expected.",
+   "start": 22.784,
+   "end": 26.72,
+   "caption": true,
+   "emphasis": [
+    "water",
+    "nobody"
+   ],
+   "tokens": [
+    {
+     "display": "Instead:",
+     "start": 22.784,
+     "end": 23.384
+    },
+    {
+     "display": "cracked",
+     "start": 23.384,
+     "end": 23.774
+    },
+    {
+     "display": "rock,",
+     "start": 23.774,
+     "end": 24.344
+    },
+    {
+     "display": "soaked",
+     "start": 24.524,
+     "end": 24.944
+    },
+    {
+     "display": "with",
+     "start": 24.944,
+     "end": 25.094
+    },
+    {
+     "display": "water",
+     "start": 25.094,
+     "end": 25.374
+    },
+    {
+     "display": "nobody",
+     "start": 25.374,
+     "end": 25.914
+    },
+    {
+     "display": "expected.",
+     "start": 25.914,
+     "end": 26.714
+    }
+   ]
+  },
+  {
+   "id": "L07",
+   "text": "At the bottom: 180 degrees. Almost twice what they expected.",
+   "start": 27.469,
+   "end": 32.419,
+   "caption": true,
+   "emphasis": [
+    "180",
+    "twice"
+   ],
+   "tokens": [
+    {
+     "display": "At",
+     "start": 27.469,
+     "end": 27.619
+    },
+    {
+     "display": "the",
+     "start": 27.619,
+     "end": 27.709
+    },
+    {
+     "display": "bottom:",
+     "start": 27.709,
+     "end": 28.329
+    },
+    {
+     "display": "180",
+     "start": 28.329,
+     "end": 29.159
+    },
+    {
+     "display": "degrees.",
+     "start": 29.159,
+     "end": 29.939
+    },
+    {
+     "display": "Almost",
+     "start": 30.309,
+     "end": 30.789
+    },
+    {
+     "display": "twice",
+     "start": 30.789,
+     "end": 31.269
+    },
+    {
+     "display": "what",
+     "start": 31.269,
+     "end": 31.469
+    },
+    {
+     "display": "they",
+     "start": 31.469,
+     "end": 31.619
+    },
+    {
+     "display": "expected.",
+     "start": 31.619,
+     "end": 32.409
+    }
+   ]
+  },
+  {
+   "id": "L08",
+   "text": "The rock got so soft, the hole kept squeezing shut.",
+   "start": 32.818,
+   "end": 36.252,
+   "caption": true,
+   "emphasis": [
+    "soft,",
+    "squeezing",
+    "shut."
+   ],
+   "tokens": [
+    {
+     "display": "The",
+     "start": 32.818,
+     "end": 32.938
+    },
+    {
+     "display": "rock",
+     "start": 32.938,
+     "end": 33.268
+    },
+    {
+     "display": "got",
+     "start": 33.268,
+     "end": 33.548
+    },
+    {
+     "display": "so",
+     "start": 33.548,
+     "end": 33.778
+    },
+    {
+     "display": "soft,",
+     "start": 33.778,
+     "end": 34.368
+    },
+    {
+     "display": "the",
+     "start": 34.518,
+     "end": 34.618
+    },
+    {
+     "display": "hole",
+     "start": 34.618,
+     "end": 34.908
+    },
+    {
+     "display": "kept",
+     "start": 34.908,
+     "end": 35.188
+    },
+    {
+     "display": "squeezing",
+     "start": 35.188,
+     "end": 35.708
+    },
+    {
+     "display": "shut.",
+     "start": 35.708,
+     "end": 36.238
+    }
+   ]
+  },
+  {
+   "id": "L09",
+   "text": "At 12,262 meters, they could go no further.",
+   "start": 37.001,
+   "end": 41.847,
+   "caption": true,
+   "emphasis": [
+    "12,262",
+    "further."
+   ],
+   "tokens": [
+    {
+     "display": "At",
+     "start": 37.001,
+     "end": 37.191
+    },
+    {
+     "display": "12,262",
+     "start": 37.191,
+     "end": 39.381
+    },
+    {
+     "display": "meters,",
+     "start": 39.381,
+     "end": 40.091
+    },
+    {
+     "display": "they",
+     "start": 40.431,
+     "end": 40.581
+    },
+    {
+     "display": "could",
+     "start": 40.581,
+     "end": 40.771
+    },
+    {
+     "display": "go",
+     "start": 40.771,
+     "end": 40.981
+    },
+    {
+     "display": "no",
+     "start": 40.981,
+     "end": 41.191
+    },
+    {
+     "display": "further.",
+     "start": 41.191,
+     "end": 41.841
+    }
+   ]
+  },
+  {
+   "id": "L10",
+   "text": "Deeper than the deepest ocean...",
+   "start": 42.696,
+   "end": 44.811,
+   "caption": true,
+   "emphasis": [
+    "deepest",
+    "ocean..."
+   ],
+   "tokens": [
+    {
+     "display": "Deeper",
+     "start": 42.696,
+     "end": 43.306
+    },
+    {
+     "display": "than",
+     "start": 43.306,
+     "end": 43.476
+    },
+    {
+     "display": "the",
+     "start": 43.476,
+     "end": 43.556
+    },
+    {
+     "display": "deepest",
+     "start": 43.556,
+     "end": 44.146
+    },
+    {
+     "display": "ocean...",
+     "start": 44.146,
+     "end": 44.796
+    }
+   ]
+  },
+  {
+   "id": "L11",
+   "text": "but just 0.2% of the way to Earth's center.",
+   "start": 45.06,
+   "end": 48.669,
+   "caption": true,
+   "emphasis": [
+    "0.2%"
+   ],
+   "tokens": [
+    {
+     "display": "but",
+     "start": 45.06,
+     "end": 45.17
+    },
+    {
+     "display": "just",
+     "start": 45.17,
+     "end": 45.46
+    },
+    {
+     "display": "0.2%",
+     "start": 45.46,
+     "end": 47.0
+    },
+    {
+     "display": "of",
+     "start": 47.0,
+     "end": 47.1
+    },
+    {
+     "display": "the",
+     "start": 47.1,
+     "end": 47.17
+    },
+    {
+     "display": "way",
+     "start": 47.17,
+     "end": 47.57
+    },
+    {
+     "display": "to",
+     "start": 47.57,
+     "end": 47.74
+    },
+    {
+     "display": "Earth's",
+     "start": 47.74,
+     "end": 48.1
+    },
+    {
+     "display": "center.",
+     "start": 48.1,
+     "end": 48.66
+    }
+   ]
+  },
+  {
+   "id": "L12",
+   "text": "Today, it's sealed under a rusty metal cap.",
+   "start": 49.518,
+   "end": 52.324,
+   "caption": true,
+   "emphasis": [
+    "rusty",
+    "cap."
+   ],
+   "tokens": [
+    {
+     "display": "Today,",
+     "start": 49.518,
+     "end": 50.108
+    },
+    {
+     "display": "it's",
+     "start": 50.108,
+     "end": 50.378
+    },
+    {
+     "display": "sealed",
+     "start": 50.378,
+     "end": 50.698
+    },
+    {
+     "display": "under",
+     "start": 50.698,
+     "end": 50.968
+    },
+    {
+     "display": "a",
+     "start": 50.968,
+     "end": 51.008
+    },
+    {
+     "display": "rusty",
+     "start": 50.998,
+     "end": 51.468
+    },
+    {
+     "display": "metal",
+     "start": 51.468,
+     "end": 51.818
+    },
+    {
+     "display": "cap.",
+     "start": 51.818,
+     "end": 52.318
+    }
+   ]
+  },
+  {
+   "id": "L13",
+   "text": "We've sent a spacecraft into interstellar space...",
+   "start": 52.923,
+   "end": 56.016,
+   "caption": true,
+   "emphasis": [
+    "interstellar"
+   ],
+   "tokens": [
+    {
+     "display": "We've",
+     "start": 52.923,
+     "end": 53.173
+    },
+    {
+     "display": "sent",
+     "start": 53.173,
+     "end": 53.453
+    },
+    {
+     "display": "a",
+     "start": 53.453,
+     "end": 53.493
+    },
+    {
+     "display": "spacecraft",
+     "start": 53.493,
+     "end": 54.413
+    },
+    {
+     "display": "into",
+     "start": 54.413,
+     "end": 54.593
+    },
+    {
+     "display": "interstellar",
+     "start": 54.593,
+     "end": 55.333
+    },
+    {
+     "display": "space...",
+     "start": 55.333,
+     "end": 56.003
+    }
+   ]
+  },
+  {
+   "id": "L14",
+   "text": "but we've never gone deeper into our own planet.",
+   "start": 56.316,
+   "end": 59.4,
+   "caption": true,
+   "emphasis": [
+    "never",
+    "own",
+    "planet."
+   ],
+   "tokens": [
+    {
+     "display": "but",
+     "start": 56.316,
+     "end": 56.426
+    },
+    {
+     "display": "we've",
+     "start": 56.426,
+     "end": 56.676
+    },
+    {
+     "display": "never",
+     "start": 56.676,
+     "end": 57.016
+    },
+    {
+     "display": "gone",
+     "start": 57.016,
+     "end": 57.406
+    },
+    {
+     "display": "deeper",
+     "start": 57.406,
+     "end": 57.976
+    },
+    {
+     "display": "into",
+     "start": 58.006,
+     "end": 58.276
+    },
+    {
+     "display": "our",
+     "start": 58.276,
+     "end": 58.466
+    },
+    {
+     "display": "own",
+     "start": 58.466,
+     "end": 58.746
+    },
+    {
+     "display": "planet.",
+     "start": 58.746,
+     "end": 59.386
+    }
+   ]
+  }
+ ]
+}
