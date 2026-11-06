@@ -28,6 +28,8 @@ video-studio/
     space.py              Milky Way sky, detailed 3D-projected Voyager, golden record, DSN dish, bulb,
                           pale-blue-dot frame, EEG/EKG traces
     data/                 c14_nh1_monthly.txt (Hua et al. 2022, Northern Hemisphere atmospheric 14C)
+    plates.py             photo plates: local depth estimation (Depth Anything V2 Small) -> layered 2.5D camera
+                          moves (push, orbit, dolly-zoom), hidden-background fill, titles tucked behind the subject
     postfx.py             bloom, light rays, motion blur, depth of field, heat haze, grade, vignette, grain
     captions.py           word-synced burned-in captions + SRT export
     render.py             parallel frame renderer -> ffmpeg (H.264 High, BT.709, faststart)
@@ -107,6 +109,30 @@ A scene can set these on the canvas and `postfx` applies them to the scene layer
 - `cv.rays = (x, y, strength)` — volumetric light shafts from whatever glows, toward a light at (x, y).
 
 Particles and the aurora take the video length as `loop`, so everything ambient completes whole cycles and the last frame flows into the first.
+
+## Photo plates: your images as 3D camera moves (EP007 onward)
+
+Any still (your own photo, licensed stock, public-domain NASA/ESA imagery, or an AI image) can become a moving shot. `engine/plates.py` estimates depth on this machine with Depth Anything V2 Small (Apache-2.0; ~99 MB, downloaded once to `~/.cache/lumen/models` and checksum-verified), splits the image into depth layers, fills what each layer hides, and renders a virtual camera move with real parallax. Titles can be slotted between layers, so the subject passes in front of the text.
+
+Drop images in `episodes/<episode>/assets/` named by shot (`s01_hook.jpg`, `s02_…`). Best results: 9:16 portrait, at least 1080×1920 (ideally ~2000×3500), no text or watermarks, a clear subject with some distance to the background, nothing important in the bottom quarter (captions and platform buttons). Fine lattices, fences and hair are the hardest cases; keep those moves small.
+
+Judge an image before using it (renders a 5 s move and a sheet: frame | depth | layers):
+
+```bash
+python3 -m engine.plates preview episodes/<episode>/assets/s01_hook.jpg --fx 0.4
+```
+
+In a scene:
+
+```python
+from engine.plates import Plate, Cam, blit, glow_from, rgba_layer
+plate = Plate(ASSETS / "s01_hook.jpg", fx=0.4, cuts=[0.30, 0.40])   # cuts optional (auto)
+cam = Cam(push=0.09 * x, orbit=(22 - 44 * x, -5 + 10 * x), focus=0.55)
+img = plate.render(cam, inserts=[(2, title_rgba)])   # title behind layer 2 (the subject)
+blit(cv, img); glow_from(cv, img)                     # then HUD, captions, particles as usual
+```
+
+`Cam`: `push` (dolly-in, near things grow faster), `zoom` (`vertigo_zoom()` for a dolly zoom), `orbit` (parallax around the `focus` depth), `pan`, `roll`. Keep orbit within about ±25 px and push within about 0.12 for clean edges.
 
 ## Make the next episode
 
