@@ -1,0 +1,81 @@
+# cue | characters | scene (English, no readable text in the image)
+01 | - | Camel caravan loaded with shining sacks of gold, crossing the desert
+02 | - | Marketplace in Cairo, merchants staring at gold coins piling up on the tables
+03 | - | Chronicler seen from behind writing in a book, a note in the margin
+04 | - | Golden crown in the dark, lit by a single shaft of light
+05 | MANSA_MUSA, FUGGER, KHADIJA, ABDURRAHMAN | Five merchant silhouettes from different eras standing side by side
+06 | VIEWER | A person seen from behind arriving in a foreign city with empty pockets
+07 | - | Kingdom of Mali in the 14th century, mud-brick architecture, golden sun
+08 | - | People washing gold out of river sand, sunlight glittering on the water
+09 | - | A huge caravan seen from above, endlessly long across the Sahara
+10 | - | Camels with heavy gold loads against backlight
+11 | - | Merchants in Cairo holding gold coins up to the light, puzzled
+12 | - | Scale on which a mountain of gold becomes less and less valuable, a price tag falling
+13 | - | Timbuktu, a mud-brick mosque with wooden beams sticking out, evening light
+14 | - | Scholars seen from behind with manuscripts in a library made of mud brick
+15 | - | Stacks of ancient manuscripts in wooden chests, warm torchlight
+16 | - | A gold coin crumbling to dust beside a glowing old book
+17 | - | Wooden panel carved with the number 1 in an ornate frame
+18 | - | Augsburg in the 16th century, half-timbered houses, church towers, a market square
+19 | - | Weaving looms and bales of cloth in an old trading house
+20 | - | Silver mine in the Alps, torches in the tunnel
+21 | - | Map of Europe with many trading posts as points of light
+22 | - | A rider on horseback galloping through the night with a sealed letter
+23 | FUGGER | Merchant seen from behind reading a letter by candlelight, notes with prices beside him
+24 | - | Imperial crown on a velvet cushion, large money chests behind it
+25 | - | A letter with a wax seal, one line highlighted in old handwriting
+26 | FUGGER | Merchant seen from behind handing a bill to a throne
+27 | - | Scale with a percent sign on one pan, a gloomy mood
+28 | - | Theologian seen from behind at a lectern in an old lecture hall
+29 | - | Crumbling columns of a trading house, IOUs fluttering in the wind
+30 | - | Empty money chest in an abandoned office
+31 | - | Fuggerei in Augsburg: ochre terraced houses with green shutters, sunlight
+32 | - | A small coin placed on a wooden door sign
+33 | - | Wooden panel with the number 2 carved in it, a sealed letter and a small gate beside it
+34 | - | Lübeck city gate, cogs in the harbour, morning mist
+35 | - | Map of northern Europe with trade routes from London through Lübeck to Novgorod
+36 | - | Cog ship loaded with barrels, furs and bales of cloth
+37 | - | Two hands in a firm handshake over a table full of goods
+38 | - | Merchant seen from behind being turned away from a guild, a heavy door closing
+39 | - | Old seal engraved with an honourable merchant emblem
+40 | - | Historic facade of a Hamburg chamber of commerce building
+41 | - | Wooden panel with the number 3 carved in it
+42 | - | Mecca in the 6th century, a trading caravan in front of the city, evening light
+43 | KHADIJA | Merchant house full of cloth, spices and leather goods, silhouette of a woman in the doorway
+44 | - | Map of the caravan route from Mecca to Syria
+45 | - | Merchant's scale in sunlight, perfectly balanced
+46 | - | Caravan leaving at sunrise, only camels and riders seen from far behind
+47 | - | Returning caravan with full chests, golden light
+48 | KHADIJA | Travel companion seen from behind telling a story, a woman in silhouette listening
+49 | - | Two rings on a silk cloth in warm light
+50 | - | Wooden panel with the number 4 carved in it
+51 | ABDURRAHMAN | Desert road to Medina, a man seen from behind carrying an almost empty bundle
+52 | - | Abandoned house in Mecca, a key left on the threshold
+53 | - | Arrival in Medina, palm trees, people greeting newcomers with open arms
+54 | - | Man seen from behind gesturing generously over his fields and houses
+55 | ABDURRAHMAN | Man seen from behind receiving a hand on his shoulder from another person
+56 | - | Golden abstract calligraphic ornament on dark background, no readable letters
+57 | ABDURRAHMAN | Lively market in Medina, a man seen from behind carrying a small basket
+58 | - | Small scale with a few coins, a pile of coins growing beside it
+59 | - | Many hands exchanging small coins and goods in quick succession
+60 | - | Huge caravan of hundreds of camels arriving at Medina, a cloud of dust
+61 | - | Goods being handed out to many outstretched hands
+62 | - | Open hand from which coins flow endlessly without emptying
+63 | - | Wooden panel with the number 5 carved in it
+64 | - | Indonesian harbour with traditional sailing ships, tropical sunset
+65 | - | World map with Indonesia glowing
+66 | - | Merchants seen from behind on a harbour with sacks full of spices
+67 | - | Merchant seen from behind weighing spices fairly, buyers watching
+68 | - | Mosque in Indonesia among palm trees, golden light
+69 | - | Five golden wooden panels with the numbers 1 to 5 side by side
+70 | - | Old book and a gold coin, beside a sealed letter
+71 | - | A handshake and a scale in balance
+72 | - | A path leading through a city gate to a lively market
+73 | VIEWER | Person seen from behind at a laptop, a notebook with a question written in the margin
+74 | - | Small market stall with a tablet showing an online shop, a toolbox beside it
+75 | - | Satisfied customer shaking hands with a craftsman, both seen from the side
+76 | - | Donation box in a shaft of light
+77 | - | Caravan at sunset, long shadows across the sand
+78 | - | Comment bubble with five small merchant symbols inside
+79 | - | House with a key beside it and a crossed-out percent sign
+80 | - | German bank facade with people seen from behind in front of it

@@ -1,0 +1,105 @@
+# cue | characters | scene (English, no readable text in the image)
+01 | - | A brain made of glowing neurons, puppet strings leading down to a smartphone
+02 | VIEWER | A thumb hovering over an app icon, just before tapping it
+03 | - | Dice that all land on the same number, close-up
+04 | - | Open-plan office at night, rows of engineers seen from behind in front of glowing screens
+05 | VIEWER | A pair of scissors cutting a puppet string attached to a person's head
+06 | - | A goldfish in a glass bowl with a stopwatch beside it
+07 | - | A goldfish looking challengingly at a person holding a smartphone
+08 | - | A glowing number 8 spreading like a viral message across many screens
+09 | - | A large red stamp reading NOT PROVEN over a glowing number 8
+10 | - | A female researcher seen from behind in front of screens with charts
+11 | - | An old 2000s CRT monitor showing a stopwatch with a time on it
+12 | - | Modern smartphone with a large red display showing a short time
+13 | - | A brain being reshaped like clay by invisible hands
+14 | - | Laboratory in the 1950s, black-and-white aesthetic, a wooden box with a pigeon inside
+15 | - | A psychologist seen from behind writing notes on a clipboard beside the pigeon box
+16 | - | A pigeon pecking a button, a grain of food falling out
+17 | - | A food dispenser with a question mark, sometimes food falls out, sometimes not
+18 | - | A pigeon pecking frantically, motion blur, feathers flying
+19 | - | Slot machine with blinking lights in a dark room
+20 | - | Slot machine lever turning into a thumb swiping down a smartphone screen
+21 | - | A feed shown in two states: one with exciting content, one with a boring blank
+22 | VIEWER | A thumb pulling down again and again, multiple exposure
+23 | - | The shadow of a pigeon falling across a person holding a phone
+24 | - | A glowing dopamine molecule exploding like fireworks inside a brain
+25 | VIEWER | A hand reaching for a glowing sphere that always stays just out of reach
+26 | VIEWER | Person on a sofa after an hour of scrolling, blank stare, dark room
+27 | - | Endless escalator going down into darkness, people staring at phones
+28 | - | An old web page with a button for the next page
+29 | VIEWER | Person pausing in front of a door, a light switch moment
+30 | - | A door being bricked up, an endless feed behind it
+31 | - | Inventor seen from behind, looking thoughtfully at a wall of phone screens
+32 | - | A soup bowl that refills itself secretly from below
+33 | VIEWER | Person eating and eating, the bowl always full
+34 | - | Smartphone whose feed flows over the edge into a bottomless abyss
+35 | - | Red notification dots glowing like alarm lights over a city
+36 | - | Close-up of an app icon with a red dot and the number 9
+37 | - | Red traffic light, fire extinguisher and warning triangle in a collage
+38 | - | An open to-do list, one point pulsing red
+39 | VIEWER | A hand being pulled magnetically toward a phone
+40 | VIEWER | Person alone on an island, everyone else celebrating on a ship sailing away
+41 | - | Stories with a running hourglass and a flame symbol for a streak
+42 | - | A red LIVE badge glowing over a screen
+43 | - | Stone-age campfire, a group sitting together, one person standing alone in the dark
+44 | VIEWER | A mirror reflecting a person, surrounded by hearts and thumbs-up symbols
+45 | - | A single glowing heart landing in an open hand
+46 | - | A like counter jumping wildly between small and large numbers
+47 | - | A pigeon from the Skinner experiment, this time with heart symbols instead of food
+48 | VIEWER | Television with a countdown to the next episode, a person on the sofa in front of it
+49 | - | A window in the background, the sun already rising outside
+50 | - | Brain with gears, one gear labelled by an icon of a head with a spark
+51 | - | Two paths: a steep mountain on the left, an easy path downhill on the right
+52 | VIEWER | A hand stretching slowly toward a remote control
+53 | - | Water flowing down a slope along the easiest path
+54 | - | Control room with screens full of data and graphs, a glowing network above it
+55 | VIEWER | Finger stopping while scrolling, a stopwatch counting in the background
+56 | - | Data points flying out of a phone like fireflies
+57 | - | Digital silhouette of a person made of thousands of light points
+58 | - | Phone screen with an eye looking back out of it
+59 | - | Clock hand devouring hours that fall as tiny hourglasses into an abyss
+60 | - | A calculator showing 3 times 365 equals 1,095 hours
+61 | - | Calendar with 45 days being torn out
+62 | - | Three images side by side: language book, workbench, small shop
+63 | VIEWER | Person in front of a bookshelf, thoughts flying out like tiny phones
+64 | - | Open book with a phone lying on it, two pages in
+65 | - | Two people at a table, one looking at a phone instead of the other person
+66 | VIEWER | Person looking out a window at rain, a light bulb glowing above their head
+67 | - | Toolbox opening, inside symbols: moon, grayscale phone, alarm clock
+68 | - | Five glowing keys on one ring
+69 | - | Smartphone with a completely black-and-white screen
+70 | - | Colorful app icons losing their color and looking suddenly dull
+71 | VIEWER | Phone lying untouched on a table, person reading beside it
+72 | - | Phone in a drawer in another room
+73 | - | Switched-off phone on a desk, person beside it looking distracted
+74 | VIEWER | Empty, tidy desk, person working with full concentration
+75 | - | A notifications switch being turned to OFF
+76 | - | Phone showing only calls and messages from family, everything else silenced
+77 | - | Bouncer silhouette blocking app icons at the entrance
+78 | VIEWER | Person holding a phone calmly in one hand, relaxed expression seen from the side
+79 | - | Bedroom at night, a classic alarm clock on the nightstand, no phone in sight
+80 | VIEWER | Person reaching for a phone first thing in the morning in bed, blue light on their face
+81 | - | A simple alarm clock with a 5-euro price tag, a phone charging in the hallway
+82 | - | Blank sheet of paper, pen and a cup of tea on a wooden table, morning light
+83 | - | A hole in the wall from which a phone instantly sprouts
+84 | VIEWER | Book on a nightstand, a walk in the park, hands shaping clay
+85 | - | Calendar with seven days, each getting a green tick, a small trophy at the end
+86 | VIEWER | Screen-time statistics on a phone, a hand writing down the number
+87 | - | Calendar pages for day 2 and day 3, a crossed-out bell, phone in grayscale
+88 | - | App icon being moved from the home screen into a folder
+89 | - | Phone charging in the kitchen, bedroom door closed in the background
+90 | VIEWER | Person working with concentration, an hourglass showing a full hour
+91 | - | Two screen-time statistics side by side, the second one much lower
+92 | - | Hourglass with its sand flowing back upward
+93 | VIEWER | Person walking through an autumn forest without a phone, sunbeams between the trees
+94 | VIEWER | Person sleeping peacefully, moonlight, no screen in the room
+95 | VIEWER | A hand holding a phone like a tool, not the other way around
+96 | VIEWER | Person cutting the puppet strings from their own head, light pouring in
+97 | - | An auction hammer above a glowing eye
+98 | - | A price tag hanging on a person instead of on a product
+99 | - | Hourglass whose sand is made of tiny golden stars
+100 | - | Crossroads with two signposts, one for the person, one for an algorithm, no text
+101 | VIEWER | Person looking up from a screen, calm and clear, backlit
+102 | - | A comment bubble with a heart and a check mark inside
+103 | - | Two phones, a glowing message with a video link flying from one to the other
+104 | - | A glowing brain holding a dumbbell, a calendar with 30 days beside it

@@ -1,0 +1,86 @@
+# cue | characters | scene (English, no readable text in the image)
+01 | - | Earth seen from space, a fine golden measuring line running from the centre to the surface
+02 | - | Satellite in orbit above screens full of measurement data
+03 | BIRUNI | Man in long robes seen from behind on a mountain peak, wide horizon, evening light
+04 | BIRUNI | Hands holding an astrolabe toward the horizon, a tiny angle marked on it
+05 | - | Old parchment calculation beside a modern screen, nearly the same number on both
+06 | - | Crossed-out symbols: a calculator, a telescope, a satellite
+07 | - | Moon surface with a crater, a small plaque on its rim
+08 | - | Room at night, an oil lamp, an old hand resting on a book
+09 | - | Mud-brick city in Khwarezm in the 10th century, a river, desert all around
+10 | - | Young boy seen from behind collecting plants and stones, noting them in a small notebook
+11 | BIRUNI | Young man seen from behind between stacks of books and measuring instruments
+12 | - | Two riders carrying letters back and forth between two cities
+13 | - | Two parchment sheets covered in handwriting, margin notes and question marks
+14 | - | Two young men as shadows on a wall, candlelight
+15 | - | Huge Earth with a tiny person standing on top of it
+16 | - | Ancient Egypt, a stick casting a shadow under a high sun
+17 | - | Map with two Egyptian cities, sunlight falling at different angles on each
+18 | - | Wide plain in the 9th century, two groups walking in opposite directions
+19 | - | Measuring rope stretched across desert ground, wooden stakes, harsh sun
+20 | - | Exhausted caravan with water skins in the heat
+21 | BIRUNI | A single man seen from behind with a small instrument, minimal, calm
+22 | - | Fortress Nandana on a ridge in today's Pakistan, a plain below
+23 | MAHMUD | Magnificent court in Ghazni, a ruler in silhouette, scholars at the edge of the hall
+24 | BIRUNI | Scholar seen from behind being led through a palace gate by guards
+25 | BIRUNI | Scholar seen from behind writing calmly in his notes, guards in the background
+26 | - | Mountain rising straight out of a completely flat plain, clear view to the horizon
+27 | BIRUNI | Scholar seen from behind on the plain, sighting the peak through an astrolabe
+28 | - | Geometric drawing: two observation points and two lines of sight to a peak
+29 | - | Blackboard with a triangle, angle marks and a labelled height line
+30 | - | Classroom seen from behind, blackboard full of trigonometry, a student resting his head on his hand
+31 | - | Mountain peak with a glowing line marking its height
+32 | BIRUNI | Scholar seen from behind on the summit, the horizon far below
+33 | - | A horizontal line like a spirit level, a slightly tilted line of sight to the horizon below it
+34 | - | Ship on the sea horizon, its hull already hidden behind the curve of the Earth
+35 | BIRUNI | Astrolabe with a tiny marked angle between the horizontal and the horizon, hands only
+36 | - | Golden angle markings on a dial, glowing
+37 | - | Full moon just above the horizon, beside it a bracket marking its width
+38 | - | Earth cross-section: centre, mountain, a line of sight touching the horizon as a tangent
+39 | - | A triangle glowing: Earth's centre, the mountain's peak, the horizon point
+40 | - | A right angle at the horizon point, marked in red
+41 | - | Labelled sketch with a radius line, a height line and a marked angle
+42 | - | Parchment with calculations, a quill and an ink pot in candlelight
+43 | - | Modern infographic with a glowing Earth radius line
+44 | - | Two glowing circles side by side with a small glowing gap between them
+45 | BIRUNI | Scholar seen from behind on the mountain, below him the Earth as a glowing sphere
+46 | - | Old parchment under a magnifying glass, a question-mark note in the margin
+47 | - | Mountain silhouette at sunrise, golden light
+48 | VIEWER | Beach at sunset, a person seen from behind lying flat in the sand
+49 | - | Sun touching the sea horizon, only a last streak of light left
+50 | VIEWER | A hand pressing a stopwatch, the beach in the background
+51 | VIEWER | Person standing on the beach, the sun visible again as a thin arc above the sea
+52 | - | Sketch of two eye heights, two lines of sight reaching different distances around the curve of the Earth
+53 | - | Stopwatch showing a few seconds beside a handwritten formula on a notepad
+54 | BIRUNI, VIEWER | Two silhouettes: a scholar on the mountain and a person on the beach, linked by an arc of light
+55 | - | Earth spinning on its axis, stars drawing circles in the sky
+56 | - | Balance scale with two perfectly balanced pans
+57 | - | Gems and metals beside a cone-shaped measuring apparatus filled with water
+58 | - | Calendar sheets of different peoples side by side, different scripts and ornaments
+59 | - | Scholars seen from behind sitting together over old manuscripts
+60 | - | Thick book open to drawings of Indian temples
+61 | BIRUNI | Scholar silhouette in front of a world map covered in notes
+62 | - | Earth: the world known in the Middle Ages glowing, the rest in darkness
+63 | - | Huge dark ocean on the far side of the Earth, a question mark above it
+64 | - | Faint outline of an unknown continent emerging from the ocean
+65 | - | Sailing ships on the horizon, a faint date stamp in the corner
+66 | - | Parchment with a faded red stamp in the corner
+67 | BIRUNI | Starry sky over the desert, a scholar seen from behind holding an instrument
+68 | - | Golden ornamental calligraphy on dark background, warm light, abstract, no readable letters
+69 | - | Time-lapse: sunset turning into a starry sky over mountains
+70 | - | Book page with a line crossed out and neatly corrected
+71 | BIRUNI | Room at night, an oil lamp, an old man lying in bed, face in shadow
+72 | - | Door opening, a visitor seen from behind stepping into the light
+73 | - | An old trembling hand reaching for a visitor's sleeve
+74 | - | Visitor standing uncertainly in the room, a shadow on the wall
+75 | - | Close-up: two hands in lamplight, one old, one younger
+76 | BIRUNI | Visitor explaining with calm gestures while the old man listens, face in shadow
+77 | - | Visitor walking through a night alley, a lit window behind him
+78 | - | Extinguished oil lamp, a thin thread of smoke rising
+79 | VIEWER | Young person seen from behind with a book on a mountain at sunrise
+80 | VIEWER | Smartphone with a learning app beside an open notebook
+81 | - | Moon crater with a nameplate, the Earth in the background
+82 | - | Share arrow, a message flying into a group chat
+83 | - | Comment bubble with a mountain and an oil lamp inside
+84 | - | Traveler seen from behind with a walking staff on an endless road, caravanserai at sunset
+85 | - | Old world map with a long red route from Morocco to China

@@ -1,0 +1,76 @@
+# cue | characters | scene (English, no readable text in the image)
+01 | - | Loading bar stuck at 99 percent, a German flag in the background
+02 | VIEWER | Phone on a train showing no signal, a landscape rushing past the window
+03 | - | Modern apartment in Spain, a fibre router glowing, a video loading instantly
+04 | - | Romanian town with a tangle of cables strung across poles, a laptop showing high speed
+05 | - | 1980s Bonn, government building in archive-photo style
+06 | - | A router from which euro coins flow back into a wallet
+07 | - | Old copper cable beside a glowing fibre-optic cable
+08 | - | Electrical signal weakening along a long line
+09 | - | Pulses of light racing through a glass fibre
+10 | - | A bumpy dirt track beside a wide, empty motorway
+11 | - | World map where many countries glow brightly and Germany stays pale
+12 | - | Video call on a laptop, every face frozen and pixelated
+13 | VIEWER | Person seen from behind working from home at a kitchen table, laptop and coffee cup
+14 | - | Small craft workshop in a village, the boss waiting in front of a slow computer
+15 | - | Young people seen from behind leaving a village with suitcases towards the city
+16 | - | German eagle emblem on a wall beside an old calendar page from 1981
+17 | - | Folder labelled for fibre optics beside an old typewriter
+18 | - | Two silhouettes swapping places at a lectern
+19 | - | Cable drum with copper coaxial cable in front of a 1980s tube television
+20 | - | 1980s living room, television with many channels, a family seen from behind
+21 | - | Scale: one pan holding a fibre-optic line, the other a copper wire, a question mark above
+22 | - | Road with a missed turning, a fibre sign seen in the rear-view mirror
+23 | - | Dense telephone network of the 1990s, neat grey junction boxes along a residential street
+24 | VIEWER | Person repairing an old but still running car instead of buying a new one
+25 | - | Grey junction box at the roadside with modern technology inside
+26 | - | Speedometer needle hitting a red stop mark
+27 | - | Workers laying new cables in a Romanian town, cables strung on poles
+28 | - | Frog jumping over an entire step of a staircase
+29 | - | Large office tower of a telecom company, no logos
+30 | - | German eagle emblem beside a rising stock chart
+31 | - | Copper cable like a shining golden vein with a money bag sitting on it
+32 | - | Excavator with several construction crews laying orange empty ducts
+33 | - | Torn-up pavement, barriers, a file folder lying on the construction fence
+34 | - | Three stacks of application forms with official stamps
+35 | - | A deep wide trench beside a narrow, neatly milled slot in the asphalt
+36 | - | Full order book of a civil engineering company, a queue of roadworks signs
+37 | - | Press conference in 2013, microphones, a politician in silhouette seen from behind
+38 | - | Large glowing word-shaped sign on a screen showing the German word for new land, abstract style, no readable letters
+39 | - | Many phone screens showing memes and laughing emojis
+40 | - | Fax machine in an office, stack of paper beside it
+41 | - | Fax machine beside a car parking itself automatically
+42 | - | Old town of Tallinn, digital symbols for ID cards and forms floating above it
+43 | VIEWER | Person seen from behind on a sofa with a laptop, a company certificate appearing on the screen
+44 | - | German authority waiting room, numbered tickets, a stack of files
+45 | - | Estonian and German flags side by side, a fibre-optic cable between them
+46 | - | Regional train crossing fields, a phone in the foreground with no signal
+47 | - | Auction hammer above a stack of banknotes, a radio-wave symbol
+48 | - | Large glowing number 6.5 billion euro above a 5G antenna
+49 | - | Half-built mobile phone mast beside an empty wallet
+50 | - | New mobile masts in evening light over a country road
+51 | - | Poster reading fibre for everyone by 2030 — no readable text: a large poster with a fibre-optic line drawing
+52 | - | A fibre connection box on a flat wall, dust on it, unused
+53 | VIEWER | Person shrugging in front of a contract
+54 | - | Staircase of an apartment building, silhouette of a landlord at the door
+55 | - | Toolbox containing a router, a network cable and a phone
+56 | - | Router hidden inside a closed cupboard behind folders
+57 | - | Router standing free and raised on a shelf in the middle of the apartment, radio waves spreading out
+58 | - | Television and game console connected to the router with network cables
+59 | - | Floor plan of an apartment with several small Wi-Fi points forming one network
+60 | VIEWER | A hand pressing a router reset button, an update symbol on the screen
+61 | - | Map of Germany on a screen, an address being searched, a fibre symbol glowing
+62 | - | Router beside a speedometer, the needle in the red zone
+63 | - | Section sign beside a router, calendar page from December 2021
+64 | - | Laptop connected directly to the router with a network cable
+65 | - | Calendar with three marked days and many small measurement bars
+66 | - | Measurement protocol with a stamp, a contract beside it
+67 | - | Euro coins flowing back into a wallet
+68 | - | Glowing fibre optics in a construction pit at sunrise
+69 | - | Child seen from behind by a window, outside a street being dug up for fibre
+70 | - | Construction worker seen from behind laying a glowing cable into a fresh trench
+71 | VIEWER | Phone showing a speed test result, a comment bubble beside it
+72 | - | Podium with a snail on first place
+73 | - | Two phones with a video link flying from one to the other
+74 | - | Euro notes in a wallet, beside an old banknote with many zeros
+75 | - | Old 1923 banknote with a billion-mark figure, sepia tone

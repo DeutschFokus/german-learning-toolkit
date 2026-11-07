@@ -1,0 +1,104 @@
+# cue | characters | scene (English, no readable text in the image)
+01 | VIEWER | Close-up of a thumb unlocking a smartphone, glowing golden Arabic calligraphic ornament on the screen
+02 | - | Silhouette of 9th-century Baghdad at dusk, domes and minarets against an orange sky
+03 | VIEWER | Smartphone camera taking a photo; in the viewfinder a dark medieval room with a shaft of light
+04 | - | Ancient wooden university gate with mosaic tiles, morning light, mysterious atmosphere
+05 | - | Two historic university buildings, one crossed out with a large red X
+06 | FATIMA | Silhouette of a woman in traditional dress before a Moroccan archway, backlit
+07 | - | Open old schoolbook with a blank double page, soft classroom light
+08 | - | Empty parchment pages, dust swirling in a beam of light
+09 | - | An old scroll slowly unrolling, golden light spilling out beneath it
+10 | - | Six scholar silhouettes in a row, the last one in shadow beside a glowing question mark
+11 | - | Panorama of round Baghdad at sunset, the Tigris river, domes and palm trees
+12 | - | European monastery scriptorium, a monk copying a single book laboriously by candlelight
+13 | - | Grand gate with ornate calligraphic decoration, scholars streaming through it
+14 | - | Large hall full of scholars at wooden tables, scrolls and oil lamps
+15 | - | A hand correcting a Greek manuscript with Arabic marginal notes
+16 | - | Ink pot, quill and parchment with geometric diagrams, dramatic light
+17 | ALKHWARIZMI | Scholar seen from behind writing equations on parchment, warm candlelight
+18 | - | Old leather-bound book with gold-embossed title, dramatic light
+19 | - | Ornamental calligraphy dissolving into a classroom blackboard covered with equations
+20 | - | Ornamental calligraphy letters turning into Latin letters floating in the air
+21 | - | Glowing abstract letter shapes over a stream of digital data
+22 | VIEWER | Smartphone with endless video feed, hearts and comment bubbles floating out of the screen, no logos
+23 | - | Split image: medieval scholar silhouette on the left, modern server room on the right, joined by a golden line
+24 | - | Indian numerals carved into a palm leaf, a trail of light leading westward
+25 | - | Map of trade routes from Baghdad across Andalusia to Europe, glowing numbers drifting along the routes
+26 | - | Close-up of a long receipt covered in numbers
+27 | VIEWER | A tax form covered with Roman numerals, a hand holding a pen in despair
+28 | - | Port city of Basra in the 10th century, sailing ships on the water at evening light
+29 | IBNHAYTHAM | Scholar seen from behind in front of a shelf of instruments and books
+30 | - | Grand throne hall in Cairo, a caliph in silhouette on the throne, a scholar bowing low
+31 | IBNHAYTHAM | The Nile, wild and vast, a small man on the riverbank looking at the water
+32 | - | Dark palace corridor with armed guards and menacing shadows
+33 | - | Heavy wooden door being barred from the outside, light seeping under it
+34 | IBNHAYTHAM | Room full of notes, lenses, mirrors and candles, a scholar writing intently
+35 | - | Manuscript-style drawing: light rays falling from a vase into an eye
+36 | - | Old drawing of eyes emitting rays, crossed out in red
+37 | IBNHAYTHAM | Dark room with a small hole letting in light, an upside-down street scene projected on the wall
+38 | - | Balance scale: one pan heavy with a glowing experiment flask, the other pan light
+39 | - | Hands repeating an experiment with candles and screens, several rounds side by side
+40 | - | Modern laboratory, a hologram of an old manuscript floating above the bench
+41 | - | Old town of Fes, narrow alleys, green mosque dome, golden morning sun
+42 | FATIMA | Treasure chest of gold coins in a merchant house, a woman silhouette standing in front of it
+43 | FATIMA | Woman silhouette looking over a construction site, workers laying stone foundations
+44 | - | Courtyard with mosaic floor and fountain, students sitting in a circle around a teacher
+45 | - | Opened ancient record book with a gold seal, beside a grand university gate
+46 | - | Oxford and Bologna fading in the background, a glowing university gate in the foreground
+47 | - | Medieval hospital, clean beds, inner courtyard with fountain and plants
+48 | - | Huge handwritten medical book with anatomical drawings
+49 | - | 16th-century European lecture hall, a professor reading from a huge book, students in gowns
+50 | - | Shelf of sorted medicine bottles beside handwritten notes on illness
+51 | - | Cordoba in the 10th century, red-and-white arches of the Mezquita
+52 | - | Table of finely crafted surgical instruments beside a book of their drawings, velvet cloth
+53 | - | Split image: old surgical instrument on the left, nearly identical modern surgical tool on the right
+54 | - | Modern operating lamp above an operating table, golden ornaments on the ceiling
+55 | FIRNAS | Cordoba at night, a man with wooden and feather wings on a hill, seen from behind
+56 | FIRNAS | Workshop: a wooden frame, silk panels and feathers being tied together into wings
+57 | FIRNAS | Man leaping off a hill with wings spread wide, a crowd below looking up
+58 | - | A dust cloud after a hard landing, a broken wing frame and scattered feathers on the ground
+59 | - | Bird in its landing approach, tail feathers spread wide, close-up
+60 | - | Sketches of flying machines on aged paper, Renaissance style
+61 | - | Giant bronze elephant clock with a tower, figures, gears and water tanks
+62 | - | Open book with colorful technical machine drawings
+63 | - | Mechanical musician figures on a boat, pins on a rotating drum
+64 | - | Technical drawing: a rotating crank converted into back-and-forth motion
+65 | - | A crankshaft transforming into the engine of a modern car
+66 | VIEWER | City bus at night on a German street, lights blurred into streaks
+67 | - | Old machine book with a holographic projection of a modern engine above it
+68 | IDRISI | Silver world map on a table in a Norman palace on Sicily, south at the top
+69 | IDRISI | A scholar seen from behind and a king in silhouette bent over a map, candlelight
+70 | - | Port of Palermo at dusk, merchants and sailors talking, a scribe taking notes
+71 | - | Detail of the map: coastlines, rivers and fine ink lines
+72 | - | Two hands together holding the map: one with a signet ring, one with a prayer bead string
+73 | - | A map turning 180 degrees, Europe suddenly familiar
+74 | MARIAM | Workshop in Aleppo, a woman silhouette engraving fine lines into a golden astrolabe
+75 | - | Astrolabe against a starry sky, lines connecting the stars to the instrument
+76 | MARIAM | Opulent court in Aleppo, an astrolabe handed over on a velvet cushion
+77 | - | Astrolabe whose center glows like a modern GPS map
+78 | - | Steaming cup of coffee on an old wooden table, prayer beads, oil lamp, night in Yemen
+79 | - | Sufi silhouettes at night sitting in a circle, a coffee pot in the middle
+80 | - | Map with coffee beans traveling from Yemen to Mecca, Cairo and Istanbul
+81 | - | Arabic calligraphy curling into a steaming coffee cup, abstract shapes only
+82 | - | Seventeenth-century Vienna, sacks of coffee beans in front of an Ottoman tent
+83 | VIEWER | Coffee-to-go cup on a German pedestrian street, the steam forming Arabic ornaments
+84 | - | Mosque whose pillars are made of stacked books, light falling through the windows
+85 | - | Cave in a mountain at night, a shaft of light falling in, no people
+86 | - | Golden ornamental calligraphic swirl on dark background, abstract, no readable letters
+87 | - | Starry night sky over the desert, an astrolabe in the foreground
+88 | - | Silhouette of a scholar seen from behind on a rooftop, looking through an instrument at the stars
+89 | - | Raindrop on a leaf, macro shot, light refracting inside the drop
+90 | - | Baghdad in flames in 1258, horsemen before the city walls seen from afar
+91 | - | Books falling into the Tigris, the water darkening
+92 | - | Charred book page floating on water
+93 | - | A monk seen from behind in Toledo translating an Arabic book, candlelight
+94 | - | Florence at the Renaissance, a great dome, golden light threads coming from the south
+95 | - | Schoolbook pages: the blank double page filling with pictures and calligraphic ornaments
+96 | - | Scholar seen from behind by an oil lamp, only paper and quill, no electricity
+97 | - | World map with glowing points over Baghdad, Cairo, Fes and Cordoba
+98 | VIEWER | Young person seen from behind in a library, laptop and book, light through the window
+99 | - | Smartphone from which a giant library grows, shelves and books spilling out
+100 | - | Six glowing scholar silhouettes side by side
+101 | - | Comment bubble with a question mark above six silhouettes
+102 | - | Scholar seen from behind on a mountain, measuring the horizon, a glowing globe in the sky
+103 | - | Golden ornamental calligraphic swirl glowing on dark background, abstract, no readable letters

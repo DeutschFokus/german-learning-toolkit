@@ -1,0 +1,108 @@
+# cue | characters | scene (English, no readable text in the image)
+01 | - | A 100-euro banknote slowly melting like ice on a kitchen table
+02 | VIEWER | A payslip with rising numbers beside an almost empty wallet
+03 | VIEWER | Person sitting at a kitchen table at night, head in hands, bills spread out
+04 | VIEWER | A shadowy thief in a hood pulling coins out of a wallet lying on a payslip
+05 | - | Golden paragraph symbol above an open, empty vault
+06 | - | Five numbered doors in a dark hallway, the fourth door glowing
+07 | - | Magnifying glass over a bank statement with one line marked in red
+08 | - | Large digit 1 made of coins
+09 | - | A kebab on a plate beside two price tags, one older and one with a higher price
+10 | - | Price board of a fast-food stand in a German city, old prices being covered by stickers
+11 | - | The same kebab next to a shrinking euro banknote
+12 | - | Staircase chart rising upward, a step marker for each of three years
+13 | - | Shopping cart from the past filled to the brim, a half-empty cart today, same price tag
+14 | - | Bank balance display unchanged, a shopping bag beside it shrinking
+15 | - | A number on a screen unchanged, its value fading behind it as a shadow
+16 | - | Old mattress with banknotes underneath turning grey and transparent
+17 | - | Hourglass where banknotes fall instead of sand
+18 | - | Melting gold bar in dramatic light
+19 | - | A large glowing number 72 above an hourglass
+20 | - | Chalkboard covered with a division formula, chalk dust on the tray
+21 | - | Chalkboard with a simple division, the result circled in red
+22 | VIEWER | Birthday cake with candles, the same silhouette aging from thirty to fifty-four, banknotes halved
+23 | - | Untouched passbook with dust on it
+24 | - | A grandmother placing a Deutsche Mark coin in a child's hand, 1980s photos in the background
+25 | - | Old bakery price sign in marks beside a modern price sign in euros
+26 | VIEWER | Person running on a treadmill, the finish line always the same distance away
+27 | VIEWER | Glossy sports car chained with a heavy iron chain to a person
+28 | VIEWER | Smartphone screen with a glowing one-click purchase button
+29 | - | New car with a price tag that crumbles to dust
+30 | - | Stack of loan contracts taller than the car beside it
+31 | - | Bank statement with a red negative number and a glowing red overdraft line
+32 | - | Percentage sign made of fire above a bank counter
+33 | VIEWER | Person paying with banknotes coming out of a hole in the ground
+34 | - | Open Quran on a wooden stand, warm light, calligraphy abstract and not readable
+35 | VIEWER | Hamster wheel made of banknotes, a person running in it
+36 | - | Gear with a percentage symbol pulling a figure downward, only the shadow visible
+37 | - | Staircase where each step holds a pricier object: coffee cup, sneakers, watch, car
+38 | - | A payslip with a glowing plus sign and confetti falling
+39 | - | Collage: bigger apartment, new car, delivery bags, designer clothes
+40 | - | Calendar with three torn-off months, a banknote dissolving into thin air
+41 | VIEWER | Same person as before, still stressed, surrounded by more expensive things
+42 | VIEWER | Two people seen from behind: one in designer clothes with an empty wallet, one plainly dressed beside a small coin tree
+43 | - | Plain house with an unremarkable car, cutaway showing a vault full of gold in the basement
+44 | - | Scale: shopping bags on one side, a growing coin stack on the other, the coins winning
+45 | - | Smartphone with small subscription icons clinging to the screen like leeches
+46 | - | Subscription icons without logos: play button, music note, cloud, dumbbell
+47 | - | Dusty app icons on a screen covered in cobwebs
+48 | - | Many small coins rolling together into a large pile
+49 | - | Huge bill hanging from the ceiling, showing the large number 1800
+50 | VIEWER | Person at a desk at night crossing out lines on a bank statement with a red pen
+51 | - | Bank statement with yellow highlighted recurring debits
+52 | - | Subscription icon under a magnifying glass, a surprised yellow emoji beside it
+53 | VIEWER | Clockwork of gears, a tiny person built into one of the gears
+54 | - | Glass ceiling above an office, office workers seen from behind pressing their heads against it
+55 | VIEWER | Exhausted person surrounded by many clocks, all showing late hours
+56 | - | Ladder pressed against a concrete ceiling
+57 | - | Seed in an open hand, beside the same seed grown into a large fruit tree
+58 | - | Small shop, laptop with an online course, a camera for videos, a toolbox
+59 | - | Factory hall and a house with land, as miniatures on a chessboard
+60 | - | Keyring with keys to a shop, a house and a workshop
+61 | - | Old marketplace in Mecca, merchants with fabrics and spices, warm light, no faces visible
+62 | - | Merchant's scale with perfectly balanced weights, close-up
+63 | - | Honest goods displayed at a bazaar, light on a merchant's hands
+64 | - | Coin bright on one side and dark on the other
+65 | - | Cake cut into three slices labelled 50 percent, 30 percent and 20 percent
+66 | - | The 50 percent slice with simple symbols: a house, a basket, a shield
+67 | - | The 30 percent slice with simple symbols: a restaurant table, a guitar, a plane
+68 | - | The 20 percent slice glowing gold with a small tree on it
+69 | - | Glass jar of coins on a shelf, a storm raging outside the window
+70 | - | Broken washing machine in a puddle, beside an untouched jar of coins
+71 | VIEWER | Person breathing calmly on a balcony at sunrise
+72 | - | Calendar with a marked payday, an arrow moving money automatically into a separate savings jar
+73 | - | Empty savings jar at the end of the month beside a calendar showing the 30th
+74 | - | Banking app standing-order screen with the date right after the salary arrives
+75 | - | A single 50-euro note in a savings jar in sunlight
+76 | - | Automatic gear that moves coins into a jar without human help
+77 | VIEWER | Person in a shop pausing in front of a shelf, a thought bubble with a clock
+78 | - | Online shopping cart with an expensive item, an hourglass beside it
+79 | - | The same shopping cart two days later, the item fading
+80 | - | Shop screen with a countdown timer, a banner for low stock and a big buy button
+81 | - | Shield deflecting arrows that carry discount symbols
+82 | - | Iron chain whose links break one after another
+83 | - | Snowball rolling down a hill, growing larger
+84 | - | Stamped contract marked paid, coins flowing back into a wallet
+85 | VIEWER | Person reading a book and working on a laptop, small plants growing around them
+86 | - | Collage of hands: typing code, sanding wood, editing video, writing vocabulary cards
+87 | - | Head shaped like a vault with glowing gears inside
+88 | - | Chessboard, one piece moving forward step by step, a clock in the background
+89 | - | Green growth arrow with a small crescent symbol, German skyline behind
+90 | - | Funnel filter: symbols for alcohol, gambling and an interest-based bank stuck inside, clean coins falling through
+91 | - | Advisory meeting at a table, only hands and documents visible
+92 | - | Warning sign with a trap door opening beneath it
+93 | - | Glowing guru shadow beside a luxury car, strings leading to the wallets of many small people
+94 | - | Phone with a course advertisement, chart screenshots and crypto coins, all under a warning sign
+95 | - | Small tree growing slowly into a large oak, time-lapse
+96 | - | Open hand with coins falling into another hand, a fountain behind
+97 | - | Donation box in a mosque, light falling on it
+98 | VIEWER | Person holding money loosely in an open hand instead of clutching it
+99 | VIEWER | Person standing calmly on a mountain made of coins instead of buried under them
+100 | - | Five symbols in a row: melting banknote, chain, staircase, leech, gear
+101 | - | Staircase and leech symbol highlighted
+102 | - | Gear with a key beside it unlocking it
+103 | - | Calendar with five years, a tree growing a bit taller each year
+104 | VIEWER | Person on a mountain peak at sunrise looking over a wide valley
+105 | VIEWER | Smartphone with a share arrow, a glowing message flying to a friend
+106 | - | Five numbered doors with a comment bubble in front of them
+107 | - | Old caravan of camels in the desert at sunset, merchants seen from behind

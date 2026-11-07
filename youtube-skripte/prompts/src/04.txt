@@ -1,0 +1,97 @@
+# cue | characters | scene (English, no readable text in the image)
+01 | - | A German railway station departure board, every line in red, rows of cancelled trains
+02 | VIEWER | Annoyed commuters seen from behind on a crowded platform in the rain
+03 | - | German precision clock and engineering drawings, a standing high-speed train beside them
+04 | - | Cartoon-style map of Europe, neighbouring countries laughing and pointing at a German train
+05 | - | High-speed train in fog, dramatic light, a question mark in the sky
+06 | - | Statistics sheet with a magician's top hat, a number popping out of it
+07 | - | Border railway station in Basel, Swiss flag, a high-speed train ending at the platform
+08 | - | A Swiss train waiting on the neighbouring track, passengers with suitcases stepping across
+09 | - | Swiss station clock, everything precise, a red stop sign in front of a high-speed train
+10 | - | Swiss border sign with a symbolic protective shield in front of it
+11 | - | Chart with a falling curve, a labelled axis
+12 | - | A large glowing 62 percent on a departure board
+13 | - | Ten high-speed train icons in a row, four of them coloured red
+14 | - | Magnifying glass over the fine print of a document
+15 | - | Stopwatch frozen at 5:59, a green tick beside it
+16 | - | Station clock showing five minutes late, a stamp reading ON TIME
+17 | - | Empty platform, a sign reading train cancelled
+18 | - | Statistics sheet with a line covered in correction fluid
+19 | VIEWER | Passenger sitting alone on a dark platform bench, the departure board empty
+20 | - | Historic locomotive Adler from 1835 puffing between two towns, cheering people seen from behind
+21 | - | Short piece of railway track with a kilometre marker
+22 | - | Map of Germany where a dense network of railway lines spreads out in time-lapse
+23 | - | Steam locomotive pulling coal wagons past smoking factory chimneys
+24 | - | Freight train full of goods and travellers at a historic station, sepia tone
+25 | - | Small historic village station with flower boxes and a waiting steam locomotive
+26 | - | The same village station today: empty, ivy on the wall, tracks disappearing under grass
+27 | - | Old station building that is now a restaurant, the tracks turned into a bike path
+28 | - | Empty station building with boarded-up windows
+29 | - | A track leading into a dark tunnel
+30 | - | Calendar page for 1994, below it two old railway logos merging together
+31 | - | Two trains, one from the west and one from the east, rolling towards each other and merging into one
+32 | - | Train with a tie and briefcase, business look
+33 | - | Stock exchange floor with a price display, a train standing in front of it
+34 | - | Man in a suit seen from behind cutting railway tracks with giant scissors, banknotes in the background
+35 | - | Diagram: a high-speed train overtaking a freight train on a side track, then the side track is removed
+36 | - | Torn-out switches piled on a scrapyard
+37 | - | Map of Germany where track lines gradually fade away
+38 | - | Overcrowded railway junction from above, trains packed closely together
+39 | - | Three-lane motorway narrowing to two lanes, cars jammed
+40 | - | Endless traffic jam, red brake lights stretching to the horizon
+41 | - | Map of Germany with red junction points: Cologne, Hamburg, Frankfurt, Mannheim
+42 | - | Cologne main station at night, all platforms occupied, waiting trains in front
+43 | - | Dominoes shaped like trains falling across a map of Germany
+44 | - | Old signal box with mechanical levers from the imperial era, operator seen from behind
+45 | - | Close-up of cast-iron pulleys and levers
+46 | - | Empty spare parts store, a sign reading no longer available
+47 | - | One older employee in a signal box surrounded by many empty chairs
+48 | - | Old stone bridge with cracks, a modern high-speed train crossing above it
+49 | - | Yellow speed-limit sign beside a track
+50 | - | Stopwatch with minutes stacking up like coins
+51 | - | Bar chart: Germany at the bottom, Switzerland and Austria far above
+52 | - | Two piggy banks: a large one with a Swiss flag, a small one with a German flag
+53 | - | New shiny motorway bridge beside a crumbling railway bridge
+54 | - | Swiss Alps, a red train crossing a viaduct
+55 | - | German car in the spotlight on a stage, the train standing in shadow
+56 | - | Swiss station, trains from several directions arriving at the same time, clock showing exactly the full hour
+57 | - | Animation style: trains running in a star shape towards a central hub
+58 | VIEWER | Passengers calmly changing across the platform to the train on the opposite side
+59 | - | Map of Germany with a construction barrier across it
+60 | - | Calendar whose pages blow away in the wind, years passing by
+61 | - | Construction workers in orange vests at night beside tracks, cranes, floodlights
+62 | - | Many small roadworks signs along a line, crossed out
+63 | - | A completely closed railway line, brand-new rails being laid
+64 | - | New tracks between Frankfurt and Mannheim, a sign with the name Riedbahn
+65 | - | Replacement bus in front of a station, people with suitcases
+66 | - | A high-speed train running on shiny new tracks into the sunrise
+67 | - | Scale balancing a construction site and a new track, question mark above it
+68 | - | Huge underground construction site beneath a city, concrete columns shaped like calyxes, cranes
+69 | - | Cross-section: a station being moved underground
+70 | - | Price tag with ever-larger billion amounts crossed out
+71 | - | Signboard with several crossed-out opening years
+72 | - | Huge blueprint beside a snail on a track
+73 | - | Stack of permit forms, taller than a construction worker standing beside it
+74 | - | Expert reports, objection letters and a judge's gavel on a table
+75 | - | Justitia statue standing in front of a track bed
+76 | - | Timeline from a glowing light bulb idea to a moving train, decades in between
+77 | - | Speaker's podium with microphones, an hourglass beside it
+78 | - | Train driver seen from behind in the cab, looking at a long empty stretch of track
+79 | - | Farewell party with a retirement cake in a staff room, railway uniforms seen from behind
+80 | - | Empty signal box with an abandoned chair, lights blinking
+81 | VIEWER | Passenger on a platform looking at a phone, a form about passenger rights in the background
+82 | - | Station clock with a +60 minutes display, beside it a ticket with a quarter glowing gold
+83 | - | Station clock with a +120 minutes display, half of the ticket glowing gold
+84 | VIEWER | Phone with a form on it, a finger pressing the send button
+85 | - | Piggy bank shaped like a high-speed train, coins falling in
+86 | - | A ticket with a broken chain, another train waiting at the platform
+87 | - | Small-print rulebook under a magnifying glass
+88 | - | Split image: modern Japanese bullet train on the left, a high-speed train in the rain on the right
+89 | - | Stack of old files with years stamped on them, from 1994 to today
+90 | - | Railway employee seen from behind in the rain on a platform, giving directions to travellers
+91 | - | High-speed train crossing a new modern bridge at sunrise, fog in the valley
+92 | - | Swiss station clock and German station clock side by side
+93 | - | Large display with the words replaced by a big blank question mark and a speech bubble
+94 | - | Many comment speech bubbles on a platform
+95 | VIEWER | A friend waiting with arms crossed in front of a clock, the other one running up in a hurry
+96 | - | Router loading bar stuck at 3 percent, German flag in the background

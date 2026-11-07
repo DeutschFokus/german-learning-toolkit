@@ -1,0 +1,81 @@
+# cue | characters | scene (English, no readable text in the image)
+01 | - | Young couple seen from behind in front of a house with a for-sale sign
+02 | - | Key ring lying unused on a rental contract
+03 | - | Large glowing percent sign, crossed out in red
+04 | - | Globe with glowing financial centres: London, Dubai, Kuala Lumpur
+05 | - | State parliament building in Magdeburg with a German flag
+06 | - | Model house on a table with coins and a contract beside it
+07 | - | Contract with a large stamp and a question mark on it
+08 | - | Open Quran on a wooden stand, warm light, calligraphy abstract and not readable
+09 | - | Two friends seen from behind, one handing banknotes to the other
+10 | VIEWER | Person with an empty wallet in front of a closed shop in the rain
+11 | - | Scale tipping strongly to one side
+12 | - | Hourglass where coins trickle down instead of sand and multiply at the bottom
+13 | - | Two hands placing coins together into the till of a small shop
+14 | - | Crossed-out dice beside a contract behind a veil of fog
+15 | - | Fisherman seen from behind pointing at the open sea, a buyer holding out money
+16 | - | Iron chain wrapped around a house, growing numbers behind it
+17 | - | Medieval monastery library, a monk seen from behind with a codex
+18 | - | Wooden toolbox with five golden tools
+19 | - | New car in a showroom, a bank silhouette standing in front of it
+20 | - | Purchase contract with a bank listed as the buyer
+21 | - | Price tag with a simple sum showing a higher final price
+22 | - | Instalment plan with the same amount every month, ticked-off months
+23 | - | Calendar with constant instalments, a crossed-out arrow of compound growth
+24 | - | Late-payment fee dropping into a donation box
+25 | - | Excavator on a construction site with a sign reading property of the bank
+26 | - | Bank silhouette handing a key to a tenant
+27 | - | Key being handed over after the last instalment
+28 | - | Two hands holding a model house together
+29 | - | Pie chart: 80 percent on one side, 20 percent on the other
+30 | - | House made of puzzle pieces, changing colour piece by piece
+31 | - | Progress bar growing from 20 to 100 percent
+32 | - | Board with a simple calculation: a house, a bank share, a personal share
+33 | - | Bar chart where the bank's share shrinks each year while the rent falls too
+34 | - | Investor seen from behind handing a bag of coins to a craftsman, workshop behind them
+35 | - | Pie chart split 60 to 40
+36 | - | Empty workshop, two people seen from behind with empty hands
+37 | - | Caravan before Mecca in evening light, silhouettes seen from behind
+38 | KHADIJA | Goods loaded onto camels, a woman in silhouette checking a list
+39 | - | Certificate with a seal, a bridge and an office building behind it
+40 | - | Cathedral and parliament building of Magdeburg, a glowing number 2004
+41 | - | Certificate with a seal and a glowing amount of 100 million
+42 | - | Old newspaper page with a headline and no readable text
+43 | - | London skyline with Big Ben, a glowing number 2014
+44 | - | Skyline of Kuala Lumpur at night
+45 | - | Many hands holding an umbrella together over a house
+46 | - | Frankfurt banking skyline at dusk
+47 | - | Bank branch without logos, a crescent ornament on the glass door
+48 | - | Couple seen from behind at an advisor's desk, a model house on the table
+49 | VIEWER | A regular bank card in one hand, a person seen from behind thinking
+50 | - | Two contracts stacked on each other, each with an identical stamp
+51 | - | House with arrows: from the seller to the bank, from the bank to the buyer
+52 | - | Puzzle whose pieces are being reassembled
+53 | - | Falling stock charts, people seen from behind in front of a closed bank, a 2008 mood
+54 | - | Stack of murky papers labelled as a credit package
+55 | - | Study on a table beside a world map with banking symbols
+56 | - | Two bank buildings in a storm, one standing much more solidly
+57 | - | Solid brick foundation with a house on top
+58 | - | Green leaves growing out of a stack of coins
+59 | - | Filter funnel: some company symbols stuck inside, others falling through
+60 | - | A small coin taken from a stack and placed in a donation box
+61 | - | Magnifying glass over a contract with a highlighted line
+62 | - | Two bills side by side, two almost identical amounts
+63 | - | Classic loan contract with a highlighted interest rate
+64 | - | Scale with two almost equal weights
+65 | - | Scholars seen from behind discussing at a long table covered in contracts
+66 | - | Purchase contract and loan contract side by side, clearly designed differently
+67 | - | Various contracts, some with a disputed stamp
+68 | - | House in warm light, two partner hands holding the key together
+69 | - | Notebook with three numbered points, a pen lying beside it
+70 | - | Calculator placed between two offers
+71 | - | Three question marks floating above a model house
+72 | - | Financial advisor and a scholar seen from behind at a shared table
+73 | - | Savings jar beside a small model house
+74 | - | Melting 100-euro note
+75 | - | Golden calligraphic ornament over a market scene at evening, abstract
+76 | - | Coin with a question mark embossed on it in warm light
+77 | - | Comment bubble with a house and a question mark inside
+78 | - | Two phones with a video link flying from one to the other
+79 | - | Hand placing coins in a bowl, golden calligraphic ornament above, abstract
+80 | - | Calculator beside gold jewellery and a savings passbook

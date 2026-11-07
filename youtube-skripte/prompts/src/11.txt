@@ -1,0 +1,79 @@
+# cue | characters | scene (English, no readable text in the image)
+01 | HAFIZ_CHILD | Child seen from behind on a carpet, a Quran on a reading stand in front, morning light
+02 | HAFIZ_CHILD, TEACHER | Teacher seen from behind listening while the child recites with a closed book
+03 | VIEWER | Confused person seen from behind in a supermarket aisle, a shopping list left at home on the kitchen table
+04 | - | A brain, half made of golden book pages and half of drifting mist
+05 | - | Student seen from behind with flashcards in a library
+06 | - | Brain scan image beside an open book
+07 | - | Pen underlining a single line on a page
+08 | - | Open Quran seen from above, fine ornamental calligraphy, many pages, no readable letters
+09 | - | Tall stack of paper beside a ruler
+10 | - | Golden abstract calligraphic ornament on dark background, no readable letters
+11 | - | World map with glowing points from Indonesia to Germany
+12 | - | Old handwritten manuscript beside a modern printed book
+13 | - | Chain of light points passed from one person to the next, abstract figures only
+14 | HAFIZ_CHILD | Child seen from behind at a reading stand, a calendar with several years on the wall behind
+15 | - | 19th-century study room, a researcher seen from behind holding flashcards
+16 | - | Researcher seen from behind writing short syllables on cards, a dated page in the background
+17 | - | Flashcards covered with short nonsense syllables
+18 | - | Steep curve falling downward, a glowing label of a forgetting curve
+19 | - | Sand running through fingers, close-up
+20 | - | Several forgetting curves, each one flattening after a repetition
+21 | HAFIZ_CHILD | Child seen from behind at a reading stand, golden lines holding a curve up at the top
+22 | - | Large book with a single line glowing out of it
+23 | - | Small table with room for only four boxes, more boxes falling off
+24 | - | Staircase made of many small steps leading up to a mountain peak
+25 | HAFIZ_CHILD | Student seen from behind dividing a study page with pencil marks into small sections
+26 | HAFIZ_CHILD | Child seen from behind reciting loudly, golden sound waves spreading out
+27 | - | Brain with three glowing regions: vision, speech, hearing
+28 | - | Two flashcards: one faded from silent reading, one glowing from being spoken aloud
+29 | - | Even waves of a voice drawn as a line of light
+30 | VIEWER | Student seen from behind in their room, speaking loudly while holding notes in one hand
+31 | - | Worn Quran with many bookmarks, clearly used often
+32 | - | Book page with marked positions: top right, middle, bottom left
+33 | - | Thought bubble with a book page floating inside like a photograph
+34 | - | London black cab seen from behind on a narrow winding street
+35 | - | Huge city map of London with a brain glowing over it
+36 | - | Desk with a single colourfully structured notebook
+37 | - | Greek columned hall in evening light, a transparent palace floating above it
+38 | - | Ancient banquet hall collapsing, dust cloud, columns falling
+39 | - | A man seen from behind pointing at empty seats at a long table
+40 | - | Floor plan of an apartment with small symbols glowing at the door, hallway, sofa and kitchen
+41 | - | Huge funny apple sitting on a sofa, a dictionary hanging on the front door
+42 | - | Memory competition, participants seen from behind with headphones in front of playing cards
+43 | TEACHER, HAFIZ_CHILD | Teacher seen from behind listening to a child recite with the book closed
+44 | TEACHER, HAFIZ_CHILD | Teacher correcting with a small finger gesture while the child keeps reciting
+45 | - | Two groups of students seen from behind: one reading, one writing from memory
+46 | - | Bar chart where the bar for self-testing is much taller than the bar for rereading
+47 | - | Yellow highlighter coloring a whole page, a red X above it
+48 | - | Flashcard with a question on the front and the answer on the back
+49 | VIEWER | Person seen from behind at a desk, the book closed, writing from memory
+50 | - | Hand writing from memory on a blank sheet of paper
+51 | - | Gaps in a text being filled in with a green pen, a brain lighting up
+52 | - | Three stacks side by side, labelled by colour as new, recent and old
+53 | - | Small glowing stack representing new material
+54 | - | Medium stack representing recent material
+55 | - | Large stack representing old material with a circular arrow around it
+56 | - | Camel pulling free from a loose rope, desert in evening light
+57 | - | Calendar with repetitions at growing intervals: one day, three days, one week, one month
+58 | - | Phone showing a flashcard app, cards appearing at intervals
+59 | - | Flashcard appearing exactly where a forgetting curve nearly reaches the floor
+60 | - | Exam hall, one student seen from behind looking calm while others look stressed
+61 | - | Two hourglasses of the same size, one glowing gold
+62 | HAFIZ_CHILD | Sunrise, child seen from behind at a reading stand after the morning prayer
+63 | - | Sleeping brain, threads of light sorting memories like books on a shelf
+64 | - | Bedside table with flashcards, a lamp being switched off
+65 | VIEWER | Person seen from behind praying alone in a quiet room
+66 | - | Two students seen from the side at a blackboard, one explaining to the other
+67 | - | Vocabulary card showing a briefcase symbol, a job interview conversation in an office behind it
+68 | HAFIZ_CHILD, TEACHER | Graduation: child seen from behind shaking hands with an older teacher, family in the background
+69 | - | Candle burning calmly in a dark room
+70 | VIEWER | Person seen from behind writing a question on a note: why am I learning this
+71 | VIEWER | Person seen from behind walking up a steep path with determination, sunrise
+72 | - | Seven golden cards with symbols side by side
+73 | - | The same cards, the last three glowing
+74 | - | Brain as a library, shelves filling with glowing books
+75 | HAFIZ_CHILD, VIEWER | A child in a Quran school and a student in a library, both seen from behind, side by side
+76 | - | Comment bubble with a lightbulb and a question mark inside
+77 | - | Two phones with a video link flying from one to the other
+78 | VIEWER | Sleeping person under a starry sky made of glowing neurons

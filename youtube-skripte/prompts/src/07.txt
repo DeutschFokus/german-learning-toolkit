@@ -1,0 +1,75 @@
+# cue | characters | scene (English, no readable text in the image)
+01 | - | Open book with a phone lying on it after two pages
+02 | VIEWER | Person on a sofa seen from behind, a film playing while they scroll on their phone
+03 | VIEWER | Person at a desk, thoughts flying out as small symbols in every direction
+04 | - | A brain shaped like a battery, the indicator slowly changing from red to green
+05 | - | Calendar with 30 days, the last week glowing gold
+06 | - | Neurons forming new glowing connections
+07 | - | A dumbbell beside a glowing brain
+08 | VIEWER | Person working while a phone vibrates, concentration shattering like glass
+09 | - | Stopwatch showing 23 minutes
+10 | VIEWER | Person returning with effort to a half-finished document on the screen
+11 | - | A trail of thought fragments leading from a phone back to a task
+12 | - | Juggler with too many balls, several falling down
+13 | - | Driving simulator, a person seen from behind driving and talking on the phone at once
+14 | - | One glowing person among many dim ones in a crowd
+15 | - | Prayer mat in a quiet bright room, morning light
+16 | - | Shoes placed in front of a mosque entrance, stillness, no people visible
+17 | - | Child seen from behind with a Quran on a reading stand, warm light
+18 | - | A brain with golden paths arranging themselves like a labyrinth
+19 | - | Calendar page for week 1 beside a tidy desk
+20 | VIEWER | Screen-time statistics on a phone, a hand writing down the number
+21 | - | Notification switch being turned to OFF
+22 | - | Phone with a grayscale screen, colorful icons losing their color
+23 | - | Phone charging in the kitchen, bedroom door closed in the background
+24 | VIEWER | Person sleeping peacefully, moonlight falling into the room
+25 | - | A desk with only one notebook and one pen on it
+26 | - | Browser window with dozens of open tabs being closed one by one
+27 | - | Clock with two highlighted time windows and a small phone symbol inside
+28 | VIEWER | Person sitting relaxed with tea by a window, the phone lying face down
+29 | - | Calendar page for week 2 beside a single candle burning calmly
+30 | - | Kitchen timer shaped like a tomato on a desk
+31 | - | Clock with a large segment for 25 minutes and a small one for 5 minutes
+32 | - | Alarm clock set to 15 minutes
+33 | - | Notepad with a heading and a pen beside it, the notepad titled as a mental parking spot
+34 | VIEWER | A hand quickly writing two reminders on a note
+35 | VIEWER | A note resting calmly beside the notebook, the person working on in concentration
+36 | - | Quiet room, birds heard through an open window
+37 | - | Calendar on which more tomato symbols appear every day
+38 | - | Calendar page for week 3, a diver gliding down into deep blue water
+39 | VIEWER | Person working in early morning concentration at a desk, sunrise
+40 | - | Hourglass showing a full hour, a stack of study material beside it
+41 | - | Door with a do-not-disturb sign hanging on it
+42 | - | Open paper book on an armchair beside a reading lamp
+43 | - | A bookmark moving a little further through a book each day
+44 | VIEWER | Forest path in autumn, a person walking seen from behind without a phone
+45 | - | Two paths: a quiet park on one side, a noisy city street on the other
+46 | - | Test sheet with checkmarks, a green sheet of paper lying beside it
+47 | - | Jogger seen from behind on a country path in morning light
+48 | - | Calendar page for week 4, an empty chair by the window
+49 | VIEWER | Person sitting on a chair by the window simply looking out, no phone, no book
+50 | - | Clock whose hands move agonizingly slowly
+51 | - | A wave building up, breaking and running out onto a beach
+52 | - | Surfer seen from behind gliding calmly on a wave
+53 | VIEWER | Bus stop, a person waiting seen from behind without looking at a phone
+54 | VIEWER | A light bulb glowing above the head of a person looking out of a window
+55 | - | Sunny afternoon in a park, a family or friends seen from behind on a blanket
+56 | - | Warning sign with the number 3, behind it a path full of stepping stones
+57 | VIEWER | Person trying to lift a dumbbell that is far too heavy
+58 | VIEWER | Person clinging with all strength to a rope that is slowly tearing
+59 | - | Phone inside a locked drawer, the key lying beside it
+60 | - | Person putting the phone away and switching on a television and a laptop instead
+61 | VIEWER | Restless person glancing nervously at a clock, legs bouncing
+62 | - | A brain whose harsh bright colors slowly calm down
+63 | - | Sunrise over a mirror-smooth, calm lake
+64 | - | Calendar with day 30 circled in red, a trophy beside it
+65 | - | Two screen-time statistics side by side, the second much smaller
+66 | VIEWER | Person reading a book intently, time passing in the background like time-lapse
+67 | - | Chain with a small broken link being repaired
+68 | - | Four calendar sheets side by side with symbols: broom, tomato, diver, empty chair
+69 | - | A diver in deep blue water and an empty chair by a window, side by side
+70 | - | Brain battery fully charged, glowing green
+71 | VIEWER | A share arrow, a message flying to a friend
+72 | - | Comment bubble with a small flag symbol inside, a first step
+73 | - | Child seen from behind reading the Quran with concentration, golden light
+74 | - | Brain with golden connections stacking up like book pages

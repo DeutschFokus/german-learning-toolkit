@@ -34,6 +34,12 @@ Die Skripte 9–12 sind genau diese Themen (5→9, 6→10, 7→11, 8→12). Ihre
 
 Halal-Hinweise: Propheten werden nie dargestellt (nur Orte, Licht, Kalligrafie). Personen erscheinen meist von hinten oder als Silhouette, das passt auch zu Zuschauern, die Abbildungen von Gesichtern meiden. Keine freizügigen Bilder. Statt Musik reichen Ambient-Sounds.
 
+## Copy-paste-Bildprompts für Copilot
+
+- **`prompts/00-konsistenz-bibel.md`**: Figuren-Karten, Stil-Block, Palette pro Video und Anleitung für Copilot. Zuerst lesen.
+- **`prompts/01-…` bis `12-…`**: je ein Dokument pro Skript. Jeder Code-Block ist ein vollständiger, eigenständiger Prompt (Szene + Figuren-Karte + Palette + Stil). Einfach kopieren und einfügen.
+- **Änderungen**: Figuren und Stil stehen einmal in `prompts/build.py`, die Szenen in `prompts/src/NN.txt`. Nach einer Änderung `python3 prompts/build.py` ausführen, dann sind alle Prompts wieder einheitlich.
+
 ## Hochladen und Monetarisierung
 
 - **Reihenfolge:** Skript 4 (Bahn) zuerst für Reichweite, dann Skript 2 (Geld, höchster CPM), danach 1 und 3.

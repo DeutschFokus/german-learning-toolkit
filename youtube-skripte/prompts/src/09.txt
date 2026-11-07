@@ -1,0 +1,77 @@
+# cue | characters | scene (English, no readable text in the image)
+01 | IBNBATTUTA | Port city of Tangier in 1325 at dawn, a young man seen from behind at the city gate
+02 | - | Dusty road heading east at sunrise
+03 | - | Calendar whose pages fly away, years from 1325 to 1349 passing by
+04 | - | Old world map with a long red line from Morocco to China
+05 | - | Collage: a shipwreck, bandits in the mountains, a golden throne
+06 | IBNBATTUTA | Silhouette of a traveler against a red sunset
+07 | - | Bookshelf with law books in a Moroccan house
+08 | IBNBATTUTA | Farewell at a front door in Tangier, silhouettes against backlight
+09 | - | Map of North Africa with a route through Algiers and Tunis to Cairo
+10 | - | Cairo in the 14th century, minarets, the Nile, dense markets
+11 | - | Courtyard of the Umayyad Mosque in Damascus in evening light
+12 | - | Kaaba at night from a distance, crowds of pilgrims in white, no faces visible
+13 | - | Desert crossroads, an old signpost pointing in many directions
+14 | - | Map of the 14th century with mosques glowing as points of light from Morocco to Indonesia
+15 | - | Scholars in different cities, connected by golden calligraphic strokes
+16 | - | Inn with an inner courtyard, travelers receiving food and a sleeping place
+17 | - | Host seen from behind handing bread and dates to a stranger
+18 | - | Judge's seal and a stack of law books on a wooden table
+19 | - | Old parchment stamped like a passport, travel marks all over it
+20 | IBNBATTUTA | A ruler seen from behind hands a scholar a horse and a bag of coins
+21 | - | Dhow sailing ship off the East African coast, turquoise water
+22 | - | Houses made of coral stone and a mosque in a coastal town
+23 | - | Tent city on the steppe north of the Black Sea, horses, smoke
+24 | - | Ornate litter carried with an entourage towards a city of domes
+25 | - | Hagia Sophia in the 14th century, golden evening light
+26 | - | An hourglass with only a small part of the sand run through
+27 | - | Caravan struggling over a snowy mountain pass in the Hindu Kush
+28 | - | Delhi in the 14th century, a magnificent palace with domes
+29 | SULTAN_DELHI | Throne hall where gold is handed out to guests, guards in the shadows
+30 | IBNBATTUTA | A hand handing over a sealed document, the traveler seen from behind
+31 | - | Stack of IOUs on a table beside an empty purse
+32 | IBNBATTUTA | Dark palace corridor, the traveler seen from behind waiting nervously
+33 | - | Sealed letter and gift chests decorated with Chinese ornaments
+34 | - | Armed horsemen attacking a caravan on a dusty plain
+35 | IBNBATTUTA | A man seen from behind fleeing through dense scrub at dusk
+36 | IBNBATTUTA | A stranger seen from behind handing a water bowl to an exhausted man
+37 | - | Harbour of Calicut, large junks, storm clouds rolling in
+38 | - | Stormy night, a ship breaking apart on the coast
+39 | IBNBATTUTA | A ship sailing away at dawn, one figure left alone on the beach
+40 | - | Prayer mat in wet sand, waves, a few coins beside it
+41 | IBNBATTUTA | A man seen from behind kneeling on the prayer mat, sunrise over the sea
+42 | - | Maldives, palm trees, turquoise water, a small mosque made of coral stone
+43 | - | Hands full of small white cowrie shells
+44 | - | World map with arrows from the Maldives to Bengal and to West Africa
+45 | - | Pilgrims climbing a steep mountain in Sri Lanka through the mist
+46 | - | Chinese harbour of Quanzhou, huge junks, bales of silk
+47 | - | Chinese paper banknote from the Yuan era beside a gold coin
+48 | - | Manuscript with a question mark in the margin, a magnifying glass over it
+49 | - | Several old sources side by side, lines connecting matching passages
+50 | - | Damascus in 1348, empty streets, a funeral procession in the distance
+51 | - | Large crowd praying as they walk through a city, candles, heavy mood
+52 | - | Large glowing number 2,400 on dark background
+53 | IBNBATTUTA | City gate of Fes in evening light, the traveler seen from behind approaching
+54 | - | Empty room, an abandoned prayer mat, light falling through the window
+55 | - | Simple grave with a plain stone in evening light
+56 | IBNBATTUTA | Traveler seen from behind sitting quietly at a grave, hands raised in prayer
+57 | - | Faded world map, only a small house in Tangier remains bright
+58 | - | Phone on a table with a contact opened, the call button glowing
+59 | - | Caravan carrying salt slabs across the Sahara
+60 | - | Mud-brick mosque in Timbuktu at evening light
+61 | - | Market stall in Mali, a merchant counting cowrie shells
+62 | - | A glowing line connecting the Maldives across the Indian Ocean and the Sahara to West Africa
+63 | - | Court of Mali with dignitaries in splendid robes, silhouettes only
+64 | - | Palace in Fes, a sultan in silhouette, a scribe with a quill
+65 | - | Open book with a title in calligraphic script, abstract, no readable letters
+66 | - | Two traveler silhouettes side by side, one behind a much longer route
+67 | - | Shopping centre with oriental architecture, fountain and domes
+68 | - | Moon surface with a small crater, Earth on the horizon
+69 | - | Golden calligraphic ornament over a desert landscape, abstract
+70 | IBNBATTUTA | Traveler seen from behind standing on a dune, looking into the distance
+71 | VIEWER | Young person seen from behind with a backpack on a platform
+72 | - | Open door with a wide landscape beyond it in morning light
+73 | - | Comment bubble with a small world map inside
+74 | - | Two phones with a video link flying from one to the other
+75 | - | Huge Chinese treasure ships beside a small European sailing ship
+76 | - | Fleet of giant ships on the horizon at dawn

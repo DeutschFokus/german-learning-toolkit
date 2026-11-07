@@ -1,0 +1,74 @@
+# cue | characters | scene (English, no readable text in the image)
+01 | CHILDREN_1923 | Two children seen from behind building a tower out of bundles of banknotes, black-and-white photo style of 1923
+02 | - | Bakery shop window with a price tag showing a number full of zeros
+03 | - | Modern supermarket checkout in Germany, a hand counting coins
+04 | - | Scandinavian cafe card terminal, a sign with a crossed-out banknote
+05 | - | Piggy bank on a wooden table with euro coins beside it
+06 | - | Generic war bond poster in the style of 1914, no symbols
+07 | - | People seen from behind at an old bank counter buying bonds
+08 | - | Broken laurel wreath on a stack of IOUs
+09 | - | Old exchange-rate board with a dollar price in marks, sepia tone
+10 | - | Printing press spitting out banknotes, workers seen from behind
+11 | - | Factory halls at night, light in every window
+12 | - | Silhouettes of soldiers in front of mine shafts and winding towers
+13 | - | Still factory, workers seen from behind with folded arms
+14 | - | Price curve shooting straight up
+15 | - | Crowd in front of a bank, sepia photo aesthetic
+16 | - | Factory gate, women seen from behind waiting with shopping baskets
+17 | - | People rushing with bags full of money towards a shop
+18 | - | Restaurant table with a bill on it, a wall clock in the background
+19 | - | Wheelbarrow full of banknotes in front of a bakery
+20 | - | Woman seen from behind putting bundles of banknotes into a stove
+21 | - | Living room wall papered with banknotes
+22 | CHILDREN_1923 | Children flying a kite made of banknotes
+23 | - | Postage stamps with overprints in billions, under a magnifying glass
+24 | - | Emergency money made of cloth and leather, and a porcelain coin in a display case
+25 | - | Empty bank counter, people waiting with empty bags
+26 | - | Banknote with a value of 100 trillion marks printed on it
+27 | - | Exchange-rate board showing 1914 at 4.20 marks, and November 1923 at a value in trillions
+28 | - | A number with so many zeros it runs off the edge of the picture
+29 | - | Inflation curve of 2022 as a small hill beside a giant mountain
+30 | - | Price tag whose number doubles within a few days
+31 | SAVER | Elderly woman seen from behind holding a passbook in an empty room
+32 | - | Pensioner seen from behind with an empty purse in front of an office
+33 | - | Man in a suit seen from behind on a hill of factories and houses
+34 | - | Industrialist in a suit seen from behind in front of a map full of factory symbols
+35 | - | Stack of worthless banknotes placed on an IOU that fades away
+36 | - | Gold coin shining beside a pile of worthless banknotes
+37 | - | Scale with gold and silver coins, abstract golden calligraphy above
+38 | - | Empty street at dusk, a torn poster fluttering
+39 | - | New plain banknote with a simple design and a single number
+40 | - | Banknotes being counted strictly and stacked, calm mood
+41 | - | Rubble landscape, people seen from behind pulling a handcart
+42 | - | Queue seen from behind, new banknotes being handed out
+43 | - | Passbook with a large number crossed out and replaced by a small one
+44 | SAVER | Elderly woman seen from behind looking out of a window at a ruined city
+45 | - | Shop windows filling with goods overnight, people seen from behind amazed
+46 | - | Modern bank building in Frankfurt at dawn
+47 | - | Euro notes and coins in front of New Year fireworks
+48 | - | Cafe price board where old prices are being replaced by new ones
+49 | - | Hand gripping a 50-euro note tightly
+50 | - | Grandparents seen from behind telling their grandchildren at a kitchen table
+51 | - | Old wooden sign with a carved phrase, abstract, no readable letters
+52 | - | Large eye above a till receipt, data lines leading away
+53 | - | Dark archive with endless rows of old filing cabinets
+54 | - | Credit card with a red X over it, a piggy bank beside it
+55 | - | Card terminal with a contactless symbol, distance marking on the floor
+56 | - | Auction room, bidders seen from behind holding bid cards
+57 | - | Two groups seen from behind: one holding cash, the other holding credit cards
+58 | - | Two bidding boards, one number roughly twice the height of the other
+59 | - | Hand handing over a banknote, a small lightning symbol for pain
+60 | - | Envelopes labelled for food, leisure and clothing, filled with cash
+61 | VIEWER | Empty envelope on a table, a person seen from behind nodding with satisfaction
+62 | - | Melting 100-euro note
+63 | - | European flags in front of a building, a large sign showing 10,000
+64 | - | Glowing digital euro coin floating above a phone
+65 | - | People seen from behind discussing money at a kitchen table
+66 | - | Wooden board carved with symbols of skill and trust
+67 | - | Savings passbook under a glass dome, a small tree growing beside it
+68 | - | Toolbox, a book and a small shop as symbols of skills
+69 | - | Printing press standing still, a calm stable scale beside it
+70 | CHILDREN_1923 | Split image: children with a tower of banknotes from 1923 beside a modern child with a piggy bank
+71 | - | Comment bubble with a coin and a card inside
+72 | - | Two phones with a video link flying from one to the other
+73 | - | Apartment building in a German city, many doorbell plates by the entrance
