@@ -7,8 +7,7 @@
 
 **Thumbnail:** Silhouette eines Mannes im schwarzen Rollkragenpullover, der ein leuchtendes Tablet aus der Reichweite einer Kinderhand hält, rotes Gegenlicht. Text: **„SEINE KINDER? VERBOTEN.“**
 
-**Bildstil, an jeden Prompt anhängen:**
-`cinematic moody photography, deep blue shadows with magenta neon accents, shallow depth of field, 16:9, no text, no logos, no recognizable real faces`
+**Bilder:** Vollständige Copilot-Prompts mit festen Charakterbeschreibungen: [`bildprompts/03-handy-falle-bildprompts.md`](bildprompts/03-handy-falle-bildprompts.md). Die kurzen Bildideen bei den Szenen unten dienen nur zur Orientierung.
 
 **Hinweis:** Echte Personen (Jobs, Gates usw.) nur als Silhouette oder Rückenansicht zeigen, nie als fotorealistisches KI-Gesicht. Keine App-Logos generieren.
 

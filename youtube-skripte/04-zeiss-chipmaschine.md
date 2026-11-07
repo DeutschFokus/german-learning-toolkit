@@ -7,11 +7,7 @@
 
 **Thumbnail:** Ein riesiger gewölbter Spiegel, in dem sich eine kleine Stadt auf der Schwäbischen Alb spiegelt, violettes Licht. Text: **„OHNE SIE: KEIN iPHONE“**
 
-**Bildstil, an jeden Prompt anhängen:**
-`cinematic sci-fi realism, sterile clean-room whites, violet ultraviolet glow, macro detail, 16:9, no text, no logos`
-
-**Für die Rückblende 1945 (Szenen 24–29) stattdessen:**
-`black-and-white 1940s archival photo look, film grain, documentary, 16:9, no text, no flags, no insignia`
+**Bilder:** Vollständige Copilot-Prompts mit festen Charakterbeschreibungen: [`bildprompts/04-zeiss-chipmaschine-bildprompts.md`](bildprompts/04-zeiss-chipmaschine-bildprompts.md). Die kurzen Bildideen bei den Szenen unten dienen nur zur Orientierung.
 
 ---
 

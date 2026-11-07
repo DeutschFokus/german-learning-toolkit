@@ -7,8 +7,7 @@
 
 **Thumbnail:** Zwei Brüder Rücken an Rücken, zwischen ihnen ein kleiner Fluss, der eine fränkische Kleinstadt teilt. Links ein Schuh mit drei Streifen, rechts einer mit geschwungenem Streifen (echte Logos erst im Schnitt einblenden). Text: **„BRÜDER. FEINDE.“**
 
-**Bildstil, an jeden Prompt anhängen:**
-`cinematic documentary still, photorealistic, small Franconian town, muted colors, subtle film grain, accurate period clothing, 16:9, no text, no logos, no flags, no political symbols`
+**Bilder:** Vollständige Copilot-Prompts mit festen Charakterbeschreibungen: [`bildprompts/02-adidas-puma-bildprompts.md`](bildprompts/02-adidas-puma-bildprompts.md). Die kurzen Bildideen bei den Szenen unten dienen nur zur Orientierung.
 
 **Wichtig für Monetarisierung:** Keine Hakenkreuze oder NS-Symbole in den Bildern. Markenlogos nicht von der KI erzeugen lassen. Gesichter der echten Brüder nicht fotorealistisch nachbauen – Silhouetten, Rückenansichten, Halbschatten.
 

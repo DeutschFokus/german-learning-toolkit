@@ -7,8 +7,7 @@
 
 **Thumbnail:** Königliche Silhouette in goldenem Gewand vor den Minaretten Kairos, Goldstaub regnet auf eine staunende Menge. Text (max. 3 Wörter): **„ZU VIEL GOLD“**. Alternative: **„REICHER ALS MUSK?“**
 
-**Bildstil, an jeden Prompt anhängen:**
-`cinematic digital oil painting, warm gold and ochre palette, soft volumetric light, historically inspired 14th-century West African and Mamluk details, 16:9, no text, no watermark`
+**Bilder:** Vollständige Copilot-Prompts mit festen Charakterbeschreibungen: [`bildprompts/01-mansa-musa-bildprompts.md`](bildprompts/01-mansa-musa-bildprompts.md). Die kurzen Bildideen bei den Szenen unten dienen nur zur Orientierung.
 
 **Halal-Regeln für die Bilder:** Keine Darstellung des Propheten (Friede sei mit ihm) oder der Sahaba. Mekka und die Kaaba nur als Architektur aus der Distanz. Gewalt nur andeuten (Rauch, Staub), nie blutig.
 
