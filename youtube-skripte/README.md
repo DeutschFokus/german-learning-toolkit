@@ -16,7 +16,7 @@ Eight ready-to-produce scripts for a German faceless edutainment channel. Every 
 ## Folder layout
 
 - `0X-*.md` — the scripts: narration (quote blocks), numbered scenes with a short image idea, Shorts cut-downs, description, pinned comment.
-- `sprechertext/` — the pure narration of each video, ready to paste into your voice tool.
+- `sprechertext/` — the narration of each video with chapter headings and scene numbers [01], for recording with your own voice.
 - `bildprompts/` — **full Copilot prompts for every scene**, a character bible and the step-by-step workflow for consistent characters. Start with [bildprompts/README.md](bildprompts/README.md).
 
 ## Production checklist

@@ -1,80 +1,159 @@
+04 · DIE WICHTIGSTE MASCHINE DER WELT – UND IHR DEUTSCHES HERZ
+Sprechertext zum Einsprechen
+1569 Wörter · ca. 10–11 Minuten bei ruhigem Doku-Tempo (140–150 Wörter pro Minute)
+
+So nimmst du auf:
+- Lies Kapitel für Kapitel ein und mach nach jedem Kapitel eine kurze Pause. So kannst du einzelne Kapitel neu aufnehmen.
+- Die Nummern in eckigen Klammern [01] sind die Szenen- und Bildnummern. Du liest sie nicht vor, sie helfen dir beim Schnitt.
+- Lass bei jedem Absatz eine Sekunde Luft. Kurze Sätze bewusst kurz und betont sprechen.
+- Jahreszahlen wie gewohnt sprechen: 1324 = dreizehnhundertvierundzwanzig.
+
+
+=== HOOK ===
+
+[01]
 In einer schwäbischen Kleinstadt mit rund achttausend Einwohnern wird etwas gebaut, ohne das es kein iPhone gäbe. Kein ChatGPT. Keine moderne KI. Und kaum jemand in Deutschland weiß davon.
 
+[02]
 Es ist einer der präzisesten Gegenstände, die Menschen je hergestellt haben: ein Spiegel. Wäre er so groß wie Deutschland, dann wäre die höchste Erhebung darauf nur so hoch, wie ein Blatt Papier dick ist.
 
+[03]
 Dieser Spiegel ist das Herz der wichtigsten Maschine der Welt. Einer Maschine, die so verrückt ist, dass sie wie Science-Fiction klingt. Mit Laserschüssen, die ein Plasma erzeugen, das heißer ist als die Oberfläche der Sonne.
 
+[04]
 Und wie dieser Spiegel ausgerechnet in diese Kleinstadt kam, ist eine Geschichte, die im Sommer 1945 beginnt. Mit amerikanischen Soldaten, Lastwagen und siebenundsiebzig Männern, die ihre Heimat verlassen mussten. Und am Ende verrate ich dir, warum genau diese Maschine heute sogar die Weltpolitik bestimmt.
 
+
+=== KAPITEL 1 – Das Problem ===
+
+[05]
 Fangen wir bei dir an. In deinem Handy steckt ein Chip, kaum größer als ein Fingernagel. Und auf diesem Chip sitzen rund zwanzig Milliarden winziger Schalter, sogenannte Transistoren. Mehr als doppelt so viele, wie es Menschen auf der Erde gibt.
 
+[06]
 Und Chips stecken längst nicht nur im Handy. In einem modernen Auto sind es Hunderte. Erinnerst du dich an 2021? Als in Deutschland Bänder stillstanden und fast fertige Autos auf Halde standen, weil Chips fehlten? Spätestens da hat die Welt gemerkt, wie abhängig sie von diesen winzigen Bauteilen ist.
 
+[07]
 Seit Jahrzehnten schaffen es Ingenieure, ungefähr alle zwei Jahre doppelt so viele Transistoren auf einen Chip zu packen. Je mehr Transistoren, desto schneller und sparsamer ist dein Gerät. Aber wie baut man etwas, das tausendmal dünner ist als ein Haar? Gar nicht. Man druckt es. Mit Licht.
 
+[08]
 Das Prinzip ist wie beim Fotografieren: Licht fällt durch eine Art Schablone und zeichnet die Muster auf eine Siliziumscheibe. Aber Licht ist wie ein Pinsel. Je feiner die Linie sein soll, desto feiner muss der Pinsel sein. Und normales Licht ist für diese Strukturen viel zu grob.
 
+[09]
 Man braucht Licht mit einer extrem kurzen Wellenlänge: extremes Ultraviolett, kurz EUV. Seine Wellenlänge beträgt nur 13,5 Nanometer. Rund vierzig Mal kürzer als sichtbares Licht. Und es hat einen gewaltigen Haken.
 
+[10]
 Auf der Erde kommt dieses Licht praktisch nicht vor. Unsere Atmosphäre verschluckt es. Luft verschluckt es. Sogar Glas verschluckt es. Man kann es nicht einfach mit einer Lampe erzeugen. Man musste einen völlig neuen Weg finden.
 
+
+=== KAPITEL 2 – Das unmögliche Licht ===
+
+[11]
 Und dieser Weg klingt wie aus einem Science-Fiction-Film. In einer Vakuumkammer fliegen winzige Tropfen aus flüssigem Zinn. Jeder einzelne ist dünner als ein menschliches Haar.
 
+[12]
 Dann trifft ein Laser jeden einzelnen Tropfen. Zuerst ein schwächerer Puls, der ihn flach drückt wie einen Pfannkuchen. Dann ein gewaltiger Hauptpuls, der ihn verdampft. Es entsteht ein Plasma, über 220.000 Grad heiß. Rund vierzig Mal heißer als die Oberfläche der Sonne. Und genau dieses Plasma strahlt das begehrte EUV-Licht ab.
 
+[13]
 Und das passiert nicht einmal. Sondern fünfzigtausend Mal pro Sekunde. Ohne Pause. Tag und Nacht. Wochenlang.
 
+[14]
 Der Laser, der das schafft, kommt aus Deutschland: von Trumpf aus Ditzingen bei Stuttgart. Ein Hochleistungslaser, der so präzise trifft wie ein Scharfschütze. Fünfzigtausend Mal pro Sekunde. Aber das Licht zu erzeugen ist nur die halbe Miete. Jetzt muss man es auch noch lenken.
 
+
+=== KAPITEL 3 – Der Spiegel ===
+
+[15]
 Weil EUV-Licht sogar von Glas verschluckt wird, kann man keine Linsen benutzen. Man braucht Spiegel. Aber auch ein normaler Spiegel würde dieses Licht einfach schlucken.
 
+[16]
 Also beschichtet man die Spiegel mit Dutzenden hauchdünner Schichten aus Molybdän und Silizium, jede nur wenige Nanometer dick. Jede Schicht muss perfekt sitzen. Und selbst dann wirft jeder Spiegel nur rund siebzig Prozent des Lichts zurück. Der Rest geht verloren.
 
+[17]
 Und diese Spiegel kommen aus Oberkochen auf der Ostalb. Von Zeiss. Hier werden sie poliert, vermessen und wieder poliert. Auf Atomlagen genau. Ein einziges Staubkorn wäre auf dieser Oberfläche wie ein Felsbrocken auf einer Autobahn.
 
+[18]
 Und jetzt verstehst du die Zahl vom Anfang: Wäre so ein Spiegel so groß wie Deutschland, dann wäre die höchste Erhebung darauf nur so hoch, wie ein Blatt Papier dick ist. Die Zugspitze: ein Zehntelmillimeter.
 
+
+=== KAPITEL 4 – Die Maschine ===
+
+[19]
 Um diesen Laser und diese Spiegel herum baut eine Firma aus den Niederlanden die eigentliche Maschine: ASML aus Veldhoven. Eine Firma, die 1984 in einer undichten Baracke neben einem Philips-Gebäude angefangen hat. Und diese Maschine ist ein Monster. Rund hunderttausend Einzelteile. Rund 180 Tonnen schwer. So groß wie ein Bus.
 
+[20]
 Und in ihrem Inneren werden die Siliziumscheiben in rasendem Tempo hin- und herbewegt. Trotzdem müssen Dutzende Schichten eines Chips auf wenige Nanometer genau übereinanderpassen. Das ist ungefähr so, als würdest du aus einem fahrenden Zug heraus immer wieder exakt dasselbe Nadelöhr treffen.
 
+[21]
 Um so eine Maschine zu einem Kunden zu bringen, braucht man vierzig Container, zwanzig Lastwagen und drei Jumbojets. Schon die Standardversion kostet weit über 150 Millionen Euro. Die neueste Generation über 350 Millionen. Pro Stück. Und die Kunden stehen trotzdem Schlange: TSMC, Samsung, Intel.
 
+[22]
 Und jetzt der wichtigste Satz dieses Videos: Es gibt auf der ganzen Welt nur eine einzige Firma, die diese Maschinen bauen kann. Nicht zwei. Nicht drei. Eine. Ohne sie gibt es keine modernsten Chips. Kein neues iPhone. Keine KI-Rechenzentren.
 
+[23]
 Hättest du gedacht, dass in deinem Handy ein Stück Schwäbische Alb steckt? Schreib mir in die Kommentare, aus welcher Region du kommst – und welchen heimlichen Weltmarktführer ihr vor der Haustür habt. Denn wie Zeiss überhaupt nach Oberkochen kam, ist fast ein Krimi.
 
+
+=== KAPITEL 5 – Rückblende: 1945 ===
+
+[24]
 Zeiss wurde nämlich gar nicht in Oberkochen gegründet, sondern 1846 in Jena, in Thüringen. Carl Zeiss baute dort Mikroskope. Und sein Partner, der Physiker Ernst Abbe, machte daraus etwas ganz Besonderes.
 
+[25]
 Abbe übertrug das Unternehmen einer Stiftung, der es bis heute gehört. So sollte es unabhängig von einzelnen Besitzern bestehen bleiben. Und im Jahr 1900 führte er bei Zeiss den Achtstundentag ein. Fast zwei Jahrzehnte, bevor er in Deutschland Gesetz wurde.
 
+[26]
 Dann: Frühjahr 1945. Amerikanische Truppen erobern Thüringen. Aber die Siegermächte haben längst beschlossen: Thüringen wird Teil der sowjetischen Besatzungszone. Die Amerikaner werden wieder abziehen.
 
+[27]
 Und bevor sie gehen, machen sie eine Liste. Die klügsten Köpfe von Zeiss. Im Juni 1945 werden siebenundsiebzig führende Mitarbeiter auf Lastwagen in den Westen gebracht, nach Heidenheim. Zeiss selbst benutzt dafür heute ein hartes Wort: deportiert.
 
+[28]
 Ein Jahr später gründen diese Männer im nahen Oberkochen ein neues Unternehmen. Fast aus dem Nichts, mit kaum mehr als ihrem Wissen. Und in Jena? Dort demontieren die Sowjets große Teile des Werks und bringen ebenfalls Fachleute in die Sowjetunion.
 
+[29]
 Jetzt gibt es zwei Zeiss. Eins im Osten, eins im Westen. Und jahrzehntelang streiten sie sich vor Gerichten auf der ganzen Welt um ihren eigenen Namen. Eine Firma, zerrissen vom Kalten Krieg. Erst nach der Wiedervereinigung kommt Zeiss in Jena wieder mit Oberkochen zusammen.
 
+
+=== KAPITEL 6 – Die Wette ===
+
+[30]
 Spulen wir vor. In den Neunzigerjahren beginnt die Chipindustrie, ernsthaft an EUV zu forschen. Und viele Experten halten es für unmöglich. Zu kompliziert. Zu teuer. Zu instabil. Projekt um Projekt verzögert sich. Konkurrenten steigen aus – sogar Nikon und Canon aus Japan, einst die Könige dieser Branche.
 
+[31]
 Aber ASML, Zeiss und Trumpf machen weiter. Jahrzehntelang. 2012 kaufen sich Intel, TSMC und Samsung, die drei größten Chiphersteller der Welt, für Milliarden bei ASML ein – damit diese eine Technologie endlich fertig wird. Und 2016 übernimmt ASML für eine Milliarde Euro knapp ein Viertel der Zeiss-Sparte, die diese Spiegel baut.
 
+[32]
 Nach mehr als zwanzig Jahren Entwicklung laufen Ende der 2010er-Jahre die ersten EUV-Maschinen in der Massenproduktion. 2020 bekommt ein Team von Zeiss, Trumpf und dem Fraunhofer-Institut in Jena dafür den Deutschen Zukunftspreis, den Preis des Bundespräsidenten.
 
+[33]
 Jena. Genau die Stadt, aus der die Zeiss-Leute 1945 auf Lastwagen weggebracht wurden. Gut siebzig Jahre später steckt Wissen aus Ost und West gemeinsam in der wichtigsten Maschine der Welt. Die Teilung, die einst sogar den Namen Zeiss zerrissen hat, ist in diesem Spiegel endgültig überwunden.
 
+
+=== KAPITEL 7 – Die Macht ===
+
+[34]
 Und dann wird aus Technik Weltpolitik. Wer diese Maschinen hat, kann die modernsten Chips der Welt bauen. Wer sie nicht hat, nicht. ASML hat bis heute keine einzige EUV-Maschine nach China geliefert. Die Exportgenehmigung wurde 2019 auf Druck der USA nicht erteilt.
 
+[35]
 China arbeitet seitdem mit Hochdruck an einem eigenen Nachbau. Aber eine Maschine aus hunderttausend Teilen, mit Spiegeln aus Oberkochen und Lasern aus Ditzingen, kopiert man nicht über Nacht. Viele nennen sie deshalb den wichtigsten Engpass der gesamten Technologiewelt. Und ASML ist damit zu einem der wertvollsten Unternehmen Europas geworden.
 
+[36]
 Denk nur an künstliche Intelligenz. Die Chips, auf denen ChatGPT und andere KI-Systeme laufen – auch die Grafikchips von Nvidia, um die sich gerade die ganze Welt reißt –, werden größtenteils in Taiwan gefertigt. Mit EUV-Maschinen. Jede Antwort, die dir eine KI gibt, entsteht also auf Chips, deren Muster mit Licht gezeichnet wurden. Gelenkt von Spiegeln aus der Ostalb.
 
+
+=== KAPITEL 8 – Was das bedeutet ===
+
+[37]
 Wir hören in Deutschland ständig, dass wir abgehängt sind. Zu langsam, zu bürokratisch, zu alt. Und manches davon mag stimmen. Aber diese Geschichte zeigt auch etwas anderes.
 
+[38]
 In Kleinstädten, von denen kaum jemand je gehört hat, sitzen Firmen, ohne die die Welt stillstehen würde. Man nennt sie Hidden Champions. Heimliche Weltmarktführer. Und Deutschland hat davon so viele wie kaum ein anderes Land. Manchmal entscheidet über die Zukunft eben nicht der Lauteste. Sondern der Präziseste.
 
+[39]
 Also: Das nächste Mal, wenn du dein Handy entsperrst, denk daran. In diesem kleinen Gerät steckt ein Stück Oberkochen. Ein Stück Ditzingen. Ein Stück Jena. Und eine Geschichte, die mit siebenundsiebzig Männern auf einem Lastwagen begann.
 
-Wenn du solche Geschichten liebst, abonnier den Kanal. Hier gibt es jede Woche die Geschichte hinter den Dingen, die du jeden Tag benutzt. Schau dir als Nächstes dieses Video an. Bis gleich.
 
+=== OUTRO ===
+
+[40]
+Wenn du solche Geschichten liebst, abonnier den Kanal. Hier gibt es jede Woche die Geschichte hinter den Dingen, die du jeden Tag benutzt. Schau dir als Nächstes dieses Video an. Bis gleich.
