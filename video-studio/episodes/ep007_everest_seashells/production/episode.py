@@ -297,8 +297,8 @@ class Episode:
             sx, sy = pl.screen_point(cam, ix, iy)
             rr = r * 1.32 * (1 + cam.push) * (0.85 + 0.15 * fa)
             ring(cv, sx, sy, rr, fa)
-            tx = sx + (rr + 24 if lx else -rr - 24)
-            htext(cv, label, tx, sy - 4, 30, color=L.WHITE, alpha=fa, font=L.MONO_XB, anchor="left" if lx else "right",
+            ly = sy + rr + 36 if sy < 1150 else sy - rr - 30
+            htext(cv, label, min(max(sx, 200), W - 200), ly, 30, color=L.WHITE, alpha=fa, font=L.MONO_XB,
                   tracking=0.08, shadow=1.0)
 
     # ================================================================== the Ordovician sea
