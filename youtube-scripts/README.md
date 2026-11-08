@@ -1,18 +1,20 @@
 # YouTube-Skripte (Edutainment, Deutsch, 16:9, nur Bilder)
 
-Jede Datei ist Bild für Bild aufgebaut: ein fertiger Bild-Prompt zum Kopieren (Stil und 16:9 sind schon drin) und genau der Sprechtext, den du sprichst, während dieses Bild zu sehen ist. Am Ende jeder Datei steht der komplette Sprechtext am Stück zum Einsprechen, danach Beschreibung, Tags und Shorts-Schnitte.
+Jede Datei ist Bild für Bild aufgebaut: ein fertiger Copilot-Prompt (16:9, Stil und komplette Figurenbeschreibung schon drin) und genau der Sprechtext, der während dieses Bildes läuft. Oben in jeder Datei stehen die Figuren des Videos mit Setup-Nachricht, fester Beschreibung und Referenzblatt-Prompt. Die gesamte Charakter-Bibel mit Anleitung und Korrektur-Prompts: `CHARAKTER-BIBEL.md`.
 
-| # | Datei | Thema | Bilder | Länge |
-|---|-------|-------|--------|-------|
-| 1 | `01-haus-der-weisheit.md` | Erfindungen aus der islamischen Welt (Bagdad, Andalusien, Fès) | 89 | ca. 10,5 Min. |
-| 2 | `02-reiches-land-arme-deutsche.md` | Warum Deutsche weniger Vermögen haben als Italiener | 85 | ca. 10,2 Min. |
-| 3 | `03-supermarkt-psychologie.md` | 9 Psycho-Tricks im Supermarkt | 85 | ca. 10,2 Min. |
-| 4 | `04-deutsche-bahn.md` | Warum die Bahn nie pünktlich ist | 84 | ca. 10,2 Min. |
-| 5 | `05-hyperinflation-1923.md` | Hyperinflation 1923 – als ein Brot 200 Milliarden Mark kostete (Fortsetzung von Skript 2) | 89 | ca. 11,3 Min. |
-| 6 | `06-ungarn-1946.md` | Ungarn 1946 – die schlimmste Inflation der Geschichte (Fortsetzung von Skript 5) | 83 | ca. 10,7 Min. |
-| 7 | `07-simbabwe.md` | Simbabwe – 100 Billionen Dollar und trotzdem pleite (Fortsetzung von Skript 6) | 88 | ca. 10,4 Min. |
-| 8 | `08-venezuela.md` | Venezuela – mehr Öl als Saudi-Arabien und trotzdem pleite (Teil 4, Abschluss der Reihe) | 88 | ca. 10,5 Min. |
+| # | Datei | Thema | Bilder | Feste Figuren | Länge |
+|---|-------|-------|--------|---------------|-------|
+| 1 | `01-haus-der-weisheit.md` | Das Haus der Weisheit | 89 | 7 | ca. 10,5 Min. |
+| 2 | `02-reiches-land-arme-deutsche.md` | Warum Deutschland reich ist, aber die Deutschen nicht | 85 | 14 | ca. 10,2 Min. |
+| 3 | `03-supermarkt-psychologie.md` | Wie der Supermarkt dein Gehirn hackt | 85 | 2 | ca. 10,2 Min. |
+| 4 | `04-deutsche-bahn.md` | Warum die Deutsche Bahn nie pünktlich ist | 84 | 3 | ca. 10,2 Min. |
+| 5 | `05-hyperinflation-1923.md` | Als Geld wertlos wurde: Die Hyperinflation 1923 | 89 | 5 | ca. 11,3 Min. |
+| 6 | `06-ungarn-1946.md` | Die schlimmste Inflation der Geschichte: Ungarn 1946 | 83 | 6 | ca. 10,7 Min. |
+| 7 | `07-simbabwe.md` | 100 Billionen Dollar und trotzdem pleite: Simbabwe | 88 | 2 | ca. 10,4 Min. |
+| 8 | `08-venezuela.md` | Mehr Öl als Saudi-Arabien und trotzdem pleite: Venezuela | 88 | 2 | ca. 10,5 Min. |
+| 9 | `09-japan-zuege.md` | Warum Züge in Japan nie zu spät kommen | 89 | 3 | ca. 10,3 Min. |
+| 10 | `10-haus-der-weisheit-teil-2.md` | Das Haus der Weisheit, Teil 2: Codes, Karten und das Herz | 87 | 7 | ca. 10,3 Min. |
 
-Längen bei ruhigem Doku-Tempo (140 Wörter/Min.). Kein Bild steht länger als ca. 12 Sekunden. Auch mit einer schnelleren TTS-Stimme (ca. 155 Wörter/Min.) bleibt jedes Video über 9 Minuten.
+Längen bei ruhigem Doku-Tempo (140 Wörter/Min.). Auch mit einer schnelleren TTS-Stimme (ca. 155 Wörter/Min.) bleibt jedes Video über 9 Minuten. Kein Bild steht länger als ca. 12 Sekunden.
 
-Jeder Prompt endet mit `--ar 16:9` (Midjourney). In ChatGPT, Leonardo, Ideogram usw. stört das nicht – dort einfach 16:9 als Format einstellen.
+Reihen: Skript 2 → 5 → 6 → 7 → 8 („Als Geld wertlos wurde“), Skript 4 → 9 (Bahn & Japan), Skript 1 → 10 (Islamische Wissenschaft, Teil 1 & 2).
