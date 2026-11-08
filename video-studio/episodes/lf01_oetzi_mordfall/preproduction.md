@@ -10,6 +10,7 @@ Why it works in the DACH region:
 - **Local:** found by a couple from Nuremberg, in the Ötztal Alps, after a border dispute between Austria and Italy; he now lies in Bozen. Everyone in Germany, Austria and South Tyrol knows the name. Few know the details.
 - **True crime:** a cold case with evidence, a timeline and a killer who got away. In DACH this is one of the strongest long-form formats.
 - **Science twists every ~90 s:** copper axe → border measurement → 61 tattoos → pollen show his last 33 hours → the arrowhead found 10 years later → the 2023 DNA surprise (dark skin, bald, Anatolian ancestry) → the "curse", debunked.
+- **Fast picture rhythm:** see 3b.
 - **Built for watch time:** each chapter opens a question that the next one answers ("remember the axe, it'll matter").
 
 Other candidates considered: Kaspar Hauser (DNA 2024), the Amber Room, Göbekli Tepe. Ötzi wins on visuals (Alps, ice) and on the number of science twists.
@@ -44,6 +45,37 @@ The full German script with chapters and timings is in `script_de.txt`: about 1,
 | 6:50 | 6 DNA-Überraschung | dark skin, bald, 92 % Anatolian farmers |
 | 7:50 | 7 Der Fluch | Helmut Simon 2004, myth vs statistics |
 | 8:25 | Schluss | the scene replayed, comments CTA |
+
+## 3b. Pace: a new picture every 3–5 s (≈3 s in the first minute)
+
+About 9 minutes = 540 s. My graphics (map, X-ray, timeline, DNA, case file, chapter cards) take about 130 s; the remaining ~410 s need **90 pictures**, plus about 15 extra shots that I cut from them (a wide view, then a close detail). That gives ~105 shots, ~4 s on average.
+
+First minute, shot by shot (times estimated from the script; they shift to your read):
+
+| Time | Words | Picture |
+|---|---|---|
+| 0.0–2.5 | "Am 19. September 1991…" | 06 glacier from above |
+| 2.5–5.0 | "…zwei Wanderer aus Nürnberg…" | 01 two hikers |
+| 5.0–7.0 | "Auf über 3.200 Metern…" | 43 boots on the ice |
+| 7.0–9.0 | "…etwas Braunes im Schmelzwasser." | 02 the meltwater |
+| 9.0–10.5 | "Einen Kopf. Schultern." | 44 something under the ice |
+| 10.5–12.0 | "Einen Rücken." | 45 they stop |
+| 12.0–14.0 | "Sie denken: ein verunglückter Bergsteiger." | 46 helmet and rope |
+| 14.0–16.5 | "Die Polizei denkt das auch." | 03 helicopter |
+| 16.5–20.0 | "Alle liegen falsch. Um ungefähr 5.300 Jahre." | 41 inside the ice + counter racing back 1991 → 3300 v. Chr. |
+| 20.0–22.5 | "Und zehn Jahre später…" | 25 X-ray room |
+| 22.5–25.0 | "…nicht erfroren." | 47 frost on fur |
+| 25.0–28.0 | "Er wurde ermordet." | 26 arrowhead + "ERMORDET" stamp |
+| 28.0–31.0 | "…was er zuletzt gegessen hat." | 22 last meal |
+| 31.0–33.0 | "Welche Krankheiten er hatte." | 31 DNA lab |
+| 33.0–35.0 | "Wie er wirklich aussah." | 14 the man from behind |
+| 35.0–37.0 | "…seine letzten Stunden…" | 20 the climb |
+| 37.0–39.5 | "…Schritt für Schritt nachgehen." | 48 footprints into the fog |
+| 39.5–41.5 | "…ältesten Kriminalfälle…" | 04 case file |
+| 41.5–43.0 | "…der Menschheit." | 27 the unknown archer |
+| 43.0–48.0 | "Und er ist bis heute nicht gelöst." | T1 hand in the ice → title card |
+
+20 shots in the first 48 s (~2.4 s each). The hook deliberately previews pictures from later chapters, like a trailer.
 
 ## 4. Titles and thumbnail
 
@@ -85,5 +117,5 @@ Left out on purpose: the exact finder's fee (sources say €150,000 or €175,00
 ## 7. Next steps for you
 
 1. Read the script (`script_de.txt`) and tell me if anything should sound different. It's your voice, so it should feel like you.
-2. Make the pictures from `prompt_pack.md` and send them in the chat.
+2. Make the pictures from `prompt_pack.md` (90 + thumbnail) and send them in the chat, batch by batch. Start with the first-minute set listed at the top of the pack.
 3. When the video is built, you record the script and I fit the video to your voice.
