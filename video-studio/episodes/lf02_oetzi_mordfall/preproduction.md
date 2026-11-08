@@ -1,8 +1,8 @@
-# Long video 01 — "Der Mann aus dem Eis wurde ermordet" · Pre-production
+# Long video 02 — "Der Mann aus dem Eis wurde ermordet" · Pre-production
 
 YouTube 16:9 · 1920×1080 · ~9 minutes · German · narrated by you · first long-form video.
 
-Status: **topic, style, script, picture list and thumbnail plan ready.** Nothing is rendered yet.
+Status: **on hold — planned as the second long video** (the first is `lf01_blackout_winter`). Topic, style, script, picture list and thumbnail plan are ready.
 
 ## 1. Topic: Ötzi, told as a 5,300-year-old murder case
 
