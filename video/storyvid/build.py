@@ -45,6 +45,20 @@ def write_srt(chunks, path, key, offset=0.0):
             f.write(f"{i}\n{srt_time(c['show'] + offset)} --> {srt_time(c['hide'] + offset)}\n{c[key]}\n\n")
 
 
+def srt_chunks(tl, cap):
+    """All narrated chunks for closed captions, including lines shown as handwriting on screen."""
+    shown = {(c["line"], c["idx"]): c for c in cap.chunks}
+    allc = tl.chunks()
+    out = []
+    for i, c in enumerate(allc):
+        if (c["line"], c["idx"]) in shown:
+            out.append(shown[(c["line"], c["idx"])])
+        else:
+            nxt = allc[i + 1]["start"] if i + 1 < len(allc) else c["end"] + 1.0
+            out.append(dict(c, show=c["start"] - 0.14, hide=min(c["end"] + 1.0, nxt - 0.26)))
+    return out
+
+
 def make_overlays(story, tl, cues):
     chunks = tl.chunks()
     cap = Captions(chunks, story["vocab"], top_lines=getattr(cues, "CAPTIONS_TOP", ()))
@@ -134,8 +148,9 @@ def main(argv=None):
 
     print("5/5 subtitles")
     base = os.path.splitext(out)[0]
-    write_srt(cap.chunks, base + ".de.srt", "de")
-    write_srt(cap.chunks, base + ".en.srt", "en")
+    cc = srt_chunks(tl, cap)
+    write_srt(cc, base + ".de.srt", "de")
+    write_srt(cc, base + ".en.srt", "en")
     print(f"done: {out}  ({time.time() - t_start:.0f}s)")
 
     if (args.extended or args.extended_only) and os.path.exists(os.path.join(story_dir, "extended.json")):
@@ -156,7 +171,7 @@ def main(argv=None):
                               "de": " ".join(c[0] for c in line["chunks"]),
                               "en": " ".join(c[1] for c in line["chunks"])})
         off = tl.duration
-        allc = [dict(c) for c in cap.chunks] + [dict(c, show=c["show"] + off, hide=c["hide"] + off) for c in extra]
+        allc = [dict(c) for c in cc] + [dict(c, show=c["show"] + off, hide=c["hide"] + off) for c in extra]
         eb = os.path.splitext(ext_out)[0]
         write_srt(allc, eb + ".de.srt", "de")
         write_srt(allc, eb + ".en.srt", "en")

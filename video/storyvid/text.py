@@ -57,15 +57,24 @@ class Captions:
         self.en_col = (226, 220, 208)
         self._cache = {}
         # visibility windows
-        for i, c in enumerate(chunks):
-            c["show"] = c["start"] - 0.14
+        # Visibility windows. Chunks share one screen position, so two must never be
+        # visible at once: back-to-back chunks hand over at a single instant.
+        for c in chunks:
+            c["show"], c["fin"] = c["start"] - 0.14, 0.14
         for i, c in enumerate(chunks):
             nxt = chunks[i + 1] if i + 1 < len(chunks) else None
-            end = c["end"] + 1.0
-            # fade out completely (0.12 s) before the next chunk starts fading in
-            if nxt is not None and nxt["show"] - 0.12 < end:
-                end = nxt["show"] - 0.12
-            c["hide"] = max(end, c["end"] - 0.02)
+            c["fout"] = 0.12
+            c["hide"] = c["end"] + 1.0
+            if nxt is None:
+                continue
+            gap = nxt["start"] - c["end"]
+            if gap < 0.45:
+                b = min(nxt["start"], max(nxt["start"] - 0.14, c["end"] + gap / 2))
+                c["fout"] = 0.07
+                c["hide"] = b - 0.07
+                nxt["show"], nxt["fin"] = b, 0.09
+            else:
+                c["hide"] = min(c["end"] + 1.0, nxt["start"] - 0.28)
 
     def _wrap(self, words, font, max_w):
         lines, cur = [], []
@@ -137,8 +146,8 @@ class Captions:
     def visible(self, t):
         out = []
         for i, c in enumerate(self.chunks):
-            if c["show"] <= t <= c["hide"] + 0.12:
-                a = smoothstep(c["show"], c["show"] + 0.14, t) * (1 - smoothstep(c["hide"], c["hide"] + 0.12, t))
+            if c["show"] <= t <= c["hide"] + c["fout"]:
+                a = smoothstep(c["show"], c["show"] + c["fin"], t) * (1 - smoothstep(c["hide"], c["hide"] + c["fout"], t))
                 if a > 0.001:
                     out.append((i, a))
         return out
