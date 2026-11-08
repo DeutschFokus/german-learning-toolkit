@@ -216,3 +216,9 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# story video pipeline: models, work folders and renders stay out of git
+video/models/
+video/work/
+video/**/*.mp4
+video/**/*.wav
