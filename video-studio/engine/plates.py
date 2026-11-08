@@ -260,6 +260,7 @@ class Plate:
         y0 = int(round(np.clip(fy * sh - ch / 2, 0, sh - ch)))
         crop = src[y0:y0 + ch, x0:x0 + cw]
         self.upscale = k
+        self.crop = (x0, y0, k)          # source pixel (ix, iy) -> plate ((ix-x0)*k, (iy-y0)*k)
         key = hashlib.sha1(f"{_sha256(path)}|{fx}|{fy}|{overscan}|{cuts}|{layers}|v10".encode()).hexdigest()[:16]
         cdir = CACHE / "plates"
         cfile = cdir / f"{path.stem}_{key}.npz"
@@ -385,6 +386,19 @@ class Plate:
             if j >= len(self.layers):
                 out = out * (1 - rgba[..., 3:4]) + rgba[..., :3]
         return out
+
+    def screen_point(self, cam: Cam, ix, iy):
+        """Where source-image pixel (ix, iy) lands on screen for `cam` (for labels that stick
+        to things in the picture)."""
+        x0, y0, k = self.crop
+        px, py = (ix - x0) * k, (iy - y0) * k
+        d = float(self.depth[int(np.clip(py, 0, self.Hp - 1)), int(np.clip(px, 0, self.Wp - 1))])
+        m = cam.mag(d)
+        cx, cy = cam.center
+        rx, ry = (px - self.ox - cx) * m, (py - self.oy - cy) * m
+        c, s = np.cos(cam.roll), np.sin(cam.roll)
+        return (cx + cam.pan[0] + cam.orbit[0] * (d - cam.focus) + c * rx - s * ry,
+                cy + cam.pan[1] + cam.orbit[1] * (d - cam.focus) + s * rx + c * ry)
 
     def depth_view(self, cam: Cam):
         """The warped depth map for `cam` (for wipes / look-dev)."""
