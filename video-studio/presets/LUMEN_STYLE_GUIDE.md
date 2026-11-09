@@ -56,3 +56,9 @@ The channel voice is the creator: deep, calm, intimate, intelligent, never a tra
 - 115–135 spoken words. One claim, one mechanism, two or three escalating proofs, one personal payoff, one loop line.
 - Every sentence earns a new visual. If a line only repeats what is on screen, cut it or change the visual.
 - Real numbers with honest qualifiers ("about", "a few hundred"). Put the sources in the description.
+
+## Content guidelines (the creator's values)
+
+- No claims about human evolution or a shared origin of humans and apes, in scripts, on-screen text or pictures. Early people are described only as people of their time ("ein Mann der Kupferzeit"), never as "primitive" or half-animal, and never with "Steinzeitmensch"-style caveman clichés.
+- Prefer formats that work without instrumental music when the creator asks for it (atmosphere and sound effects only).
+- Pictures of people: from behind, in shadow or out of focus; an objects-and-places-only version on request.
