@@ -8,6 +8,7 @@ The German Learning Toolkit is being developed as a free and reusable collection
 - [x] Add the first A1 grammar resource
 - [x] Create a project README
 - [x] Add contribution guidelines
+- [x] Add the learner guide *Your German Journey* (A0–C2 roadmap, PDF)
 - [ ] Add more A1 grammar topics
 - [ ] Add A1 vocabulary resources
 - [ ] Add exercises and answer keys

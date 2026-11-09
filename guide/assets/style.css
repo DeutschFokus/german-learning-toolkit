@@ -1,0 +1,718 @@
+/* ==========================================================================
+   Your German Journey — print stylesheet (A4, Chromium)
+   ========================================================================== */
+
+:root {
+  --ink: #1b2533;
+  --muted: #566173;
+  --faint: #8792a2;
+  --line: #dde3eb;
+  --soft: #f4f6f9;
+  --primary: #17365d;
+  --primary-soft: #edf2f9;
+  --gold: #f2b632;
+  --gold-dark: #b57d06;
+  --blue: #2563d9;
+  --blue-soft: #eaf1fd;
+  --green: #17864a;
+  --green-soft: #e8f6ee;
+  --purple: #7444d4;
+  --purple-soft: #f2ecfd;
+  --orange: #dc5f12;
+  --orange-soft: #fff4ea;
+  --red: #c93636;
+  --red-soft: #fdf0f0;
+}
+
+/* ---------- pages ---------------------------------------------------------- */
+
+@page {
+  size: A4;
+  margin: 16mm 17mm 19mm;
+  @bottom-left {
+    content: "__FOOTER__";
+    font: 7.5pt Inter, sans-serif;
+    color: #8792a2;
+    vertical-align: top;
+    padding-top: 5mm;
+  }
+  @bottom-right {
+    content: counter(page);
+    font: 600 8pt Inter, sans-serif;
+    color: #566173;
+    vertical-align: top;
+    padding-top: 5mm;
+  }
+}
+
+@page cover {
+  margin: 0;
+  @bottom-left { content: none; }
+  @bottom-right { content: none; }
+}
+
+html, body { margin: 0; padding: 0; }
+
+body {
+  font-family: Inter, "Noto Color Emoji", sans-serif;
+  font-size: 9.9pt;
+  line-height: 1.5;
+  color: var(--ink);
+  background: #fff;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+p { margin: 0 0 2.6mm; orphans: 3; widows: 3; }
+a { color: var(--blue); text-decoration: none; }
+strong { font-weight: 650; }
+em { font-style: italic; }
+hr { border: 0; border-top: 1px solid var(--line); margin: 6mm 0; }
+
+/* ---------- cover ------------------------------------------------------------ */
+
+.cover {
+  page: cover;
+  position: relative;
+  box-sizing: border-box;
+  width: 210mm;
+  height: 297mm;
+  padding: 20mm 20mm 17mm;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  color: #fff;
+  background:
+    radial-gradient(circle at 88% 8%, rgba(242, 182, 50, 0.16), transparent 34%),
+    radial-gradient(circle at 0% 100%, rgba(79, 155, 255, 0.18), transparent 42%),
+    linear-gradient(160deg, #0f2747 0%, #17365d 52%, #1c4272 100%);
+  break-after: page;
+}
+.cover-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 7.8pt;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+.cover-brand { font-weight: 800; color: var(--gold); }
+.cover-badge {
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 99px;
+  padding: 1.6mm 4mm;
+  color: rgba(255, 255, 255, 0.88);
+}
+.cover-title {
+  font: 800 47pt/1.02 "Inter Display", Inter, sans-serif;
+  letter-spacing: -0.02em;
+  margin-top: 28mm;
+}
+.cover-subtitle {
+  font-size: 13.5pt;
+  line-height: 1.4;
+  color: rgba(255, 255, 255, 0.82);
+  margin-top: 5mm;
+  max-width: 150mm;
+}
+.journey { width: 100%; margin: 15mm 0 4mm; overflow: visible; }
+.journey .node { font: 700 12.5px Inter, sans-serif; fill: #fff; text-anchor: middle; }
+.journey .zone { font: 700 9.5px Inter, sans-serif; letter-spacing: 0.2em; text-anchor: middle; }
+.journey .here { font: 800 9.5px Inter, sans-serif; letter-spacing: 0.18em; fill: var(--gold); text-anchor: middle; }
+.cover-rule { width: 26mm; height: 2px; background: var(--gold); margin: 5mm 0 7mm; }
+.cover-quote-de { font: italic 600 19pt/1.25 "Inter Display", Inter, sans-serif; }
+.cover-quote-en { font-size: 10.5pt; color: rgba(255, 255, 255, 0.7); margin-top: 1.5mm; }
+.cover-motto { margin-top: 8mm; font-size: 10.5pt; color: var(--gold); }
+.cover-foot {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 8mm;
+  padding-top: 4mm;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 8pt;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+/* ---------- table of contents ------------------------------------------------ */
+
+.toc { break-after: page; }
+h1.toc-title {
+  font: 800 25pt/1.1 "Inter Display", Inter, sans-serif;
+  color: var(--primary);
+  margin: 0 0 2.5mm;
+}
+.toc-note { font-size: 8.8pt; color: var(--muted); margin: 0 0 5mm; }
+.toc-list { list-style: none; margin: 0; padding: 0; }
+.toc-list a { display: flex; align-items: baseline; color: var(--ink); }
+.toc-part { margin: 3.6mm 0 0.8mm; }
+.toc-part a {
+  background: var(--primary-soft);
+  border-radius: 2mm;
+  padding: 2mm 3mm;
+  font-weight: 700;
+  color: var(--primary);
+}
+.toc-part-num {
+  flex: none;
+  width: 15mm;
+  font-size: 7pt;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold-dark);
+}
+.toc-part .toc-text { flex: 1; }
+.toc-hint { font-weight: 400; font-size: 8.2pt; color: var(--muted); margin-left: 2.5mm; }
+.toc-ch a { padding: 1.05mm 3mm; font-size: 9.6pt; }
+.toc-num {
+  flex: none;
+  width: 15mm;
+  color: var(--faint);
+  font-variant-numeric: tabular-nums;
+}
+.toc-extra .toc-text { font-style: italic; }
+.toc-dots {
+  flex: 1;
+  margin: 0 2mm;
+  border-bottom: 1px dotted #b6bfcb;
+  transform: translateY(-0.9mm);
+}
+.toc-page {
+  min-width: 7mm;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  color: var(--muted);
+}
+.toc-part .toc-page { color: var(--primary); }
+
+/* ---------- headings ----------------------------------------------------------- */
+
+h1, h2, h3, h4 {
+  font-family: "Inter Display", Inter, "Noto Color Emoji", sans-serif;
+  break-after: avoid;
+  page-break-after: avoid;
+}
+
+/* Part banner (one per part, starts a new page; the first chapter follows on the same page) */
+h1.part {
+  break-before: page;
+  margin: 0 0 0;
+  padding: 7mm 9mm 3mm;
+  background: var(--primary);
+  color: #fff;
+  border-radius: 3.5mm 3.5mm 0 0;
+  box-shadow: 0 2px 0 0 var(--primary);
+  font-size: 22pt;
+  line-height: 1.15;
+  font-weight: 800;
+}
+h1.part .part-num {
+  display: block;
+  font-size: 7.6pt;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 1.8mm;
+}
+.part-intro {
+  margin: 0 0 9mm;
+  padding: 0 9mm 6mm;
+  background: var(--primary);
+  color: rgba(255, 255, 255, 0.86);
+  border-radius: 0 0 3.5mm 3.5mm;
+  font-size: 9.6pt;
+}
+.part-intro p { margin: 0 0 1.5mm; }
+.part-intro strong { color: #fff; }
+
+/* Chapter */
+h2 {
+  break-before: page;
+  display: flex;
+  align-items: center;
+  gap: 4mm;
+  margin: 0 0 5mm;
+  padding-bottom: 3.5mm;
+  border-bottom: 2px solid var(--line);
+  font-size: 20pt;
+  line-height: 1.15;
+  font-weight: 800;
+  color: var(--primary);
+}
+.part-intro + h2 { break-before: auto; }
+h2 .ch-num {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 11mm;
+  height: 11mm;
+  padding: 0 1mm;
+  box-sizing: border-box;
+  border-radius: 3mm;
+  background: var(--primary);
+  color: #fff;
+  font-size: 14pt;
+  font-weight: 800;
+}
+h2.zone-blue { color: var(--blue); }
+h2.zone-blue .ch-num { background: var(--blue); }
+h2.zone-green { color: var(--green); }
+h2.zone-green .ch-num { background: var(--green); }
+h2.zone-purple { color: var(--purple); }
+h2.zone-purple .ch-num { background: var(--purple); }
+
+h3 {
+  font-size: 13pt;
+  line-height: 1.25;
+  font-weight: 750;
+  color: var(--primary);
+  margin: 6.4mm 0 2.6mm;
+  padding-left: 3mm;
+  border-left: 3px solid var(--gold);
+}
+h2 + h3, .level-tag + h3 { margin-top: 3mm; }
+h4 {
+  font-size: 10.6pt;
+  font-weight: 700;
+  color: var(--ink);
+  margin: 4.5mm 0 1.6mm;
+}
+.newpage { break-before: page; }
+
+/* Level tag under level chapters */
+.level-line { margin: -1mm 0 4mm; }
+.level-tag {
+  display: inline-block;
+  padding: 1.2mm 3.4mm;
+  border-radius: 99px;
+  font-size: 7.6pt;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #fff;
+}
+.level-tag.blue { background: var(--blue); }
+.level-tag.green { background: var(--green); }
+.level-tag.purple { background: var(--purple); }
+
+/* ---------- lists ------------------------------------------------------------------ */
+
+ul, ol { margin: 0 0 3mm; padding-left: 5.5mm; }
+li { margin: 0 0 1mm; }
+li > p { margin: 0; }
+li::marker { color: var(--faint); }
+
+.cols { break-inside: avoid; }
+.cols ul, .cols ol { columns: 2; column-gap: 9mm; }
+.cols li { break-inside: avoid; }
+
+.checklist ul, .dont ul {
+  list-style: none;
+  padding-left: 0;
+}
+.checklist li, .dont li {
+  position: relative;
+  padding-left: 7mm;
+  margin-bottom: 1.6mm;
+  break-inside: avoid;
+}
+.checklist li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.38em;
+  width: 3.3mm;
+  height: 3.3mm;
+  border: 1.3px solid #6f7b8c;
+  border-radius: 0.9mm;
+  background: #fff;
+}
+.dont li::before {
+  content: "✕";
+  position: absolute;
+  left: 0.4mm;
+  top: 0;
+  font-weight: 800;
+  color: var(--red);
+}
+
+.steps ol { list-style: none; padding-left: 0; counter-reset: step; }
+.steps li {
+  counter-increment: step;
+  position: relative;
+  padding-left: 8.5mm;
+  margin-bottom: 2mm;
+  break-inside: avoid;
+}
+.steps li::before {
+  content: counter(step);
+  position: absolute;
+  left: 0;
+  top: 0.05em;
+  width: 5.4mm;
+  height: 5.4mm;
+  border-radius: 50%;
+  background: var(--primary);
+  color: #fff;
+  font-size: 7.8pt;
+  font-weight: 700;
+  line-height: 5.4mm;
+  text-align: center;
+}
+
+/* ---------- German examples (blockquotes) -------------------------------------- */
+
+blockquote {
+  margin: 2.5mm 0 4mm;
+  padding: 2.8mm 4.5mm;
+  background: var(--primary-soft);
+  border-left: 3.5px solid var(--primary);
+  border-radius: 0 2.5mm 2.5mm 0;
+  break-inside: avoid;
+}
+blockquote p { margin: 0 0 1mm; }
+blockquote p:last-child { margin-bottom: 0; }
+blockquote strong { color: var(--primary); }
+.wrong { color: var(--red); }
+.right { color: var(--green); }
+
+/* ---------- callouts ---------------------------------------------------------------- */
+
+.callout {
+  display: flow-root;
+  margin: 4mm 0 5mm;
+  padding: 3.8mm 5mm;
+  border: 1px solid var(--line);
+  border-radius: 3mm;
+  break-inside: avoid;
+}
+.callout > p:last-child, .callout > ul:last-child { margin-bottom: 0; }
+.callout.natulang { background: var(--orange-soft); border-color: #f5cfb0; border-left: 5px solid var(--orange); }
+.callout.natulang strong { color: #a8430a; }
+.callout.tip { background: var(--primary-soft); border-color: #cbd8eb; border-left: 5px solid var(--primary); }
+.callout.pitfall { background: var(--red-soft); border-color: #f1c9c9; border-left: 5px solid var(--red); }
+.callout.fix { background: var(--green-soft); border-color: #bfe3cd; border-left: 5px solid var(--green); }
+.callout > .qr-group { float: right; margin: 0 0 1mm 5mm; }
+
+.quote-box {
+  margin: 5mm 0;
+  padding: 4.5mm 8mm;
+  text-align: center;
+  font-size: 11pt;
+  background: #fff8e6;
+  border: 1px solid #f1d692;
+  border-radius: 3mm;
+  break-inside: avoid;
+}
+.quote-box p { margin: 0 0 1.2mm; }
+.quote-box p:last-child { margin: 0; }
+.quote-box.purple { background: var(--purple-soft); border-color: #d8c7fa; }
+
+.big-goal {
+  margin: 3mm 0 5mm;
+  padding: 3.6mm 0;
+  text-align: center;
+  font: 800 14.5pt/1.3 "Inter Display", Inter, sans-serif;
+  color: var(--primary);
+  border-top: 2px solid var(--gold);
+  border-bottom: 2px solid var(--gold);
+}
+.big-goal p { margin: 0; }
+
+.motto {
+  margin: 5mm 0 2mm;
+  text-align: center;
+  font: 700 12pt/1.35 "Inter Display", Inter, sans-serif;
+  color: var(--primary);
+}
+.motto p { margin: 0; }
+
+.signature { margin-top: 4mm; }
+.signature p { margin: 0; }
+.signature .name { font: italic 700 15pt "Inter Display", Inter, sans-serif; color: var(--primary); margin-left: 2mm; }
+
+/* ---------- tables ------------------------------------------------------------------- */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2.5mm 0 5mm;
+  font-size: 8.9pt;
+  line-height: 1.4;
+}
+thead { display: table-header-group; }
+tr { break-inside: avoid; }
+/* Short tables never split; a heading or lead-in line stays with its table. */
+table:not(.long) { break-inside: avoid; }
+h3:has(+ table), h3:has(+ div > table), h4:has(+ table), h4:has(+ div > table),
+p:has(+ table), p:has(+ div > table), h3:has(+ p + div > table),
+p:has(+ .steps), h3:has(+ p + .steps) {
+  break-after: avoid;
+}
+th {
+  text-align: left;
+  font-weight: 650;
+  color: var(--primary);
+  background: var(--soft);
+  padding: 1.7mm 2.4mm;
+  border-bottom: 1.5px solid #cdd5e0;
+  vertical-align: bottom;
+}
+td {
+  padding: 1.45mm 2.4mm;
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
+}
+.keep table { break-inside: avoid; }
+
+/* Habit grids and trackers */
+.grid table { table-layout: fixed; }
+.grid th, .grid td { text-align: center; vertical-align: middle; }
+.grid th:first-child, .grid td:first-child { text-align: left; width: 34%; }
+.grid td { height: 6.6mm; }
+.grid.tall td { height: 11.5mm; }
+.grid.wide th:first-child, .grid.wide td:first-child { width: 24%; }
+
+/* ä ö ü ß letter cards (A0) */
+.letters {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2.5mm;
+  margin: 2mm 0 4mm;
+  break-inside: avoid;
+}
+.letters > div {
+  padding: 2.6mm 3mm;
+  border: 1px solid var(--line);
+  border-top: 3px solid var(--blue);
+  border-radius: 2.5mm;
+  font-size: 8.4pt;
+  line-height: 1.35;
+}
+.letters b {
+  display: block;
+  font: 800 20pt/1 "Inter Display", Inter, sans-serif;
+  color: var(--blue);
+}
+.letters em { display: block; font-style: normal; font-weight: 650; margin: 1.2mm 0 0.8mm; }
+.letters span { color: var(--muted); }
+
+/* Pillar tables: keep "🧠 Vocabulary" etc. on one line */
+.pillars td:first-child { white-space: nowrap; }
+.zones td:nth-child(2) { white-space: nowrap; }
+
+/* SMARTA letters side by side */
+.smarta-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 2mm;
+  margin: 2mm 0 5mm;
+  break-inside: avoid;
+}
+.smarta-grid > div {
+  padding: 2.6mm 2.4mm;
+  border-radius: 2.5mm;
+  background: var(--primary-soft);
+  font-size: 8.2pt;
+  line-height: 1.35;
+}
+.smarta-grid b {
+  display: block;
+  font: 800 17pt/1 "Inter Display", Inter, sans-serif;
+  color: var(--gold-dark);
+  margin-bottom: 1.4mm;
+}
+.smarta-grid strong { display: block; color: var(--primary); margin-bottom: 0.8mm; }
+.smarta-grid span { color: var(--muted); }
+
+/* Rating scale */
+.rating th:first-child, .rating td:first-child { width: 40%; }
+
+/* Level pills inside tables */
+.lv {
+  display: inline-block;
+  min-width: 7.5mm;
+  padding: 0.4mm 1.6mm;
+  border-radius: 1.4mm;
+  color: #fff;
+  font-weight: 800;
+  font-size: 8pt;
+  text-align: center;
+}
+.lv.blue { background: var(--blue); }
+.lv.green { background: var(--green); }
+.lv.purple { background: var(--purple); }
+
+/* Level overview table */
+.levels td:first-child { white-space: nowrap; font-weight: 800; }
+.levels td:nth-child(2) { white-space: nowrap; font-weight: 600; }
+.levels tr.zone-row td { border-bottom: 0; }
+
+/* Lined fill-in table (mistake log) */
+.lined td { height: 9mm; }
+
+/* ---------- fill-in elements ---------------------------------------------------------- */
+
+.box {
+  display: inline-block;
+  width: 3.5mm;
+  height: 3.5mm;
+  border: 1.3px solid #6f7b8c;
+  border-radius: 0.9mm;
+  vertical-align: -0.6mm;
+  background: #fff;
+}
+.blank {
+  display: inline-block;
+  min-width: 42mm;
+  height: 1em;
+  border-bottom: 1px solid #7d8796;
+  vertical-align: -0.2em;
+}
+.blank.short { min-width: 16mm; }
+.blank.long { min-width: 95mm; }
+.blank.full { display: block; width: 100%; height: 7mm; }
+
+.write-box {
+  height: 22mm;
+  margin: 1.5mm 0 4mm;
+  border: 1px solid #cfd6df;
+  border-radius: 2.5mm;
+  background: repeating-linear-gradient(to bottom, transparent 0, transparent 7.2mm, #e4e9ef 7.2mm, #e4e9ef 7.45mm);
+  background-position: 0 1mm;
+  break-inside: avoid;
+}
+.write-box.small { height: 14.5mm; }
+.write-box.big { height: 30mm; }
+.write-box.tall { height: 48mm; }
+.write-box.xl { height: 70mm; }
+
+/* ---------- QR codes and resource cards ------------------------------------------------- */
+
+.qr-group { display: flex; gap: 3mm; }
+a.qr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 23mm;
+  color: var(--muted);
+}
+a.qr svg { display: block; width: 21mm; height: 21mm; }
+.qr-cap {
+  margin-top: 1.2mm;
+  font-size: 6.4pt;
+  line-height: 1.25;
+  text-align: center;
+}
+.qr-plat { display: block; font-weight: 700; color: var(--ink); }
+
+.res-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.5mm;
+  margin: 2mm 0 5mm;
+}
+.res-card {
+  display: flex;
+  gap: 2.5mm;
+  padding: 3mm 3.2mm;
+  border: 1px solid var(--line);
+  border-radius: 3mm;
+  break-inside: avoid;
+  background: #fff;
+}
+.res-body { flex: 1; min-width: 0; }
+.res-name {
+  font: 750 10.6pt/1.25 "Inter Display", Inter, "Noto Color Emoji", sans-serif;
+  margin-bottom: 1.6mm;
+}
+.res-name a { color: var(--primary); }
+.res-icon { margin-right: 1.6mm; }
+dl.res-meta {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.5mm 2.2mm;
+  margin: 0 0 1.8mm;
+  font-size: 7.7pt;
+  line-height: 1.35;
+}
+.res-meta dt { color: var(--faint); font-weight: 650; }
+.res-meta dd { margin: 0; }
+.res-best { margin: 0; font-size: 8.1pt; line-height: 1.4; }
+.res-qr .qr-group { flex-direction: column; gap: 1.6mm; }
+.res-qr a.qr { width: 24mm; }
+.res-qr a.qr svg { width: 16.5mm; height: 16.5mm; }
+
+/* ---------- special blocks ---------------------------------------------------------------- */
+
+.first-week-head {
+  display: inline-block;
+  margin-bottom: 3mm;
+  padding: 1.2mm 3.4mm;
+  border-radius: 99px;
+  background: var(--gold);
+  color: #3b2a00;
+  font-size: 7.6pt;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+}
+
+.day {
+  margin: 0 0 3.2mm;
+  padding: 3mm 4.5mm;
+  border: 1px solid var(--line);
+  border-radius: 3mm;
+  break-inside: avoid;
+}
+.day h4 { margin-top: 0; color: var(--primary); }
+.day p { margin-bottom: 1.4mm; }
+.day p:last-child { margin-bottom: 0; }
+.day blockquote { margin: 2mm 0; }
+
+.template-meta { color: var(--muted); }
+
+h3.template {
+  border-left: 0;
+  padding: 2.6mm 4mm;
+  background: var(--primary);
+  color: #fff;
+  border-radius: 2.5mm;
+  font-size: 11.5pt;
+  letter-spacing: 0.02em;
+}
+h3.template + p { margin-top: 3mm; }
+
+.vocab-card table td { height: 52mm; width: 50%; vertical-align: top; border: 1px solid #cfd6df; }
+.vocab-card table th { border: 1px solid #cfd6df; }
+.vocab-card .field { display: block; margin-bottom: 4.5mm; color: var(--muted); font-size: 8.5pt; }
+
+/* Closing page */
+h2.closing { border-bottom: 0; justify-content: center; text-align: center; margin-top: 18mm; font-size: 24pt; }
+.closing-sub { text-align: center; color: var(--muted); font-size: 11pt; margin-bottom: 9mm; }
+.closing-box {
+  margin: 0 8mm;
+  padding: 8mm 10mm;
+  border-radius: 4mm;
+  background: var(--primary-soft);
+  border: 1px solid #cbd8eb;
+  font-size: 11pt;
+  line-height: 1.6;
+  text-align: center;
+  break-inside: avoid;
+}
+.closing-box p { margin: 0 0 3mm; }
+.closing-box p:last-child { margin: 0; }
+.los {
+  margin-top: 12mm;
+  text-align: center;
+  font: 800 38pt "Inter Display", Inter, sans-serif;
+  color: var(--primary);
+  letter-spacing: -0.01em;
+}
+.los p { margin: 0; }
+.los-sub { text-align: center; color: var(--gold-dark); font-weight: 700; letter-spacing: 0.18em; font-size: 8pt; text-transform: uppercase; }
+
+.small { font-size: 8.4pt; color: var(--muted); }
+.center { text-align: center; }
+.source { font-size: 7.8pt; color: var(--faint); margin-top: -2mm; }

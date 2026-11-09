@@ -1,0 +1,229 @@
+# ---------------------------------------------------------------------------
+# Your German Journey — build settings
+#
+# Everything you are likely to change lives in this file:
+#   * the version / date / teacher name printed in the guide
+#   * every link and the QR code generated from it
+#
+# Change a value, run `python3 guide/scripts/build.py`, and the PDF
+# (including all QR codes and the page numbers in the table of contents)
+# is rebuilt. If you have a referral/affiliate link for an app, put it in
+# the `url` field and the QR code will point to it automatically.
+# ---------------------------------------------------------------------------
+
+title: Your German Journey
+subtitle: From A0 to C2 — A Practical Guide for Efficient Learning
+version: "2.0"
+date: "November 2026"          # leave empty ("") to use the build date
+teacher: Oguzhan               # used in the welcome letter signature
+brand: DeutschFokus            # printed on the cover and in the footer
+output: Your-German-Journey.pdf
+
+# ---------------------------------------------------------------------------
+# Resources
+#   url      -> one link for everybody (website)
+#   ios /
+#   android  -> use these instead of `url` for apps without a website;
+#               the guide then prints one QR code per store
+#   label    -> the short address printed under the QR code
+# ---------------------------------------------------------------------------
+resources:
+
+  natulang:
+    name: Natulang
+    url: https://natulang.com
+    label: natulang.com
+    icon: "🗣️"
+    level: A0–A2 core · optional afterwards
+    cost: First lessons free · subscription for the full course
+    platforms: iPhone · Android
+    best: Your daily speaking habit — one lesson per day (about 10–15 min). You speak every answer out loud; speech recognition checks it.
+
+  sprechenai:
+    name: SprechenAI
+    ios: https://apps.apple.com/app/id6618146820
+    android: https://play.google.com/store/apps/details?id=com.albcoding.germanai
+    icon: "🤖"
+    level: A1–C2
+    cost: Free to start · subscription options
+    platforms: iPhone · Android
+    best: Extra AI conversation practice when no human partner is available.
+
+  dw:
+    name: DW Learn German
+    url: https://learngerman.dw.com/en/learn-german/s-9528
+    label: learngerman.dw.com
+    icon: "🎧"
+    level: A1–C1
+    cost: Free
+    platforms: Web · iPhone · Android
+    best: Free courses, videos, audio and news for every level — from Deutsche Welle, Germany’s international broadcaster.
+
+  nicos-weg:
+    name: Nicos Weg (DW)
+    url: https://learngerman.dw.com/en/nicos-weg/c-36519789
+    label: learngerman.dw.com › Nicos Weg
+    icon: "📖"
+    level: A1 → A2 → B1
+    cost: Free
+    platforms: Web · iPhone · Android
+    best: A complete free video course with exercises and grammar pages. Your structured path from zero to B1.
+
+  nicos-weg-a2:
+    name: Nicos Weg A2
+    url: https://learngerman.dw.com/en/nicos-weg/c-36519797
+    label: learngerman.dw.com › Nicos Weg A2
+    icon: "📖"
+    level: A2
+    cost: Free
+    platforms: Web
+    best: The A2 part of the same course.
+
+  nicos-weg-b1:
+    name: Nicos Weg B1
+    url: https://learngerman.dw.com/de/nicos-weg/c-36519718
+    label: learngerman.dw.com › Nicos Weg B1
+    icon: "📖"
+    level: B1
+    cost: Free
+    platforms: Web
+    best: The B1 part of the same course.
+
+  easy-german:
+    name: Easy German
+    url: https://www.youtube.com/@EasyGerman
+    label: youtube.com/@EasyGerman
+    icon: "🎬"
+    level: “Super Easy German” A1–B1 · street interviews B1–C2
+    cost: Free · optional membership
+    platforms: YouTube · podcast
+    best: Real Germans speaking real German, with German and English subtitles.
+
+  top-thema:
+    name: DW Top-Thema
+    url: https://learngerman.dw.com/de/top-thema/s-55861562
+    label: learngerman.dw.com › Top-Thema
+    icon: "📰"
+    level: B1
+    cost: Free
+    platforms: Web · podcast
+    best: Short news reports in simplified German, with audio, text and vocabulary.
+
+  video-thema:
+    name: DW Video-Thema
+    url: https://learngerman.dw.com/de/video-thema/s-55861568
+    label: learngerman.dw.com › Video-Thema
+    icon: "📺"
+    level: B2
+    cost: Free
+    platforms: Web · YouTube
+    best: Short video reports on society, culture and politics, with subtitles and exercises.
+
+  lgn:
+    name: Langsam gesprochene Nachrichten
+    url: https://learngerman.dw.com/de/langsam-gesprochene-nachrichten/s-60040332
+    label: learngerman.dw.com › Langsam gesprochene Nachrichten
+    icon: "📻"
+    level: B2
+    cost: Free
+    platforms: Web · podcast
+    best: Real daily news (Monday–Saturday), read slowly and clearly, with the full text.
+
+  nachrichtenleicht:
+    name: nachrichtenleicht
+    url: https://www.nachrichtenleicht.de
+    label: nachrichtenleicht.de
+    icon: "🗞️"
+    level: A2–B1
+    cost: Free
+    platforms: Web · podcast
+    best: The week’s news in “Einfache Sprache” (plain German) from Deutschlandfunk — your first real news in German.
+
+  goethe:
+    name: Goethe-Institut Exam Trainings
+    url: https://www.goethe.de/en/spr/prf/ueb.html
+    label: goethe.de › Exam trainings
+    icon: "🎓"
+    level: A1–C2
+    cost: Free
+    platforms: Web
+    best: Official model tests and practice sets for every level — reading, listening, writing and speaking.
+
+  toolkit:
+    name: German Learning Toolkit
+    url: https://github.com/DeutschFokus/german-learning-toolkit
+    label: github.com/DeutschFokus
+    icon: "🧰"
+    level: A1 (more levels coming)
+    cost: Free
+    platforms: Web
+    best: Free one-page grammar summaries with practice exercises — articles, present tense, word order, accusative and dative.
+
+  anki:
+    name: Anki
+    url: https://apps.ankiweb.net
+    label: apps.ankiweb.net
+    icon: "🧠"
+    level: All levels
+    cost: Free on computer, web and Android · paid on iPhone
+    platforms: Windows · Mac · Linux · Android · iPhone · web
+    best: Spaced-repetition flashcards — it shows each card just before you would forget it.
+
+  language-reactor:
+    name: Language Reactor
+    url: https://www.languagereactor.com
+    label: languagereactor.com
+    icon: "🎬"
+    level: B1+
+    cost: Free · optional Pro
+    platforms: Chrome / Edge on a computer
+    best: Dual subtitles, a pop-up dictionary and sentence-by-sentence replay for YouTube and Netflix.
+
+  faztaa:
+    name: Faztaa
+    url: https://faztaa.com
+    label: faztaa.com
+    icon: "🔎"
+    level: A1–C2
+    cost: Free
+    platforms: Web · iPhone · Android
+    best: German–English dictionary and translator with audio — look up words by typing, voice or camera.
+
+  duden:
+    name: Duden
+    url: https://www.duden.de
+    label: duden.de
+    icon: "📚"
+    level: B2+
+    cost: Free online
+    platforms: Web
+    best: The standard monolingual German dictionary — spelling, meaning, grammar and style.
+
+  dwds:
+    name: DWDS
+    url: https://www.dwds.de
+    label: dwds.de
+    icon: "📚"
+    level: B2+
+    cost: Free
+    platforms: Web
+    best: Monolingual dictionary with real example sentences and a “Wortprofil” showing which words go together.
+
+  shadowgerman:
+    name: ShadowGerman
+    ios: https://apps.apple.com/app/id6797006481
+    icon: "🎙️"
+    level: A1–C2 (A1 free)
+    cost: All of A1 free · premium for A2–C2
+    platforms: iPhone · iPad · Mac
+    best: Shadowing practice — listen to a native sentence, repeat, record and compare.
+
+  lingfast:
+    name: LingFast
+    ios: https://apps.apple.com/app/id6770304002
+    android: https://play.google.com/store/apps/details?id=com.lingfast.de
+    icon: "🎙️"
+    level: A1+
+    cost: Free to start · in-app purchases
+    platforms: iPhone · Android
+    best: Extra speaking and pronunciation practice with AI feedback.

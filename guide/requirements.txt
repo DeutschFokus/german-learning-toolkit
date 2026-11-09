@@ -1,0 +1,4 @@
+segno>=1.6
+pypdf>=4.0
+PyYAML>=6.0
+Pillow>=10.0  # only for scripts/check_layout.py
