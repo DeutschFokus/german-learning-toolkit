@@ -52,7 +52,8 @@ python -m storyvid.build stories/der-brief --work /tmp/der-brief --models /path/
 ```
 
 Everything is cached (voice lines, depth maps, upscales), so re-runs after a tweak are quick. Add `--remix`
-after changing the score or sound design.
+after changing the score or sound design, and use `--srt-only` to rewrite just the subtitle files after
+editing translations.
 
 ## Making a new story
 
