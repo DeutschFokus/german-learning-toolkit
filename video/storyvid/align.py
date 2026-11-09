@@ -414,6 +414,17 @@ def align_story(lines, tts_dir, tts_timing, recording, work, log=print):
     """Full step: align, clean, slice. Returns (timing, starts_in_recording, voice48_path, cost)."""
     os.makedirs(work, exist_ok=True)
     aligned, cost, _ = align(lines, tts_dir, tts_timing, recording, log=log)
+    # manual corrections: <work>/fix.json = {"W01": [start, end], ...} in recording seconds
+    fix = os.path.join(work, "fix.json")
+    if os.path.exists(fix):
+        for lid, (fs, fe) in json.load(open(fix)).items():
+            a = aligned[lid]
+            s0, d0 = a["start"], max(1e-3, a["end"] - a["start"])
+            for w in a["words"]:
+                w["start"] = fs + (w["start"] - s0) / d0 * (fe - fs)
+                w["end"] = fs + (w["end"] - s0) / d0 * (fe - fs)
+            a["start"], a["end"] = fs, fe
+        log(f"    applied manual timing fixes for {', '.join(json.load(open(fix)))}")
     with open(os.path.join(work, "alignment.json"), "w") as f:
         json.dump({"cost": cost, "lines": aligned}, f, indent=1)
     voice48 = clean_voice(recording, os.path.join(work, "voice_clean.wav"))
