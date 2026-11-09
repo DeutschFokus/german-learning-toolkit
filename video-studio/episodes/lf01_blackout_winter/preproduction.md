@@ -2,7 +2,7 @@
 
 YouTube 16:9 · 1920×1080 · ~9 minutes · German · narrated by you.
 
-Status: **topic, script, picture list, thumbnail plan and fact check ready.** Nothing is rendered yet. (The Ötzi video moved to `lf02_oetzi_mordfall` as the next long video.)
+Status: **topic, script, picture list, thumbnail plan and fact check ready.** Nothing is rendered yet. (Video 02 is `lf02_bahn_verspaetung`.)
 
 ## 1. Why this topic has the highest reach
 
