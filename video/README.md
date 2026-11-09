@@ -44,6 +44,7 @@ Outputs in the work folder:
 - `der-brief.mp4` – the story alone (2:09, fits YouTube Shorts) plus `der-brief.de.srt` / `.en.srt`
 - `der-brief_lang.mp4` – story + Wortschatz cards + outro, with its own `.srt` files
 - `stems/` – voice, music, ambience and effects as separate WAVs for re-editing
+- with `--voice`: `der-brief_eigene_stimme.mp4` (and `_lang`) built around your recording
 
 Preview single frames before a full render:
 
@@ -54,6 +55,24 @@ python -m storyvid.build stories/der-brief --work /tmp/der-brief --models /path/
 Everything is cached (voice lines, depth maps, upscales), so re-runs after a tweak are quick. Add `--remix`
 after changing the score or sound design, and use `--srt-only` to rewrite just the subtitle files after
 editing translations.
+
+## Your own voice
+
+Record the story as listed in `stories/der-brief/sprechertext.md` (take 1, and take 2 for the long cut), then:
+
+```bash
+python -m storyvid.build stories/der-brief --work /tmp/der-brief --models /path/to/models --voice take1.m4a --voice-extended take2.m4a --extended
+```
+
+The synthetic lines are still generated, but only as a timing reference. Your take is aligned to them word by
+word (speaker-normalised MFCCs, pauses squeezed, slope-limited DTW; tested at about 25 ms median word error
+across different voices and tempos), and subtitles, music cues, sound effects and camera moves all follow your
+timing. Talk before or after the story is ignored, and lines spoken for other characters get their sound
+(phone, room) on exactly their stretch of the take. Lines that came out unusually short or long are named in
+the log so you can check them.
+
+`--no-voice` exports copies of existing renders with music and effects only, for recording along with the
+subtitles in a video editor.
 
 ## Making a new story
 

@@ -94,18 +94,58 @@ def limiter(x, ceiling_db=-1.0, lookahead=0.004, release=0.08):
     return (x * g[:, None]).astype(np.float32)
 
 
-def build(story, tl, work, cues, out_name="mix.wav", target_lufs=-14.0):
+def human_voice(story, tl, track):
+    """One continuous human recording -> stereo voice bus. Lines whose role has a special
+    sound (phone, room) get it on exactly their stretch of the recording."""
+    x = read_wav(track["path"])
+    off = track["offset"]
+    # level: voiced frames to the same RMS the synthetic lines were given
+    fr = int(0.02 * SR)
+    frames = x[: len(x) // fr * fr].reshape(-1, fr)
+    e = np.sqrt((frames ** 2).mean(1))
+    voiced = e > np.percentile(e, 45)
+    x = x * (0.1 / (np.sqrt((frames[voiced] ** 2).mean()) + 1e-9))
+    masks = {"narrator": np.ones(len(x), np.float32)}
+    ramp = int(0.025 * SR)
+    for line in story["lines"]:
+        kind = story["voices"][line["voice"]].get("fx", "narrator")
+        if kind == "narrator":
+            continue
+        ln = tl.lines[line["id"]]
+        a = max(0, int((ln["start"] - off - 0.08) * SR))
+        b = min(len(x), int((ln["end"] - off + 0.25) * SR))
+        if b - a < 2 * ramp:
+            continue
+        m = np.zeros(len(x), np.float32)
+        m[a:b] = 1.0
+        m[a:a + ramp] = np.linspace(0, 1, ramp)
+        m[b - ramp:b] = np.linspace(1, 0, ramp)
+        masks[kind] = masks.get(kind, np.zeros(len(x), np.float32)) + m
+        masks["narrator"] -= m
+    n = len(x) + 3 * SR
+    out = np.zeros((n, 2), np.float32)
+    for kind, m in masks.items():
+        y = process_voice(x * np.clip(m, 0, 1), kind)
+        out[: len(y)] += y[: n]
+    return out, off
+
+
+def build(story, tl, work, cues, out_name="mix.wav", target_lufs=-14.0, voice_track=None):
     n = int(tl.duration * SR)
     vo = np.zeros((n + 3 * SR, 2), np.float32)
-    # voice levels: normalise each line to a common RMS, then per-voice trims
-    trims = {"narrator": 0.0, "lorenz": -0.5, "brother": -1.5}
-    for line in story["lines"]:
-        lid = line["id"]
-        kind = story["voices"][line["voice"]].get("fx", "narrator")
-        x = read_wav(os.path.join(work, "tts", f"{lid}.wav"))
-        x = x * (0.1 / _rms(x[np.abs(x) > 0.01] if (np.abs(x) > 0.01).any() else x))
-        y = process_voice(x, kind) * db(trims.get(line["voice"], 0.0))
-        place(vo, y, tl.lines[lid]["start"])
+    if voice_track:
+        y, off = human_voice(story, tl, voice_track)
+        place(vo, y, off)
+    else:
+        # voice levels: normalise each line to a common RMS, then per-voice trims
+        trims = {"narrator": 0.0, "lorenz": -0.5, "brother": -1.5}
+        for line in story["lines"]:
+            lid = line["id"]
+            kind = story["voices"][line["voice"]].get("fx", "narrator")
+            x = read_wav(os.path.join(work, "tts", f"{lid}.wav"))
+            x = x * (0.1 / _rms(x[np.abs(x) > 0.01] if (np.abs(x) > 0.01).any() else x))
+            y = process_voice(x, kind) * db(trims.get(line["voice"], 0.0))
+            place(vo, y, tl.lines[lid]["start"])
     vo = vo[:n]
 
     # music
@@ -165,4 +205,14 @@ def build(story, tl, work, cues, out_name="mix.wav", target_lufs=-14.0):
     master_gain = db(final - loud) if np.isfinite(loud) else 1.0
     for name, bus in (("voice", vo), ("music", mus_b), ("ambience", amb_b), ("sfx", fx_b)):
         write_wav(os.path.join(sd, f"{name}.wav"), bus * (fi * fo)[:, None] * master_gain)
+    write_instrumental(work)
     return path, final, float(20 * np.log10(np.abs(mix).max() + 1e-9))
+
+
+def write_instrumental(work, name="instrumental.wav"):
+    """Music + ambience + effects without narration, at the level they have in the full mix."""
+    sd = os.path.join(work, "stems")
+    bed = sum(read_wav(os.path.join(sd, f"{k}.wav"), mono=False) for k in ("music", "ambience", "sfx"))
+    path = os.path.join(work, name)
+    write_wav(path, limiter(butter(bed, "high", 28, 2), -1.5))
+    return path

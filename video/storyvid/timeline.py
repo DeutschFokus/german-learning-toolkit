@@ -7,13 +7,17 @@ import re
 
 
 class Timeline:
-    def __init__(self, story, timing, lead_in=0.9, tail=6.0):
+    def __init__(self, story, timing, lead_in=0.9, tail=6.0, starts=None):
+        """starts: optional {line id: start time} when the lines come from one continuous
+        human recording (their pauses are then whatever the narrator did)."""
         self.story = story
         self.timing = timing
         self.lines = {}
         t = lead_in
         for line in story["lines"]:
             lid = line["id"]
+            if starts is not None:
+                t = starts[lid]
             d = timing[lid]["dur"]
             words = [dict(w, start=w["start"] + t, end=w["end"] + t) for w in timing[lid]["words"]]
             self.lines[lid] = {"start": t, "end": t + d, "dur": d, "words": words,

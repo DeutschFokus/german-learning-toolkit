@@ -142,16 +142,17 @@ def build_audio(tl, story, ext_dir_tts, story_tts, work, target_lufs=-14.0):
             return self._iv
 
     duck_tl = _TL(tl.speech_intervals())
-    mix = vo + mus * db(-8.5) * mixmod.duck_env(duck_tl, n_s, -9.0)[:, None] \
+    bed = mus * db(-8.5) * mixmod.duck_env(duck_tl, n_s, -9.0)[:, None] \
         + amb * db(-19) * mixmod.duck_env(duck_tl, n_s, -6.0)[:, None] + fx * db(-3)
-    mix = butter(mix, "high", 28, 2)
-    mix *= (np.clip(t / 0.6, 0, 1) * np.clip((tl.duration - t) / 1.8, 0, 1))[:, None]
+    fade = (np.clip(t / 0.6, 0, 1) * np.clip((tl.duration - t) / 1.8, 0, 1))[:, None]
+    mix = butter(vo + bed, "high", 28, 2) * fade
+    bed = butter(bed, "high", 28, 2) * fade
     meter = pyln.Meter(SR)
-    loud = meter.integrated_loudness(mix.astype(np.float64))
-    mix *= db(target_lufs - loud)
-    mix = mixmod.limiter(mix, -1.5)
+    gain = db(target_lufs - meter.integrated_loudness(mix.astype(np.float64)))
     path = os.path.join(work, "ext_mix.wav")
-    write_wav(path, mix)
+    write_wav(path, mixmod.limiter(mix * gain, -1.5))
+    # the same bed without narration, at the same level, for recording your own voice over it
+    write_wav(os.path.join(work, "ext_instrumental.wav"), mixmod.limiter(bed * gain, -1.5))
     return path
 
 
@@ -431,16 +432,33 @@ class ExtRenderer:
 # --------------------------------------------------------------------------- build
 
 
-def build(story_dir, story, story_work, story_tl, story_mp4, images, out_path, workers=4):
+def prepare(story_dir, story, story_work, voice=None, log=print):
+    """Timeline and audio sources for the long cut. `voice` switches to a human narration:
+    {"story_timing", "story_audio" (dir with one WAV per story line), "recording", "work"}."""
     ext = json.load(open(os.path.join(story_dir, "extended.json"), encoding="utf-8"))
-    work = os.path.join(story_work, "extended")
-    os.makedirs(work, exist_ok=True)
+    ref_work = os.path.join(story_work, "extended")
+    os.makedirs(ref_work, exist_ok=True)
     say = [it for it in ext["items"] if it["type"] == "say"]
-    pseudo = {"voices": story["voices"], "lines": say}
-    ext_timing = ttsmod.generate(pseudo, story_dir, work)
+    ext_timing = ttsmod.generate({"voices": story["voices"], "lines": say}, story_dir, ref_work)
     story_timing = json.load(open(os.path.join(story_work, "tts_timing.json"), encoding="utf-8"))
-    tl = ExtTimeline(ext, story_timing, ext_timing)
-    audio = build_audio(tl, story, os.path.join(work, "tts"), os.path.join(story_work, "tts"), work)
+    src = {"ext_audio": os.path.join(ref_work, "tts"), "story_audio": os.path.join(story_work, "tts"),
+           "work": ref_work}
+    if voice:
+        from . import align as alignmod
+        out_work = os.path.join(voice["work"], "extended")
+        log("    aligning your recording of the extra lines")
+        ext_timing, _, _, _ = alignmod.align_story(say, os.path.join(ref_work, "tts"), ext_timing,
+                                                   voice["recording"], out_work, log=log)
+        story_timing = voice["story_timing"]
+        src = {"ext_audio": os.path.join(out_work, "lines"), "story_audio": voice["story_audio"],
+               "work": out_work}
+    return ext, ExtTimeline(ext, story_timing, ext_timing), src
+
+
+def build(story_dir, story, story_work, story_tl, story_mp4, images, out_path, workers=4, voice=None):
+    ext, tl, src = prepare(story_dir, story, story_work, voice)
+    work = src["work"]
+    audio = build_audio(tl, story, src["ext_audio"], src["story_audio"], work)
     rend = ExtRenderer(tl, ext, story, None, images, story["vocab"])
     ext_mp4 = os.path.join(work, "extended_part.mp4")
     rendermod.render_video(rend, int(round(tl.duration * FPS)), ext_mp4, audio, work, workers=workers)

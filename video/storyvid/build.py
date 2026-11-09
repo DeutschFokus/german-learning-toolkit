@@ -5,6 +5,7 @@
 """
 import argparse
 import importlib.util
+import subprocess
 import json
 import os
 import sys
@@ -82,6 +83,39 @@ def srt_chunks(tl, cap):
     return no_overlap(out)
 
 
+def remux(video, wav, out):
+    subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", video, "-i", wav, "-map", "0:v", "-map", "1:a",
+                    "-c:v", "copy", "-c:a", "aac", "-b:a", "320k", "-ar", "48000", "-shortest",
+                    "-movflags", "+faststart", out], check=True)
+    return out
+
+
+def export_no_voice(story_dir, story, work, tl, timing, base):
+    """Copies of the renders with the narration removed (music, rain and effects stay, ducked where the
+    lines go), so a narrator can record along with the subtitles."""
+    from . import extended
+    from .common import SR, read_wav, write_wav
+    outs = []
+    instr = os.path.join(work, "instrumental.wav")
+    if not os.path.exists(instr):
+        mixmod.write_instrumental(work)
+    if os.path.exists(base + ".mp4"):
+        outs.append(remux(base + ".mp4", instr, base + "_ohne_stimme.mp4"))
+    if os.path.exists(base + "_lang.mp4"):
+        ext = json.load(open(os.path.join(story_dir, "extended.json"), encoding="utf-8"))
+        ewk = os.path.join(work, "extended")
+        etl = extended.ExtTimeline(ext, timing, json.load(open(os.path.join(ewk, "tts_timing.json"))))
+        extended.build_audio(etl, story, os.path.join(ewk, "tts"), os.path.join(work, "tts"), ewk)
+        a = read_wav(instr, mono=False)
+        n_story = int(round(tl.duration * FPS)) * SR // FPS
+        a = np.concatenate([a, np.zeros((max(0, n_story - len(a)), 2), np.float32)])[:n_story]
+        b = read_wav(os.path.join(ewk, "ext_instrumental.wav"), mono=False)
+        both = os.path.join(work, "instrumental_lang.wav")
+        write_wav(both, np.concatenate([a, b]))
+        outs.append(remux(base + "_lang.mp4", both, base + "_lang_ohne_stimme.mp4"))
+    return outs
+
+
 def make_overlays(story, tl, cues):
     chunks = tl.chunks()
     cap = Captions(chunks, story["vocab"], top_lines=getattr(cues, "CAPTIONS_TOP", ()))
@@ -122,6 +156,12 @@ def main(argv=None):
                     help="also build the long cut with the vocabulary moment and outro (extended.json)")
     ap.add_argument("--extended-only", action="store_true", help="reuse an existing story render")
     ap.add_argument("--srt-only", action="store_true", help="only (re)write the subtitle files")
+    ap.add_argument("--no-voice", action="store_true",
+                    help="export copies of the existing renders with music and effects only (no narration)")
+    ap.add_argument("--voice", default=None,
+                    help="your own recording of the story (any audio format); everything is re-timed to it")
+    ap.add_argument("--voice-extended", default=None,
+                    help="your recording of the extra lines of the long cut (see sprechertext.md)")
     args = ap.parse_args(argv)
 
     t_start = time.time()
@@ -132,8 +172,22 @@ def main(argv=None):
     cues = load_cues(story_dir)
 
     print("1/5 voiceover")
-    timing = ttsmod.generate(story, story_dir, work)
-    tl = Timeline(story, timing, lead_in=getattr(cues, "LEAD_IN", 0.9), tail=getattr(cues, "TAIL", 6.0))
+    timing = ttsmod.generate(story, story_dir, work)      # also the timing reference for a human take
+    lead_in, tail = getattr(cues, "LEAD_IN", 0.9), getattr(cues, "TAIL", 6.0)
+    mwork, voice_track, vinfo = work, None, None
+    if args.voice:
+        from . import align as alignmod
+        mwork = os.path.join(work, "voice")
+        print("    aligning your recording to the script")
+        utiming, ustarts, voice48, _ = alignmod.align_story(story["lines"], os.path.join(work, "tts"), timing,
+                                                            args.voice, mwork)
+        shift = lead_in - ustarts[story["lines"][0]["id"]]
+        tl = Timeline(story, utiming, lead_in=lead_in, tail=tail, starts={k: v + shift for k, v in ustarts.items()})
+        voice_track = {"path": voice48, "offset": shift}
+        vinfo = {"story_timing": utiming, "story_audio": os.path.join(mwork, "lines"), "work": mwork,
+                 "recording": args.voice_extended}
+    else:
+        tl = Timeline(story, timing, lead_in=lead_in, tail=tail)
     print(f"    duration {tl.duration:.2f}s")
 
     print("2/5 image analysis")
@@ -144,10 +198,10 @@ def main(argv=None):
               "sr": os.path.join(args.models, "EDSR_x3.pb")}
     adir = assetsmod.prepare(images, work, models, do_sr=not args.stills)
 
-    mix_path = os.path.join(work, "mix.wav")
-    if not args.stills and not args.srt_only and (args.remix or not os.path.exists(mix_path)):
+    mix_path = os.path.join(mwork, "mix.wav")
+    if not args.stills and not args.srt_only and (args.remix or args.voice or not os.path.exists(mix_path)):
         print("3/5 score, sound design, mix")
-        mix_path, lufs, peak = mixmod.build(story, tl, work, cues)
+        mix_path, lufs, peak = mixmod.build(story, tl, mwork, cues, voice_track=voice_track)
         print(f"    {lufs:.1f} LUFS, peak {peak:.1f} dBFS")
 
     print("4/5 frames")
@@ -165,11 +219,16 @@ def main(argv=None):
         return
 
     nframes = int(round(tl.duration * FPS))
-    out = args.out or os.path.join(work, f"{os.path.basename(story_dir)}.mp4")
+    suffix = "_eigene_stimme" if args.voice else ""
+    out = args.out or os.path.join(work, f"{os.path.basename(story_dir)}{suffix}.mp4")
     base = os.path.splitext(out)[0]
+    if args.no_voice:
+        for o in export_no_voice(story_dir, story, work, tl, timing, base):
+            print(f"done: {o}")
+        return
     frames = tuple(int(x) for x in args.frames.split(":")) if args.frames else None
     if not (args.extended_only or args.srt_only):
-        rendermod.render_video(renderer, nframes, out, mix_path, work, workers=args.workers, frames=frames)
+        rendermod.render_video(renderer, nframes, out, mix_path, mwork, workers=args.workers, frames=frames)
 
     print("5/5 subtitles")
     cc = srt_chunks(tl, cap)
@@ -177,15 +236,19 @@ def main(argv=None):
     write_srt(cc, base + ".en.srt", "en")
     print(f"done: {out}  ({time.time() - t_start:.0f}s)")
 
-    if (args.extended or args.extended_only) and os.path.exists(os.path.join(story_dir, "extended.json")):
+    wants_long = (args.extended or args.extended_only) and os.path.exists(os.path.join(story_dir, "extended.json"))
+    if wants_long and args.voice and not args.voice_extended:
+        print("long cut skipped: it needs --voice-extended (your recording of the extra lines)")
+        wants_long = False
+    if wants_long:
         from . import extended
         ext_out = base + "_lang.mp4"
         if args.srt_only:
-            ext = json.load(open(os.path.join(story_dir, "extended.json"), encoding="utf-8"))
-            etl = extended.ExtTimeline(ext, timing, json.load(open(os.path.join(work, "extended", "tts_timing.json"))))
+            _, etl, _ = extended.prepare(story_dir, story, work, voice=vinfo)
         else:
             print("extended cut: vocabulary moment + outro")
-            _, etl, _ = extended.build(story_dir, story, work, tl, out, images, ext_out, workers=args.workers)
+            _, etl, _ = extended.build(story_dir, story, work, tl, out, images, ext_out,
+                                       workers=args.workers, voice=vinfo)
         off = tl.duration
         allc = no_overlap([dict(c) for c in cc] +
                           [dict(c, show=c["show"] + off, hide=c["hide"] + off) for c in extended_cues(story, etl)])
