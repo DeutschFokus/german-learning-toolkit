@@ -11,6 +11,28 @@ The guide new students receive before their first lesson. It explains how to lea
 | **3 · Skills Toolbox** | Pronunciation (26 rules), mediation, self-correction, the science behind the method, timelines and exams, immersion, pitfalls, mindset |
 | **4 · Tools & Templates** | Resource directory with QR codes and nine printable templates (goal sheet, planner, dashboard, flashcard, retelling, self-assessment, mistake log, habit tracker, lesson notes) |
 
+## Your Learning Profile — the form before lesson one
+
+**[📋 Download the form](Your-Learning-Profile.pdf)** · 4 pages · fillable PDF
+
+Students fill it in on their phone or computer — it uses standard PDF form fields (tick boxes, round buttons, text fields) that most PDF apps can fill, such as Adobe Reader, Apple Preview/Files and browser PDF viewers — or print it, then send it back. It covers:
+
+1. **About you** — contact, native and other languages, city, job
+2. **Your goals** — why German, target level and date, exam, where German is needed, the 1–2-year goal
+3. **Your German today** — level, how long, certificates, how they learned so far, self-rating of six skills
+4. **Your ideal lesson** — textbook / conversation / grammar / mix, how much the student wants to speak (50/50 to 90/10), focus areas, how and how much to correct, du or Sie, language for explanations
+5. **Homework & practice** — homework yes/no, time per week, favourite types, daily practice
+6. **Schedule & long-term plan** — lessons per week, length, online or in person, weekly availability grid, how long they plan to learn, how often to review progress, start date, breaks
+7. **Almost done** — favourite and avoided topics, what usually stops them, motivation 1–10, anything else, their questions
+
+**To change a question**, edit `form/learning-profile.yml` (every question type is explained at the top of the file) and run:
+
+```bash
+python3 guide/scripts/build_form.py
+```
+
+Page breaks and the clickable fields are placed automatically; a section is never split across pages.
+
 ## Editing the guide
 
 | To change … | edit … |
@@ -39,7 +61,7 @@ Then rebuild the PDF (see below). Page numbers, the table of contents, bookmarks
 
 ## Building the PDF
 
-Requirements: Python 3.10+, [pandoc](https://pandoc.org) 2.11+, Node.js with [Playwright](https://playwright.dev) and its Chromium, and the [Inter](https://rsms.me/inter/) and Noto Color Emoji fonts for the intended look.
+Requirements: Python 3.10+, [pandoc](https://pandoc.org) 2.11+, Node.js with [Playwright](https://playwright.dev) and its Chromium, the [Inter](https://rsms.me/inter/) and Noto Color Emoji fonts for the intended look, and — for the form — `npm install` in `guide/` (pdf-lib) plus a Unicode TrueType font such as DejaVu Sans for the typed answers.
 
 ```bash
 pip install -r guide/requirements.txt
@@ -47,6 +69,10 @@ pip install -r guide/requirements.txt
 
 ```bash
 npm install playwright && npx playwright install chromium
+```
+
+```bash
+cd guide && npm install
 ```
 
 ```bash

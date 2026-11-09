@@ -1,0 +1,283 @@
+# ---------------------------------------------------------------------------
+# "Your Learning Profile" — the form new students fill in before lesson one.
+#
+# Build:  python3 guide/scripts/build_form.py   ->  guide/Your-Learning-Profile.pdf
+#
+# Edit the questions below; the layout, page breaks and the clickable PDF
+# fields are generated automatically. Question types:
+#
+#   text     one or more short answer fields side by side      (fields)
+#   area     a larger box for a longer answer                   (lines)
+#   checks   tick boxes, several answers allowed                (options, cols, other)
+#   radio    round buttons, one answer only                     (options, cols, other)
+#   cards    one answer, shown as big cards                     (options: icon/title/text)
+#   ratio    "how much do you speak" bars                       (options: [you, me])
+#   scale    rate several things from 1 to 5                    (rows, low, high)
+#   grid     tick boxes in a table, e.g. days x times           (rows, cols)
+#   numbers  one answer on a number line, e.g. 1-10             (from, to, low, high)
+#   row      two or three small questions next to each other   (items)
+#
+# Every question needs a unique `name` (letters, digits, underscores).
+# ---------------------------------------------------------------------------
+
+title: Your Learning Profile
+eyebrow: Before our first lesson
+intro: >-
+  Tell me how you want to learn — I’ll build our lessons around your answers.
+  It takes about 10 minutes, and there are no wrong answers.
+how:
+  - ["🖱️", "Fill it in on your phone or computer: click the boxes and type in the fields."]
+  - ["🖨️", "Or print it and write by hand."]
+  - ["📩", "Send it back to me before our first lesson."]
+closing: >-
+  Danke! Please send this form back to me before our first lesson — then we can
+  start exactly where you are and plan the path that fits you.
+next:
+  title: What happens next
+  de: So geht’s weiter
+  steps:
+    - "You send me this profile — on paper, as a PDF or as a photo."
+    - "In our first lesson, we go through your answers, check your level together and agree on your plan."
+    - "We review your progress and goals regularly — as often as you chose above — and adjust the plan."
+output: Your-Learning-Profile.pdf
+
+sections:
+
+  - title: About you
+    de: Über dich
+    icon: "👤"
+    questions:
+      - type: text
+        fields:
+          - {name: name, label: "Name"}
+          - {name: contact, label: "Best way to reach you", hint: "WhatsApp, email …"}
+      - type: text
+        fields:
+          - {name: native_language, label: "Native language(s)"}
+          - {name: other_languages, label: "Other languages you speak"}
+      - type: text
+        fields:
+          - {name: city, label: "City and country"}
+          - {name: job, label: "Job or field of study"}
+
+  - title: Your goals
+    de: Deine Ziele
+    icon: "🎯"
+    questions:
+      - type: checks
+        name: why
+        q: "Why are you learning German?"
+        options: ["Work / career", "Living in Germany", "University / studies", "An exam or certificate",
+                  "Family / partner", "Residence permit / citizenship", "Travel", "Just for fun"]
+        cols: 4
+        other: true
+      - type: row
+        items:
+          - type: radio
+            name: target_level
+            q: "The level I want to reach"
+            options: ["A1", "A2", "B1", "B2", "C1", "C2"]
+            cols: 6
+            span: 2
+          - type: text
+            fields:
+              - {name: target_date, label: "By (month / year)"}
+      - type: text
+        fields:
+          - {name: exam, label: "Exam I want to take (if any)", hint: "e.g. telc B1, Goethe B2"}
+          - {name: exam_date, label: "Exam date (if known)"}
+      - type: checks
+        name: situations
+        q: "Where do you need German most?"
+        options: ["Small talk", "Work & meetings", "Emails & writing", "Phone calls",
+                  "Authorities (Behörden)", "Doctor & health", "Kita / school", "Family & friends"]
+        cols: 4
+      - type: area
+        name: vision
+        q: "In 1–2 years, I want to be able to …"
+        hint: "e.g. “pass the B1 exam”, “lead meetings in German”"
+        lines: 2
+
+  - title: Your German today
+    de: Dein Deutsch heute
+    icon: "📊"
+    questions:
+      - type: radio
+        name: level
+        q: "My level right now"
+        options: ["Zero (A0)", "A1", "A2", "B1", "B2", "C1+", "Not sure"]
+        cols: 7
+      - type: text
+        fields:
+          - {name: learning_since, label: "I have been learning German for …", hint: "e.g. 6 months"}
+          - {name: certificates, label: "Certificates I have passed", hint: "e.g. Goethe A2"}
+      - type: checks
+        name: learned
+        q: "How have you learned so far?"
+        options: ["School", "Language school", "Integration course", "Private teacher",
+                  "Apps", "On my own / YouTube", "Living in Germany", "Not at all yet"]
+        cols: 4
+      - type: scale
+        name: rate
+        q: "Rate yourself"
+        rows: ["🎧 Listening", "🗣️ Speaking", "📖 Reading", "✍️ Writing", "🧩 Grammar", "🎙️ Pronunciation"]
+        low: "1 = very weak"
+        high: "5 = strong"
+      - type: area
+        name: experience
+        q: "What has worked well for you before — and what hasn’t?"
+        lines: 2
+
+  - title: Your ideal lesson
+    de: Deine ideale Stunde
+    icon: "🗣️"
+    questions:
+      - type: cards
+        name: style
+        q: "Which lesson style suits you best?"
+        hint: "Choose one"
+        options:
+          - {icon: "📖", title: "Structured", text: "Textbook + exercises, step by step"}
+          - {icon: "🗣️", title: "Conversation", text: "Mostly speaking, grammar when needed"}
+          - {icon: "🧩", title: "Grammar", text: "Clear rules + lots of practice"}
+          - {icon: "⚖️", title: "Balanced mix", text: "A bit of everything, adapted to you"}
+      - type: ratio
+        name: talk_time
+        q: "How much of the lesson do you want to speak?"
+        options: [[50, 50], [60, 40], [70, 30], [80, 20], [90, 10]]
+        decide: "You decide"
+      - type: checks
+        name: focus
+        q: "What should we work on?"
+        options: ["Speaking", "Grammar", "Vocabulary", "Pronunciation", "Listening",
+                  "Reading", "Writing", "Exam practice", "German for work", "A textbook"]
+        cols: 5
+      - type: checks
+        name: correct_when
+        q: "How should I correct your mistakes?"
+        options: ["Right away", "After my sentence", "End of the lesson", "In writing, later"]
+        cols: 4
+      - type: row
+        items:
+          - type: radio
+            name: correct_amount
+            q: "How many corrections?"
+            options: ["Every mistake", "Important ones", "Only when I ask"]
+            cols: 3
+            span: 3
+          - type: radio
+            name: du_sie
+            q: "du or Sie?"
+            options: ["du", "Sie", "Either"]
+            cols: 3
+            span: 2
+      - type: radio
+        name: explain_language
+        q: "Explanations in which language?"
+        options: ["Only German", "Mostly German", "Mostly English"]
+        cols: 5
+        other: true
+      - type: text
+        fields:
+          - {name: textbook, label: "Textbook you already have (if any)"}
+
+  - title: Homework & practice
+    de: Hausaufgaben
+    icon: "📝"
+    questions:
+      - type: radio
+        name: homework
+        q: "Do you want homework?"
+        options: ["Yes, after every lesson", "Sometimes", "No, thank you"]
+        cols: 3
+      - type: radio
+        name: homework_time
+        q: "How much time per week can you spend on homework?"
+        options: ["15 min", "30 min", "1 hour", "2 hours", "More"]
+        cols: 5
+      - type: checks
+        name: homework_type
+        q: "Which kinds of homework do you like?"
+        options: ["Writing texts", "Grammar exercises", "Vocabulary (Anki)", "Videos / listening",
+                  "Voice messages", "Reading", "Exam tasks"]
+        cols: 4
+      - type: radio
+        name: daily_practice
+        q: "Besides lessons and homework, how much can you practise on most days?"
+        options: ["0–10 min", "10–20 min", "20–30 min", "30+ min"]
+        cols: 4
+
+  - title: Schedule & long-term plan
+    de: Dein Zeitplan
+    icon: "📅"
+    questions:
+      - type: row
+        items:
+          - type: radio
+            name: lessons_per_week
+            q: "Lessons per week"
+            options: ["1", "2", "3", "4+", "Flexible"]
+            cols: 5
+            span: 3
+          - type: radio
+            name: lesson_length
+            q: "Lesson length"
+            options: ["45 min", "60 min", "90 min"]
+            cols: 3
+            span: 2
+      - type: radio
+        name: lesson_format
+        q: "Online or in person?"
+        options: ["Online", "In person", "Both are fine"]
+        cols: 3
+      - type: grid
+        name: available
+        q: "When can you usually take lessons?"
+        rows: ["Morning (8–12)", "Afternoon (12–17)", "Evening (17–21)"]
+        cols: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+      - type: radio
+        name: plan_length
+        q: "How long do you plan to learn with me?"
+        options: ["3 months", "6 months", "1 year", "2 years or more", "Not sure yet"]
+        cols: 5
+      - type: radio
+        name: progress_check
+        q: "How often should we review your progress and goals together?"
+        options: ["Every month", "Every 3 months", "Every 6 months"]
+        cols: 3
+      - type: text
+        fields:
+          - {name: start_date, label: "When would you like to start?"}
+          - {name: breaks, label: "Longer breaks coming up?", hint: "holidays, exams, moving …"}
+
+  - title: Almost done
+    de: Fast geschafft
+    icon: "💬"
+    questions:
+      - type: text
+        fields:
+          - {name: topics_like, label: "Topics you enjoy talking about"}
+          - {name: topics_avoid, label: "Topics you’d rather avoid"}
+      - type: checks
+        name: obstacles
+        q: "What usually stops you from learning regularly?"
+        options: ["Not enough time", "Losing motivation", "Fear of making mistakes",
+                  "Boring materials", "Not seeing progress"]
+        cols: 3
+        other: true
+      - type: numbers
+        name: motivation
+        q: "How motivated are you right now?"
+        from: 1
+        to: 10
+        low: "a little"
+        high: "extremely"
+      - type: area
+        name: notes
+        q: "Anything else I should know?"
+        hint: "e.g. you get nervous when speaking, dyslexia, shift work …"
+        lines: 3
+      - type: area
+        name: questions
+        q: "Your questions for me before we start"
+        lines: 2

@@ -275,6 +275,10 @@ Write your own goal on the [SMARTA Goal Sheet](#t-smarta) in Part 4.
 
 Our lessons are where you get explanations, feedback and real conversation. But most of your progress happens **between** lessons — in your daily 20–30 minutes. This chapter connects the two.
 
+::: {.callout .tip}
+**📋 Before our very first lesson:** fill in **Your Learning Profile** — the short form that came with this guide — and send it back to me. It tells me your goals, your level and how you want to learn: book or conversation, how much you want to speak, homework, and how often we meet. About 10 minutes, mostly tick boxes.
+:::
+
 ### Before Each Lesson — 10 Minutes
 
 ::: checklist
