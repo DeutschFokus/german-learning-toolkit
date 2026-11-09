@@ -7,7 +7,7 @@
 - **Pictures + my 3D camera moves** carry most of the video. They stay sharp and consistent, cost little, and I control every move and cut.
 - **Video clips** go where real motion makes the difference: moving water, waves, sinking bombs, the phosphorus flame, and the first seconds of the hook. AI video costs much more per second, often warps details (faces, hands, metal parts), and 100+ clips for 9 minutes would be expensive and uneven.
 
-So: 86 pictures, of which you animate 11 in Kling, Runway, Veo, Hailuo or similar (5 seconds each, 16:9). If you don't have a video tool, it still works with pictures only; I animate those 11 with extra effects.
+So: 89 pictures, of which you animate 11 in Kling, Runway, Veo, Hailuo or similar (5 seconds each, 16:9). If you don't have a video tool, it still works with pictures only; I animate those 11 with extra effects.
 
 ## How to use
 
@@ -50,9 +50,9 @@ Realistic cinematic photograph, 16:9. Close-up of a hand picking up a small gold
 Realistic cinematic photograph, 16:9. Close-up of a hand putting a small golden stone into the front pocket of jeans, beach blurred behind. Only hand and pocket visible, no text.
 ```
 
-**06 – Drying in the car**
+**06 – Smoke from the pocket**
 ```
-Realistic cinematic photograph, 16:9. Inside a parked car near the beach, warm sunlight through the windscreen, a jacket on the seat, a sense that something is about to happen. No people, no text.
+Realistic cinematic photograph, 16:9. A pair of jeans lying on a car seat in warm sunlight, a thin wisp of white smoke rising from the front pocket, tense moment. No people, no text.
 ```
 
 **07 – The flame** 🎬
@@ -480,6 +480,23 @@ Realistic cinematic photograph, 16:9. A single wave washing over smooth sand at 
 ```
 🎬 Motion: *The wave slowly washes up and draws back, foam glittering. Static camera.*
 
+## Extra for draft 2 (87–89)
+
+**87 – Pool and three buckets**
+```
+Realistic cinematic photograph, 16:9. A huge empty-looking Olympic swimming pool full of blue water seen from above, three small buckets standing at the edge, cool indoor light. No people, no text.
+```
+
+**88 – Porpoise listening**
+```
+Realistic underwater photograph, 16:9. A harbour porpoise close-up in green Baltic water, faint circular sound waves around its head, calm and gentle. No text.
+```
+
+**89 – Tin can in the sea**
+```
+Realistic underwater photograph, 16:9. An old rusted tin can lying on a sandy sea floor, almost dissolved by rust, small fish around it. No text, no labels.
+```
+
 ## Thumbnail
 
 **T1 – The thumbnail**
@@ -490,4 +507,4 @@ I add the text (**"1,6 MIO. TONNEN BOMBEN"** or **"VOR DEINEM STRAND"**) and a r
 
 ---
 
-**Total: 86 pictures + thumbnail, of which 11 can become video clips (🎬: 01, 03, 07, 09, 19, 20, 41, 53, 55, 63, 86).** Must-haves after 01–14: 15, 19, 20, 27, 29, 30, 36, 37, 45, 47, 53, 55, 60, 61, 63, 71, 75, 81.
+**Total: 89 pictures + thumbnail, of which 11 can become video clips (🎬: 01, 03, 07, 09, 19, 20, 41, 53, 55, 63, 86).** Must-haves after 01–14: 15, 19, 20, 27, 29, 30, 36, 37, 45, 47, 53, 55, 60, 61, 63, 71, 75, 81.

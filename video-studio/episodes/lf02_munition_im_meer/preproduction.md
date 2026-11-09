@@ -33,19 +33,29 @@ Fits your values: no music needed, people only from behind, no religious conflic
 
 ## 3. Script
 
-`script_de.txt`: about 950 words with many dramatic pauses, roughly 8:30–9:00.
+`script_de.txt` (draft 2): about 1,150 words, roughly 9:00–9:30, with a delivery note for every chapter (lines starting with », not read aloud).
 
 | Time | Chapter | Hook / payoff |
 |---|---|---|
-| 0:00 | Hook | Usedom 2004: "amber" catches fire · 1.6 million t · promise: the one rule at the beach |
-| 0:55 | 1 Wie kam das ins Meer? | 1945, dumped at sea; 1.3 + 0.3 million t; the truck convoy |
-| 2:05 | 2 Direkt vor Kiel | Kolberger Heide: ~35,000 t at max. 12 m; wind farms must clear first |
-| 3:05 | 3 Die Zeit läuft ab | casings rust through, explosive lies open, ~3 t chemicals released |
-| 4:00 | 4 In unserem Essen? | TNT in mussels; dab liver tumours; still being researched |
-| 5:05 | 5 Die Schweinswale | 2019 Fehmarnbelt: 42 mines, ~30 dead porpoises |
-| 6:05 | 6 Die große Bergung | why it's so hard; €100 m; 18 t of 1.6 million; platform; 10+ years |
-| 7:20 | 7 Die eine Regel | phosphorus vs amber; metal tin; don't touch, call police |
-| 8:15 | Schluss | the war isn't over under water; comments + share |
+| 0:00 | Hook | cold open "Ihre Hosentasche brennt." · Usedom 2004 · 1.6 million t · three open questions |
+| 1:05 | 1 Der schnellste Weg | 1945, dumped at sea; 1.3 + 0.3 million t; the truck convoy; "Das Meer vergisst nichts" |
+| 2:10 | 2 Zwölf Meter unter den Segelbooten | Kolberger Heide, 12 m = a four-storey house; wind farms; teaser: the quieter danger |
+| 3:05 | 3 Die leise Gefahr | twist: poison, not explosions; rust; ~3 t chemicals; "Die Zeit läuft uns davon" |
+| 4:05 | 4 Vom Meeresgrund auf den Teller? | mussels as sensors, dab liver tumours, still researched; question: why not blow it up? |
+| 5:05 | 5 Die stillen Opfer | 2019 Fehmarnbelt, 42 mines, ~30 dead porpoises, hearing |
+| 6:05 | 6 Die gefährlichste Aufräumaktion | finding and lifting; €100 m; 18 t = three buckets from an Olympic pool; platform; 10+ years |
+| 7:15 | 7 Was du am Strand wissen musst | callback to the opening; two rules |
+| 8:05 | Schluss | "the war isn't over under water"; "Hättest du den Stein eingesteckt?"; share |
+
+What changed in draft 2:
+- **Cold open:** the first three seconds are the burning pocket, then the story rewinds.
+- **One spine instead of a fact list:** a ticking clock (rust and poison) that every chapter advances.
+- **A twist at 3:05:** the bigger danger is the quiet poison, not the explosion.
+- **An open question at the end of each chapter** that the next chapter answers.
+- **Callbacks:** amber as "the gold of the Baltic" at the start and the end; the two rules close the opening story.
+- **Tangible numbers:** trucks Flensburg–Munich, 12 m = a four-storey house, 18 t = three buckets from an Olympic pool.
+- **A comment question anyone can answer in one word:** "Hättest du den Stein eingesteckt?"
+- **Delivery notes for your voice** in every chapter.
 
 ## 4. Titles and thumbnail
 
@@ -62,6 +72,8 @@ Thumbnail: split image, a sunny beach above, rusty bombs and a mine below (T1), 
 | Claim | Status | Source |
 |---|---|---|
 | ~1.6 million t conventional munitions in German waters: 1.3 million t North Sea, 0.3 million t Baltic; plus ~5,000 t chemical | ✔ federal government / UBA (some sources give other chemical figures) | [BMUV brochure](https://www.bmuv.de/fileadmin/Daten_BMU/Pools/Broschueren/munition_meer_bf.pdf); [t3n](https://t3n.de/news/gesamte-deutsche-ostsee-munitionsbelastet-welche-gefahren-von-alten-kampfstoffen-im-meer-ausgehen-1693473/) |
+| 18 t of 1.6 million t ≈ three buckets from an Olympic pool | ✔ own calculation: 18 / 1,600,000 × 2,500,000 L (50 × 25 × 2 m pool) ≈ 28 L ≈ three 10-L buckets | — |
+| Porpoises orient by sound; underwater explosions can damage their hearing | ✔ standard finding behind the bubble-curtain rules | [BfN assessment](https://www.bfn.de/sites/default/files/BfN/meeresundkuestenschutz/Dokumente/Minensprengungen_im_Fehmarnbelt/gesamtbewertung_fehmarnbelt_minensprengungen.pdf) |
 | Truck convoy longer than Flensburg–Munich | ✔ own calculation: 1.6 million t ÷ 25 t per truck = 64,000 trucks × 16.5 m ≈ 1,056 km; Flensburg–Munich by road ≈ 900 km | — |
 | Dumped after 1945 to disarm Germany; often dumped en route | ✔ disposal at sea well documented; "en route" framed as "Berichten zufolge" | [NABU](https://www.nabu.de/positionen-und-themen/meeresschutz/belastungen-und-nutzungen/munition-im-meer) |
 | Kolberger Heide off Kiel: ~35,000 t mines and torpedoes, max. 12 m deep | ✔ as reported (2019); framed "Berichten zufolge" | [taz](https://taz.de/Munitionssprengungen-in-Nord--und-Ostsee/!5831246); [BfN report](https://www.bfn.de/sites/default/files/2022-06/2022-Veranstaltungsbericht-Munition-im-Meer-BfN_bf.pdf) |
