@@ -126,6 +126,10 @@ def human_voice(story, tl, track):
     out = np.zeros((n, 2), np.float32)
     for kind, m in masks.items():
         y = process_voice(x * np.clip(m, 0, 1), kind)
+        if kind == "room":            # keep the echo inside the quote, not over the narration after it
+            env = np.convolve(np.clip(m, 0, 1), np.ones(int(0.35 * SR)) / int(0.35 * SR), mode="full")
+            env = np.concatenate([env, np.zeros(max(0, len(y) - len(env)))])[: len(y)]
+            y = y * np.clip(env * 1.5, 0, 1)[:, None]
         out[: len(y)] += y[: n]
     return out, off
 

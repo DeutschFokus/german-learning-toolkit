@@ -307,6 +307,20 @@ def align(lines, tts_dir, tts_timing, recording, log=print):
     a_, b_ = _locate_story(X, Y, onsets, offsets)
     if b_ - a_ < n // 2:
         a_, b_ = 0, m - 1
+    # only drop talk that is clearly separate from the story (a real pause, >= 0.8 s)
+    vv = v[j0:j1]
+    def gap_before(k):
+        o = iy[k]; g = 0
+        while o - g - 1 >= 0 and vv[o - g - 1] < 0.15: g += 1
+        return g * HOP / FR
+    def gap_after(k):
+        o = iy[k]; g = 0
+        while o + g + 1 < len(vv) and vv[o + g + 1] < 0.15: g += 1
+        return g * HOP / FR
+    if a_ > 0 and gap_before(a_) < 0.8:
+        a_ = 0
+    if b_ < m - 1 and gap_after(b_) < 0.8:
+        b_ = m - 1
     if a_ > 0 or b_ < m - 1:
         log(f"    ignoring {a_ * HOP / FR:.1f}s before and {(m - 1 - b_) * HOP / FR:.1f}s after the story")
     path, _ = dtw_slope(X, Y[:, a_:b_ + 1])
