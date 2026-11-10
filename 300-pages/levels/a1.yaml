@@ -1,0 +1,22 @@
+# Level A1 — larger type, more white space, more pictures; explanation line on every task
+level: a1
+name: A1
+cefr: Beginner
+exam: "Goethe-Zertifikat A1 · telc Deutsch A1"
+hue: 168                 # centre of this level's 50° slice of the colour wheel
+cover: [0.6, 0.13, 168]   # OKLCH of the cover field; cream type must reach 3:1 on it
+
+# Level scaling — one place to make a book airier or denser.
+type:
+  body: 11.5             # pt
+  baseline: 16.5         # pt; every vertical measure is a multiple of half a baseline
+  body_lines: 41          # baselines per page (41 × 16.5 pt)
+  hand: 17.5             # pt, handwriting model answers
+  write_line: 9.0        # mm, pitch of ruled write-in lines
+explanation: always        # always | new  (new = only the first time a task type appears in a chapter)
+reading_columns: 1
+
+# What --sample puts into the free sample (folios; front matter and sales page are always included)
+sample:
+  pages: [101, 102, 103, 104, 105, 106, 107, 120, 122]
+  appendix: [L 1, W 1]

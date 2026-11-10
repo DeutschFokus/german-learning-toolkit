@@ -1,0 +1,22 @@
+# Level B2 — denser; two-column reading texts; explanation line only for new task types
+level: b2
+name: B2
+cefr: Upper intermediate
+exam: "Goethe-Zertifikat B2 · telc Deutsch B2"
+hue: 322                 # centre of this level's 50° slice of the colour wheel
+cover: [0.52, 0.18, 322]   # OKLCH of the cover field; cream type must reach 3:1 on it
+
+# Level scaling — one place to make a book airier or denser.
+type:
+  body: 9.75             # pt
+  baseline: 13.5         # pt; every vertical measure is a multiple of half a baseline
+  body_lines: 51          # baselines per page (51 × 13.5 pt)
+  hand: 15.5             # pt, handwriting model answers
+  write_line: 7.5        # mm, pitch of ruled write-in lines
+explanation: new        # always | new  (new = only the first time a task type appears in a chapter)
+reading_columns: 2
+
+# What --sample puts into the free sample (folios; front matter and sales page are always included)
+sample:
+  pages: [101, 102, 103, 104, 105, 106, 107, 120, 122]
+  appendix: [L 1, W 1]

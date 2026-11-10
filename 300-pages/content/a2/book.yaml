@@ -1,0 +1,59 @@
+# A2 · plan of the whole book. Drives the table of contents; chapters without a
+# content file yet are listed there as "in the full book".
+level: a2
+chapters:
+  - number: 1
+    title: Ankommen
+    subtitle: {en: "Arriving – introductions and your story so far", tr: "Varış – tanışma ve bugüne kadarki hikâyen"}
+    grammar: [Perfekt (Wiederholung), "Präteritum: war, hatte"]
+  - number: 2
+    title: Familie und Freunde
+    subtitle: {en: "Family and friends – people in your life", tr: "Aile ve arkadaşlar – hayatındaki insanlar"}
+    grammar: [Possessivartikel im Dativ, Nebensatz mit weil]
+  - number: 3
+    title: Essen und Einkaufen
+    subtitle: {en: "Food and shopping – at the market, at the till", tr: "Yemek ve alışveriş – pazarda, kasada"}
+    grammar: [Komparativ und Superlativ, "welch-?"]
+  - number: 4
+    title: Arbeit und Beruf
+    subtitle: {en: "Work – jobs, colleagues, daily routine", tr: "İş ve meslek – işler, iş arkadaşları, günlük düzen"}
+    grammar: [Nebensatz mit dass, Modalverben im Präteritum]
+  - number: 5
+    title: Wohnen
+    subtitle: {en: "Home sweet home – flats, neighbours, house rules", tr: "Evim evim, güzel evim – daireler, komşular, apartman kuralları"}
+    grammar: [Wechselpräpositionen, wenn-Sätze, Passiv Präsens]
+  - number: 6
+    title: Gesundheit
+    subtitle: {en: "Health – at the doctor’s and at the chemist’s", tr: "Sağlık – doktorda ve eczanede"}
+    grammar: ["Ratschläge mit sollte", Reflexive Verben]
+  - number: 7
+    title: Unterwegs
+    subtitle: {en: "Out and about – tickets, directions, delays", tr: "Yolda – biletler, yol tarifi, gecikmeler"}
+    grammar: [Lokale Präpositionen, Verben mit Dativ]
+  - number: 8
+    title: Feste und Freizeit
+    subtitle: {en: "Celebrations and free time – invitations and plans", tr: "Kutlamalar ve boş zaman – davetler ve planlar"}
+    grammar: [Adjektive nach ein / kein, Datum und Ordinalzahlen]
+  - number: 9
+    title: Lernen und Schule
+    subtitle: {en: "Learning – courses, school, memories", tr: "Öğrenme – kurslar, okul, anılar"}
+    grammar: ["Nebensätze mit als und wenn", Relativsätze im Nominativ]
+  - number: 10
+    title: Ämter und Dienste
+    subtitle: {en: "Offices and services – forms, bank, post office", tr: "Resmî daireler ve hizmetler – formlar, banka, postane"}
+    grammar: ["Konjunktiv II: könnte, würde, hätte", Indirekte Fragen]
+  - number: 11
+    title: Medien und Konsum
+    subtitle: {en: "Media and shopping – online, reviews, complaints", tr: "Medya ve tüketim – internet, yorumlar, şikâyetler"}
+    grammar: [Adjektive nach der / die / das, Verben mit Präpositionen]
+  - number: 12
+    title: Pläne und Träume
+    subtitle: {en: "Plans and dreams – what comes next", tr: "Planlar ve hayaller – sırada ne var"}
+    grammar: [Futur mit werden, "um … zu"]
+stations:
+  - number: 1
+    subtitle: {en: "Review of chapters 1–4 and mini exam", tr: "1–4. ünitelerin tekrarı ve mini sınav"}
+  - number: 2
+    subtitle: {en: "Review of chapters 5–8 and mini exam", tr: "5–8. ünitelerin tekrarı ve mini sınav"}
+  - number: 3
+    subtitle: {en: "Review of chapters 9–12 and mock exam", tr: "9–12. ünitelerin tekrarı ve deneme sınavı"}

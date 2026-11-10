@@ -216,3 +216,7 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# 300 Pages of German — build cache
+300-pages/.cache/
+300-pages/dist/_tmp/

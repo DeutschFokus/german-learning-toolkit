@@ -1,0 +1,1600 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# A2 · Kapitel 5 · Wohnen                                   pages 101–124
+# Content only — no layout. See README.md → "Add a chapter" for all block types.
+# ─────────────────────────────────────────────────────────────────────────────
+type: chapter
+level: a2
+number: 5
+title: Wohnen
+subtitle:
+  en: "Home sweet home – flats, neighbours, house rules"
+  tr: "Evim evim, güzel evim – daireler, komşular, apartman kuralları"
+goal:
+  de: "Du kommst in deiner Wohnung und mit deinen Nachbarn gut zurecht – von der Anzeige bis zur Reparatur."
+  en: "Handle life in your flat and with your neighbours – from listing to repair."
+  tr: "Evinde ve komşularınla her işini halledersin – ilandan tamire kadar."
+can_do:
+  - {de: "Ich kann meine Wohnung beschreiben.", en: "I can describe my flat.", tr: "Evimi tarif edebilirim.", ref: "5.2"}
+  - {de: "Ich kann eine Wohnungsanzeige verstehen.", en: "I can understand a flat listing.", tr: "Bir kiralık daire ilanını anlayabilirim.", ref: "5.3"}
+  - {de: "Ich kann sagen, wo etwas steht und wohin es kommt.", en: "I can say where things are and where they go.", tr: "Bir şeyin nerede durduğunu ve nereye konacağını söyleyebilirim.", ref: "5.4"}
+  - {de: "Ich kann der Hausverwaltung ein Problem melden.", en: "I can report a problem to the property management.", tr: "Bina yönetimine bir sorunu bildirebilirim.", ref: "5.5"}
+  - {de: "Ich kann Nachbarn höflich um Hilfe bitten.", en: "I can politely ask neighbours for help.", tr: "Komşulardan kibarca yardım isteyebilirim.", ref: "5.7"}
+  - {de: "Ich kann den Müll richtig trennen.", en: "I can sort my rubbish correctly.", tr: "Çöpü doğru şekilde ayırabilirim.", ref: "5.6"}
+grammar: [Wechselpräpositionen, wenn-Sätze, Passiv Präsens]
+image:
+  id: k5-auftakt
+  format: banner
+  description: "Elif steht mit einem Umzugskarton in ihrem neuen, noch leeren Wohnzimmer. Großes Fenster, Abendlicht, Blick auf Dächer. In der Tür steht Herr Becker mit einer Pflanze."
+  alt:
+    en: "Elif stands in her new, still empty living room holding a moving box; Mr Becker is at the door with a plant."
+    tr: "Elif, elinde bir taşınma kolisiyle yeni ve henüz boş oturma odasında duruyor; Bay Becker kapıda, elinde bir bitkiyle bekliyor."
+
+# ── Vocabulary ───────────────────────────────────────────────────────────────
+# Nouns: article + plural are required. Notation: "-" no ending, "¨-er" umlaut + er,
+# "Pl." plural only, "Sg." no plural. Verbs: sep = separable prefix, perfekt if irregular.
+vocabulary:
+  # Auftakt
+  - {id: hell, de: hell, en: bright, tr: aydınlık}
+  - {id: gemuetlich, de: gemütlich, en: cosy, tr: "rahat, sıcak"}
+  - {id: nachbar, de: Nachbar, article: der, plural: "-n", en: neighbour, tr: komşu}
+  # Wortschatz
+  - {id: flur, de: Flur, article: der, plural: "-e", en: hallway, tr: koridor}
+  - {id: wohnzimmer, de: Wohnzimmer, article: das, plural: "-", en: living room, tr: oturma odası}
+  - {id: schlafzimmer, de: Schlafzimmer, article: das, plural: "-", en: bedroom, tr: yatak odası}
+  - {id: kueche, de: Küche, article: die, plural: "-n", en: kitchen, tr: mutfak}
+  - {id: bad, de: Bad, article: das, plural: "¨-er", en: bathroom, tr: banyo}
+  - {id: balkon, de: Balkon, article: der, plural: "-e", en: balcony, tr: balkon}
+  - {id: sofa, de: Sofa, article: das, plural: "-s", en: sofa, tr: kanepe}
+  - {id: regal, de: Regal, article: das, plural: "-e", en: shelf, tr: raf}
+  - {id: teppich, de: Teppich, article: der, plural: "-e", en: rug, tr: halı}
+  - {id: kuehlschrank, de: Kühlschrank, article: der, plural: "¨-e", en: fridge, tr: buzdolabı}
+  - {id: waschmaschine, de: Waschmaschine, article: die, plural: "-n", en: washing machine, tr: çamaşır makinesi}
+  - {id: spiegel, de: Spiegel, article: der, plural: "-", en: mirror, tr: ayna}
+  - {id: keller, de: Keller, article: der, plural: "-", en: cellar, tr: bodrum}
+  - {id: herd, de: Herd, article: der, plural: "-e", en: cooker, tr: ocak}
+  - {id: ruhig, de: ruhig, en: quiet, tr: sakin}
+  - {id: dunkel, de: dunkel, en: dark, tr: karanlık}
+  - {id: laut, de: laut, en: noisy, tr: gürültülü}
+  - {id: guenstig, de: günstig, en: affordable, tr: uygun fiyatlı}
+  - {id: zimmer, de: Zimmer, article: das, plural: "-", en: room, tr: oda}
+  # Die Wohnungsanzeige
+  - {id: anzeige, de: Anzeige, article: die, plural: "-n", en: "ad, listing", tr: ilan}
+  - {id: miete, de: Miete, article: die, plural: "-n", en: rent, tr: kira}
+  - {id: kaltmiete, de: Kaltmiete, article: die, plural: "-n", en: basic rent, tr: net kira}
+  - {id: warmmiete, de: Warmmiete, article: die, plural: "-n", en: rent incl. charges, tr: yan giderler dahil kira}
+  - {id: nebenkosten, de: Nebenkosten, article: die, plural: "Pl.", en: service charges, tr: yan giderler}
+  - {id: kaution, de: Kaution, article: die, plural: "-en", en: deposit, tr: depozito}
+  - {id: erdgeschoss, de: Erdgeschoss, article: das, plural: "-e", en: ground floor, tr: zemin kat}
+  - {id: einbaukueche, de: Einbauküche, article: die, plural: "-n", en: fitted kitchen, tr: ankastre mutfak}
+  - {id: stock, de: Stock, article: der, plural: "Stockwerke", plural_form: Stockwerke, en: floor, tr: kat}
+  - {id: quadratmeter, de: Quadratmeter, article: der, plural: "-", en: square metre, tr: metrekare}
+  - {id: vermieter, de: Vermieter, article: der, plural: "-", en: landlord, tr: ev sahibi}
+  - {id: aufzug, de: Aufzug, article: der, plural: "¨-e", en: lift, tr: asansör}
+  - {id: strom, de: Strom, article: der, plural: "Sg.", en: electricity, tr: elektrik}
+  - {id: besichtigen, de: besichtigen, forms: [besichtigt], en: to view, tr: gezip görmek}
+  - {id: klingeln, de: klingeln, forms: [klingelt, klingle], en: to ring the bell, tr: zile basmak}
+  - {id: frei, de: frei, en: available, tr: "boş, müsait"}
+  # Der Umzug
+  - {id: umzug, de: Umzug, article: der, plural: "¨-e", en: move, tr: taşınma}
+  - {id: einziehen, de: einziehen, sep: "ein|ziehen", perfekt: ist eingezogen, forms: [eingezogen], en: to move in, tr: (eve) taşınmak}
+  - {id: stellen, de: stellen, forms: [stellt, stelle, stell], en: "to put (upright)", tr: "(dik) koymak"}
+  - {id: legen, de: legen, forms: [legt, lege, leg], en: "to put (flat)", tr: "(yatık) koymak"}
+  - {id: haengen, de: hängen, forms: [hängt], en: to hang, tr: "asmak; asılı durmak"}
+  - {id: wand, de: Wand, article: die, plural: "¨-e", en: wall, tr: duvar}
+  - {id: fenster, de: Fenster, article: das, plural: "-", en: window, tr: pencere}
+  - {id: bild, de: Bild, article: das, plural: "-er", en: picture, tr: resim}
+  - {id: schwer, de: schwer, en: heavy, tr: ağır}
+  - {id: mitte, de: Mitte, article: die, plural: "Sg.", en: middle, tr: orta}
+  - {id: stehen, de: stehen, perfekt: hat gestanden, forms: [steht], en: "to stand, to be (upright)", tr: "(dik) durmak"}
+  - {id: liegen, de: liegen, perfekt: hat gelegen, forms: [liegt], en: "to lie, to be (flat)", tr: "(yatık) durmak"}
+  - {id: schrank, de: Schrank, article: der, plural: "¨-e", en: wardrobe, tr: dolap}
+  - {id: stuhl, de: Stuhl, article: der, plural: "¨-e", en: chair, tr: sandalye}
+  - {id: tuer, de: Tür, article: die, plural: "-en", en: door, tr: kapı}
+  # Die Heizung bleibt kalt
+  - {id: heizung, de: Heizung, article: die, plural: "-en", en: heating, tr: kalorifer}
+  - {id: hausverwaltung, de: Hausverwaltung, article: die, plural: "-en", en: property management, tr: bina yönetimi}
+  - {id: hausmeister, de: Hausmeister, article: der, plural: "-", en: caretaker, tr: bina görevlisi}
+  - {id: aufdrehen, de: aufdrehen, sep: "auf|drehen", forms: [aufdrehe, aufgedreht], en: to turn up, tr: (kaloriferi) açmak}
+  - {id: funktionieren, de: funktionieren, forms: [funktioniert], en: to work, tr: çalışmak}
+  - {id: melden, de: melden, forms: [meldet, gemeldet], en: to report, tr: bildirmek}
+  - {id: kaputt, de: kaputt, en: broken, tr: bozuk}
+  - {id: schliessen, de: schließen, perfekt: hat geschlossen, forms: [schließt], en: to close, tr: kapatmak}
+  - {id: treppe, de: Treppe, article: die, plural: "-n", en: stairs, tr: merdiven}
+  - {id: handwerker, de: Handwerker, article: der, plural: "-", en: repairman, tr: usta}
+  - {id: betreff, de: Betreff, article: der, plural: "-e", en: subject, tr: konu}
+  - {id: erreichen, de: erreichen, forms: [erreicht], en: to reach, tr: ulaşmak}
+  - {id: problem, de: Problem, article: das, plural: "-e", en: problem, tr: sorun}
+  # Müll trennen
+  - {id: muell, de: Müll, article: der, plural: "Sg.", en: rubbish, tr: çöp}
+  - {id: tonne, de: Tonne, article: die, plural: "-n", en: bin, tr: çöp bidonu}
+  - {id: aushang, de: Aushang, article: der, plural: "¨-e", en: notice, tr: duyuru}
+  - {id: trennen, de: trennen, forms: [trennt, getrennt], en: "to sort, to separate", tr: ayırmak}
+  - {id: verpackung, de: Verpackung, article: die, plural: "-en", en: packaging, tr: ambalaj}
+  - {id: restmuell, de: Restmüll, article: der, plural: "Sg.", en: general waste, tr: evsel atık}
+  - {id: flasche, de: Flasche, article: die, plural: "-n", en: bottle, tr: şişe}
+  - {id: glas, de: Glas, article: das, plural: "¨-er", en: "glass; jar", tr: "cam; kavanoz"}
+  - {id: mieter, de: Mieter, article: der, plural: "-", en: tenant, tr: kiracı}
+  - {id: leeren, de: leeren, forms: [geleert], en: to empty, tr: boşaltmak}
+  - {id: abholen, de: abholen, sep: "ab|holen", forms: [abgeholt], en: to collect, tr: "almak, toplamak"}
+  - {id: voll, de: voll, en: full, tr: dolu}
+  - {id: muellabfuhr, de: Müllabfuhr, article: die, plural: "Sg.", en: refuse collection, tr: çöp toplama servisi}
+  - {id: treppenhaus, de: Treppenhaus, article: das, plural: "¨-er", en: stairwell, tr: merdiven boşluğu}
+  - {id: putzen, de: putzen, forms: [putzt, geputzt], en: to clean, tr: temizlemek}
+  - {id: reparieren, de: reparieren, forms: [repariert, repariere], en: to repair, tr: tamir etmek}
+  - {id: container, de: Container, article: der, plural: "-", en: "container, bottle bank", tr: konteyner}
+  - {id: pfand, de: Pfand, article: das, plural: "Sg.", en: "deposit (on bottles)", tr: "depozito (şişe)"}
+  # Gute Nachbarn
+  - {id: bohrmaschine, de: Bohrmaschine, article: die, plural: "-n", en: drill, tr: matkap}
+  - {id: leihen, de: leihen, perfekt: hat geliehen, en: "to lend; to borrow", tr: "ödünç vermek; ödünç almak"}
+  - {id: leiter, de: Leiter, article: die, plural: "-n", en: ladder, tr: seyyar merdiven}
+  - {id: hausordnung, de: Hausordnung, article: die, plural: "-en", en: house rules, tr: apartman kuralları}
+  - {id: bohren, de: bohren, en: to drill, tr: delmek}
+  - {id: zurueckbringen, de: zurückbringen, sep: "zurück|bringen", perfekt: hat zurückgebracht, en: to bring back, tr: geri getirmek}
+  - {id: stoeren, de: stören, forms: [stört], en: to disturb, tr: rahatsız etmek}
+  - {id: zettel, de: Zettel, article: der, plural: "-", en: note, tr: not kâğıdı}
+  - {id: paket, de: Paket, article: das, plural: "-e", en: parcel, tr: koli}
+  - {id: feiern, de: feiern, forms: [feiere, feierst], en: to celebrate, tr: kutlamak}
+  - {id: ausziehen, de: ausziehen, sep: "aus|ziehen", perfekt: ist ausgezogen, en: to move out, tr: (evden) çıkmak}
+  - {id: vorbeikommen, de: vorbeikommen, sep: "vorbei|kommen", perfekt: ist vorbeigekommen, en: to drop by, tr: uğramak}
+  - {id: giessen, de: gießen, perfekt: hat gegossen, en: to water, tr: sulamak}
+  - {id: schluessel, de: Schlüssel, article: der, plural: "-", en: key, tr: anahtar}
+  # Das Repair-Café
+  - {id: geraet, de: Gerät, article: das, plural: "-e", en: appliance, tr: cihaz}
+  - {id: wegwerfen, de: wegwerfen, sep: "weg|werfen", perfekt: hat weggeworfen, forms: [wirfst], en: to throw away, tr: (çöpe) atmak}
+  - {id: reparatur, de: Reparatur, article: die, plural: "-en", en: repair, tr: tamir}
+  - {id: helfer, de: Helfer, article: der, plural: "-", en: helper, tr: yardımcı}
+  - {id: spenden, de: spenden, forms: [gespendet], en: to donate, tr: bağışlamak}
+  - {id: stadtteil, de: Stadtteil, article: der, plural: "-e", en: district, tr: semt}
+  - {id: anmelden, de: anmelden, sep: "an|melden", forms: [angemeldet], en: to register, tr: kaydetmek}
+  - {id: mitbringen, de: mitbringen, sep: "mit|bringen", perfekt: hat mitgebracht, en: to bring along, tr: yanında getirmek}
+  - {id: eingang, de: Eingang, article: der, plural: "¨-e", en: entrance, tr: giriş}
+  - {id: ersatzteil, de: Ersatzteil, article: das, plural: "-e", en: spare part, tr: yedek parça}
+  - {id: umwelt, de: Umwelt, article: die, plural: "Sg.", en: environment, tr: çevre}
+  - {id: haeufig, de: häufig, forms: [häufigsten], en: often, tr: sık}
+  - {id: fehlen, de: fehlen, forms: [fehlt], en: to be missing, tr: eksik olmak}
+  - {id: kennenlernen, de: kennenlernen, sep: "kennen|lernen", en: to get to know, tr: tanımak}
+  # Training · Alles zusammen · Test
+  - {id: sauer, de: sauer, en: annoyed, tr: kızgın}
+  - {id: laune, de: Laune, article: die, plural: "-n", en: mood, tr: keyif}
+  - {id: licht, de: Licht, article: das, plural: "-er", en: light, tr: ışık}
+  - {id: traumwohnung, de: Traumwohnung, article: die, plural: "-en", en: dream flat, tr: hayalindeki ev}
+  - {id: nachtruhe, de: Nachtruhe, article: die, plural: "Sg.", en: night-time quiet hours, tr: gece sessizliği}
+  - {id: erlaubt, de: erlaubt, en: allowed, tr: serbest}
+  - {id: verreisen, de: verreisen, perfekt: ist verreist, en: to go away, tr: seyahate çıkmak}
+  - {id: grillen, de: grillen, en: to barbecue, tr: mangal yapmak}
+
+teile:
+  # ═══ 1 · AUFTAKT ═══════════════════════════════════════════════ page 101 ═══
+  - nr: 1
+    section: auftakt
+    title: Auftakt
+    subtitle: {en: "Warm-up", tr: "Isınma"}
+    blocks:
+      - type: task
+        id: a
+        skills: [sprechen, partner]
+        rubric:
+          de: "Sieh das Bild an. Wie findest du Elifs Wohnung? Sprecht zu zweit."
+          en: "Look at the picture. What do you think of Elif’s flat? Talk in pairs."
+          tr: "Resme bak. Elif’in evini nasıl buluyorsun? İkişerli konuşun."
+        body:
+          - type: bubbles
+            items: ["Ich finde die Wohnung …", "Das Wohnzimmer ist hell / klein / gemütlich.", "Mir gefällt …"]
+        answer:
+          open: true
+          model: "Ich finde die Wohnung schön. Das Wohnzimmer ist hell, aber noch leer. Mir gefällt das große Fenster."
+        words: [hell, gemuetlich, nachbar]
+
+  # ═══ 2 · WORTSCHATZ ════════════════════════════════════════ pages 102–103 ═══
+  - nr: 2
+    section: wortschatz
+    title: Zimmer, Möbel, Haus
+    subtitle: {en: "Rooms, furniture and the building", tr: "Odalar, mobilyalar ve bina"}
+    blocks:
+      - type: task
+        id: a
+        skills: [lesen]
+        rubric:
+          de: "Sieh das Bild an und lies die Wörter. Welche kennst du schon? Kreuze an."
+          en: "Look at the picture and read the words. Which ones do you already know? Tick them."
+          tr: "Resme bak ve kelimeleri oku. Hangilerini zaten biliyorsun? İşaretle."
+        body:
+          - type: picture_dictionary
+            image:
+              id: k5-wohnung
+              format: wide
+              description: "Elifs Wohnung von oben, wie ein bunter Grundriss mit Möbeln: Flur, Wohnzimmer mit Sofa, Regal und Teppich, Schlafzimmer, Küche mit Kühlschrank, Bad mit Waschmaschine und Spiegel, kleiner Balkon. Zwölf Zahlen markieren die Wörter."
+              alt:
+                en: "Bird’s-eye view of Elif’s flat with twelve numbered rooms and pieces of furniture."
+                tr: "Elif’in evinin kuş bakışı görünümü; on iki oda ve eşya numaralandırılmış."
+              markers:
+                - {n: 1, x: 47, y: 53}
+                - {n: 2, x: 22, y: 30}
+                - {n: 3, x: 77, y: 27}
+                - {n: 4, x: 22, y: 78}
+                - {n: 5, x: 70, y: 77}
+                - {n: 6, x: 6, y: 50}
+                - {n: 7, x: 33, y: 16}
+                - {n: 8, x: 13, y: 14}
+                - {n: 9, x: 28, y: 44}
+                - {n: 10, x: 36, y: 88}
+                - {n: 11, x: 62, y: 88}
+                - {n: 12, x: 84, y: 66}
+            items: [flur, wohnzimmer, schlafzimmer, kueche, bad, balkon, sofa, regal, teppich, kuehlschrank, waschmaschine, spiegel]
+        answer: {open: true}
+        words: [flur, wohnzimmer, schlafzimmer, kueche, bad, balkon, sofa, regal, teppich, kuehlschrank, waschmaschine, spiegel]
+
+      - type: task
+        id: b
+        skills: [schreiben]
+        rubric:
+          de: "Der, die oder das? Ergänze die Artikel."
+          en: "Der, die or das? Fill in the articles."
+          tr: "Der, die mi, das mı? Artikelleri tamamla."
+        points: 8
+        body:
+          - type: gap_text
+            compact: true
+            items: ["[[die]] Küche", "[[das]] Bad", "[[der]] Flur", "[[das]] Sofa", "[[die]] Waschmaschine", "[[der]] Teppich", "[[das]] Regal", "[[der]] Balkon"]
+        notes:
+          - kind: tipp
+            text:
+              en: "Learn every noun together with its article – and its colour: {de:der} blue, {de:die} red, {de:das} green."
+              tr: "Her ismi artikeliyle ve rengiyle birlikte öğren: {de:der} mavi, {de:die} kırmızı, {de:das} yeşil."
+
+      - type: task
+        id: c
+        skills: [hoeren]
+        rubric:
+          de: "Elif zeigt Jonas ihre Wohnung. Hör zu und kreuze an: A, B oder C?"
+          en: "Elif shows Jonas her flat. Listen and tick A, B or C."
+          tr: "Elif, Jonas’a evini gösteriyor. Dinle ve işaretle: A, B ya da C?"
+        points: 4
+        audio:
+          track: "5.01"
+          title: Elifs neue Wohnung
+          duration: "0:48"
+          transcript:
+            turns:
+              - {speaker: elif, text: "Komm rein, Jonas! Das ist meine neue Wohnung."}
+              - {speaker: jonas, text: "Wow, schön hell! Wie viele Zimmer hast du?"}
+              - {speaker: elif, text: "Zwei Zimmer, eine Küche und ein Bad. Hier links ist das Wohnzimmer."}
+              - {speaker: jonas, text: "Das Wohnzimmer ist aber groß! Und wo schläfst du?"}
+              - {speaker: elif, text: "Das Schlafzimmer ist rechts, neben dem Bad. Es ist klein, aber ruhig."}
+              - {speaker: jonas, text: "Hast du auch einen Keller?"}
+              - {speaker: elif, text: "Nein, leider nicht. Aber ich habe einen kleinen Balkon."}
+              - {speaker: jonas, text: "Und die Küche?"}
+              - {speaker: elif, text: "Die Küche ist hinten. Sie ist ziemlich alt, aber der Herd funktioniert."}
+        body:
+          - type: multiple_choice
+            items:
+              - {q: "Elifs Wohnung hat …", options: ["ein Zimmer.", "zwei Zimmer.", "drei Zimmer."], answer: B}
+              - {q: "Das Schlafzimmer ist …", options: ["klein und ruhig.", "groß und hell.", "alt und dunkel."], answer: A}
+              - {q: "Elif hat …", options: ["einen Keller.", "einen Garten.", "einen Balkon."], answer: C}
+              - {q: "Die Küche ist …", options: ["neu.", "ziemlich alt.", "sehr klein."], answer: B}
+        notes:
+          - kind: wort
+            words: [ruhig, keller, herd]
+        words: [keller, herd, ruhig, dunkel]
+
+      - type: task
+        id: d
+        skills: [schreiben]
+        rubric:
+          de: "Wie ist deine Wohnung? Schreib drei Sätze."
+          en: "What is your flat like? Write three sentences."
+          tr: "Senin evin nasıl? Üç cümle yaz."
+        body:
+          - type: word_bank
+            items: [hell, dunkel, ruhig, laut, gemütlich, modern, klein, groß, günstig, teuer]
+          - type: write_lines
+            lines: 3
+            model: "Meine Wohnung hat zwei Zimmer. Das Wohnzimmer ist hell und gemütlich."
+        answer:
+          open: true
+          model: "Meine Wohnung hat zwei Zimmer. Das Wohnzimmer ist hell und gemütlich. Leider habe ich keinen Balkon."
+        notes:
+          - kind: sogehts
+            text:
+              en: "Three useful ways to start: {de:Meine Wohnung hat …} · {de:In meiner Wohnung gibt es …} · {de:Ich habe (k)einen / (k)eine / (k)ein …}"
+              tr: "Cümleye başlamak için üç kalıp: {de:Meine Wohnung hat …} · {de:In meiner Wohnung gibt es …} · {de:Ich habe (k)einen / (k)eine / (k)ein …}"
+        words: [laut, guenstig, zimmer]
+
+      - type: task
+        id: e
+        skills: [sprechen, partner]
+        rubric:
+          de: "Fragt und antwortet."
+          en: "Ask and answer."
+          tr: "Sorun ve cevaplayın."
+        body:
+          - type: bubbles
+            items: ["Wie viele Zimmer hat deine Wohnung?", "Hast du einen Balkon oder einen Keller?", "Was ist dein Lieblingszimmer? Warum?"]
+        answer:
+          open: true
+          model: "Meine Wohnung hat drei Zimmer. Ich habe einen Balkon, aber keinen Keller. Mein Lieblingszimmer ist die Küche, weil ich gern koche."
+
+  # ═══ 3 · HAUPTTEIL A ═══════════════════════════════════════ pages 104–105 ═══
+  - nr: 3
+    section: hauptteil
+    title: Die Wohnungsanzeige
+    subtitle: {en: "Reading a flat listing and calling the landlord", tr: "Kiralık daire ilanını okumak ve ev sahibini aramak"}
+    blocks:
+      - type: task
+        id: a
+        skills: [lesen]
+        rubric:
+          de: "Elif sucht eine Wohnung. Lies ihren Zettel und die Anzeigen. Welche Wohnung passt?"
+          en: "Elif is looking for a flat. Read her note and the listings. Which flat suits her?"
+          tr: "Elif ev arıyor. Notunu ve ilanları oku. Hangi daire ona uygun?"
+        points: 1
+        body:
+          - type: reading_text
+            genre: note
+            line_numbers: false
+            parts:
+              - {title: "Ich suche:", text: "2 Zimmer · Balkon · höchstens 750 € warm · nicht im Erdgeschoss"}
+          - type: reading_text
+            genre: listing
+            line_numbers: false
+            parts:
+              - label: A
+                title: "2-Zi.-Whg., Nordstadt"
+                text: "2 ZKB, 54 m², 3. OG, Balkon, EBK. KM 560 € + NK 140 €. Kaution: 2 MM. Frei ab 1. April."
+              - label: B
+                title: "Helle 1-Zi.-Whg., Zentrum"
+                text: "1 ZKB, 38 m², EG, kein Balkon. WM 520 €. Kaution: 1000 €. Ab sofort frei."
+              - label: C
+                title: "3-Zi.-Whg. mit Garten, Südstadt"
+                text: "3 ZKB, 78 m², EG, Garten, Keller. KM 890 € + NK 210 €. Kaution: 3 MM."
+          - type: multiple_choice
+            items:
+              - {q: "Zu Elif passt …", options: ["Wohnung A.", "Wohnung B.", "Wohnung C."], answer: A}
+        notes:
+          - kind: wort
+            entries:
+              - {de: "ZKB", en: "Zimmer, Küche, Bad", tr: "Zimmer, Küche, Bad"}
+              - {de: "OG · EG", en: "upper floor · ground floor", tr: "üst kat · zemin kat"}
+              - {de: "EBK", en: "Einbauküche, fitted kitchen", tr: "Einbauküche, ankastre mutfak"}
+              - {de: "KM · WM", en: "Kaltmiete · Warmmiete", tr: "Kaltmiete · Warmmiete"}
+              - {de: "NK", en: "Nebenkosten, service charges", tr: "Nebenkosten, yan giderler"}
+              - {de: "MM", en: "Monatsmieten, months’ rent", tr: "Monatsmieten, aylık kira"}
+          - kind: landeskunde
+            text:
+              en: "{de:Kaltmiete} + {de:Nebenkosten} (heating, water, rubbish) = {de:Warmmiete}. Electricity and internet usually cost extra."
+              tr: "{de:Kaltmiete} + {de:Nebenkosten} (ısınma, su, çöp) = {de:Warmmiete}. Elektrik ve internet genellikle ayrıca ödenir."
+        words: [anzeige, miete, kaltmiete, warmmiete, nebenkosten, kaution, erdgeschoss, einbaukueche]
+
+      - type: task
+        id: b
+        skills: [lesen, schreiben]
+        rubric:
+          de: "Lies Anzeige A noch einmal und ergänze die Tabelle."
+          en: "Read listing A again and complete the table."
+          tr: "A ilanını tekrar oku ve tabloyu tamamla."
+        points: 6
+        body:
+          - type: table_fill
+            first_col_head: false
+            rows:
+              - ["Zimmer", "[[2]]", "Kaltmiete", "[[560 €]]"]
+              - ["Größe", "[[54 m²]]", "Nebenkosten", "[[140 €]]"]
+              - ["Stock", "[[3. Stock]]", "Warmmiete", "[[700 €]]"]
+        answer:
+          note:
+            en: "Warmmiete = Kaltmiete + Nebenkosten: 560 € + 140 € = 700 €."
+            tr: "Warmmiete = Kaltmiete + Nebenkosten: 560 € + 140 € = 700 €."
+        words: [stock, quadratmeter]
+
+      - type: task
+        id: c
+        skills: [hoeren]
+        rubric:
+          de: "Elif ruft den Vermieter an. Hör zu und ergänze Elifs Notizen."
+          en: "Elif calls the landlord. Listen and complete Elif’s notes."
+          tr: "Elif ev sahibini arıyor. Dinle ve Elif’in notlarını tamamla."
+        points: 7
+        audio:
+          track: "5.02"
+          title: Anruf beim Vermieter
+          duration: "1:05"
+          transcript:
+            turns:
+              - {speaker: nowak, text: "Nowak, guten Tag."}
+              - {speaker: elif, text: "Guten Tag, Herr Nowak. Mein Name ist Elif Demir. Ich rufe wegen der Wohnung in der Nordstadt an. Ist sie noch frei?"}
+              - {speaker: nowak, text: "Ja, die Wohnung ist noch frei."}
+              - {speaker: elif, text: "Schön! Wie hoch sind die Nebenkosten genau?"}
+              - {speaker: nowak, text: "140 Euro im Monat. Heizung und Wasser sind inklusive, Strom zahlen Sie extra."}
+              - {speaker: elif, text: "Und gibt es einen Aufzug?"}
+              - {speaker: nowak, text: "Nein, leider nicht. Die Wohnung liegt im dritten Stock."}
+              - {speaker: elif, text: "Das ist kein Problem. Kann ich die Wohnung besichtigen?"}
+              - {speaker: nowak, text: "Gern. Passt es Ihnen am Samstag um elf Uhr?"}
+              - {speaker: elif, text: "Ja, das passt gut. Wie ist die Adresse?"}
+              - {speaker: nowak, text: "Lindenstraße 12. Bitte klingeln Sie bei Nowak."}
+              - {speaker: elif, text: "Vielen Dank, bis Samstag!"}
+        body:
+          - type: gap_text
+            items:
+              - "Die Wohnung ist noch [[frei]]."
+              - "Nebenkosten: [[140]] Euro im Monat – Strom zahlt Elif [[extra]]."
+              - "Aufzug: [[nein]]"
+              - "Besichtigung: am [[Samstag]] um [[elf / 11]] Uhr"
+              - "Adresse: [[Lindenstraße]] 12"
+        notes:
+          - kind: wort
+            entries:
+              - {de: "Ich rufe wegen der Wohnung an.", en: "I’m calling about the flat.", tr: "Daire için arıyorum."}
+              - {de: "inklusive", en: "included", tr: "dahil"}
+        words: [vermieter, aufzug, strom, besichtigen, klingeln, frei]
+
+      - type: box
+        body:
+          - type: typical_mistake
+            wrong: "Die Wohnung hat 54 Quadratmeter groß."
+            right: "Die Wohnung ==ist== 54 Quadratmeter groß."
+            why:
+              en: "With {de:groß} you need {de:sein}. With {de:haben}, leave {de:groß} out: {de:Die Wohnung hat 54 Quadratmeter.}"
+              tr: "{de:groß} ile {de:sein} kullanılır. {de:haben} ile {de:groß} söylenmez: {de:Die Wohnung hat 54 Quadratmeter.}"
+
+      - type: task
+        id: d
+        skills: [sprechen, partner]
+        rubric:
+          de: "Spielt das Telefongespräch. Tauscht danach die Rollen."
+          en: "Act out the phone call. Then swap roles."
+          tr: "Telefon görüşmesini canlandırın. Sonra rolleri değiştirin."
+        body:
+          - type: role_cards
+            cards:
+              - label: A
+                title: Du suchst eine Wohnung
+                points: ["Du hast Anzeige C gelesen.", "Frag: Noch frei? Nebenkosten? Keller?", "Mach einen Termin für die Besichtigung."]
+              - label: B
+                title: Du vermietest die Wohnung
+                points: ["Die Wohnung ist noch frei.", "Nebenkosten: 210 Euro, mit Heizung.", "Besichtigung: Freitag um 17 Uhr."]
+        answer:
+          open: true
+          model: "Guten Tag, ich rufe wegen der Wohnung in der Südstadt an. Ist sie noch frei? – Ja, sie ist noch frei. – Wie hoch sind die Nebenkosten? – 210 Euro im Monat, mit Heizung. – Kann ich die Wohnung besichtigen? – Gern. Passt es Ihnen am Freitag um 17 Uhr?"
+
+  # ═══ 4 · HAUPTTEIL B ═══════════════════════════════════════ pages 106–107 ═══
+  - nr: 4
+    section: hauptteil
+    title: Wohin kommt das Sofa?
+    subtitle: {en: "Moving in: where things go and where they are", tr: "Taşınma: eşyalar nereye konur, nerede durur?"}
+    blocks:
+      - type: box
+        body:
+          - type: image
+            id: k5-umzug
+            format: strip
+            description: "Elif und Jonas tragen ein Sofa ins Wohnzimmer. Überall Umzugskartons, eine Stehlampe, ein zusammengerollter Teppich und ein Bild lehnen an der Wand."
+            alt:
+              en: "Elif and Jonas carry a sofa into the living room, surrounded by moving boxes, a lamp, a rolled-up rug and a picture."
+              tr: "Elif ve Jonas oturma odasına bir kanepe taşıyor; etrafta koliler, bir lamba, rulo yapılmış bir halı ve bir tablo var."
+
+      - type: task
+        id: a
+        skills: [hoeren, lesen]
+        rubric:
+          de: "Elif zieht ein. Hör den Dialog und lies mit."
+          en: "Elif is moving in. Listen to the dialogue and read along."
+          tr: "Elif eve taşınıyor. Diyaloğu dinle ve metni takip et."
+        audio:
+          track: "5.03"
+          title: Der Umzug
+          duration: "0:55"
+          transcript_from_body: true
+        body:
+          - type: dialogue
+            turns:
+              - {speaker: jonas, text: "Puh, das Sofa ist schwer! Wohin soll ich es stellen?"}
+              - {speaker: elif, text: "Stell es bitte an die Wand, unter das Fenster."}
+              - {speaker: jonas, text: "Okay. Und wohin kommt der Teppich?"}
+              - {speaker: elif, text: "Leg ihn bitte vor das Sofa. Ja, super – jetzt liegt er genau in der Mitte."}
+              - {speaker: jonas, text: "Und das Bild? Hängen wir es über das Sofa?"}
+              - {speaker: elif, text: "Gute Idee! … So, fertig: Das Sofa steht an der Wand, der Teppich liegt vor dem Sofa und das Bild hängt über dem Sofa. Perfekt!"}
+        answer:
+          open: true
+          note:
+            en: "Listen and read along – nothing to check here."
+            tr: "Dinle ve metni takip et – burada kontrol edilecek bir şey yok."
+        notes:
+          - kind: wort
+            words: [schwer, mitte, wand]
+        words: [umzug, einziehen, stellen, legen, haengen, wand, fenster, bild, schwer, mitte]
+
+      - type: task
+        id: b
+        skills: [lesen, grammatik]
+        rubric:
+          de: "Wohin? oder Wo? Lies noch einmal und ergänze die Artikel."
+          en: "Wohin? or Wo? Read again and fill in the articles."
+          tr: "Wohin? mı, Wo? mu? Tekrar oku ve artikelleri tamamla."
+        points: 6
+        body:
+          - type: table_fill
+            first_col_head: false
+            head: ["Wohin? → Akkusativ", "Wo? ● Dativ"]
+            rows:
+              - ["Jonas stellt das Sofa an [[die]] Wand.", "Das Sofa steht an [[der]] Wand."]
+              - ["Er legt den Teppich vor [[das]] Sofa.", "Der Teppich liegt vor [[dem]] Sofa."]
+              - ["Sie hängen das Bild über [[das]] Sofa.", "Das Bild hängt über [[dem]] Sofa."]
+        notes:
+          - kind: sogehts
+            text:
+              en: "Ask yourself first: {de:Wohin?} (movement → accusative) or {de:Wo?} (position → dative)."
+              tr: "Önce kendine sor: {de:Wohin?} (hareket → Akkusativ) mi, {de:Wo?} (konum → Dativ) mu?"
+
+      - type: box
+        body:
+          - type: grammar_box
+            title: Wechselpräpositionen
+            first_col_head: true
+            head: ["", "Wohin? → Akkusativ", "Wo? ● Dativ"]
+            rows:
+              - ["{der Tisch}", "auf ==den== Tisch", "auf ==dem== Tisch"]
+              - ["{das Sofa}", "neben ==das== Sofa", "neben ==dem== Sofa"]
+              - ["{die Wand}", "an ==die== Wand", "an ==der== Wand"]
+              - ["{p:die Fenster}", "zwischen ==die== Fenster", "zwischen ==den== Fenster==n=="]
+            lines:
+              - "**stellen** → stehen · **legen** → liegen · **hängen** → hängen"
+            note: "in · an · auf · unter · über · vor · hinter · neben · zwischen     in + dem = **im** · an + dem = **am** · in + das = **ins**"
+            rule:
+              en: "These nine prepositions take the accusative for movement to a place ({de:Wohin?}) and the dative for a position ({de:Wo?})."
+              tr: "Bu dokuz edat, bir yere doğru hareket varsa ({de:Wohin?}) Akkusativ, bir yerde bulunma varsa ({de:Wo?}) Dativ ile kullanılır."
+        notes:
+          - kind: tipp
+            text:
+              en: "A memory hook: {de:Akkusativ} = {de:Aktion} (something moves). {de:Dativ} = {de:da} (it is already there)."
+              tr: "Akılda tutmak için: {de:Akkusativ} = {de:Aktion} (bir şey hareket ediyor). {de:Dativ} = {de:da} (zaten orada duruyor)."
+
+      - type: task
+        id: c
+        skills: [grammatik]
+        rubric:
+          de: "stellen oder stehen? legen oder liegen? Ergänze in der richtigen Form."
+          en: "stellen or stehen? legen or liegen? Fill in the correct form."
+          tr: "stellen mi stehen mi? legen mi liegen mi? Doğru biçimde tamamla."
+        points: 6
+        body:
+          - type: gap_text
+            items:
+              - "Ich [[stelle]] die Blumen auf den Tisch."
+              - "Jetzt [[stehen]] die Blumen auf dem Tisch."
+              - "Elif [[legt]] das Handy auf das Regal."
+              - "Das Handy [[liegt]] auf dem Regal."
+              - "Die Bücher [[stehen]] schon im Regal."
+              - "Jonas [[legt]] die Schlüssel neben die Lampe."
+        words: [stehen, liegen]
+
+      - type: task
+        id: d
+        skills: [grammatik]
+        rubric:
+          de: "Akkusativ oder Dativ? Kreuze an."
+          en: "Accusative or dative? Tick the right form."
+          tr: "Akkusativ mi, Dativ mi? Doğru biçimi işaretle."
+        points: 6
+        body:
+          - type: gap_text
+            items:
+              - "Die Katze liegt unter {?den|dem*} Tisch."
+              - "Stell den Stuhl bitte neben {?das*|dem} Bett."
+              - "Der Spiegel hängt {?in den|im*} Flur."
+              - "Wir hängen die Lampe über {?den*|dem} Tisch."
+              - "Das Regal steht zwischen {?den|dem*} Schrank und der Tür."
+              - "Leg die Zeitung bitte auf {?das*|dem} Sofa."
+        words: [schrank, stuhl, tuer]
+
+      - type: box
+        body:
+          - type: typical_mistake
+            wrong: "Ich stelle die Lampe auf dem Tisch."
+            right: "Ich stelle die Lampe auf ==den== Tisch."
+            why:
+              en: "{de:stellen} is a movement: {de:Wohin?} → accusative. The dative only says where something already is."
+              tr: "{de:stellen} bir harekettir: {de:Wohin?} → Akkusativ. Dativ yalnızca bir şeyin zaten nerede durduğunu söyler."
+
+  # ═══ 5 · HAUPTTEIL C ═══════════════════════════════════════ pages 108–109 ═══
+  - nr: 5
+    section: hauptteil
+    title: Die Heizung bleibt kalt
+    subtitle: {en: "Reporting a problem to the property management", tr: "Bina yönetimine bir sorunu bildirmek"}
+    blocks:
+      - type: task
+        id: a
+        skills: [hoeren, lesen]
+        rubric:
+          de: "Elif ruft die Hausverwaltung an. Hör das Telefongespräch und lies mit."
+          en: "Elif calls the property management. Listen to the phone call and read along."
+          tr: "Elif bina yönetimini arıyor. Telefon görüşmesini dinle ve metni takip et."
+        audio:
+          track: "5.04"
+          title: Anruf bei der Hausverwaltung
+          duration: "0:52"
+          transcript_from_body: true
+        body:
+          - type: dialogue
+            turns:
+              - {speaker: yilmaz, text: "Hausverwaltung Nordstadt, Yılmaz. Was kann ich für Sie tun?"}
+              - {speaker: elif, text: "Guten Morgen, hier ist Elif Demir aus der Lindenstraße 12. Meine Heizung funktioniert nicht. Wenn ich sie aufdrehe, bleibt sie kalt."}
+              - {speaker: yilmaz, text: "Oh, das tut mir leid. Ich schicke Ihnen unseren Hausmeister. Passt es Ihnen morgen um zehn Uhr?"}
+              - {speaker: elif, text: "Morgen Vormittag arbeite ich leider. Wenn es möglich ist, lieber ab 15 Uhr."}
+              - {speaker: yilmaz, text: "Kein Problem. Dann kommt Herr Becker morgen um 15 Uhr."}
+        answer:
+          open: true
+          note:
+            en: "Listen and read along – nothing to check here."
+            tr: "Dinle ve metni takip et – burada kontrol edilecek bir şey yok."
+        notes:
+          - kind: wort
+            words: [aufdrehen, hausmeister]
+            entries:
+              - {de: "Passt es Ihnen …?", en: "Does … suit you?", tr: "… size uyar mı?"}
+          - kind: landeskunde
+            text:
+              en: "Most blocks of flats in Germany are run by a {de:Hausverwaltung}. It organises repairs and sends the yearly bill for the service charges. Its phone number is usually on the notice board in the hallway."
+              tr: "Almanya’da apartmanların çoğunu bir {de:Hausverwaltung} yönetir. Tamir işlerini ayarlar ve yıllık yan gider hesabını gönderir. Telefon numarası genellikle girişteki panoda yazar."
+        words: [heizung, hausverwaltung, hausmeister, aufdrehen, funktionieren, melden]
+
+      - type: task
+        id: b
+        skills: [lesen]
+        rubric:
+          de: "Richtig oder falsch? Kreuze an."
+          en: "True or false? Tick the right box."
+          tr: "Doğru mu, yanlış mı? İşaretle."
+        points: 4
+        body:
+          - type: true_false
+            items:
+              - {text: "Elif wohnt in der Lindenstraße.", answer: true}
+              - {text: "Die Heizung in Elifs Wohnung ist warm.", answer: false}
+              - {text: "Frau Yılmaz schickt den Hausmeister.", answer: true}
+              - {text: "Elif hat morgen Vormittag Zeit.", answer: false}
+
+      - type: task
+        id: c
+        skills: [grammatik, schreiben]
+        rubric:
+          de: "Lies die Regel und ergänze die Verben."
+          en: "Read the rule and fill in the verbs."
+          tr: "Kuralı oku ve fiilleri tamamla."
+        points: 4
+        body:
+          - type: grammar_box
+            title: wenn-Sätze
+            head: ["Nebensatz · Verb am Ende", "Hauptsatz · Verb zuerst"]
+            rows:
+              - ["Wenn ich die Heizung ==aufdrehe==,", "==bleibt== sie kalt."]
+              - ["Wenn Sie Zeit ==haben==,", "==kommen== Sie bitte um 15 Uhr."]
+            rule:
+              en: "{de:wenn}-clause: the verb goes to the end. The main clause after it starts with its verb."
+              tr: "{de:wenn} cümlesinde fiil sonda durur. Ardından gelen ana cümle fiille başlar."
+          - type: gap_text
+            bank: [nehmen, schreiben, sein, schließen]
+            items:
+              - "Wenn das Fenster nicht [[schließt]], [[schreibe]] ich eine E-Mail."
+              - "Wenn der Aufzug kaputt [[ist]], [[nehmen]] wir die Treppe."
+        notes:
+          - kind: tipp
+            text:
+              en: "Say the sentence out loud. In the {de:wenn} part your voice goes up – and the verb waits at the very end."
+              tr: "Cümleyi yüksek sesle söyle. {de:wenn} bölümünde sesin yükselir, fiil ise en sonda bekler."
+        words: [kaputt, schliessen, treppe]
+
+      - type: task
+        id: d
+        skills: [lesen]
+        rubric:
+          de: "Lies die E-Mail und kreuze an: A, B oder C?"
+          en: "Read the email and tick A, B or C."
+          tr: "E-postayı oku ve işaretle: A, B ya da C?"
+        points: 3
+        body:
+          - type: reading_text
+            id: mail
+            genre: email
+            meta:
+              Von: elif.demir@post.example
+              An: info@hv-nordstadt.example
+              Betreff: Heizung defekt – Lindenstraße 12
+            text: |
+              Sehr geehrte Frau Yılmaz,
+
+              ich wohne seit drei Monaten in der Lindenstraße 12, im dritten Stock links. Leider gibt es ein Problem: Die Heizung im Wohnzimmer funktioniert {#seit}seit Samstag nicht. Wenn ich sie aufdrehe, bleibt sie kalt.
+
+              {#bitte}Können Sie bitte einen Handwerker schicken? {#zeit}Ich bin von Montag bis Mittwoch ab 15 Uhr zu Hause. Wenn Sie mich anrufen möchten, erreichen Sie mich unter 0171 3920045.
+
+              Vielen Dank für Ihre Hilfe!
+
+              Mit freundlichen Grüßen
+              Elif Demir
+          - type: multiple_choice
+            items:
+              - {q: "Seit wann ist die Heizung kalt? ({z:seit})", options: ["seit Samstag", "seit Montag", "seit drei Monaten"], answer: A}
+              - {q: "Was soll die Hausverwaltung tun? ({z:bitte})", options: ["Elif anrufen", "einen Handwerker schicken", "eine neue Heizung kaufen"], answer: B}
+              - {q: "Wann ist Elif zu Hause? ({z:zeit})", options: ["am Vormittag", "am Wochenende", "ab 15 Uhr"], answer: C}
+        notes:
+          - kind: sogehts
+            text:
+              en: "A formal email starts with {de:Sehr geehrte Frau …} or {de:Sehr geehrter Herr …} and ends with {de:Mit freundlichen Grüßen}. After the greeting, carry on in lower case."
+              tr: "Resmî bir e-posta {de:Sehr geehrte Frau …} ya da {de:Sehr geehrter Herr …} ile başlar, {de:Mit freundlichen Grüßen} ile biter. Hitaptan sonra küçük harfle devam edilir."
+          - kind: wort
+            words: [erreichen, handwerker]
+            entries:
+              - {de: "defekt", en: "faulty", tr: "arızalı"}
+        words: [handwerker, betreff, erreichen, problem]
+
+      - type: box
+        body:
+          - type: typical_mistake
+            wrong: "Wenn ich die Heizung aufdrehe, sie bleibt kalt."
+            right: "Wenn ich die Heizung aufdrehe, ==bleibt sie== kalt."
+            why:
+              en: "After a {de:wenn}-clause, the main clause starts with the verb."
+              tr: "{de:wenn} cümlesinden sonra ana cümle fiille başlar."
+
+      - type: task
+        id: e
+        skills: [schreiben]
+        rubric:
+          de: "Dein Fenster schließt nicht richtig. Schreib der Hausverwaltung eine E-Mail."
+          en: "Your window doesn’t close properly. Write an email to the property management."
+          tr: "Pencerenin tam kapanmıyor. Bina yönetimine bir e-posta yaz."
+        body:
+          - type: write_lines
+            lines: 3
+            prompts: ["Wo wohnst du?", "Was ist das Problem?", "Wann hast du Zeit?"]
+            model: "Sehr geehrte Damen und Herren, ich wohne in der Gartenstraße 12 im zweiten Stock. Leider schließt mein Fenster im Bad nicht mehr richtig."
+        answer:
+          open: true
+          model: "Sehr geehrte Damen und Herren, ich wohne in der Gartenstraße 12 im zweiten Stock. Leider schließt mein Fenster im Bad nicht mehr richtig. Können Sie bitte einen Handwerker schicken? Ich bin am Donnerstag und Freitag ab 16 Uhr zu Hause. Vielen Dank! Mit freundlichen Grüßen …"
+        notes:
+          - kind: tipp
+            text:
+              en: "Start with who you are and where you live – the {de:Hausverwaltung} looks after many buildings."
+              tr: "Önce kim olduğunu ve nerede oturduğunu yaz – {de:Hausverwaltung} pek çok binayla ilgilenir."
+
+  # ═══ 6 · VERTIEFUNG ════════════════════════════════════════ pages 110–111 ═══
+  - nr: 6
+    section: vertiefung
+    title: Müll trennen
+    subtitle: {en: "Sorting rubbish – and saying how things are done", tr: "Çöp ayırma – ve işlerin nasıl yapıldığını söylemek"}
+    blocks:
+      - type: task
+        id: a
+        skills: [lesen]
+        rubric:
+          de: "Lies den Aushang im Treppenhaus. Was kommt wohin? Ordne zu."
+          en: "Read the notice in the stairwell. What goes where? Match."
+          tr: "Merdiven boşluğundaki duyuruyu oku. Hangi çöp nereye atılır? Eşleştir."
+        points: 5
+        body:
+          - type: reading_text
+            id: aushang
+            genre: notice
+            title: Mülltrennung in unserem Haus
+            text: |
+              Liebe Mieterinnen und Mieter,
+
+              bitte trennen Sie Ihren Müll richtig. So funktioniert es bei uns:
+
+              {#papier}Papier und Kartons kommen in die blaue Tonne. Sie wird alle zwei Wochen am Mittwoch geleert. {#gelb}Verpackungen aus Plastik und Metall gehören in die gelbe Tonne. Sie wird am Freitag abgeholt. Obst- und Gemüsereste kommen in die braune Tonne. {#rest}Der Restmüll kommt in die graue Tonne. Sie wird jeden Dienstag geleert.
+
+              Glas wird nicht abgeholt. Bitte bringen Sie Flaschen und Gläser zum Container in der Lindenstraße. Wenn eine Tonne voll ist, stellen Sie bitte keine Müllsäcke daneben.
+
+              Vielen Dank!
+              Ihre Hausverwaltung Nordstadt
+          - type: matching
+            left: ["alte Zeitungen", "ein Joghurtbecher", "Bananenschalen", "eine kaputte Tasse", "leere Weinflaschen"]
+            right: ["die graue Tonne", "der Glascontainer", "die blaue Tonne", "die braune Tonne", "die gelbe Tonne"]
+            answer: [C, E, D, A, B]
+        notes:
+          - kind: landeskunde
+            text:
+              en: "The colours of the bins differ from town to town, so always check the notice in your building. Many bottles and cans carry a deposit ({de:Pfand}): take them back to the supermarket and you get 8, 15 or 25 cents each."
+              tr: "Bidonların renkleri şehirden şehre değişir; bu yüzden her zaman binandaki duyuruya bak. Birçok şişe ve kutuda depozito ({de:Pfand}) vardır: markete geri götürürsen tanesi için 8, 15 ya da 25 sent alırsın."
+        words: [muell, tonne, aushang, trennen, verpackung, restmuell, flasche, glas, mieter, leeren, abholen, voll]
+
+      - type: task
+        id: b
+        skills: [lesen]
+        rubric:
+          de: "Lies den Aushang noch einmal. Wann passiert was? Ergänze."
+          en: "Read the notice again. What happens when? Fill in the days."
+          tr: "Duyuruyu tekrar oku. Ne, ne zaman oluyor? Günleri yaz."
+        points: 3
+        body:
+          - type: gap_text
+            items:
+              - "Die blaue Tonne wird am [[Mittwoch]] geleert. ({z:papier})"
+              - "Die gelbe Tonne wird am [[Freitag]] abgeholt. ({z:gelb})"
+              - "Die graue Tonne wird am [[Dienstag]] geleert. ({z:rest})"
+
+      - type: box
+        body:
+          - type: grammar_box
+            title: Passiv Präsens
+            head: ["", "Position 2", "", "Ende"]
+            rows:
+              - ["Der Müll", "==wird==", "am Dienstag", "==abgeholt==."]
+              - ["Die Tonnen", "==werden==", "jede Woche", "==geleert==."]
+            lines:
+              - "Aktiv: Die Müllabfuhr holt den Müll ab. → Passiv: Der Müll wird abgeholt."
+            rule:
+              en: "Use the passive when the action matters more than the person doing it: {de:werden} + past participle. {de:werden} is in position 2, the participle goes to the end."
+              tr: "Kimin yaptığı değil de yapılan iş önemliyse edilgen çatı kullanılır: {de:werden} + Partizip II. {de:werden} ikinci sırada, Partizip II ise en sonda durur."
+        notes:
+          - kind: tipp
+            text:
+              en: "You already know the participle from the {de:Perfekt}: {de:hat abgeholt} → {de:wird abgeholt}."
+              tr: "Partizip II’yi {de:Perfekt}’ten zaten biliyorsun: {de:hat abgeholt} → {de:wird abgeholt}."
+
+      - type: task
+        id: c
+        skills: [grammatik]
+        rubric:
+          de: "Ergänze *wird* oder *werden* und das Partizip."
+          en: "Fill in wird or werden and the participle."
+          tr: "wird ya da werden ile Partizip II’yi yaz."
+        points: 6
+        body:
+          - type: gap_text
+            bank: [abgeholt, geleert, gebracht, getrennt, repariert, geputzt]
+            items:
+              - "Die gelbe Tonne [[wird]] am Freitag [[abgeholt]]."
+              - "Die Tonnen [[werden]] jede Woche [[geleert]]."
+              - "In Deutschland [[wird]] der Müll [[getrennt]]."
+              - "Das Treppenhaus [[wird]] jeden Montag [[geputzt]]."
+              - "Die Flaschen [[werden]] zum Container [[gebracht]]."
+              - "Der Aufzug [[wird]] morgen [[repariert]]."
+        words: [muellabfuhr, treppenhaus, putzen, reparieren, container, pfand]
+
+      - type: box
+        body:
+          - type: typical_mistake
+            wrong: "Der Müll wird am Dienstag abholen."
+            right: "Der Müll wird am Dienstag ==abgeholt==."
+            why:
+              en: "Passive = {de:werden} + past participle (Partizip II), not the infinitive."
+              tr: "Edilgen çatı = {de:werden} + Partizip II; mastar kullanılmaz."
+
+      - type: task
+        id: d
+        skills: [schreiben]
+        rubric:
+          de: "Was wird in deinem Haus gemacht? Schreib drei Sätze im Passiv."
+          en: "What gets done in your building? Write three sentences in the passive."
+          tr: "Senin binanda neler yapılıyor? Edilgen çatıyla üç cümle yaz."
+        body:
+          - type: write_lines
+            lines: 3
+            model: "Bei uns wird der Müll am Montag abgeholt."
+        answer:
+          open: true
+          model: "Bei uns wird der Müll am Montag abgeholt. Das Treppenhaus wird jede Woche geputzt. Die Fahrräder werden im Keller abgestellt."
+
+  # ═══ 7 · VERTIEFUNG ════════════════════════════════════════ pages 112–113 ═══
+  - nr: 7
+    section: vertiefung
+    title: Gute Nachbarn
+    subtitle: {en: "Asking neighbours politely for help", tr: "Komşulardan kibarca yardım istemek"}
+    blocks:
+      - type: task
+        id: a
+        skills: [hoeren]
+        rubric:
+          de: "Elif klingelt bei Herrn Becker. Hör zu und kreuze an."
+          en: "Elif rings Mr Becker’s doorbell. Listen and tick the right answer."
+          tr: "Elif, Bay Becker’in zilini çalıyor. Dinle ve doğru cevabı işaretle."
+        points: 3
+        audio:
+          track: "5.05"
+          title: Bei Herrn Becker
+          duration: "0:50"
+          transcript:
+            turns:
+              - {speaker: elif, text: "Guten Abend, Herr Becker. Entschuldigen Sie die Störung."}
+              - {speaker: becker, text: "Guten Abend, Frau Demir. Kein Problem. Was kann ich für Sie tun?"}
+              - {speaker: elif, text: "Ich möchte ein Bild aufhängen, aber ich habe keine Bohrmaschine. Könnten Sie mir vielleicht eine leihen?"}
+              - {speaker: becker, text: "Natürlich, einen Moment … Hier, bitte. Aber bohren Sie bitte nicht nach 20 Uhr. Sie wissen ja: die Hausordnung."}
+              - {speaker: elif, text: "Selbstverständlich! Ich bringe sie Ihnen morgen zurück. Vielen Dank!"}
+              - {speaker: becker, text: "Gern geschehen. Und wenn Sie Hilfe brauchen, klingeln Sie einfach."}
+        body:
+          - type: multiple_choice
+            items:
+              - {q: "Elif braucht …", options: ["einen Hammer.", "eine Bohrmaschine.", "eine Leiter."], answer: B}
+              - {q: "Elif soll nicht … bohren.", options: ["nach 20 Uhr", "am Samstag", "vor 8 Uhr"], answer: A}
+              - {q: "Elif bringt die Bohrmaschine … zurück.", options: ["heute Abend", "am Wochenende", "morgen"], answer: C}
+        notes:
+          - kind: wort
+            words: [leihen, bohrmaschine]
+            entries:
+              - {de: "Entschuldigen Sie die Störung.", en: "Sorry to disturb you.", tr: "Rahatsız ettiğim için özür dilerim."}
+        words: [bohrmaschine, leihen, leiter, hausordnung, bohren, zurueckbringen, stoeren]
+
+      - type: task
+        id: b
+        skills: [lesen]
+        rubric:
+          de: "Was ist höflicher? Kreuze an."
+          en: "Which is more polite? Tick."
+          tr: "Hangisi daha kibar? İşaretle."
+        points: 3
+        body:
+          - type: multiple_choice
+            items:
+              - {q: "Du brauchst eine Leiter.", options: ["Geben Sie mir Ihre Leiter!", "Könnten Sie mir bitte Ihre Leiter leihen?"], answer: B}
+              - {q: "Du hast keinen Zucker mehr.", options: ["Hätten Sie vielleicht etwas Zucker für mich?", "Ich brauche Zucker."], answer: A}
+              - {q: "Die Musik ist zu laut.", options: ["Machen Sie die Musik leiser!", "Könnten Sie die Musik bitte etwas leiser machen?"], answer: B}
+        notes:
+          - kind: sogehts
+            text:
+              en: "{de:Könnten Sie …?} and {de:Hätten Sie …?} sound softer than {de:Können Sie …?} and {de:Haben Sie …?} Add {de:bitte} or {de:vielleicht} and you are on the safe side."
+              tr: "{de:Könnten Sie …?} ve {de:Hätten Sie …?}, {de:Können Sie …?} ve {de:Haben Sie …?} kalıplarından daha yumuşaktır. Bir de {de:bitte} ya da {de:vielleicht} eklersen işini garantiye alırsın."
+
+      - type: box
+        body:
+          - type: phrases
+            title: Höflich bitten
+            groups:
+              - title: Bitten
+                items:
+                  - {de: "Könnten Sie mir bitte helfen?", en: "Could you help me, please?", tr: "Bana yardım edebilir misiniz lütfen?"}
+                  - {de: "Könntest du mir deine Leiter leihen?", en: "Could you lend me your ladder?", tr: "Bana merdivenini ödünç verebilir misin?"}
+                  - {de: "Hätten Sie vielleicht einen Moment Zeit?", en: "Would you have a moment?", tr: "Acaba bir dakikanız var mı?"}
+                  - {de: "Darf ich Sie etwas fragen?", en: "May I ask you something?", tr: "Size bir şey sorabilir miyim?"}
+              - title: Reagieren
+                items:
+                  - {de: "Ja, gern. · Natürlich.", en: "Yes, gladly. · Of course.", tr: "Evet, memnuniyetle. · Tabii."}
+                  - {de: "Kein Problem.", en: "No problem.", tr: "Sorun değil."}
+                  - {de: "Tut mir leid, das geht leider nicht.", en: "Sorry, I’m afraid that’s not possible.", tr: "Üzgünüm, maalesef olmaz."}
+        notes:
+          - kind: landeskunde
+            text:
+              en: "With neighbours you don’t know yet, start with {de:Sie}. Many will soon offer the {de:du}: {de:„Wir können uns gern duzen.“}"
+              tr: "Henüz tanımadığın komşulara {de:Sie} diye hitap et. Çoğu kısa sürede {de:du} demeyi teklif eder: {de:„Wir können uns gern duzen.“}"
+
+      - type: task
+        id: c
+        skills: [lesen]
+        rubric:
+          de: "Lies die Zettel im Treppenhaus. Richtig oder falsch?"
+          en: "Read the notes in the stairwell. True or false?"
+          tr: "Merdiven boşluğundaki notları oku. Doğru mu, yanlış mı?"
+        points: 5
+        body:
+          - type: reading_text
+            genre: note
+            line_numbers: false
+            parts:
+              - label: "1"
+                text: "Liebe Nachbarn, am Samstag feiere ich meinen Geburtstag. Es kann ein bisschen lauter werden. Wenn es Sie stört, klingeln Sie einfach – oder kommen Sie vorbei!"
+                author: "Mariam Haddad, 2. Stock"
+              - label: "2"
+                text: "Ein Paket für Familie Schmidt liegt bei mir. Sie können es bis 20 Uhr abholen."
+                author: "W. Becker, Erdgeschoss rechts"
+              - label: "3"
+                text: "Wer kann mir helfen? Ich ziehe am 1. Mai aus und suche zwei Personen für den Umzug. Es gibt Pizza für alle!"
+                author: "Kofi, 4. Stock"
+          - type: true_false
+            items:
+              - {text: "Mariam macht am Samstag eine Party.", answer: true}
+              - {text: "Herr Becker hat ein Paket für Mariam.", answer: false}
+              - {text: "Man kann das Paket bis 20 Uhr abholen.", answer: true}
+              - {text: "Kofi zieht in das Haus ein.", answer: false}
+              - {text: "Kofi bezahlt die Helfer mit Geld.", answer: false}
+        words: [zettel, paket, feiern, ausziehen, vorbeikommen]
+
+      - type: task
+        id: d
+        skills: [schreiben]
+        rubric:
+          de: "Du fährst in den Urlaub. Schreib deiner Nachbarin einen Zettel."
+          en: "You’re going on holiday. Write a note to your neighbour."
+          tr: "Tatile gidiyorsun. Komşuna bir not yaz."
+        body:
+          - type: write_lines
+            lines: 3
+            prompts: ["Wann bist du weg?", "Bitte: Blumen gießen", "Wo ist der Schlüssel?"]
+            model: "Liebe Frau Haddad, ich fahre vom 3. bis 17. August in den Urlaub."
+        answer:
+          open: true
+          model: "Liebe Frau Haddad, ich fahre vom 3. bis 17. August in den Urlaub. Könnten Sie bitte meine Blumen gießen? Der Schlüssel liegt bei Herrn Becker. Vielen Dank und liebe Grüße, Elif Demir"
+        words: [giessen, schluessel]
+
+      - type: task
+        id: e
+        skills: [sprechen, partner]
+        rubric:
+          de: "Spielt ein Gespräch im Treppenhaus. Tauscht danach die Rollen."
+          en: "Act out a conversation in the stairwell. Then swap roles."
+          tr: "Merdiven boşluğunda geçen bir konuşmayı canlandırın. Sonra rolleri değiştirin."
+        body:
+          - type: role_cards
+            cards:
+              - label: A
+                title: Du brauchst Hilfe
+                points: ["Dein Internet funktioniert nicht.", "Du möchtest kurz das WLAN benutzen.", "Bitte höflich!"]
+              - label: B
+                title: Du wohnst nebenan
+                points: ["Reagiere freundlich.", "Sag Ja – oder erkläre, warum es nicht geht."]
+        answer:
+          open: true
+          model: "Entschuldigen Sie die Störung. Mein Internet funktioniert nicht. Dürfte ich vielleicht kurz Ihr WLAN benutzen? – Ja, gern. Kein Problem. Das Passwort steht hier."
+
+  # ═══ 8 · VERTIEFUNG ════════════════════════════════════════ pages 114–115 ═══
+  - nr: 8
+    section: vertiefung
+    title: Das Repair-Café
+    subtitle: {en: "Repairing instead of throwing away", tr: "Atmak yerine tamir etmek"}
+    blocks:
+      - type: task
+        id: a
+        skills: [lesen]
+        rubric:
+          de: "Lies den Artikel. Was ist richtig? Kreuze an."
+          en: "Read the article. What is correct? Tick."
+          tr: "Makaleyi oku. Hangisi doğru? İşaretle."
+        points: 4
+        body:
+          - type: reading_text
+            id: artikel
+            genre: article
+            kicker: Nachbarschaft
+            title: Reparieren statt wegwerfen
+            text: |
+              Der Toaster funktioniert nicht mehr, die Lampe bleibt dunkel, das Fahrrad hat einen Platten – was nun? Viele Leute werfen kaputte Sachen einfach weg. In der Nordstadt gibt es eine bessere Idee: das Repair-Café.
+
+              {#wann}Jeden ersten Samstag im Monat treffen sich hier Nachbarn im Stadtteilzentrum. Wer etwas Kaputtes hat, bringt es mit. Am Eingang wird jedes Gerät zuerst angemeldet. {#wer}Dann wird es zusammen mit einem Helfer repariert. „Wir reparieren nicht für die Leute, sondern mit den Leuten“, sagt Kofi Mensah. Der Student hilft seit einem Jahr im Repair-Café.
+
+              {#kosten}Die Reparatur kostet nichts. Wenn man möchte, kann man etwas spenden. Kaffee und Kuchen gibt es auch. {#kofi}„Wenn ein Gerät wieder funktioniert, freuen sich alle“, sagt Kofi. „Und der Müll wird weniger.“
+          - type: multiple_choice
+            items:
+              - {q: "Wann findet das Repair-Café statt? ({z:wann})", options: ["jeden Samstag", "einmal im Monat", "jeden Tag"], answer: B}
+              - {q: "Wer repariert die Geräte? ({z:wer})", options: ["nur die Helfer", "die Besucher allein", "Besucher und Helfer zusammen"], answer: C}
+              - {q: "Was kostet die Reparatur? ({z:kosten})", options: ["nichts", "fünf Euro", "einen Kuchen"], answer: A}
+              - {q: "Was sagt Kofi? ({z:kofi})", options: ["Reparieren ist sehr schwer.", "Alle freuen sich, wenn ein Gerät wieder funktioniert.", "Im Repair-Café gibt es zu viel Müll."], answer: B}
+        notes:
+          - kind: wort
+            words: [geraet, wegwerfen, spenden, eingang]
+            entries:
+              - {de: "einen Platten haben", en: "to have a flat tyre", tr: "lastiği patlak olmak"}
+              - {de: "statt", en: "instead of", tr: "yerine"}
+        words: [geraet, wegwerfen, reparatur, helfer, spenden, stadtteil, anmelden, mitbringen, eingang]
+
+      - type: box
+        body:
+          - type: image
+            id: k5-repaircafe
+            format: strip
+            description: "Im Repair-Café: Kofi und eine ältere Nachbarin reparieren zusammen einen Toaster an einem langen Tisch voller Werkzeug. Im Hintergrund Kaffee, Kuchen und ein Fahrrad auf einem Montageständer."
+            alt:
+              en: "At the repair café, Kofi and an older neighbour repair a toaster together at a long table full of tools."
+              tr: "Repair-Café’de Kofi ve yaşlı bir komşu, aletlerle dolu uzun bir masada birlikte bir tost makinesi tamir ediyor."
+
+      - type: task
+        id: b
+        skills: [hoeren]
+        rubric:
+          de: "Hör das Interview mit Kofi. Richtig oder falsch?"
+          en: "Listen to the interview with Kofi. True or false?"
+          tr: "Kofi ile yapılan röportajı dinle. Doğru mu, yanlış mı?"
+        points: 5
+        audio:
+          track: "5.06"
+          title: Interview im Repair-Café
+          duration: "1:02"
+          transcript:
+            turns:
+              - {speaker: reporterin, text: "Kofi, was wird im Repair-Café am häufigsten repariert?"}
+              - {speaker: kofi, text: "Kaffeemaschinen und Lampen. Aber auch Fahrräder und Handys werden oft gebracht."}
+              - {speaker: reporterin, text: "Kann man alles reparieren?"}
+              - {speaker: kofi, text: "Nein, leider nicht. Wenn ein Ersatzteil fehlt, können wir nichts machen. Aber ungefähr sechzig Prozent der Geräte funktionieren danach wieder."}
+              - {speaker: reporterin, text: "Warum machst du das?"}
+              - {speaker: kofi, text: "Ich repariere gern, und ich lerne hier viele Nachbarn kennen. Außerdem ist es gut für die Umwelt."}
+              - {speaker: reporterin, text: "Wann ist das nächste Repair-Café?"}
+              - {speaker: kofi, text: "Am ersten Samstag im Mai, von 14 bis 17 Uhr."}
+        body:
+          - type: true_false
+            items:
+              - {text: "Am häufigsten werden Fahrräder repariert.", answer: false}
+              - {text: "Man kann nicht alles reparieren.", answer: true}
+              - {text: "Ungefähr 60 Prozent der Geräte funktionieren danach wieder.", answer: true}
+              - {text: "Kofi findet das Repair-Café gut für die Umwelt.", answer: true}
+              - {text: "Das nächste Repair-Café ist am Vormittag.", answer: false}
+        notes:
+          - kind: landeskunde
+            text:
+              en: "There are more than a thousand repair cafés in Germany. Volunteers help for free; you only pay for spare parts."
+              tr: "Almanya’da binden fazla Repair-Café var. Gönüllüler ücretsiz yardım eder; sadece yedek parçanın parasını ödersin."
+        words: [ersatzteil, umwelt, haeufig, fehlen, kennenlernen]
+
+      - type: task
+        id: c
+        skills: [grammatik, schreiben]
+        rubric:
+          de: "Was wird im Repair-Café gemacht? Schreib Sätze im Passiv."
+          en: "What gets done at the repair café? Write sentences in the passive."
+          tr: "Repair-Café’de neler yapılıyor? Edilgen çatıyla cümleler yaz."
+        points: 4
+        body:
+          - type: sentence_build
+            example: {given: "die Geräte / anmelden", answer: "Die Geräte werden angemeldet."}
+            items:
+              - {given: "die Fahrräder / reparieren", answer: "Die Fahrräder werden repariert."}
+              - {given: "Kaffee / trinken", answer: "Kaffee wird getrunken."}
+              - {given: "Kuchen / essen", answer: "Kuchen wird gegessen."}
+              - {given: "Geld / spenden", answer: "Geld wird gespendet."}
+
+      - type: task
+        id: d
+        skills: [sprechen, partner]
+        rubric:
+          de: "Und du? Sprecht zu zweit."
+          en: "And you? Talk in pairs."
+          tr: "Ya sen? İkişerli konuşun."
+        body:
+          - type: bubbles
+            items: ["Was reparierst du selbst?", "Was wirfst du weg, wenn es kaputt ist?", "Gibt es in deiner Stadt ein Repair-Café?"]
+        answer:
+          open: true
+          model: "Ich repariere mein Fahrrad selbst. Wenn mein Handy kaputt ist, bringe ich es in ein Geschäft. In meiner Stadt gibt es ein Repair-Café, aber ich war noch nie dort."
+
+  # ═══ 9 · VERTIEFUNG ════════════════════════════════════════ pages 116–117 ═══
+  - nr: 9
+    section: vertiefung
+    title: Grammatik-Training
+    subtitle: {en: "Practise the grammar of this chapter", tr: "Bu ünitenin dil bilgisini pekiştir"}
+    blocks:
+      - type: task
+        id: a
+        skills: [grammatik]
+        rubric:
+          de: "Akkusativ oder Dativ? Kreuze an."
+          en: "Accusative or dative? Tick the right form."
+          tr: "Akkusativ mi, Dativ mi? Doğru biçimi işaretle."
+        points: 6
+        body:
+          - type: gap_text
+            items:
+              - "Die Zeitung liegt auf {?den|dem*} Tisch."
+              - "Elif hängt die Jacke in {?den*|dem} Schrank."
+              - "Wir stellen das Bett an {?die*|der} Wand."
+              - "Der Fernseher steht zwischen {?die|den*} Fenstern."
+              - "Leg das Buch bitte {?ins*|im} Regal."
+              - "Das Fahrrad steht {?in den|im*} Keller."
+        notes:
+          - kind: sogehts
+            text:
+              en: "First find the verb. {de:stellen}, {de:legen}, {de:hängen} with an object → {de:Wohin?} {de:stehen}, {de:liegen} → {de:Wo?}"
+              tr: "Önce fiili bul. Nesneyle kullanılan {de:stellen}, {de:legen}, {de:hängen} → {de:Wohin?} {de:stehen}, {de:liegen} → {de:Wo?}"
+
+      - type: task
+        id: b
+        skills: [grammatik, schreiben]
+        rubric:
+          de: "Verbinde die Sätze mit *wenn*."
+          en: "Join the sentences with wenn."
+          tr: "Cümleleri wenn ile bağla."
+        points: 6
+        body:
+          - type: sentence_build
+            example: {given: "Die Heizung ist kaputt. Ich rufe den Hausmeister an.", answer: "Wenn die Heizung kaputt ist, rufe ich den Hausmeister an."}
+            items:
+              - {given: "Du brauchst Hilfe. Du kannst bei mir klingeln.", answer: "Wenn du Hilfe brauchst, kannst du bei mir klingeln."}
+              - {given: "Die Tonne ist voll. Wir bringen den Müll zum Container.", answer: "Wenn die Tonne voll ist, bringen wir den Müll zum Container."}
+              - {given: "Es wird zu laut. Die Nachbarn sind sauer.", answer: "Wenn es zu laut wird, sind die Nachbarn sauer."}
+        notes:
+          - kind: tipp
+            text:
+              en: "Don’t forget the comma! In German there is always a comma between the {de:wenn}-clause and the main clause."
+              tr: "Virgülü unutma! Almancada {de:wenn} cümlesi ile ana cümle arasına her zaman virgül konur."
+        words: [sauer]
+
+      - type: task
+        id: c
+        skills: [grammatik, schreiben]
+        rubric:
+          de: "Aktiv → Passiv. Schreib die Sätze neu."
+          en: "Active → passive. Rewrite the sentences."
+          tr: "Etken → edilgen. Cümleleri yeniden yaz."
+        points: 6
+        body:
+          - type: sentence_build
+            example: {given: "Der Hausmeister repariert die Heizung.", answer: "Die Heizung wird repariert."}
+            items:
+              - {given: "Die Mieter trennen den Müll.", answer: "Der Müll wird getrennt."}
+              - {given: "Man putzt das Treppenhaus am Montag.", answer: "Das Treppenhaus wird am Montag geputzt."}
+              - {given: "Man leert die Tonnen am Dienstag.", answer: "Die Tonnen werden am Dienstag geleert."}
+        notes:
+          - kind: sogehts
+            text:
+              en: "The object of the active sentence becomes the subject of the passive sentence: {de:den Müll} → {de:Der Müll wird …}"
+              tr: "Etken cümlenin nesnesi, edilgen cümlenin öznesi olur: {de:den Müll} → {de:Der Müll wird …}"
+
+      - type: task
+        id: d
+        skills: [sprechen, partner]
+        rubric:
+          de: "Spiel: Drei in einer Reihe. Bilde einen richtigen Satz – dann gehört das Feld dir."
+          en: "Game: three in a row. Make a correct sentence and the square is yours."
+          tr: "Oyun: Üçünü yan yana getir. Doğru bir cümle kur, kare senin olsun."
+        body:
+          - type: game_grid
+            cells:
+              - "Wenn ich Zeit habe, …"
+              - "das Sofa → an die Wand"
+              - "Passiv: der Müll / abholen"
+              - "Wo? das Bild · über / Sofa"
+              - "Wenn die Nachbarn laut sind, …"
+              - "Passiv: die Fenster / putzen"
+              - "der Teppich → vor das Bett"
+              - "…, wenn es regnet."
+              - "Wo? die Schlüssel · auf / Tisch"
+        answer:
+          open: true
+          model: "Wenn ich Zeit habe, räume ich die Wohnung auf. · Ich stelle das Sofa an die Wand. · Der Müll wird abgeholt. · Das Bild hängt über dem Sofa. · Wenn die Nachbarn laut sind, klingle ich bei ihnen. · Die Fenster werden geputzt. · Ich lege den Teppich vor das Bett. · Ich bleibe zu Hause, wenn es regnet. · Die Schlüssel liegen auf dem Tisch."
+        notes:
+          - kind: sogehts
+            text:
+              en: "Play in pairs with two different coins. Take turns. Your partner checks the sentence – the answer key has examples."
+              tr: "İkişerli oynayın; iki farklı madeni para kullanın. Sırayla oynayın. Cümleyi partnerin kontrol eder – cevap anahtarında örnekler var."
+
+  # ═══ 10 · VERTIEFUNG ═══════════════════════════════════════ pages 118–119 ═══
+  - nr: 10
+    section: vertiefung
+    title: Alles zusammen
+    subtitle: {en: "Bringing it all together", tr: "Hepsi bir arada"}
+    blocks:
+      - type: task
+        id: a
+        skills: [hoeren, sprechen]
+        rubric:
+          de: "Wortakzent: Hör zu und sprich nach. Welcher Teil ist betont?"
+          en: "Word stress: listen and repeat. Which part is stressed?"
+          tr: "Kelime vurgusu: Dinle ve tekrar et. Hangi bölüm vurgulu?"
+        audio:
+          track: "5.07"
+          title: Wortakzent
+          duration: "0:40"
+          transcript:
+            text: "das Wohnzimmer – das Schlafzimmer – die Hausverwaltung – die Mülltonne – der Kühlschrank – die Waschmaschine – das Treppenhaus – die Nebenkosten"
+        body:
+          - type: word_bank
+            items: ["==Wohn==zimmer", "==Schlaf==zimmer", "==Haus==verwaltung", "==Müll==tonne", "==Kühl==schrank", "==Wasch==maschine", "==Trep==penhaus", "==Ne==benkosten"]
+        answer:
+          text: "Betont ist immer der erste Teil: **Wohn**zimmer, **Schlaf**zimmer, **Haus**verwaltung, **Müll**tonne, **Kühl**schrank, **Wasch**maschine, **Trep**penhaus, **Ne**benkosten."
+        notes:
+          - kind: tipp
+            text:
+              en: "In compound nouns the first part carries the stress – and the last part decides the article: {de:das Haus} + {de:die Verwaltung} = {de:die Hausverwaltung}."
+              tr: "Birleşik isimlerde vurgu ilk bölümdedir; artikeli ise son bölüm belirler: {de:das Haus} + {de:die Verwaltung} = {de:die Hausverwaltung}."
+
+      - type: task
+        id: b
+        skills: [lesen, schreiben]
+        rubric:
+          de: "Lies den Chat und beantworte die Fragen."
+          en: "Read the chat and answer the questions."
+          tr: "Sohbeti oku ve soruları cevapla."
+        points: 4
+        body:
+          - type: reading_text
+            genre: chat
+            line_numbers: false
+            turns:
+              - {speaker: lena, text: "Na, wie ist die neue Wohnung?"}
+              - {speaker: elif, text: "Super! Ich bin am Samstag eingezogen. Jonas hat mir geholfen."}
+              - {speaker: lena, text: "Und, ist schon alles fertig?"}
+              - {speaker: elif, text: "Fast. Das Sofa steht schon im Wohnzimmer, aber die Lampen hängen noch nicht."}
+              - {speaker: lena, text: "Wenn du willst, komme ich am Sonntag vorbei und helfe dir."}
+              - {speaker: elif, text: "Gern! Wenn du kommst, koche ich etwas für uns."}
+              - {speaker: lena, text: "Abgemacht! Soll ich etwas mitbringen?"}
+              - {speaker: elif, text: "Nur gute Laune. Ach ja – und vielleicht eine Bohrmaschine? Herr Becker will seine morgen zurück."}
+          - type: sentence_build
+            items:
+              - {given: "Wann ist Elif eingezogen?", answer: "Am Samstag."}
+              - {given: "Was steht schon im Wohnzimmer?", answer: "Das Sofa."}
+              - {given: "Was macht Elif, wenn Lena kommt?", answer: "Sie kocht etwas."}
+              - {given: "Was soll Lena mitbringen?", answer: "Gute Laune und eine Bohrmaschine."}
+        notes:
+          - kind: wort
+            words: [laune]
+            entries:
+              - {de: "Abgemacht!", en: "Deal!", tr: "Anlaştık!"}
+        words: [laune]
+
+      - type: task
+        id: c
+        skills: [schreiben]
+        rubric:
+          de: "Das Licht im Treppenhaus funktioniert seit einer Woche nicht. Schreib der Hausverwaltung eine E-Mail (30–40 Wörter)."
+          en: "The light in the stairwell hasn’t worked for a week. Write an email to the property management (30–40 words)."
+          tr: "Merdiven boşluğundaki ışık bir haftadır çalışmıyor. Bina yönetimine bir e-posta yaz (30–40 kelime)."
+        body:
+          - type: write_lines
+            lines: 6
+            prompts: ["Was ist das Problem?", "Seit wann?", "Bitte um Reparatur"]
+        answer:
+          open: true
+          model: "Sehr geehrte Damen und Herren, ich wohne in der Lindenstraße 12. Das Licht im Treppenhaus funktioniert seit einer Woche nicht. Abends ist es dort sehr dunkel. Könnten Sie bitte den Hausmeister schicken? Vielen Dank! Mit freundlichen Grüßen, Elif Demir"
+        notes:
+          - kind: sogehts
+            text:
+              en: "This is the format of the A2 exam: three points, one short email. Tick off each point once you have written about it."
+              tr: "A2 sınavındaki format tam olarak bu: üç madde, kısa bir e-posta. Yazdığın her maddeyi işaretle."
+        words: [licht]
+
+      - type: task
+        id: d
+        skills: [sprechen, partner]
+        rubric:
+          de: "Meine Traumwohnung: Beschreib sie. Deine Partnerin oder dein Partner fragt nach."
+          en: "My dream flat: describe it. Your partner asks follow-up questions."
+          tr: "Hayalimdeki ev: Onu anlat. Partnerin sana ek sorular sorsun."
+        body:
+          - type: bubbles
+            items: ["Meine Traumwohnung hat …", "Sie liegt …", "Im Wohnzimmer steht …", "Wenn ich viel Geld habe, …"]
+        answer:
+          open: true
+          model: "Meine Traumwohnung hat vier Zimmer und einen großen Balkon. Sie liegt im Zentrum, aber sie ist ruhig. Im Wohnzimmer steht ein gemütliches Sofa. Wenn ich viel Geld habe, kaufe ich eine neue Küche."
+        words: [traumwohnung]
+
+      - type: box
+        body:
+          - type: image
+            id: k5-traumwohnung
+            format: wide
+            description: "Collage ‚Meine Traumwohnung‘: vier kleine Szenen nebeneinander – ein Balkon voller Pflanzen, eine helle Küche, ein Sofa mit vielen Kissen, ein Fenster mit Blick über die Stadt."
+            alt:
+              en: "Collage of a dream flat: a balcony full of plants, a bright kitchen, a sofa with cushions and a window with a view over the city."
+              tr: "Hayaldeki evi gösteren kolaj: bitkilerle dolu bir balkon, aydınlık bir mutfak, yastıklı bir kanepe ve şehir manzaralı bir pencere."
+
+  # ═══ 11 · ABSCHLUSSTEST ════════════════════════════════════ pages 122–123 ═══
+  - nr: 11
+    section: abschlusstest
+    title: Abschlusstest
+    subtitle: {en: "Chapter test · 30 points", tr: "Ünite testi · 30 puan"}
+    blocks:
+      - type: task
+        id: a
+        skills: [lesen]
+        rubric:
+          de: "Was passt nicht? Streich durch."
+          en: "Which word doesn’t fit? Cross it out."
+          tr: "Hangi kelime uymuyor? Üstünü çiz."
+        points: 5
+        body:
+          - type: odd_one_out
+            items:
+              - {words: [Küche, Bad, Tonne, Flur], answer: Tonne}
+              - {words: [Miete, Kaution, Teppich, Nebenkosten], answer: Teppich}
+              - {words: [Aushang, Sofa, Regal, Schrank], answer: Aushang}
+              - {words: [stellen, legen, hängen, trennen], answer: trennen}
+              - {words: [Papier, Keller, Glas, Restmüll], answer: Keller}
+
+      - type: task
+        id: b
+        skills: [grammatik]
+        rubric:
+          de: "Ergänze den Artikel im Akkusativ oder Dativ."
+          en: "Fill in the article in the accusative or dative."
+          tr: "Artikeli Akkusativ ya da Dativ hâlinde yaz."
+        points: 6
+        body:
+          - type: gap_text
+            items:
+              - "Stell die Lampe bitte neben [[das]] Bett."
+              - "Die Schlüssel liegen auf [[dem]] Tisch."
+              - "Wir hängen das Bild an [[die]] Wand."
+              - "Das Fahrrad steht in [[dem]] Keller."
+              - "Leg den Teppich bitte vor [[die]] Tür."
+              - "Der Spiegel hängt über [[dem]] Regal."
+
+      - type: task
+        id: c
+        skills: [grammatik, schreiben]
+        rubric:
+          de: "Schreib Sätze mit *wenn*."
+          en: "Write sentences with wenn."
+          tr: "wenn ile cümleler yaz."
+        points: 4
+        body:
+          - type: sentence_build
+            items:
+              - {given: "Ich habe ein Problem. Ich rufe die Hausverwaltung an.", answer: "Wenn ich ein Problem habe, rufe ich die Hausverwaltung an."}
+              - {given: "Das Licht ist kaputt. Der Hausmeister kommt.", answer: "Wenn das Licht kaputt ist, kommt der Hausmeister."}
+
+      - type: task
+        id: d
+        skills: [grammatik]
+        rubric:
+          de: "Ergänze die Sätze im Passiv."
+          en: "Complete the sentences in the passive."
+          tr: "Cümleleri edilgen çatıyla tamamla."
+        points: 4
+        body:
+          - type: gap_text
+            items:
+              - "Der Müll [[wird]] am Dienstag [[abgeholt]]. *(abholen)*"
+              - "Die Fahrräder [[werden]] im Repair-Café [[repariert]]. *(reparieren)*"
+
+      - type: task
+        id: e
+        skills: [lesen]
+        rubric:
+          de: "Lies die Hausordnung. Richtig oder falsch?"
+          en: "Read the house rules. True or false?"
+          tr: "Apartman kurallarını oku. Doğru mu, yanlış mı?"
+        points: 5
+        body:
+          - type: reading_text
+            genre: notice
+            line_numbers: false
+            title: Hausordnung (Auszug)
+            text: |
+              1 Von 22 bis 6 Uhr ist Nachtruhe. Bitte keine laute Musik!
+              2 Fahrräder werden im Keller abgestellt, nicht im Treppenhaus.
+              3 Das Treppenhaus wird jede Woche von einem Mieter geputzt. Der Plan hängt im Erdgeschoss.
+              4 Wenn Sie länger als drei Wochen verreisen, informieren Sie bitte die Hausverwaltung.
+              5 Grillen ist auf dem Balkon nicht erlaubt.
+          - type: true_false
+            items:
+              - {text: "Um 23 Uhr darf man laut Musik hören.", answer: false}
+              - {text: "Fahrräder stehen im Keller.", answer: true}
+              - {text: "Die Hausverwaltung putzt das Treppenhaus.", answer: false}
+              - {text: "Der Putzplan hängt im Erdgeschoss.", answer: true}
+              - {text: "Auf dem Balkon darf man grillen.", answer: false}
+        words: [nachtruhe, erlaubt, verreisen, grillen]
+
+      - type: task
+        id: f
+        skills: [hoeren]
+        rubric:
+          de: "Hör die Nachricht auf dem Anrufbeantworter und kreuze an."
+          en: "Listen to the voicemail message and tick the right answer."
+          tr: "Telesekreterdeki mesajı dinle ve doğru cevabı işaretle."
+        points: 3
+        audio:
+          track: "5.08"
+          title: Nachricht von der Hausverwaltung
+          duration: "0:32"
+          transcript:
+            turns:
+              - {speaker: yilmaz, text: "Guten Tag, Frau Demir, hier ist Yılmaz von der Hausverwaltung Nordstadt. Der Handwerker kommt nicht am Dienstag, sondern am Mittwoch, zwischen 8 und 10 Uhr. Bitte seien Sie zu Hause. Wenn der Termin nicht passt, rufen Sie mich bitte zurück. Vielen Dank und auf Wiederhören!"}
+        body:
+          - type: multiple_choice
+            items:
+              - {q: "Wer ruft an?", options: ["der Handwerker", "die Hausverwaltung", "der Vermieter"], answer: B}
+              - {q: "Wann kommt der Handwerker?", options: ["am Dienstag", "am Donnerstag", "am Mittwoch"], answer: C}
+              - {q: "Um wie viel Uhr kommt er?", options: ["zwischen 8 und 10 Uhr", "zwischen 10 und 12 Uhr", "um 18 Uhr"], answer: A}
+
+      - type: task
+        id: g
+        skills: [schreiben]
+        rubric:
+          de: "Du feierst am Samstag deinen Geburtstag. Schreib einen Zettel für deine Nachbarn."
+          en: "You’re celebrating your birthday on Saturday. Write a note for your neighbours."
+          tr: "Cumartesi günü doğum gününü kutluyorsun. Komşuların için bir not yaz."
+        points: 3
+        body:
+          - type: write_lines
+            lines: 4
+            grow: false
+        answer:
+          model: "Liebe Nachbarn, am Samstag feiere ich meinen Geburtstag. Es kann ein bisschen lauter werden. Wenn es Sie stört, klingeln Sie bitte einfach. Viele Grüße, …"
+          note:
+            en: "1 point each: you say when, you warn or invite politely, you add a greeting and your name."
+            tr: "Her biri 1 puan: zamanı söylüyorsun, kibarca haber veriyor ya da davet ediyorsun, selam ve adını ekliyorsun."
+
+  # ═══ 12 · RÜCKBLICK ════════════════════════════════════════════ page 124 ═══
+  - nr: 12
+    section: rueckblick
+    title: Rückblick
+    subtitle: {en: "Looking back", tr: "Geriye bakış"}
+    blocks:
+      - type: task
+        id: a
+        skills: [schreiben]
+        rubric:
+          de: "Denk über das Kapitel nach und ergänze."
+          en: "Think back over the chapter and complete the sentences."
+          tr: "Üniteyi düşün ve cümleleri tamamla."
+        body:
+          - type: self_eval
+            items:
+              - {de: "Das war leicht für mich:", en: "This was easy for me:", tr: "Bu benim için kolaydı:"}
+              - {de: "Das möchte ich noch einmal üben:", en: "I’d like to practise this again:", tr: "Bunu bir kez daha çalışmak istiyorum:"}
+              - {de: "Meine drei wichtigsten Wörter:", en: "My three most important words:", tr: "Benim için en önemli üç kelime:"}
+        answer: {open: true}
+
+# ── Übersicht ────────────────────────────────────────────────── pages 120–121 ──
+uebersicht:
+  grammar:
+    - type: grammar_box
+      title: Wechselpräpositionen
+      first_col_head: true
+      head: ["", "Wohin? → Akkusativ", "Wo? ● Dativ"]
+      rows:
+        - ["{der Tisch}", "Ich lege das Buch auf ==den== Tisch.", "Das Buch liegt auf ==dem== Tisch."]
+        - ["{das Sofa}", "Ich stelle die Lampe neben ==das== Sofa.", "Die Lampe steht neben ==dem== Sofa."]
+        - ["{die Wand}", "Ich hänge das Bild an ==die== Wand.", "Das Bild hängt an ==der== Wand."]
+        - ["{p:die Fenster}", "Ich stelle das Regal zwischen ==die== Fenster.", "Das Regal steht zwischen ==den== Fenster==n==."]
+      lines:
+        - "**stellen** → stehen · **legen** → liegen · **hängen** → hängen"
+      note: "in · an · auf · unter · über · vor · hinter · neben · zwischen     in + dem = **im** · an + dem = **am** · in + das = **ins** · an + das = **ans**"
+      rule:
+        en: "Movement to a place ({de:Wohin?}) → accusative. Position ({de:Wo?}) → dative."
+        tr: "Bir yere doğru hareket ({de:Wohin?}) → Akkusativ. Bir yerde bulunma ({de:Wo?}) → Dativ."
+    - type: grammar_box
+      title: wenn-Sätze
+      head: ["Satz 1", "Satz 2"]
+      rows:
+        - ["Wenn die Heizung kalt ==bleibt==,", "==rufe== ich die Hausverwaltung an."]
+        - ["Ich ==rufe== die Hausverwaltung an,", "wenn die Heizung kalt ==bleibt==."]
+      rule:
+        en: "In the {de:wenn}-clause the verb goes to the end. If the {de:wenn}-clause comes first, the main clause starts with its verb. There is always a comma between the two."
+        tr: "{de:wenn} cümlesinde fiil sonda durur. {de:wenn} cümlesi başta ise ana cümle fiille başlar. İki cümle arasına her zaman virgül konur."
+    - type: grammar_box
+      title: Passiv Präsens
+      head: ["", "werden", "", "Partizip II"]
+      rows:
+        - ["Der Müll", "==wird==", "am Dienstag", "==abgeholt==."]
+        - ["Die Tonnen", "==werden==", "jede Woche", "==geleert==."]
+        - ["Hier", "==werden==", "Fahrräder", "==repariert==."]
+      lines:
+        - "abholen → ab==ge==hol==t== · leeren → ==ge==leer==t== · reparieren → reparier==t== · trinken → ==ge==trunk==en=="
+      rule:
+        en: "Passive = {de:werden} (position 2) + past participle (at the end). Use it when the action is more important than the person doing it."
+        tr: "Edilgen çatı = {de:werden} (2. sırada) + Partizip II (sonda). Kimin yaptığı değil, yapılan iş önemliyse kullanılır."
+  phrases:
+    - type: phrases
+      groups:
+        - title: Die Wohnung beschreiben
+          items:
+            - {de: "Meine Wohnung hat zwei Zimmer.", en: "My flat has two rooms.", tr: "Evimin iki odası var."}
+            - {de: "Die Wohnung ist 54 Quadratmeter groß.", en: "The flat is 54 square metres.", tr: "Daire 54 metrekare."}
+            - {de: "Sie liegt im dritten Stock.", en: "It’s on the third floor.", tr: "Üçüncü katta."}
+            - {de: "Das Wohnzimmer ist hell und gemütlich.", en: "The living room is bright and cosy.", tr: "Oturma odası aydınlık ve rahat."}
+        - title: Nach einer Wohnung fragen
+          items:
+            - {de: "Ich rufe wegen der Wohnung an.", en: "I’m calling about the flat.", tr: "Daire için arıyorum."}
+            - {de: "Ist die Wohnung noch frei?", en: "Is the flat still available?", tr: "Daire hâlâ boş mu?"}
+            - {de: "Wie hoch sind die Nebenkosten?", en: "How much are the service charges?", tr: "Yan giderler ne kadar?"}
+            - {de: "Kann ich die Wohnung besichtigen?", en: "Can I view the flat?", tr: "Daireyi görebilir miyim?"}
+        - title: Ein Problem melden
+          items:
+            - {de: "Meine Heizung funktioniert nicht.", en: "My heating isn’t working.", tr: "Kaloriferim çalışmıyor."}
+            - {de: "Das Fenster schließt nicht richtig.", en: "The window doesn’t close properly.", tr: "Pencere tam kapanmıyor."}
+            - {de: "Können Sie bitte einen Handwerker schicken?", en: "Could you please send a repairman?", tr: "Lütfen bir usta gönderebilir misiniz?"}
+            - {de: "Passt es Ihnen morgen um zehn Uhr?", en: "Does tomorrow at ten suit you?", tr: "Yarın saat on size uyar mı?"}
+        - title: Höflich bitten
+          items:
+            - {de: "Entschuldigen Sie die Störung.", en: "Sorry to disturb you.", tr: "Rahatsız ettiğim için özür dilerim."}
+            - {de: "Könnten Sie mir bitte helfen?", en: "Could you help me, please?", tr: "Bana yardım edebilir misiniz lütfen?"}
+            - {de: "Hätten Sie vielleicht eine Leiter?", en: "Would you happen to have a ladder?", tr: "Acaba merdiveniniz var mı?"}
+            - {de: "Darf ich Sie etwas fragen?", en: "May I ask you something?", tr: "Size bir şey sorabilir miyim?"}
+        - title: Reagieren
+          items:
+            - {de: "Ja, gern. · Natürlich. · Kein Problem.", en: "Yes, gladly. · Of course. · No problem.", tr: "Evet, memnuniyetle. · Tabii. · Sorun değil."}
+            - {de: "Tut mir leid, das geht leider nicht.", en: "Sorry, I’m afraid that’s not possible.", tr: "Üzgünüm, maalesef olmaz."}
+            - {de: "Das tut mir leid.", en: "I’m sorry about that.", tr: "Buna üzüldüm."}
+        - title: Eine formelle E-Mail schreiben
+          items:
+            - {de: "Sehr geehrte Frau … · Sehr geehrter Herr …,", en: "Dear Ms … · Dear Mr …,", tr: "Sayın Bayan … · Sayın Bay …,"}
+            - {de: "Sehr geehrte Damen und Herren,", en: "Dear Sir or Madam,", tr: "Sayın Yetkili,"}
+            - {de: "Vielen Dank für Ihre Hilfe!", en: "Thank you very much for your help!", tr: "Yardımınız için çok teşekkürler!"}
+            - {de: "Mit freundlichen Grüßen", en: "Kind regards", tr: "Saygılarımla"}
+
+next:
+  title: Gesundheit
+  teaser:
+    de: "Im nächsten Kapitel gehst du zum Arzt – auf Deutsch."
+    en: "In the next chapter you go to the doctor – in German."
+    tr: "Bir sonraki ünitede doktora gidiyorsun – Almanca olarak."
+  points:
+    - {de: "Körperteile und Beschwerden", en: "parts of the body and complaints", tr: "vücut bölümleri ve şikâyetler"}
+    - {de: "einen Termin vereinbaren", en: "making an appointment", tr: "randevu almak"}
+    - {de: "Ratschläge geben mit *sollte*", en: "giving advice with sollte", tr: "sollte ile tavsiye vermek"}

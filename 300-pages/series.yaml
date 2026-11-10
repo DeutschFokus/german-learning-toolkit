@@ -1,0 +1,117 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# 300 Pages of German · series configuration
+# Everything that is the same for every level and every language lives here.
+# Colours are OKLCH triplets [lightness, chroma, hue] and are converted (and
+# gamut-mapped) to sRGB at build time, so the whole palette stays one family.
+# ─────────────────────────────────────────────────────────────────────────────
+series:
+  id: 300-pages
+  publisher: Deutsch Fokus
+  author: Deutsch Fokus
+  year: 2026
+  version: "1.0-demo"
+  # ↓ placeholders — replace with the real addresses before selling
+  website: https://www.deutschfokus.example
+  shop_url: https://www.deutschfokus.example/300
+  youtube_url: https://www.youtube.com/@DeutschFokus
+  audio_url: "https://www.deutschfokus.example/audio/{level}/{track}"   # {level} {track}
+  contact: hallo@deutschfokus.example
+
+languages: [en, tr]        # explanation languages; every content string needs all of them
+levels: [a1, a2, b1, b2, c1, c2]
+
+# Fixed anatomy of every book: 12 × 24 + 3 × 4 = 300 learning pages.
+structure:
+  chapters: 12
+  stations_after: [4, 8, 12]
+  station_pages: 4
+  sections:                      # order and page budget inside a chapter
+    - {id: auftakt,       de: Auftakt,       pages: 1}
+    - {id: wortschatz,    de: Wortschatz,    pages: 2}
+    - {id: hauptteil,     de: Hauptteil,     pages: 6}
+    - {id: vertiefung,    de: Vertiefung,    pages: 10}
+    - {id: uebersicht,    de: Übersicht,     pages: 2}
+    - {id: abschlusstest, de: Abschlusstest, pages: 2}
+    - {id: rueckblick,    de: Rückblick,     pages: 1}
+
+# Page geometry in millimetres (A4). Inner/outer margins are mirrored.
+page:
+  width: 210
+  height: 297
+  inner: 18
+  outer: 14
+  top: 21
+  header_top: 9.6
+  footer_top: 268.6          # "Wörter auf dieser Seite" strip
+  folio_top: 277.6
+  main: 132.25               # main column (9 of 12 grid columns)
+  gap: 5
+  margin_col: 40.75          # outer note column (3 of 12 grid columns)
+  label_col: 15              # task address + skill icons
+  bleed: 3                   # --print
+  slug: 7                    # --print: room for crop marks around the bleed
+  tab: {width: 8, height: 17, first: 21, step: 19.6}
+
+fonts:
+  display: {family: "DF Fraunces", file: Fraunces-VF.ttf, italic: Fraunces-Italic-VF.ttf, weights: "100 900"}
+  text:    {family: "DF Sans",     file: SourceSans3-VF.ttf, italic: SourceSans3-Italic-VF.ttf, weights: "200 900"}
+  reading: {family: "DF Serif",    file: SourceSerif4-VF.ttf, italic: SourceSerif4-Italic-VF.ttf, weights: "200 900"}
+  hand:    {family: "DF Hand",     file: Caveat-VF.ttf, weights: "400 700"}
+  credits:
+    - "Fraunces © The Fraunces Project Authors"
+    - "Source Sans 3 and Source Serif 4 © Adobe"
+    - "Caveat © The Caveat Project Authors"
+  licence: SIL Open Font License 1.1
+
+colors:
+  ink:    "#1B1E2F"
+  mute:   "#5A5F73"
+  faint:  "#8D92A3"
+  line:   "#D8DAE2"
+  rule:   "#B8BCCB"
+  grey:   "#F4F3EF"
+  paper:  "#FFFFFF"
+  cream:  "#FBF4E6"
+  navy:   "#161B36"
+  pen:    "#2A3F9D"          # handwriting ink (Königsblau)
+  bad:    "#C4372C"          # strike-through in "typical mistake"
+  # Article colours — fixed across the whole series. Never used for anything else.
+  articles:
+    der: [0.50, 0.19, 258]
+    die: [0.53, 0.21, 356]
+    das: [0.50, 0.14, 150]
+    pl:  [0.31, 0.11, 270]
+  article_tint: {l: 0.955, c: 0.03}      # soft chip behind an article word
+  # Margin-note colours (text-safe tones; used for label + top rule only)
+  notes:
+    tipp:        [0.47, 0.11, 75]
+    wort:        [0.45, 0.15, 305]
+    landeskunde: [0.45, 0.09, 205]
+    sogehts:     [0.42, 0.04, 260]
+  # How the 12 chapter tints of a level are generated from the level hue.
+  chapter:
+    spread: 25               # ± degrees around the level hue; chapter 1 = hue + spread
+    mid:    {l: 0.70, l_swing: 0.08, l_peak_hue: 95, c: 0.17}   # big shapes, tabs, numerals
+    soft:   {l: 0.935, c: 0.05}
+    wash:   {l: 0.972, c: 0.022}
+    hl:     {l: 0.88, c: 0.10}          # highlighter behind endings / verb positions
+    strong: {l: 0.55, c: 0.15}          # safe under white text
+    deep:   {l: 0.40, c: 0.10}          # small coloured text on white
+
+# Design direction (set after the concept round)
+design:
+  cover: monument            # monument | spectrum | fokus
+  opener: buehne             # buehne | register
+
+# Recurring cast. `avatar` drives the generated placeholder portraits.
+cast:
+  elif:   {name: Elif,        full: Elif Demir,      avatar: {skin: "#E0A677", hair: "#2B1D17", style: long,  top: "#E4572E", bg: "#FBE3D2"}}
+  yilmaz: {name: Frau Yılmaz, full: Aylin Yılmaz,    avatar: {skin: "#D9A074", hair: "#3A2A22", style: bob,   top: "#2E4A8F", bg: "#DEE6F7", glasses: true}}
+  becker: {name: Herr Becker, full: Wolfgang Becker, avatar: {skin: "#F0C6A4", hair: "#C9CCD3", style: short, top: "#3F7D6A", bg: "#DDEFE8", beard: "#C9CCD3"}}
+  jonas:  {name: Jonas,       full: Jonas Weber,     avatar: {skin: "#F2CDAE", hair: "#B5793B", style: short, top: "#5B6EE1", bg: "#E3E7FB"}}
+  mariam: {name: Mariam,      full: Mariam Haddad,   avatar: {skin: "#C68E62", hair: "#7A3E69", style: scarf, top: "#7A3E69", bg: "#F1E0EC"}}
+  kofi:   {name: Kofi,        full: Kofi Mensah,     avatar: {skin: "#7B4B2E", hair: "#1E1512", style: curly, top: "#E9A21F", bg: "#FBEFD0"}}
+  lena:   {name: Lena,        full: Lena Schmidt,    avatar: {skin: "#F4D3B8", hair: "#C0392B", style: bun,   top: "#2A9D8F", bg: "#D9F0EC"}}
+  nowak:  {name: Herr Nowak,  full: Tomasz Nowak,    avatar: {skin: "#EBC09C", hair: "#4A4038", style: bald,  top: "#6B7280", bg: "#E7E9EE", glasses: true}}
+  reporterin: {name: Reporterin, full: Reporterin,   avatar: {skin: "#B9825A", hair: "#2B1D17", style: bun,   top: "#B5446E", bg: "#F6DDE7"}}
+  ansage: {name: Ansage,      full: Ansage,          avatar: {style: voice, bg: "#E7E9EE"}}
