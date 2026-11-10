@@ -115,3 +115,14 @@ cast:
   nowak:  {name: Herr Nowak,  full: Tomasz Nowak,    avatar: {skin: "#EBC09C", hair: "#4A4038", style: bald,  top: "#6B7280", bg: "#E7E9EE", glasses: true}}
   reporterin: {name: Reporterin, full: Reporterin,   avatar: {skin: "#B9825A", hair: "#2B1D17", style: bun,   top: "#B5446E", bg: "#F6DDE7"}}
   ansage: {name: Ansage,      full: Ansage,          avatar: {style: voice, bg: "#E7E9EE"}}
+
+# Short portraits for the "Die Personen" page (characters without a bio are not listed there).
+bios:
+  elif:   {de: "27, Krankenpflegerin. Neu in Hannover – und neugierig auf alles.", en: "27, nurse. New in Hanover – and curious about everything.", tr: "27 yaşında, hemşire. Hannover’de yeni ve her şeyi merak ediyor."}
+  jonas:  {de: "30, Elifs Kollege und bester Freund. Hilft bei jedem Umzug.", en: "30, Elif’s colleague and best friend. Helps with every move.", tr: "30 yaşında, Elif’in iş arkadaşı ve en yakın dostu. Her taşınmada yardıma koşar."}
+  becker: {de: "68, Hausmeister im Erdgeschoss. Streng mit der Hausordnung, aber immer hilfsbereit.", en: "68, the caretaker on the ground floor. Strict about the house rules, but always ready to help.", tr: "68 yaşında, zemin kattaki bina görevlisi. Kurallar konusunda titiz ama her zaman yardımsever."}
+  yilmaz: {de: "45, arbeitet bei der Hausverwaltung. Sie löst jedes Problem – meistens noch am selben Tag.", en: "45, works at the property management. She solves every problem – usually the same day.", tr: "45 yaşında, bina yönetiminde çalışıyor. Her sorunu çözer; çoğu zaman aynı gün."}
+  mariam: {de: "34, Ingenieurin und Nachbarin im zweiten Stock. Feiert gern – und lädt alle ein.", en: "34, engineer and neighbour on the second floor. Loves a party – and invites everyone.", tr: "34 yaşında, mühendis ve ikinci kattaki komşu. Kutlamayı sever, herkesi de davet eder."}
+  kofi:   {de: "25, Student. Repariert im Repair-Café alles, was kaputt ist.", en: "25, student. Fixes everything that’s broken at the repair café.", tr: "25 yaşında, öğrenci. Repair-Café’de bozuk olan her şeyi tamir eder."}
+  lena:   {de: "29, Elifs Freundin aus dem Deutschkurs. Schreibt die besten Nachrichten.", en: "29, Elif’s friend from the German course. Writes the best messages.", tr: "29 yaşında, Elif’in Almanca kursundan arkadaşı. En güzel mesajları o yazar."}
+  nowak:  {de: "52, Vermieter. Freundlich, pünktlich und ein bisschen sparsam.", en: "52, landlord. Friendly, punctual and a little thrifty.", tr: "52 yaşında, ev sahibi. Güler yüzlü, dakik ve biraz tutumlu."}

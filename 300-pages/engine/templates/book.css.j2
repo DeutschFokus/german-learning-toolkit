@@ -26,7 +26,9 @@
 {% endfor %}
 html,body{margin:0;padding:0}
 body{font-family:"DF Sans",sans-serif;font-size:var(--fs);line-height:var(--bl);color:var(--ink);
-  font-variation-settings:"opsz" 11,"SOFT" 80,"WONK" 0;font-variant-numeric:lining-nums;hyphens:manual}
+  font-variation-settings:normal;font-variant-numeric:lining-nums;hyphens:manual}
+/* Variable-font rule of this stylesheet: every font-family switch also sets font-variation-settings.
+   Naming an axis a font does not have (e.g. "opsz" on the sans) makes Pango drop the weight. */
 p,h1,h2,h3,h4,ul,ol,dl,dd,figure{margin:0;padding:0}
 ul,ol{list-style:none}
 b,strong{font-weight:700}
@@ -43,7 +45,7 @@ table{border-collapse:collapse;border-spacing:0}
 .sheet{position:relative;width:{{ sheet_w }}mm;height:{{ sheet_h }}mm;break-after:page;overflow:hidden;background:#fff}
 .sheet .bleedbox{position:absolute;left:{{ pg.slug }}mm;top:{{ pg.slug }}mm;width:{{ pg.width + 2 * pg.bleed }}mm;height:{{ pg.height + 2 * pg.bleed }}mm;overflow:hidden}
 .sheet .page{position:absolute;left:{{ pg.bleed }}mm;top:{{ pg.bleed }}mm;overflow:visible;break-after:auto}
-.sheet .mk{position:absolute;background:#000}
+.sheet .crop{position:absolute;background:#000}
 .sheet .slugline{position:absolute;left:{{ pg.slug + pg.bleed + 6 }}mm;top:1.3mm;font-size:5.5pt;line-height:3mm;color:#000;letter-spacing:.04em}
 .body{position:absolute;top:{{ pg.top }}mm;width:var(--tw);height:var(--body-h)}
 .recto .body,.recto .rh,.recto .pw{left:var(--inner)} .verso .body,.verso .rh{left:var(--outer)}
@@ -135,13 +137,13 @@ table{border-collapse:collapse;border-spacing:0}
 .read .hd{background:var(--wash);padding:calc(var(--bl)*.5 - .6pt) 5mm calc(var(--bl)*.5);font-size:8.6pt;line-height:var(--bl);color:var(--mute)}
 .read .hd b{color:var(--ink);font-weight:600;display:inline-block;width:13mm;font-size:7pt;letter-spacing:.1em;text-transform:uppercase}
 .read .hd .sep{margin:0 3mm;color:var(--rule)} .read .hd .subj{color:var(--ink);font-weight:600}
-.read .tx{position:relative;padding:calc(var(--bl)*.5) 5mm calc(var(--bl)*.5) 11mm;font-family:"DF Serif",serif;font-size:var(--fs-read);line-height:var(--bl)}
+.read .tx{position:relative;padding:calc(var(--bl)*.5) 5mm calc(var(--bl)*.5) 11mm;font-family:"DF Serif",serif;font-variation-settings:"opsz" 11;font-size:var(--fs-read);line-height:var(--bl)}
 .read.nonum .tx{padding-left:5mm}
 .read .tx p+p{margin-top:calc(var(--bl)*.5)}
-.read .ln{position:absolute;left:2mm;width:6mm;text-align:right;font-family:"DF Sans";font-size:7.2pt;font-weight:700;color:var(--mute);line-height:var(--bl)}
+.read .ln{position:absolute;left:2mm;width:6mm;text-align:right;font-family:"DF Sans";font-variation-settings:normal;font-size:7.2pt;font-weight:700;color:var(--mute);line-height:var(--bl)}
 .la{display:inline}
 .read.notice{border:0;background:var(--grey);border-radius:1.2mm}
-.read.notice .nt{padding:calc(var(--bl)*.5) 5mm 0 11mm;font-family:"DF Sans";font-weight:800;font-size:11.5pt;line-height:var(--bl);letter-spacing:.01em}
+.read.notice .nt{padding:calc(var(--bl)*.5) 5mm 0 11mm;font-family:"DF Sans";font-variation-settings:normal;font-weight:800;font-size:11.5pt;line-height:var(--bl);letter-spacing:.01em}
 .read.notice.nonum .nt{padding-left:5mm}
 .read.notice .pinrow{position:absolute;left:50%;top:1.6mm;width:3mm;height:3mm;margin-left:-1.5mm;border-radius:50%;background:var(--mid)}
 .read.notice{position:relative}
@@ -156,10 +158,10 @@ table{border-collapse:collapse;border-spacing:0}
 .listing .card{border:.6pt solid var(--rule);background:#fff}
 .card .cl{position:absolute;right:2.4mm;top:calc(var(--bl)*.5);width:5.4mm;height:5.4mm;border-radius:1.2mm;background:var(--mid);font-weight:700;font-size:9pt;line-height:5.4mm;text-align:center}
 .card .ct{display:block;font-weight:700;padding-right:7mm}
-.notecards .card{background:var(--wash);border-radius:1mm;font-family:"DF Hand";font-size:calc(var(--hw) - 1.5pt);line-height:var(--bl);font-weight:500;padding:calc(var(--bl)*.5) 3.6mm}
+.notecards .card{background:var(--wash);border-radius:1mm;font-family:"DF Hand";font-variation-settings:normal;font-size:calc(var(--hw) - 1.5pt);line-height:var(--bl);font-weight:500;padding:calc(var(--bl)*.5) 3.6mm}
 .notecards .card .ct{font-weight:700;padding-right:0}
 .notecards .card .au{display:block;text-align:right;font-weight:600}
-.notecards .card .cl{background:#fff;font-family:"DF Sans";top:auto;bottom:calc(var(--bl)*.5);right:auto;left:3mm;width:4.6mm;height:4.6mm;line-height:4.6mm;font-size:8pt;border-radius:50%}
+.notecards .card .cl{background:#fff;font-family:"DF Sans";font-variation-settings:normal;top:auto;bottom:calc(var(--bl)*.5);right:auto;left:3mm;width:4.6mm;height:4.6mm;line-height:4.6mm;font-size:8pt;border-radius:50%}
 .notecards .card.has-au.has-cl .au{padding-left:7mm}
 .chat{background:var(--grey);border-radius:3mm;padding:calc(var(--bl)*.5) 4mm}
 .msg{display:grid;grid-template-columns:9.6mm 1fr;margin-bottom:calc(var(--bl)*.25);min-height:var(--bl)}
@@ -203,10 +205,10 @@ mark{background:var(--hl);color:var(--ink);font-weight:700;padding:0 .7mm;margin
 .phg .pr span:last-child{font-style:italic;font-size:var(--fs-ex);color:var(--mute)}
 
 /* ── write-in elements ──────────────────────────────────────────────────── */
-.gap{display:inline-block;border:0;border-bottom:.7pt solid var(--ink);height:4.4mm;vertical-align:-1.6pt;margin:0 .8mm;box-sizing:border-box;background:transparent;padding:0;font-family:"DF Hand";font-size:calc(var(--hw) - 2pt);color:var(--pen)}
+.gap{display:inline-block;border:0;border-bottom:.7pt solid var(--ink);height:4.4mm;vertical-align:-1.6pt;margin:0 .8mm;box-sizing:border-box;background:transparent;padding:0;font-family:"DF Hand";font-variation-settings:normal;font-size:calc(var(--hw) - 2pt);color:var(--pen)}
 input.gap,textarea.wl,input.box{appearance:auto}
 .gap.filled{text-align:center;border-bottom-color:var(--rule)}
-.gap.filled .hw{font-family:"DF Hand";font-weight:500;font-size:calc(var(--hw) - 2pt);color:var(--pen);line-height:4.4mm;display:block}
+.gap.filled .hw{font-family:"DF Hand";font-variation-settings:normal;font-weight:500;font-size:calc(var(--hw) - 2pt);color:var(--pen);line-height:4.4mm;display:block}
 .hint{font-style:italic;color:var(--mute);font-size:var(--fs-ex)}
 .box{display:inline-block;width:4.3mm;height:4.3mm;border:.7pt solid var(--ink);border-radius:1mm;vertical-align:-1mm;background:#fff;box-sizing:border-box;margin:0}
 .box.rd{border-radius:50%}
@@ -232,7 +234,7 @@ ol.items>li.exa{counter-increment:none}
 .mc .q{font-weight:600;display:block} .mc .q .n{color:var(--deep);font-weight:700;margin-right:1.6mm}
 .zr{font-weight:400;color:var(--mute);font-size:8.6pt;white-space:nowrap}
 .opt{display:inline-block;margin-right:5mm;white-space:nowrap}
-.mc.stack .opt{display:block;margin-right:0;white-space:normal;padding-left:6.2mm;text-indent:-6.2mm}
+.mc li.stack .opt{display:block;margin-right:0;white-space:normal;padding-left:6.2mm;text-indent:-6.2mm}
 .opt i{display:inline-block;width:4.5mm;height:4.5mm;border:.7pt solid var(--ink);border-radius:50%;font-style:normal;font-size:7.4pt;font-weight:700;line-height:4.5mm;text-align:center;vertical-align:.3pt;margin-right:1.3mm;text-indent:0;box-sizing:border-box;background:#fff}
 .opt input.box{margin-right:1.3mm}
 .match{display:grid;grid-template-columns:1fr 1fr;gap:0 8mm}
@@ -242,9 +244,9 @@ ol.items>li.exa{counter-increment:none}
 .match .mb{flex:none;width:6.4mm;height:4.6mm;border:.7pt solid var(--ink);border-radius:1mm;margin-top:calc((var(--bl) - 4.6mm)/2);box-sizing:border-box;background:#fff}
 .match .mr .k{width:6.5mm} .match .mr .k i{display:inline-block;width:4.5mm;height:4.5mm;border-radius:1.1mm;background:var(--mid);font-style:normal;font-size:7.4pt;line-height:4.5mm;text-align:center;color:var(--ink);margin-top:calc((var(--bl) - 4.5mm)/2);vertical-align:top}
 .lines{line-height:var(--wl);background-image:repeating-linear-gradient(to bottom,transparent 0,transparent calc(var(--wl) - .18mm),var(--rule) calc(var(--wl) - .18mm),var(--rule) var(--wl))}
-.lines .hw{font-family:"DF Hand";font-weight:500;font-size:var(--hw);color:var(--pen);position:relative;top:.55mm;display:block}
+.lines .hw{font-family:"DF Hand";font-variation-settings:normal;font-weight:500;font-size:var(--hw);color:var(--pen);position:relative;top:.55mm;display:block}
 .lines .hl{display:block;height:var(--wl)}
-textarea.wl{display:block;width:100%;border:0;background:transparent;padding:0;margin:0;font-family:"DF Hand";font-size:var(--hw);line-height:var(--wl);color:var(--pen);resize:none;box-sizing:border-box}
+textarea.wl{display:block;width:100%;border:0;background:transparent;padding:0;margin:0;font-family:"DF Hand";font-variation-settings:normal;font-size:var(--hw);line-height:var(--wl);color:var(--pen);resize:none;box-sizing:border-box}
 .hwlab{font-size:6.6pt;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);line-height:var(--bl)}
 .hwlab span{font-weight:400;letter-spacing:.04em;text-transform:none}
 .bullets{display:flex;flex-wrap:wrap;gap:0 5mm;font-size:var(--fs-ex)}
@@ -302,7 +304,7 @@ textarea.wl{display:block;width:100%;border:0;background:transparent;padding:0;m
 .total{display:grid;grid-template-columns:auto 1fr;gap:6mm;align-items:center;background:var(--wash);border-radius:3mm;padding:calc(var(--bl)*.5) 5mm}
 .total .sum{font-family:"DF Fraunces";font-weight:700;font-size:20pt;line-height:calc(var(--bl)*2);white-space:nowrap;font-variation-settings:"opsz" 48,"SOFT" 100,"WONK" 0}
 .total .sum .bx{display:inline-block;width:16mm;height:calc(var(--bl)*1.5);border:.8pt solid var(--ink);border-radius:1.6mm;background:#fff;vertical-align:middle;margin-right:2mm;box-sizing:border-box}
-.total .sum small{display:block;font-family:"DF Sans";font-size:6.8pt;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--deep);line-height:var(--bl)}
+.total .sum small{display:block;font-family:"DF Sans";font-variation-settings:normal;font-size:6.8pt;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--deep);line-height:var(--bl)}
 .total .scale{font-size:calc(var(--fs) - 1.4pt);line-height:calc(var(--bl)*.875)}
 .total .scale li{display:grid;grid-template-columns:13mm 1fr}
 .total .scale b{font-weight:700}
@@ -375,7 +377,7 @@ textarea.wl{display:block;width:100%;border:0;background:transparent;padding:0;m
 .imp h3{margin-top:calc(var(--bl)*.875)} .imp .big{font-family:"DF Fraunces";font-weight:650;font-size:15pt;line-height:var(--bl);font-variation-settings:"opsz" 24,"SOFT" 80,"WONK" 0}
 .imp .lg{margin-bottom:calc(var(--bl)*1)}
 .lg{display:inline-flex;align-items:center;gap:2.2mm;white-space:nowrap} .lg-mark{display:block}
-.lg-word{font-family:"DF Sans";font-weight:400;font-size:13pt;letter-spacing:.01em;line-height:1} .lg-word b{font-weight:800;margin-left:.22em}
+.lg-word{font-family:"DF Sans";font-variation-settings:normal;font-weight:400;font-size:13pt;letter-spacing:.01em;line-height:1} .lg-word b{font-weight:800;margin-left:.22em}
 .toc{margin-top:calc(var(--bl)*1)}
 .toc .grp{font-size:6.8pt;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);line-height:var(--bl);margin-top:calc(var(--bl)*.5)}
 .toc .row{display:grid;grid-template-columns:9.6mm 1fr 52mm 12mm;align-items:baseline;border-top:.5pt solid var(--line);padding:calc(var(--bl)*.125) 0;line-height:var(--bl)}
@@ -460,3 +462,62 @@ textarea.wl{display:block;width:100%;border:0;background:transparent;padding:0;m
 .samplebar{position:absolute;left:-3mm;top:-3mm;width:216mm;height:8.2mm;background:var(--navy);color:var(--cream);font-size:7pt;font-weight:700;letter-spacing:.16em;text-transform:uppercase;line-height:8.6mm;text-align:center;padding-top:3mm;box-sizing:border-box}
 .m{width:var(--tw)}
 .mpage{break-after:page}
+
+/* ── cover · Monument ───────────────────────────────────────────────────── */
+.cover{background:var(--lv);color:var(--cream)}
+.cover .field{position:absolute;left:-3mm;top:-3mm;width:216mm;height:243mm;overflow:hidden;background:var(--lv)}
+.cover .sun{position:absolute;width:300mm;height:300mm;border-radius:50%;background:var(--lv-lite);left:73mm;top:-193mm}
+.cover h1{position:absolute;left:0;top:0;width:210mm;font-weight:400}
+.cover .hero{position:absolute;left:-6mm;top:51mm;font-family:"DF Fraunces";font-weight:900;font-size:346pt;line-height:1;letter-spacing:-.012em;font-variation-settings:"opsz" 144,"SOFT" 100,"WONK" 0;color:var(--cream);white-space:nowrap}
+.cover .rest{position:absolute;left:16mm;top:168.5mm;width:180mm;font-family:"DF Fraunces","DF Sans";font-weight:540;font-size:58pt;line-height:1.02;letter-spacing:-.018em;font-variation-settings:"opsz" 120,"SOFT" 70,"WONK" 0}
+.cover .rest .lvw{color:var(--navy);font-weight:640}
+.cover .badge{position:absolute;left:147mm;top:12.5mm;width:47mm;height:47mm;border-radius:50%;background:var(--navy);color:var(--cream);text-align:center}
+.cover .badge .niv{display:block;margin-top:8.2mm;font-weight:600;font-size:8pt;line-height:12pt;letter-spacing:.2em;text-transform:uppercase}
+.cover .badge .blv{display:block;font-family:"DF Fraunces";font-weight:800;font-size:57pt;line-height:.98;letter-spacing:-.02em;font-variation-settings:"opsz" 144,"SOFT" 100,"WONK" 0}
+.cover .band{position:absolute;left:-3mm;top:240mm;width:216mm;height:60mm;background:var(--cream);color:var(--navy)}
+.cover .expl{position:absolute;left:19mm;top:13mm;font-family:"DF Fraunces","DF Sans";font-style:italic;font-weight:500;font-size:20pt;line-height:26pt;font-variation-settings:"opsz" 36,"SOFT" 50,"WONK" 0;white-space:nowrap}
+.cover .feat{position:absolute;left:19mm;top:31mm;font-weight:600;font-size:10.5pt;letter-spacing:.1em;text-transform:uppercase;white-space:nowrap}
+.cover .feat li{display:inline-block;margin-right:4.5mm;padding-right:4.5mm;border-right:.8pt solid var(--navy);line-height:1}
+.cover .feat li:last-child{border-right:0;margin-right:0;padding-right:0}
+.cover .blogo{position:absolute;right:19mm;top:13.5mm}
+.square{width:210mm;height:210mm}
+.square .field{height:160mm}
+.square .hero{top:8mm;font-size:300pt;left:5mm}
+.square .rest{top:106mm;font-size:42pt;left:19mm}
+.square .badge{left:150mm;top:9mm;width:42mm;height:42mm} .square .badge .niv{margin-top:7mm} .square .badge .blv{font-size:50pt}
+.square .band{top:157mm;height:56mm}
+.square .expl{top:11mm} .square .feat{top:28mm} .square .blogo{top:11.5mm}
+.full{position:relative}
+.full .phr.two{display:grid;grid-template-columns:1fr 1fr;gap:0 9mm;padding:calc(var(--bl)*.75) 6mm}
+.full .phr.two .phg{margin-top:0;margin-bottom:calc(var(--bl)*.75)}
+.full .gram{padding:calc(var(--bl)*.5) 6mm}
+.full .gram td.rh1{width:30mm}
+.rvlead{font-style:italic;font-size:var(--fs-ex);color:var(--mute);margin-bottom:calc(var(--bl)*.5)}
+.rvres{margin-top:calc(var(--bl)*.5);font-weight:600} .rvres .gap{width:16mm}
+.opgrid{position:absolute;left:18mm;top:134mm;width:178mm;display:grid;grid-template-columns:122mm 46mm;column-gap:10mm}
+.opgrid .wurow{grid-column:1 / 3}
+.opgrid .wu{grid-template-columns:var(--label) calc(178mm - var(--label)) 0 0 !important}
+
+.fr small,.audio .tl,.audio .td,.toc5 b,.toc5 span{font-variation-settings:normal}
+/* compact gap lists: two per row */
+ol.items.compact{grid-template-columns:1fr 1fr}
+.pd-leg{grid-template-columns:1fr 1fr}
+.ph.nocap .ph-cap span{display:none}
+
+/* ── refinements after the first full render ────────────────────────────── */
+mark{mix-blend-mode:multiply}
+.ichs{margin-left:1.4mm}
+.cards.listing{grid-template-columns:1fr;gap:1.6mm}
+.listing .card{padding:calc(var(--bl)*.25 - .6pt) 3.4mm calc(var(--bl)*.25 - .6pt) 11mm;font-size:var(--fs)}
+.listing .card .cl{left:3mm;right:auto;top:calc(var(--bl)*.25 - .6pt + (var(--bl) - 5.4mm)/2)}
+.listing .card .ct{display:inline;padding-right:0;margin-right:2mm}
+.cards.notecards.n1{grid-template-columns:1fr;gap:1.6mm}
+.notecards.n1 .card.has-cl{padding-left:11mm}
+.notecards.n1 .card .cl{left:3.4mm;bottom:auto;top:calc(var(--bl)*.5 + (var(--bl) - 4.6mm)/2)}
+.notecards.n1 .card.has-au.has-cl .au{padding-left:0}
+.full .phr.two .pr{grid-template-columns:1fr;padding:calc(var(--bl)*.125 - .25pt) 0}
+.full .phr.two .pr span:first-child{padding-right:0}
+.how .demo .tk-l{grid-column:1 !important} .how .demo .tk-m{grid-column:2 !important} .how .demo .mn{display:none}
+.se .de{display:inline}.se .ex{display:inline;margin-left:2mm}
+.recto .task.wide .tk-m,.m .task.wide .tk-m{grid-column:2 / 5}
+.verso .task.wide .tk-m{grid-column:1 / 5}

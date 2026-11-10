@@ -106,7 +106,7 @@
 {% endmacro %}
 
 {% macro mc(v) %}
-<ul class="mc{{ ' stack' if v.stack }}" lang="de">{% for it in v.items %}<li><span class="q">{% if v.items|length > 1 %}<span class="n">{{ loop.index }}</span>{% endif %}{{ it.q }}</span>{% for letter, text, name in it.opts %}<span class="opt">{% if v.forms %}<input class="box rd" type="checkbox" name="{{ name }}" aria-label="{{ letter }}">{% endif %}<i>{{ letter }}</i>{{ text }}</span>{% endfor %}</li>{% endfor %}</ul>
+<ul class="mc" lang="de">{% for it in v.items %}<li{% if it.stack %} class="stack"{% endif %}><span class="q">{% if v.items|length > 1 %}<span class="n">{{ loop.index }}</span>{% endif %}{{ it.q }}</span>{% for letter, text, name in it.opts %}<span class="opt">{% if v.forms %}<input class="box rd" type="checkbox" name="{{ name }}" aria-label="{{ letter }}">{% endif %}<i>{{ letter }}</i>{{ text }}</span>{% endfor %}</li>{% endfor %}</ul>
 {% endmacro %}
 
 {% macro matching(v) %}
@@ -157,7 +157,7 @@
 {% endmacro %}
 
 {% macro image(v) %}
-<div class="ph {{ v.format }}" id="{{ v.id }}">{% if v.src %}<img src="{{ v.src }}" alt="{{ v.alt }}">{% else %}{{ v.art }}<div class="ph-cap">{{ v.icon }}<span lang="de"><b>{{ v.label }}</b>{{ v.caption }}</span></div>{% endif %}{% for m in v.markers %}<span class="mk" style="left:{{ m.x }}%;top:{{ m.y }}%">{{ m.n }}</span>{% endfor %}</div>
+<div class="ph {{ v.format }}" id="{{ v.id }}"{% if v.style %} style="{{ v.style }}"{% endif %}>{% if v.src %}<img src="{{ v.src }}" alt="{{ v.alt }}">{% else %}{{ v.art }}<div class="ph-cap">{{ v.icon }}<span lang="de"><b>{{ v.label }}</b>{{ v.caption }}</span></div>{% endif %}{% for m in v.markers %}<span class="mk" style="left:{{ m.x }}%;top:{{ m.y }}%">{{ m.n }}</span>{% endfor %}</div>
 {% endmacro %}
 
 {% macro picdict(v) %}

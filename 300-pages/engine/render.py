@@ -31,6 +31,32 @@ def esc(s: str) -> str:
     return html.escape(str(s), quote=False)
 
 
+class View:
+    """Attribute view of a dict for templates (so a key called `items` is not mistaken for dict.items)."""
+
+    def __init__(self, data: dict):
+        self.__dict__.update({k: to_view(v) for k, v in data.items()})
+
+
+def to_view(obj):
+    if isinstance(obj, dict):
+        return View(obj)
+    if isinstance(obj, list):
+        return [to_view(x) for x in obj]
+    return obj
+
+
+class Macros:
+    """Call Jinja macros with plain dicts: arguments are converted to views on the way in."""
+
+    def __init__(self, module):
+        self._m = module
+
+    def __getattr__(self, name):
+        macro = getattr(self._m, name)
+        return lambda *args: str(macro(*[to_view(a) for a in args]))
+
+
 @dataclass
 class Unit:
     uid: str
@@ -69,7 +95,7 @@ class Renderer:
         self.env = jinja2.Environment(
             loader=jinja2.FileSystemLoader(str(cfg.root / "engine" / "templates")),
             autoescape=False, trim_blocks=True, lstrip_blocks=True, undefined=jinja2.StrictUndefined)
-        self.B = self.env.get_template("blocks.html.j2").module
+        self.B = Macros(self.env.get_template("blocks.html.j2").module)
         self.inline = Inline(lang=cfg.lang, forms=self.forms, page_ref=self._page_ref, line_ref=self._line_ref,
                              de_page_abbr=cfg.de("page_abbr"), de_line_abbr=cfg.de("line_abbr"))
         self.cast = cfg.series["cast"]
@@ -78,12 +104,12 @@ class Renderer:
         self.built: set[str] = set()                  # anchors that exist in this build
         self.line_of: dict[tuple[str, str], int] = {}
         self.text_geom: dict[str, list[tuple[float, int]]] = {}   # reading text → [(top pt, lines)]
-        self.grow: dict[str, int] = {}                # write-lines id → extra lines
+        self.grow: dict[str, int] = {}                # elastic element id → steps it has grown
+        self.elastic: dict[str, tuple[float, int]] = {}   # elastic element id → (step pt, max steps)
         self.answers: dict[str, AnswerEntry] = {}
         self._ans: list[str] = []
         self._scope = "x"
         self._n = 0
-        self._img = 0
         self._seen_types: set = set()
         self._grow_ids: list[str] = []
 
@@ -210,7 +236,8 @@ class Renderer:
                 for t in b.turns]})
         if b.parts:
             kind = "listing" if b.genre == "listing" else "notecards"
-            return self.B.cards({"kind": kind, "n": min(3, len(b.parts)), "cards": [
+            n = 1 if (kind == "listing" or any(len(p.text) > 90 for p in b.parts)) else min(3, len(b.parts))
+            return self.B.cards({"kind": kind, "n": n, "cards": [
                 {"label": esc(p.label or ""), "title": self.de(p.title) if p.title else "", "text": self.de(p.text),
                  "author": self.de(p.author) if p.author else ""} for p in b.parts]})
         rid = f"rt-{self._scope}-{b.id or self._fid('r')}"
@@ -283,15 +310,14 @@ class Renderer:
 
     def _b_multiple_choice(self, b: M.MultipleChoice):
         items = []
-        stack = any(len(self.inline.plain(o)) > 30 for it in b.items for o in it.options) or \
-            any(sum(len(self.inline.plain(o)) + 6 for o in it.options) > 78 for it in b.items)
         for it in b.items:
-            items.append({"q": self.de(it.q), "opts": [("ABCD"[i], self.de(o), self._fid("mc")) for i, o in enumerate(it.options)]})
+            items.append({"q": self.de(it.q), "stack": any(len(self.inline.plain(o)) > 38 for o in it.options),
+                          "opts": [("ABCD"[i], self.de(o), self._fid("mc")) for i, o in enumerate(it.options)]})
         if len(b.items) == 1:
             self._ans.append(b.items[0].answer)
         else:
             self._ans.append(" &nbsp; ".join(f'<b class="n">{i}</b> {it.answer}' for i, it in enumerate(b.items, 1)))
-        return self.B.mc({"items": items, "stack": stack, "forms": self.forms})
+        return self.B.mc({"items": items, "forms": self.forms})
 
     def _b_matching(self, b: M.Matching):
         self._ans.append(" &nbsp; ".join(f'<b class="n">{i}</b> {a}' for i, a in enumerate(b.answer, 1)))
@@ -302,6 +328,7 @@ class Renderer:
         wid = f"wl-{self._fid('w')}"
         if b.grow:
             self._grow_ids.append(wid)
+            self.elastic[wid] = (float(self.cfg.lv["type"]["write_line"]) * 72 / 25.4, 3)
         n = b.lines + (self.grow.get(wid, 0) if b.grow else 0)
         return self.B.lines({"id": wid, "prompts": [self.de(p) for p in b.prompts], "model": self.de(b.model) if b.model else "",
                              "label": self.L("example"), "hint": esc(self.cfg.ui("labels.example_hint")), "lang": self.cfg.lang,
@@ -363,14 +390,25 @@ class Renderer:
     def _b_text(self, b: M.Paragraph):
         return self.B.para({"de": self.de(b.de) if b.de else "", "ex": self.ex(b.expl) if b.expl else "", "lang": self.cfg.lang})
 
-    def image_view(self, im: M.Image, tokens: dict, fmt: Optional[str] = None) -> dict:
-        self._img += 1
+    IMAGE_LINES = {"strip": 7, "wide": 11, "square": 12, "tall": 16}
+
+    def image_view(self, im: M.Image, tokens: dict, fmt: Optional[str] = None, elastic: bool = True) -> dict:
         alt = self.cfg.t(im.alt) if im.alt else im.description
         src = ""
         if im.src and (self.cfg.root / im.src).exists():
             src = (self.cfg.root / im.src).as_uri()
-        return {"id": f"img-{im.id}", "format": fmt or im.format, "src": src, "alt": html.escape(alt, quote=True),
-                "art": art.placeholder_art(tokens, alt, self._img), "icon": self.icon("bild", "4.6mm", self.cfg.de("labels.illustration")),
+        fmt = fmt or im.format
+        iid = f"img-{im.id}"
+        style = ""
+        if fmt in self.IMAGE_LINES:
+            if elastic:
+                self._grow_ids.append(iid)
+                self.elastic[iid] = (self.cfg.bl / 2, 10)
+            lines = self.IMAGE_LINES[fmt] + self.grow.get(iid, 0) * 0.5
+            style = f"height:calc(var(--bl)*{lines:g})"
+        variant = sum(ord(c) for c in im.id) % 3
+        return {"id": iid, "format": fmt + (" nocap" if im.markers else ""), "src": src, "alt": html.escape(alt, quote=True), "style": style,
+                "art": art.placeholder_art(tokens, alt, variant), "icon": self.icon("bild", "4.6mm", self.cfg.de("labels.illustration")),
                 "label": self.L("illustration"), "caption": esc(self.inline.plain(im.description)),
                 "markers": [{"n": m.n, "x": m.x, "y": m.y} for m in im.markers]}
 
@@ -509,7 +547,7 @@ class Renderer:
         uid = f"total-{ch.key}"
         h = (f'<div class="total" id="{uid}"><div class="sum"><small lang="de">{self.L("total")}</small><span class="bx"></span>/ {total}</div>'
              f'<ul class="scale" lang="{self.cfg.lang}">{"".join(rows)}</ul></div>')
-        return Unit(uid, "total", f'<article class="task boxu"><div class="tk-l"></div><div class="tk-m">{h}</div><aside class="mn"></aside></article>'.replace('<article class="task boxu">', f'<article class="task boxu" id="u-{uid}">'),
+        return Unit("u-" + uid, "total", f'<article class="task boxu wide" id="u-{uid}"><div class="tk-l"></div><div class="tk-m">{h}</div></article>',
                     ch.key, teil.nr, "abschlusstest")
 
     def cando_view(self, ch: M.Chapter, end: bool) -> str:

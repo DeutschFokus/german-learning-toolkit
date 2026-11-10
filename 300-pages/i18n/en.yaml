@@ -85,8 +85,7 @@ test:
     - [0, 14, "Take your time and repeat the chapter. You can do this."]
   total: Your total
 review:
-  compare: "Compare with your ticks on {page}."
-  lead: "You started this chapter with a checklist. Tick it again now."
+  lead: "Tick the checklist again – and compare with your ticks on {page}."
   look_again: "Not sure yet? Look again:"
 station:
   lead_review: "Mixed practice from the last four chapters."
@@ -114,3 +113,6 @@ sales:
   youtube: Free German stories every week on YouTube
   series: "The series: one book per level, from A1 to C2"
   thanks: "Thank you for learning with Deutsch Fokus."
+overview:
+  grammar: "The grammar of this chapter at a glance"
+  phrases: "Useful phrases – your cheat sheet for real life"

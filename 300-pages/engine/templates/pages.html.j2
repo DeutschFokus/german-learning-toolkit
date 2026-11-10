@@ -1,0 +1,126 @@
+{#- ───────────────────────────────────────────────────────────────────────────
+   Whole-page templates: shell, cover, front matter, chapter opener, sales page.
+   ─────────────────────────────────────────────────────────────────────────── -#}
+
+{% macro shell(p) %}
+{% if p.print %}<div class="sheet">{{ p.marks }}<div class="bleedbox">{% endif %}
+<section class="page {{ p.side }} {{ p.palette }} {{ p.cls }}" id="{{ p.id }}" lang="de">
+{{ p.inner }}
+</section>
+{% if p.print %}</div></div>{% endif %}
+{% endmacro %}
+
+{% macro running(h) %}
+<header class="rh">{% if h.prog %}<span class="prog">{% for w, state in h.prog %}<i class="{{ state }}" style="width:{{ w }}mm"></i>{% endfor %}</span>{% endif %}<b>{{ h.left }}</b>{% if h.mid %} · {{ h.mid }}{% endif %}{% if h.right %}<span class="sl">/</span>{{ h.right }}{% endif %}</header>
+{% endmacro %}
+
+{# ── cover ───────────────────────────────────────────────────────────────── #}
+{% macro cover(c) %}
+{% if c.sample %}<div class="samplebar" lang="{{ c.lang }}">{{ c.sample }}</div>{% endif %}
+<div class="field"><div class="sun"></div></div>
+<div class="badge"><span class="niv">{{ c.niveau }}</span><span class="blv">{{ c.level }}</span></div>
+<h1 lang="{{ c.lang }}"><span class="hero">300</span> <span class="rest">{{ c.rest }}</span></h1>
+<div class="band"><div class="expl" lang="{{ c.lang }}">{{ c.expl }}</div><ul class="feat" lang="{{ c.lang }}">{% for f in c.features %}<li>{{ f }}</li>{% endfor %}</ul><div class="blogo">{{ c.logo }}</div></div>
+{% endmacro %}
+
+{# ── imprint ─────────────────────────────────────────────────────────────── #}
+{% macro imprint(i) %}
+<div class="imp" lang="{{ i.lang }}">
+<div>{{ i.logo }}</div>
+<p class="big">{{ i.title }}</p>
+<p>{{ i.expl }}</p>
+<p style="margin-top:calc(var(--bl)*.875)">{{ i.copyright }}<br>{{ i.version }}</p>
+<h3>{{ i.licence_title }}</h3><p>{{ i.licence }}</p>
+<h3>{{ i.audio_title }}</h3><p>{{ i.audio }}</p>
+<h3>{{ i.fonts_title }}</h3><p>{{ i.fonts }}<br>{{ i.credits }}</p>
+<p style="margin-top:calc(var(--bl)*.875)">{{ i.characters }}<br>{{ i.contact }}</p>
+</div>
+{% endmacro %}
+
+{# ── table of contents ───────────────────────────────────────────────────── #}
+{% macro toc(t) %}
+<div class="fm"><h1 lang="de" id="toc">{{ t.title }}</h1><p class="lead" lang="{{ t.lang }}">{{ t.intro }}</p>
+<div class="toc">
+<div class="grp" lang="{{ t.lang }}">{{ t.front }}</div>
+{% for r in t.front_rows %}<div class="row plain"><span class="ti">{{ r.link }}</span><span class="pg">{{ r.page }}</span></div>{% endfor %}
+<div class="grp" lang="de">{{ t.chapters_label }}</div>
+{% for r in t.rows %}
+{% if r.kind == 'chapter' %}<div class="row{{ ' off' if not r.built }}" style="--cm:{{ r.color }}"><span class="no">{{ r.no }}</span><span class="ti">{{ r.link }}<span lang="{{ t.lang }}">{{ r.sub }}</span></span><span class="gr" lang="de">{{ r.grammar }}</span><span class="pg">{{ r.page }}</span></div>
+{% else %}<div class="row zs{{ ' off' if not r.built }}"><span class="no">Z{{ r.no }}</span><span class="ti">{{ r.link }}<span lang="{{ t.lang }}">{{ r.sub }}</span></span><span class="gr"></span><span class="pg">{{ r.page }}</span></div>
+{% endif %}
+{% endfor %}
+<div class="grp" lang="{{ t.lang }}">{{ t.appendix }}</div>
+{% for r in t.back_rows %}<div class="row plain{{ ' off' if not r.built }}"><span class="ti">{{ r.link }}</span><span class="pg">{{ r.page }}</span></div>{% endfor %}
+</div></div>
+{% endmacro %}
+
+{# ── how this book works · left page ─────────────────────────────────────── #}
+{% macro how1(h) %}
+<div class="fm how"><h1 lang="de" id="how">{{ h.title }}</h1><p class="lead" lang="{{ h.lang }}">{{ h.lead }}</p>
+<div class="sec"><h2 lang="de">{{ h.path_title }}</h2>
+<div class="path">{% for s in h.path %}<div class="stp"><i>{{ s.pages }}</i><b lang="de">{{ s.name }}</b><span lang="{{ h.lang }}">{{ s.text }}</span></div>{% endfor %}</div></div>
+<div class="sec"><h2 lang="de">{{ h.task_title }}</h2><p class="expl" lang="{{ h.lang }}">{{ h.task }}</p>
+<div class="demo recto">{{ h.sample_task }}
+<span class="pin" style="left:1mm;top:1.6mm">1</span><span class="pin" style="left:1mm;top:8.6mm">2</span><span class="pin" style="left:19mm;top:-2.2mm">3</span><span class="pin" style="right:17mm;top:-2.2mm">4</span><span class="pin" style="right:2.5mm;top:-2.2mm">5</span></div>
+<div class="cal" lang="{{ h.lang }}">{% for c in h.task_points %}<span><b>{{ loop.index }}</b>{{ c }}</span>{% endfor %}</div></div>
+<div class="sec"><h2 lang="de">{{ h.icons_title }}</h2><p class="expl" lang="{{ h.lang }}">{{ h.icons }}</p>
+<div class="icons" lang="de">{% for ic, name in h.icon_list %}<span>{{ ic }}{{ name }}</span>{% endfor %}</div></div>
+<div class="sec"><h2 lang="de">{{ h.colors_title }}</h2><p class="expl" lang="{{ h.lang }}">{{ h.colors }}</p>
+<p class="chips" lang="de" style="margin-top:calc(var(--bl)*.5)"><span class="cder">der Flur, -e</span><span class="cdie">die Küche, -n</span><span class="cdas">das Bad, ¨-er</span><span class="cpl">die Nebenkosten (Pl.)</span></p></div>
+</div>
+{% endmacro %}
+
+{# ── how this book works · right page ────────────────────────────────────── #}
+{% macro how2(h) %}
+<div class="fm how">
+<div class="grid2" style="margin-top:0">
+<div class="cd"><h2 lang="de">{{ h.margin_title }}</h2><p class="expl" lang="{{ h.lang }}">{{ h.margin }}</p>
+<ul class="mnl smp">{% for m in h.margin_items %}<li><span class="nh" style="--nc:var(--n-{{ m.kind }})" lang="de">{{ m.icon }}{{ m.label }}</span><span lang="{{ h.lang }}">{{ m.text }}</span></li>{% endfor %}</ul></div>
+<div class="cd"><h2 lang="de">{{ h.audio_title }}</h2><p class="expl" lang="{{ h.lang }}">{{ h.audio }}</p>
+<div class="smp" style="width:42mm">{{ h.sample_audio }}</div></div>
+<div class="cd"><h2 lang="de">{{ h.mistake_title }}</h2><p class="expl" lang="{{ h.lang }}">{{ h.mistake }}</p>
+<div class="smp">{{ h.sample_mistake }}</div></div>
+<div class="cd"><h2 lang="de">{{ h.hand_title }}</h2><p class="expl" lang="{{ h.lang }}">{{ h.hand }}</p>
+<div class="smp">{{ h.sample_lines }}</div></div>
+<div class="cd"><h2 lang="de">{{ h.check_title }}</h2><p class="expl" lang="{{ h.lang }}">{{ h.check }}</p>
+<div class="smp">{{ h.sample_cando }}</div></div>
+<div class="cd"><h2 lang="de">{{ h.words_title }}</h2><p class="expl" lang="{{ h.lang }}">{{ h.words }}</p>
+<div class="smp">{{ h.sample_words }}</div></div>
+</div>
+<div class="tips"><h2 lang="{{ h.lang }}">{{ h.tips_title }}</h2><ol lang="{{ h.lang }}">{% for t in h.tips %}<li><b>{{ loop.index }}</b><span>{{ t }}</span></li>{% endfor %}</ol></div>
+</div>
+{% endmacro %}
+
+{# ── the cast ────────────────────────────────────────────────────────────── #}
+{% macro cast(c) %}
+<div class="fm"><h1 lang="de" id="cast">{{ c.title }}</h1><p class="lead" lang="{{ c.lang }}">{{ c.lead }}</p>
+<div class="castg">{% for p in c.people %}<div class="pc">{{ p.avatar }}<div><h3 lang="de">{{ p.name }}</h3><span class="bd" lang="de">{{ p.bio }}</span><span class="bt" lang="{{ c.lang }}">{{ p.bio_tr }}</span></div></div>{% endfor %}</div></div>
+{% endmacro %}
+
+{# ── chapter opener ──────────────────────────────────────────────────────── #}
+{% macro opener(o) %}
+{% if o.style == 'register' %}
+<div class="band"><div class="num{{ ' w2' if o.no|length > 1 }}">{{ o.no }}</div><div class="in"><div class="lab" lang="de">{{ o.toc_label }}</div><ul class="toc5" lang="de">{{ o.toc }}</ul><div class="lab" lang="de" style="margin-top:calc(var(--bl)*.8)">{{ o.gram_icon }}{{ o.gram_label }}</div><div class="tags" lang="de">{% for g in o.grammar %}<span>{{ g }}</span>{% endfor %}</div></div></div>
+<div class="kap" lang="de">{{ o.kicker }}</div><h1 lang="de"{% if o.long %} class="long"{% endif %} id="{{ o.anchor }}">{{ o.title }}</h1><p class="sub" lang="{{ o.lang }}">{{ o.sub }}</p>
+{{ o.image }}
+<div class="colL"><div class="lab" lang="de">{{ o.goal_icon }}{{ o.goal_label }}</div><p class="goal" lang="de">{{ o.goal }}</p><p class="goal-tr" lang="{{ o.lang }}">{{ o.goal_tr }}</p>{{ o.cando }}{{ o.warmup }}<div id="{{ o.end }}"></div></div>
+{% else %}
+{{ o.image }}
+<div class="tab" style="top:{{ o.tab_top }}mm">{{ o.no }}</div>
+<div class="num{{ ' w2' if o.no|length > 1 }}">{{ o.no }}</div><div class="kap" lang="de">{{ o.kicker }}</div><h1 lang="de"{% if o.long %} class="long"{% endif %} id="{{ o.anchor }}">{{ o.title }}</h1><p class="sub" lang="{{ o.lang }}">{{ o.sub }}</p>
+<div class="opgrid">
+<div><div class="lab" lang="de">{{ o.goal_icon }}{{ o.goal_label }}</div><p class="goal" lang="de">{{ o.goal }}</p><p class="goal-tr" lang="{{ o.lang }}">{{ o.goal_tr }}</p>{{ o.cando }}</div>
+<div><div class="lab" lang="de">{{ o.toc_label }}</div><ul class="toc5" lang="de">{{ o.toc }}</ul><div class="lab" lang="de" style="margin-top:calc(var(--bl)*.6)">{{ o.gram_icon }}{{ o.gram_label }}</div><div class="tags" lang="de">{% for g in o.grammar %}<span>{{ g }}</span>{% endfor %}</div></div>
+<div class="wurow">{{ o.warmup }}<div id="{{ o.end }}"></div></div>
+</div>
+{% endif %}
+{% endmacro %}
+
+{# ── back page: sales ────────────────────────────────────────────────────── #}
+{% macro sales(s) %}
+<div class="sun"></div><div class="foot"></div>
+<div class="in" lang="{{ s.lang }}"><span class="kick">{{ s.kicker }}</span><h1 id="sales">{{ s.title }}</h1></div>
+<div class="card2" lang="{{ s.lang }}"><p>{{ s.body }}</p><ul>{% for p in s.points %}<li>{{ s.check }}{{ p }}</li>{% endfor %}</ul>
+<a class="btn" href="{{ s.shop_url }}">{{ s.button }}{{ s.arrow }}</a><a class="url" href="{{ s.shop_url }}">{{ s.shop_text }}</a></div>
+<div class="yt" lang="{{ s.lang }}"><div><a href="{{ s.youtube_url }}">{{ s.yt_icon }}{{ s.youtube }}</a><small>{{ s.youtube_text }} · {{ s.series }}</small></div><div>{{ s.logo }}</div></div>
+{% endmacro %}

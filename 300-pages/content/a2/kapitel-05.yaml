@@ -132,7 +132,6 @@ vocabulary:
   - {id: zurueckbringen, de: zurückbringen, sep: "zurück|bringen", perfekt: hat zurückgebracht, en: to bring back, tr: geri getirmek}
   - {id: stoeren, de: stören, forms: [stört], en: to disturb, tr: rahatsız etmek}
   - {id: zettel, de: Zettel, article: der, plural: "-", en: note, tr: not kâğıdı}
-  - {id: paket, de: Paket, article: das, plural: "-e", en: parcel, tr: koli}
   - {id: feiern, de: feiern, forms: [feiere, feierst], en: to celebrate, tr: kutlamak}
   - {id: ausziehen, de: ausziehen, sep: "aus|ziehen", perfekt: ist ausgezogen, en: to move out, tr: (evden) çıkmak}
   - {id: vorbeikommen, de: vorbeikommen, sep: "vorbei|kommen", perfekt: ist vorbeigekommen, en: to drop by, tr: uğramak}
@@ -160,7 +159,6 @@ vocabulary:
   - {id: traumwohnung, de: Traumwohnung, article: die, plural: "-en", en: dream flat, tr: hayalindeki ev}
   - {id: nachtruhe, de: Nachtruhe, article: die, plural: "Sg.", en: night-time quiet hours, tr: gece sessizliği}
   - {id: erlaubt, de: erlaubt, en: allowed, tr: serbest}
-  - {id: verreisen, de: verreisen, perfekt: ist verreist, en: to go away, tr: seyahate çıkmak}
   - {id: grillen, de: grillen, en: to barbecue, tr: mangal yapmak}
 
 teile:
@@ -320,6 +318,16 @@ teile:
     title: Die Wohnungsanzeige
     subtitle: {en: "Reading a flat listing and calling the landlord", tr: "Kiralık daire ilanını okumak ve ev sahibini aramak"}
     blocks:
+      - type: box
+        body:
+          - type: image
+            id: k5-anzeigen
+            format: strip
+            description: "Elif sitzt abends mit Laptop und Tee am Küchentisch. Auf dem Bildschirm sieht man drei Wohnungsanzeigen mit kleinen Fotos; neben dem Laptop liegt ein Zettel mit ihren Wünschen."
+            alt:
+              en: "Elif sits at the kitchen table with her laptop and a cup of tea, reading three flat listings."
+              tr: "Elif mutfak masasında dizüstü bilgisayarı ve bir fincan çayla oturmuş, üç daire ilanını okuyor."
+
       - type: task
         id: a
         skills: [lesen]
@@ -456,6 +464,26 @@ teile:
           open: true
           model: "Guten Tag, ich rufe wegen der Wohnung in der Südstadt an. Ist sie noch frei? – Ja, sie ist noch frei. – Wie hoch sind die Nebenkosten? – 210 Euro im Monat, mit Heizung. – Kann ich die Wohnung besichtigen? – Gern. Passt es Ihnen am Freitag um 17 Uhr?"
 
+      - type: task
+        id: e
+        skills: [schreiben]
+        rubric:
+          de: "Deine Wohnung wird frei. Schreib eine Anzeige mit Abkürzungen."
+          en: "Your flat is becoming available. Write a listing using the abbreviations."
+          tr: "Dairen boşalıyor. Kısaltmaları kullanarak bir ilan yaz."
+        body:
+          - type: write_lines
+            lines: 2
+            model: "Schöne 2-Zi.-Whg., 48 m², 2. OG, Balkon. KM 520 € + NK 120 €. Frei ab 1. Juni."
+        answer:
+          open: true
+          model: "Schöne 2-Zi.-Whg., 48 m², 2. OG, Balkon. KM 520 € + NK 120 €. Frei ab 1. Juni. Tel. 0171 3920012"
+        notes:
+          - kind: tipp
+            text:
+              en: "Use the listings on the left page as a model: size, floor, rent, date."
+              tr: "Sol sayfadaki ilanları örnek al: büyüklük, kat, kira, tarih."
+
   # ═══ 4 · HAUPTTEIL B ═══════════════════════════════════════ pages 106–107 ═══
   - nr: 4
     section: hauptteil
@@ -516,9 +544,9 @@ teile:
             first_col_head: false
             head: ["Wohin? → Akkusativ", "Wo? ● Dativ"]
             rows:
-              - ["Jonas stellt das Sofa an [[die]] Wand.", "Das Sofa steht an [[der]] Wand."]
-              - ["Er legt den Teppich vor [[das]] Sofa.", "Der Teppich liegt vor [[dem]] Sofa."]
-              - ["Sie hängen das Bild über [[das]] Sofa.", "Das Bild hängt über [[dem]] Sofa."]
+              - ["Das Sofa kommt an [[die]] Wand.", "Es steht an [[der]] Wand."]
+              - ["Der Teppich kommt vor [[das]] Sofa.", "Er liegt vor [[dem]] Sofa."]
+              - ["Das Bild kommt über [[das]] Sofa.", "Es hängt über [[dem]] Sofa."]
         notes:
           - kind: sogehts
             text:
@@ -538,10 +566,10 @@ teile:
               - ["{p:die Fenster}", "zwischen ==die== Fenster", "zwischen ==den== Fenster==n=="]
             lines:
               - "**stellen** → stehen · **legen** → liegen · **hängen** → hängen"
-            note: "in · an · auf · unter · über · vor · hinter · neben · zwischen     in + dem = **im** · an + dem = **am** · in + das = **ins**"
+            note: "in + dem = **im** · an + dem = **am** · in + das = **ins**"
             rule:
-              en: "These nine prepositions take the accusative for movement to a place ({de:Wohin?}) and the dative for a position ({de:Wo?})."
-              tr: "Bu dokuz edat, bir yere doğru hareket varsa ({de:Wohin?}) Akkusativ, bir yerde bulunma varsa ({de:Wo?}) Dativ ile kullanılır."
+              en: "{de:in, an, auf, unter, über, vor, hinter, neben, zwischen}: accusative for movement to a place ({de:Wohin?}), dative for a position ({de:Wo?})."
+              tr: "{de:in, an, auf, unter, über, vor, hinter, neben, zwischen}: bir yere doğru hareket varsa ({de:Wohin?}) Akkusativ, bir yerde bulunma varsa ({de:Wo?}) Dativ."
         notes:
           - kind: tipp
             text:
@@ -555,7 +583,7 @@ teile:
           de: "stellen oder stehen? legen oder liegen? Ergänze in der richtigen Form."
           en: "stellen or stehen? legen or liegen? Fill in the correct form."
           tr: "stellen mi stehen mi? legen mi liegen mi? Doğru biçimde tamamla."
-        points: 6
+        points: 5
         body:
           - type: gap_text
             items:
@@ -564,7 +592,6 @@ teile:
               - "Elif [[legt]] das Handy auf das Regal."
               - "Das Handy [[liegt]] auf dem Regal."
               - "Die Bücher [[stehen]] schon im Regal."
-              - "Jonas [[legt]] die Schlüssel neben die Lampe."
         words: [stehen, liegen]
 
       - type: task
@@ -653,14 +680,7 @@ teile:
               - {text: "Frau Yılmaz schickt den Hausmeister.", answer: true}
               - {text: "Elif hat morgen Vormittag Zeit.", answer: false}
 
-      - type: task
-        id: c
-        skills: [grammatik, schreiben]
-        rubric:
-          de: "Lies die Regel und ergänze die Verben."
-          en: "Read the rule and fill in the verbs."
-          tr: "Kuralı oku ve fiilleri tamamla."
-        points: 4
+      - type: box
         body:
           - type: grammar_box
             title: wenn-Sätze
@@ -671,17 +691,36 @@ teile:
             rule:
               en: "{de:wenn}-clause: the verb goes to the end. The main clause after it starts with its verb."
               tr: "{de:wenn} cümlesinde fiil sonda durur. Ardından gelen ana cümle fiille başlar."
-          - type: gap_text
-            bank: [nehmen, schreiben, sein, schließen]
-            items:
-              - "Wenn das Fenster nicht [[schließt]], [[schreibe]] ich eine E-Mail."
-              - "Wenn der Aufzug kaputt [[ist]], [[nehmen]] wir die Treppe."
         notes:
           - kind: tipp
             text:
               en: "Say the sentence out loud. In the {de:wenn} part your voice goes up – and the verb waits at the very end."
               tr: "Cümleyi yüksek sesle söyle. {de:wenn} bölümünde sesin yükselir, fiil ise en sonda bekler."
+
+      - type: task
+        id: c
+        skills: [grammatik, schreiben]
+        rubric:
+          de: "Ergänze die Verben in der richtigen Form."
+          en: "Fill in the verbs in the correct form."
+          tr: "Fiilleri doğru biçimde yaz."
+        points: 4
+        body:
+          - type: gap_text
+            bank: [nehmen, schließen, schreiben, sein]
+            items:
+              - "Wenn das Fenster nicht [[schließt]], [[schreibe]] ich eine E-Mail."
+              - "Wenn der Aufzug kaputt [[ist]], [[nehmen]] wir die Treppe."
         words: [kaputt, schliessen, treppe]
+
+      - type: box
+        body:
+          - type: typical_mistake
+            wrong: "Wenn ich die Heizung aufdrehe, sie bleibt kalt."
+            right: "Wenn ich die Heizung aufdrehe, ==bleibt sie== kalt."
+            why:
+              en: "After a {de:wenn}-clause, the main clause starts with the verb."
+              tr: "{de:wenn} cümlesinden sonra ana cümle fiille başlar."
 
       - type: task
         id: d
@@ -726,35 +765,6 @@ teile:
               - {de: "defekt", en: "faulty", tr: "arızalı"}
         words: [handwerker, betreff, erreichen, problem]
 
-      - type: box
-        body:
-          - type: typical_mistake
-            wrong: "Wenn ich die Heizung aufdrehe, sie bleibt kalt."
-            right: "Wenn ich die Heizung aufdrehe, ==bleibt sie== kalt."
-            why:
-              en: "After a {de:wenn}-clause, the main clause starts with the verb."
-              tr: "{de:wenn} cümlesinden sonra ana cümle fiille başlar."
-
-      - type: task
-        id: e
-        skills: [schreiben]
-        rubric:
-          de: "Dein Fenster schließt nicht richtig. Schreib der Hausverwaltung eine E-Mail."
-          en: "Your window doesn’t close properly. Write an email to the property management."
-          tr: "Pencerenin tam kapanmıyor. Bina yönetimine bir e-posta yaz."
-        body:
-          - type: write_lines
-            lines: 3
-            prompts: ["Wo wohnst du?", "Was ist das Problem?", "Wann hast du Zeit?"]
-            model: "Sehr geehrte Damen und Herren, ich wohne in der Gartenstraße 12 im zweiten Stock. Leider schließt mein Fenster im Bad nicht mehr richtig."
-        answer:
-          open: true
-          model: "Sehr geehrte Damen und Herren, ich wohne in der Gartenstraße 12 im zweiten Stock. Leider schließt mein Fenster im Bad nicht mehr richtig. Können Sie bitte einen Handwerker schicken? Ich bin am Donnerstag und Freitag ab 16 Uhr zu Hause. Vielen Dank! Mit freundlichen Grüßen …"
-        notes:
-          - kind: tipp
-            text:
-              en: "Start with who you are and where you live – the {de:Hausverwaltung} looks after many buildings."
-              tr: "Önce kim olduğunu ve nerede oturduğunu yaz – {de:Hausverwaltung} pek çok binayla ilgilenir."
 
   # ═══ 6 · VERTIEFUNG ════════════════════════════════════════ pages 110–111 ═══
   - nr: 6
@@ -963,29 +973,25 @@ teile:
           de: "Lies die Zettel im Treppenhaus. Richtig oder falsch?"
           en: "Read the notes in the stairwell. True or false?"
           tr: "Merdiven boşluğundaki notları oku. Doğru mu, yanlış mı?"
-        points: 5
+        points: 4
         body:
           - type: reading_text
             genre: note
             line_numbers: false
             parts:
               - label: "1"
-                text: "Liebe Nachbarn, am Samstag feiere ich meinen Geburtstag. Es kann ein bisschen lauter werden. Wenn es Sie stört, klingeln Sie einfach – oder kommen Sie vorbei!"
+                text: "Liebe Nachbarn, am Samstag feiere ich Geburtstag. Es kann etwas lauter werden. Wenn es Sie stört, klingeln Sie einfach – oder kommen Sie vorbei!"
                 author: "Mariam Haddad, 2. Stock"
               - label: "2"
-                text: "Ein Paket für Familie Schmidt liegt bei mir. Sie können es bis 20 Uhr abholen."
-                author: "W. Becker, Erdgeschoss rechts"
-              - label: "3"
                 text: "Wer kann mir helfen? Ich ziehe am 1. Mai aus und suche zwei Personen für den Umzug. Es gibt Pizza für alle!"
                 author: "Kofi, 4. Stock"
           - type: true_false
             items:
               - {text: "Mariam macht am Samstag eine Party.", answer: true}
-              - {text: "Herr Becker hat ein Paket für Mariam.", answer: false}
-              - {text: "Man kann das Paket bis 20 Uhr abholen.", answer: true}
+              - {text: "Die Nachbarn dürfen nicht zu Mariam kommen.", answer: false}
               - {text: "Kofi zieht in das Haus ein.", answer: false}
-              - {text: "Kofi bezahlt die Helfer mit Geld.", answer: false}
-        words: [zettel, paket, feiern, ausziehen, vorbeikommen]
+              - {text: "Kofi sucht Hilfe für seinen Umzug.", answer: true}
+        words: [zettel, feiern, ausziehen, vorbeikommen]
 
       - type: task
         id: d
@@ -996,12 +1002,12 @@ teile:
           tr: "Tatile gidiyorsun. Komşuna bir not yaz."
         body:
           - type: write_lines
-            lines: 3
+            lines: 2
             prompts: ["Wann bist du weg?", "Bitte: Blumen gießen", "Wo ist der Schlüssel?"]
-            model: "Liebe Frau Haddad, ich fahre vom 3. bis 17. August in den Urlaub."
+            model: "Liebe Frau Haddad, ab Montag bin ich zwei Wochen im Urlaub."
         answer:
           open: true
-          model: "Liebe Frau Haddad, ich fahre vom 3. bis 17. August in den Urlaub. Könnten Sie bitte meine Blumen gießen? Der Schlüssel liegt bei Herrn Becker. Vielen Dank und liebe Grüße, Elif Demir"
+          model: "Liebe Frau Haddad, ab Montag bin ich zwei Wochen im Urlaub. Könnten Sie bitte meine Blumen gießen? Der Schlüssel liegt bei Herrn Becker. Vielen Dank und liebe Grüße, Elif Demir"
         words: [giessen, schluessel]
 
       - type: task
@@ -1016,7 +1022,7 @@ teile:
             cards:
               - label: A
                 title: Du brauchst Hilfe
-                points: ["Dein Internet funktioniert nicht.", "Du möchtest kurz das WLAN benutzen.", "Bitte höflich!"]
+                points: ["Dein Internet funktioniert nicht.", "Du möchtest kurz das WLAN benutzen."]
               - label: B
                 title: Du wohnst nebenan
                 points: ["Reagiere freundlich.", "Sag Ja – oder erkläre, warum es nicht geht."]
@@ -1030,6 +1036,16 @@ teile:
     title: Das Repair-Café
     subtitle: {en: "Repairing instead of throwing away", tr: "Atmak yerine tamir etmek"}
     blocks:
+      - type: box
+        body:
+          - type: image
+            id: k5-repaircafe
+            format: strip
+            description: "Im Repair-Café: Kofi und eine ältere Nachbarin reparieren zusammen einen Toaster an einem langen Tisch voller Werkzeug. Im Hintergrund Kaffee, Kuchen und ein Fahrrad auf einem Montageständer."
+            alt:
+              en: "At the repair café, Kofi and an older neighbour repair a toaster together at a long table full of tools."
+              tr: "Repair-Café’de Kofi ve yaşlı bir komşu, aletlerle dolu uzun bir masada birlikte bir tost makinesi tamir ediyor."
+
       - type: task
         id: a
         skills: [lesen]
@@ -1055,7 +1071,7 @@ teile:
               - {q: "Wann findet das Repair-Café statt? ({z:wann})", options: ["jeden Samstag", "einmal im Monat", "jeden Tag"], answer: B}
               - {q: "Wer repariert die Geräte? ({z:wer})", options: ["nur die Helfer", "die Besucher allein", "Besucher und Helfer zusammen"], answer: C}
               - {q: "Was kostet die Reparatur? ({z:kosten})", options: ["nichts", "fünf Euro", "einen Kuchen"], answer: A}
-              - {q: "Was sagt Kofi? ({z:kofi})", options: ["Reparieren ist sehr schwer.", "Alle freuen sich, wenn ein Gerät wieder funktioniert.", "Im Repair-Café gibt es zu viel Müll."], answer: B}
+              - {q: "Was passiert, wenn ein Gerät wieder funktioniert? ({z:kofi})", options: ["Man muss bezahlen.", "Alle freuen sich.", "Es gibt Kuchen."], answer: B}
         notes:
           - kind: wort
             words: [geraet, wegwerfen, spenden, eingang]
@@ -1063,16 +1079,6 @@ teile:
               - {de: "einen Platten haben", en: "to have a flat tyre", tr: "lastiği patlak olmak"}
               - {de: "statt", en: "instead of", tr: "yerine"}
         words: [geraet, wegwerfen, reparatur, helfer, spenden, stadtteil, anmelden, mitbringen, eingang]
-
-      - type: box
-        body:
-          - type: image
-            id: k5-repaircafe
-            format: strip
-            description: "Im Repair-Café: Kofi und eine ältere Nachbarin reparieren zusammen einen Toaster an einem langen Tisch voller Werkzeug. Im Hintergrund Kaffee, Kuchen und ein Fahrrad auf einem Montageständer."
-            alt:
-              en: "At the repair café, Kofi and an older neighbour repair a toaster together at a long table full of tools."
-              tr: "Repair-Café’de Kofi ve yaşlı bir komşu, aletlerle dolu uzun bir masada birlikte bir tost makinesi tamir ediyor."
 
       - type: task
         id: b
@@ -1118,14 +1124,13 @@ teile:
           de: "Was wird im Repair-Café gemacht? Schreib Sätze im Passiv."
           en: "What gets done at the repair café? Write sentences in the passive."
           tr: "Repair-Café’de neler yapılıyor? Edilgen çatıyla cümleler yaz."
-        points: 4
+        points: 3
         body:
           - type: sentence_build
             example: {given: "die Geräte / anmelden", answer: "Die Geräte werden angemeldet."}
             items:
               - {given: "die Fahrräder / reparieren", answer: "Die Fahrräder werden repariert."}
               - {given: "Kaffee / trinken", answer: "Kaffee wird getrunken."}
-              - {given: "Kuchen / essen", answer: "Kuchen wird gegessen."}
               - {given: "Geld / spenden", answer: "Geld wird gespendet."}
 
       - type: task
@@ -1141,6 +1146,21 @@ teile:
         answer:
           open: true
           model: "Ich repariere mein Fahrrad selbst. Wenn mein Handy kaputt ist, bringe ich es in ein Geschäft. In meiner Stadt gibt es ein Repair-Café, aber ich war noch nie dort."
+
+      - type: task
+        id: e
+        skills: [schreiben]
+        rubric:
+          de: "Was machst du, wenn etwas kaputt ist? Schreib zwei Sätze mit *wenn*."
+          en: "What do you do when something is broken? Write two sentences with wenn."
+          tr: "Bir şey bozulduğunda ne yaparsın? wenn ile iki cümle yaz."
+        body:
+          - type: write_lines
+            lines: 2
+            model: "Wenn mein Fahrrad kaputt ist, repariere ich es selbst."
+        answer:
+          open: true
+          model: "Wenn mein Fahrrad kaputt ist, repariere ich es selbst. Wenn mein Handy nicht mehr funktioniert, bringe ich es ins Repair-Café."
 
   # ═══ 9 · VERTIEFUNG ════════════════════════════════════════ pages 116–117 ═══
   - nr: 9
@@ -1195,6 +1215,21 @@ teile:
 
       - type: task
         id: c
+        skills: [schreiben]
+        rubric:
+          de: "Schreib drei Sätze über dein Zuhause: zwei mit Wechselpräpositionen, einen mit *wenn*."
+          en: "Write three sentences about your home: two with two-way prepositions, one with wenn."
+          tr: "Evin hakkında üç cümle yaz: ikisi Wechselpräposition ile, biri wenn ile."
+        body:
+          - type: write_lines
+            lines: 3
+            model: "Mein Schreibtisch steht am Fenster."
+        answer:
+          open: true
+          model: "Mein Schreibtisch steht am Fenster. Ich stelle die Blumen immer auf den Balkon. Wenn es warm ist, frühstücke ich dort."
+
+      - type: task
+        id: d
         skills: [grammatik, schreiben]
         rubric:
           de: "Aktiv → Passiv. Schreib die Sätze neu."
@@ -1215,7 +1250,23 @@ teile:
               tr: "Etken cümlenin nesnesi, edilgen cümlenin öznesi olur: {de:den Müll} → {de:Der Müll wird …}"
 
       - type: task
-        id: d
+        id: e
+        skills: [grammatik, schreiben]
+        rubric:
+          de: "Hier ist immer ein Fehler. Schreib den Satz richtig."
+          en: "There is one mistake in each sentence. Write the sentence correctly."
+          tr: "Her cümlede bir hata var. Cümleyi doğru yaz."
+        points: 4
+        body:
+          - type: sentence_build
+            items:
+              - {given: "Ich hänge das Bild an der Wand.", answer: "Ich hänge das Bild an ==die== Wand."}
+              - {given: "Wenn ich Zeit habe, ich besuche dich.", answer: "Wenn ich Zeit habe, ==besuche ich== dich."}
+              - {given: "Der Müll wird morgen abholen.", answer: "Der Müll wird morgen ==abgeholt==."}
+              - {given: "Das Buch liegt auf den Tisch.", answer: "Das Buch liegt auf ==dem== Tisch."}
+
+      - type: task
+        id: f
         skills: [sprechen, partner]
         rubric:
           de: "Spiel: Drei in einer Reihe. Bilde einen richtigen Satz – dann gehört das Feld dir."
@@ -1279,16 +1330,14 @@ teile:
           de: "Lies den Chat und beantworte die Fragen."
           en: "Read the chat and answer the questions."
           tr: "Sohbeti oku ve soruları cevapla."
-        points: 4
+        points: 3
         body:
           - type: reading_text
             genre: chat
             line_numbers: false
             turns:
               - {speaker: lena, text: "Na, wie ist die neue Wohnung?"}
-              - {speaker: elif, text: "Super! Ich bin am Samstag eingezogen. Jonas hat mir geholfen."}
-              - {speaker: lena, text: "Und, ist schon alles fertig?"}
-              - {speaker: elif, text: "Fast. Das Sofa steht schon im Wohnzimmer, aber die Lampen hängen noch nicht."}
+              - {speaker: elif, text: "Super! Ich bin am Samstag eingezogen. Das Sofa steht schon im Wohnzimmer, aber die Lampen hängen noch nicht."}
               - {speaker: lena, text: "Wenn du willst, komme ich am Sonntag vorbei und helfe dir."}
               - {speaker: elif, text: "Gern! Wenn du kommst, koche ich etwas für uns."}
               - {speaker: lena, text: "Abgemacht! Soll ich etwas mitbringen?"}
@@ -1296,7 +1345,6 @@ teile:
           - type: sentence_build
             items:
               - {given: "Wann ist Elif eingezogen?", answer: "Am Samstag."}
-              - {given: "Was steht schon im Wohnzimmer?", answer: "Das Sofa."}
               - {given: "Was macht Elif, wenn Lena kommt?", answer: "Sie kocht etwas."}
               - {given: "Was soll Lena mitbringen?", answer: "Gute Laune und eine Bohrmaschine."}
         notes:
@@ -1385,6 +1433,7 @@ teile:
         points: 6
         body:
           - type: gap_text
+            compact: true
             items:
               - "Stell die Lampe bitte neben [[das]] Bett."
               - "Die Schlüssel liegen auf [[dem]] Tisch."
@@ -1428,7 +1477,7 @@ teile:
           de: "Lies die Hausordnung. Richtig oder falsch?"
           en: "Read the house rules. True or false?"
           tr: "Apartman kurallarını oku. Doğru mu, yanlış mı?"
-        points: 5
+        points: 4
         body:
           - type: reading_text
             genre: notice
@@ -1436,26 +1485,24 @@ teile:
             title: Hausordnung (Auszug)
             text: |
               1 Von 22 bis 6 Uhr ist Nachtruhe. Bitte keine laute Musik!
-              2 Fahrräder werden im Keller abgestellt, nicht im Treppenhaus.
-              3 Das Treppenhaus wird jede Woche von einem Mieter geputzt. Der Plan hängt im Erdgeschoss.
-              4 Wenn Sie länger als drei Wochen verreisen, informieren Sie bitte die Hausverwaltung.
-              5 Grillen ist auf dem Balkon nicht erlaubt.
+              2 Fahrräder werden im Keller abgestellt.
+              3 Das Treppenhaus wird jede Woche von einem Mieter geputzt.
+              4 Grillen ist auf dem Balkon nicht erlaubt.
           - type: true_false
             items:
               - {text: "Um 23 Uhr darf man laut Musik hören.", answer: false}
               - {text: "Fahrräder stehen im Keller.", answer: true}
-              - {text: "Die Hausverwaltung putzt das Treppenhaus.", answer: false}
-              - {text: "Der Putzplan hängt im Erdgeschoss.", answer: true}
+              - {text: "Das Treppenhaus wird jede Woche geputzt.", answer: true}
               - {text: "Auf dem Balkon darf man grillen.", answer: false}
-        words: [nachtruhe, erlaubt, verreisen, grillen]
+        words: [nachtruhe, erlaubt, grillen]
 
       - type: task
         id: f
         skills: [hoeren]
         rubric:
-          de: "Hör die Nachricht auf dem Anrufbeantworter und kreuze an."
-          en: "Listen to the voicemail message and tick the right answer."
-          tr: "Telesekreterdeki mesajı dinle ve doğru cevabı işaretle."
+          de: "Hör die Nachricht und kreuze an."
+          en: "Listen to the voicemail and tick the right answer."
+          tr: "Sesli mesajı dinle ve doğru cevabı işaretle."
         points: 3
         audio:
           track: "5.08"
@@ -1475,19 +1522,19 @@ teile:
         id: g
         skills: [schreiben]
         rubric:
-          de: "Du feierst am Samstag deinen Geburtstag. Schreib einen Zettel für deine Nachbarn."
-          en: "You’re celebrating your birthday on Saturday. Write a note for your neighbours."
-          tr: "Cumartesi günü doğum gününü kutluyorsun. Komşuların için bir not yaz."
-        points: 3
+          de: "Du feierst am Samstag Geburtstag. Schreib einen Zettel für deine Nachbarn."
+          en: "You’re having a birthday party on Saturday. Write a note for your neighbours."
+          tr: "Cumartesi günü doğum günü partin var. Komşuların için bir not yaz."
+        points: 4
         body:
           - type: write_lines
-            lines: 4
+            lines: 3
             grow: false
         answer:
           model: "Liebe Nachbarn, am Samstag feiere ich meinen Geburtstag. Es kann ein bisschen lauter werden. Wenn es Sie stört, klingeln Sie bitte einfach. Viele Grüße, …"
           note:
-            en: "1 point each: you say when, you warn or invite politely, you add a greeting and your name."
-            tr: "Her biri 1 puan: zamanı söylüyorsun, kibarca haber veriyor ya da davet ediyorsun, selam ve adını ekliyorsun."
+            en: "1 point each: greeting, the day, a polite warning or invitation, your name."
+            tr: "Her biri 1 puan: hitap, gün, kibar bir uyarı ya da davet, adın."
 
   # ═══ 12 · RÜCKBLICK ════════════════════════════════════════════ page 124 ═══
   - nr: 12
@@ -1581,11 +1628,20 @@ uebersicht:
             - {de: "Ja, gern. · Natürlich. · Kein Problem.", en: "Yes, gladly. · Of course. · No problem.", tr: "Evet, memnuniyetle. · Tabii. · Sorun değil."}
             - {de: "Tut mir leid, das geht leider nicht.", en: "Sorry, I’m afraid that’s not possible.", tr: "Üzgünüm, maalesef olmaz."}
             - {de: "Das tut mir leid.", en: "I’m sorry about that.", tr: "Buna üzüldüm."}
+        - title: Am Telefon
+          items:
+            - {de: "Guten Tag, hier ist Elif Demir.", en: "Hello, this is Elif Demir.", tr: "İyi günler, ben Elif Demir."}
+            - {de: "Was kann ich für Sie tun?", en: "What can I do for you?", tr: "Sizin için ne yapabilirim?"}
+            - {de: "Vielen Dank, auf Wiederhören!", en: "Thank you, goodbye!", tr: "Çok teşekkürler, iyi günler!"}
+        - title: Über Müll sprechen
+          items:
+            - {de: "Wohin kommt das Glas?", en: "Where does the glass go?", tr: "Cam nereye atılır?"}
+            - {de: "Das gehört in die gelbe Tonne.", en: "That goes in the yellow bin.", tr: "Bu sarı bidona atılır."}
+            - {de: "Wann wird der Müll abgeholt?", en: "When is the rubbish collected?", tr: "Çöp ne zaman toplanıyor?"}
         - title: Eine formelle E-Mail schreiben
           items:
             - {de: "Sehr geehrte Frau … · Sehr geehrter Herr …,", en: "Dear Ms … · Dear Mr …,", tr: "Sayın Bayan … · Sayın Bay …,"}
             - {de: "Sehr geehrte Damen und Herren,", en: "Dear Sir or Madam,", tr: "Sayın Yetkili,"}
-            - {de: "Vielen Dank für Ihre Hilfe!", en: "Thank you very much for your help!", tr: "Yardımınız için çok teşekkürler!"}
             - {de: "Mit freundlichen Grüßen", en: "Kind regards", tr: "Saygılarımla"}
 
 next:

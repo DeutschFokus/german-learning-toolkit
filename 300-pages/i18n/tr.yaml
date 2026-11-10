@@ -85,8 +85,7 @@ test:
     - [0, 14, "Acele etme ve üniteyi tekrarla. Bunu başarabilirsin."]
   total: Toplam puanın
 review:
-  compare: "İşaretlerini {page} ile karşılaştır."
-  lead: "Bu üniteye bir kontrol listesiyle başladın. Şimdi listeyi yeniden işaretle."
+  lead: "Listeyi yeniden işaretle ve {page} ile karşılaştır."
   look_again: "Emin değil misin? Tekrar bak:"
 station:
   lead_review: "Son dört üniteden karışık alıştırmalar."
@@ -114,3 +113,6 @@ sales:
   youtube: YouTube’da her hafta ücretsiz Almanca hikâyeler
   series: "Seri: A1’den C2’ye her seviye için bir kitap"
   thanks: "Deutsch Fokus ile öğrendiğin için teşekkürler."
+overview:
+  grammar: "Bu ünitenin dil bilgisi bir bakışta"
+  phrases: "İşine yarayacak kalıplar – gerçek hayat için kopya kâğıdın"
