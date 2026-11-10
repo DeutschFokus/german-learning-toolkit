@@ -1,0 +1,180 @@
+{#- ───────────────────────────────────────────────────────────────────────────
+   Block components. Every macro receives a ready-made view (all text already
+   converted from the inline markup), so this file is pure structure.
+   ─────────────────────────────────────────────────────────────────────────── -#}
+
+{% macro box(name, label, forms, round=false) -%}
+{% if forms %}<input class="box{{ ' rd' if round }}" type="checkbox" name="{{ name }}" aria-label="{{ label }}">{% else %}<span class="box{{ ' rd' if round }}"></span>{% endif %}
+{%- endmacro %}
+
+{# ── a task: address + skill icons · rubric + body · margin ──────────────── #}
+{% macro task(t) %}
+<article class="task{{ ' wu' if t.wu }}" id="{{ t.anchor }}">
+<div class="tk-l"><span class="addr{{ ' long' if t.long }}"><i>{{ t.prefix }}</i><b>{{ t.letter }}</b></span><span class="skills">{{ t.icons }}</span></div>
+<div class="tk-m">
+<div class="rub"><span class="de" lang="de">{{ t.rubric }}</span>{% if t.points or t.key %}<span class="meta">{% if t.points %}<span class="score">/ {{ t.points }}</span>{% endif %}{% if t.key %}{% if t.key.href %}<a class="lkey" href="{{ t.key.href }}">{{ t.key.label }}</a>{% else %}<span class="lkey">{{ t.key.label }}</span>{% endif %}{% endif %}</span>{% endif %}</div>
+{% if t.expl %}<p class="ex" lang="{{ t.lang }}">{{ t.expl }}</p>{% endif %}
+{% if t.body %}<div class="tk-b">{{ t.body }}</div>{% endif %}
+</div>
+<aside class="mn">{{ t.margin }}</aside>
+</article>
+{% endmacro %}
+
+{% macro boxed(b) %}
+<article class="task boxu" id="{{ b.anchor }}">
+<div class="tk-l"></div>
+<div class="tk-m"><div class="tk-b">{{ b.body }}</div></div>
+<aside class="mn">{{ b.margin }}</aside>
+</article>
+{% endmacro %}
+
+{% macro teil_head(h) %}
+<div class="teil" id="{{ h.anchor }}"><div><div class="no{{ ' w2' if h.no|length > 1 }}">{{ h.no }}</div></div><div><h2 lang="de">{{ h.title }}</h2><p class="sub" lang="{{ h.lang }}">{{ h.sub }}</p></div></div>
+{% endmacro %}
+
+{% macro station_head(h) %}
+<div class="sthead" id="{{ h.anchor }}"><div class="zn">Z{{ h.no }}</div><div><p class="kap" lang="de">{{ h.kicker }}</p><h1 lang="de">{{ h.title }}</h1><p class="sub" lang="{{ h.lang }}">{{ h.sub }}</p></div></div>
+{% endmacro %}
+
+{# ── margin ──────────────────────────────────────────────────────────────── #}
+{% macro note(n) %}
+<div class="note {{ n.kind }}"><span class="nh" lang="de">{{ n.icon }}{{ n.label }}</span>{% if n.text %}<span lang="{{ n.lang }}">{{ n.text }}</span>{% endif %}{% for e in n.entries %}<span class="wh"><b lang="de">{{ e.de }}</b> <em lang="{{ n.lang }}">{{ e.tr }}</em></span>{% endfor %}</div>
+{% endmacro %}
+
+{% macro audio(a) %}
+<a class="audio" href="{{ a.href }}">{{ a.qr }}<span><span class="tl">{{ a.label }}</span><span class="tn">{{ a.track }}</span><span class="td">{{ a.icon }}{{ a.duration }} Min.</span></span></a>
+{% endmacro %}
+
+{# ── input: dialogues and texts ──────────────────────────────────────────── #}
+{% macro dialogue(v) %}
+<div class="dlg" lang="de">{% for t in v.turns %}<div class="turn">{{ t.avatar }}<p><span class="sp">{{ t.name }}</span>{{ t.text }}</p></div>{% endfor %}</div>
+{% endmacro %}
+
+{% macro reading(v) %}
+<div class="read {{ v.genre }}{{ ' nonum' if v.nonum }}" lang="de">
+{% if v.genre == 'email' %}<div class="hd">{% for k, val in v.meta[:2] %}{% if not loop.first %}<span class="sep">|</span>{% endif %}<b{% if not loop.first %} style="width:7mm"{% endif %}>{{ k }}</b>{{ val }}{% endfor %}{% for k, val in v.meta[2:] %}<br><b>{{ k }}</b><span class="subj">{{ val }}</span>{% endfor %}</div>{% endif %}
+{% if v.genre == 'notice' %}<span class="pinrow"></span>{% if v.title %}<div class="nt">{{ v.title }}</div>{% endif %}{% endif %}
+{% if v.genre == 'article' %}<div class="ah">{% if v.kicker %}<div class="kick">{{ v.kicker }}</div>{% endif %}<div class="hl">{{ v.title }}</div></div>{% endif %}
+{% if v.genre == 'plain' and v.title %}<div class="nt">{{ v.title }}</div>{% endif %}
+<div class="tx" id="{{ v.rid }}">{% for p in v.paras %}<p id="{{ p.id }}">{{ p.html }}</p>{% endfor %}{% for n, top in v.numbers %}<span class="ln" style="top:{{ top }}pt">{{ n }}</span>{% endfor %}</div>
+</div>
+{% endmacro %}
+
+{% macro cards(v) %}
+<div class="cards {{ v.kind }} n{{ v.n }}" lang="de">{% for c in v.cards %}<div class="card{{ ' has-au' if c.author }}{{ ' has-cl' if c.label }}">{% if c.label %}<span class="cl">{{ c.label }}</span>{% endif %}{% if c.title %}<span class="ct">{{ c.title }}</span>{% endif %}{{ c.text }}{% if c.author %}<span class="au">{{ c.author }}</span>{% endif %}</div>{% endfor %}</div>
+{% endmacro %}
+
+{% macro chat(v) %}
+<div class="chat" lang="de">{% for m in v.msgs %}<div class="msg{{ ' me' if m.me }}">{{ m.avatar }}<p class="bub">{{ m.text }}</p></div>{% endfor %}</div>
+{% endmacro %}
+
+{# ── boxes ───────────────────────────────────────────────────────────────── #}
+{% macro grammar(v) %}
+<div class="gram" lang="de"><div class="gh">{{ v.icon }}<span class="lab">{{ v.label }}</span><span class="tt">{{ v.title }}</span></div>
+{% if v.rows %}<table>{% if v.head %}<tr>{% for h in v.head %}<th>{{ h }}</th>{% endfor %}</tr>{% endif %}
+{% for r in v.rows %}<tr>{% for c in r %}<td{% if v.first_col_head and loop.first %} class="rh1"{% endif %}>{{ c }}</td>{% endfor %}</tr>{% endfor %}</table>{% endif %}
+{% if v.lines or v.note %}<div class="gl">{% for l in v.lines %}<p>{{ l }}</p>{% endfor %}{% if v.note %}<p class="gn">{{ v.note }}</p>{% endif %}</div>{% endif %}
+{% if v.rule %}<p class="rule" lang="{{ v.lang }}">{{ v.rule }}</p>{% endif %}</div>
+{% endmacro %}
+
+{% macro mistake(v) %}
+<div class="err"><div class="eh" lang="de">{{ v.icon }}{{ v.label }}</div>
+<div class="row" lang="de"><span class="sym no">{{ v.cross }}</span><span class="wrong">{{ v.wrong }}</span></div>
+<div class="row" lang="de"><span class="sym ok">{{ v.check }}</span>{{ v.right }}</div>
+<div class="why" lang="{{ v.lang }}">{{ v.why }}</div></div>
+{% endmacro %}
+
+{% macro phrases(v) %}
+<div class="phr">{% if v.title %}<div class="gh" lang="de">{{ v.icon }}<span class="lab">{{ v.label }}</span><span class="tt">{{ v.title }}</span></div>{% endif %}
+{% for g in v.groups %}<div class="phg"><h4 lang="de">{{ g.title }}</h4>{% for de, ex in g.items %}<div class="pr"><span lang="de">{{ de }}</span><span lang="{{ v.lang }}">{{ ex }}</span></div>{% endfor %}</div>{% endfor %}</div>
+{% endmacro %}
+
+{# ── exercises ───────────────────────────────────────────────────────────── #}
+{% macro bank(items) %}
+<div class="bank" lang="de">{% for w in items %}<span>{{ w }}</span>{% endfor %}</div>
+{% endmacro %}
+
+{% macro gaptext(v) %}
+{% if v.bank %}{{ bank(v.bank) }}{% endif %}
+{% if v.text %}<p class="gaptext" lang="de">{{ v.text }}</p>{% endif %}
+{% if v.items or v.example %}<ol class="items{{ ' compact' if v.compact }}" lang="de">{% if v.example %}<li class="exa"><span class="tag">Bsp.</span>{{ v.example }}</li>{% endif %}{% for it in v.items %}<li>{{ it }}</li>{% endfor %}</ol>{% endif %}
+{% endmacro %}
+
+{% macro truefalse(v) %}
+<table class="tf" lang="de"><tr><th></th><th></th><th>{{ v.t }}</th><th>{{ v.f }}</th></tr>
+{% for it in v.items %}<tr><td class="n">{{ loop.index }}</td><td>{{ it.text }}</td><td class="b">{{ box(it.name ~ '-r', v.t, v.forms) }}</td><td class="b">{{ box(it.name ~ '-f', v.f, v.forms) }}</td></tr>{% endfor %}</table>
+{% endmacro %}
+
+{% macro mc(v) %}
+<ul class="mc{{ ' stack' if v.stack }}" lang="de">{% for it in v.items %}<li><span class="q">{% if v.items|length > 1 %}<span class="n">{{ loop.index }}</span>{% endif %}{{ it.q }}</span>{% for letter, text, name in it.opts %}<span class="opt">{% if v.forms %}<input class="box rd" type="checkbox" name="{{ name }}" aria-label="{{ letter }}">{% endif %}<i>{{ letter }}</i>{{ text }}</span>{% endfor %}</li>{% endfor %}</ul>
+{% endmacro %}
+
+{% macro matching(v) %}
+<div class="match" lang="de"><ol class="ml">{% for it in v.left %}<li><span class="k">{{ loop.index }}</span><span class="tx2">{{ it.text }}</span>{% if v.forms %}<input class="gap mb" type="text" name="{{ it.name }}" aria-label="{{ loop.index }}" style="width:6.4mm">{% else %}<span class="mb"></span>{% endif %}</li>{% endfor %}</ol>
+<ol class="mr">{% for letter, text in v.right %}<li><span class="k"><i>{{ letter }}</i></span><span class="tx2">{{ text }}</span></li>{% endfor %}</ol></div>
+{% endmacro %}
+
+{% macro lines(v) %}
+{% if v.prompts %}<ul class="bullets" lang="de">{% for p in v.prompts %}<li>{{ p }}</li>{% endfor %}</ul>{% endif %}
+{% if v.model %}<div class="hwlab"><span lang="de" style="font-weight:700;letter-spacing:.14em;text-transform:uppercase">{{ v.label }}</span> · <span lang="{{ v.lang }}">{{ v.hint }}</span></div>{% endif %}
+<div class="lines" id="{{ v.id }}">{% if v.model %}<span class="hw" lang="de">{{ v.model }}</span>{% endif %}{% if v.forms %}<textarea class="wl" name="{{ v.name }}" aria-label="{{ v.name }}" style="height:calc(var(--wl)*{{ v.n }})"></textarea>{% else %}{% for i in range(v.n) %}<span class="hl"></span>{% endfor %}{% endif %}</div>
+{% endmacro %}
+
+{% macro sentences(v) %}
+<ol class="sb" lang="de">{% if v.example %}<li class="exa"><span class="g"><span class="tag">{{ v.label }}</span>{{ v.example.given }}</span><div class="lines"><span class="hw">{{ v.example.answer }}</span></div></li>{% endif %}
+{% for it in v.items %}<li><span class="g"><span class="n">{{ loop.index }}</span>{{ it.given }}</span><div class="lines">{% if v.forms %}<textarea class="wl" name="{{ it.name }}" aria-label="{{ it.name }}" style="height:var(--wl)"></textarea>{% else %}<span class="hl"></span>{% endif %}</div></li>{% endfor %}</ol>
+{% endmacro %}
+
+{% macro tablefill(v) %}
+<table class="tfill" lang="de">{% if v.head %}<tr>{% for h in v.head %}<th>{{ h }}</th>{% endfor %}</tr>{% endif %}
+{% for r in v.rows %}<tr>{% for c in r %}<td class="{{ c.cls }}">{{ c.html }}</td>{% endfor %}</tr>{% endfor %}</table>
+{% endmacro %}
+
+{% macro oddone(v) %}
+<ol class="ooo" lang="de">{% for it in v.items %}<li><span class="n">{{ loop.index }}</span><span class="wd">{{ it }}</span></li>{% endfor %}</ol>
+{% endmacro %}
+
+{% macro sorttable(v) %}
+{{ bank(v.words) }}
+<table class="sortt" lang="de" style="margin-top:calc(var(--bl)*.5)"><tr>{% for c in v.columns %}<th>{{ c }}</th>{% endfor %}</tr>
+{% for r in range(v.rows) %}<tr>{% for c in v.columns %}<td>{% if v.forms %}<input class="gap" type="text" name="{{ v.name }}-{{ r }}-{{ loop.index }}" aria-label="{{ c }}" style="width:94%;border-bottom:0">{% endif %}</td>{% endfor %}</tr>{% endfor %}</table>
+{% endmacro %}
+
+{% macro roles(v) %}
+<div class="roles" lang="de">{% for c in v.cards %}<div class="role"><span class="rt"><b>{{ c.label }}</b>{{ c.title }}</span><ul>{% for p in c.points %}<li>{{ p }}</li>{% endfor %}</ul></div>{% endfor %}</div>
+{% endmacro %}
+
+{% macro bubbles(v) %}
+<div class="says" lang="de">{% for s in v.items %}<span class="say">{{ s }}</span>{% endfor %}</div>
+{% endmacro %}
+
+{% macro game(v) %}
+<table class="game" lang="de">{% for r in v.rows %}<tr>{% for c in r %}<td>{{ c }}</td>{% endfor %}</tr>{% endfor %}</table>
+{% endmacro %}
+
+{% macro para(v) %}
+<div class="para">{% if v.de %}<span class="de" lang="de">{{ v.de }}</span>{% endif %}{% if v.ex %}<span class="exx" lang="{{ v.lang }}">{{ v.ex }}</span>{% endif %}</div>
+{% endmacro %}
+
+{% macro image(v) %}
+<div class="ph {{ v.format }}" id="{{ v.id }}">{% if v.src %}<img src="{{ v.src }}" alt="{{ v.alt }}">{% else %}{{ v.art }}<div class="ph-cap">{{ v.icon }}<span lang="de"><b>{{ v.label }}</b>{{ v.caption }}</span></div>{% endif %}{% for m in v.markers %}<span class="mk" style="left:{{ m.x }}%;top:{{ m.y }}%">{{ m.n }}</span>{% endfor %}</div>
+{% endmacro %}
+
+{% macro picdict(v) %}
+{{ image(v.image) }}
+<ol class="pd-leg" lang="de">{% for it in v.items %}<li><span class="n">{{ it.n }}</span><span class="wd">{% if it.article %}<span class="{{ it.cls }}">{{ it.article }}</span> {% endif %}<b>{{ it.word }}</b><i>{{ it.suffix }}</i></span>{{ box(it.name, it.word, v.forms) }}</li>{% endfor %}</ol>
+{% endmacro %}
+
+{% macro selfeval(v) %}
+<ol class="se">{% for it in v.items %}<li><span class="de" lang="de">{{ it.de }}</span><span class="ex" lang="{{ v.lang }}">{{ it.ex }}</span><div class="lines">{% if v.forms %}<textarea class="wl" name="{{ it.name }}" aria-label="{{ it.name }}" style="height:var(--wl)"></textarea>{% else %}<span class="hl"></span>{% endif %}</div></li>{% endfor %}</ol>
+{% endmacro %}
+
+{# ── page furniture ──────────────────────────────────────────────────────── #}
+{% macro cando(v) %}
+<table class="cando"><tr><th class="st" lang="de">{{ v.title }}</th>{% for h in v.heads %}<th lang="de">{{ h }}</th>{% endfor %}{% if v.refs %}<th></th>{% endif %}</tr>
+{% for it in v.items %}<tr><td class="st"><span lang="de">{{ it.de }}</span><span class="tr" lang="{{ v.lang }}">{{ it.ex }}</span></td>{% for h in v.heads %}<td class="ck">{{ box(it.name ~ '-' ~ loop.index, h, v.forms, true) }}</td>{% endfor %}{% if v.refs %}<td class="rf">{{ it.ref }}</td>{% endif %}</tr>{% endfor %}</table>
+{% endmacro %}
+
+{% macro words_footer(v) %}
+<footer class="pw" lang="de"><span class="lab">{{ v.label }}<i lang="{{ v.lang }}">{{ v.sub }}</i></span>{% for w in v.words %}<span class="w">{% if w.article %}<span class="{{ w.cls }}">{{ w.article }}</span> {% endif %}<b>{{ w.word }}</b>{{ w.suffix }} <em lang="{{ v.lang }}">{{ w.tr }}</em></span> {% endfor %}{% if v.more %}<span class="w more" lang="{{ v.lang }}">{{ v.more }}</span>{% endif %}</footer>
+{% endmacro %}

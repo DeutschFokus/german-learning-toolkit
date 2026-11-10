@@ -1,0 +1,116 @@
+# English edition — every non-German interface string.
+language_name: English
+html_lang: en
+cover:
+  title: "300 Pages of {level} German"
+  title_rest: "Pages of|{level} German"         # follows the big 300; | = line break
+  explanations: With English explanations
+  features: [Answer key, Word lists, Chapter tests]
+  alt: "Cover: 300 Pages of {level} German, with English explanations"
+labels:
+  words_on_page: Words on this page
+  example_hint: one possible answer – now it’s your turn
+  listen_read: listen and read along
+  individual: your own answer
+  model: for example
+  back_to_task: back to the task
+  more_words: "+ {n} more in the word list"
+  in_full_book: in the full book
+  free_sample: Free sample
+  sample_note: "This is a free sample. The full book has 300 learning pages: 12 chapters, 3 review stations, answer key, transcripts and word list."
+toc:
+  title: Contents
+  intro: "Twelve chapters of 24 pages each and three review stations of four pages: exactly 300 pages of {level} German."
+  front: Before you start
+  appendix: Appendix
+  how: How this book works
+  cast: The people in this book
+  answers: Answer key
+  transcripts: Transcripts
+  wordlist: Word list A–Z
+  station: Review station
+imprint:
+  title: Imprint
+  edition: "{title} · {explanations}"
+  copyright: "© {year} {publisher}. All rights reserved."
+  version: "Version {version} · built {date}"
+  licence_title: Personal-use licence
+  licence: "You have bought this book for yourself. You may save it on your own devices and print it for your own learning. Please do not share, resell or upload the file, and do not use it to train AI systems. Teachers: one copy per learner, please – class licences are available on request."
+  fonts_title: Typefaces
+  fonts: "Set in Fraunces, Source Sans 3, Source Serif 4 and Caveat – all published under the SIL Open Font License 1.1."
+  audio_title: Audio
+  audio: "Scan the QR code next to a listening task or tap the track number. All tracks: {url}"
+  characters: "All people and events in this book are fictional."
+  contact: "Questions, corrections, ideas? {contact}"
+how:
+  title: How this book works
+  lead: "Every chapter follows the same path, so you always know where you are. Two minutes on this spread will save you hours later."
+  path:
+    auftakt: "A picture, your goal and a checklist. Tick what you can already do."
+    wortschatz: "The words of the topic, with pictures and first exercises."
+    hauptteil: "Dialogues, texts and audio. New grammar appears in real situations."
+    vertiefung: "Practice in listening, reading, writing and speaking."
+    uebersicht: "Grammar and phrases on two pages. Screenshot them."
+    abschlusstest: "An exam-style test with points."
+    rueckblick: "Tick the checklist again and see how far you have come."
+  task: "5.2 d means chapter 5, part 2, task d. You find the same address in the answer key, in cross-references and in the word list."
+  task_points: ["Address of the task", "What you practise", "Instruction in German, then in English", "Your score", "Tap to jump to the answer – and back again"]
+  icons: "The icons show which skill a task trains."
+  colors: "Every noun appears with its article in a fixed colour: der blue, die red, das green, plural navy. Learn the colour together with the word."
+  margin: "Four kinds of help sit next to the task they belong to."
+  margin_items:
+    tipp: "a learning tip"
+    wort: "words you need right now"
+    landeskunde: "life in Germany"
+    sogehts: "how to do it, step by step"
+  audio: "Scan the code with your phone or tap the track number on a tablet. The transcript of every track is at the back."
+  words: "At the foot of each page: the new words with article, plural and translation."
+  mistake: "A mistake many learners make, the correct sentence and one line that says why."
+  hand: "Blue handwriting shows one possible answer. The empty lines are yours."
+  check: "The same checklist opens and closes each chapter. Compare your ticks."
+  tips_title: Three habits that work
+  tips:
+    - "Little and often: twenty minutes a day beats two hours on Sunday."
+    - "Say it out loud. Read every dialogue twice – once as each speaker."
+    - "Check the answer key only after you have tried. Mistakes are part of the plan."
+cast:
+  title: The people in this book
+  lead: "You will meet these neighbours, friends and colleagues again and again – in every chapter and at every level."
+test:
+  scale_title: How did it go?
+  scale:
+    - [27, 30, "Excellent! You are ready for the next chapter."]
+    - [22, 26, "Good. Look again at the tasks where you lost points."]
+    - [15, 21, "Not bad. Work through the overview ({pages}) once more."]
+    - [0, 14, "Take your time and repeat the chapter. You can do this."]
+  total: Your total
+review:
+  compare: "Compare with your ticks on {page}."
+  lead: "You started this chapter with a checklist. Tick it again now."
+  look_again: "Not sure yet? Look again:"
+station:
+  lead_review: "Mixed practice from the last four chapters."
+  lead_exam: "A short exam in the style of the {exam} tests. Set a timer."
+  time: "Time: {min} minutes"
+answers:
+  title: Answer key
+  lead: "Tap a task address to jump back to the task."
+transcripts:
+  title: Transcripts
+  lead: "Every audio track, word for word."
+wordlist:
+  title: Word list A–Z
+  lead: "All new words of this book with the pages where you find them. Bold page = where the word is introduced. Separable verbs are shown like this: ein|ziehen."
+sales:
+  kicker: You have reached the end of the sample
+  title: "Ready for all 300 pages?"
+  body: "The full book takes you through twelve chapters of {level} German – with audio for every listening task, an answer key for every exercise and a test at the end of each chapter."
+  points:
+    - "12 chapters × 24 pages, 3 review stations"
+    - "Audio tracks by QR code or tap"
+    - "Answer key, transcripts and word list A–Z"
+    - "Interactive PDF: linked contents, answers and page references"
+  button: Get the full book
+  youtube: Free German stories every week on YouTube
+  series: "The series: one book per level, from A1 to C2"
+  thanks: "Thank you for learning with Deutsch Fokus."

@@ -1,0 +1,84 @@
+# German interface strings — identical in every edition (the book itself speaks German).
+chapter: Kapitel
+teil: Teil
+station: Zwischenstation
+page_abbr: "S."
+line_abbr: "Z."
+series_name: "300 Seiten Deutsch"
+labels:
+  words_on_page: Wörter auf dieser Seite
+  goal: Dein Ziel
+  can_do_start: "Das kann ich …"
+  can_do_end: "Das kann ich jetzt …"
+  not_yet: noch nicht
+  almost: fast
+  sure: sicher
+  in_this_chapter: In diesem Kapitel
+  grammar: Grammatik
+  typical_mistake: Typischer Fehler
+  example: Beispiel
+  track: Track
+  phrases: Redemittel
+  points: Punkte
+  points_abbr: P.
+  total: Gesamt
+  "true": R
+  "false": F
+  next_chapter: Im nächsten Kapitel
+  test_result: Mein Testergebnis
+  look_again: Noch einmal ansehen
+  individual: Individuelle Lösung
+  model: Beispiel
+  illustration: Illustration
+  answers: Lösungen
+  transcripts: Transkripte
+  wordlist: Wortliste
+  wordlist_long: Wortliste A–Z
+  contents: Inhalt
+  imprint: Impressum
+  how: So funktioniert dieses Buch
+  cast: Die Personen
+  appendix: Anhang
+  mini_exam: Mini-Prüfung
+  review: Wiederholung
+  listen_read: Hören und Mitlesen
+  page: Seite
+  pages: Seiten
+  level: Niveau
+  kenne_ich: kenne ich
+  station_covers: "Kapitel {a}–{b}"
+  full_book: im vollständigen Buch
+  from_task: zu
+  speakers: Es sprechen
+  notes:
+    tipp: Tipp
+    wort: Wort-Hilfe
+    landeskunde: Landeskunde
+    sogehts: "So geht’s"
+  skills:
+    hoeren: Hören
+    lesen: Lesen
+    schreiben: Schreiben
+    sprechen: Sprechen
+    partner: Partnerarbeit
+    grammatik: Grammatik
+  meta:
+    Von: Von
+    An: An
+    Betreff: Betreff
+how:
+  path_title: 24 Seiten – immer derselbe Weg
+  task_title: Jede Aufgabe hat eine Adresse
+  icons_title: Sechs Symbole
+  colors_title: Artikel haben Farben
+  margin_title: Hilfe am Rand
+  audio_title: Hören mit QR-Code
+  words_title: Wörter auf dieser Seite
+  mistake_title: Typische Fehler
+  hand_title: Handschrift heißt Beispiel
+  check_title: Kann ich das?
+  sample_rubric: Lies die Anzeige und ergänze die Tabelle.
+  sample_wrong: Ich wohne in die Nordstadt.
+  sample_right: Ich wohne in ==der== Nordstadt.
+  sample_hand: Meine Wohnung hat zwei Zimmer.
+  sample_cando: Ich kann meine Wohnung beschreiben.

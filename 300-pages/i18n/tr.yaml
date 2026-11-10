@@ -1,0 +1,116 @@
+# Türkçe baskı — Almanca olmayan tüm arayüz metinleri.
+language_name: Türkçe
+html_lang: tr
+cover:
+  title: "300 Sayfada {level} Almanca"
+  title_rest: "Sayfada|{level} Almanca"          # büyük 300'den sonra gelir; | = satır sonu
+  explanations: Türkçe açıklamalı
+  features: [Cevap anahtarı, Kelime listeleri, Ünite testleri]
+  alt: "Kapak: 300 Sayfada {level} Almanca, Türkçe açıklamalı"
+labels:
+  words_on_page: Bu sayfadaki kelimeler
+  example_hint: olası bir cevap – şimdi sıra sende
+  listen_read: dinle ve metni takip et
+  individual: kendi cevabın
+  model: örneğin
+  back_to_task: alıştırmaya dön
+  more_words: "+ {n} kelime daha kelime listesinde"
+  in_full_book: kitabın tamamında
+  free_sample: Ücretsiz örnek
+  sample_note: "Bu ücretsiz bir örnektir. Kitabın tamamında 300 çalışma sayfası vardır: 12 ünite, 3 ara durak, cevap anahtarı, dinleme metinleri ve kelime listesi."
+toc:
+  title: İçindekiler
+  intro: "Her biri 24 sayfalık on iki ünite ve dörder sayfalık üç ara durak: tam 300 sayfa {level} Almanca."
+  front: Başlamadan önce
+  appendix: Ekler
+  how: Bu kitap nasıl çalışır?
+  cast: Kitaptaki kişiler
+  answers: Cevap anahtarı
+  transcripts: Dinleme metinleri
+  wordlist: Kelime listesi A–Z
+  station: Ara durak
+imprint:
+  title: Künye
+  edition: "{title} · {explanations}"
+  copyright: "© {year} {publisher}. Tüm hakları saklıdır."
+  version: "Sürüm {version} · derleme tarihi {date}"
+  licence_title: Kişisel kullanım lisansı
+  licence: "Bu kitabı kendin için satın aldın. Dosyayı kendi cihazlarına kaydedebilir ve kendi çalışman için yazdırabilirsin. Lütfen dosyayı paylaşma, yeniden satma, internete yükleme ve yapay zekâ sistemlerini eğitmek için kullanma. Öğretmenler: lütfen her öğrenci için bir kopya – sınıf lisansı için bize yazabilirsiniz."
+  fonts_title: Yazı tipleri
+  fonts: "Fraunces, Source Sans 3, Source Serif 4 ve Caveat yazı tipleriyle dizilmiştir; tümü SIL Open Font License 1.1 ile yayımlanmıştır."
+  audio_title: Ses kayıtları
+  audio: "Dinleme alıştırmasının yanındaki QR kodu tara ya da parça numarasına dokun. Tüm kayıtlar: {url}"
+  characters: "Bu kitaptaki tüm kişiler ve olaylar kurgusaldır."
+  contact: "Soru, düzeltme, öneri? {contact}"
+how:
+  title: Bu kitap nasıl çalışır?
+  lead: "Her ünite aynı yolu izler; böylece her zaman nerede olduğunu bilirsin. Bu iki sayfaya ayıracağın iki dakika, sonradan sana saatler kazandırır."
+  path:
+    auftakt: "Bir resim, hedefin ve bir kontrol listesi. Şimdiden yapabildiklerini işaretle."
+    wortschatz: "Konunun kelimeleri: resimler ve ilk alıştırmalarla."
+    hauptteil: "Diyaloglar, metinler ve ses kayıtları. Yeni dil bilgisi gerçek durumların içinde karşına çıkar."
+    vertiefung: "Dinleme, okuma, yazma ve konuşma alıştırmaları."
+    uebersicht: "Dil bilgisi ve kalıp ifadeler iki sayfada. Ekran görüntüsünü al."
+    abschlusstest: "Sınav tarzında, puanlı bir test."
+    rueckblick: "Listeyi yeniden işaretle ve ne kadar ilerlediğini gör."
+  task: "5.2 d şu demek: 5. ünite, 2. bölüm, d alıştırması. Aynı adresi cevap anahtarında, göndermelerde ve kelime listesinde de bulursun."
+  task_points: ["Alıştırmanın adresi", "Hangi beceriyi çalıştığın", "Yönerge önce Almanca, sonra Türkçe", "Puanın", "Cevaba gitmek ve geri dönmek için dokun"]
+  icons: "Simgeler, alıştırmanın hangi beceriyi geliştirdiğini gösterir."
+  colors: "Her isim, artikeliyle birlikte sabit bir renkte görünür: der mavi, die kırmızı, das yeşil, çoğul lacivert. Rengi kelimeyle birlikte öğren."
+  margin: "Dört tür yardım, ait olduğu alıştırmanın hemen yanında durur."
+  margin_items:
+    tipp: "bir öğrenme ipucu"
+    wort: "tam şimdi lazım olan kelimeler"
+    landeskunde: "Almanya’da yaşam"
+    sogehts: "adım adım nasıl yapılır"
+  audio: "Kodu telefonunla tara ya da tablette parça numarasına dokun. Her kaydın metni kitabın sonundadır."
+  words: "Her sayfanın altında: yeni kelimeler; artikeli, çoğulu ve Türkçesiyle."
+  mistake: "Pek çok öğrencinin yaptığı bir hata, doğru cümle ve nedenini açıklayan tek satır."
+  hand: "Mavi el yazısı, olası bir cevabı gösterir. Boş satırlar senin."
+  check: "Aynı kontrol listesi her üniteyi açar ve kapatır. İşaretlerini karşılaştır."
+  tips_title: İşe yarayan üç alışkanlık
+  tips:
+    - "Az ama sık: Günde yirmi dakika, pazar günü iki saatten daha etkilidir."
+    - "Yüksek sesle söyle. Her diyaloğu iki kez oku – her seferinde başka bir konuşmacı olarak."
+    - "Cevap anahtarına ancak denedikten sonra bak. Hatalar planın bir parçası."
+cast:
+  title: Kitaptaki kişiler
+  lead: "Bu komşular, arkadaşlar ve iş arkadaşlarıyla tekrar tekrar karşılaşacaksın – her ünitede ve her seviyede."
+test:
+  scale_title: Nasıl geçti?
+  scale:
+    - [27, 30, "Harika! Bir sonraki üniteye hazırsın."]
+    - [22, 26, "İyi. Puan kaybettiğin alıştırmalara tekrar bak."]
+    - [15, 21, "Fena değil. Özeti ({pages}) bir kez daha çalış."]
+    - [0, 14, "Acele etme ve üniteyi tekrarla. Bunu başarabilirsin."]
+  total: Toplam puanın
+review:
+  compare: "İşaretlerini {page} ile karşılaştır."
+  lead: "Bu üniteye bir kontrol listesiyle başladın. Şimdi listeyi yeniden işaretle."
+  look_again: "Emin değil misin? Tekrar bak:"
+station:
+  lead_review: "Son dört üniteden karışık alıştırmalar."
+  lead_exam: "{exam} sınavları tarzında kısa bir sınav. Süre tut."
+  time: "Süre: {min} dakika"
+answers:
+  title: Cevap anahtarı
+  lead: "Alıştırmaya geri dönmek için adresine dokun."
+transcripts:
+  title: Dinleme metinleri
+  lead: "Tüm ses kayıtları, kelimesi kelimesine."
+wordlist:
+  title: Kelime listesi A–Z
+  lead: "Bu kitaptaki tüm yeni kelimeler ve geçtikleri sayfalar. Kalın sayfa numarası = kelimenin ilk öğretildiği yer. Ayrılabilen fiiller şöyle gösterilir: ein|ziehen."
+sales:
+  kicker: Örneğin sonuna geldin
+  title: "300 sayfanın tamamına hazır mısın?"
+  body: "Kitabın tamamı seni on iki ünite boyunca {level} Almancaya götürür: her dinleme alıştırması için ses kaydı, her alıştırma için cevap anahtarı ve her ünitenin sonunda bir test."
+  points:
+    - "12 ünite × 24 sayfa, 3 ara durak"
+    - "QR kodla ya da tek dokunuşla ses kayıtları"
+    - "Cevap anahtarı, dinleme metinleri ve A–Z kelime listesi"
+    - "Etkileşimli PDF: bağlantılı içindekiler, cevaplar ve sayfa göndermeleri"
+  button: Kitabın tamamını al
+  youtube: YouTube’da her hafta ücretsiz Almanca hikâyeler
+  series: "Seri: A1’den C2’ye her seviye için bir kitap"
+  thanks: "Deutsch Fokus ile öğrendiğin için teşekkürler."
