@@ -1433,7 +1433,6 @@ teile:
         points: 6
         body:
           - type: gap_text
-            compact: true
             items:
               - "Stell die Lampe bitte neben [[das]] Bett."
               - "Die Schlüssel liegen auf [[dem]] Tisch."

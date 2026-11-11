@@ -1,6 +1,6 @@
 # QA report · 300-pages-a2-tr-sample.pdf
 
-Built 2026-11-11 12:16 · level A2 · language tr · flags: sample
+Built 2026-11-11 12:26 · level A2 · language tr · flags: sample
 
 ## Summary
 
@@ -8,7 +8,7 @@ Built 2026-11-11 12:16 · level A2 · language tr · flags: sample
 | --- | --- | --- |
 | Validation | 0 errors, 0 warnings | pass |
 | Layout geometry | 0 problems on 11 learning pages and 7 front-matter and appendix pages | pass |
-| Links | 201 internal link areas to 47 targets, 73 external to 8 URLs, 0 broken | pass |
+| Links | 200 internal link areas to 47 targets, 73 external to 8 URLs, 0 broken | pass |
 | Fonts | 16 faces, all embedded | pass |
 | Text extraction | 0 broken characters, 0 letter-spaced runs | pass |
 | Tagged PDF | 109/109 figures with alt text, language de-DE | pass |
@@ -16,7 +16,7 @@ Built 2026-11-11 12:16 · level A2 · language tr · flags: sample
 | Contrast | 101 colour pairs, 0 below WCAG AA | pass |
 | Baseline grid | 96% of body lines on the half-baseline grid, 100% on the quarter grid | pass |
 
-File: 20 pages, 447 KB · layout 0.9 s (3 rounds) · render 4.6 s · write 3.6 s
+File: 20 pages, 447 KB · layout 0.8 s (3 rounds) · render 3.8 s · write 3.0 s
 
 ## 1 · Validation log
 
@@ -27,7 +27,7 @@ Validation: 0 error(s), 0 warning(s)
 
 ## 2 · Overflow, clipping, collisions, empty space, footers
 
-No block overflows its page, no two blocks overlap, every block has the height the paginator planned, and nothing comes closer than 1 mm to the footer strip.
+No block overflows its page, no two blocks overlap, every block has the height the paginator planned, nothing comes closer than 1 mm to the footer strip, and no line of text is printed over another on any page.
 
 `natural` = how full the page is before spare room is used; `final` = after write-in areas and picture slots have grown and the gaps were opened. Pages marked `open` end with more than 20 % free space.
 
@@ -42,14 +42,14 @@ No block overflows its page, no two blocks overlap, every block has the height t
 | 107 | hauptteil | 99% | 100% | 4.2 mm to footer | ok |
 | 120 | uebersicht | 89% | 89% | 30.6 mm to footer | ok |
 | 121 | uebersicht | 96% | 96% | 14.8 mm to footer | ok |
-| 122 | abschlusstest | 89% | 89% | 30.6 mm to footer | ok |
+| 122 | abschlusstest | 92% | 100% | 4.2 mm to footer | ok |
 | 123 | abschlusstest | 96% | 100% | 4.2 mm to footer | ok |
 
 Front matter and appendix pages are composed as whole pages; they are measured in the finished PDF (lowest text line against the folio line, at least 2 mm required).
 
 | Page | Part | clearance | state |
 | --- | --- | --- | --- |
-| ii | front | 4.8 mm to folio | ok |
+| ii | front | 11.8 mm to folio | ok |
 | iii | front | 15.7 mm to folio | ok |
 | iv | front | 17.5 mm to folio | ok |
 | v | front | 29.8 mm to folio | ok |
@@ -68,12 +68,12 @@ Every block starts on a multiple of half a baseline (7.5 pt), so running text on
 | 104–105 | 41 | 100% | 100% | 0 |
 | 106–107 | 80 | 100% | 100% | 6 |
 | 120–121 | 58 | 79% | 100% | 2 |
-| 122–123 | 69 | 100% | 100% | 2 |
+| 122–123 | 69 | 100% | 100% | 6 |
 
 ## 4 · Links and navigation
 
-- internal link areas: **201** pointing to 47 different targets, all resolved: **yes** (one link can consist of several clickable areas)
-- named destinations in the file: 217
+- internal link areas: **200** pointing to 47 different targets, all resolved: **yes** (one link can consist of several clickable areas)
+- named destinations in the file: 216
 - external link areas: 73 → https://www.deutschfokus.example (69), https://www.youtube.com (3), mailto:hallo@deutschfokus.example (1)
 - 8 different URLs, all well-formed: `https://www.deutschfokus.example/300`, `https://www.deutschfokus.example/audio`, `https://www.deutschfokus.example/audio/a2/5.01`, `https://www.deutschfokus.example/audio/a2/5.02`, `https://www.deutschfokus.example/audio/a2/5.03`, `https://www.deutschfokus.example/audio/a2/5.08`, `https://www.youtube.com/@DeutschFokus`, `mailto:hallo@deutschfokus.example`
 - bookmarks: level 1: 9, level 2: 7, level 3: 21 (Kapitel → Teil → Aufgabe)
@@ -106,7 +106,7 @@ Embedded font data: 78 KB (subsets).
 
 ## 6 · Text extraction
 
-Whole file: 30,847 characters · 0 replacement characters · 0 letter-spaced runs · 379 umlauts/ß · 610 Turkish letters (ç ğ ı İ ş) · 0 soft hyphens · 0 zero-width characters.
+Whole file: 30,815 characters · 0 replacement characters · 0 letter-spaced runs · 378 umlauts/ß · 610 Turkish letters (ç ğ ı İ ş) · 0 soft hyphens · 0 zero-width characters.
 
 ### Page Cover
 
@@ -517,6 +517,6 @@ Every text element of the cover exists exactly once in the PDF (the level appear
 
 ## 9 · File size
 
-- this build: 447 KB for 20 pages (11 learning pages, 9 others); 18.4 KB per page without fonts
+- this build: 447 KB for 20 pages (11 learning pages, 9 others); 18.5 KB per page without fonts
 - full book, vector artwork only: about **6.6 MB** for roughly 362 pages
 - full book with final illustrations: about 109 picture slots; at 150 KB each (JPEG, 150 dpi) that adds 16 MB → about **23 MB** (target: under 40 MB)

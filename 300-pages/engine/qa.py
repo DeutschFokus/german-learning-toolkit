@@ -106,6 +106,36 @@ def fixed_pages(pdf_path: Path, res, cfg) -> tuple[list[str], list[tuple]]:
     return problems, rows
 
 
+def text_collisions(doc, skip: set[int] = frozenset()) -> list[tuple[int, str, str]]:
+    """Text printed over other text. Compares the x-height bands of all lines of a page (not their
+    full boxes, so normal line spacing never counts). Returns (page index, text a, text b)."""
+    found = []
+    for i, page in enumerate(doc):
+        if i in skip:
+            continue
+        bands = []
+        for block in page.get_text("dict")["blocks"]:
+            for line in block.get("lines", []):
+                for sp in line["spans"]:
+                    t = sp["text"].strip()
+                    if not t or sp["size"] > 30:              # big numerals are meant to sit behind things
+                        continue
+                    base = sp["origin"][1]
+                    bands.append((sp["bbox"][0], base - 0.45 * sp["size"], sp["bbox"][2], base, t, id(line)))
+        bands.sort(key=lambda b: b[1])
+        for a in range(len(bands)):
+            for b in range(a + 1, len(bands)):
+                if bands[b][1] >= bands[a][3]:
+                    break
+                if bands[a][5] == bands[b][5]:                # same line: neighbours, not a collision
+                    continue
+                ox = min(bands[a][2], bands[b][2]) - max(bands[a][0], bands[b][0])
+                oy = min(bands[a][3], bands[b][3]) - max(bands[a][1], bands[b][1])
+                if ox > 1.5 and oy > 1.0:
+                    found.append((i, bands[a][4][:40], bands[b][4][:40]))
+    return found
+
+
 def baseline_report(pdf_path: Path, res, cfg) -> tuple[list[tuple], dict]:
     """Where do body-size text lines sit relative to the baseline grid?
 
@@ -331,6 +361,9 @@ def write_report(pdf_path: Path, out_path: Path, cfg, book, res, doc, info: dict
     problems, rows = geometry(res, cfg, doc)
     fixed_problems, fixed_rows = fixed_pages(pdf_path, res, cfg)
     problems = problems + fixed_problems
+    with fitz.open(pdf_path) as _d:
+        hits = text_collisions(_d, skip={i for i, sp in enumerate(res.pages) if sp.kind in ("cover", "sales")})
+    problems = problems + [f"S. {res.pages[i].label}: text overlaps text – “{a}” / “{b}”" for i, a, b in hits]
     links = links_report(pdf_path)
     fonts, font_bytes = fonts_report(pdf_path)
     st = structure_report(pdf_path)
@@ -382,7 +415,7 @@ def write_report(pdf_path: Path, out_path: Path, cfg, book, res, doc, info: dict
             add(f"- {p}")
     else:
         add("No block overflows its page, no two blocks overlap, every block has the height the paginator planned, "
-            "and nothing comes closer than 1 mm to the footer strip.")
+            "nothing comes closer than 1 mm to the footer strip, and no line of text is printed over another on any page.")
     add("")
     add("`natural` = how full the page is before spare room is used; `final` = after write-in areas and picture slots have grown "
         "and the gaps were opened. Pages marked `open` end with more than 20 % free space.")

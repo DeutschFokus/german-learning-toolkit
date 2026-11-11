@@ -2,15 +2,15 @@
 
 A2 · Kapitel 5 „Wohnen“ (pages 101–124) and Zwischenstation 2 (pages 197–200) · built 2026-11-11 · engine 1.0-demo
 
-Every build writes its own report to `dist/qa/`. This page sums up the six demo builds; the full generated
-reports are in [`docs/qa/`](qa/). Nothing here is typed by hand except the last section – the numbers come
+Every build writes its own report to `dist/qa/`. This page sums up the six demo builds (`python tools/qa_summary.py`);
+the full generated reports are in [`docs/qa/`](qa/). Only the last section is written by hand – all numbers come
 from the finished PDFs.
 
 ## Verdict
 
 | Check | English | Turkish | English · free sample | Turkish · free sample | English · print | English · fillable |
 | --- | --- | --- | --- | --- | --- | --- |
-| Pages · size | 41 · 852 KB | 41 · 854 KB | 20 · 444 KB | 20 · 447 KB | 41 · 874 KB | 41 · 1068 KB |
+| Pages · size | 41 · 853 KB | 41 · 856 KB | 20 · 446 KB | 20 · 447 KB | 41 · 876 KB | 41 · 1070 KB |
 | Validation | pass | pass | pass | pass | pass | pass |
 | Layout geometry | pass | pass | pass | pass | pass | pass |
 | Links | pass | pass | pass | pass | pass | pass |
@@ -21,14 +21,14 @@ from the finished PDFs.
 | Contrast | pass | pass | pass | pass | pass | pass |
 | Baseline grid | pass | pass | pass | pass | pass | pass |
 
-All nine checks pass in all six builds.
+All 9 checks pass in all 6 builds.
 
 ## What the checks do
 
 | Check | How it is measured | Result (English edition) |
 | --- | --- | --- |
 | Validation | content model and book rules: missing article, plural or translation, duplicate address or track, task without answer, answer without task, audio without transcript, unknown speaker, page budgets | 0 errors, 0 warnings |
-| Layout geometry | the position of every block in the finished PDF against the paginator's plan: overflow, overlap, height, distance to the footer; front matter and appendix against the folio line | 0 problems on 28 learning pages and 11 front-matter and appendix pages |
+| Layout geometry | the position of every block in the finished PDF against the paginator's plan: overflow, overlap, height, distance to the footer; front matter and appendix against the folio line; text printed over text on any page | 0 problems on 28 learning pages and 11 front-matter and appendix pages |
 | Links | every link annotation in the PDF is resolved against the named destinations; external URLs are checked for form | 648 internal link areas to 163 targets, 108 external to 13 URLs, 0 broken |
 | Fonts | font dictionaries of the PDF | 16 faces, all embedded |
 | Text extraction | all text is extracted with MuPDF and searched for replacement characters, letter-spaced runs, soft hyphens and zero-width characters | 0 broken characters, 0 letter-spaced runs |
@@ -46,7 +46,7 @@ Validation: 0 error(s), 0 warning(s)
 
 ## Overflow, clipping, collisions, empty space, footers
 
-No block overflows its page, no two blocks overlap, every block has the height the paginator planned, and nothing comes closer than 1 mm to the footer strip.
+No block overflows its page, no two blocks overlap, every block has the height the paginator planned, nothing comes closer than 1 mm to the footer strip, and no line of text is printed over another on any page.
 
 `natural` = how full the page is before spare room is used; `final` = after write-in areas and picture slots have grown and the gaps were opened. Pages marked `open` end with more than 20 % free space.
 
@@ -73,7 +73,7 @@ No block overflows its page, no two blocks overlap, every block has the height t
 | 119 | vertiefung | 75% | 100% | 4.2 mm to footer | ok |
 | 120 | uebersicht | 91% | 91% | 25.4 mm to footer | ok |
 | 121 | uebersicht | 96% | 96% | 14.8 mm to footer | ok |
-| 122 | abschlusstest | 89% | 89% | 30.6 mm to footer | ok |
+| 122 | abschlusstest | 92% | 100% | 4.2 mm to footer | ok |
 | 123 | abschlusstest | 96% | 100% | 4.2 mm to footer | ok |
 | 124 | rueckblick | 95% | 100% | 4.2 mm to footer | ok |
 | 197 | station | 96% | 100% | 4.2 mm to footer | ok |
@@ -85,15 +85,15 @@ Front matter and appendix pages are composed as whole pages; they are measured i
 
 | Page | Part | clearance | state |
 | --- | --- | --- | --- |
-| ii | front | 4.8 mm to folio | ok |
+| ii | front | 11.8 mm to folio | ok |
 | iii | front | 16.8 mm to folio | ok |
 | iv | front | 15.9 mm to folio | ok |
 | v | front | 29.8 mm to folio | ok |
 | vi | front | 57.1 mm to folio | ok |
 | L 1 | answers | 16.2 mm to folio | ok |
 | L 2 | answers | 21.5 mm to folio | ok |
-| T 1 | transcripts | 22.2 mm to folio | ok |
-| T 2 | transcripts | 171.2 mm to folio | ok |
+| T 1 | transcripts | 30.6 mm to folio | ok |
+| T 2 | transcripts | 141.2 mm to folio | ok |
 | W 1 | wordlist | 15.3 mm to folio | ok |
 | W 2 | wordlist | 15.3 mm to folio | ok |
 
@@ -116,7 +116,7 @@ Every block starts on a multiple of half a baseline (7.5 pt), so running text on
 | 116–117 | 54 | 100% | 100% | 3 |
 | 118–119 | 23 | 100% | 100% | 0 |
 | 120–121 | 58 | 79% | 100% | 2 |
-| 122–123 | 69 | 100% | 100% | 2 |
+| 122–123 | 69 | 100% | 100% | 6 |
 | 124–197 | 42 | 100% | 100% | 2 |
 | 198–199 | 57 | 100% | 100% | 1 |
 | 200 | 16 | 100% | 100% | – |
@@ -158,10 +158,10 @@ Embedded font data: 89 KB (subsets).
 ## Text extraction
 
 Five pages, extracted with MuPDF and pasted unchanged: cover, chapter opener, a practice page, a page with an e-mail and
-multiple choice, the first page of the answer key. Letter-spacing is done in CSS only, so headings come out as words; German quotes, dashes and
-umlauts survive; the thin space in „S. 101“ is U+202F.
+multiple choice, the first page of the answer key. Letter-spacing is done in CSS only, so headings come out as words; German
+quotes, dashes and umlauts survive; the thin space in „S. 101“ is U+202F.
 
-Whole file: 65,479 characters · 0 replacement characters · 0 letter-spaced runs · 461 umlauts/ß · 6 Turkish letters (ç ğ ı İ ş) · 0 soft hyphens · 0 zero-width characters.
+Whole file: 65,512 characters · 0 replacement characters · 0 letter-spaced runs · 461 umlauts/ß · 6 Turkish letters (ç ğ ı İ ş) · 0 soft hyphens · 0 zero-width characters.
 
 ### Page Cover
 
@@ -522,7 +522,7 @@ S. 113
 1 F   2 R   3 R   4 R   5 F S. 115
 ```
 
-Turkish edition, whole file: 65,278 characters · 0 replacement characters · 0 letter-spaced runs · 777 umlauts/ß · 1002 Turkish letters (ç ğ ı İ ş) · 0 soft hyphens · 0 zero-width characters.
+Turkish edition, whole file: 65,303 characters · 0 replacement characters · 0 letter-spaced runs · 777 umlauts/ß · 1002 Turkish letters (ç ğ ı İ ş) · 0 soft hyphens · 0 zero-width characters.
 
 ## Cover
 
@@ -567,10 +567,10 @@ The full table is section 7 of each generated report.
 
 ## File size and build time
 
-- this build: 852 KB for 41 pages (28 learning pages, 13 others); 18.6 KB per page without fonts
+- this build: 853 KB for 41 pages (28 learning pages, 13 others); 18.6 KB per page without fonts
 - full book, vector artwork only: about **6.9 MB** for roughly 371 pages
 - full book with final illustrations: about 96 picture slots; at 150 KB each (JPEG, 150 dpi) that adds 14 MB → about **21 MB** (target: under 40 MB)
-- build time: the 41-page demo takes about 30 s (layout 16 s cold, under 1 s with the block cache; render and write 14 s). Measuring costs
+- build time: the 41-page demo takes about 30 s (layout 16 s cold, about 1 s with the block cache; render and write 14 s). Measuring costs
   about 40 ms per block and a full book has roughly 1,300 blocks, so a 300-page book should build in 4–5 minutes cold and 2–3 minutes
   with a warm cache. This is extrapolated – only one chapter exists.
 

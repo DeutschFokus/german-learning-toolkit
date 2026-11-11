@@ -1,6 +1,6 @@
 # QA report · 300-pages-a2-tr.pdf
 
-Built 2026-11-11 12:16 · level A2 · language tr · flags: none
+Built 2026-11-11 12:26 · level A2 · language tr · flags: none
 
 ## Summary
 
@@ -16,7 +16,7 @@ Built 2026-11-11 12:16 · level A2 · language tr · flags: none
 | Contrast | 101 colour pairs, 0 below WCAG AA | pass |
 | Baseline grid | 97% of body lines on the half-baseline grid, 100% on the quarter grid | pass |
 
-File: 41 pages, 854 KB · layout 15.2 s (3 rounds) · render 8.6 s · write 5.7 s
+File: 41 pages, 856 KB · layout 14.2 s (3 rounds) · render 6.9 s · write 5.2 s
 
 ## 1 · Validation log
 
@@ -27,7 +27,7 @@ Validation: 0 error(s), 0 warning(s)
 
 ## 2 · Overflow, clipping, collisions, empty space, footers
 
-No block overflows its page, no two blocks overlap, every block has the height the paginator planned, and nothing comes closer than 1 mm to the footer strip.
+No block overflows its page, no two blocks overlap, every block has the height the paginator planned, nothing comes closer than 1 mm to the footer strip, and no line of text is printed over another on any page.
 
 `natural` = how full the page is before spare room is used; `final` = after write-in areas and picture slots have grown and the gaps were opened. Pages marked `open` end with more than 20 % free space.
 
@@ -54,7 +54,7 @@ No block overflows its page, no two blocks overlap, every block has the height t
 | 119 | vertiefung | 75% | 100% | 4.2 mm to footer | ok |
 | 120 | uebersicht | 89% | 89% | 30.6 mm to footer | ok |
 | 121 | uebersicht | 96% | 96% | 14.8 mm to footer | ok |
-| 122 | abschlusstest | 89% | 89% | 30.6 mm to footer | ok |
+| 122 | abschlusstest | 92% | 100% | 4.2 mm to footer | ok |
 | 123 | abschlusstest | 96% | 100% | 4.2 mm to footer | ok |
 | 124 | rueckblick | 97% | 100% | 4.2 mm to footer | ok |
 | 197 | station | 96% | 100% | 4.2 mm to footer | ok |
@@ -66,15 +66,15 @@ Front matter and appendix pages are composed as whole pages; they are measured i
 
 | Page | Part | clearance | state |
 | --- | --- | --- | --- |
-| ii | front | 4.8 mm to folio | ok |
+| ii | front | 11.8 mm to folio | ok |
 | iii | front | 15.7 mm to folio | ok |
 | iv | front | 17.5 mm to folio | ok |
 | v | front | 29.8 mm to folio | ok |
 | vi | front | 62.4 mm to folio | ok |
 | L 1 | answers | 14.5 mm to folio | ok |
 | L 2 | answers | 21.5 mm to folio | ok |
-| T 1 | transcripts | 22.2 mm to folio | ok |
-| T 2 | transcripts | 171.2 mm to folio | ok |
+| T 1 | transcripts | 30.6 mm to folio | ok |
+| T 2 | transcripts | 141.2 mm to folio | ok |
 | W 1 | wordlist | 15.3 mm to folio | ok |
 | W 2 | wordlist | 19.5 mm to folio | ok |
 
@@ -95,7 +95,7 @@ Every block starts on a multiple of half a baseline (7.5 pt), so running text on
 | 116–117 | 54 | 100% | 100% | 2 |
 | 118–119 | 23 | 100% | 100% | 0 |
 | 120–121 | 58 | 79% | 100% | 2 |
-| 122–123 | 69 | 100% | 100% | 2 |
+| 122–123 | 69 | 100% | 100% | 6 |
 | 124–197 | 42 | 86% | 100% | 2 |
 | 198–199 | 57 | 100% | 100% | 1 |
 | 200 | 16 | 100% | 100% | – |
@@ -136,7 +136,7 @@ Embedded font data: 90 KB (subsets).
 
 ## 6 · Text extraction
 
-Whole file: 65,278 characters · 0 replacement characters · 0 letter-spaced runs · 777 umlauts/ß · 1002 Turkish letters (ç ğ ı İ ş) · 0 soft hyphens · 0 zero-width characters.
+Whole file: 65,303 characters · 0 replacement characters · 0 letter-spaced runs · 777 umlauts/ß · 1002 Turkish letters (ç ğ ı İ ş) · 0 soft hyphens · 0 zero-width characters.
 
 ### Page Cover
 
@@ -625,6 +625,6 @@ Every text element of the cover exists exactly once in the PDF (the level appear
 
 ## 9 · File size
 
-- this build: 854 KB for 41 pages (28 learning pages, 13 others); 18.6 KB per page without fonts
+- this build: 856 KB for 41 pages (28 learning pages, 13 others); 18.7 KB per page without fonts
 - full book, vector artwork only: about **6.9 MB** for roughly 371 pages
 - full book with final illustrations: about 96 picture slots; at 150 KB each (JPEG, 150 dpi) that adds 14 MB → about **21 MB** (target: under 40 MB)
