@@ -7,6 +7,7 @@ text for every image and the file stays small and razor-sharp at any zoom.
 from __future__ import annotations
 
 import html
+from pathlib import Path
 import io
 from typing import Optional
 
@@ -60,6 +61,11 @@ def avatar(key: str, cast: dict, size: str = "8.6mm", uid: str = "") -> str:
     name = c.get("name", key)
     bg = a.get("bg", "#E7E9EE")
     cid = f"av-{key}-{uid}" if uid else f"av-{key}"
+    portrait = Path(__file__).resolve().parent.parent / "assets" / "cast" / f"{key}.png"
+    if portrait.exists():                          # a real portrait (cut from the character sheet) replaces the drawn one
+        return (f'<svg class="av" width="{size}" height="{size}" viewBox="0 0 48 48"><title>{html.escape(name)}</title>'
+                f'<defs><clipPath id="{cid}"><circle cx="24" cy="24" r="24"/></clipPath></defs>'
+                f'<image href="{portrait.as_uri()}" x="0" y="0" width="48" height="48" clip-path="url(#{cid})"/></svg>')
     if a.get("style") == "voice":
         inner = (f'<circle cx="24" cy="24" r="24" fill="{bg}"/>'
                  '<g fill="none" stroke="#1B1E2F" stroke-width="2.6" stroke-linecap="round">'
