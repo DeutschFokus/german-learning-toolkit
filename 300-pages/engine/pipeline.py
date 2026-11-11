@@ -59,13 +59,24 @@ def stylesheet(cfg: Config, env, print_: bool = False) -> str:
     return css
 
 
+def cover_figure(cfg: Config) -> str:
+    """Optional cast member standing in front of the 300 (series.yaml → design.cover_figure)."""
+    key = cfg.series["design"].get("cover_figure")
+    if not key:
+        return ""
+    from .illustrate import person
+    a = cfg.series["cast"][key]["avatar"]
+    fig = person(350, 1490, 1440, a["skin"], a["hair"], a["top"], style=a.get("style", "short"), pose="stand")
+    return (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 1500"><title>{esc(cfg.series["cast"][key]["full"])}</title>{fig}</svg>')
+
+
 def cover_view(cfg: Config, sample: bool = False) -> dict:
     """Everything the cover template needs. Each text element is passed (and printed) exactly once."""
     rest = esc(cfg.ui("cover.title_rest")).replace("{level}", f'<span class="lvw">{cfg.level_name}</span>').replace("|", "<br>")
     return {"lang": cfg.lang, "level": cfg.level_name, "niveau": esc(cfg.de("labels.level")), "rest": rest,
             "expl": esc(cfg.ui("cover.explanations")), "features": [esc(f) for f in cfg.ui("cover.features")],
             "logo": art.logo(cfg.series["colors"]["navy"]),
-            "sample": esc(cfg.ui("labels.free_sample")) if sample else ""}
+            "sample": esc(cfg.ui("labels.free_sample")) if sample else "", "figure": cover_figure(cfg)}
 
 
 @dataclass
