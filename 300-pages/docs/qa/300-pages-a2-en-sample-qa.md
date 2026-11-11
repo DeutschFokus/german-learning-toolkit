@@ -1,6 +1,6 @@
 # QA report · 300-pages-a2-en-sample.pdf
 
-Built 2026-11-11 12:25 · level A2 · language en · flags: sample
+Built 2026-11-11 21:17 · level A2 · language en · flags: sample
 
 ## Summary
 
@@ -8,15 +8,15 @@ Built 2026-11-11 12:25 · level A2 · language en · flags: sample
 | --- | --- | --- |
 | Validation | 0 errors, 0 warnings | pass |
 | Layout geometry | 0 problems on 11 learning pages and 7 front-matter and appendix pages | pass |
-| Links | 199 internal link areas to 47 targets, 73 external to 8 URLs, 0 broken | pass |
+| Links | 198 internal link areas to 47 targets, 73 external to 8 URLs, 0 broken | pass |
 | Fonts | 16 faces, all embedded | pass |
 | Text extraction | 0 broken characters, 0 letter-spaced runs | pass |
-| Tagged PDF | 109/109 figures with alt text, language de-DE | pass |
+| Tagged PDF | 105/105 figures with alt text, language de-DE | pass |
 | Cover | 10 text elements, 0 duplicated or missing | pass |
 | Contrast | 101 colour pairs, 0 below WCAG AA | pass |
 | Baseline grid | 96% of body lines on the half-baseline grid, 100% on the quarter grid | pass |
 
-File: 20 pages, 446 KB · layout 0.8 s (3 rounds) · render 4.3 s · write 3.0 s
+File: 20 pages, 2063 KB · layout 1.0 s (3 rounds) · render 4.5 s · write 3.8 s
 
 ## 1 · Validation log
 
@@ -53,7 +53,7 @@ Front matter and appendix pages are composed as whole pages; they are measured i
 | iii | front | 16.8 mm to folio | ok |
 | iv | front | 15.9 mm to folio | ok |
 | v | front | 29.8 mm to folio | ok |
-| vi | front | 57.1 mm to folio | ok |
+| vi | front | 62.4 mm to folio | ok |
 | L 1 | answers | 16.2 mm to folio | ok |
 | W 1 | wordlist | 15.3 mm to folio | ok |
 
@@ -72,14 +72,14 @@ Every block starts on a multiple of half a baseline (7.5 pt), so running text on
 
 ## 4 · Links and navigation
 
-- internal link areas: **199** pointing to 47 different targets, all resolved: **yes** (one link can consist of several clickable areas)
+- internal link areas: **198** pointing to 47 different targets, all resolved: **yes** (one link can consist of several clickable areas)
 - named destinations in the file: 215
 - external link areas: 73 → https://www.deutschfokus.example (69), https://www.youtube.com (3), mailto:hallo@deutschfokus.example (1)
 - 8 different URLs, all well-formed: `https://www.deutschfokus.example/300`, `https://www.deutschfokus.example/audio`, `https://www.deutschfokus.example/audio/a2/5.01`, `https://www.deutschfokus.example/audio/a2/5.02`, `https://www.deutschfokus.example/audio/a2/5.03`, `https://www.deutschfokus.example/audio/a2/5.08`, `https://www.youtube.com/@DeutschFokus`, `mailto:hallo@deutschfokus.example`
 - bookmarks: level 1: 9, level 2: 7, level 3: 21 (Kapitel → Teil → Aufgabe)
 - page labels: Cover, ii, iii, iv, v, vi, 101, 102 … 121, 122, 123, L 1, W 1, Info
 - metadata: title “300 Pages of A2 German – With English explanations (Free sample)”, author “Deutsch Fokus”, language de-DE
-- tagged PDF: yes · figures with alternative text: 109 of 109
+- tagged PDF: yes · figures with alternative text: 105 of 105
 
 ## 5 · Fonts
 
@@ -106,7 +106,7 @@ Embedded font data: 78 KB (subsets).
 
 ## 6 · Text extraction
 
-Whole file: 30,668 characters · 0 replacement characters · 0 letter-spaced runs · 196 umlauts/ß · 1 Turkish letters (ç ğ ı İ ş) · 0 soft hyphens · 0 zero-width characters.
+Whole file: 30,104 characters · 0 replacement characters · 0 letter-spaced runs · 190 umlauts/ß · 0 Turkish letters (ç ğ ı İ ş) · 0 soft hyphens · 0 zero-width characters.
 
 ### Page Cover
 
@@ -515,6 +515,6 @@ Every text element of the cover exists exactly once in the PDF (the level appear
 
 ## 9 · File size
 
-- this build: 446 KB for 20 pages (11 learning pages, 9 others); 18.4 KB per page without fonts
-- full book, vector artwork only: about **6.6 MB** for roughly 362 pages
-- full book with final illustrations: about 109 picture slots; at 150 KB each (JPEG, 150 dpi) that adds 16 MB → about **23 MB** (target: under 40 MB)
+- this build: 2063 KB for 20 pages (11 learning pages, 9 others); 99.3 KB per page without fonts
+- full book, vector artwork only: about **35.2 MB** for roughly 362 pages
+- full book with final illustrations: about 109 picture slots; at 150 KB each (JPEG, 150 dpi) that adds 16 MB → about **51 MB** (target: under 40 MB)

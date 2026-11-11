@@ -24,7 +24,7 @@ Palette: mid `#FD9913` · hl `#FFCC9E` · soft `#FFE4CC` · wash `#FFF4E9` · de
 - **Deliver:** 1400 × 1010 px · 1.38 : 1, JPEG, sRGB → `assets/images/a2/k5-wohnung.jpg`
 - **Scene:** Elifs Wohnung von oben, wie ein bunter Grundriss mit Möbeln: Flur, Wohnzimmer mit Sofa, Regal und Teppich, Schlafzimmer, Küche mit Kühlschrank, Bad mit Waschmaschine und Spiegel, kleiner Balkon. Zwölf Zahlen markieren die Wörter.
 - **Alt text (en):** Bird’s-eye view of Elif’s flat with twelve numbered rooms and pieces of furniture.
-- **Numbered pins** (x %, y % from the top left – the object must sit under its pin): 1 (47, 53), 2 (22, 30), 3 (77, 27), 4 (22, 78), 5 (70, 77), 6 (6, 50), 7 (33, 16), 8 (13, 14), 9 (28, 44), 10 (36, 88), 11 (62, 88), 12 (84, 66)
+- **Numbered pins** (x %, y % from the top left – the object must sit under its pin): 1 (50.8, 78.7), 2 (22.8, 21.3), 3 (76.7, 20.1), 4 (17.3, 65.8), 5 (67.3, 66.9), 6 (50.1, 7.9), 7 (29, 35.7), 8 (48.3, 42.8), 9 (28.8, 51.6), 10 (31.9, 75.3), 11 (69.1, 87.8), 12 (77.7, 72)
 - **Note:** Exactly this shape, nothing is cropped. Draw each object under its pin and leave the pin spots free of small detail.
 - **In the content file:** add `src: assets/images/a2/k5-wohnung.jpg` to this image.
 
@@ -97,7 +97,7 @@ Palette: mid `#AABDEC` · hl `#C3D4FD` · soft `#E4EBFD` · wash `#F2F6FE` · de
 - **Where:** Teil 2 · Mini-Prüfung
 - **Format:** strip – 117.2 mm wide, 37–63 mm high (the slot grows to fill its page)
 - **Deliver:** 1400 × 760 px · 1.85 : 1, JPEG, sRGB → `assets/images/a2/z2-pruefung.jpg`
-- **Scene:** Prüfungssituation: Zwei Lernende sitzen sich an einem Tisch gegenüber und sprechen miteinander; zwischen ihnen liegen vier Wortkarten. Im Hintergrund eine Uhr.
+- **Scene:** Prüfungssituation: Anna und Yusuf sitzen sich an einem Tisch gegenüber und sprechen miteinander; zwischen ihnen liegen vier Wortkarten. Im Hintergrund eine Uhr.
 - **Alt text (en):** Two learners sit opposite each other at a table and talk; four word cards lie between them.
 - **Note:** The picture is cropped from top and bottom when the slot is lower: keep everything important in the middle 58% of the height.
 - **In the content file:** add `src: assets/images/a2/z2-pruefung.jpg` to this image.

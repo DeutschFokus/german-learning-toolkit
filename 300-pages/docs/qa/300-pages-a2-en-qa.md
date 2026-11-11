@@ -1,6 +1,6 @@
 # QA report · 300-pages-a2-en.pdf
 
-Built 2026-11-11 12:24 · level A2 · language en · flags: none
+Built 2026-11-11 21:16 · level A2 · language en · flags: none
 
 ## Summary
 
@@ -8,15 +8,15 @@ Built 2026-11-11 12:24 · level A2 · language en · flags: none
 | --- | --- | --- |
 | Validation | 0 errors, 0 warnings | pass |
 | Layout geometry | 0 problems on 28 learning pages and 11 front-matter and appendix pages | pass |
-| Links | 648 internal link areas to 163 targets, 108 external to 13 URLs, 0 broken | pass |
+| Links | 639 internal link areas to 163 targets, 108 external to 13 URLs, 0 broken | pass |
 | Fonts | 16 faces, all embedded | pass |
 | Text extraction | 0 broken characters, 0 letter-spaced runs | pass |
-| Tagged PDF | 225/225 figures with alt text, language de-DE | pass |
+| Tagged PDF | 216/216 figures with alt text, language de-DE | pass |
 | Cover | 10 text elements, 0 duplicated or missing | pass |
 | Contrast | 101 colour pairs, 0 below WCAG AA | pass |
 | Baseline grid | 98% of body lines on the half-baseline grid, 100% on the quarter grid | pass |
 
-File: 41 pages, 853 KB · layout 0.8 s (3 rounds) · render 8.3 s · write 4.9 s
+File: 41 pages, 3357 KB · layout 1.5 s (3 rounds) · render 8.2 s · write 5.6 s
 
 ## 1 · Validation log
 
@@ -59,7 +59,7 @@ No block overflows its page, no two blocks overlap, every block has the height t
 | 124 | rueckblick | 95% | 100% | 4.2 mm to footer | ok |
 | 197 | station | 96% | 100% | 4.2 mm to footer | ok |
 | 198 | station | 91% | 91% | 26.6 mm to footer | ok |
-| 199 | station | 90% | 100% | 4.2 mm to footer | ok |
+| 199 | station | 88% | 100% | 4.2 mm to footer | ok |
 | 200 | station | 97% | 100% | 4.2 mm to footer | ok |
 
 Front matter and appendix pages are composed as whole pages; they are measured in the finished PDF (lowest text line against the folio line, at least 2 mm required).
@@ -70,7 +70,7 @@ Front matter and appendix pages are composed as whole pages; they are measured i
 | iii | front | 16.8 mm to folio | ok |
 | iv | front | 15.9 mm to folio | ok |
 | v | front | 29.8 mm to folio | ok |
-| vi | front | 57.1 mm to folio | ok |
+| vi | front | 62.4 mm to folio | ok |
 | L 1 | answers | 16.2 mm to folio | ok |
 | L 2 | answers | 21.5 mm to folio | ok |
 | T 1 | transcripts | 30.6 mm to folio | ok |
@@ -80,7 +80,7 @@ Front matter and appendix pages are composed as whole pages; they are measured i
 
 ## 3 · Baseline alignment on facing pages
 
-Every block starts on a multiple of half a baseline (7.5 pt), so running text on facing pages shares the same lines. Measured in the finished PDF over 705 body-size lines (tolerance 0.35 pt): **98%** sit on the half-baseline grid, **100%** on the quarter grid. The rest is text on ruled write-in lines and in phrase lists, which follow their own ruling. `shared` = grid lines that carry text on both pages of a spread.
+Every block starts on a multiple of half a baseline (7.5 pt), so running text on facing pages shares the same lines. Measured in the finished PDF over 704 body-size lines (tolerance 0.35 pt): **98%** sit on the half-baseline grid, **100%** on the quarter grid. The rest is text on ruled write-in lines and in phrase lists, which follow their own ruling. `shared` = grid lines that carry text on both pages of a spread.
 
 | Spread | body lines | on half grid | on quarter grid | shared lines |
 | --- | --- | --- | --- | --- |
@@ -97,19 +97,19 @@ Every block starts on a multiple of half a baseline (7.5 pt), so running text on
 | 120–121 | 58 | 79% | 100% | 2 |
 | 122–123 | 69 | 100% | 100% | 6 |
 | 124–197 | 42 | 100% | 100% | 2 |
-| 198–199 | 57 | 100% | 100% | 1 |
+| 198–199 | 56 | 100% | 100% | 1 |
 | 200 | 16 | 100% | 100% | – |
 
 ## 4 · Links and navigation
 
-- internal link areas: **648** pointing to 163 different targets, all resolved: **yes** (one link can consist of several clickable areas)
+- internal link areas: **639** pointing to 163 different targets, all resolved: **yes** (one link can consist of several clickable areas)
 - named destinations in the file: 444
 - external link areas: 108 → https://www.deutschfokus.example (104), https://www.youtube.com (3), mailto:hallo@deutschfokus.example (1)
 - 13 different URLs, all well-formed: `https://www.deutschfokus.example/300`, `https://www.deutschfokus.example/audio`, `https://www.deutschfokus.example/audio/a2/5.01`, `https://www.deutschfokus.example/audio/a2/5.02`, `https://www.deutschfokus.example/audio/a2/5.03`, `https://www.deutschfokus.example/audio/a2/5.04`, `https://www.deutschfokus.example/audio/a2/5.05`, `https://www.deutschfokus.example/audio/a2/5.06`, `https://www.deutschfokus.example/audio/a2/5.07`, `https://www.deutschfokus.example/audio/a2/5.08`, `https://www.deutschfokus.example/audio/a2/Z2.01`, `https://www.youtube.com/@DeutschFokus`, `mailto:hallo@deutschfokus.example`
 - bookmarks: level 1: 11, level 2: 16, level 3: 59 (Kapitel → Teil → Aufgabe)
 - page labels: Cover, ii, iii, iv, v, vi, 101, 102 … L 2, T 1, T 2, W 1, W 2, Info
 - metadata: title “300 Pages of A2 German – With English explanations”, author “Deutsch Fokus”, language de-DE
-- tagged PDF: yes · figures with alternative text: 225 of 225
+- tagged PDF: yes · figures with alternative text: 216 of 216
 
 ## 5 · Fonts
 
@@ -136,7 +136,7 @@ Embedded font data: 89 KB (subsets).
 
 ## 6 · Text extraction
 
-Whole file: 65,512 characters · 0 replacement characters · 0 letter-spaced runs · 461 umlauts/ß · 6 Turkish letters (ç ğ ı İ ş) · 0 soft hyphens · 0 zero-width characters.
+Whole file: 64,031 characters · 0 replacement characters · 0 letter-spaced runs · 448 umlauts/ß · 0 Turkish letters (ç ğ ı İ ş) · 0 soft hyphens · 0 zero-width characters.
 
 ### Page Cover
 
@@ -156,9 +156,6 @@ Deutsch Fokus
 ### Page 101
 
 ```text
-ILLUSTRATION
-Elif steht mit einem Umzugskarton in ihrem neuen, noch leeren Wohnzimmer. Großes Fenster, Abendlicht,
-Blick auf Dächer. In der Tür steht Herr Becker mit einer Pflanze.
 5
 5
 KAPITEL 5
@@ -226,9 +223,6 @@ KAPITEL 5 · WOHNEN / HAUPTTEIL
 3
 Die Wohnungsanzeige
 Reading a flat listing and calling the landlord
-ILLUSTRATION
-Elif sitzt abends mit Laptop und Tee am Küchentisch. Auf dem Bildschirm sieht man drei
-Wohnungsanzeigen mit kleinen Fotos; neben dem Laptop liegt ein Zettel mit ihren Wünschen.
 5.3
 a
 Elif sucht eine Wohnung. Lies ihren Zettel und die
@@ -355,7 +349,7 @@ elif.demir@post.example
 AN
 info@hv-nordstadt.example
 BETREFF Heizung defekt – Lindenstraße 12
-Sehr geehrte Frau Yılmaz,
+Sehr geehrte Frau Diallo,
 ich wohne seit drei Monaten in der Lindenstraße 12, im
 dritten Stock links. Leider gibt es ein Problem: Die
 Heizung im Wohnzimmer funktioniert seit Samstag
@@ -480,10 +474,10 @@ S. 111
 5.7c
 1 R   2 F   3 F   4 R S. 113
 5.7d
-BEISPIEL Liebe Frau Haddad, ab Montag bin ich zwei
-Wochen im Urlaub. Könnten Sie bitte meine Blumen gie-
-ßen? Der Schlüssel liegt bei Herrn Becker. Vielen Dank
-und liebe Grüße, Elif Demir
+BEISPIEL Liebe Frau Lorenz, ab Montag bin ich zwei Wo-
+chen im Urlaub. Könnten Sie bitte meine Blumen gießen?
+Der Schlüssel liegt bei Herrn Berger. Vielen Dank und lie-
+be Grüße, Elif Demir
 S. 113
 5.7e
 BEISPIEL Entschuldigen Sie die Störung. Mein Internet
@@ -494,7 +488,7 @@ S. 113
 5.8a
 1 B   2 C   3 A   4 B S. 114
 5.8b
-1 F   2 R   3 R   4 R   5 F S. 115
+1 F   2 R   3 R   4 R   5 F S. 1
 ```
 
 ## 7 · Contrast (WCAG 2.x)
@@ -622,6 +616,6 @@ Every text element of the cover exists exactly once in the PDF (the level appear
 
 ## 9 · File size
 
-- this build: 853 KB for 41 pages (28 learning pages, 13 others); 18.6 KB per page without fonts
-- full book, vector artwork only: about **6.9 MB** for roughly 371 pages
-- full book with final illustrations: about 96 picture slots; at 150 KB each (JPEG, 150 dpi) that adds 14 MB → about **21 MB** (target: under 40 MB)
+- this build: 3357 KB for 41 pages (28 learning pages, 13 others); 79.7 KB per page without fonts
+- full book, vector artwork only: about **29.0 MB** for roughly 371 pages
+- full book with final illustrations: about 96 picture slots; at 150 KB each (JPEG, 150 dpi) that adds 14 MB → about **43 MB** (target: under 40 MB)

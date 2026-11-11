@@ -201,24 +201,25 @@ teile:
           - type: picture_dictionary
             image:
               id: k5-wohnung
+              src: assets/images/a2/k5-wohnung.jpg
               format: tall
               description: "Elifs Wohnung von oben, wie ein bunter Grundriss mit Möbeln: Flur, Wohnzimmer mit Sofa, Regal und Teppich, Schlafzimmer, Küche mit Kühlschrank, Bad mit Waschmaschine und Spiegel, kleiner Balkon. Zwölf Zahlen markieren die Wörter."
               alt:
                 en: "Bird’s-eye view of Elif’s flat with twelve numbered rooms and pieces of furniture."
                 tr: "Elif’in evinin kuş bakışı görünümü; on iki oda ve eşya numaralandırılmış."
               markers:
-                - {n: 1, x: 47, y: 53}
-                - {n: 2, x: 22, y: 30}
-                - {n: 3, x: 77, y: 27}
-                - {n: 4, x: 22, y: 78}
-                - {n: 5, x: 70, y: 77}
-                - {n: 6, x: 6, y: 50}
-                - {n: 7, x: 33, y: 16}
-                - {n: 8, x: 13, y: 14}
-                - {n: 9, x: 28, y: 44}
-                - {n: 10, x: 36, y: 88}
-                - {n: 11, x: 62, y: 88}
-                - {n: 12, x: 84, y: 66}
+                - {n: 1, x: 50.8, y: 78.7}
+                - {n: 2, x: 22.8, y: 21.3}
+                - {n: 3, x: 76.7, y: 20.1}
+                - {n: 4, x: 17.3, y: 65.8}
+                - {n: 5, x: 67.3, y: 66.9}
+                - {n: 6, x: 50.1, y: 7.9}
+                - {n: 7, x: 29.0, y: 35.7}
+                - {n: 8, x: 48.3, y: 42.8}
+                - {n: 9, x: 28.8, y: 51.6}
+                - {n: 10, x: 31.9, y: 75.3}
+                - {n: 11, x: 69.1, y: 87.8}
+                - {n: 12, x: 77.7, y: 72.0}
             items: [flur, wohnzimmer, schlafzimmer, kueche, bad, balkon, sofa, regal, teppich, kuehlschrank, waschmaschine, spiegel]
         answer: {open: true}
         words: [flur, wohnzimmer, schlafzimmer, kueche, bad, balkon, sofa, regal, teppich, kuehlschrank, waschmaschine, spiegel]
@@ -323,6 +324,7 @@ teile:
         body:
           - type: image
             id: k5-anzeigen
+            src: assets/images/a2/k5-anzeigen.jpg
             format: strip
             description: "Elif sitzt abends mit Laptop und Tee am Küchentisch. Auf dem Bildschirm sieht man drei Wohnungsanzeigen mit kleinen Fotos; neben dem Laptop liegt ein Zettel mit ihren Wünschen."
             alt:
@@ -495,6 +497,7 @@ teile:
         body:
           - type: image
             id: k5-umzug
+            src: assets/images/a2/k5-umzug.jpg
             format: strip
             description: "Elif und Rahul tragen ein Sofa ins Wohnzimmer. Überall Umzugskartons, eine Stehlampe, ein zusammengerollter Teppich und ein Bild lehnen an der Wand."
             alt:
@@ -1041,6 +1044,7 @@ teile:
         body:
           - type: image
             id: k5-repaircafe
+            src: assets/images/a2/k5-repaircafe.jpg
             format: strip
             description: "Im Repair-Café: Yusuf und eine ältere Nachbarin reparieren zusammen einen Toaster an einem langen Tisch voller Werkzeug. Im Hintergrund Kaffee, Kuchen und ein Fahrrad auf einem Montageständer."
             alt:
@@ -1064,7 +1068,7 @@ teile:
             text: |
               Der Toaster funktioniert nicht mehr, die Lampe bleibt dunkel, das Fahrrad hat einen Platten – was nun? Viele Leute werfen kaputte Sachen einfach weg. In der Nordstadt gibt es eine bessere Idee: das Repair-Café.
 
-              {#wann}Jeden ersten Samstag im Monat treffen sich hier Nachbarn im Stadtteilzentrum. Wer etwas Kaputtes hat, bringt es mit. Am Eingang wird jedes Gerät zuerst angemeldet. {#wer}Dann wird es zusammen mit einem Helfer repariert. „Wir reparieren nicht für die Leute, sondern mit den Leuten“, sagt Yusuf Mensah. Der Handwerker hilft seit einem Jahr im Repair-Café.
+              {#wann}Jeden ersten Samstag im Monat treffen sich hier Nachbarn im Stadtteilzentrum. Wer etwas Kaputtes hat, bringt es mit. Am Eingang wird jedes Gerät zuerst angemeldet. {#wer}Dann wird es zusammen mit einem Helfer repariert. „Wir reparieren nicht für die Leute, sondern mit den Leuten“, sagt Yusuf. Der Handwerker hilft seit einem Jahr im Repair-Café.
 
               {#kosten}Die Reparatur kostet nichts. Wenn man möchte, kann man etwas spenden. Kaffee und Kuchen gibt es auch. {#kofi}„Wenn ein Gerät wieder funktioniert, freuen sich alle“, sagt Yusuf. „Und der Müll wird weniger.“
           - type: multiple_choice
@@ -1395,6 +1399,7 @@ teile:
         body:
           - type: image
             id: k5-traumwohnung
+            src: assets/images/a2/k5-traumwohnung.jpg
             format: wide
             description: "Collage ‚Meine Traumwohnung‘: vier kleine Szenen nebeneinander – ein Balkon voller Pflanzen, eine helle Küche, ein Sofa mit vielen Kissen, ein Fenster mit Blick über die Stadt."
             alt:
