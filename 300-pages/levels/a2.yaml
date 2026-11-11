@@ -4,7 +4,7 @@ name: A2
 cefr: Elementary
 exam: "Goethe-Zertifikat A2 · telc Deutsch A2"
 hue: 58                 # centre of this level's 50° slice of the colour wheel
-cover: [0.64, 0.19, 46]   # OKLCH of the cover field; cream type must reach 3:1 on it
+cover: [0.62, 0.19, 46]   # OKLCH of the cover field; cream type must reach 3:1 on it
 
 # Level scaling — one place to make a book airier or denser.
 type:

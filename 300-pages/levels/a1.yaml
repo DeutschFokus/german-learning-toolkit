@@ -4,7 +4,7 @@ name: A1
 cefr: Beginner
 exam: "Goethe-Zertifikat A1 · telc Deutsch A1"
 hue: 168                 # centre of this level's 50° slice of the colour wheel
-cover: [0.6, 0.13, 168]   # OKLCH of the cover field; cream type must reach 3:1 on it
+cover: [0.585, 0.13, 168]   # OKLCH of the cover field; cream type must reach 3:1 on it
 
 # Level scaling — one place to make a book airier or denser.
 type:

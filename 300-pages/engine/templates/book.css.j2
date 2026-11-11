@@ -465,7 +465,7 @@ textarea.wl{position:absolute;left:0;display:block;width:100%;border:0;backgroun
 .cover h1{position:absolute;left:0;top:0;width:210mm;font-weight:400}
 .cover .hero{position:absolute;left:-6mm;top:51mm;font-family:"DF Fraunces";font-weight:900;font-size:346pt;line-height:1;letter-spacing:-.012em;color:var(--cream);white-space:nowrap}
 .cover .rest{position:absolute;left:16mm;top:168.5mm;width:180mm;font-family:"DF Fraunces","DF Sans";font-weight:540;font-size:58pt;line-height:1.02;letter-spacing:-.018em}
-.cover .rest .lvw{color:var(--navy)}
+.cover .rest .lvw{font-weight:900;letter-spacing:-.01em}
 .cover .badge{position:absolute;left:147mm;top:12.5mm;width:47mm;height:47mm;border-radius:50%;background:var(--navy);color:var(--cream);text-align:center}
 .cover .badge .niv{display:block;margin-top:8.2mm;font-weight:600;font-size:8pt;line-height:12pt;letter-spacing:.14em;text-transform:uppercase}
 .cover .badge .blv{display:block;font-family:"DF Fraunces";font-weight:900;font-size:57pt;line-height:.98;letter-spacing:-.02em}
@@ -475,13 +475,24 @@ textarea.wl{position:absolute;left:0;display:block;width:100%;border:0;backgroun
 .cover .feat li{display:inline-block;margin-right:4.5mm;padding-right:4.5mm;border-right:.8pt solid var(--navy);line-height:1}
 .cover .feat li:last-child{border-right:0;margin-right:0;padding-right:0}
 .cover .blogo{position:absolute;right:19mm;top:13.5mm}
-.square{width:210mm;height:210mm}
-.square .field{height:160mm}
-.square .hero{top:8mm;font-size:300pt;left:5mm}
-.square .rest{top:106mm;font-size:42pt;left:19mm}
-.square .badge{left:150mm;top:9mm;width:42mm;height:42mm} .square .badge .niv{margin-top:7mm} .square .badge .blv{font-size:50pt}
-.square .band{top:157mm;height:56mm}
-.square .expl{top:11mm} .square .feat{top:28mm} .square .blogo{top:11.5mm}
+/* export formats (python build.py --covers): store cover 5:8 and social square 1:1, same elements, same order */
+.cover.store{height:336mm}
+.cover.store .field{height:279mm}
+.cover.store .sun{top:-182mm}
+.cover.store .badge{top:15mm}
+.cover.store .hero{top:65mm}
+.cover.store .rest{top:189mm;font-size:63pt}
+.cover.store .band{top:273mm;height:66mm}
+.cover.store .expl{top:15.5mm;font-size:21pt} .cover.store .feat{top:35.5mm} .cover.store .blogo{top:16mm}
+.cover.square{height:210mm}
+.cover.square .field{height:164mm}
+.cover.square .sun{left:92mm;top:-216mm}
+.cover.square .hero{top:-7mm;left:-4mm;font-size:330pt}
+.cover.square .rest{top:106mm;left:17mm;font-size:45pt}
+.cover.square .badge{left:149mm;top:103.5mm;width:44mm;height:44mm}
+.cover.square .badge .niv{margin-top:7.4mm} .cover.square .badge .blv{font-size:53pt}
+.cover.square .band{top:161mm;height:52mm}
+.cover.square .expl{top:10.5mm} .cover.square .feat{top:28mm} .cover.square .blogo{top:11mm}
 .full{position:relative}
 .full .phr.two{display:grid;grid-template-columns:1fr 1fr;gap:0 9mm;padding:calc(var(--bl)*.75) 6mm}
 .full .phr.two .phg{margin-top:0;margin-bottom:calc(var(--bl)*.75)}

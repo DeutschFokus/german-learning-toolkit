@@ -88,13 +88,17 @@ class AnswerEntry:
     html: str
 
 
+def make_env(cfg: Config) -> jinja2.Environment:
+    return jinja2.Environment(
+        loader=jinja2.FileSystemLoader(str(cfg.root / "engine" / "templates")),
+        autoescape=False, trim_blocks=True, lstrip_blocks=True, undefined=jinja2.StrictUndefined)
+
+
 class Renderer:
     def __init__(self, cfg: Config, book: Book):
         self.cfg, self.book = cfg, book
         self.forms = bool(cfg.flags.get("forms"))
-        self.env = jinja2.Environment(
-            loader=jinja2.FileSystemLoader(str(cfg.root / "engine" / "templates")),
-            autoescape=False, trim_blocks=True, lstrip_blocks=True, undefined=jinja2.StrictUndefined)
+        self.env = make_env(cfg)
         self.B = Macros(self.env.get_template("blocks.html.j2").module)
         self.inline = Inline(lang=cfg.lang, forms=self.forms, page_ref=self._page_ref, line_ref=self._line_ref,
                              de_page_abbr=cfg.de("page_abbr"), de_line_abbr=cfg.de("line_abbr"))

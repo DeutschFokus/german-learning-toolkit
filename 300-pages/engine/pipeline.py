@@ -23,6 +23,41 @@ from .render import Macros, Renderer, Unit, esc, strip_tags
 ROMAN = ["", "i", "ii", "iii", "iv", "v", "vi", "vii", "viii", "ix", "x", "xi", "xii"]
 
 
+PW_WIDTH, PW_GAP = 160.0, 3.0      # "words on this page" footer: line width and gap between entries (mm)
+
+
+def stylesheet(cfg: Config, env, print_: bool = False) -> str:
+    """The complete stylesheet of one edition: tokens from series.yaml and levels/<level>.yaml, rules from book.css.j2."""
+    from .colors import oklch
+    pg = cfg.page
+    fdir = cfg.root / cfg.series["fonts"]["dir"]
+    fonts = [{"family": f["family"], "url": (fdir / f["file"]).as_uri(), "weight": f["weight"], "style": f.get("style", "normal")}
+             for f in cfg.series["fonts"]["faces"]]
+    palettes = {f"c{k}": cfg.chapter_tokens(k) for k in range(1, cfg.series["structure"]["chapters"] + 1)}
+    palettes["cz"] = cfg.station_tokens()
+    lt = cfg.level_tokens()
+    h = cfg.level_hue()
+    palettes["cn"] = {"mid": oklch(0.86, 0.06, h), "soft": oklch(0.94, 0.03, h), "wash": oklch(0.972, 0.014, h),
+                      "hl": oklch(0.88, 0.08, h), "strong": lt["cover_deep"], "deep": oklch(0.40, 0.10, h)}
+    body = float(cfg.lv["type"]["body"])
+    sheet_w = pg["width"] + (2 * (pg["bleed"] + pg["slug"]) if print_ else 0)
+    sheet_h = pg["height"] + (2 * (pg["bleed"] + pg["slug"]) if print_ else 0)
+    return env.get_template("book.css.j2").render(
+        fonts=fonts, t=cfg.base_tokens(), lv=lt, palettes=palettes, pg=pg, tw=cfg.text_width_mm,
+        content_w=round(pg["main"] - pg["label_col"], 3), body_h=cfg.body_height_pt, bl=cfg.bl, fs=body,
+        fs_ex=body - 1, fs_note=round(body * 0.786, 2), fs_read=round(body - 0.3, 2), hw=cfg.lv["type"]["hand"],
+        wl=float(cfg.lv["type"]["write_line"]) * cfg.bl, sheet_w=sheet_w, sheet_h=sheet_h, pw_w=PW_WIDTH, pw_h=15, pw_gap=PW_GAP)
+
+
+def cover_view(cfg: Config, sample: bool = False) -> dict:
+    """Everything the cover template needs. Each text element is passed (and printed) exactly once."""
+    rest = esc(cfg.ui("cover.title_rest")).replace("{level}", f'<span class="lvw">{cfg.level_name}</span>').replace("|", "<br>")
+    return {"lang": cfg.lang, "level": cfg.level_name, "niveau": esc(cfg.de("labels.level")), "rest": rest,
+            "expl": esc(cfg.ui("cover.explanations")), "features": [esc(f) for f in cfg.ui("cover.features")],
+            "logo": art.logo(cfg.series["colors"]["navy"]),
+            "sample": esc(cfg.ui("labels.free_sample")) if sample else ""}
+
+
 @dataclass
 class PageSpec:
     pid: str                      # DOM id of the page: p-101, p-L1, p-cover
@@ -69,28 +104,8 @@ class Builder:
 
     # ── stylesheet ───────────────────────────────────────────────────────────
     def _css(self) -> str:
-        cfg = self.cfg
-        pg = cfg.page
-        fdir = cfg.root / cfg.series["fonts"]["dir"]
-        fonts = [{"family": f["family"], "url": (fdir / f["file"]).as_uri(), "weight": f["weight"], "style": f.get("style", "normal")}
-                 for f in cfg.series["fonts"]["faces"]]
-        palettes = {f"c{k}": cfg.chapter_tokens(k) for k in range(1, cfg.series["structure"]["chapters"] + 1)}
-        palettes["cz"] = cfg.station_tokens()
-        lt = cfg.level_tokens()
-        h = cfg.level_hue()
-        from .colors import oklch
-        palettes["cn"] = {"mid": oklch(0.86, 0.06, h), "soft": oklch(0.94, 0.03, h), "wash": oklch(0.972, 0.014, h),
-                          "hl": oklch(0.88, 0.08, h), "strong": lt["cover_deep"], "deep": oklch(0.40, 0.10, h)}
-        body = float(cfg.lv["type"]["body"])
-        sheet_w = pg["width"] + (2 * (pg["bleed"] + pg["slug"]) if self.print else 0)
-        sheet_h = pg["height"] + (2 * (pg["bleed"] + pg["slug"]) if self.print else 0)
-        tw = cfg.text_width_mm
-        self.pw_w, self.pw_gap = 160.0, 3.0
-        return self.r.env.get_template("book.css.j2").render(
-            fonts=fonts, t=cfg.base_tokens(), lv=lt, palettes=palettes, pg=pg, tw=tw,
-            content_w=round(pg["main"] - pg["label_col"], 3), body_h=cfg.body_height_pt, bl=cfg.bl, fs=body,
-            fs_ex=body - 1, fs_note=round(body * 0.786, 2), fs_read=round(body - 0.3, 2), hw=cfg.lv["type"]["hand"],
-            wl=float(cfg.lv["type"]["write_line"]) * cfg.bl, sheet_w=sheet_w, sheet_h=sheet_h, pw_w=self.pw_w, pw_h=15, pw_gap=self.pw_gap)
+        self.pw_w, self.pw_gap = PW_WIDTH, PW_GAP
+        return stylesheet(self.cfg, self.r.env, self.print)
 
     # ── helpers ──────────────────────────────────────────────────────────────
     def palette(self, part) -> tuple[str, dict]:
@@ -537,11 +552,7 @@ class Builder:
         S = cfg.series["series"]
         pages: list[PageSpec] = []
         # cover
-        rest = esc(cfg.ui("cover.title_rest")).replace("{level}", f'<span class="lvw">{cfg.level_name}</span>').replace("|", "<br>")
-        cover = self.P.cover({"lang": cfg.lang, "level": cfg.level_name, "niveau": esc(cfg.de("labels.level")), "rest": rest,
-                              "expl": esc(cfg.ui("cover.explanations")), "features": [esc(f) for f in cfg.ui("cover.features")],
-                              "logo": art.logo(cfg.series["colors"]["navy"]),
-                              "sample": esc(cfg.ui("labels.free_sample")) if self.sample else ""})
+        cover = self.P.cover(cover_view(cfg, self.sample))
         pages.append(PageSpec("p-cover", "cover", "front", "Cover", "", "recto", "cn", str(cover), "cover", ["p-cover"],
                               [(1, cfg.edition_title(), "p-cover")]))
         # imprint

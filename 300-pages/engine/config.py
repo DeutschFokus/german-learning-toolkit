@@ -160,7 +160,11 @@ class Config:
     def level_tokens(self, level: str | None = None) -> dict[str, str]:
         lv = self.lv if not level or level == self.level else load_yaml(self.root / "levels" / f"{level}.yaml")
         L, C, h = lv["cover"]
-        return {"cover": oklch(L, C, h), "cover_lite": oklch(L + 0.05, C, h), "cover_deep": oklch(L - 0.07, C, h),
+        cream = self.series["colors"]["cream"]
+        d = 0.05                                   # the lighter "sun": as light as it can be while the cream 300 keeps 3:1 on it
+        while d > 0.01 and contrast(cream, oklch(L + d, C, h)) < 3.0:
+            d -= 0.0025
+        return {"cover": oklch(L, C, h), "cover_lite": oklch(L + d, C, h), "cover_deep": oklch(L - 0.07, C, h),
                 "bright": oklch(min(0.80, L + 0.14), C, h)}
 
     @property
