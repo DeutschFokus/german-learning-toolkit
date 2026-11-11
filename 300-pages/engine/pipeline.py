@@ -60,7 +60,7 @@ class Builder:
         self.css = self._css()
         self.cap = cfg.body_height_pt
         self.bl = cfg.bl
-        self.wl_pt = float(cfg.lv["type"]["write_line"]) * MM
+        self.wl_pt = float(cfg.lv["type"]["write_line"]) * cfg.bl
         self.grow: dict[str, int] = {}
         self.word_intro: dict[str, str] = {}           # vocab id → page label
         self.word_pages: dict[str, list[str]] = {}
@@ -71,12 +71,9 @@ class Builder:
     def _css(self) -> str:
         cfg = self.cfg
         pg = cfg.page
-        fdir = cfg.root / "assets" / "fonts"
-        fonts = []
-        for role in ("display", "text", "reading", "hand"):
-            f = cfg.series["fonts"][role]
-            fonts.append({"family": f["family"], "url": (fdir / f["file"]).as_uri(), "weights": f["weights"],
-                          "italic_url": (fdir / f["italic"]).as_uri() if f.get("italic") else ""})
+        fdir = cfg.root / cfg.series["fonts"]["dir"]
+        fonts = [{"family": f["family"], "url": (fdir / f["file"]).as_uri(), "weight": f["weight"], "style": f.get("style", "normal")}
+                 for f in cfg.series["fonts"]["faces"]]
         palettes = {f"c{k}": cfg.chapter_tokens(k) for k in range(1, cfg.series["structure"]["chapters"] + 1)}
         palettes["cz"] = cfg.station_tokens()
         lt = cfg.level_tokens()
@@ -93,7 +90,7 @@ class Builder:
             fonts=fonts, t=cfg.base_tokens(), lv=lt, palettes=palettes, pg=pg, tw=tw,
             content_w=round(pg["main"] - pg["label_col"], 3), body_h=cfg.body_height_pt, bl=cfg.bl, fs=body,
             fs_ex=body - 1, fs_note=round(body * 0.786, 2), fs_read=round(body - 0.3, 2), hw=cfg.lv["type"]["hand"],
-            wl=cfg.lv["type"]["write_line"], sheet_w=sheet_w, sheet_h=sheet_h, pw_w=self.pw_w, pw_h=15, pw_gap=self.pw_gap)
+            wl=float(cfg.lv["type"]["write_line"]) * cfg.bl, sheet_w=sheet_w, sheet_h=sheet_h, pw_w=self.pw_w, pw_h=15, pw_gap=self.pw_gap)
 
     # ── helpers ──────────────────────────────────────────────────────────────
     def palette(self, part) -> tuple[str, dict]:

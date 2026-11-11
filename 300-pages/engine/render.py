@@ -330,7 +330,7 @@ class Renderer:
         wid = f"wl-{self._fid('w')}"
         if grow:
             self._grow_ids.append(wid)
-            self.elastic[wid] = (float(self.cfg.lv["type"]["write_line"]) * 72 / 25.4, 3)
+            self.elastic[wid] = (float(self.cfg.lv["type"]["write_line"]) * self.cfg.bl, 3)
             n += self.grow.get(wid, 0)
         model_rows = 0
         if model:

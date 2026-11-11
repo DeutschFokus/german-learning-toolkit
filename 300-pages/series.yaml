@@ -52,11 +52,29 @@ page:
   slug: 7                    # --print: room for crop marks around the bleed
   tab: {width: 8, height: 17, first: 21, step: 19.6}
 
+# Static instances cut from the variable fonts by tools/make_fonts.py.
+# For Fraunces each weight is one typographic role with its own optical size and softness.
 fonts:
-  display: {family: "DF Fraunces", file: Fraunces-VF.ttf, italic: Fraunces-Italic-VF.ttf, weights: "100 900"}
-  text:    {family: "DF Sans",     file: SourceSans3-VF.ttf, italic: SourceSans3-Italic-VF.ttf, weights: "200 900"}
-  reading: {family: "DF Serif",    file: SourceSerif4-VF.ttf, italic: SourceSerif4-Italic-VF.ttf, weights: "200 900"}
-  hand:    {family: "DF Hand",     file: Caveat-VF.ttf, weights: "400 700"}
+  dir: assets/fonts/static
+  faces:
+    - {family: DF Fraunces, weight: 900, file: DFFraunces-Hero.ttf}          # the 300, chapter numerals
+    - {family: DF Fraunces, weight: 800, file: DFFraunces-Num.ttf}           # folios, tabs, track numbers
+    - {family: DF Fraunces, weight: 650, file: DFFraunces-Sub.ttf}           # box titles, small headings
+    - {family: DF Fraunces, weight: 620, file: DFFraunces-Title.ttf}         # chapter and page titles
+    - {family: DF Fraunces, weight: 540, file: DFFraunces-Cover.ttf}         # cover title line
+    - {family: DF Fraunces, weight: 500, file: DFFraunces-Text.ttf}          # goal statement
+    - {family: DF Fraunces, weight: 500, style: italic, file: DFFraunces-TextItalic.ttf}
+    - {family: DF Sans, weight: 400, file: DFSans-Regular.ttf}
+    - {family: DF Sans, weight: 400, style: italic, file: DFSans-Italic.ttf}
+    - {family: DF Sans, weight: 600, file: DFSans-SemiBold.ttf}
+    - {family: DF Sans, weight: 700, file: DFSans-Bold.ttf}
+    - {family: DF Sans, weight: 700, style: italic, file: DFSans-BoldItalic.ttf}
+    - {family: DF Sans, weight: 800, file: DFSans-ExtraBold.ttf}
+    - {family: DF Serif, weight: 400, file: DFSerif-Regular.ttf}
+    - {family: DF Serif, weight: 400, style: italic, file: DFSerif-Italic.ttf}
+    - {family: DF Serif, weight: 700, file: DFSerif-Bold.ttf}
+    - {family: DF Hand, weight: 500, file: DFHand-Medium.ttf}
+    - {family: DF Hand, weight: 700, file: DFHand-Bold.ttf}
   credits:
     - "Fraunces © The Fraunces Project Authors"
     - "Source Sans 3 and Source Serif 4 © Adobe"

@@ -12,7 +12,7 @@ type:
   baseline: 13.5         # pt; every vertical measure is a multiple of half a baseline
   body_lines: 51          # baselines per page (51 × 13.5 pt)
   hand: 15.5             # pt, handwriting model answers
-  write_line: 7.5        # mm, pitch of ruled write-in lines
+  write_line: 1.5        # baselines between ruled write-in lines (1.5 keeps the page on the grid)
 explanation: new        # always | new  (new = only the first time a task type appears in a chapter)
 reading_columns: 2
 
