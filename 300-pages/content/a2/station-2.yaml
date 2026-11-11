@@ -251,8 +251,9 @@ teile:
         body:
           - type: image
             id: z2-pruefung
+            src: assets/images/a2/z2-pruefung.jpg
             format: strip
-            description: "Prüfungssituation: Zwei Lernende sitzen sich an einem Tisch gegenüber und sprechen miteinander; zwischen ihnen liegen vier Wortkarten. Im Hintergrund eine Uhr."
+            description: "Prüfungssituation: Anna und Yusuf sitzen sich an einem Tisch gegenüber und sprechen miteinander; zwischen ihnen liegen vier Wortkarten. Im Hintergrund eine Uhr."
             alt:
               en: "Two learners sit opposite each other at a table and talk; four word cards lie between them."
               tr: "İki öğrenci bir masada karşılıklı oturmuş konuşuyor; aralarında dört kelime kartı duruyor."
