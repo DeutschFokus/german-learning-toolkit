@@ -16,6 +16,10 @@ python build.py --covers                                            # cover PNGs
 
 Results land in `dist/`: the PDF, a PNG of every page (`preview/`), and a QA report (`qa/`).
 
+Needs Python 3.10 or newer and, for WeasyPrint, the Pango library on the system
+(Debian/Ubuntu: `apt install libpango-1.0-0 libpangoft2-1.0-0`, macOS: `brew install pango`).
+The finished demo – PDFs, covers and a picture of every page – is in [`demo/`](demo/).
+
 ## What is in the box
 
 ```
@@ -29,8 +33,9 @@ content/a2/station-2.yaml    one Zwischenstation = one file
 engine/                   models (validation) · markup · render · layout · pipeline · post · qa · covers
 engine/templates/         book.css.j2 (all design) · blocks.html.j2 · pages.html.j2
 assets/fonts/             variable sources, static instances, licences
-tools/                    layout_report · baseline_probe · image_briefs · make_fonts
+tools/                    layout_report · baseline_probe · image_briefs · qa_summary · make_fonts
 docs/                     illustration style guide, image briefs, QA report
+demo/                     the built demo: PDFs, cover PNGs, a PNG of every page
 concepts/                 the design directions that were explored first
 ```
 
