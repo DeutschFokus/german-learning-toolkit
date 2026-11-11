@@ -88,6 +88,11 @@ review:
   lead: "Tick the checklist again – and compare with your ticks on {page}."
   look_again: "Not sure yet? Look again:"
 station:
+  scale:
+    - [11, 12, "Excellent – you are on track for the exam."]
+    - [8, 10, "Good. Look again at the tasks where you lost points."]
+    - [5, 7, "Repeat the overview pages of chapters {a}–{b}."]
+    - [0, 4, "Take your time and work through the chapters again."]
   lead_review: "Mixed practice from the last four chapters."
   lead_exam: "A short exam in the style of the {exam} tests. Set a timer."
   time: "Time: {min} minutes"

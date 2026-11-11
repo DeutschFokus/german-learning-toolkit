@@ -88,6 +88,11 @@ review:
   lead: "Listeyi yeniden işaretle ve {page} ile karşılaştır."
   look_again: "Emin değil misin? Tekrar bak:"
 station:
+  scale:
+    - [11, 12, "Harika – sınav için doğru yoldasın."]
+    - [8, 10, "İyi. Puan kaybettiğin alıştırmalara tekrar bak."]
+    - [5, 7, "{a}–{b}. ünitelerin özet sayfalarını tekrar et."]
+    - [0, 4, "Acele etme ve üniteleri bir kez daha çalış."]
   lead_review: "Son dört üniteden karışık alıştırmalar."
   lead_exam: "{exam} sınavları tarzında kısa bir sınav. Süre tut."
   time: "Süre: {min} dakika"

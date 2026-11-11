@@ -1,0 +1,236 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# A2 · Zwischenstation 2 · after chapter 8                    pages 197–200
+# Two pages of mixed revision (chapters 5–8) + a two-page mini exam.
+# ─────────────────────────────────────────────────────────────────────────────
+type: station
+level: a2
+number: 2
+title: Zwischenstation 2
+subtitle:
+  en: "Review of chapters 5–8 and a mini exam"
+  tr: "5–8. ünitelerin tekrarı ve bir mini sınav"
+covers: [5, 6, 7, 8]
+intro:
+  de: "Vier Kapitel sind geschafft. Zeit für eine Pause – und einen Blick zurück."
+  en: "Four chapters done. Time for a breather – and a look back."
+  tr: "Dört ünite tamam. Mola verip geriye bakmanın tam zamanı."
+
+teile:
+  # ═══ 1 · WIEDERHOLUNG ══════════════════════════════════════ pages 197–198 ═══
+  - nr: 1
+    kind: review
+    title: Wiederholung
+    subtitle: {en: "Mixed practice from the last four chapters", tr: "Son dört üniteden karışık alıştırmalar"}
+    blocks:
+      - type: task
+        id: a
+        skills: [lesen, schreiben]
+        rubric:
+          de: "Vier Kapitel, vier Themen. Ordne die Wörter zu."
+          en: "Four chapters, four topics. Sort the words."
+          tr: "Dört ünite, dört konu. Kelimeleri doğru sütuna yaz."
+        points: 6
+        body:
+          - type: sort_table
+            columns: [Wohnen, Gesundheit, Unterwegs, Feste]
+            words: ["die Nebenkosten", "das Rezept", "die Haltestelle", "die Einladung", "der Vermieter", "die Erkältung", "umsteigen", "das Geschenk", "die Hausordnung", "die Tablette", "die Fahrkarte", "feiern"]
+            answer:
+              - ["die Nebenkosten", "der Vermieter", "die Hausordnung"]
+              - ["das Rezept", "die Erkältung", "die Tablette"]
+              - ["die Haltestelle", "umsteigen", "die Fahrkarte"]
+              - ["die Einladung", "das Geschenk", "feiern"]
+            rows: 3
+        answer:
+          note:
+            en: "Half a point for each word in the right column."
+            tr: "Doğru sütundaki her kelime yarım puan."
+        notes:
+          - kind: tipp
+            text:
+              en: "Not sure about a word? Look it up in the word list at the back – it tells you the page where the word first appears."
+              tr: "Bir kelimeden emin değil misin? Arkadaki kelime listesine bak; kelimenin ilk geçtiği sayfayı orada bulursun."
+
+      - type: task
+        id: b
+        skills: [grammatik]
+        rubric:
+          de: "Ein Satz aus jedem Kapitel – und zwei extra. Ergänze."
+          en: "One sentence from each chapter – and two extra. Fill in the gaps."
+          tr: "Her üniteden bir cümle, iki de fazladan. Boşlukları doldur."
+        points: 8
+        body:
+          - type: gap_text
+            items:
+              - "Wenn ich krank [[bin]], [[bleibe]] ich im Bett."
+              - "Der Müll [[wird]] jeden Dienstag [[abgeholt]]."
+              - "Du hast Fieber? Dann [[solltest]] du zum Arzt gehen."
+              - "Ich stelle die Blumen auf [[den]] Tisch."
+              - "Wir fahren mit [[dem]] Bus zum Bahnhof."
+              - "Zum Geburtstag schenke ich ihr einen schön[[en]] Schal."
+        notes:
+          - kind: sogehts
+            text:
+              en: "Stuck? Each sentence points back to a chapter: {de:wenn} and the passive are in chapter 5 ({S:5.uebersicht}), {de:sollte} in 6, {de:mit} + dative in 7, adjective endings in 8."
+              tr: "Takıldın mı? Her cümle bir üniteye gönderme yapıyor: {de:wenn} ve edilgen çatı 5. ünitede ({S:5.uebersicht}), {de:sollte} 6’da, {de:mit} + Dativ 7’de, sıfat ekleri 8’de."
+
+      - type: task
+        id: c
+        skills: [lesen]
+        rubric:
+          de: "Was passt zusammen? Ordne zu."
+          en: "What goes together? Match the halves."
+          tr: "Hangisi hangisiyle eşleşir? Eşleştir."
+        points: 5
+        body:
+          - type: matching
+            left:
+              - "Wenn die Heizung kalt bleibt,"
+              - "Du hast Kopfschmerzen?"
+              - "Entschuldigung, wie komme ich"
+              - "Zum Geburtstag schenken wir ihm"
+              - "Der Aufzug wird"
+            right:
+              - "Dann solltest du viel Wasser trinken."
+              - "einen neuen Rucksack."
+              - "rufe ich die Hausverwaltung an."
+              - "morgen repariert."
+              - "zum Bahnhof?"
+            answer: [C, A, E, B, D]
+
+      - type: task
+        id: d
+        skills: [grammatik, schreiben]
+        rubric:
+          de: "In jedem Satz ist ein Fehler. Schreib den Satz richtig."
+          en: "There is one mistake in each sentence. Write the sentence correctly."
+          tr: "Her cümlede bir hata var. Cümleyi doğru yaz."
+        points: 4
+        body:
+          - type: sentence_build
+            items:
+              - {given: "Ich freue mir auf das Fest.", answer: "Ich freue ==mich== auf das Fest."}
+              - {given: "Wenn es regnet, wir nehmen den Bus.", answer: "Wenn es regnet, ==nehmen wir== den Bus."}
+              - {given: "Das Bild hängt an die Wand.", answer: "Das Bild hängt an ==der== Wand."}
+              - {given: "Er hat eine neuer Wohnung.", answer: "Er hat eine ==neue== Wohnung."}
+
+      - type: task
+        id: e
+        skills: [sprechen, partner]
+        rubric:
+          de: "Wähl eine Karte und sprich eine Minute. Dein Partner oder deine Partnerin stellt eine Frage."
+          en: "Choose a card and talk for one minute. Your partner asks one question."
+          tr: "Bir kart seç ve bir dakika konuş. Partnerin sana bir soru sorsun."
+        body:
+          - type: role_cards
+            cards:
+              - {label: "1", title: "Meine Wohnung", points: ["Wie viele Zimmer?", "Was gefällt dir – was nicht?"]}
+              - {label: "2", title: "Beim Arzt", points: ["Wann warst du zuletzt krank?", "Was hat geholfen?"]}
+              - {label: "3", title: "Mein Weg zur Arbeit", points: ["Bus, Bahn oder Fahrrad?", "Wie lange brauchst du?"]}
+              - {label: "4", title: "Ein Fest in meiner Familie", points: ["Was feiert ihr?", "Was gibt es zu essen?"]}
+        answer:
+          open: true
+          model: "Meine Wohnung hat zwei Zimmer und einen kleinen Balkon. Mir gefällt das helle Wohnzimmer. Die Küche ist leider sehr klein. – Frage: Wie hoch ist deine Miete?"
+
+  # ═══ 2 · MINI-PRÜFUNG ══════════════════════════════════════ pages 199–200 ═══
+  - nr: 2
+    kind: exam
+    title: Mini-Prüfung
+    subtitle: {en: "In the style of Goethe-Zertifikat A2 and telc Deutsch A2 · about 25 minutes", tr: "Goethe-Zertifikat A2 ve telc Deutsch A2 tarzında · yaklaşık 25 dakika"}
+    blocks:
+      - type: task
+        id: a
+        skills: [lesen]
+        rubric:
+          de: "Lesen: Lies die Anzeigen A–E und die Situationen 1–4. Welche Anzeige passt? Eine Anzeige bleibt übrig."
+          en: "Reading: read ads A–E and situations 1–4. Which ad fits? One ad is left over."
+          tr: "Okuma: A–E ilanlarını ve 1–4 durumlarını oku. Hangi ilan uygun? Bir ilan boşta kalıyor."
+        points: 4
+        body:
+          - type: reading_text
+            genre: listing
+            line_numbers: false
+            parts:
+              - {label: A, title: "Repair-Café Nordstadt", text: "Jeden ersten Samstag im Monat, 14–17 Uhr, im Stadtteilzentrum. Wir reparieren Ihre Geräte – kostenlos."}
+              - {label: B, title: "Praxis Dr. Krüger", text: "Hausärztin. Sprechstunde Mo–Fr 8–12 Uhr, Di und Do auch 15–18 Uhr. Termine online oder per Telefon."}
+              - {label: C, title: "4-Zi.-Whg. mit Garten", text: "95 m², EG, ruhige Lage in der Südstadt. KM 1100 € + NK 250 €. Frei ab 1. Juli."}
+              - {label: D, title: "Sommerfest im Lindenpark", text: "Samstag, 12. Juli, ab 15 Uhr. Musik, Essen aus aller Welt und Spiele für Kinder. Eintritt frei!"}
+              - {label: E, title: "Fahrradladen Radhaus", text: "Neue und gebrauchte Fahrräder. Reparatur in 24 Stunden. Mo–Sa 10–18 Uhr."}
+          - type: gap_text
+            items:
+              - "Jonas hat seit drei Tagen Husten und braucht einen Termin. → Anzeige [[B]]"
+              - "Mariam sucht eine größere Wohnung für ihre Familie. → Anzeige [[C]]"
+              - "Kofi möchte am Wochenende mit Freunden draußen feiern. → Anzeige [[D]]"
+              - "Lenas Kaffeemaschine ist kaputt. Sie möchte nichts bezahlen. → Anzeige [[A]]"
+        notes:
+          - kind: sogehts
+            text:
+              en: "Read the situations first and underline the key word: {de:Husten}, {de:Wohnung}, {de:feiern}, {de:kaputt}. Then scan the ads for it."
+              tr: "Önce durumları oku ve anahtar kelimenin altını çiz: {de:Husten}, {de:Wohnung}, {de:feiern}, {de:kaputt}. Sonra ilanlarda bu kelimeyi ara."
+
+      - type: task
+        id: b
+        skills: [hoeren]
+        rubric:
+          de: "Hören: Du hörst drei kurze Texte. Kreuze an: A, B oder C?"
+          en: "Listening: you will hear three short texts. Tick A, B or C."
+          tr: "Dinleme: Üç kısa metin dinleyeceksin. İşaretle: A, B ya da C?"
+        points: 3
+        audio:
+          track: "Z2.01"
+          title: Drei kurze Texte
+          duration: "1:25"
+          transcript:
+            turns:
+              - {speaker: ansage, text: "Achtung an Gleis 3: Der Regionalexpress nach Bremen, Abfahrt 14:35 Uhr, hat heute circa zwanzig Minuten Verspätung. Wir bitten um Ihr Verständnis."}
+              - {speaker: ansage, text: "Guten Tag, hier ist die Praxis Dr. Krüger. Unsere Praxis ist vom 4. bis 18. August geschlossen. In dringenden Fällen rufen Sie bitte Dr. Okafor an: 0171 3920078."}
+              - {speaker: mariam, text: "Hallo Elif, hier ist Mariam. Meine Party am Samstag beginnt nicht um sieben, sondern erst um acht Uhr. Bring bitte einen Salat mit, wenn du Zeit hast. Bis Samstag!"}
+        body:
+          - type: multiple_choice
+            items:
+              - {q: "Der Zug nach Bremen …", options: ["fährt von Gleis 13.", "kommt 20 Minuten später.", "fällt heute aus."], answer: B}
+              - {q: "Die Praxis ist …", options: ["zwei Wochen geschlossen.", "ab 18. August geschlossen.", "nur vormittags geöffnet."], answer: A}
+              - {q: "Elif soll …", options: ["um sieben Uhr kommen.", "einen Kuchen backen.", "einen Salat mitbringen."], answer: C}
+
+      - type: task
+        id: c
+        skills: [schreiben]
+        rubric:
+          de: "Schreiben: Du machst eine Einweihungsparty. Schreib Lena eine Nachricht (20–30 Wörter)."
+          en: "Writing: you are having a housewarming party. Write Lena a message (20–30 words)."
+          tr: "Yazma: Yeni evin için bir parti veriyorsun. Lena’ya bir mesaj yaz (20–30 kelime)."
+        points: 5
+        body:
+          - type: write_lines
+            lines: 4
+            prompts: ["Wann ist die Party?", "Wo wohnst du jetzt?", "Was soll Lena mitbringen?"]
+        answer:
+          model: "Liebe Lena, am Samstag um 19 Uhr mache ich eine Einweihungsparty. Ich wohne jetzt in der Lindenstraße 12, im dritten Stock. Kannst du bitte einen Salat mitbringen? Liebe Grüße, Elif"
+          note:
+            en: "1 point for each of the three bullet points, 2 points for greeting, ending and clear sentences."
+            tr: "Üç maddenin her biri için 1 puan; hitap, kapanış ve anlaşılır cümleler için 2 puan."
+
+      - type: task
+        id: d
+        skills: [sprechen, partner]
+        rubric:
+          de: "Sprechen: Fragen zur Person. Stell vier Fragen und antworte."
+          en: "Speaking: questions about yourself. Ask four questions and answer."
+          tr: "Konuşma: Kişisel sorular. Dört soru sor ve cevap ver."
+        body:
+          - type: word_bank
+            items: ["Wohnort?", "Geburtstag?", "Hobby?", "Lieblingsessen?"]
+          - type: bubbles
+            items: ["Wo wohnst du?", "Ich wohne in …", "Wann hast du Geburtstag?"]
+        answer:
+          open: true
+          model: "Wo wohnst du? – Ich wohne in Hannover, in der Nordstadt. Wann hast du Geburtstag? – Am 12. Juli. Was ist dein Hobby? – Ich fahre gern Fahrrad. Was ist dein Lieblingsessen? – Ich esse am liebsten Pasta."
+
+      - type: box
+        body:
+          - type: image
+            id: z2-pruefung
+            format: strip
+            description: "Prüfungssituation: Zwei Lernende sitzen sich an einem Tisch gegenüber und sprechen miteinander; zwischen ihnen liegen vier Wortkarten. Im Hintergrund eine Uhr."
+            alt:
+              en: "Two learners sit opposite each other at a table and talk; four word cards lie between them."
+              tr: "İki öğrenci bir masada karşılıklı oturmuş konuşuyor; aralarında dört kelime kartı duruyor."

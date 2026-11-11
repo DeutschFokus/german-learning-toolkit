@@ -106,6 +106,7 @@ class Renderer:
         self.text_geom: dict[str, list[tuple[float, int]]] = {}   # reading text → [(top pt, lines)]
         self.grow: dict[str, int] = {}                # elastic element id → steps it has grown
         self.elastic: dict[str, tuple[float, int]] = {}   # elastic element id → (step pt, max steps)
+        self.model_rows: dict[str, int] = {}          # ruled area id → lines its handwritten model needs
         self.answers: dict[str, AnswerEntry] = {}
         self._ans: list[str] = []
         self._scope = "x"
@@ -324,21 +325,29 @@ class Renderer:
         return self.B.matching({"left": [{"text": self.de(x), "name": self._fid("m")} for x in b.left],
                                 "right": [("ABCDEFGHIJ"[i], self.de(x)) for i, x in enumerate(b.right)], "forms": self.forms})
 
-    def _b_write_lines(self, b: M.WriteLines):
+    def ruled(self, model: str = "", n: int = 1, grow: bool = False) -> str:
+        """A ruled write-in area. `model` (already HTML) is shown in handwriting on the first lines."""
         wid = f"wl-{self._fid('w')}"
-        if b.grow:
+        if grow:
             self._grow_ids.append(wid)
             self.elastic[wid] = (float(self.cfg.lv["type"]["write_line"]) * 72 / 25.4, 3)
-        n = b.lines + (self.grow.get(wid, 0) if b.grow else 0)
-        return self.B.lines({"id": wid, "prompts": [self.de(p) for p in b.prompts], "model": self.de(b.model) if b.model else "",
+            n += self.grow.get(wid, 0)
+        model_rows = 0
+        if model:
+            model_rows = self.model_rows.get(wid) or max(1, math.ceil(len(strip_tags(model)) / 50))
+        return self.B.ruled({"id": wid, "model": model, "rows": model_rows + n, "n": n, "model_rows": model_rows, "forms": self.forms})
+
+    def _b_write_lines(self, b: M.WriteLines):
+        ruled = self.ruled(self.de(b.model) if b.model else "", b.lines, b.grow)
+        return self.B.lines({"prompts": [self.de(p) for p in b.prompts], "model": bool(b.model),
                              "label": self.L("example"), "hint": esc(self.cfg.ui("labels.example_hint")), "lang": self.cfg.lang,
-                             "n": n, "forms": self.forms, "name": wid})
+                             "ruled": ruled})
 
     def _b_sentence_build(self, b: M.SentenceBuild):
         self._ans.append(" &nbsp; ".join(f'<b class="n">{i}</b> {self.de(it.answer)}' for i, it in enumerate(b.items, 1)))
-        ex = {"given": self.de(b.example.given), "answer": self.de(b.example.answer)} if b.example else None
-        return self.B.sentences({"example": ex, "label": "Bsp.", "forms": self.forms,
-                                 "items": [{"given": self.de(it.given), "name": self._fid("sb")} for it in b.items]})
+        ex = {"given": self.de(b.example.given), "ruled": self.ruled(self.de(b.example.answer), 0)} if b.example else None
+        return self.B.sentences({"example": ex, "label": "Bsp.",
+                                 "items": [{"given": self.de(it.given), "ruled": self.ruled("", 1)} for it in b.items]})
 
     def _b_table_fill(self, b: M.TableFill):
         start = len(self.inline.col.answers)
@@ -424,8 +433,8 @@ class Renderer:
         return self.B.picdict({"image": self.image_view(b.image, self._tokens), "items": items, "forms": self.forms})
 
     def _b_self_eval(self, b: M.SelfEval):
-        return self.B.selfeval({"lang": self.cfg.lang, "forms": self.forms,
-                                "items": [{"de": self.de(i.de), "ex": self.ex(i[self.cfg.lang]), "name": self._fid("se")} for i in b.items]})
+        return self.B.selfeval({"lang": self.cfg.lang,
+                                "items": [{"de": self.de(i.de), "ex": self.ex(i[self.cfg.lang]), "ruled": self.ruled("", 1)} for i in b.items]})
 
     # ── tasks and boxes ──────────────────────────────────────────────────────
     def _explain(self, task: M.Task, part_key: str) -> bool:
@@ -532,23 +541,30 @@ class Renderer:
         h = self.B.teil_head({"anchor": uid, "no": chip, "title": esc(title), "sub": sub, "lang": self.cfg.lang})
         return Unit(uid, "head", str(h), part_key, 0, section, keep_next=True, break_before=True, title=title)
 
-    def test_total(self, ch: M.Chapter, teil, tokens: dict) -> Unit:
+    def total_unit(self, part, teil, section: str) -> Unit:
+        """Score box at the end of a test: total points + what the result means."""
         total = sum((b.points or 0) for b in teil.blocks if isinstance(b, M.Task))
-        pages = self.page_link(f"sec-{ch.key}-uebersicht")
-        end = self.page_of.get(f"sec-{ch.key}-uebersicht-2")
-        if end and "<" in pages:
-            pages = pages.replace("</", f"–{end}</", 1)
         rows = []
-        scale = self.cfg.ui("test.scale")
+        if isinstance(part, M.Chapter):
+            pages = self.page_link(f"sec-{part.key}-uebersicht")
+            end = self.page_of.get(f"sec-{part.key}-uebersicht-2")
+            if end and "<" in pages:
+                pages = pages.replace("</", f"–{end}</", 1)
+            scale, fmt = self.cfg.ui("test.scale"), {"pages": pages}
+        else:
+            scale, fmt = self.cfg.ui("station.scale"), {"a": part.covers[0], "b": part.covers[-1]}
         ref_total = scale[0][1]
+        prev_lo = None
         for lo, hi, txt in scale:
-            lo2, hi2 = round(lo * total / ref_total), round(hi * total / ref_total)
-            rows.append(f"<li><b>{lo2}–{hi2}</b><span>{esc(txt).format(pages=pages)}</span></li>")
-        uid = f"total-{ch.key}"
-        h = (f'<div class="total" id="{uid}"><div class="sum"><small lang="de">{self.L("total")}</small><span class="bx"></span>/ {total}</div>'
+            lo2 = round(lo * total / ref_total)
+            hi2 = total if prev_lo is None else prev_lo - 1
+            prev_lo = lo2
+            rows.append(f"<li><b>{lo2}–{hi2}</b><span>{esc(txt).format(**fmt)}</span></li>")
+        uid = f"total-{part.key}"
+        h = (f'<div class="total"><div class="sum"><small lang="de">{self.L("total")}</small><span class="bx"></span>/ {total}</div>'
              f'<ul class="scale" lang="{self.cfg.lang}">{"".join(rows)}</ul></div>')
         return Unit("u-" + uid, "total", f'<article class="task boxu wide" id="u-{uid}"><div class="tk-l"></div><div class="tk-m">{h}</div></article>',
-                    ch.key, teil.nr, "abschlusstest")
+                    part.key, teil.nr, section)
 
     def cando_view(self, ch: M.Chapter, end: bool) -> str:
         heads = [self.cfg.de("labels.not_yet"), self.cfg.de("labels.almost"), self.cfg.de("labels.sure")]

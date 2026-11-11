@@ -120,12 +120,15 @@ class Builder:
                 if first:
                     covers = cfg.de("labels.station_covers", a=part.covers[0], b=part.covers[-1])
                     h = r.B.station_head({"anchor": f"k-{part.key}", "no": part.number, "kicker": esc(covers),
-                                          "title": r.de(part.title), "sub": r.ex(part.subtitle), "lang": cfg.lang})
+                                          "title": r.de(part.title), "intro": r.de(part.intro.de),
+                                          "sub": r.ex(part.intro[cfg.lang]), "lang": cfg.lang})
                     flow.append(Unit(f"k-{part.key}", "head", str(h), part.key, 0, "station", break_before=True, title=part.title))
                 head = r.teil_head(part, teil, "station")
                 head.break_before = not first
                 flow.append(head)
                 flow += r.teil_units(part, teil, tokens, "station")
+                if teil.kind == "exam":
+                    flow.append(r.total_unit(part, teil, "station"))
                 first = False
             return opener_units, flow
         ch: M.Chapter = part
@@ -154,7 +157,7 @@ class Builder:
                 flow.append(Unit(uid, "cando", inner, ch.key, teil.nr, sec))
             flow += r.teil_units(ch, teil, tokens, sec)
             if sec == "abschlusstest":
-                flow.append(r.test_total(ch, teil, tokens))
+                flow.append(r.total_unit(ch, teil, sec))
             if sec == "rueckblick":
                 nx = r.next_unit(ch)
                 if nx:
@@ -412,7 +415,9 @@ class Builder:
             word_pages[v.id] = sorted(pages, key=lambda x: int(x))
         self.word_intro, self.word_pages = word_intro, word_pages
 
-        state = {"page_of": page_of, "line_of": line_of, "text_geom": text_geom, "grow": new_grow}
+        model_rows = {name[:-2]: max(1, round((g[3] - g[1]) / self.wl_pt)) for name, g in geom.items()
+                      if name.startswith("wl-") and name.endswith("-m")}
+        state = {"page_of": page_of, "line_of": line_of, "text_geom": text_geom, "grow": new_grow, "model_rows": model_rows}
         self._round = {"learn": learn, "appendix": appendix, "issues": issues, "units": units, "ans": ans, "trs": trs, "colw2": colw2}
         return state
 
@@ -606,7 +611,10 @@ class Builder:
                             "icons_title": esc(cfg.de("how.icons_title")), "icons": esc(cfg.ui("how.icons")),
                             "icon_list": [(r.icon(s, "7mm", cfg.de(f"labels.skills.{s}")), esc(cfg.de(f"labels.skills.{s}")))
                                           for s in ("hoeren", "lesen", "schreiben", "sprechen", "partner", "grammatik")],
-                            "colors_title": esc(cfg.de("how.colors_title")), "colors": esc(cfg.ui("how.colors"))})
+                            "colors_title": esc(cfg.de("how.colors_title")), "colors": esc(cfg.ui("how.colors")),
+                            "margin_title": esc(cfg.de("how.margin_title")), "margin": esc(cfg.ui("how.margin")),
+                            "margin_items": [{"kind": k, "icon": r.icon(k, "4.2mm", cfg.de(f"labels.notes.{k}")), "label": esc(cfg.de(f"labels.notes.{k}")),
+                                              "text": esc(cfg.ui(f"how.margin_items.{k}"))} for k in ("tipp", "wort", "landeskunde", "sogehts")]})
         pages.append(PageSpec("p-iv", "front", "front", "iv", "iv", "verso", "c5", str(how1) + '<div class="folio">iv</div>', "", ["p-iv", "how"],
                               [(1, cfg.de("labels.how"), "how")]))
         url = cfg.audio_url("5.01")
@@ -616,16 +624,14 @@ class Builder:
                                           "cross": r.icon("cross", "3mm", "falsch", 2.4), "check": r.icon("check", "3mm", "richtig", 2.6),
                                           "wrong": esc(cfg.de("how.sample_wrong")), "right": r.de(cfg.de("how.sample_right")),
                                           "why": "", "lang": cfg.lang})).replace('<div class="why" lang="%s"></div>' % cfg.lang, "")
-        sample_lines = f'<div class="lines"><span class="hw" lang="de">{esc(cfg.de("how.sample_hand"))}</span><span class="hl"></span></div>'
+        sample_lines = f'<div class="lines"><span class="hw" lang="de">{esc(cfg.de("how.sample_hand"))}</span><span class="hl"></span><span class="hl"></span></div>'
         heads = [cfg.de("labels.not_yet"), cfg.de("labels.almost"), cfg.de("labels.sure")]
         sample_cando = str(r.B.cando({"title": esc(cfg.de("labels.can_do_start")), "heads": [esc(h).replace(" ", "<br>") for h in heads], "lang": cfg.lang,
                                       "items": [{"de": esc(cfg.de("how.sample_cando")), "ex": "", "ref": "", "name": "how-cd"}], "forms": False, "refs": False}))
         demo_words = [self.book.vocab[w] for w in list(self.book.vocab)[3:6]] if len(self.book.vocab) >= 6 else list(self.book.vocab.values())[:3]
         sample_words = str(r.B.words_footer({"label": r.L("words_on_page"), "sub": esc(cfg.ui("labels.words_on_page")), "lang": cfg.lang,
                                              "words": [r.word_view(v) for v in demo_words], "more": ""})).replace('class="pw"', 'class="pw pwdemo"')
-        how2 = self.P.how2({"lang": cfg.lang, "margin_title": esc(cfg.de("how.margin_title")), "margin": esc(cfg.ui("how.margin")),
-                            "margin_items": [{"kind": k, "icon": r.icon(k, "4.2mm", cfg.de(f"labels.notes.{k}")), "label": esc(cfg.de(f"labels.notes.{k}")),
-                                              "text": esc(cfg.ui(f"how.margin_items.{k}"))} for k in ("tipp", "wort", "landeskunde", "sogehts")],
+        how2 = self.P.how2({"lang": cfg.lang,
                             "audio_title": esc(cfg.de("how.audio_title")), "audio": esc(cfg.ui("how.audio")), "sample_audio": sample_audio,
                             "mistake_title": esc(cfg.de("how.mistake_title")), "mistake": esc(cfg.ui("how.mistake")), "sample_mistake": sample_mistake,
                             "hand_title": esc(cfg.de("how.hand_title")), "hand": esc(cfg.ui("how.hand")), "sample_lines": sample_lines,
@@ -667,6 +673,7 @@ class Builder:
             r.page_of = dict(new["page_of"])
             r.page_of.update({"toc": "iii", "how": "iv", "cast": "vi"})
             r.line_of, r.text_geom = new["line_of"], new["text_geom"]
+            r.model_rows = new["model_rows"]
             self.grow = new["grow"]
             r.built = set(r.page_of)
             if new == state:

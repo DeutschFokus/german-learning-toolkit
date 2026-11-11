@@ -33,7 +33,7 @@
 {% endmacro %}
 
 {% macro station_head(h) %}
-<div class="sthead" id="{{ h.anchor }}"><div class="zn">Z{{ h.no }}</div><div><p class="kap" lang="de">{{ h.kicker }}</p><h1 lang="de">{{ h.title }}</h1><p class="sub" lang="{{ h.lang }}">{{ h.sub }}</p></div></div>
+<div class="sthead" id="{{ h.anchor }}"><div class="zn">Z{{ h.no }}</div><div><p class="kap" lang="de">{{ h.kicker }}</p><h1 lang="de">{{ h.title }}</h1><p class="intro" lang="de">{{ h.intro }}</p><p class="sub" lang="{{ h.lang }}">{{ h.sub }}</p></div></div>
 {% endmacro %}
 
 {# ── margin ──────────────────────────────────────────────────────────────── #}
@@ -117,12 +117,12 @@
 {% macro lines(v) %}
 {% if v.prompts %}<ul class="bullets" lang="de">{% for p in v.prompts %}<li>{{ p }}</li>{% endfor %}</ul>{% endif %}
 {% if v.model %}<div class="hwlab"><span lang="de" style="font-weight:700;letter-spacing:.14em;text-transform:uppercase">{{ v.label }}</span> · <span lang="{{ v.lang }}">{{ v.hint }}</span></div>{% endif %}
-<div class="lines" id="{{ v.id }}">{% if v.model %}<span class="hw" lang="de">{{ v.model }}</span>{% endif %}{% if v.forms %}<textarea class="wl" name="{{ v.name }}" aria-label="{{ v.name }}" style="height:calc(var(--wl)*{{ v.n }})"></textarea>{% else %}{% for i in range(v.n) %}<span class="hl"></span>{% endfor %}{% endif %}</div>
+{{ v.ruled }}
 {% endmacro %}
 
 {% macro sentences(v) %}
-<ol class="sb" lang="de">{% if v.example %}<li class="exa"><span class="g"><span class="tag">{{ v.label }}</span>{{ v.example.given }}</span><div class="lines"><span class="hw">{{ v.example.answer }}</span></div></li>{% endif %}
-{% for it in v.items %}<li><span class="g"><span class="n">{{ loop.index }}</span>{{ it.given }}</span><div class="lines">{% if v.forms %}<textarea class="wl" name="{{ it.name }}" aria-label="{{ it.name }}" style="height:var(--wl)"></textarea>{% else %}<span class="hl"></span>{% endif %}</div></li>{% endfor %}</ol>
+<ol class="sb" lang="de">{% if v.example %}<li class="exa"><span class="g"><span class="tag">{{ v.label }}</span>{{ v.example.given }}</span>{{ v.example.ruled }}</li>{% endif %}
+{% for it in v.items %}<li><span class="g"><span class="n">{{ loop.index }}</span>{{ it.given }}</span>{{ it.ruled }}</li>{% endfor %}</ol>
 {% endmacro %}
 
 {% macro tablefill(v) %}
@@ -166,7 +166,7 @@
 {% endmacro %}
 
 {% macro selfeval(v) %}
-<ol class="se">{% for it in v.items %}<li><span class="de" lang="de">{{ it.de }}</span><span class="ex" lang="{{ v.lang }}">{{ it.ex }}</span><div class="lines">{% if v.forms %}<textarea class="wl" name="{{ it.name }}" aria-label="{{ it.name }}" style="height:var(--wl)"></textarea>{% else %}<span class="hl"></span>{% endif %}</div></li>{% endfor %}</ol>
+<ol class="se">{% for it in v.items %}<li><span class="de" lang="de">{{ it.de }}</span><span class="ex" lang="{{ v.lang }}">{{ it.ex }}</span>{{ it.ruled }}</li>{% endfor %}</ol>
 {% endmacro %}
 
 {# ── page furniture ──────────────────────────────────────────────────────── #}
@@ -177,4 +177,9 @@
 
 {% macro words_footer(v) %}
 <footer class="pw" lang="de"><span class="lab">{{ v.label }}<i lang="{{ v.lang }}">{{ v.sub }}</i></span>{% for w in v.words %}<span class="w">{% if w.article %}<span class="{{ w.cls }}">{{ w.article }}</span> {% endif %}<b>{{ w.word }}</b>{{ w.suffix }} <em lang="{{ v.lang }}">{{ w.tr }}</em></span> {% endfor %}{% if v.more %}<span class="w more" lang="{{ v.lang }}">{{ v.more }}</span>{% endif %}</footer>
+{% endmacro %}
+
+{# ── ruled write-in area: optional handwritten model on top of crisp rules ─── #}
+{% macro ruled(v) %}
+<div class="lines" id="{{ v.id }}">{% if v.model %}<span class="hw" id="{{ v.id }}-m" lang="de">{{ v.model }}</span>{% endif %}{% for i in range(v.rows) %}<span class="hl"></span>{% endfor %}{% if v.forms and v.n %}<textarea class="wl" name="{{ v.id }}" aria-label="{{ v.id }}" style="top:calc(var(--wl)*{{ v.model_rows }});height:calc(var(--wl)*{{ v.n }})"></textarea>{% endif %}</div>
 {% endmacro %}

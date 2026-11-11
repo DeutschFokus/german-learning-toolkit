@@ -61,21 +61,21 @@
 <div class="path">{% for s in h.path %}<div class="stp"><i>{{ s.pages }}</i><b lang="de">{{ s.name }}</b><span lang="{{ h.lang }}">{{ s.text }}</span></div>{% endfor %}</div></div>
 <div class="sec"><h2 lang="de">{{ h.task_title }}</h2><p class="expl" lang="{{ h.lang }}">{{ h.task }}</p>
 <div class="demo recto">{{ h.sample_task }}
-<span class="pin" style="left:1mm;top:1.6mm">1</span><span class="pin" style="left:1mm;top:8.6mm">2</span><span class="pin" style="left:19mm;top:-2.2mm">3</span><span class="pin" style="right:17mm;top:-2.2mm">4</span><span class="pin" style="right:2.5mm;top:-2.2mm">5</span></div>
+<span class="pin" style="left:3.4mm;top:4.5mm">1</span><span class="pin" style="left:3.4mm;top:9.9mm">2</span><span class="pin" style="left:25mm;top:-2.2mm">3</span><span class="pin" style="right:21mm;top:-2.2mm">4</span><span class="pin" style="right:8mm;top:-2.2mm">5</span></div>
 <div class="cal" lang="{{ h.lang }}">{% for c in h.task_points %}<span><b>{{ loop.index }}</b>{{ c }}</span>{% endfor %}</div></div>
 <div class="sec"><h2 lang="de">{{ h.icons_title }}</h2><p class="expl" lang="{{ h.lang }}">{{ h.icons }}</p>
 <div class="icons" lang="de">{% for ic, name in h.icon_list %}<span>{{ ic }}{{ name }}</span>{% endfor %}</div></div>
 <div class="sec"><h2 lang="de">{{ h.colors_title }}</h2><p class="expl" lang="{{ h.lang }}">{{ h.colors }}</p>
 <p class="chips" lang="de" style="margin-top:calc(var(--bl)*.5)"><span class="cder">der Flur, -e</span><span class="cdie">die Küche, -n</span><span class="cdas">das Bad, ¨-er</span><span class="cpl">die Nebenkosten (Pl.)</span></p></div>
+<div class="sec"><h2 lang="de">{{ h.margin_title }}</h2><p class="expl" lang="{{ h.lang }}">{{ h.margin }}</p>
+<ul class="mnl" style="margin-top:calc(var(--bl)*.5)">{% for m in h.margin_items %}<li><span class="nh" style="--nc:var(--n-{{ m.kind }})" lang="de">{{ m.icon }}{{ m.label }}</span><span lang="{{ h.lang }}">{{ m.text }}</span></li>{% endfor %}</ul></div>
 </div>
 {% endmacro %}
 
 {# ── how this book works · right page ────────────────────────────────────── #}
 {% macro how2(h) %}
-<div class="fm how">
+<div class="fm how h2">
 <div class="grid2" style="margin-top:0">
-<div class="cd"><h2 lang="de">{{ h.margin_title }}</h2><p class="expl" lang="{{ h.lang }}">{{ h.margin }}</p>
-<ul class="mnl smp">{% for m in h.margin_items %}<li><span class="nh" style="--nc:var(--n-{{ m.kind }})" lang="de">{{ m.icon }}{{ m.label }}</span><span lang="{{ h.lang }}">{{ m.text }}</span></li>{% endfor %}</ul></div>
 <div class="cd"><h2 lang="de">{{ h.audio_title }}</h2><p class="expl" lang="{{ h.lang }}">{{ h.audio }}</p>
 <div class="smp" style="width:42mm">{{ h.sample_audio }}</div></div>
 <div class="cd"><h2 lang="de">{{ h.mistake_title }}</h2><p class="expl" lang="{{ h.lang }}">{{ h.mistake }}</p>
