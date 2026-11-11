@@ -24,7 +24,7 @@ grammar: [Wechselpräpositionen, wenn-Sätze, Passiv Präsens]
 image:
   id: k5-auftakt
   format: banner
-  src: assets/images/a2/k5-auftakt.svg
+  src: assets/images/a2/k5-auftakt.jpg
   description: "Elif steht mit einem Umzugskarton in ihrem neuen, noch leeren Wohnzimmer. Großes Fenster, Abendlicht, Blick auf Dächer. In der Tür steht Herr Berger mit einer Pflanze."
   alt:
     en: "Elif stands in her new, still empty living room holding a moving box; Mr Berger is at the door with a plant."

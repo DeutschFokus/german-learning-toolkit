@@ -26,6 +26,7 @@ teile:
         body:
           - type: image
             id: z2-pause
+            src: assets/images/a2/z2-pause.jpg
             format: strip
             description: "Zwischenstation: ein kleiner Bahnsteig im Abendlicht. Elif und Rahul sitzen mit Kaffeebechern auf einer Bank und machen Pause; auf der Anzeigetafel steht „Nächster Halt: Kapitel 9“."
             alt:
@@ -151,6 +152,7 @@ teile:
         body:
           - type: image
             id: z2-brett
+            src: assets/images/a2/z2-brett.jpg
             format: strip
             description: "Ein Schwarzes Brett im Supermarkt, voll mit bunten Zetteln und Anzeigen. Maria steht davor und fotografiert eine Anzeige mit dem Handy."
             alt:
