@@ -76,6 +76,14 @@ how:
   margin_title: Hilfe am Rand
   audio_title: Hören mit QR-Code
   words_title: Wörter auf dieser Seite
+  refs_title: Zeilen und Seiten
+  sample_note:
+    - "Liebe Nachbarn,"
+    - "am Samstag feiere ich Geburtstag."
+    - "Es kann etwas lauter werden."
+    - "Wenn es Sie stört, klingeln Sie"
+    - "einfach – oder kommen Sie vorbei!"
+  sample_refs: "{z} 5 = Zeile 5 · {s} 120 = Seite 120"
   mistake_title: Typische Fehler
   hand_title: Handschrift heißt Beispiel
   check_title: Kann ich das?

@@ -658,12 +658,18 @@ class Builder:
         demo_words = [self.book.vocab[w] for w in list(self.book.vocab)[3:6]] if len(self.book.vocab) >= 6 else list(self.book.vocab.values())[:3]
         sample_words = str(r.B.words_footer({"label": r.L("words_on_page"), "sub": esc(cfg.ui("labels.words_on_page")), "lang": cfg.lang,
                                              "words": [r.word_view(v) for v in demo_words], "more": ""})).replace('class="pw"', 'class="pw pwdemo"')
+        marks = "".join(f'<span class="ln" style="top:calc(var(--bl)*{0.5 + i})">{i + 1}</span>' for i in (0, 4))
+        legend = esc(cfg.de("how.sample_refs")).format(z=f'{cfg.de("line_abbr")}{NNBSP}'.rstrip(" "), s=f'{cfg.de("page_abbr")}{NNBSP}'.rstrip(" "))
+        legend = legend.replace(f"{NNBSP} ", NNBSP)
+        sample_refs = (f'<div class="read" lang="de"><div class="tx">{marks}<p>{"<br>".join(esc(x) for x in cfg.de("how.sample_note"))}</p></div></div>'
+                       f'<p class="refleg" lang="de">{legend}</p>')
         how2 = self.P.how2({"lang": cfg.lang,
                             "audio_title": esc(cfg.de("how.audio_title")), "audio": esc(cfg.ui("how.audio")), "sample_audio": sample_audio,
                             "mistake_title": esc(cfg.de("how.mistake_title")), "mistake": esc(cfg.ui("how.mistake")), "sample_mistake": sample_mistake,
                             "hand_title": esc(cfg.de("how.hand_title")), "hand": esc(cfg.ui("how.hand")), "sample_lines": sample_lines,
                             "check_title": esc(cfg.de("how.check_title")), "check": esc(cfg.ui("how.check")), "sample_cando": sample_cando,
                             "words_title": esc(cfg.de("how.words_title")), "words": esc(cfg.ui("how.words")), "sample_words": sample_words,
+                            "refs_title": esc(cfg.de("how.refs_title")), "refs": esc(cfg.ui("how.refs")), "sample_refs": sample_refs,
                             "tips_title": esc(cfg.ui("how.tips_title")), "tips": [esc(t) for t in cfg.ui("how.tips")]})
         pages.append(PageSpec("p-v", "front", "front", "v", "v", "recto", "c5", str(how2) + '<div class="folio">v</div>', "", ["p-v"]))
         # cast

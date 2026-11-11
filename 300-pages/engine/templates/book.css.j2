@@ -181,6 +181,7 @@ table{border-collapse:collapse;border-spacing:0}
 .gram .gn{font-size:calc(var(--fs) - 1pt);color:var(--mute);white-space:pre-wrap} .gram .gn b{color:var(--ink)}
 .gram .rule{margin-top:calc(var(--bl)*.5);font-style:italic;font-size:var(--fs-ex);color:var(--mute)}
 mark{background:var(--hl);color:var(--ink);font-weight:700;padding:0 .7mm;margin:0 -.7mm;border-radius:.9mm}
+mark.j{padding-left:0;margin-left:0;border-top-left-radius:0;border-bottom-left-radius:0}   /* highlight that starts inside a word */
 .err{background:var(--grey);border-radius:3mm;padding:calc(var(--bl)*.5) 4.5mm}
 .err .eh{font-size:6.8pt;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--ink);line-height:var(--bl)}
 .err .eh .ic{vertical-align:-1mm;margin-right:1.2mm}
@@ -411,6 +412,7 @@ textarea.wl{position:absolute;left:0;display:block;width:100%;border:0;backgroun
 .how .tips li{display:grid;grid-template-columns:8mm 1fr;margin-top:calc(var(--bl)*.25)}
 .how .tips li b{font-family:"DF Fraunces";font-weight:800;font-size:15pt;color:var(--deep)}
 .how .pwdemo{position:static;width:auto;height:auto;border-top:.5pt solid var(--line)}
+.how .refleg{margin-top:calc(var(--bl)*.5);font-size:8.6pt;line-height:var(--bl);font-weight:600;color:var(--deep)}
 .castg{display:grid;grid-template-columns:1fr 1fr;gap:calc(var(--bl)*1) 8mm;margin-top:calc(var(--bl)*1.5)}
 .castg .pc{display:grid;grid-template-columns:24mm 1fr;gap:5mm;align-items:center}
 .castg .av{display:block;width:24mm;height:24mm}
@@ -552,6 +554,7 @@ mark{mix-blend-mode:multiply}
 .how .grid2{gap:calc(var(--bl)*2) 10mm}
 .how .tips{position:absolute;left:0;right:0;top:calc(var(--body-h) - var(--bl)*8.5);margin:0}
 .how.h2{height:var(--body-h)}
+.how.h2 .grid2{row-gap:calc(var(--bl)*2.75)}
 .castg{gap:calc(var(--bl)*1.75) 8mm}
 .sthead .intro{font-weight:600;line-height:var(--bl)}
 

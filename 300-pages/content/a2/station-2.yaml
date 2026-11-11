@@ -22,6 +22,16 @@ teile:
     title: Wiederholung
     subtitle: {en: "Mixed practice from the last four chapters", tr: "Son dört üniteden karışık alıştırmalar"}
     blocks:
+      - type: box
+        body:
+          - type: image
+            id: z2-pause
+            format: strip
+            description: "Zwischenstation: ein kleiner Bahnsteig im Abendlicht. Elif und Jonas sitzen mit Kaffeebechern auf einer Bank und machen Pause; auf der Anzeigetafel steht „Nächster Halt: Kapitel 9“."
+            alt:
+              en: "Elif and Jonas take a break on a station bench with coffee cups; the departure board says “Next stop: Kapitel 9”."
+              tr: "Elif ve Jonas bir istasyon bankında kahve molası veriyor; tabelada “Sıradaki durak: Kapitel 9” yazıyor."
+
       - type: task
         id: a
         skills: [lesen, schreiben]
@@ -137,6 +147,16 @@ teile:
     title: Mini-Prüfung
     subtitle: {en: "In the style of Goethe-Zertifikat A2 and telc Deutsch A2 · about 25 minutes", tr: "Goethe-Zertifikat A2 ve telc Deutsch A2 tarzında · yaklaşık 25 dakika"}
     blocks:
+      - type: box
+        body:
+          - type: image
+            id: z2-brett
+            format: strip
+            description: "Ein Schwarzes Brett im Supermarkt, voll mit bunten Zetteln und Anzeigen. Mariam steht davor und fotografiert eine Anzeige mit dem Handy."
+            alt:
+              en: "A notice board in a supermarket, full of colourful notes and ads; Mariam takes a photo of one with her phone."
+              tr: "Bir süpermarkette renkli notlar ve ilanlarla dolu bir pano; Mariam telefonuyla bir ilanın fotoğrafını çekiyor."
+
       - type: task
         id: a
         skills: [lesen]
@@ -157,10 +177,10 @@ teile:
               - {label: E, title: "Fahrradladen Radhaus", text: "Neue und gebrauchte Fahrräder. Reparatur in 24 Stunden. Mo–Sa 10–18 Uhr."}
           - type: gap_text
             items:
-              - "Jonas hat seit drei Tagen Husten und braucht einen Termin. → Anzeige [[B]]"
-              - "Mariam sucht eine größere Wohnung für ihre Familie. → Anzeige [[C]]"
-              - "Kofi möchte am Wochenende mit Freunden draußen feiern. → Anzeige [[D]]"
-              - "Lenas Kaffeemaschine ist kaputt. Sie möchte nichts bezahlen. → Anzeige [[A]]"
+              - "Jonas hat seit drei Tagen Husten und braucht einen Termin. → Anzeige [[B]]"
+              - "Mariam sucht eine größere Wohnung für ihre Familie. → Anzeige [[C]]"
+              - "Kofi möchte am Wochenende mit Freunden draußen feiern. → Anzeige [[D]]"
+              - "Lenas Kaffeemaschine ist kaputt. Sie möchte nichts bezahlen. → Anzeige [[A]]"
         notes:
           - kind: sogehts
             text:

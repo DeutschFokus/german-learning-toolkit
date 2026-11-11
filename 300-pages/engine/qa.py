@@ -288,6 +288,31 @@ def whole_text_flags(pdf_path: Path) -> dict:
 
 
 # ── the report ───────────────────────────────────────────────────────────────
+def _canon(text: str) -> str:
+    """Case-insensitive comparison that also works for Turkish capitals (İ, I)."""
+    return re.sub(r"\s+", " ", text.lower().replace("i\u0307", "i").replace("ı", "i")).strip()
+
+
+def cover_elements(pdf_path: Path, cfg) -> list[tuple[str, int, int]]:
+    """Every text element of the cover must exist exactly once: (element, expected, found)."""
+    with fitz.open(pdf_path) as d:
+        text = _canon(d[0].get_text())
+    rest = cfg.ui("cover.title_rest").replace("{level}", cfg.level_name)
+    rows = [("300", 1, len(re.findall(r"(?<!\d)300(?!\d)", text))),
+            (cfg.de("labels.level"), 1, text.count(_canon(cfg.de("labels.level")))),
+            (f"{cfg.level_name} (badge and title)", 2, len(re.findall(rf"\b{re.escape(_canon(cfg.level_name))}\b", text)))]
+    for part in rest.split("|"):
+        words = [w for w in part.split() if w != cfg.level_name]
+        if words:
+            phrase = " ".join(words)
+            rows.append((phrase, 1, text.count(_canon(phrase))))
+    rows.append((cfg.ui("cover.explanations"), 1, text.count(_canon(cfg.ui("cover.explanations")))))
+    for f in cfg.ui("cover.features"):
+        rows.append((f, 1, text.count(_canon(f))))
+    rows.append(("Deutsch Fokus (logo)", 1, len(re.findall(r"deutsch\s*fokus", text))))
+    return rows
+
+
 def write_report(pdf_path: Path, out_path: Path, cfg, book, res, doc, info: dict, log: str, timings: dict) -> Path:
     out_path.parent.mkdir(parents=True, exist_ok=True)
     L: list[str] = []
@@ -307,6 +332,9 @@ def write_report(pdf_path: Path, out_path: Path, cfg, book, res, doc, info: dict
     flags = whole_text_flags(pdf_path)
     brow, bstat = baseline_report(pdf_path, res, cfg)
     errors = len(book.errors())
+    cover_rows = cover_elements(pdf_path, cfg)
+    contrast_rows = cfg.contrast_table()
+    contrast_fail = [r for r in contrast_rows if r[3] < float(r[4])]
     verdict = [
         ("Validation", f"{errors} errors, {len(book.warnings())} warnings", errors == 0),
         ("Layout geometry", f"{len(problems)} problems on {sum(1 for s in res.pages if s.group == 'learn')} learning pages "
@@ -316,6 +344,9 @@ def write_report(pdf_path: Path, out_path: Path, cfg, book, res, doc, info: dict
         ("Fonts", f"{len(fonts)} faces, all embedded" if all(f[2] for f in fonts) else "NOT all embedded", all(f[2] for f in fonts)),
         ("Text extraction", f"{flags['replacement']} broken characters, {flags['spaced']} letter-spaced runs", flags["replacement"] == 0 and flags["spaced"] == 0),
         ("Tagged PDF", f"{st['figures_with_alt']}/{st['figures']} figures with alt text, language {st['lang']}", st["tagged"] and st["figures"] == st["figures_with_alt"]),
+        ("Cover", f"{len(cover_rows)} text elements, {sum(1 for _, e, f in cover_rows if e != f)} duplicated or missing",
+         all(e == f for _, e, f in cover_rows)),
+        ("Contrast", f"{len(contrast_rows)} colour pairs, {len(contrast_fail)} below WCAG AA", not contrast_fail),
         ("Baseline grid", f"{bstat['half']:.0%} of body lines on the half-baseline grid, {bstat['quarter']:.0%} on the quarter grid", bstat["quarter"] >= 0.85),
     ]
     add("## Summary")
@@ -430,13 +461,23 @@ def write_report(pdf_path: Path, out_path: Path, cfg, book, res, doc, info: dict
     add("| Pair | Foreground | Background | Ratio | Needs | |")
     add("| --- | --- | --- | --- | --- | --- |")
     worst = 99.0
-    for nm, fg, bg, ratio, need in cfg.contrast_table():
+    for nm, fg, bg, ratio, need in contrast_rows:
         ok = ratio >= float(need)
         worst = min(worst, ratio / float(need))
         add(f"| {nm} | `{fg}` | `{bg}` | {ratio:.2f} | {need} | {'pass' if ok else '**FAIL**'} |")
     add("")
 
-    add("## 8 · File size")
+    add("## 8 · Cover")
+    add("")
+    add("Every text element of the cover exists exactly once in the PDF (the level appears twice by design: in the badge and in the title).")
+    add("")
+    add("| Element | expected | found | |")
+    add("| --- | --- | --- | --- |")
+    for el, e, f in cover_rows:
+        add(f"| {el} | {e} | {f} | {'pass' if e == f else '**CHECK**'} |")
+    add("")
+
+    add("## 9 · File size")
     add("")
     learn = sum(1 for s in res.pages if s.group == "learn")
     other = info["pages"] - learn

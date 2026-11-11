@@ -65,6 +65,7 @@ how:
     sogehts: "adım adım nasıl yapılır"
   audio: "Kodu telefonunla tara ya da tablette parça numarasına dokun. Her kaydın metni kitabın sonundadır."
   words: "Her sayfanın altında: yeni kelimeler; artikeli, çoğulu ve Türkçesiyle."
+  refs: "Okuma metinlerinde satır numaraları vardır. Z. 5 bir satırı, S. 120 bir sayfayı gösterir – PDF’te ikisine de dokunabilirsin."
   mistake: "Pek çok öğrencinin yaptığı bir hata, doğru cümle ve nedenini açıklayan tek satır."
   hand: "Mavi el yazısı, olası bir cevabı gösterir. Boş satırlar senin."
   check: "Aynı kontrol listesi her üniteyi açar ve kapatır. İşaretlerini karşılaştır."

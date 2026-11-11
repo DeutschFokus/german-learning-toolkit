@@ -225,8 +225,10 @@ class Config:
             rows.append((f"chapter {k}: ink on highlight", base["ink"], t["hl"], contrast(base["ink"], t["hl"]), "4.5"))
             rows.append((f"chapter {k}: deep on paper (labels)", t["deep"], base["paper"], contrast(t["deep"], base["paper"]), "4.5"))
             rows.append((f"chapter {k}: deep on soft (pointer)", t["deep"], t["soft"], contrast(t["deep"], t["soft"]), "4.5"))
-        lt = self.level_tokens()
-        rows.append(("cover: cream on level field (large type)", base["cream"], lt["cover"], contrast(base["cream"], lt["cover"]), "3.0"))
+        for lv in self.series["levels"]:                 # every cover of the series, not only this level
+            lt = self.level_tokens(lv)
+            rows.append((f"cover {lv.upper()}: cream on level field (large type)", base["cream"], lt["cover"], contrast(base["cream"], lt["cover"]), "3.0"))
+            rows.append((f"cover {lv.upper()}: cream 300 on the lighter circle", base["cream"], lt["cover_lite"], contrast(base["cream"], lt["cover_lite"]), "3.0"))
         rows.append(("cover: navy on cream band", base["navy"], base["cream"], contrast(base["navy"], base["cream"]), "4.5"))
         rows.append(("cover: cream on navy badge", base["cream"], base["navy"], contrast(base["cream"], base["navy"]), "4.5"))
         return rows

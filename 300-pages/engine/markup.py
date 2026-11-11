@@ -162,7 +162,7 @@ class Inline:
         t = _RE_PAGE.sub(self._page, t)
         t = _RE_LINE.sub(self._line, t)
         t = _RE_ANCHOR.sub(lambda m: f'<span class="la" id="la-{self.text_scope}-{m.group(1)}"></span>', t)
-        t = _RE_MARK.sub(r"<mark>\1</mark>", t)
+        t = _RE_MARK.sub(self._mark, t)
         t = _RE_BOLD.sub(r"<b>\1</b>", t)
         t = _RE_STRIKE.sub(r'<span class="strike">\1</span>', t)
         t = _RE_ITAL.sub(r"<i>\1</i>", t)
@@ -172,6 +172,13 @@ class Inline:
         cls = _GENDER[m.group(1)]
         first, _, rest = m.group(2).partition(" ")
         return f'<span class="np"><span class="{cls}">{first}</span> {rest}</span>'
+
+    @staticmethod
+    def _mark(m: re.Match) -> str:
+        """==x== → highlight. Inside a word (Fenster==n==) the highlight must not reach back over the letter before it."""
+        before = m.string[m.start() - 1] if m.start() else " "
+        joined = not (before.isspace() or before in ">\u00a0\u202f")
+        return f'<mark class="j">{m.group(1)}</mark>' if joined else f"<mark>{m.group(1)}</mark>"
 
     def _gap(self, m: re.Match) -> str:
         answer, _, hint = m.group(1).partition("|")
