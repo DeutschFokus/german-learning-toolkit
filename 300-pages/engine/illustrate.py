@@ -11,7 +11,7 @@ NAVY = "#1B1E2F"
 
 
 def person(x: float, ground: float, h: float, skin: str, hair: str, top: str, legs: str = NAVY, style: str = "long",
-           beard: str | None = None, pose: str = "stand", flip: bool = False, glasses: bool = False) -> str:
+           beard: str | None = None, moustache: str | None = None, pose: str = "stand", flip: bool = False, glasses: bool = False) -> str:
     """A figure standing on `ground`, centred on x, total height h. pose: stand | carry | offer | wave."""
     u = h / 100.0                                   # 100 units tall
     hr = 8.6 * u                                    # head radius
@@ -27,6 +27,8 @@ def person(x: float, ground: float, h: float, skin: str, hair: str, top: str, le
     # back hair
     if style == "long":
         o.append(f'<path d="M{x - hr * 1.15:.1f} {hy:.1f}a{hr * 1.15:.1f} {hr * 1.15:.1f} 0 0 1 {hr * 2.3:.1f} 0v{22 * u:.1f}q-{hr * 1.15:.1f} {6 * u:.1f} -{hr * 2.3:.1f} 0z" fill="{hair}"/>')
+    if style == "scarf":
+        o.append(f'<path d="M{x - hr * 1.2:.1f} {hy:.1f}a{hr * 1.2:.1f} {hr * 1.2:.1f} 0 0 1 {hr * 2.4:.1f} 0v{hr * 1.9:.1f}h-{hr * 2.4:.1f}z" fill="{hair}"/>')
     # torso
     o.append(f'<path d="M{x - tw:.1f} {hip + 3 * u:.1f}v-{(hip - sh_y) - 6 * u:.1f}a{9 * u:.1f} {9 * u:.1f} 0 0 1 {9 * u:.1f} -{9 * u:.1f}h{2 * tw - 18 * u:.1f}a{9 * u:.1f} {9 * u:.1f} 0 0 1 {9 * u:.1f} {9 * u:.1f}v{(hip - sh_y) - 6 * u:.1f}z" fill="{top}"/>')
     # neck and head
@@ -35,6 +37,11 @@ def person(x: float, ground: float, h: float, skin: str, hair: str, top: str, le
     # front hair
     if style in ("long", "short"):
         o.append(f'<path d="M{x - hr * 1.02:.1f} {hy - 1 * u:.1f}a{hr * 1.02:.1f} {hr * 1.02:.1f} 0 0 1 {hr * 2.04:.1f} 0q-{hr * .5:.1f} -{hr * .75:.1f} -{hr * 1.3:.1f} -{hr * .55:.1f}q-{hr * .5:.1f} {hr * .1:.1f} -{hr * .74:.1f} {hr * .55:.1f}z" fill="{hair}"/>')
+    if style == "scarf":                           # the scarf frames the face and covers the neck
+        o.append(f'<path d="M{x - hr * 1.05:.1f} {hy + hr * .1:.1f}a{hr * 1.05:.1f} {hr * 1.05:.1f} 0 0 1 {hr * 2.1:.1f} 0q-{hr * .25:.1f} -{hr * .95:.1f} -{hr * 1.05:.1f} -{hr * .95:.1f}q-{hr * .8:.1f} 0 -{hr * 1.05:.1f} {hr * .95:.1f}z" fill="{hair}"/>')
+        o.append(f'<path d="M{x - hr * .95:.1f} {hy + hr * .55:.1f}q{hr * .95:.1f} {hr * .9:.1f} {hr * 1.9:.1f} 0l{hr * .2:.1f} {hr * 1.05:.1f}h-{hr * 2.3:.1f}z" fill="{hair}"/>')
+    if moustache:
+        o.append(f'<path d="M{x - hr * .42:.1f} {hy + hr * .34:.1f}q{hr * .21:.1f} -{hr * .2:.1f} {hr * .42:.1f} 0q{hr * .21:.1f} -{hr * .2:.1f} {hr * .42:.1f} 0q-{hr * .21:.1f} {hr * .2:.1f} -{hr * .42:.1f} {hr * .06:.1f}q-{hr * .21:.1f} {hr * .14:.1f} -{hr * .42:.1f} -{hr * .06:.1f}z" fill="{moustache}"/>')
     if beard:
         o.append(f'<path d="M{x - hr * .86:.1f} {hy + hr * .2:.1f}q{hr * .86:.1f} {hr * 1.5:.1f} {hr * 1.72:.1f} 0q0 {hr * .95:.1f} -{hr * .86:.1f} {hr * .98:.1f}q-{hr * .86:.1f} -{hr * .03:.1f} -{hr * .86:.1f} -{hr * .98:.1f}z" fill="{beard}"/>')
     # face
@@ -78,7 +85,7 @@ def plant(x: float, y: float, s: float, pot: str, leaf: str, leaf2: str) -> str:
 
 
 def k5_auftakt(t: dict) -> str:
-    """Elif with a moving box in her empty living room; Herr Becker at the door with a plant. 2160 × 960."""
+    """Elif with a moving box in her empty living room; Herr Berger at the door with a plant. 2160 × 960."""
     W, H = 2160, 960
     shade = "#F7B77F"                               # the one darker tone
     g = 800                                         # floor line
@@ -99,11 +106,11 @@ def k5_auftakt(t: dict) -> str:
          f'<path d="M1750 800V306a140 140 0 0 1 280 0v494z" fill="{t["wash"]}"/>',
          # boxes on the floor
          box(1420, 660, 190, 140, t["mid"], "#E08400"), box(1450, 548, 140, 112, t["hl"], shade),
-         # Becker in the doorway, holding the plant towards Elif
-         person(1900, 812, 500, "#F0C6A4", "#C9CCD3", "#3F7D6A", legs="#4A4038", style="short", beard="#C9CCD3", pose="offer", flip=True),
+         # Herr Berger, the caretaker, in the doorway, holding the plant towards Elif
+         person(1900, 812, 500, "#D9A074", "#1E1512", "#F07F13", legs=NAVY, style="short", moustache="#1E1512", pose="offer", flip=True),
          plant(1752, 548, 96, t["deep"], "#3F7D6A", "#5FA28D"),
          # Elif with a box
-         person(1180, 836, 520, "#E0A677", "#2B1D17", "#E4572E", legs=NAVY, style="long", pose="carry"),
+         person(1180, 836, 520, "#F2C9A6", "#12827B", "#12827B", legs="#12827B", style="scarf", pose="carry"),
          box(1085, 560, 190, 130, t["mid"], "#E08400"),
          '</svg>']
     return "".join(o)

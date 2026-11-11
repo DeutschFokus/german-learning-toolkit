@@ -94,6 +94,12 @@ def avatar(key: str, cast: dict, size: str = "8.6mm", uid: str = "") -> str:
         p.append(f'<path d="M16.200 22.500c.600 5.200 3.600 7.900 7.800 7.900s7.200-2.700 7.800-7.900c-1.500 2.300-4 3.300-7.800 3.300s-6.300-1-7.800-3.300z" fill="{a["beard"]}"/>')
     p.append('<path d="M21 24.300c1.800 1.500 4.200 1.500 6 0" fill="none" stroke="#3A2A22" stroke-opacity=".75" stroke-width="1.100" stroke-linecap="round"/>')
     p.append('<circle cx="20.600" cy="20" r=".95" fill="#2A1E1A"/><circle cx="27.400" cy="20" r=".95" fill="#2A1E1A"/>')
+    if a.get("moustache"):
+        p.append(f'<path d="M19.600 23.300c1.300-1.500 3-1.300 4.400-.300 1.400-1 3.100-1.200 4.400.300-1.500.900-3 .900-4.400.200-1.400.700-2.900.700-4.400-.200z" fill="{a["moustache"]}"/>')
+    if a.get("cap"):
+        p.append(f'<path d="M15 17.500c0-5.500 3.800-9.300 9-9.300s9 3.800 9 9.300z" fill="{a["cap"]}"/><path d="M14 17.500h17.500c2.500 0 4.500.800 6 2.200H14z" fill="{a["cap"]}"/>')
+    if a.get("band"):
+        p.append(f'<path d="M15.400 15.600c2.300-2.600 5.200-3.900 8.600-3.900s6.300 1.300 8.600 3.900l-.900 2c-2.100-2.200-4.700-3.300-7.700-3.300s-5.600 1.100-7.700 3.300z" fill="{a["band"]}"/>')
     if a.get("glasses"):
         p.append('<g fill="none" stroke="#1A1D2E" stroke-width="1"><circle cx="20.600" cy="20" r="2.900"/><circle cx="27.400" cy="20" r="2.900"/><path d="M23.500 20h1"/></g>')
     return (f'<svg class="av" width="{size}" height="{size}" viewBox="0 0 48 48"><title>{html.escape(name)}</title>'

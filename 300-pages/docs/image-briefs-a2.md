@@ -12,8 +12,8 @@ Palette: mid `#FD9913` · hl `#FFCC9E` · soft `#FFE4CC` · wash `#FFF4E9` · de
 - **Where:** Auftakt
 - **Format:** banner – 216 × 96 mm (full width, bleeds off three edges)
 - **Deliver:** 2560 × 1140 px · 2.25 : 1, JPEG, sRGB → `assets/images/a2/k5-auftakt.jpg`
-- **Scene:** Elif steht mit einem Umzugskarton in ihrem neuen, noch leeren Wohnzimmer. Großes Fenster, Abendlicht, Blick auf Dächer. In der Tür steht Herr Becker mit einer Pflanze.
-- **Alt text (en):** Elif stands in her new, still empty living room holding a moving box; Mr Becker is at the door with a plant.
+- **Scene:** Elif steht mit einem Umzugskarton in ihrem neuen, noch leeren Wohnzimmer. Großes Fenster, Abendlicht, Blick auf Dächer. In der Tür steht Herr Berger mit einer Pflanze.
+- **Alt text (en):** Elif stands in her new, still empty living room holding a moving box; Mr Berger is at the door with a plant.
 - **Note:** The chapter numeral covers the lower left corner – keep it calm there. No faces within 8 mm of the top and side edges.
 - **In the content file:** add `src: assets/images/a2/k5-auftakt.jpg` to this image.
 
@@ -43,8 +43,8 @@ Palette: mid `#FD9913` · hl `#FFCC9E` · soft `#FFE4CC` · wash `#FFF4E9` · de
 - **Where:** Teil 4 · Wohin kommt das Sofa?
 - **Format:** strip – 117.2 mm wide, 37–63 mm high (the slot grows to fill its page)
 - **Deliver:** 1400 × 760 px · 1.85 : 1, JPEG, sRGB → `assets/images/a2/k5-umzug.jpg`
-- **Scene:** Elif und Jonas tragen ein Sofa ins Wohnzimmer. Überall Umzugskartons, eine Stehlampe, ein zusammengerollter Teppich und ein Bild lehnen an der Wand.
-- **Alt text (en):** Elif and Jonas carry a sofa into the living room, surrounded by moving boxes, a lamp, a rolled-up rug and a picture.
+- **Scene:** Elif und Rahul tragen ein Sofa ins Wohnzimmer. Überall Umzugskartons, eine Stehlampe, ein zusammengerollter Teppich und ein Bild lehnen an der Wand.
+- **Alt text (en):** Elif and Rahul carry a sofa into the living room, surrounded by moving boxes, a lamp, a rolled-up rug and a picture.
 - **Note:** The picture is cropped from top and bottom when the slot is lower: keep everything important in the middle 58% of the height.
 - **In the content file:** add `src: assets/images/a2/k5-umzug.jpg` to this image.
 
@@ -53,8 +53,8 @@ Palette: mid `#FD9913` · hl `#FFCC9E` · soft `#FFE4CC` · wash `#FFF4E9` · de
 - **Where:** Teil 8 · Das Repair-Café
 - **Format:** strip – 117.2 mm wide, 37–63 mm high (the slot grows to fill its page)
 - **Deliver:** 1400 × 760 px · 1.85 : 1, JPEG, sRGB → `assets/images/a2/k5-repaircafe.jpg`
-- **Scene:** Im Repair-Café: Kofi und eine ältere Nachbarin reparieren zusammen einen Toaster an einem langen Tisch voller Werkzeug. Im Hintergrund Kaffee, Kuchen und ein Fahrrad auf einem Montageständer.
-- **Alt text (en):** At the repair café, Kofi and an older neighbour repair a toaster together at a long table full of tools.
+- **Scene:** Im Repair-Café: Yusuf und eine ältere Nachbarin reparieren zusammen einen Toaster an einem langen Tisch voller Werkzeug. Im Hintergrund Kaffee, Kuchen und ein Fahrrad auf einem Montageständer.
+- **Alt text (en):** At the repair café, Yusuf and an older neighbour repair a toaster together at a long table full of tools.
 - **Note:** The picture is cropped from top and bottom when the slot is lower: keep everything important in the middle 58% of the height.
 - **In the content file:** add `src: assets/images/a2/k5-repaircafe.jpg` to this image.
 
@@ -77,8 +77,8 @@ Palette: mid `#AABDEC` · hl `#C3D4FD` · soft `#E4EBFD` · wash `#F2F6FE` · de
 - **Where:** Teil 1 · Wiederholung
 - **Format:** strip – 117.2 mm wide, 37–63 mm high (the slot grows to fill its page)
 - **Deliver:** 1400 × 760 px · 1.85 : 1, JPEG, sRGB → `assets/images/a2/z2-pause.jpg`
-- **Scene:** Zwischenstation: ein kleiner Bahnsteig im Abendlicht. Elif und Jonas sitzen mit Kaffeebechern auf einer Bank und machen Pause; auf der Anzeigetafel steht „Nächster Halt: Kapitel 9“.
-- **Alt text (en):** Elif and Jonas take a break on a station bench with coffee cups; the departure board says “Next stop: Kapitel 9”.
+- **Scene:** Zwischenstation: ein kleiner Bahnsteig im Abendlicht. Elif und Rahul sitzen mit Kaffeebechern auf einer Bank und machen Pause; auf der Anzeigetafel steht „Nächster Halt: Kapitel 9“.
+- **Alt text (en):** Elif and Rahul take a break on a station bench with coffee cups; the departure board says “Next stop: Kapitel 9”.
 - **Note:** The picture is cropped from top and bottom when the slot is lower: keep everything important in the middle 58% of the height.
 - **In the content file:** add `src: assets/images/a2/z2-pause.jpg` to this image.
 
@@ -87,8 +87,8 @@ Palette: mid `#AABDEC` · hl `#C3D4FD` · soft `#E4EBFD` · wash `#F2F6FE` · de
 - **Where:** Teil 2 · Mini-Prüfung
 - **Format:** strip – 117.2 mm wide, 37–63 mm high (the slot grows to fill its page)
 - **Deliver:** 1400 × 760 px · 1.85 : 1, JPEG, sRGB → `assets/images/a2/z2-brett.jpg`
-- **Scene:** Ein Schwarzes Brett im Supermarkt, voll mit bunten Zetteln und Anzeigen. Mariam steht davor und fotografiert eine Anzeige mit dem Handy.
-- **Alt text (en):** A notice board in a supermarket, full of colourful notes and ads; Mariam takes a photo of one with her phone.
+- **Scene:** Ein Schwarzes Brett im Supermarkt, voll mit bunten Zetteln und Anzeigen. Maria steht davor und fotografiert eine Anzeige mit dem Handy.
+- **Alt text (en):** A notice board in a supermarket, full of colourful notes and ads; Maria takes a photo of one with her phone.
 - **Note:** The picture is cropped from top and bottom when the slot is lower: keep everything important in the middle 58% of the height.
 - **In the content file:** add `src: assets/images/a2/z2-brett.jpg` to this image.
 

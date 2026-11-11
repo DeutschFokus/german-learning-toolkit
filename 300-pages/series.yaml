@@ -125,24 +125,24 @@ design:
 
 # Recurring cast. `avatar` drives the generated placeholder portraits.
 cast:
-  elif:   {name: Elif,        full: Elif Demir,      avatar: {skin: "#E0A677", hair: "#2B1D17", style: long,  top: "#E4572E", bg: "#FBE3D2"}}
-  yilmaz: {name: Frau Yılmaz, full: Aylin Yılmaz,    avatar: {skin: "#D9A074", hair: "#3A2A22", style: bob,   top: "#2E4A8F", bg: "#DEE6F7", glasses: true}}
-  becker: {name: Herr Becker, full: Wolfgang Becker, avatar: {skin: "#F0C6A4", hair: "#C9CCD3", style: short, top: "#3F7D6A", bg: "#DDEFE8", beard: "#C9CCD3"}}
-  jonas:  {name: Jonas,       full: Jonas Weber,     avatar: {skin: "#F2CDAE", hair: "#B5793B", style: short, top: "#5B6EE1", bg: "#E3E7FB"}}
-  mariam: {name: Mariam,      full: Mariam Haddad,   avatar: {skin: "#C68E62", hair: "#7A3E69", style: scarf, top: "#7A3E69", bg: "#F1E0EC"}}
-  kofi:   {name: Kofi,        full: Kofi Mensah,     avatar: {skin: "#7B4B2E", hair: "#1E1512", style: curly, top: "#E9A21F", bg: "#FBEFD0"}}
-  lena:   {name: Lena,        full: Lena Schmidt,    avatar: {skin: "#F4D3B8", hair: "#C0392B", style: bun,   top: "#2A9D8F", bg: "#D9F0EC"}}
-  nowak:  {name: Herr Nowak,  full: Tomasz Nowak,    avatar: {skin: "#EBC09C", hair: "#4A4038", style: bald,  top: "#6B7280", bg: "#E7E9EE", glasses: true}}
+  elif:    {name: Elif,         full: Elif Demir,     avatar: {skin: "#F2C9A6", hair: "#12827B", style: scarf, top: "#12827B", bg: "#D8F0EC"}}
+  rahul:   {name: Rahul,        full: Rahul,          avatar: {skin: "#C98E5E", hair: "#1E1512", style: curly, top: "#B42A63", bg: "#F8DDE8", glasses: true}}
+  david:   {name: Herr Berger,  full: David Berger,   avatar: {skin: "#D9A074", hair: "#1E1512", style: short, top: "#F07F13", bg: "#FDE7CF", moustache: "#1E1512"}}
+  amina:   {name: Frau Diallo,  full: Amina Diallo,   avatar: {skin: "#7B4B2E", hair: "#1E1512", style: curly, top: "#EFE3CC", bg: "#F6EEDD", band: "#E4572E"}}
+  maria:   {name: Maria,        full: Maria Lorenz,   avatar: {skin: "#E9B78E", hair: "#5A3A2A", style: bun,   top: "#C4372C", bg: "#F9DDD9"}}
+  yusuf:   {name: Yusuf,        full: Yusuf,          avatar: {skin: "#D9A074", hair: "#1E1512", style: short, top: "#2F4A7D", bg: "#DEE6F7", beard: "#1E1512", cap: "#2F5FB3"}}
+  anna:    {name: Anna,         full: Anna,           avatar: {skin: "#F0C29A", hair: "#5A3323", style: long,  top: "#F1E6D2", bg: "#F6EEDD"}}
+  alvarez: {name: Herr Alvarez, full: Herr Alvarez,   avatar: {skin: "#D9A074", hair: "#7A7F8A", style: short, top: "#56607A", bg: "#E3E6EE", beard: "#A9ADB6"}}
   reporterin: {name: Reporterin, full: Reporterin,   avatar: {skin: "#B9825A", hair: "#2B1D17", style: bun,   top: "#B5446E", bg: "#F6DDE7"}}
-  ansage: {name: Ansage,      full: Ansage,          avatar: {style: voice, bg: "#E7E9EE"}}
+  ansage:  {name: Ansage,       full: Ansage,         avatar: {style: voice, bg: "#E7E9EE"}}
 
 # Short portraits for the "Die Personen" page (characters without a bio are not listed there).
 bios:
-  elif:   {de: "27, Krankenpflegerin. Neu in Hannover – und neugierig auf alles.", en: "27, nurse. New in Hanover – and curious about everything.", tr: "27 yaşında, hemşire. Hannover’de yeni ve her şeyi merak ediyor."}
-  jonas:  {de: "30, Elifs Kollege und bester Freund. Hilft bei jedem Umzug.", en: "30, Elif’s colleague and best friend. Helps with every move.", tr: "30 yaşında, Elif’in iş arkadaşı ve en yakın dostu. Her taşınmada yardıma koşar."}
-  becker: {de: "68, Hausmeister im Erdgeschoss. Streng mit der Hausordnung, aber immer hilfsbereit.", en: "68, the caretaker on the ground floor. Strict about the house rules, but always ready to help.", tr: "68 yaşında, zemin kattaki bina görevlisi. Kurallar konusunda titiz ama her zaman yardımsever."}
-  yilmaz: {de: "45, arbeitet bei der Hausverwaltung. Sie löst jedes Problem – meistens noch am selben Tag.", en: "45, works at the property management. She solves every problem – usually the same day.", tr: "45 yaşında, bina yönetiminde çalışıyor. Her sorunu çözer; çoğu zaman aynı gün."}
-  mariam: {de: "34, Ingenieurin und Nachbarin im zweiten Stock. Feiert gern – und lädt alle ein.", en: "34, engineer and neighbour on the second floor. Loves a party – and invites everyone.", tr: "34 yaşında, mühendis ve ikinci kattaki komşu. Kutlamayı sever, herkesi de davet eder."}
-  kofi:   {de: "25, Student. Repariert im Repair-Café alles, was kaputt ist.", en: "25, student. Fixes everything that’s broken at the repair café.", tr: "25 yaşında, öğrenci. Repair-Café’de bozuk olan her şeyi tamir eder."}
-  lena:   {de: "29, Elifs Freundin aus dem Deutschkurs. Schreibt die besten Nachrichten.", en: "29, Elif’s friend from the German course. Writes the best messages.", tr: "29 yaşında, Elif’in Almanca kursundan arkadaşı. En güzel mesajları o yazar."}
-  nowak:  {de: "52, Vermieter. Freundlich, pünktlich und ein bisschen sparsam.", en: "52, landlord. Friendly, punctual and a little thrifty.", tr: "52 yaşında, ev sahibi. Güler yüzlü, dakik ve biraz tutumlu."}
+  elif:    {de: "27, Pflegekraft. Neu in Hannover – und neugierig auf alles.", en: "27, nurse. New in Hanover – and curious about everything.", tr: "27 yaşında, hemşire. Hannover’de yeni ve her şeyi merak ediyor."}
+  rahul:   {de: "24, Informatikstudent und Elifs bester Freund. Hilft bei jedem Umzug.", en: "24, computer science student and Elif’s best friend. Helps with every move.", tr: "24 yaşında, bilgisayar öğrencisi ve Elif’in en yakın dostu. Her taşınmada yardıma koşar."}
+  david:   {de: "38, Hausmeister im Erdgeschoss. Streng mit der Hausordnung, aber immer hilfsbereit.", en: "38, the caretaker on the ground floor. Strict about the house rules, but always ready to help.", tr: "38 yaşında, zemin kattaki bina görevlisi. Kurallar konusunda titiz ama her zaman yardımsever."}
+  amina:   {de: "29, leitet die Hausverwaltung. Sie löst jedes Problem – meistens noch am selben Tag.", en: "29, runs the property management. She solves every problem – usually the same day.", tr: "29 yaşında, bina yönetimini yürütüyor. Her sorunu çözer; çoğu zaman aynı gün."}
+  maria:   {de: "48, Nachbarin im zweiten Stock. Feiert gern – und lädt alle ein.", en: "48, neighbour on the second floor. Loves a party – and invites everyone.", tr: "48 yaşında, ikinci kattaki komşu. Kutlamayı sever, herkesi de davet eder."}
+  yusuf:   {de: "33, Handwerker. Repariert im Repair-Café alles, was kaputt ist.", en: "33, craftsman. Fixes everything that’s broken at the repair café.", tr: "33 yaşında, usta. Repair-Café’de bozuk olan her şeyi tamir eder."}
+  anna:    {de: "25, Studentin und Elifs Freundin aus dem Deutschkurs. Schreibt die besten Nachrichten.", en: "25, student and Elif’s friend from the German course. Writes the best messages.", tr: "25 yaşında, öğrenci ve Elif’in Almanca kursundan arkadaşı. En güzel mesajları o yazar."}
+  alvarez: {de: "52, Vermieter. Freundlich, pünktlich und ein bisschen sparsam.", en: "52, landlord. Friendly, punctual and a little thrifty.", tr: "52 yaşında, ev sahibi. Güler yüzlü, dakik ve biraz tutumlu."}

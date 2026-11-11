@@ -25,10 +25,10 @@ image:
   id: k5-auftakt
   format: banner
   src: assets/images/a2/k5-auftakt.svg
-  description: "Elif steht mit einem Umzugskarton in ihrem neuen, noch leeren Wohnzimmer. Großes Fenster, Abendlicht, Blick auf Dächer. In der Tür steht Herr Becker mit einer Pflanze."
+  description: "Elif steht mit einem Umzugskarton in ihrem neuen, noch leeren Wohnzimmer. Großes Fenster, Abendlicht, Blick auf Dächer. In der Tür steht Herr Berger mit einer Pflanze."
   alt:
-    en: "Elif stands in her new, still empty living room holding a moving box; Mr Becker is at the door with a plant."
-    tr: "Elif, elinde bir taşınma kolisiyle yeni ve henüz boş oturma odasında duruyor; Bay Becker kapıda, elinde bir bitkiyle bekliyor."
+    en: "Elif stands in her new, still empty living room holding a moving box; Mr Berger is at the door with a plant."
+    tr: "Elif, elinde bir taşınma kolisiyle yeni ve henüz boş oturma odasında duruyor; Bay Berger kapıda, elinde bir bitkiyle bekliyor."
 
 # ── Vocabulary ───────────────────────────────────────────────────────────────
 # Nouns: article + plural are required. Notation: "-" no ending, "¨-er" umlaut + er,
@@ -245,9 +245,9 @@ teile:
         id: c
         skills: [hoeren]
         rubric:
-          de: "Elif zeigt Jonas ihre Wohnung. Hör zu und kreuze an: A, B oder C?"
-          en: "Elif shows Jonas her flat. Listen and tick A, B or C."
-          tr: "Elif, Jonas’a evini gösteriyor. Dinle ve işaretle: A, B ya da C?"
+          de: "Elif zeigt Rahul ihre Wohnung. Hör zu und kreuze an: A, B oder C?"
+          en: "Elif shows Rahul her flat. Listen and tick A, B or C."
+          tr: "Elif, Rahul’a evini gösteriyor. Dinle ve işaretle: A, B ya da C?"
         points: 4
         audio:
           track: "5.01"
@@ -255,14 +255,14 @@ teile:
           duration: "0:48"
           transcript:
             turns:
-              - {speaker: elif, text: "Komm rein, Jonas! Das ist meine neue Wohnung."}
-              - {speaker: jonas, text: "Wow, schön hell! Wie viele Zimmer hast du?"}
+              - {speaker: elif, text: "Komm rein, Rahul! Das ist meine neue Wohnung."}
+              - {speaker: rahul, text: "Wow, schön hell! Wie viele Zimmer hast du?"}
               - {speaker: elif, text: "Zwei Zimmer, eine Küche und ein Bad. Hier links ist das Wohnzimmer."}
-              - {speaker: jonas, text: "Das Wohnzimmer ist aber groß! Und wo schläfst du?"}
+              - {speaker: rahul, text: "Das Wohnzimmer ist aber groß! Und wo schläfst du?"}
               - {speaker: elif, text: "Das Schlafzimmer ist rechts, neben dem Bad. Es ist klein, aber ruhig."}
-              - {speaker: jonas, text: "Hast du auch einen Keller?"}
+              - {speaker: rahul, text: "Hast du auch einen Keller?"}
               - {speaker: elif, text: "Nein, leider nicht. Aber ich habe einen kleinen Balkon."}
-              - {speaker: jonas, text: "Und die Küche?"}
+              - {speaker: rahul, text: "Und die Küche?"}
               - {speaker: elif, text: "Die Küche ist hinten. Sie ist ziemlich alt, aber der Herd funktioniert."}
         body:
           - type: multiple_choice
@@ -409,17 +409,17 @@ teile:
           duration: "1:05"
           transcript:
             turns:
-              - {speaker: nowak, text: "Nowak, guten Tag."}
-              - {speaker: elif, text: "Guten Tag, Herr Nowak. Mein Name ist Elif Demir. Ich rufe wegen der Wohnung in der Nordstadt an. Ist sie noch frei?"}
-              - {speaker: nowak, text: "Ja, die Wohnung ist noch frei."}
+              - {speaker: alvarez, text: "Alvarez, guten Tag."}
+              - {speaker: elif, text: "Guten Tag, Herr Alvarez. Mein Name ist Elif Demir. Ich rufe wegen der Wohnung in der Nordstadt an. Ist sie noch frei?"}
+              - {speaker: alvarez, text: "Ja, die Wohnung ist noch frei."}
               - {speaker: elif, text: "Schön! Wie hoch sind die Nebenkosten genau?"}
-              - {speaker: nowak, text: "140 Euro im Monat. Heizung und Wasser sind inklusive, Strom zahlen Sie extra."}
+              - {speaker: alvarez, text: "140 Euro im Monat. Heizung und Wasser sind inklusive, Strom zahlen Sie extra."}
               - {speaker: elif, text: "Und gibt es einen Aufzug?"}
-              - {speaker: nowak, text: "Nein, leider nicht. Die Wohnung liegt im dritten Stock."}
+              - {speaker: alvarez, text: "Nein, leider nicht. Die Wohnung liegt im dritten Stock."}
               - {speaker: elif, text: "Das ist kein Problem. Kann ich die Wohnung besichtigen?"}
-              - {speaker: nowak, text: "Gern. Passt es Ihnen am Samstag um elf Uhr?"}
+              - {speaker: alvarez, text: "Gern. Passt es Ihnen am Samstag um elf Uhr?"}
               - {speaker: elif, text: "Ja, das passt gut. Wie ist die Adresse?"}
-              - {speaker: nowak, text: "Lindenstraße 12. Bitte klingeln Sie bei Nowak."}
+              - {speaker: alvarez, text: "Lindenstraße 12. Bitte klingeln Sie bei Alvarez."}
               - {speaker: elif, text: "Vielen Dank, bis Samstag!"}
         body:
           - type: gap_text
@@ -496,10 +496,10 @@ teile:
           - type: image
             id: k5-umzug
             format: strip
-            description: "Elif und Jonas tragen ein Sofa ins Wohnzimmer. Überall Umzugskartons, eine Stehlampe, ein zusammengerollter Teppich und ein Bild lehnen an der Wand."
+            description: "Elif und Rahul tragen ein Sofa ins Wohnzimmer. Überall Umzugskartons, eine Stehlampe, ein zusammengerollter Teppich und ein Bild lehnen an der Wand."
             alt:
-              en: "Elif and Jonas carry a sofa into the living room, surrounded by moving boxes, a lamp, a rolled-up rug and a picture."
-              tr: "Elif ve Jonas oturma odasına bir kanepe taşıyor; etrafta koliler, bir lamba, rulo yapılmış bir halı ve bir tablo var."
+              en: "Elif and Rahul carry a sofa into the living room, surrounded by moving boxes, a lamp, a rolled-up rug and a picture."
+              tr: "Elif ve Rahul oturma odasına bir kanepe taşıyor; etrafta koliler, bir lamba, rulo yapılmış bir halı ve bir tablo var."
 
       - type: task
         id: a
@@ -516,11 +516,11 @@ teile:
         body:
           - type: dialogue
             turns:
-              - {speaker: jonas, text: "Puh, das Sofa ist schwer! Wohin soll ich es stellen?"}
+              - {speaker: rahul, text: "Puh, das Sofa ist schwer! Wohin soll ich es stellen?"}
               - {speaker: elif, text: "Stell es bitte an die Wand, unter das Fenster."}
-              - {speaker: jonas, text: "Okay. Und wohin kommt der Teppich?"}
+              - {speaker: rahul, text: "Okay. Und wohin kommt der Teppich?"}
               - {speaker: elif, text: "Leg ihn bitte vor das Sofa. Ja, super – jetzt liegt er genau in der Mitte."}
-              - {speaker: jonas, text: "Und das Bild? Hängen wir es über das Sofa?"}
+              - {speaker: rahul, text: "Und das Bild? Hängen wir es über das Sofa?"}
               - {speaker: elif, text: "Gute Idee! … So, fertig: Das Sofa steht an der Wand, der Teppich liegt vor dem Sofa und das Bild hängt über dem Sofa. Perfekt!"}
         answer:
           open: true
@@ -644,11 +644,11 @@ teile:
         body:
           - type: dialogue
             turns:
-              - {speaker: yilmaz, text: "Hausverwaltung Nordstadt, Yılmaz. Was kann ich für Sie tun?"}
+              - {speaker: amina, text: "Hausverwaltung Nordstadt, Diallo. Was kann ich für Sie tun?"}
               - {speaker: elif, text: "Guten Morgen, hier ist Elif Demir aus der Lindenstraße 12. Meine Heizung funktioniert nicht. Wenn ich sie aufdrehe, bleibt sie kalt."}
-              - {speaker: yilmaz, text: "Oh, das tut mir leid. Ich schicke Ihnen unseren Hausmeister. Passt es Ihnen morgen um zehn Uhr?"}
+              - {speaker: amina, text: "Oh, das tut mir leid. Ich schicke Ihnen unseren Hausmeister. Passt es Ihnen morgen um zehn Uhr?"}
               - {speaker: elif, text: "Morgen Vormittag arbeite ich leider. Wenn es möglich ist, lieber ab 15 Uhr."}
-              - {speaker: yilmaz, text: "Kein Problem. Dann kommt Herr Becker morgen um 15 Uhr."}
+              - {speaker: amina, text: "Kein Problem. Dann kommt Herr Berger morgen um 15 Uhr."}
         answer:
           open: true
           note:
@@ -678,7 +678,7 @@ teile:
             items:
               - {text: "Elif wohnt in der Lindenstraße.", answer: true}
               - {text: "Die Heizung in Elifs Wohnung ist warm.", answer: false}
-              - {text: "Frau Yılmaz schickt den Hausmeister.", answer: true}
+              - {text: "Frau Diallo schickt den Hausmeister.", answer: true}
               - {text: "Elif hat morgen Vormittag Zeit.", answer: false}
 
       - type: box
@@ -740,7 +740,7 @@ teile:
               An: info@hv-nordstadt.example
               Betreff: Heizung defekt – Lindenstraße 12
             text: |
-              Sehr geehrte Frau Yılmaz,
+              Sehr geehrte Frau Diallo,
 
               ich wohne seit drei Monaten in der Lindenstraße 12, im dritten Stock links. Leider gibt es ein Problem: Die Heizung im Wohnzimmer funktioniert {#seit}seit Samstag nicht. Wenn ich sie aufdrehe, bleibt sie kalt.
 
@@ -896,22 +896,22 @@ teile:
         id: a
         skills: [hoeren]
         rubric:
-          de: "Elif klingelt bei Herrn Becker. Hör zu und kreuze an."
-          en: "Elif rings Mr Becker’s doorbell. Listen and tick the right answer."
-          tr: "Elif, Bay Becker’in zilini çalıyor. Dinle ve doğru cevabı işaretle."
+          de: "Elif klingelt bei Herrn Berger. Hör zu und kreuze an."
+          en: "Elif rings Mr Berger’s doorbell. Listen and tick the right answer."
+          tr: "Elif, Bay Berger’in zilini çalıyor. Dinle ve doğru cevabı işaretle."
         points: 3
         audio:
           track: "5.05"
-          title: Bei Herrn Becker
+          title: Bei Herrn Berger
           duration: "0:50"
           transcript:
             turns:
-              - {speaker: elif, text: "Guten Abend, Herr Becker. Entschuldigen Sie die Störung."}
-              - {speaker: becker, text: "Guten Abend, Frau Demir. Kein Problem. Was kann ich für Sie tun?"}
+              - {speaker: elif, text: "Guten Abend, Herr Berger. Entschuldigen Sie die Störung."}
+              - {speaker: david, text: "Guten Abend, Frau Demir. Kein Problem. Was kann ich für Sie tun?"}
               - {speaker: elif, text: "Ich möchte ein Bild aufhängen, aber ich habe keine Bohrmaschine. Könnten Sie mir vielleicht eine leihen?"}
-              - {speaker: becker, text: "Natürlich, einen Moment … Hier, bitte. Aber bohren Sie bitte nicht nach 20 Uhr. Sie wissen ja: die Hausordnung."}
+              - {speaker: david, text: "Natürlich, einen Moment … Hier, bitte. Aber bohren Sie bitte nicht nach 20 Uhr. Sie wissen ja: die Hausordnung."}
               - {speaker: elif, text: "Selbstverständlich! Ich bringe sie Ihnen morgen zurück. Vielen Dank!"}
-              - {speaker: becker, text: "Gern geschehen. Und wenn Sie Hilfe brauchen, klingeln Sie einfach."}
+              - {speaker: david, text: "Gern geschehen. Und wenn Sie Hilfe brauchen, klingeln Sie einfach."}
         body:
           - type: multiple_choice
             items:
@@ -982,16 +982,16 @@ teile:
             parts:
               - label: "1"
                 text: "Liebe Nachbarn, am Samstag feiere ich Geburtstag. Es kann etwas lauter werden. Wenn es Sie stört, klingeln Sie einfach – oder kommen Sie vorbei!"
-                author: "Mariam Haddad, 2. Stock"
+                author: "Maria Lorenz, 2. Stock"
               - label: "2"
                 text: "Wer kann mir helfen? Ich ziehe am 1. Mai aus und suche zwei Personen für den Umzug. Es gibt Pizza für alle!"
-                author: "Kofi, 4. Stock"
+                author: "Yusuf, 4. Stock"
           - type: true_false
             items:
-              - {text: "Mariam macht am Samstag eine Party.", answer: true}
-              - {text: "Die Nachbarn dürfen nicht zu Mariam kommen.", answer: false}
-              - {text: "Kofi zieht in das Haus ein.", answer: false}
-              - {text: "Kofi sucht Hilfe für seinen Umzug.", answer: true}
+              - {text: "Maria macht am Samstag eine Party.", answer: true}
+              - {text: "Die Nachbarn dürfen nicht zu Maria kommen.", answer: false}
+              - {text: "Yusuf zieht in das Haus ein.", answer: false}
+              - {text: "Yusuf sucht Hilfe für seinen Umzug.", answer: true}
         words: [zettel, feiern, ausziehen, vorbeikommen]
 
       - type: task
@@ -1005,10 +1005,10 @@ teile:
           - type: write_lines
             lines: 2
             prompts: ["Wann bist du weg?", "Bitte: Blumen gießen", "Wo ist der Schlüssel?"]
-            model: "Liebe Frau Haddad, ab Montag bin ich zwei Wochen im Urlaub."
+            model: "Liebe Frau Lorenz, ab Montag bin ich zwei Wochen im Urlaub."
         answer:
           open: true
-          model: "Liebe Frau Haddad, ab Montag bin ich zwei Wochen im Urlaub. Könnten Sie bitte meine Blumen gießen? Der Schlüssel liegt bei Herrn Becker. Vielen Dank und liebe Grüße, Elif Demir"
+          model: "Liebe Frau Lorenz, ab Montag bin ich zwei Wochen im Urlaub. Könnten Sie bitte meine Blumen gießen? Der Schlüssel liegt bei Herrn Berger. Vielen Dank und liebe Grüße, Elif Demir"
         words: [giessen, schluessel]
 
       - type: task
@@ -1042,10 +1042,10 @@ teile:
           - type: image
             id: k5-repaircafe
             format: strip
-            description: "Im Repair-Café: Kofi und eine ältere Nachbarin reparieren zusammen einen Toaster an einem langen Tisch voller Werkzeug. Im Hintergrund Kaffee, Kuchen und ein Fahrrad auf einem Montageständer."
+            description: "Im Repair-Café: Yusuf und eine ältere Nachbarin reparieren zusammen einen Toaster an einem langen Tisch voller Werkzeug. Im Hintergrund Kaffee, Kuchen und ein Fahrrad auf einem Montageständer."
             alt:
-              en: "At the repair café, Kofi and an older neighbour repair a toaster together at a long table full of tools."
-              tr: "Repair-Café’de Kofi ve yaşlı bir komşu, aletlerle dolu uzun bir masada birlikte bir tost makinesi tamir ediyor."
+              en: "At the repair café, Yusuf and an older neighbour repair a toaster together at a long table full of tools."
+              tr: "Repair-Café’de Yusuf ve yaşlı bir komşu, aletlerle dolu uzun bir masada birlikte bir tost makinesi tamir ediyor."
 
       - type: task
         id: a
@@ -1064,9 +1064,9 @@ teile:
             text: |
               Der Toaster funktioniert nicht mehr, die Lampe bleibt dunkel, das Fahrrad hat einen Platten – was nun? Viele Leute werfen kaputte Sachen einfach weg. In der Nordstadt gibt es eine bessere Idee: das Repair-Café.
 
-              {#wann}Jeden ersten Samstag im Monat treffen sich hier Nachbarn im Stadtteilzentrum. Wer etwas Kaputtes hat, bringt es mit. Am Eingang wird jedes Gerät zuerst angemeldet. {#wer}Dann wird es zusammen mit einem Helfer repariert. „Wir reparieren nicht für die Leute, sondern mit den Leuten“, sagt Kofi Mensah. Der Student hilft seit einem Jahr im Repair-Café.
+              {#wann}Jeden ersten Samstag im Monat treffen sich hier Nachbarn im Stadtteilzentrum. Wer etwas Kaputtes hat, bringt es mit. Am Eingang wird jedes Gerät zuerst angemeldet. {#wer}Dann wird es zusammen mit einem Helfer repariert. „Wir reparieren nicht für die Leute, sondern mit den Leuten“, sagt Yusuf Mensah. Der Handwerker hilft seit einem Jahr im Repair-Café.
 
-              {#kosten}Die Reparatur kostet nichts. Wenn man möchte, kann man etwas spenden. Kaffee und Kuchen gibt es auch. {#kofi}„Wenn ein Gerät wieder funktioniert, freuen sich alle“, sagt Kofi. „Und der Müll wird weniger.“
+              {#kosten}Die Reparatur kostet nichts. Wenn man möchte, kann man etwas spenden. Kaffee und Kuchen gibt es auch. {#kofi}„Wenn ein Gerät wieder funktioniert, freuen sich alle“, sagt Yusuf. „Und der Müll wird weniger.“
           - type: multiple_choice
             items:
               - {q: "Wann findet das Repair-Café statt? ({z:wann})", options: ["jeden Samstag", "einmal im Monat", "jeden Tag"], answer: B}
@@ -1085,9 +1085,9 @@ teile:
         id: b
         skills: [hoeren]
         rubric:
-          de: "Hör das Interview mit Kofi. Richtig oder falsch?"
-          en: "Listen to the interview with Kofi. True or false?"
-          tr: "Kofi ile yapılan röportajı dinle. Doğru mu, yanlış mı?"
+          de: "Hör das Interview mit Yusuf. Richtig oder falsch?"
+          en: "Listen to the interview with Yusuf. True or false?"
+          tr: "Yusuf ile yapılan röportajı dinle. Doğru mu, yanlış mı?"
         points: 5
         audio:
           track: "5.06"
@@ -1095,21 +1095,21 @@ teile:
           duration: "1:02"
           transcript:
             turns:
-              - {speaker: reporterin, text: "Kofi, was wird im Repair-Café am häufigsten repariert?"}
-              - {speaker: kofi, text: "Kaffeemaschinen und Lampen. Aber auch Fahrräder und Handys werden oft gebracht."}
+              - {speaker: reporterin, text: "Yusuf, was wird im Repair-Café am häufigsten repariert?"}
+              - {speaker: yusuf, text: "Kaffeemaschinen und Lampen. Aber auch Fahrräder und Handys werden oft gebracht."}
               - {speaker: reporterin, text: "Kann man alles reparieren?"}
-              - {speaker: kofi, text: "Nein, leider nicht. Wenn ein Ersatzteil fehlt, können wir nichts machen. Aber ungefähr sechzig Prozent der Geräte funktionieren danach wieder."}
+              - {speaker: yusuf, text: "Nein, leider nicht. Wenn ein Ersatzteil fehlt, können wir nichts machen. Aber ungefähr sechzig Prozent der Geräte funktionieren danach wieder."}
               - {speaker: reporterin, text: "Warum machst du das?"}
-              - {speaker: kofi, text: "Ich repariere gern, und ich lerne hier viele Nachbarn kennen. Außerdem ist es gut für die Umwelt."}
+              - {speaker: yusuf, text: "Ich repariere gern, und ich lerne hier viele Nachbarn kennen. Außerdem ist es gut für die Umwelt."}
               - {speaker: reporterin, text: "Wann ist das nächste Repair-Café?"}
-              - {speaker: kofi, text: "Am ersten Samstag im Mai, von 14 bis 17 Uhr."}
+              - {speaker: yusuf, text: "Am ersten Samstag im Mai, von 14 bis 17 Uhr."}
         body:
           - type: true_false
             items:
               - {text: "Am häufigsten werden Fahrräder repariert.", answer: false}
               - {text: "Man kann nicht alles reparieren.", answer: true}
               - {text: "Ungefähr 60 Prozent der Geräte funktionieren danach wieder.", answer: true}
-              - {text: "Kofi findet das Repair-Café gut für die Umwelt.", answer: true}
+              - {text: "Yusuf findet das Repair-Café gut für die Umwelt.", answer: true}
               - {text: "Das nächste Repair-Café ist am Vormittag.", answer: false}
         notes:
           - kind: landeskunde
@@ -1337,17 +1337,17 @@ teile:
             genre: chat
             line_numbers: false
             turns:
-              - {speaker: lena, text: "Na, wie ist die neue Wohnung?"}
+              - {speaker: anna, text: "Na, wie ist die neue Wohnung?"}
               - {speaker: elif, text: "Super! Ich bin am Samstag eingezogen. Das Sofa steht schon im Wohnzimmer, aber die Lampen hängen noch nicht."}
-              - {speaker: lena, text: "Wenn du willst, komme ich am Sonntag vorbei und helfe dir."}
+              - {speaker: anna, text: "Wenn du willst, komme ich am Sonntag vorbei und helfe dir."}
               - {speaker: elif, text: "Gern! Wenn du kommst, koche ich etwas für uns."}
-              - {speaker: lena, text: "Abgemacht! Soll ich etwas mitbringen?"}
-              - {speaker: elif, text: "Nur gute Laune. Ach ja – und vielleicht eine Bohrmaschine? Herr Becker will seine morgen zurück."}
+              - {speaker: anna, text: "Abgemacht! Soll ich etwas mitbringen?"}
+              - {speaker: elif, text: "Nur gute Laune. Ach ja – und vielleicht eine Bohrmaschine? Herr Berger will seine morgen zurück."}
           - type: sentence_build
             items:
               - {given: "Wann ist Elif eingezogen?", answer: "Am Samstag."}
-              - {given: "Was macht Elif, wenn Lena kommt?", answer: "Sie kocht etwas."}
-              - {given: "Was soll Lena mitbringen?", answer: "Gute Laune und eine Bohrmaschine."}
+              - {given: "Was macht Elif, wenn Anna kommt?", answer: "Sie kocht etwas."}
+              - {given: "Was soll Anna mitbringen?", answer: "Gute Laune und eine Bohrmaschine."}
         notes:
           - kind: wort
             words: [laune]
@@ -1510,7 +1510,7 @@ teile:
           duration: "0:32"
           transcript:
             turns:
-              - {speaker: yilmaz, text: "Guten Tag, Frau Demir, hier ist Yılmaz von der Hausverwaltung Nordstadt. Der Handwerker kommt nicht am Dienstag, sondern am Mittwoch, zwischen 8 und 10 Uhr. Bitte seien Sie zu Hause. Wenn der Termin nicht passt, rufen Sie mich bitte zurück. Vielen Dank und auf Wiederhören!"}
+              - {speaker: amina, text: "Guten Tag, Frau Demir, hier ist Diallo von der Hausverwaltung Nordstadt. Der Handwerker kommt nicht am Dienstag, sondern am Mittwoch, zwischen 8 und 10 Uhr. Bitte seien Sie zu Hause. Wenn der Termin nicht passt, rufen Sie mich bitte zurück. Vielen Dank und auf Wiederhören!"}
         body:
           - type: multiple_choice
             items:

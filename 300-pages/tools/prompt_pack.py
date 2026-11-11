@@ -25,22 +25,22 @@ a = ap.parse_args()
 cfg = load_config(a.level, "en")
 book = load_book(cfg, a.chapters)
 
-STYLE = ("Flat vector editorial illustration for a language course book. Bold simple geometric shapes, no outlines, "
+STYLE = ("Flat vector illustration in exactly the style of the attached cast overview: bold simple shapes, no outlines, "
          "no gradients, no texture, flat colour with at most one darker tone for shadows. Rounded forms; circles and arches "
-         "in the background; generous empty areas; calm and friendly. People have simple faces with two dot eyes and a small "
-         "smile, natural adult proportions, mitten-like hands, clothes in solid colours. "
+         "in the background; generous empty areas; calm and friendly. People look exactly like their character sheets: "
+         "short friendly proportions with slightly large heads, dot eyes, eyebrows, clear mouth shapes, mitten-like hands. "
          "Never draw any text, letters, numbers, logos or watermarks: signs, screens and notes stay blank.")
 CAST = {
-    "elif": "Elif – woman, 27, long dark brown hair, warm light brown skin, vermilion red top (#E4572E), navy trousers",
-    "jonas": "Jonas – man, 30, short light brown hair, fair skin, periwinkle blue top (#5B6EE1)",
-    "becker": "Herr Becker – man, 68, short grey hair and grey beard, fair skin, green top (#3F7D6A), brown trousers",
-    "yilmaz": "Frau Yılmaz – woman, 45, dark bob haircut, glasses, light brown skin, dark blue top (#2E4A8F)",
-    "mariam": "Mariam – woman, 34, plum headscarf (#7A3E69), brown skin, plum top",
-    "kofi": "Kofi – man, 25, short black curly hair, dark brown skin, yellow top (#E9A21F)",
-    "lena": "Lena – woman, 29, red hair in a bun, fair skin, teal top (#2A9D8F)",
-    "nowak": "Herr Nowak – man, 52, bald with brown hair at the sides, glasses, light skin, grey top (#6B7280)",
+    "elif": "Elif – woman, 27, nurse: teal headscarf, teal scrubs with a small white heart pin, light skin",
+    "rahul": "Rahul – man, 24, student: black curly hair, round glasses, magenta hoodie, brown skin",
+    "david": "Herr Berger (David) – man, 38, caretaker: tall and broad, short dark hair, moustache, orange work jacket, key ring",
+    "amina": "Frau Diallo (Amina) – woman, 29, property manager: dark skin, afro curls with a colourful headband, ivory blazer",
+    "maria": "Maria – woman, 48, neighbour: brown hair in a low bun with grey strands, rounder build, red top with cream apron",
+    "yusuf": "Yusuf – man, 33, craftsman: blue baseball cap, dark beard, denim work shirt, tool belt",
+    "anna": "Anna – woman, 25, student: long wavy brown hair, gold hoop earrings, cream jumper, backpack",
+    "alvarez": "Herr Alvarez – man, 52, landlord: grey swept-back hair, grey beard, slate blazer",
 }
-NAMES = {"Elif": "elif", "Jonas": "jonas", "Becker": "becker", "Yılmaz": "yilmaz", "Mariam": "mariam", "Kofi": "kofi", "Lena": "lena", "Nowak": "nowak"}
+NAMES = {"Elif": "elif", "Rahul": "rahul", "Berger": "david", "Diallo": "amina", "Maria": "maria", "Yusuf": "yusuf", "Anna": "anna", "Alvarez": "alvarez"}
 FORMAT = {"banner": ("very wide banner, about 9:4 (ask for 16:9 and I crop top and bottom)",
                      "Put all people in the right two thirds. The lower left corner must be plain empty wall and floor."),
           "wide": ("landscape 4:3", "Keep everything important in the middle of the height; top and bottom may be cropped."),
@@ -70,14 +70,14 @@ A("```text\nYou are illustrating a German course book. Every image you make foll
   "\n\nBase colours for every picture: navy #1B1E2F for the darkest details instead of black, cream #FBF4E6 and white for light. "
   "Each request names a few more palette colours – use only those plus the colours of the characters.\n"
   "When I attach character sheets, the people must match them exactly: same hair, same skin tone, same top.\n```\n")
-A("## Step 2 · Character sheets (eight pictures, once)\n")
-A("One prompt per person. Approve each sheet before you go on – they are the reference for all scenes. "
-  "Save them as `cast-elif.png`, `cast-jonas.png` and so on.\n")
+A("## Step 2 · Character sheets (once)\n")
+A("The eight people of this book come from the approved cast overview. Attach `cast-overview.png` to each request. "
+  "Save the sheets as `cast-elif.png`, `cast-rahul.png` and so on.\n")
 for key, line in CAST.items():
     A(f"**{line.split(' – ')[0]}**\n")
-    A(f"```text\nCharacter sheet, square 1:1, plain cream background (#FBF4E6).\n{line}.\n"
-      "Show the same person three times, full body, standing: front view, three-quarter view, and walking. "
-      "Friendly, relaxed. No props, no text.\n```\n")
+    A(f"```text\nCharacter sheet, square, plain cream background (#FBF4E6), matching this person exactly as shown in the cast overview.\n{line}.\n"
+      "Top row: full body front view, three-quarter view, walking. "
+      "Bottom row: five head close-ups – happy, surprised, confused, annoyed, proud. No text.\n```\n")
 A("## Step 3 · The pictures\n")
 A("For each picture: attach the character sheets of the people named in it (and one finished scene as a style example, "
   "once you have one), then paste the prompt. Save the result under the file name shown.\n")

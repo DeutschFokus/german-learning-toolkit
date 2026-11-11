@@ -69,20 +69,23 @@ The same eight neighbours appear in every chapter and at every level. Their avat
 are drawn by code (`engine/art.py`, colours in `series.yaml → cast`). Illustrations must match
 them: same hair shape, same colours, same top.
 
-| Character | Who | Hair | Skin | Top | Always |
-| --- | --- | --- | --- | --- | --- |
-| **Elif Demir** | 27, nurse, new in Hanover | long, dark brown `#2B1D17` | `#E0A677` | vermilion `#E4572E` | curious, in motion |
-| **Jonas Weber** | 30, Elif's colleague and best friend | short, light brown `#B5793B` | `#F2CDAE` | periwinkle `#5B6EE1` | helping, carrying something |
-| **Wolfgang Becker** | 68, caretaker on the ground floor | short, grey `#C9CCD3`, grey beard | `#F0C6A4` | green `#3F7D6A` | keys or tools, upright |
-| **Aylin Yılmaz** | 45, property management | dark bob `#3A2A22`, glasses | `#D9A074` | dark blue `#2E4A8F` | phone or folder |
-| **Mariam Haddad** | 34, engineer, second floor | plum headscarf `#7A3E69` | `#C68E62` | plum `#7A3E69` | hosting, inviting |
-| **Kofi Mensah** | 25, student, repair café | short black curls `#1E1512` | `#7B4B2E` | yellow `#E9A21F` | screwdriver, bicycle |
-| **Lena Schmidt** | 29, friend from the German course | red bun `#C0392B` | `#F4D3B8` | teal `#2A9D8F` | phone in hand |
-| **Tomasz Nowak** | 52, landlord | bald, brown at the sides `#4A4038`, glasses | `#EBC09C` | grey `#6B7280` | friendly, punctual |
+| Character | Who | Always recognisable by | Top |
+| --- | --- | --- | --- |
+| **Elif Demir** | 27, nurse, new in Hanover | teal headscarf, small heart pin | teal scrubs |
+| **Rahul** | 24, computer science student, Elif's best friend | black curls, round glasses | magenta hoodie |
+| **David Berger** (Herr Berger) | 38, caretaker on the ground floor | tall and broad, moustache, key ring | orange work jacket |
+| **Amina Diallo** (Frau Diallo) | 29, runs the property management | afro curls, colourful headband | ivory blazer |
+| **Maria Lorenz** | 48, neighbour on the second floor | low bun with grey strands, apron | red |
+| **Yusuf** | 33, craftsman, repair café | blue cap, dark beard, tool belt | denim blue |
+| **Anna** | 25, student, friend from the German course | long wavy brown hair, hoop earrings, backpack | cream |
+| **Herr Alvarez** | 52, landlord | grey swept-back hair, grey beard | slate blazer |
 
-Faces are simple: two dot eyes, a small curved mouth, no nostrils, no eyelashes. Expression comes
-from posture and eyebrows. Adult proportions, slightly simplified (head about one sixth of the
-body). Hands are mittens with a thumb unless a hand holds something small.
+These eight come from the approved cast overview of 28 characters (`cast-overview.png`); the same
+people appear in the videos. The character sheets made from that overview are the reference for
+every picture. Avatars in dialogues are drawn by code from `series.yaml → cast` until portraits exist.
+
+Faces are simple: dot eyes, eyebrows, a clear mouth shape, no eyelashes. Proportions are short and
+friendly with slightly large heads, as in the cast overview. Hands are mittens with a thumb unless a hand holds something small.
 
 People who are not part of the cast stay generic and in chapter colours.
 

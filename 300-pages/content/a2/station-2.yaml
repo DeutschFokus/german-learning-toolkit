@@ -27,10 +27,10 @@ teile:
           - type: image
             id: z2-pause
             format: strip
-            description: "Zwischenstation: ein kleiner Bahnsteig im Abendlicht. Elif und Jonas sitzen mit Kaffeebechern auf einer Bank und machen Pause; auf der Anzeigetafel steht „Nächster Halt: Kapitel 9“."
+            description: "Zwischenstation: ein kleiner Bahnsteig im Abendlicht. Elif und Rahul sitzen mit Kaffeebechern auf einer Bank und machen Pause; auf der Anzeigetafel steht „Nächster Halt: Kapitel 9“."
             alt:
-              en: "Elif and Jonas take a break on a station bench with coffee cups; the departure board says “Next stop: Kapitel 9”."
-              tr: "Elif ve Jonas bir istasyon bankında kahve molası veriyor; tabelada “Sıradaki durak: Kapitel 9” yazıyor."
+              en: "Elif and Rahul take a break on a station bench with coffee cups; the departure board says “Next stop: Kapitel 9”."
+              tr: "Elif ve Rahul bir istasyon bankında kahve molası veriyor; tabelada “Sıradaki durak: Kapitel 9” yazıyor."
 
       - type: task
         id: a
@@ -152,10 +152,10 @@ teile:
           - type: image
             id: z2-brett
             format: strip
-            description: "Ein Schwarzes Brett im Supermarkt, voll mit bunten Zetteln und Anzeigen. Mariam steht davor und fotografiert eine Anzeige mit dem Handy."
+            description: "Ein Schwarzes Brett im Supermarkt, voll mit bunten Zetteln und Anzeigen. Maria steht davor und fotografiert eine Anzeige mit dem Handy."
             alt:
-              en: "A notice board in a supermarket, full of colourful notes and ads; Mariam takes a photo of one with her phone."
-              tr: "Bir süpermarkette renkli notlar ve ilanlarla dolu bir pano; Mariam telefonuyla bir ilanın fotoğrafını çekiyor."
+              en: "A notice board in a supermarket, full of colourful notes and ads; Maria takes a photo of one with her phone."
+              tr: "Bir süpermarkette renkli notlar ve ilanlarla dolu bir pano; Maria telefonuyla bir ilanın fotoğrafını çekiyor."
 
       - type: task
         id: a
@@ -177,10 +177,10 @@ teile:
               - {label: E, title: "Fahrradladen Radhaus", text: "Neue und gebrauchte Fahrräder. Reparatur in 24 Stunden. Mo–Sa 10–18 Uhr."}
           - type: gap_text
             items:
-              - "Jonas hat seit drei Tagen Husten und braucht einen Termin. → Anzeige [[B]]"
-              - "Mariam sucht eine größere Wohnung für ihre Familie. → Anzeige [[C]]"
-              - "Kofi möchte am Wochenende mit Freunden draußen feiern. → Anzeige [[D]]"
-              - "Lenas Kaffeemaschine ist kaputt. Sie möchte nichts bezahlen. → Anzeige [[A]]"
+              - "Rahul hat seit drei Tagen Husten und braucht einen Termin. → Anzeige [[B]]"
+              - "Maria sucht eine größere Wohnung für ihre Familie. → Anzeige [[C]]"
+              - "Yusuf möchte am Wochenende mit Freunden draußen feiern. → Anzeige [[D]]"
+              - "Annas Kaffeemaschine ist kaputt. Sie möchte nichts bezahlen. → Anzeige [[A]]"
         notes:
           - kind: sogehts
             text:
@@ -203,7 +203,7 @@ teile:
             turns:
               - {speaker: ansage, text: "Achtung an Gleis 3: Der Regionalexpress nach Bremen, Abfahrt 14:35 Uhr, hat heute circa zwanzig Minuten Verspätung. Wir bitten um Ihr Verständnis."}
               - {speaker: ansage, text: "Guten Tag, hier ist die Praxis Dr. Krüger. Unsere Praxis ist vom 4. bis 18. August geschlossen. In dringenden Fällen rufen Sie bitte Dr. Okafor an: 0171 3920078."}
-              - {speaker: mariam, text: "Hallo Elif, hier ist Mariam. Meine Party am Samstag beginnt nicht um sieben, sondern erst um acht Uhr. Bring bitte einen Salat mit, wenn du Zeit hast. Bis Samstag!"}
+              - {speaker: maria, text: "Hallo Elif, hier ist Maria. Meine Party am Samstag beginnt nicht um sieben, sondern erst um acht Uhr. Bring bitte einen Salat mit, wenn du Zeit hast. Bis Samstag!"}
         body:
           - type: multiple_choice
             items:
@@ -215,16 +215,16 @@ teile:
         id: c
         skills: [schreiben]
         rubric:
-          de: "Schreiben: Du machst eine Einweihungsparty. Schreib Lena eine Nachricht (20–30 Wörter)."
-          en: "Writing: you are having a housewarming party. Write Lena a message (20–30 words)."
-          tr: "Yazma: Yeni evin için bir parti veriyorsun. Lena’ya bir mesaj yaz (20–30 kelime)."
+          de: "Schreiben: Du machst eine Einweihungsparty. Schreib Anna eine Nachricht (20–30 Wörter)."
+          en: "Writing: you are having a housewarming party. Write Anna a message (20–30 words)."
+          tr: "Yazma: Yeni evin için bir parti veriyorsun. Anna’ya bir mesaj yaz (20–30 kelime)."
         points: 5
         body:
           - type: write_lines
             lines: 4
-            prompts: ["Wann ist die Party?", "Wo wohnst du jetzt?", "Was soll Lena mitbringen?"]
+            prompts: ["Wann ist die Party?", "Wo wohnst du jetzt?", "Was soll Anna mitbringen?"]
         answer:
-          model: "Liebe Lena, am Samstag um 19 Uhr mache ich eine Einweihungsparty. Ich wohne jetzt in der Lindenstraße 12, im dritten Stock. Kannst du bitte einen Salat mitbringen? Liebe Grüße, Elif"
+          model: "Liebe Anna, am Samstag um 19 Uhr mache ich eine Einweihungsparty. Ich wohne jetzt in der Lindenstraße 12, im dritten Stock. Kannst du bitte einen Salat mitbringen? Liebe Grüße, Elif"
           note:
             en: "1 point for each of the three bullet points, 2 points for greeting, ending and clear sentences."
             tr: "Üç maddenin her biri için 1 puan; hitap, kapanış ve anlaşılır cümleler için 2 puan."
