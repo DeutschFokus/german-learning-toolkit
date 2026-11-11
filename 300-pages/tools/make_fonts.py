@@ -18,16 +18,19 @@ ROOT = Path(__file__).resolve().parent.parent
 SRC = ROOT / "assets" / "fonts" / "variable"
 OUT = ROOT / "assets" / "fonts" / "static"
 
-# (output name, source file, axis location, CSS weight, italic)
+# (output name, source file, axis location)
+# WeasyPrint only understands font weights in steps of 100 – in the font-weight property and in @font-face.
+# So every Fraunces instance is filed under a round CSS weight in series.yaml → fonts.faces; the real
+# weight, optical size and softness of each role are set here.
 INSTANCES = [
-    # Fraunces — one instance per typographic role; the CSS weight selects the role
-    ("DFFraunces-Hero", "Fraunces-VF.ttf", {"wght": 900, "opsz": 144, "SOFT": 100, "WONK": 0}),
-    ("DFFraunces-Num", "Fraunces-VF.ttf", {"wght": 800, "opsz": 24, "SOFT": 100, "WONK": 0}),
-    ("DFFraunces-Sub", "Fraunces-VF.ttf", {"wght": 650, "opsz": 24, "SOFT": 80, "WONK": 0}),
-    ("DFFraunces-Title", "Fraunces-VF.ttf", {"wght": 620, "opsz": 72, "SOFT": 60, "WONK": 0}),
-    ("DFFraunces-Cover", "Fraunces-VF.ttf", {"wght": 540, "opsz": 144, "SOFT": 70, "WONK": 0}),
-    ("DFFraunces-Text", "Fraunces-VF.ttf", {"wght": 500, "opsz": 24, "SOFT": 60, "WONK": 0}),
-    ("DFFraunces-TextItalic", "Fraunces-Italic-VF.ttf", {"wght": 500, "opsz": 36, "SOFT": 50, "WONK": 0}),
+    #                                                                                        CSS weight · role
+    ("DFFraunces-Hero", "Fraunces-VF.ttf", {"wght": 900, "opsz": 144, "SOFT": 100, "WONK": 0}),      # 900 · the 300, chapter numerals
+    ("DFFraunces-Num", "Fraunces-VF.ttf", {"wght": 800, "opsz": 24, "SOFT": 100, "WONK": 0}),        # 800 · folios, tabs, track numbers
+    ("DFFraunces-Title", "Fraunces-VF.ttf", {"wght": 700, "opsz": 72, "SOFT": 60, "WONK": 0}),       # 700 · chapter and page titles
+    ("DFFraunces-Sub", "Fraunces-VF.ttf", {"wght": 650, "opsz": 24, "SOFT": 80, "WONK": 0}),         # 600 · box titles, small headings
+    ("DFFraunces-Text", "Fraunces-VF.ttf", {"wght": 500, "opsz": 24, "SOFT": 60, "WONK": 0}),        # 500 · goal statement
+    ("DFFraunces-TextItalic", "Fraunces-Italic-VF.ttf", {"wght": 500, "opsz": 36, "SOFT": 50, "WONK": 0}),   # 500 italic
+    ("DFFraunces-Display", "Fraunces-VF.ttf", {"wght": 560, "opsz": 96, "SOFT": 70, "WONK": 0}),     # 400 · cover title line
     # Source Sans 3
     ("DFSans-Regular", "SourceSans3-VF.ttf", {"wght": 400}),
     ("DFSans-Italic", "SourceSans3-Italic-VF.ttf", {"wght": 400}),
@@ -66,6 +69,10 @@ def rename(font: TTFont, full: str) -> None:
 
 def main() -> None:
     OUT.mkdir(parents=True, exist_ok=True)
+    keep = {f"{full}.ttf" for full, _, _ in INSTANCES}
+    for stale in OUT.glob("*.ttf"):
+        if stale.name not in keep:
+            stale.unlink()
     total = 0
     for full, src, loc in INSTANCES:
         font = TTFont(SRC / src)

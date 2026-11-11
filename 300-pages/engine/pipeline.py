@@ -42,11 +42,18 @@ def stylesheet(cfg: Config, env, print_: bool = False) -> str:
     body = float(cfg.lv["type"]["body"])
     sheet_w = pg["width"] + (2 * (pg["bleed"] + pg["slug"]) if print_ else 0)
     sheet_h = pg["height"] + (2 * (pg["bleed"] + pg["slug"]) if print_ else 0)
-    return env.get_template("book.css.j2").render(
+    bad = [f for f in cfg.series["fonts"]["faces"] if f["weight"] not in range(100, 1000, 100)]
+    if bad:
+        raise SystemExit(f"series.yaml → fonts.faces: weights must be multiples of 100 (WeasyPrint drops others): {bad}")
+    css = env.get_template("book.css.j2").render(
         fonts=fonts, t=cfg.base_tokens(), lv=lt, palettes=palettes, pg=pg, tw=cfg.text_width_mm,
         content_w=round(pg["main"] - pg["label_col"], 3), body_h=cfg.body_height_pt, bl=cfg.bl, fs=body,
         fs_ex=body - 1, fs_note=round(body * 0.786, 2), fs_read=round(body - 0.3, 2), hw=cfg.lv["type"]["hand"],
         wl=float(cfg.lv["type"]["write_line"]) * cfg.bl, sheet_w=sheet_w, sheet_h=sheet_h, pw_w=PW_WIDTH, pw_h=15, pw_gap=PW_GAP)
+    odd = sorted({w for w in re.findall(r"font-weight:\s*(\d+)", css) if int(w) % 100 or not 100 <= int(w) <= 900})
+    if odd:
+        raise SystemExit(f"book.css.j2 uses font weights WeasyPrint would silently ignore: {', '.join(odd)}")
+    return css
 
 
 def cover_view(cfg: Config, sample: bool = False) -> dict:

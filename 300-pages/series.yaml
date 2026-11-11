@@ -53,17 +53,18 @@ page:
   tab: {width: 8, height: 17, first: 21, step: 19.6}
 
 # Static instances cut from the variable fonts by tools/make_fonts.py.
-# For Fraunces each weight is one typographic role with its own optical size and softness.
+# Weights must be multiples of 100 (WeasyPrint accepts nothing else). For Fraunces a weight is a
+# typographic role with its own real weight, optical size and softness – see tools/make_fonts.py.
 fonts:
   dir: assets/fonts/static
   faces:
-    - {family: DF Fraunces, weight: 900, file: DFFraunces-Hero.ttf}          # the 300, chapter numerals
+    - {family: DF Fraunces, weight: 900, file: DFFraunces-Hero.ttf}          # the 300, chapter numerals, level
     - {family: DF Fraunces, weight: 800, file: DFFraunces-Num.ttf}           # folios, tabs, track numbers
-    - {family: DF Fraunces, weight: 650, file: DFFraunces-Sub.ttf}           # box titles, small headings
-    - {family: DF Fraunces, weight: 620, file: DFFraunces-Title.ttf}         # chapter and page titles
-    - {family: DF Fraunces, weight: 540, file: DFFraunces-Cover.ttf}         # cover title line
+    - {family: DF Fraunces, weight: 700, file: DFFraunces-Title.ttf}         # chapter and page titles
+    - {family: DF Fraunces, weight: 600, file: DFFraunces-Sub.ttf}           # box titles, small headings
     - {family: DF Fraunces, weight: 500, file: DFFraunces-Text.ttf}          # goal statement
     - {family: DF Fraunces, weight: 500, style: italic, file: DFFraunces-TextItalic.ttf}
+    - {family: DF Fraunces, weight: 400, file: DFFraunces-Display.ttf}       # cover title line
     - {family: DF Sans, weight: 400, file: DFSans-Regular.ttf}
     - {family: DF Sans, weight: 400, style: italic, file: DFSans-Italic.ttf}
     - {family: DF Sans, weight: 600, file: DFSans-SemiBold.ttf}
