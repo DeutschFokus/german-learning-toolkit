@@ -21,7 +21,8 @@ def edition_name(cfg) -> str:
 
 def run_build(args, out: Path) -> int:
     t0 = time.time()
-    cfg = load_config(args.level, args.lang, print=args.print_, sample=args.sample, forms=args.forms, draft=args.draft)
+    cfg = load_config(args.level, args.lang, print=args.print_, sample=args.sample, forms=args.forms, draft=args.draft,
+                      no_cache=getattr(args, "no_cache", False))
     book = load_book(cfg, args.chapters)
     log = format_log(book)
     print(log)

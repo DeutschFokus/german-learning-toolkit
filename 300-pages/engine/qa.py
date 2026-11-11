@@ -296,7 +296,12 @@ def _canon(text: str) -> str:
 def cover_elements(pdf_path: Path, cfg) -> list[tuple[str, int, int]]:
     """Every text element of the cover must exist exactly once: (element, expected, found)."""
     with fitz.open(pdf_path) as d:
-        text = _canon(d[0].get_text())
+        page = d[0]
+        clip = page.rect
+        if cfg.flags.get("print"):                      # leave out the slug line next to the crop marks
+            o = (cfg.page["slug"] + cfg.page["bleed"]) * MM
+            clip = fitz.Rect(o, o, page.rect.width - o, page.rect.height - o)
+        text = _canon(page.get_text(clip=clip))
     rest = cfg.ui("cover.title_rest").replace("{level}", cfg.level_name)
     rows = [("300", 1, len(re.findall(r"(?<!\d)300(?!\d)", text))),
             (cfg.de("labels.level"), 1, text.count(_canon(cfg.de("labels.level")))),

@@ -119,7 +119,7 @@ colors:
 
 # Design direction (set after the concept round)
 design:
-  cover: monument            # monument | spectrum | fokus
+  cover: monument            # the built cover; concepts B (spectrum) and C (fokus) exist only as PNGs in concepts/
   opener: buehne             # buehne | register
 
 # Recurring cast. `avatar` drives the generated placeholder portraits.

@@ -412,6 +412,7 @@ class Renderer:
             src = (self.cfg.root / im.src).as_uri()
         fmt = fmt or im.format
         iid = f"img-{im.id}"
+        elastic = elastic and not im.markers          # pins are placed in per cent: a pinned picture keeps its shape
         style = ""
         if fmt in self.IMAGE_LINES:
             if elastic:

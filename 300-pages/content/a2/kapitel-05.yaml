@@ -200,7 +200,7 @@ teile:
           - type: picture_dictionary
             image:
               id: k5-wohnung
-              format: wide
+              format: tall
               description: "Elifs Wohnung von oben, wie ein bunter Grundriss mit Möbeln: Flur, Wohnzimmer mit Sofa, Regal und Teppich, Schlafzimmer, Küche mit Kühlschrank, Bad mit Waschmaschine und Spiegel, kleiner Balkon. Zwölf Zahlen markieren die Wörter."
               alt:
                 en: "Bird’s-eye view of Elif’s flat with twelve numbered rooms and pieces of furniture."

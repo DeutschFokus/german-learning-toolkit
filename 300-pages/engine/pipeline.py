@@ -7,7 +7,9 @@ three rounds are enough for everything to settle.
 from __future__ import annotations
 
 import datetime as _dt
+import hashlib
 import html
+import pickle
 import re
 from dataclasses import dataclass, field
 from typing import Optional
@@ -21,6 +23,7 @@ from .markup import NNBSP, german_sort_key, plural_form
 from .render import Macros, Renderer, Unit, esc, strip_tags
 
 ROMAN = ["", "i", "ii", "iii", "iv", "v", "vi", "vii", "viii", "ix", "x", "xi", "xii"]
+_RE_ID = re.compile(r'\bid="([^"]+)"')
 
 
 PW_WIDTH, PW_GAP = 160.0, 3.0      # "words on this page" footer: line width and gap between entries (mm)
@@ -108,6 +111,9 @@ class Builder:
         self.word_pages: dict[str, list[str]] = {}
         self.pw_width: dict[str, float] = {}
         self.geom: dict = {}
+        self._mcache: dict[tuple[str, float], dict] = {}   # (hash of block HTML, width) → boxes of its ids
+        self.measured = 0
+        self.load_cache()
         self.goal_pad: dict[str, float] = {}           # chapter key → pt that round the goal box up to the grid
 
     # ── stylesheet ───────────────────────────────────────────────────────────
@@ -116,6 +122,52 @@ class Builder:
         return stylesheet(self.cfg, self.r.env, self.print)
 
     # ── helpers ──────────────────────────────────────────────────────────────
+    def measure_cached(self, items: list[tuple[str, float]]) -> dict:
+        """measure() with a memory: between layout rounds most blocks stay the same, and every block is laid
+        out on a scratch page of its own, so its boxes can be reused as long as its HTML has not changed."""
+        out: dict = {}
+        todo = []
+        for h, w in items:
+            hit = self._mcache.get((hashlib.md5(h.encode()).hexdigest(), w))
+            if hit is None:
+                todo.append((h, w))
+            else:
+                out.update(hit)
+        if todo:
+            geom = measure(self.cfg, self.css, todo)
+            for h, w in todo:
+                self._mcache[(hashlib.md5(h.encode()).hexdigest(), w)] = {i: geom[i] for i in _RE_ID.findall(h) if i in geom}
+            out.update(geom)
+        self.measured += len(todo)
+        return out
+
+    def _cache_file(self):
+        """One cache per edition; it is only valid for exactly this stylesheet, these fonts and this WeasyPrint."""
+        import weasyprint
+        fdir = self.cfg.root / self.cfg.series["fonts"]["dir"]
+        stamp = "".join(f"{f.name}{f.stat().st_size}{int(f.stat().st_mtime)}" for f in sorted(fdir.glob("*.ttf")))
+        key = hashlib.md5((self.css + stamp + weasyprint.__version__).encode()).hexdigest()[:12]
+        return self.cfg.root / ".cache" / f"measure-{self.cfg.level}-{self.cfg.lang}-{key}.pkl"
+
+    def load_cache(self) -> None:
+        f = self._cache_file()
+        if not self.cfg.flags.get("no_cache") and f.exists():
+            try:
+                self._mcache = pickle.loads(f.read_bytes())
+            except Exception:
+                self._mcache = {}
+
+    def save_cache(self) -> None:
+        if self.cfg.flags.get("no_cache"):
+            return
+        f = self._cache_file()
+        f.parent.mkdir(exist_ok=True)
+        stale = sorted(f.parent.glob("measure-*.pkl"), key=lambda x: x.stat().st_mtime, reverse=True)[12:]
+        for old in stale:                              # keep the caches of the last dozen editions
+            if old != f:
+                old.unlink()
+        f.write_bytes(pickle.dumps(self._mcache))
+
     def goalbox(self, ch, pad: float) -> str:
         """Chapter goal and its translation; `pad` (pt) rounds the box up to a multiple of half a baseline."""
         r, cfg = self.r, self.cfg
@@ -296,7 +348,7 @@ class Builder:
             a = f'<span class="{w["cls"]}">{w["article"]}</span> ' if w["article"] else ""
             pw_items.append(f'<span class="w" id="pwm-{v.id}">{a}<b>{w["word"]}</b>{w["suffix"]} <em>{w["tr"]}</em></span>')
         items.append(('<div class="pw" style="position:static;width:auto;height:auto;border:0;overflow:visible">' + "<br>".join(pw_items) + "</div>", 200))
-        geom = measure(cfg, self.css, items)
+        geom = self.measure_cached(items)
         self.geom = geom
         self.pw_width = {v.id: geom[f"pwm-{v.id}"][2] - geom[f"pwm-{v.id}"][0] for v in book.vocab.values() if f"pwm-{v.id}" in geom}
 
@@ -748,7 +800,7 @@ class Builder:
         tw = cfg.text_width_mm
         colw3 = round((tw - 12) / 3, 3)
         if wl:
-            geom = measure(cfg, self.css, [(f'<div class="axc wl3" style="position:static;width:{colw3}mm">{h}</div>', colw3) for _, h in wl])
+            geom = self.measure_cached([(f'<div class="axc wl3" style="position:static;width:{colw3}mm">{h}</div>', colw3) for _, h in wl])
             for cu, _ in wl:
                 g = geom.get(cu.uid)
                 cu.height = (g[3] - g[1]) if g else self.bl * 0.8
@@ -821,6 +873,8 @@ class Builder:
         doc = f'<!DOCTYPE html><html lang="de-DE"><head>{head}<style>{self.css}</style></head><body class="{"print" if self.print else "digital"}">{body}</body></html>'
         stats = {"learning_pages": len(learn_final), "pages": len(seq), "tasks": len(book.tasks), "vocab": len(book.vocab),
                  "tracks": len(book.tracks), "rounds": rounds}
+        self.save_cache()
+        stats["measured"] = self.measured
         return Result(doc, seq, self.css, rounds, title, stats)
 
     def final_units(self) -> None:

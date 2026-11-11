@@ -34,6 +34,7 @@ def main(argv=None) -> int:
     ap.add_argument("--draft", action="store_true", help="build even if validation reports errors")
     ap.add_argument("--out", default=str(ROOT / "dist"), help="output folder")
     ap.add_argument("--keep-html", action="store_true", help="also write the intermediate HTML")
+    ap.add_argument("--no-cache", action="store_true", help="measure every block again (ignore .cache/)")
     args = ap.parse_args(argv)
 
     from engine.run import run_build, run_covers
