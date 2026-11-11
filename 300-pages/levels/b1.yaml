@@ -18,5 +18,5 @@ reading_columns: 1
 
 # What --sample puts into the free sample (folios; front matter and sales page are always included)
 sample:
-  pages: [101, 102, 103, 104, 105, 106, 107, 120, 122]
+  pages: [101, 102, 103, 104, 105, 106, 107, 120, 121, 122, 123]   # opener, three spreads, overview spread, test spread
   appendix: [L 1, W 1]

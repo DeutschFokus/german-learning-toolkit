@@ -107,7 +107,7 @@ wordlist:
   lead: "All new words of this book with the pages where you find them. Bold page = where the word is introduced. Separable verbs are shown like this: ein|ziehen."
 sales:
   kicker: You have reached the end of the sample
-  title: "Ready for all 300 pages?"
+  title: "Ready for all|300 pages?"                 # | = line break
   body: "The full book takes you through twelve chapters of {level} German – with audio for every listening task, an answer key for every exercise and a test at the end of each chapter."
   points:
     - "12 chapters × 24 pages, 3 review stations"
@@ -118,6 +118,14 @@ sales:
   youtube: Free German stories every week on YouTube
   series: "The series: one book per level, from A1 to C2"
   thanks: "Thank you for learning with Deutsch Fokus."
+  # last page of a complete book ({next} = the following level)
+  kicker_full: "You have finished {level}"
+  title_full: "300 pages done.|Next stop: {next}."
+  body_full: "Twelve chapters, three review stations, twelve tests – that was {level}. The {next} book starts exactly where this one ends: same structure, same neighbours, new challenges."
+  button_full: "Get the {next} book"
+  title_last: "300 pages done.|That was the top level."
+  body_last: "Twelve chapters, three review stations, twelve tests – that was {level}, the highest level of the series. Keep your German alive with a new story every week."
+  button_last: See the whole series
 overview:
   grammar: "The grammar of this chapter at a glance"
   phrases: "Useful phrases – your cheat sheet for real life"

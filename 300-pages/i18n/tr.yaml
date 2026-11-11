@@ -107,7 +107,7 @@ wordlist:
   lead: "Bu kitaptaki tüm yeni kelimeler ve geçtikleri sayfalar. Kalın sayfa numarası = kelimenin ilk öğretildiği yer. Ayrılabilen fiiller şöyle gösterilir: ein|ziehen."
 sales:
   kicker: Örneğin sonuna geldin
-  title: "300 sayfanın tamamına hazır mısın?"
+  title: "300 sayfanın tamamına|hazır mısın?"
   body: "Kitabın tamamı seni on iki ünite boyunca {level} Almancaya götürür: her dinleme alıştırması için ses kaydı, her alıştırma için cevap anahtarı ve her ünitenin sonunda bir test."
   points:
     - "12 ünite × 24 sayfa, 3 ara durak"
@@ -118,6 +118,13 @@ sales:
   youtube: YouTube’da her hafta ücretsiz Almanca hikâyeler
   series: "Seri: A1’den C2’ye her seviye için bir kitap"
   thanks: "Deutsch Fokus ile öğrendiğin için teşekkürler."
+  kicker_full: "{level} seviyesini bitirdin"
+  title_full: "300 sayfa tamam.|Sıradaki durak: {next}."
+  body_full: "On iki ünite, üç ara durak, on iki test – {level} buydu. {next} kitabı tam bu kitabın bittiği yerden başlıyor: aynı yapı, aynı komşular, yeni zorluklar."
+  button_full: "{next} kitabını al"
+  title_last: "300 sayfa tamam.|Bu, en üst seviyeydi."
+  body_last: "On iki ünite, üç ara durak, on iki test – serinin en üst seviyesi olan {level} buydu. Almancanı her hafta yeni bir hikâyeyle canlı tut."
+  button_last: Tüm seriyi gör
 overview:
   grammar: "Bu ünitenin dil bilgisi bir bakışta"
   phrases: "İşine yarayacak kalıplar – gerçek hayat için kopya kâğıdın"

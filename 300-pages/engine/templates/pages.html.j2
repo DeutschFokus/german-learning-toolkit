@@ -16,8 +16,8 @@
 
 {# ── cover ───────────────────────────────────────────────────────────────── #}
 {% macro cover(c) %}
-{% if c.sample %}<div class="samplebar" lang="{{ c.lang }}">{{ c.sample }}</div>{% endif %}
 <div class="field"><div class="sun"></div></div>
+{% if c.sample %}<div class="samplebar" lang="{{ c.lang }}">{{ c.sample }}</div>{% endif %}
 <div class="badge"><span class="niv">{{ c.niveau }}</span><span class="blv">{{ c.level }}</span></div>
 <h1 lang="{{ c.lang }}"><span class="hero">300</span> <span class="rest">{{ c.rest }}</span></h1>
 <div class="band"><div class="expl" lang="{{ c.lang }}">{{ c.expl }}</div><ul class="feat" lang="{{ c.lang }}">{% for f in c.features %}<li>{{ f }}</li>{% endfor %}</ul><div class="blogo">{{ c.logo }}</div></div>
@@ -100,17 +100,17 @@
 {# ── chapter opener ──────────────────────────────────────────────────────── #}
 {% macro opener(o) %}
 {% if o.style == 'register' %}
-<div class="band"><div class="num{{ ' w2' if o.no|length > 1 }}">{{ o.no }}</div><div class="in"><div class="lab" lang="de">{{ o.toc_label }}</div><ul class="toc5" lang="de">{{ o.toc }}</ul><div class="lab" lang="de" style="margin-top:calc(var(--bl)*.8)">{{ o.gram_icon }}{{ o.gram_label }}</div><div class="tags" lang="de">{% for g in o.grammar %}<span>{{ g }}</span>{% endfor %}</div></div></div>
+<div class="band"><div class="num{{ ' w2' if o.no|length > 1 }}">{{ o.no }}</div><div class="in"><div class="lab" lang="de">{{ o.toc_label }}</div><ul class="toc5" lang="de">{{ o.toc }}</ul><div class="lab" lang="de" style="margin-top:calc(var(--bl)*.75)">{{ o.gram_icon }}{{ o.gram_label }}</div><div class="tags" lang="de">{% for g in o.grammar %}<span>{{ g }}</span>{% endfor %}</div></div></div>
 <div class="kap" lang="de">{{ o.kicker }}</div><h1 lang="de"{% if o.long %} class="long"{% endif %} id="{{ o.anchor }}">{{ o.title }}</h1><p class="sub" lang="{{ o.lang }}">{{ o.sub }}</p>
 {{ o.image }}
-<div class="colL"><div class="lab" lang="de">{{ o.goal_icon }}{{ o.goal_label }}</div><p class="goal" lang="de">{{ o.goal }}</p><p class="goal-tr" lang="{{ o.lang }}">{{ o.goal_tr }}</p>{{ o.cando }}{{ o.warmup }}<div id="{{ o.end }}"></div></div>
+<div class="colL"><div class="lab" lang="de">{{ o.goal_icon }}{{ o.goal_label }}</div>{{ o.goalbox }}{{ o.cando }}{{ o.warmup }}<div id="{{ o.end }}"></div></div>
 {% else %}
 {{ o.image }}
 <div class="tab" style="top:{{ o.tab_top }}mm">{{ o.no }}</div>
 <div class="num{{ ' w2' if o.no|length > 1 }}">{{ o.no }}</div><div class="kap" lang="de">{{ o.kicker }}</div><h1 lang="de"{% if o.long %} class="long"{% endif %} id="{{ o.anchor }}">{{ o.title }}</h1><p class="sub" lang="{{ o.lang }}">{{ o.sub }}</p>
 <div class="opgrid">
-<div><div class="lab" lang="de">{{ o.goal_icon }}{{ o.goal_label }}</div><p class="goal" lang="de">{{ o.goal }}</p><p class="goal-tr" lang="{{ o.lang }}">{{ o.goal_tr }}</p>{{ o.cando }}</div>
-<div><div class="lab" lang="de">{{ o.toc_label }}</div><ul class="toc5" lang="de">{{ o.toc }}</ul><div class="lab" lang="de" style="margin-top:calc(var(--bl)*.6)">{{ o.gram_icon }}{{ o.gram_label }}</div><div class="tags" lang="de">{% for g in o.grammar %}<span>{{ g }}</span>{% endfor %}</div></div>
+<div><div class="lab" lang="de">{{ o.goal_icon }}{{ o.goal_label }}</div>{{ o.goalbox }}{{ o.cando }}</div>
+<div><div class="lab" lang="de">{{ o.toc_label }}</div><ul class="toc5" lang="de">{{ o.toc }}</ul><div class="lab" lang="de" style="margin-top:calc(var(--bl)*.5)">{{ o.gram_icon }}{{ o.gram_label }}</div><div class="tags" lang="de">{% for g in o.grammar %}<span>{{ g }}</span>{% endfor %}</div></div>
 <div class="wurow">{{ o.warmup }}<div id="{{ o.end }}"></div></div>
 </div>
 {% endif %}
@@ -119,8 +119,9 @@
 {# ── back page: sales ────────────────────────────────────────────────────── #}
 {% macro sales(s) %}
 <div class="sun"></div><div class="foot"></div>
-<div class="in" lang="{{ s.lang }}"><span class="kick">{{ s.kicker }}</span><h1 id="sales">{{ s.title }}</h1></div>
-<div class="card2" lang="{{ s.lang }}"><p>{{ s.body }}</p><ul>{% for p in s.points %}<li>{{ s.check }}{{ p }}</li>{% endfor %}</ul>
-<a class="btn" href="{{ s.shop_url }}">{{ s.button }}{{ s.arrow }}</a><a class="url" href="{{ s.shop_url }}">{{ s.shop_text }}</a></div>
-<div class="yt" lang="{{ s.lang }}"><div><a href="{{ s.youtube_url }}">{{ s.yt_icon }}{{ s.youtube }}</a><small>{{ s.youtube_text }} · {{ s.series }}</small></div><div>{{ s.logo }}</div></div>
+<div class="in" lang="{{ s.lang }}"><span class="kick">{{ s.kicker }}</span><h1 id="sales">{{ s.title }}</h1>
+<div class="card2"><p>{{ s.body }}</p>{% if s.points %}<ul>{% for p in s.points %}<li>{{ s.check }}{{ p }}</li>{% endfor %}</ul>{% endif %}
+<a class="btn" href="{{ s.shop_url }}">{{ s.button }}{{ s.arrow }}</a><a class="url" href="{{ s.shop_url }}">{{ s.shop_text }}</a></div></div>
+<div class="shelf" lang="{{ s.lang }}"><div class="cap">{{ s.series }}</div><div class="row">{% for m in s.minis %}<a class="mini{{ ' cur' if m.current }}" href="{{ m.url }}" style="--c:{{ m.color }};--cl:{{ m.lite }}" lang="de"><span class="ms"></span><span class="m3">300</span><span class="mb">{{ m.name }}</span><span class="mf"></span></a>{% endfor %}</div></div>
+<div class="yt" lang="{{ s.lang }}"><div><a href="{{ s.youtube_url }}">{{ s.yt_icon }}{{ s.youtube }}</a><small><a href="{{ s.youtube_url }}">{{ s.youtube_text }}</a></small></div><div>{{ s.logo }}</div></div>
 {% endmacro %}

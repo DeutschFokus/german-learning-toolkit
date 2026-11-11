@@ -76,6 +76,36 @@ def geometry(res, cfg, doc) -> tuple[list[str], list[tuple]]:
     return problems, rows
 
 
+def fixed_pages(pdf_path: Path, res, cfg) -> tuple[list[str], list[tuple]]:
+    """Front matter and appendix pages are composed as whole pages, so they are checked in the finished PDF:
+    no text may reach the folio line."""
+    pg = cfg.page
+    off = (pg["slug"] + pg["bleed"]) * MM if cfg.flags.get("print") else 0.0
+    folio_top = pg["folio_top"] * MM + off
+    trim_bottom = pg["height"] * MM + off
+    problems: list[str] = []
+    rows: list[tuple] = []
+    with fitz.open(pdf_path) as d:
+        for i, s in enumerate(res.pages):
+            if s.kind not in ("front", "appendix"):
+                continue
+            folio_words = set(s.folio.split())
+            lowest = 0.0
+            for x0, y0, x1, y1, word, *_ in d[i].get_text("words"):
+                if y0 > trim_bottom:                                   # slug area of the print sheet
+                    continue
+                if word in folio_words and y0 >= folio_top - 3:        # the folio itself
+                    continue
+                lowest = max(lowest, y1)
+            room = (folio_top - lowest) / MM
+            state = "ok" if room >= 2.0 else "FOLIO"
+            if room < 2.0:
+                problems.append(f"S. {s.label}: text comes within {room:.1f} mm of the folio" if room >= 0
+                                else f"S. {s.label}: text runs {-room:.1f} mm past the folio line")
+            rows.append((s.label, s.group, f"{room:.1f} mm to folio", state))
+    return problems, rows
+
+
 def baseline_report(pdf_path: Path, res, cfg) -> tuple[list[tuple], dict]:
     """Where do body-size text lines sit relative to the baseline grid?
 
@@ -155,6 +185,7 @@ def links_report(pdf_path: Path) -> dict:
     internal = external = broken = 0
     broken_list = []
     hosts = Counter()
+    targets, urls = set(), set()
     for pno, page in enumerate(pdf.pages, 1):
         for a in page.get("/Annots", []):
             if a.get("/Subtype") != "/Link":
@@ -162,17 +193,22 @@ def links_report(pdf_path: Path) -> dict:
             if "/Dest" in a:
                 internal += 1
                 dest = a["/Dest"]
+                targets.add(str(dest))
                 if isinstance(dest, (pikepdf.String, pikepdf.Name)) and str(dest).lstrip("/") not in names:
                     broken += 1
                     broken_list.append(f"p{pno}: {dest}")
             elif "/A" in a and a["/A"].get("/S") == "/URI":
                 external += 1
                 uri = str(a["/A"]["/URI"])
+                urls.add(uri)
+                if not re.match(r"^(https://[^\s/]+\.[^\s/]+(/\S*)?|mailto:[^@\s]+@[^@\s]+\.\w+)$", uri):
+                    broken += 1
+                    broken_list.append(f"p{pno}: malformed URL {uri}")
                 hosts[re.sub(r"^(\w+:)(//)?([^/?#]*).*$", r"\1\2\3", uri)] += 1
             elif "/A" in a and a["/A"].get("/S") == "/GoTo":
                 internal += 1
     return {"internal": internal, "external": external, "broken": broken, "broken_list": broken_list[:10],
-            "named_destinations": len(names), "hosts": dict(hosts)}
+            "named_destinations": len(names), "hosts": dict(hosts), "targets": len(targets), "urls": sorted(urls)}
 
 
 def fonts_report(pdf_path: Path) -> tuple[list[tuple[str, str, bool]], int]:
@@ -263,6 +299,8 @@ def write_report(pdf_path: Path, out_path: Path, cfg, book, res, doc, info: dict
         f"flags: {', '.join(k for k, v in cfg.flags.items() if v) or 'none'}")
     add("")
     problems, rows = geometry(res, cfg, doc)
+    fixed_problems, fixed_rows = fixed_pages(pdf_path, res, cfg)
+    problems = problems + fixed_problems
     links = links_report(pdf_path)
     fonts, font_bytes = fonts_report(pdf_path)
     st = structure_report(pdf_path)
@@ -271,8 +309,10 @@ def write_report(pdf_path: Path, out_path: Path, cfg, book, res, doc, info: dict
     errors = len(book.errors())
     verdict = [
         ("Validation", f"{errors} errors, {len(book.warnings())} warnings", errors == 0),
-        ("Layout geometry", f"{len(problems)} problems on {sum(1 for s in res.pages if s.group == 'learn')} learning pages", not problems),
-        ("Links", f"{links['internal']} internal, {links['external']} external, {links['broken']} broken", links["broken"] == 0),
+        ("Layout geometry", f"{len(problems)} problems on {sum(1 for s in res.pages if s.group == 'learn')} learning pages "
+                            f"and {len(fixed_rows)} front-matter and appendix pages", not problems),
+        ("Links", f"{links['internal']} internal link areas to {links['targets']} targets, {links['external']} external to "
+                  f"{len(links['urls'])} URLs, {links['broken']} broken", links["broken"] == 0),
         ("Fonts", f"{len(fonts)} faces, all embedded" if all(f[2] for f in fonts) else "NOT all embedded", all(f[2] for f in fonts)),
         ("Text extraction", f"{flags['replacement']} broken characters, {flags['spaced']} letter-spaced runs", flags["replacement"] == 0 and flags["spaced"] == 0),
         ("Tagged PDF", f"{st['figures_with_alt']}/{st['figures']} figures with alt text, language {st['lang']}", st["tagged"] and st["figures"] == st["figures_with_alt"]),
@@ -316,6 +356,14 @@ def write_report(pdf_path: Path, out_path: Path, cfg, book, res, doc, info: dict
     for r in rows:
         add("| " + " | ".join(str(x) for x in r) + " |")
     add("")
+    add("Front matter and appendix pages are composed as whole pages; they are measured in the finished PDF "
+        "(lowest text line against the folio line, at least 2 mm required).")
+    add("")
+    add("| Page | Part | clearance | state |")
+    add("| --- | --- | --- | --- |")
+    for r in fixed_rows:
+        add("| " + " | ".join(str(x) for x in r) + " |")
+    add("")
 
     add("## 3 · Baseline alignment on facing pages")
     add("")
@@ -332,11 +380,13 @@ def write_report(pdf_path: Path, out_path: Path, cfg, book, res, doc, info: dict
 
     add("## 4 · Links and navigation")
     add("")
-    add(f"- internal links: **{links['internal']}**, all resolved: **{'yes' if links['broken'] == 0 else 'NO'}**")
+    add(f"- internal link areas: **{links['internal']}** pointing to {links['targets']} different targets, "
+        f"all resolved: **{'yes' if links['broken'] == 0 else 'NO'}** (one link can consist of several clickable areas)")
     if links["broken_list"]:
         add(f"- broken: {links['broken_list']}")
     add(f"- named destinations in the file: {links['named_destinations']}")
-    add(f"- external links: {links['external']} → " + ", ".join(f"{k} ({v})" for k, v in sorted(links["hosts"].items())))
+    add(f"- external link areas: {links['external']} → " + ", ".join(f"{k} ({v})" for k, v in sorted(links["hosts"].items())))
+    add(f"- {len(links['urls'])} different URLs, all well-formed: " + ", ".join(f"`{u}`" for u in links["urls"]))
     add(f"- bookmarks: " + ", ".join(f"level {k}: {v}" for k, v in sorted(st["bookmarks"].items())) + " (Kapitel → Teil → Aufgabe)")
     labs = st["labels"]
     add(f"- page labels: {', '.join(labs[:8])} … {', '.join(labs[-6:])}")

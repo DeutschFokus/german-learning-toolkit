@@ -51,6 +51,7 @@ def finish_pdf(raw: bytes, path: Path, cfg, res, doc) -> dict:
             where.setdefault(name, (i, box[1] * 0.75))
     sheet_h = float(pdf.pages[0].MediaBox[3]) - float(pdf.pages[0].MediaBox[1])
     with pdf.open_outline() as outline:
+        del outline.root[:]                 # drop the automatic heading outline; ours is Kapitel → Teil → Aufgabe
         stack: list[tuple[int, OutlineItem]] = []
         for i, p in enumerate(pages):
             for level, title, anchor in p.outline:

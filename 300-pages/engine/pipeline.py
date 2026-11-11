@@ -101,6 +101,7 @@ class Builder:
         self.word_pages: dict[str, list[str]] = {}
         self.pw_width: dict[str, float] = {}
         self.geom: dict = {}
+        self.goal_pad: dict[str, float] = {}           # chapter key → pt that round the goal box up to the grid
 
     # ── stylesheet ───────────────────────────────────────────────────────────
     def _css(self) -> str:
@@ -108,6 +109,13 @@ class Builder:
         return stylesheet(self.cfg, self.r.env, self.print)
 
     # ── helpers ──────────────────────────────────────────────────────────────
+    def goalbox(self, ch, pad: float) -> str:
+        """Chapter goal and its translation; `pad` (pt) rounds the box up to a multiple of half a baseline."""
+        r, cfg = self.r, self.cfg
+        style = f' style="padding-bottom:{pad}pt"' if pad else ""
+        return (f'<div class="goalbox" id="goalbox-{ch.key}"{style}><p class="goal" lang="de">{r.de(ch.goal.de)}</p>'
+                f'<p class="goal-tr" lang="{cfg.lang}">{r.ex(ch.goal[cfg.lang])}</p></div>')
+
     def palette(self, part) -> tuple[str, dict]:
         if isinstance(part, M.Chapter):
             return f"c{part.number}", self.cfg.chapter_tokens(part.number)
@@ -268,6 +276,9 @@ class Builder:
         items: list[tuple[str, float]] = []
         for key, (op, flow) in units.items():
             items += [(u.html, tw) for u in op + flow]
+        for p in parts:                                     # chapter goals: measured so the opener stays on the grid
+            if isinstance(p, M.Chapter):
+                items.append((f'<div class="op op-{cfg.series["design"]["opener"]}">{self.goalbox(p, 0.0)}</div>', 122.0))
         ans = self.answer_units()
         trs = self.transcript_units()
         colw2 = round((tw - 8) / 2, 3)
@@ -281,6 +292,14 @@ class Builder:
         geom = measure(cfg, self.css, items)
         self.geom = geom
         self.pw_width = {v.id: geom[f"pwm-{v.id}"][2] - geom[f"pwm-{v.id}"][0] for v in book.vocab.values() if f"pwm-{v.id}" in geom}
+
+        half = self.bl / 2
+        self.goal_pad = {}
+        for p in parts:
+            g = geom.get(f"goalbox-{p.key}")
+            if g is not None:
+                pad = (-(g[3] - g[1])) % half
+                self.goal_pad[p.key] = 0.0 if pad < 0.05 or half - pad < 0.05 else round(pad, 2)
 
         # heights (without the lines that were grown in the previous round)
         missing = []
@@ -493,7 +512,7 @@ class Builder:
             im = r.image_view(ch.image, tokens, "banner", elastic=False)
             o = {"style": style, "no": str(ch.number), "kicker": f'{cfg.de("chapter")} {ch.number}' if style == "buehne" else f'{cfg.level_name} · {cfg.de("chapter")} {ch.number}',
                  "title": r.de(ch.title), "long": len(ch.title) > 12, "sub": r.ex(ch.subtitle), "lang": cfg.lang, "anchor": f"k-{ch.key}",
-                 "goal": r.de(ch.goal.de), "goal_tr": r.ex(ch.goal[cfg.lang]), "goal_label": r.L("goal"),
+                 "goalbox": self.goalbox(ch, getattr(self, "goal_pad", {}).get(ch.key, 0.0)), "goal_label": r.L("goal"),
                  "goal_icon": r.icon("ziel", "4.6mm", cfg.de("labels.goal")), "cando": r.cando_view(ch, False),
                  "toc_label": r.L("in_this_chapter"), "toc": toc, "gram_label": r.L("grammar"),
                  "gram_icon": r.icon("grammatik", "4.6mm", cfg.de("labels.grammar")), "grammar": [esc(g) for g in ch.grammar],
@@ -657,18 +676,38 @@ class Builder:
         return pages
 
     def sales_page(self, side: str) -> PageSpec:
+        """Last page. Sample and partial builds sell the full book; a complete book points to the next level."""
         cfg, r = self.cfg, self.r
         S = cfg.series["series"]
-        s = self.P.sales({"lang": cfg.lang, "kicker": esc(cfg.ui("sales.kicker") if self.sample else cfg.edition_title()),
-                          "title": esc(cfg.ui("sales.title")), "body": esc(cfg.ui("sales.body", level=cfg.level_name)),
-                          "points": [esc(p) for p in cfg.ui("sales.points")], "check": r.icon("check", "5mm", "✓", 2.4),
-                          "button": esc(cfg.ui("sales.button")), "arrow": r.icon("arrow", "6mm", "→", 2.2), "shop_url": esc(S["shop_url"]),
+        levels = cfg.series["levels"]
+        complete = not self.sample and len(self.book.chapters) == cfg.series["structure"]["chapters"]
+        nxt = levels[levels.index(cfg.level) + 1] if cfg.level != levels[-1] else None
+        if not complete:
+            kicker = cfg.ui("sales.kicker") if self.sample else cfg.edition_title()
+            title, body, button = cfg.ui("sales.title"), cfg.ui("sales.body", level=cfg.level_name), cfg.ui("sales.button")
+            points = cfg.ui("sales.points")
+        else:
+            kicker, points = cfg.ui("sales.kicker_full", level=cfg.level_name), []
+            key = "full" if nxt else "last"
+            nx = nxt.upper() if nxt else ""
+            title = cfg.ui(f"sales.title_{key}", level=cfg.level_name, next=nx)
+            body = cfg.ui(f"sales.body_{key}", level=cfg.level_name, next=nx)
+            button = cfg.ui(f"sales.button_{key}", level=cfg.level_name, next=nx)
+        minis = []
+        for lv in levels:
+            lt = cfg.level_tokens(lv)
+            minis.append({"name": lv.upper(), "color": lt["cover"], "lite": lt["cover_lite"], "url": esc(S["shop_url"]),
+                          "current": lv == (nxt if complete and nxt else cfg.level)})
+        title_html = re.sub(r"\b300\b", "<b>300</b>", esc(title)).replace("|", "<br>")
+        s = self.P.sales({"lang": cfg.lang, "kicker": esc(kicker), "title": title_html, "body": esc(body),
+                          "points": [esc(p) for p in points], "check": r.icon("check", "5mm", "✓", 2.4),
+                          "button": esc(button), "arrow": r.icon("arrow", "6mm", "→", 2.2), "shop_url": esc(S["shop_url"]),
                           "shop_text": esc(S["shop_url"].split("//")[1]), "youtube_url": esc(S["youtube_url"]),
                           "yt_icon": r.icon("youtube", "6mm", "YouTube", 1.8), "youtube": esc(cfg.ui("sales.youtube")),
                           "youtube_text": esc(S["youtube_url"].split("//")[1].replace("www.", "")), "series": esc(cfg.ui("sales.series")),
-                          "logo": art.logo(cfg.series["colors"]["navy"])})
+                          "minis": minis, "logo": art.logo(cfg.series["colors"]["navy"])})
         return PageSpec("p-info", "sales", "back", "Info", "", side, "cn", str(s), "sales", ["p-info", "sales"],
-                        [(1, cfg.ui("sales.button"), "sales")])
+                        [(1, strip_tags(title_html.replace("<br>", " ")), "sales")])
 
     # ── the whole document ───────────────────────────────────────────────────
     def build(self) -> Result:
