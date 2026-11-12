@@ -10,7 +10,7 @@ from the finished PDFs.
 
 | Check | English | Turkish | English · free sample | Turkish · free sample | English · print | English · fillable |
 | --- | --- | --- | --- | --- | --- | --- |
-| Pages · size | 41 · 3719 KB | 41 · 3721 KB | 20 · 2423 KB | 20 · 2425 KB | 41 · 3740 KB | 41 · 3934 KB |
+| Pages · size | 41 · 3720 KB | 41 · 3722 KB | 20 · 2424 KB | 20 · 2426 KB | 41 · 3741 KB | 41 · 3935 KB |
 | Validation | pass | pass | pass | pass | pass | pass |
 | Layout geometry | pass | pass | pass | pass | pass | pass |
 | Links | pass | pass | pass | pass | pass | pass |
@@ -561,7 +561,7 @@ The full table is section 7 of each generated report.
 
 ## File size and build time
 
-- this build: 3719 KB for 41 pages (28 learning pages, 13 others); 88.5 KB per page without fonts
+- this build: 3720 KB for 41 pages (28 learning pages, 13 others); 88.6 KB per page without fonts
 - full book, vector artwork only: about **32.2 MB** for roughly 371 pages
 - full book with final illustrations: about 96 picture slots; at 150 KB each (JPEG, 150 dpi) that adds 14 MB → about **46 MB** (target: under 40 MB)
 - build time: the 41-page demo takes about 30 s (layout 16 s cold, about 1 s with the block cache; render and write 14 s). Measuring costs

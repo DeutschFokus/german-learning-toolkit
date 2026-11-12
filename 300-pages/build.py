@@ -31,6 +31,7 @@ def main(argv=None) -> int:
     ap.add_argument("--dpi", type=int, default=110, help="preview resolution")
     ap.add_argument("--no-qa", action="store_true", help="skip the QA report")
     ap.add_argument("--covers", action="store_true", help="export cover PNGs (store + social) and the six-level line-up")
+    ap.add_argument("--promo", action="store_true", help="store-preview images (1920x1080) from the built PDF of --level/--lang")
     ap.add_argument("--draft", action="store_true", help="build even if validation reports errors")
     ap.add_argument("--out", default=str(ROOT / "dist"), help="output folder")
     ap.add_argument("--keep-html", action="store_true", help="also write the intermediate HTML")
@@ -41,6 +42,14 @@ def main(argv=None) -> int:
     out = Path(args.out)
     out.mkdir(parents=True, exist_ok=True)
     t0 = time.time()
+    if args.promo:
+        from engine.promo import export
+        pdf = out / f"300-pages-{args.level}-{args.lang}.pdf"
+        if not pdf.exists():
+            raise SystemExit(f"Build the book first: {pdf.name} is missing.")
+        for f in export(out / "promo", args.level, args.lang, pdf):
+            print(f"  {f.name}")
+        return 0
     if args.covers:
         run_covers(out, langs=[args.lang] if "--lang" in (argv or sys.argv) else None)
         print(f"covers done in {time.time() - t0:.1f}s → {out / 'covers'}")

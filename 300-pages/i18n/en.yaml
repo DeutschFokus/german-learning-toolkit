@@ -130,3 +130,10 @@ sales:
 overview:
   grammar: "The grammar of this chapter at a glance"
   phrases: "Useful phrases – your cheat sheet for real life"
+promo:
+  hero_points: ["12 chapters, 300 pages, one clear path", "Audio, answer key and tests included", "The neighbours you know from the videos"]
+  inside: Look inside
+  cast: Meet the neighbours
+  cast_sub: "Eight people, one house – in every chapter, at every level and in the videos."
+  all: Everything in one book
+  captions: ["Grammar at a glance", "A test for every chapter", "Answer key", "Word list A–Z"]

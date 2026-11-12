@@ -422,7 +422,7 @@ class Renderer:
             lines = self.IMAGE_LINES[fmt] + self.grow.get(iid, 0) * 0.5
             style = f"height:calc(var(--bl)*{lines:g})"
         variant = sum(ord(c) for c in im.id) % 3
-        return {"id": iid, "format": fmt + (" nocap" if im.markers else ""), "src": src, "alt": html.escape(alt, quote=True), "style": style,
+        return {"id": iid, "format": fmt + (" nocap" if im.markers else ""), "src": src, "alt": html.escape(alt, quote=True), "style": style, "focus": im.focus,
                 "art": art.placeholder_art(tokens, alt, variant), "icon": self.icon("bild", "4.6mm", self.cfg.de("labels.illustration")),
                 "label": self.L("illustration"), "caption": esc(self.inline.plain(im.description)),
                 "markers": [{"n": m.n, "x": m.x, "y": m.y} for m in im.markers]}

@@ -1,6 +1,6 @@
 # QA report · 300-pages-a2-en.pdf
 
-Built 2026-11-12 01:44 · level A2 · language en · flags: none
+Built 2026-11-12 14:16 · level A2 · language en · flags: none
 
 ## Summary
 
@@ -16,7 +16,7 @@ Built 2026-11-12 01:44 · level A2 · language en · flags: none
 | Contrast | 101 colour pairs, 0 below WCAG AA | pass |
 | Baseline grid | 98% of body lines on the half-baseline grid, 100% on the quarter grid | pass |
 
-File: 41 pages, 3719 KB · layout 17.3 s (3 rounds) · render 8.8 s · write 7.3 s
+File: 41 pages, 3720 KB · layout 0.9 s (3 rounds) · render 9.4 s · write 6.4 s
 
 ## 1 · Validation log
 
@@ -616,6 +616,6 @@ Every text element of the cover exists exactly once in the PDF (the level appear
 
 ## 9 · File size
 
-- this build: 3719 KB for 41 pages (28 learning pages, 13 others); 88.5 KB per page without fonts
+- this build: 3720 KB for 41 pages (28 learning pages, 13 others); 88.6 KB per page without fonts
 - full book, vector artwork only: about **32.2 MB** for roughly 371 pages
 - full book with final illustrations: about 96 picture slots; at 150 KB each (JPEG, 150 dpi) that adds 14 MB → about **46 MB** (target: under 40 MB)

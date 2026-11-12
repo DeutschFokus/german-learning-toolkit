@@ -26,6 +26,7 @@ teile:
         body:
           - type: image
             id: z2-pause
+            focus: 62
             src: assets/images/a2/z2-pause.jpg
             format: strip
             description: "Zwischenstation: ein kleiner Bahnsteig im Abendlicht. Elif und Rahul sitzen mit Kaffeebechern auf einer Bank und machen Pause; auf der Anzeigetafel steht „Nächster Halt: Kapitel 9“."
@@ -152,6 +153,7 @@ teile:
         body:
           - type: image
             id: z2-brett
+            focus: 35
             src: assets/images/a2/z2-brett.jpg
             format: strip
             description: "Ein Schwarzes Brett im Supermarkt, voll mit bunten Zetteln und Anzeigen. Maria steht davor und fotografiert eine Anzeige mit dem Handy."
@@ -251,6 +253,7 @@ teile:
         body:
           - type: image
             id: z2-pruefung
+            focus: 22
             src: assets/images/a2/z2-pruefung.jpg
             format: strip
             description: "Prüfungssituation: Anna und Yusuf sitzen sich an einem Tisch gegenüber und sprechen miteinander; zwischen ihnen liegen vier Wortkarten. Im Hintergrund eine Uhr."

@@ -1044,6 +1044,7 @@ teile:
         body:
           - type: image
             id: k5-repaircafe
+            focus: 30
             src: assets/images/a2/k5-repaircafe.jpg
             format: strip
             description: "Im Repair-Café: Yusuf und eine ältere Nachbarin reparieren zusammen einen Toaster an einem langen Tisch voller Werkzeug. Im Hintergrund Kaffee, Kuchen und ein Fahrrad auf einem Montageständer."

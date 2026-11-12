@@ -123,11 +123,11 @@ def qr_svg(url: str, title: str, dark: str = "#1B1E2F") -> str:
     return f'{head} class="qr"{sep}<title>{html.escape(title)}</title>{rest}'
 
 
-# ── logo (placeholder mark: a focus ring) ────────────────────────────────────
+# ── logo: a speech bubble with a focus point (language + focus) ────────────────────────────────────
 def logo(color: str, size_mm: float = 6.2, wordmark: bool = True) -> str:
     mark = (f'<svg class="lg-mark" width="{size_mm}mm" height="{size_mm}mm" viewBox="0 0 24 24"><title>Deutsch Fokus</title>'
-            f'<circle cx="12" cy="12" r="9.500" fill="none" stroke="{color}" stroke-width="2.600"/>'
-            f'<circle cx="12" cy="12" r="3.600" fill="{color}"/></svg>')
+            f'<path fill="{color}" fill-rule="evenodd" d="M12 1.500a10.500 10.500 0 1 1-5.600 19.400L2 22.500l1.700-4.300A10.500 10.500 0 0 1 12 1.500z'
+            f'M12 6.200a5.800 5.800 0 1 0 0 11.600a5.800 5.800 0 1 0 0-11.600zM12 9.300a2.700 2.700 0 1 1 0 5.400a2.700 2.700 0 1 1 0-5.400z"/></svg>')
     word = f'<span class="lg-word" style="color:{color}">Deutsch<b>Fokus</b></span>' if wordmark else ""
     return f'<span class="lg">{mark}{word}</span>'
 

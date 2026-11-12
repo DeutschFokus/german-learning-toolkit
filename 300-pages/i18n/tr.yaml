@@ -129,3 +129,10 @@ sales:
 overview:
   grammar: "Bu ünitenin dil bilgisi bir bakışta"
   phrases: "İşine yarayacak kalıplar – gerçek hayat için kopya kâğıdın"
+promo:
+  hero_points: ["12 ünite, 300 sayfa, tek ve net bir yol", "Ses kayıtları, cevap anahtarı ve testler dahil", "Videolardan tanıdığın komşular"]
+  inside: Kitabın içine bak
+  cast: Komşularla tanış
+  cast_sub: "Sekiz kişi, bir apartman – her ünitede, her seviyede ve videolarda."
+  all: Hepsi tek kitapta
+  captions: ["Dil bilgisi bir bakışta", "Her ünite için bir test", "Cevap anahtarı", "A–Z kelime listesi"]

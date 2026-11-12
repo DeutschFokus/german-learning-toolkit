@@ -51,6 +51,7 @@ concepts/                 the design directions that were explored first
 | `--sample` | free sample: front matter, the pages listed in `levels/<level>.yaml → sample`, sales page |
 | `--forms` | fillable fields on write-in lines, gaps and tick boxes |
 | `--covers` | cover as A4, store format 1600 × 2560 and square 3000 × 3000, plus the six-level line-up |
+| `--promo` | four store-preview images (1920 × 1080) made from the built PDF: hero, look inside, the cast, what is in the book |
 | `--draft` | build although validation found errors |
 | `--no-qa` | skip the QA report |
 | `--no-cache` | measure every block again (the cache in `.cache/` is otherwise used and kept valid automatically) |
@@ -227,12 +228,20 @@ The six levels in this repository are already configured; `python build.py --cov
    with German and Turkish letters; other scripts need other fonts in `series.yaml → fonts`.
 5. If the language has its own typographic rules, add them in `engine/markup.py → typo()`.
 
-## Pictures
+## Pictures and characters
 
-Every picture slot shows an elegant placeholder with its brief until the artwork exists.
-`docs/illustration-style-guide.md` defines the style, the recurring characters and a prompt
-template; `python tools/image_briefs.py --level a2` lists every slot with size, palette and scene.
-A finished picture is switched on with one line: `src: assets/images/a2/<id>.jpg`.
+- **Scenes** – `assets/images/<level>/<id>.jpg`, switched on in the content file with `src:`. A slot
+  crops its picture; `focus: 30` keeps the upper part visible (0 = top, 100 = bottom).
+  `python tools/image_briefs.py --level a2` lists every slot with size, palette and scene;
+  `python tools/prompt_pack.py --level a2` writes ready-to-paste prompts for an image model.
+- **Portraits** – `assets/cast/<key>.png` (square, the face centred) replaces the drawn avatar of
+  that cast member in dialogues, chats and on the people page. The full character sheets are kept
+  next to them as `cast-<key>.png`.
+- **Cover figure** – `assets/cast/cover-<key>.png` (full body, transparent background) stands in
+  front of the 300 when `series.yaml → design.cover_figure` names the cast member. Leave it empty
+  for the type-only cover.
+- The cast itself – names, roles, bios – is `series.yaml → cast` and `bios`.
+  `docs/illustration-style-guide.md` defines the style.
 
 ## Design in one place
 
@@ -264,7 +273,8 @@ These are placeholders and must be replaced in `series.yaml`:
 - `website`, `shop_url`, `audio_url`, `contact` – the demo uses the reserved domain
   `deutschfokus.example`. QR codes and all links are built from these values.
 - `youtube_url` – check the channel handle.
-- The logo: `engine/art.py → logo()` draws a neutral ring-and-dot mark with the name.
+- The logo: `engine/art.py → logo()` draws a speech bubble with a focus point next to the name. Replace it if
+  you have your own mark.
 - Audio does not exist yet. Record each track and publish it at `audio_url` (`{level}/{track}`).
 - `version` and `year` for the imprint.
 

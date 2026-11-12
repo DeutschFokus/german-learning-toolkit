@@ -207,6 +207,7 @@ class Image(Strict):
     alt: Optional[Loc] = None
     format: Literal["wide", "square", "tall", "banner", "strip"] = "wide"
     src: Optional[str] = None
+    focus: float = 50                         # which part stays visible when the slot crops the picture: 0 = top, 100 = bottom
     markers: list[Marker] = Field(default_factory=list)
 
 
