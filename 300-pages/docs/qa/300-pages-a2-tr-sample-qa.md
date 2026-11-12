@@ -1,6 +1,6 @@
 # QA report · 300-pages-a2-tr-sample.pdf
 
-Built 2026-11-11 21:18 · level A2 · language tr · flags: sample
+Built 2026-11-12 01:47 · level A2 · language tr · flags: sample
 
 ## Summary
 
@@ -11,12 +11,12 @@ Built 2026-11-11 21:18 · level A2 · language tr · flags: sample
 | Links | 199 internal link areas to 47 targets, 73 external to 8 URLs, 0 broken | pass |
 | Fonts | 16 faces, all embedded | pass |
 | Text extraction | 0 broken characters, 0 letter-spaced runs | pass |
-| Tagged PDF | 105/105 figures with alt text, language de-DE | pass |
+| Tagged PDF | 106/106 figures with alt text, language de-DE | pass |
 | Cover | 10 text elements, 0 duplicated or missing | pass |
 | Contrast | 101 colour pairs, 0 below WCAG AA | pass |
 | Baseline grid | 96% of body lines on the half-baseline grid, 100% on the quarter grid | pass |
 
-File: 20 pages, 2066 KB · layout 1.0 s (3 rounds) · render 4.6 s · write 3.7 s
+File: 20 pages, 2425 KB · layout 1.0 s (3 rounds) · render 5.3 s · write 4.9 s
 
 ## 1 · Validation log
 
@@ -79,7 +79,7 @@ Every block starts on a multiple of half a baseline (7.5 pt), so running text on
 - bookmarks: level 1: 9, level 2: 7, level 3: 21 (Kapitel → Teil → Aufgabe)
 - page labels: Cover, ii, iii, iv, v, vi, 101, 102 … 121, 122, 123, L 1, W 1, Info
 - metadata: title “300 Sayfada A2 Almanca – Türkçe açıklamalı (Ücretsiz örnek)”, author “Deutsch Fokus”, language de-DE
-- tagged PDF: yes · figures with alternative text: 105 of 105
+- tagged PDF: yes · figures with alternative text: 106 of 106
 
 ## 5 · Fonts
 
@@ -131,7 +131,7 @@ Deutsch Fokus
 300 Sayfada A2 Almanca
 Türkçe açıklamalı
 © 2026 Deutsch Fokus. Tüm hakları saklıdır.
-Sürüm 1.0-demo · derleme tarihi 2026-11-11
+Sürüm 1.0-demo · derleme tarihi 2026-11-12
 Kişisel kullanım lisansı
 Bu kitabı kendin için satın aldın. Dosyayı kendi cihazlarına kaydedebilir ve kendi çalışman için
 yazdırabilirsin. Lütfen dosyayı paylaşma, yeniden satma, internete yükleme ve yapay zekâ
@@ -517,6 +517,6 @@ Every text element of the cover exists exactly once in the PDF (the level appear
 
 ## 9 · File size
 
-- this build: 2066 KB for 20 pages (11 learning pages, 9 others); 99.4 KB per page without fonts
-- full book, vector artwork only: about **35.3 MB** for roughly 362 pages
-- full book with final illustrations: about 109 picture slots; at 150 KB each (JPEG, 150 dpi) that adds 16 MB → about **51 MB** (target: under 40 MB)
+- this build: 2425 KB for 20 pages (11 learning pages, 9 others); 117.4 KB per page without fonts
+- full book, vector artwork only: about **41.6 MB** for roughly 362 pages
+- full book with final illustrations: about 109 picture slots; at 150 KB each (JPEG, 150 dpi) that adds 16 MB → about **58 MB** (target: under 40 MB)

@@ -1,6 +1,6 @@
 # QA report · demo build
 
-A2 · Kapitel 5 „Wohnen“ (pages 101–124) and Zwischenstation 2 (pages 197–200) · built 2026-11-11 · engine 1.0-demo
+A2 · Kapitel 5 „Wohnen“ (pages 101–124) and Zwischenstation 2 (pages 197–200) · built 2026-11-12 · engine 1.0-demo
 
 Every build writes its own report to `dist/qa/`. This page sums up the six demo builds (`python tools/qa_summary.py`);
 the full generated reports are in [`docs/qa/`](qa/). Only the last section is written by hand – all numbers come
@@ -10,7 +10,7 @@ from the finished PDFs.
 
 | Check | English | Turkish | English · free sample | Turkish · free sample | English · print | English · fillable |
 | --- | --- | --- | --- | --- | --- | --- |
-| Pages · size | 41 · 3357 KB | 41 · 3359 KB | 20 · 2063 KB | 20 · 2066 KB | 41 · 3379 KB | 41 · 3573 KB |
+| Pages · size | 41 · 3719 KB | 41 · 3721 KB | 20 · 2423 KB | 20 · 2425 KB | 41 · 3740 KB | 41 · 3934 KB |
 | Validation | pass | pass | pass | pass | pass | pass |
 | Layout geometry | pass | pass | pass | pass | pass | pass |
 | Links | pass | pass | pass | pass | pass | pass |
@@ -32,7 +32,7 @@ All 9 checks pass in all 6 builds.
 | Links | every link annotation in the PDF is resolved against the named destinations; external URLs are checked for form | 639 internal link areas to 163 targets, 108 external to 13 URLs, 0 broken |
 | Fonts | font dictionaries of the PDF | 16 faces, all embedded |
 | Text extraction | all text is extracted with MuPDF and searched for replacement characters, letter-spaced runs, soft hyphens and zero-width characters | 0 broken characters, 0 letter-spaced runs |
-| Tagged PDF | structure tree: every figure needs alternative text; document language | 216/216 figures with alt text, language de-DE |
+| Tagged PDF | structure tree: every figure needs alternative text; document language | 218/218 figures with alt text, language de-DE |
 | Cover | each text element of the cover must appear exactly once in the extracted text | 10 text elements, 0 duplicated or missing |
 | Contrast | WCAG 2 contrast ratio of the text/background pairs of the design, for all 12 chapter palettes and all 6 covers | 101 colour pairs, 0 below WCAG AA |
 | Baseline grid | the baseline of every body-size line in the PDF against the half-baseline grid | 98% of body lines on the half-baseline grid, 100% on the quarter grid |
@@ -69,7 +69,7 @@ No block overflows its page, no two blocks overlap, every block has the height t
 | 115 | vertiefung | 99% | 100% | 4.2 mm to footer | ok |
 | 116 | vertiefung | 97% | 100% | 4.2 mm to footer | ok |
 | 117 | vertiefung | 92% | 92% | 23.0 mm to footer | ok |
-| 118 | vertiefung | 96% | 100% | 4.2 mm to footer | ok |
+| 118 | vertiefung | 99% | 100% | 4.2 mm to footer | ok |
 | 119 | vertiefung | 75% | 100% | 4.2 mm to footer | ok |
 | 120 | uebersicht | 91% | 91% | 25.4 mm to footer | ok |
 | 121 | uebersicht | 96% | 96% | 14.8 mm to footer | ok |
@@ -130,7 +130,7 @@ Every block starts on a multiple of half a baseline (7.5 pt), so running text on
 - bookmarks: level 1: 11, level 2: 16, level 3: 59 (Kapitel → Teil → Aufgabe)
 - page labels: Cover, ii, iii, iv, v, vi, 101, 102 … L 2, T 1, T 2, W 1, W 2, Info
 - metadata: title “300 Pages of A2 German – With English explanations”, author “Deutsch Fokus”, language de-DE
-- tagged PDF: yes · figures with alternative text: 216 of 216
+- tagged PDF: yes · figures with alternative text: 218 of 218
 
 ## Fonts
 
@@ -161,7 +161,7 @@ Five pages, extracted with MuPDF and pasted unchanged: cover, chapter opener, a 
 multiple choice, the first page of the answer key. Letter-spacing is done in CSS only, so headings come out as words; German
 quotes, dashes and umlauts survive; the thin space in „S. 101“ is U+202F.
 
-Whole file: 64,031 characters · 0 replacement characters · 0 letter-spaced runs · 448 umlauts/ß · 0 Turkish letters (ç ğ ı İ ş) · 0 soft hyphens · 0 zero-width characters.
+Whole file: 64,036 characters · 0 replacement characters · 0 letter-spaced runs · 448 umlauts/ß · 0 Turkish letters (ç ğ ı İ ş) · 0 soft hyphens · 0 zero-width characters.
 
 ### Page Cover
 
@@ -516,7 +516,7 @@ S. 113
 1 F   2 R   3 R   4 R   5 F S. 1
 ```
 
-Turkish edition, whole file: 63,814 characters · 0 replacement characters · 0 letter-spaced runs · 767 umlauts/ß · 990 Turkish letters (ç ğ ı İ ş) · 0 soft hyphens · 0 zero-width characters.
+Turkish edition, whole file: 63,819 characters · 0 replacement characters · 0 letter-spaced runs · 767 umlauts/ß · 990 Turkish letters (ç ğ ı İ ş) · 0 soft hyphens · 0 zero-width characters.
 
 ## Cover
 
@@ -561,9 +561,9 @@ The full table is section 7 of each generated report.
 
 ## File size and build time
 
-- this build: 3357 KB for 41 pages (28 learning pages, 13 others); 79.7 KB per page without fonts
-- full book, vector artwork only: about **29.0 MB** for roughly 371 pages
-- full book with final illustrations: about 96 picture slots; at 150 KB each (JPEG, 150 dpi) that adds 14 MB → about **43 MB** (target: under 40 MB)
+- this build: 3719 KB for 41 pages (28 learning pages, 13 others); 88.5 KB per page without fonts
+- full book, vector artwork only: about **32.2 MB** for roughly 371 pages
+- full book with final illustrations: about 96 picture slots; at 150 KB each (JPEG, 150 dpi) that adds 14 MB → about **46 MB** (target: under 40 MB)
 - build time: the 41-page demo takes about 30 s (layout 16 s cold, about 1 s with the block cache; render and write 14 s). Measuring costs
   about 40 ms per block and a full book has roughly 1,300 blocks, so a 300-page book should build in 4–5 minutes cold and 2–3 minutes
   with a warm cache. This is extrapolated – only one chapter exists.

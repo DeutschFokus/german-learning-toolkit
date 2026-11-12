@@ -1,6 +1,6 @@
 # QA report · 300-pages-a2-tr.pdf
 
-Built 2026-11-11 21:18 · level A2 · language tr · flags: none
+Built 2026-11-12 01:46 · level A2 · language tr · flags: none
 
 ## Summary
 
@@ -11,12 +11,12 @@ Built 2026-11-11 21:18 · level A2 · language tr · flags: none
 | Links | 639 internal link areas to 163 targets, 108 external to 13 URLs, 0 broken | pass |
 | Fonts | 16 faces, all embedded | pass |
 | Text extraction | 0 broken characters, 0 letter-spaced runs | pass |
-| Tagged PDF | 216/216 figures with alt text, language de-DE | pass |
+| Tagged PDF | 218/218 figures with alt text, language de-DE | pass |
 | Cover | 10 text elements, 0 duplicated or missing | pass |
 | Contrast | 101 colour pairs, 0 below WCAG AA | pass |
 | Baseline grid | 97% of body lines on the half-baseline grid, 100% on the quarter grid | pass |
 
-File: 41 pages, 3359 KB · layout 2.2 s (3 rounds) · render 8.6 s · write 6.0 s
+File: 41 pages, 3721 KB · layout 18.6 s (3 rounds) · render 10.7 s · write 7.1 s
 
 ## 1 · Validation log
 
@@ -50,7 +50,7 @@ No block overflows its page, no two blocks overlap, every block has the height t
 | 115 | vertiefung | 99% | 100% | 4.2 mm to footer | ok |
 | 116 | vertiefung | 95% | 100% | 4.2 mm to footer | ok |
 | 117 | vertiefung | 92% | 92% | 23.0 mm to footer | ok |
-| 118 | vertiefung | 96% | 100% | 4.2 mm to footer | ok |
+| 118 | vertiefung | 99% | 100% | 4.2 mm to footer | ok |
 | 119 | vertiefung | 75% | 100% | 4.2 mm to footer | ok |
 | 120 | uebersicht | 89% | 89% | 30.6 mm to footer | ok |
 | 121 | uebersicht | 96% | 96% | 14.8 mm to footer | ok |
@@ -109,7 +109,7 @@ Every block starts on a multiple of half a baseline (7.5 pt), so running text on
 - bookmarks: level 1: 11, level 2: 16, level 3: 59 (Kapitel → Teil → Aufgabe)
 - page labels: Cover, ii, iii, iv, v, vi, 101, 102 … L 2, T 1, T 2, W 1, W 2, Info
 - metadata: title “300 Sayfada A2 Almanca – Türkçe açıklamalı”, author “Deutsch Fokus”, language de-DE
-- tagged PDF: yes · figures with alternative text: 216 of 216
+- tagged PDF: yes · figures with alternative text: 218 of 218
 
 ## 5 · Fonts
 
@@ -136,7 +136,7 @@ Embedded font data: 89 KB (subsets).
 
 ## 6 · Text extraction
 
-Whole file: 63,814 characters · 0 replacement characters · 0 letter-spaced runs · 767 umlauts/ß · 990 Turkish letters (ç ğ ı İ ş) · 0 soft hyphens · 0 zero-width characters.
+Whole file: 63,819 characters · 0 replacement characters · 0 letter-spaced runs · 767 umlauts/ß · 990 Turkish letters (ç ğ ı İ ş) · 0 soft hyphens · 0 zero-width characters.
 
 ### Page Cover
 
@@ -619,6 +619,6 @@ Every text element of the cover exists exactly once in the PDF (the level appear
 
 ## 9 · File size
 
-- this build: 3359 KB for 41 pages (28 learning pages, 13 others); 79.8 KB per page without fonts
-- full book, vector artwork only: about **29.0 MB** for roughly 371 pages
-- full book with final illustrations: about 96 picture slots; at 150 KB each (JPEG, 150 dpi) that adds 14 MB → about **43 MB** (target: under 40 MB)
+- this build: 3721 KB for 41 pages (28 learning pages, 13 others); 88.6 KB per page without fonts
+- full book, vector artwork only: about **32.2 MB** for roughly 371 pages
+- full book with final illustrations: about 96 picture slots; at 150 KB each (JPEG, 150 dpi) that adds 14 MB → about **46 MB** (target: under 40 MB)

@@ -585,3 +585,20 @@ mark{mix-blend-mode:multiply}
 .turn .av{margin-top:calc(var(--bl)*1.25 - 4.3mm - 3pt)}
 .chat{padding:calc(var(--bl)*.75) 4mm calc(var(--bl)*.25)}
 .msg,.msg:last-child{margin-bottom:calc(var(--bl)*.5)}
+
+/* ── second design pass: pages with more character (no block changes its height except the chat) ── */
+/* a new Teil opens with a band of chapter colour across the top of the page, bleeding off three edges */
+.page.tstart::before{content:"";position:absolute;left:-3mm;right:-3mm;top:-3mm;height:calc({{ pg.top }}mm + 3mm + var(--bl)*3.5);background:var(--soft)}
+.page.tstart .prog i{background:#fff} .page.tstart .prog i.on{background:var(--mid)} .page.tstart .prog i.here{background:var(--deep)}
+/* chat: a messenger window with the contact on top */
+.chat{padding:0 0 calc(var(--bl)*.25);border-radius:4.5mm;overflow:hidden;box-shadow:0 0 0 .9mm var(--navy)}
+.chat .chd{height:calc(var(--bl)*1.5);margin-bottom:calc(var(--bl)*.75);background:var(--navy);color:#fff;display:flex;align-items:center;padding:0 4mm;font-size:var(--fs-ex)}
+.chat .chd .av{display:block;width:6.4mm;height:6.4mm;margin-right:2.4mm;flex:none} .chat .chd b{font-weight:700;flex:1}
+.chat .chd i{flex:none;width:2mm;height:2mm;border-radius:50%;background:#6FD08C}
+.chat .msg{margin-left:4mm;margin-right:4mm}
+/* notices hang on the wall: paper, pin and a hard shadow */
+.read.notice{background:#FFFDF6;border-radius:.6mm;overflow:visible;box-shadow:1mm 1mm 0 rgba(27,30,47,.10),0 0 0 .5pt var(--rule)}
+.read.notice .pinrow{left:auto;right:5mm;top:-1.3mm;width:3.4mm;height:3.4mm;margin-left:0;background:var(--mid);box-shadow:.5mm .6mm 0 rgba(27,30,47,.22)}
+/* handwritten notes are stuck on with tape */
+.notecards .card{box-shadow:.9mm .9mm 0 rgba(27,30,47,.09)}
+.notecards .card::before{content:"";position:absolute;left:50%;top:-1.5mm;width:15mm;height:3.4mm;margin-left:-7.5mm;background:#fff;opacity:.8;box-shadow:0 0 0 .3pt rgba(27,30,47,.18);transform:rotate(-2deg)}

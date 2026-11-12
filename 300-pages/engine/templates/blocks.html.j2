@@ -65,7 +65,7 @@
 {% endmacro %}
 
 {% macro chat(v) %}
-<div class="chat" lang="de">{% for m in v.msgs %}<div class="msg{{ ' me' if m.me }}">{{ m.avatar }}<p class="bub">{{ m.text }}</p></div>{% endfor %}</div>
+<div class="chat" lang="de"><div class="chd">{{ v.contact_avatar }}<b>{{ v.contact }}</b><i></i></div>{% for m in v.msgs %}<div class="msg{{ ' me' if m.me }}">{{ m.avatar }}<p class="bub">{{ m.text }}</p></div>{% endfor %}</div>
 {% endmacro %}
 
 {# ── boxes ───────────────────────────────────────────────────────────────── #}

@@ -1,6 +1,6 @@
 # QA report · 300-pages-a2-en-sample.pdf
 
-Built 2026-11-11 21:17 · level A2 · language en · flags: sample
+Built 2026-11-12 01:44 · level A2 · language en · flags: sample
 
 ## Summary
 
@@ -11,12 +11,12 @@ Built 2026-11-11 21:17 · level A2 · language en · flags: sample
 | Links | 198 internal link areas to 47 targets, 73 external to 8 URLs, 0 broken | pass |
 | Fonts | 16 faces, all embedded | pass |
 | Text extraction | 0 broken characters, 0 letter-spaced runs | pass |
-| Tagged PDF | 105/105 figures with alt text, language de-DE | pass |
+| Tagged PDF | 106/106 figures with alt text, language de-DE | pass |
 | Cover | 10 text elements, 0 duplicated or missing | pass |
 | Contrast | 101 colour pairs, 0 below WCAG AA | pass |
 | Baseline grid | 96% of body lines on the half-baseline grid, 100% on the quarter grid | pass |
 
-File: 20 pages, 2063 KB · layout 1.0 s (3 rounds) · render 4.5 s · write 3.8 s
+File: 20 pages, 2423 KB · layout 1.0 s (3 rounds) · render 4.9 s · write 4.3 s
 
 ## 1 · Validation log
 
@@ -79,7 +79,7 @@ Every block starts on a multiple of half a baseline (7.5 pt), so running text on
 - bookmarks: level 1: 9, level 2: 7, level 3: 21 (Kapitel → Teil → Aufgabe)
 - page labels: Cover, ii, iii, iv, v, vi, 101, 102 … 121, 122, 123, L 1, W 1, Info
 - metadata: title “300 Pages of A2 German – With English explanations (Free sample)”, author “Deutsch Fokus”, language de-DE
-- tagged PDF: yes · figures with alternative text: 105 of 105
+- tagged PDF: yes · figures with alternative text: 106 of 106
 
 ## 5 · Fonts
 
@@ -131,7 +131,7 @@ Deutsch Fokus
 300 Pages of A2 German
 With English explanations
 © 2026 Deutsch Fokus. All rights reserved.
-Version 1.0-demo · built 2026-11-11
+Version 1.0-demo · built 2026-11-12
 Personal-use licence
 You have bought this book for yourself. You may save it on your own devices and print it for
 your own learning. Please do not share, resell or upload the file, and do not use it to train AI
@@ -515,6 +515,6 @@ Every text element of the cover exists exactly once in the PDF (the level appear
 
 ## 9 · File size
 
-- this build: 2063 KB for 20 pages (11 learning pages, 9 others); 99.3 KB per page without fonts
-- full book, vector artwork only: about **35.2 MB** for roughly 362 pages
-- full book with final illustrations: about 109 picture slots; at 150 KB each (JPEG, 150 dpi) that adds 16 MB → about **51 MB** (target: under 40 MB)
+- this build: 2423 KB for 20 pages (11 learning pages, 9 others); 117.3 KB per page without fonts
+- full book, vector artwork only: about **41.6 MB** for roughly 362 pages
+- full book with final illustrations: about 109 picture slots; at 150 KB each (JPEG, 150 dpi) that adds 16 MB → about **58 MB** (target: under 40 MB)

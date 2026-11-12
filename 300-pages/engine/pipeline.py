@@ -602,6 +602,8 @@ class Builder:
             t = next((t for t in part.teile if t.nr == spec.meta.get("teil")), None) or part.teile[0]
             teil_title = t.title
         body = "".join(f'<div class="u" style="top:{pl.top:.2f}pt">{pl.unit.html}</div>' for pl in fp.placed)
+        if fp.placed and fp.placed[0].unit.kind in ("teil", "head") and fp.placed[0].top < 1:
+            spec.cls = "tstart"                        # a section starts here: coloured band across the top of the page
         spec.inner = (self.running(part, spec.meta["section"], teil_title) + self.tab(part)
                       + f'<div class="body">{body}</div>' + footer + folio)
         for pl in fp.placed:

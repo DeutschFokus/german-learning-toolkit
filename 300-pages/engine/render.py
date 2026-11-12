@@ -236,7 +236,8 @@ class Renderer:
     def _b_reading_text(self, b: M.ReadingText):
         if b.genre == "chat" or b.turns:
             me = b.turns[1].speaker if len(b.turns) > 1 else None
-            return self.B.chat({"msgs": [
+            other = next((t.speaker for t in b.turns if t.speaker != me), b.turns[0].speaker)
+            return self.B.chat({"contact": esc(self.cast[other]["name"]), "contact_avatar": self.avatar(other, "6.4mm"), "msgs": [
                 {"avatar": self.avatar(t.speaker, "7mm"), "text": self.de(t.text), "me": t.speaker == me}
                 for t in b.turns]})
         if b.parts:

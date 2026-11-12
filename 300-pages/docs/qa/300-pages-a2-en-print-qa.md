@@ -1,6 +1,6 @@
 # QA report · 300-pages-a2-en-print.pdf
 
-Built 2026-11-11 21:16 · level A2 · language en · flags: print
+Built 2026-11-12 01:45 · level A2 · language en · flags: print
 
 ## Summary
 
@@ -11,12 +11,12 @@ Built 2026-11-11 21:16 · level A2 · language en · flags: print
 | Links | 639 internal link areas to 163 targets, 108 external to 13 URLs, 0 broken | pass |
 | Fonts | 16 faces, all embedded | pass |
 | Text extraction | 0 broken characters, 0 letter-spaced runs | pass |
-| Tagged PDF | 216/216 figures with alt text, language de-DE | pass |
+| Tagged PDF | 218/218 figures with alt text, language de-DE | pass |
 | Cover | 10 text elements, 0 duplicated or missing | pass |
 | Contrast | 101 colour pairs, 0 below WCAG AA | pass |
 | Baseline grid | 98% of body lines on the half-baseline grid, 100% on the quarter grid | pass |
 
-File: 41 pages, 3379 KB · layout 15.7 s (3 rounds) · render 8.3 s · write 6.5 s
+File: 41 pages, 3740 KB · layout 17.8 s (3 rounds) · render 9.4 s · write 7.2 s
 
 ## 1 · Validation log
 
@@ -50,7 +50,7 @@ No block overflows its page, no two blocks overlap, every block has the height t
 | 115 | vertiefung | 99% | 100% | 4.2 mm to footer | ok |
 | 116 | vertiefung | 97% | 100% | 4.2 mm to footer | ok |
 | 117 | vertiefung | 92% | 92% | 23.0 mm to footer | ok |
-| 118 | vertiefung | 96% | 100% | 4.2 mm to footer | ok |
+| 118 | vertiefung | 99% | 100% | 4.2 mm to footer | ok |
 | 119 | vertiefung | 75% | 100% | 4.2 mm to footer | ok |
 | 120 | uebersicht | 91% | 91% | 25.4 mm to footer | ok |
 | 121 | uebersicht | 96% | 96% | 14.8 mm to footer | ok |
@@ -109,7 +109,7 @@ Every block starts on a multiple of half a baseline (7.5 pt), so running text on
 - bookmarks: level 1: 11, level 2: 16, level 3: 59 (Kapitel → Teil → Aufgabe)
 - page labels: Cover, ii, iii, iv, v, vi, 101, 102 … L 2, T 1, T 2, W 1, W 2, Info
 - metadata: title “300 Pages of A2 German – With English explanations”, author “Deutsch Fokus”, language de-DE
-- tagged PDF: yes · figures with alternative text: 216 of 216
+- tagged PDF: yes · figures with alternative text: 218 of 218
 - pages with TrimBox / BleedBox: 41 of 41
 
 ## 5 · Fonts
@@ -137,12 +137,12 @@ Embedded font data: 89 KB (subsets).
 
 ## 6 · Text extraction
 
-Whole file: 65,054 characters · 0 replacement characters · 0 letter-spaced runs · 448 umlauts/ß · 0 Turkish letters (ç ğ ı İ ş) · 0 soft hyphens · 0 zero-width characters.
+Whole file: 65,059 characters · 0 replacement characters · 0 letter-spaced runs · 448 umlauts/ß · 0 Turkish letters (ç ğ ı İ ş) · 0 soft hyphens · 0 zero-width characters.
 
 ### Page Cover
 
 ```text
-A2-EN · Cover · 2026-11-11
+A2-EN · Cover · 2026-11-12
 NIVEAU
 A2
 300
@@ -158,7 +158,7 @@ Deutsch Fokus
 ### Page 101
 
 ```text
-A2-EN · 101 · 2026-11-11
+A2-EN · 101 · 2026-11-12
 5
 5
 KAPITEL 5
@@ -221,7 +221,7 @@ der Nachbar, -n neighbour
 ### Page 104
 
 ```text
-A2-EN · 104 · 2026-11-11
+A2-EN · 104 · 2026-11-12
 KAPITEL 5 · WOHNEN / HAUPTTEIL
 5
 3
@@ -294,7 +294,7 @@ der Quadratmeter, - square metre
 ### Page 109
 
 ```text
-A2-EN · 109 · 2026-11-11
+A2-EN · 109 · 2026-11-12
 KAPITEL 5 · WOHNEN / HAUPTTEIL
 5
 5.5
@@ -391,7 +391,7 @@ das Problem, -e problem
 ### Page L 1
 
 ```text
-A2-EN · L 1 · 2026-11-11
+A2-EN · L 1 · 2026-11-12
 ANHANG / LÖSUNGEN
 L
 Lösungen
@@ -622,6 +622,6 @@ Every text element of the cover exists exactly once in the PDF (the level appear
 
 ## 9 · File size
 
-- this build: 3379 KB for 41 pages (28 learning pages, 13 others); 80.2 KB per page without fonts
-- full book, vector artwork only: about **29.2 MB** for roughly 371 pages
-- full book with final illustrations: about 96 picture slots; at 150 KB each (JPEG, 150 dpi) that adds 14 MB → about **43 MB** (target: under 40 MB)
+- this build: 3740 KB for 41 pages (28 learning pages, 13 others); 89.1 KB per page without fonts
+- full book, vector artwork only: about **32.4 MB** for roughly 371 pages
+- full book with final illustrations: about 96 picture slots; at 150 KB each (JPEG, 150 dpi) that adds 14 MB → about **46 MB** (target: under 40 MB)
