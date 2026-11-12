@@ -40,6 +40,7 @@ imprint:
   fonts: "Set in Fraunces, Source Sans 3, Source Serif 4 and Caveat – all published under the SIL Open Font License 1.1."
   audio_title: Audio
   audio: "Scan the QR code next to a listening task or tap the track number. All tracks: {url}"
+  audio_channel: "The audio tracks are published on the Deutsch Fokus YouTube channel: {url}. Every QR code and track number takes you there. Until a track is online, read the transcript at the back aloud."
   characters: "All people and events in this book are fictional."
   contact: "Questions, corrections, ideas? {contact}"
 how:
@@ -116,6 +117,8 @@ sales:
     - "Answer key, transcripts and word list A–Z"
     - "Interactive PDF: linked contents, answers and page references"
   button: Get the full book
+  button_channel: Follow Deutsch Fokus on YouTube
+  body_channel: "The full book takes you through twelve chapters of {level} German – with an answer key for every exercise and a test at the end of each chapter. It is announced on the YouTube channel first."
   youtube: Free German stories every week on YouTube
   series: "The series: one book per level, from A1 to C2"
   thanks: "Thank you for learning with Deutsch Fokus."

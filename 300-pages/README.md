@@ -270,9 +270,9 @@ book. `docs/QA-REPORT.md` is the report for the demo, with a list of known weakn
 
 These are placeholders and must be replaced in `series.yaml`:
 
-- `website`, `shop_url`, `audio_url`, `contact` – the demo uses the reserved domain
-  `deutschfokus.example`. QR codes and all links are built from these values.
-- `youtube_url` – check the channel handle.
+- `shop_url`, `audio_url`, `contact` are empty: the last page then invites readers to the YouTube
+  channel, QR codes and track links open the channel, and the imprint names it as contact. Fill them
+  in when a shop, an audio host (`…/{level}/{track}`) and an e-mail address exist.
 - The logo is drawn by `engine/art.py → logo_mark()`; files for other uses are in `assets/logo/`. Replace it if
   you have your own mark.
 - Audio does not exist yet. Record each track and publish it at `audio_url` (`{level}/{track}`).

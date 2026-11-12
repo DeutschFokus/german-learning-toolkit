@@ -40,6 +40,7 @@ imprint:
   fonts: "Fraunces, Source Sans 3, Source Serif 4 ve Caveat yazı tipleriyle dizilmiştir; tümü SIL Open Font License 1.1 ile yayımlanmıştır."
   audio_title: Ses kayıtları
   audio: "Dinleme alıştırmasının yanındaki QR kodu tara ya da parça numarasına dokun. Tüm kayıtlar: {url}"
+  audio_channel: "Ses kayıtları Deutsch Fokus YouTube kanalında yayımlanır: {url}. Her QR kod ve parça numarası seni oraya götürür. Kayıt yayımlanana kadar kitabın sonundaki metni sesli oku."
   characters: "Bu kitaptaki tüm kişiler ve olaylar kurgusaldır."
   contact: "Soru, düzeltme, öneri? {contact}"
 how:
@@ -116,6 +117,8 @@ sales:
     - "Cevap anahtarı, dinleme metinleri ve A–Z kelime listesi"
     - "Etkileşimli PDF: bağlantılı içindekiler, cevaplar ve sayfa göndermeleri"
   button: Kitabın tamamını al
+  button_channel: YouTube’da Deutsch Fokus’u takip et
+  body_channel: "Kitabın tamamı seni on iki ünite boyunca {level} Almancaya götürür: her alıştırma için cevap anahtarı ve her ünitenin sonunda bir test. Çıkış tarihi önce YouTube kanalında duyurulur."
   youtube: YouTube’da her hafta ücretsiz Almanca hikâyeler
   series: "Seri: A1’den C2’ye her seviye için bir kitap"
   thanks: "Deutsch Fokus ile öğrendiğin için teşekkürler."

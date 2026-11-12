@@ -10,12 +10,11 @@ series:
   author: Deutsch Fokus
   year: 2026
   version: "1.0-demo"
-  # ↓ placeholders — replace with the real addresses before selling
-  website: https://www.deutschfokus.example
-  shop_url: https://www.deutschfokus.example/300
-  youtube_url: https://www.youtube.com/@DeutschFokus
-  audio_url: "https://www.deutschfokus.example/audio/{level}/{track}"   # {level} {track}
-  contact: hallo@deutschfokus.example
+  # Everything points to the YouTube channel until a shop and an audio host exist.
+  youtube_url: https://www.youtube.com/@Deutsch_Fokus
+  shop_url: ""               # where the full book is sold; empty = the last page invites readers to the channel
+  audio_url: ""              # e.g. "https://…/{level}/{track}"; empty = QR codes and track links open the channel
+  contact: ""                # e-mail address; empty = the imprint points to the channel
 
 languages: [en, tr]        # explanation languages; every content string needs all of them
 levels: [a1, a2, b1, b2, c1, c2]

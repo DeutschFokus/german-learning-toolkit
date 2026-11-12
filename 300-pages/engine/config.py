@@ -200,7 +200,8 @@ class Config:
         return loc[self.lang]
 
     def audio_url(self, track: str) -> str:
-        return self.series["series"]["audio_url"].format(level=self.level, track=track)
+        S = self.series["series"]
+        return S["audio_url"].format(level=self.level, track=track) if S.get("audio_url") else S["youtube_url"]
 
     def edition_title(self) -> str:
         return self.ui("cover.title", level=self.level_name)

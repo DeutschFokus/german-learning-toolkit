@@ -651,17 +651,19 @@ class Builder:
                               [(1, cfg.edition_title(), "p-cover")]))
         # imprint
         today = _dt.date.today().isoformat()
+        yt_text = S["youtube_url"].split("//")[1].replace("www.", "")
+        yt_link = f'<a href="{S["youtube_url"]}">{yt_text}</a>'
         imp = self.P.imprint({"lang": cfg.lang, "logo": art.logo(cfg.series["colors"]["ink"]), "title": esc(cfg.edition_title()),
                               "expl": esc(cfg.ui("cover.explanations")),
                               "copyright": esc(cfg.ui("imprint.copyright", year=S["year"], publisher=S["publisher"])),
                               "version": esc(cfg.ui("imprint.version", version=S["version"], date=today)),
                               "licence_title": esc(cfg.ui("imprint.licence_title")), "licence": esc(cfg.ui("imprint.licence")),
                               "audio_title": esc(cfg.ui("imprint.audio_title")),
-                              "audio": esc(cfg.ui("imprint.audio")).format(url=f'<a href="{S["website"]}/audio">{S["website"].split("//")[1]}/audio</a>'),
+                              "audio": esc(cfg.ui("imprint.audio" if S.get("audio_url") else "imprint.audio_channel")).format(url=yt_link),
                               "fonts_title": esc(cfg.ui("imprint.fonts_title")), "fonts": esc(cfg.ui("imprint.fonts")),
                               "credits": esc(" · ".join(cfg.series["fonts"]["credits"])),
                               "characters": esc(cfg.ui("imprint.characters")),
-                              "contact": esc(cfg.ui("imprint.contact")).format(contact=f'<a href="mailto:{S["contact"]}">{S["contact"]}</a>')})
+                              "contact": esc(cfg.ui("imprint.contact")).format(contact=f'<a href="mailto:{S["contact"]}">{S["contact"]}</a>' if S.get("contact") else yt_link)})
         pages.append(PageSpec("p-ii", "front", "front", "ii", "ii", "verso", "cn", str(imp) + '<div class="folio">ii</div>', "", ["p-ii"],
                               [(1, cfg.de("labels.imprint"), "p-ii")]))
         # contents
@@ -774,16 +776,21 @@ class Builder:
             title = cfg.ui(f"sales.title_{key}", level=cfg.level_name, next=nx)
             body = cfg.ui(f"sales.body_{key}", level=cfg.level_name, next=nx)
             button = cfg.ui(f"sales.button_{key}", level=cfg.level_name, next=nx)
+        shop = S.get("shop_url") or S["youtube_url"]
+        if not S.get("shop_url"):                      # nothing to buy yet: invite readers to the channel instead
+            button = cfg.ui("sales.button_channel")
+            if not complete:
+                body = cfg.ui("sales.body_channel", level=cfg.level_name)
         minis = []
         for lv in levels:
             lt = cfg.level_tokens(lv)
-            minis.append({"name": lv.upper(), "color": lt["cover"], "lite": lt["cover_lite"], "url": esc(S["shop_url"]),
+            minis.append({"name": lv.upper(), "color": lt["cover"], "lite": lt["cover_lite"], "url": esc(shop),
                           "current": lv == (nxt if complete and nxt else cfg.level)})
         title_html = re.sub(r"\b300\b", "<b>300</b>", esc(title)).replace("|", "<br>")
         s = self.P.sales({"lang": cfg.lang, "kicker": esc(kicker), "title": title_html, "body": esc(body),
                           "points": [esc(p) for p in points], "check": r.icon("check", "5mm", "✓", 2.4),
-                          "button": esc(button), "arrow": r.icon("arrow", "6mm", "→", 2.2), "shop_url": esc(S["shop_url"]),
-                          "shop_text": esc(S["shop_url"].split("//")[1]), "youtube_url": esc(S["youtube_url"]),
+                          "button": esc(button), "arrow": r.icon("arrow", "6mm", "→", 2.2), "shop_url": esc(shop),
+                          "shop_text": esc(S["shop_url"].split("//")[1].replace("www.", "")) if S.get("shop_url") else "", "youtube_url": esc(S["youtube_url"]),
                           "yt_icon": r.icon("youtube", "6mm", "YouTube", 1.8), "youtube": esc(cfg.ui("sales.youtube")),
                           "youtube_text": esc(S["youtube_url"].split("//")[1].replace("www.", "")), "series": esc(cfg.ui("sales.series")),
                           "minis": minis, "logo": art.logo(cfg.series["colors"]["navy"])})
