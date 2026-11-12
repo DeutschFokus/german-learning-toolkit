@@ -124,10 +124,21 @@ def qr_svg(url: str, title: str, dark: str = "#1B1E2F") -> str:
 
 
 # ── logo: a speech bubble with a focus point (language + focus) ────────────────────────────────────
+LOGO_ACCENT = "#D75B00"
+
+
+def logo_mark(color: str, accent: str = LOGO_ACCENT, size_mm: float = 6.2) -> str:
+    """The Deutsch Fokus mark: a speech bubble (Deutsch) with a focus point (Fokus)."""
+    w = size_mm * 28 / 24
+    return (f'<svg class="lg-mark" width="{w:.2f}mm" height="{size_mm}mm" viewBox="0 0 28 24"><title>Deutsch Fokus</title>'
+            f'<path fill="{color}" d="M5.200 15.200L2.300 22.600c-.200.600.300 1 .900.800L10.600 20z"/>'
+            f'<path fill="{color}" fill-rule="evenodd" d="M14.400 1.200c7 0 12.600 4.400 12.600 10s-5.600 10-12.600 10S1.800 16.800 1.800 11.200s5.600-10 12.600-10z'
+            f'M14.400 5a6.200 6.200 0 1 0 0 12.400a6.200 6.200 0 1 0 0-12.400z"/>'
+            f'<circle cx="14.400" cy="11.200" r="3.500" fill="{accent}"/></svg>')
+
+
 def logo(color: str, size_mm: float = 6.2, wordmark: bool = True) -> str:
-    mark = (f'<svg class="lg-mark" width="{size_mm}mm" height="{size_mm}mm" viewBox="0 0 24 24"><title>Deutsch Fokus</title>'
-            f'<path fill="{color}" fill-rule="evenodd" d="M12 1.500a10.500 10.500 0 1 1-5.600 19.400L2 22.500l1.700-4.300A10.500 10.500 0 0 1 12 1.500z'
-            f'M12 6.200a5.800 5.800 0 1 0 0 11.600a5.800 5.800 0 1 0 0-11.600zM12 9.300a2.700 2.700 0 1 1 0 5.400a2.700 2.700 0 1 1 0-5.400z"/></svg>')
+    mark = logo_mark(color, LOGO_ACCENT, size_mm)
     word = f'<span class="lg-word" style="color:{color}">Deutsch<b>Fokus</b></span>' if wordmark else ""
     return f'<span class="lg">{mark}{word}</span>'
 

@@ -273,7 +273,7 @@ These are placeholders and must be replaced in `series.yaml`:
 - `website`, `shop_url`, `audio_url`, `contact` – the demo uses the reserved domain
   `deutschfokus.example`. QR codes and all links are built from these values.
 - `youtube_url` – check the channel handle.
-- The logo: `engine/art.py → logo()` draws a speech bubble with a focus point next to the name. Replace it if
+- The logo is drawn by `engine/art.py → logo_mark()`; files for other uses are in `assets/logo/`. Replace it if
   you have your own mark.
 - Audio does not exist yet. Record each track and publish it at `audio_url` (`{level}/{track}`).
 - `version` and `year` for the imprint.
