@@ -20,8 +20,8 @@
 {% if c.sample %}<div class="samplebar" lang="{{ c.lang }}">{{ c.sample }}</div>{% endif %}
 <div class="badge"><span class="niv">{{ c.niveau }}</span><span class="blv">{{ c.level }}</span></div>
 <h1 lang="{{ c.lang }}"><span class="hero">300</span> <span class="rest">{{ c.rest }}</span></h1>
-{% if c.figure %}<div class="cfig">{{ c.figure }}</div>{% endif %}
 <div class="band"><div class="expl" lang="{{ c.lang }}">{{ c.expl }}</div><ul class="feat" lang="{{ c.lang }}">{% for f in c.features %}<li>{{ f }}</li>{% endfor %}</ul><div class="blogo">{{ c.logo }}</div></div>
+{% if c.figure %}<div class="cfig">{{ c.figure }}</div>{% endif %}
 {% endmacro %}
 
 {# ── imprint ─────────────────────────────────────────────────────────────── #}

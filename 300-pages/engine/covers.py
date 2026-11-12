@@ -36,6 +36,8 @@ def cover_png(level: str, lang: str, fmt: str, path: Path, sample: bool = False)
     css = stylesheet(cfg, env) + f"\n@page{{size:{WIDTH_MM}mm {height}mm;margin:0}}"
     inner = Macros(env.get_template("pages.html.j2").module).cover(cover_view(cfg, sample))
     cls = "" if fmt == "a4" else fmt
+    if cfg.series["design"].get("cover_figure"):
+        cls += " hasfig"
     doc = (f'<!DOCTYPE html><html lang="de-DE"><head><meta charset="utf-8"><style>{css}</style></head>'
            f'<body class="digital"><section class="page recto cn cover {cls}" lang="de">{inner}</section></body></html>')
     pdf = HTML(string=doc, base_url=str(cfg.root)).write_pdf()

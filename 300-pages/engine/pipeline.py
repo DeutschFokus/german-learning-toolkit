@@ -64,6 +64,9 @@ def cover_figure(cfg: Config) -> str:
     key = cfg.series["design"].get("cover_figure")
     if not key:
         return ""
+    art_file = cfg.root / "assets" / "cast" / f"cover-{key}.png"
+    if art_file.exists():                          # finished artwork with transparent background
+        return f'<img src="{art_file.as_uri()}" alt="{esc(cfg.series["cast"][key]["full"])}">'
     from .illustrate import person
     a = cfg.series["cast"][key]["avatar"]
     fig = person(350, 1490, 1440, a["skin"], a["hair"], a["top"], style=a.get("style", "short"), pose="stand")

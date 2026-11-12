@@ -120,7 +120,7 @@ colors:
 # Design direction (set after the concept round)
 design:
   cover: monument            # the built cover; concepts B (spectrum) and C (fokus) exist only as PNGs in concepts/
-  cover_figure:              # e.g. elif: a cast member in front of the 300 (test only – needs proper artwork)
+  cover_figure: elif         # cast member in front of the 300 (assets/cast/cover-<key>.png); leave empty for the type-only cover
   opener: buehne             # buehne | register
 
 # Recurring cast. `avatar` drives the generated placeholder portraits.
