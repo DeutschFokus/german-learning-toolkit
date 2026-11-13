@@ -1,0 +1,75 @@
+# cue | characters | scene (English, no readable text in the image)
+01 | - | Huge fleet of Chinese treasure ships emerging from morning fog at sea, hundreds of sails
+02 | - | Endless rows of ships stretching to the horizon, seen from a high cliff
+03 | - | Size comparison: a giant Chinese treasure ship beside a tiny European caravel
+04 | ZHENG_HE | A tall admiral seen from behind on the deck of the flagship, looking at the horizon
+05 | - | A small boy seen from behind in a burning village, soldiers in the distance
+06 | - | Dark harbour, ships burning at night, a single document thrown into flames
+07 | - | Mountain landscape of Yunnan in southwest China, terraced fields, morning mist
+08 | - | Small mosque with Chinese roof architecture in a mountain village
+09 | - | Old travel bag and a prayer mat in a family home, warm lamp light
+10 | - | Child seen from behind listening to an older man telling stories by a fire
+11 | - | Ming army marching into a valley, banners, dust clouds
+12 | - | Burning village at dusk, silhouettes of soldiers
+13 | - | A boy seen from behind being led away by soldiers along a long road
+14 | - | Northern Chinese palace in winter, snow on the roofs
+15 | - | A small candle burning in a cold dark room
+16 | - | Snowy courtyard of a northern palace, a boy seen from behind carrying water buckets
+17 | - | A boy seen from behind practising writing characters with a brush by candlelight
+18 | EMPEROR_YONGLE | A prince in silhouette in a palace hall, a young servant seen from behind bowing
+19 | ZHENG_HE | Young man seen from behind studying maps and strategy by lamplight
+20 | ZHENG_HE | A very tall man seen from behind in a palace corridor, guards stepping aside
+21 | - | Soldiers seen from behind standing at attention in rows as an officer passes
+22 | - | Civil war battle scene from a distance, armies clashing on a plain
+23 | EMPEROR_YONGLE | Emperor in silhouette on a golden throne, a vast throne hall
+24 | ZHENG_HE | Admiral seen from behind receiving a sealed scroll in a palace
+25 | - | Close-up of a royal seal pressing into red wax on a scroll
+26 | - | Enormous shipyard in Nanjing, hundreds of workers, wooden hulls under construction
+27 | - | Giant treasure ship with nine masts and red sails, seen from below
+28 | - | Measuring tape stretched along a huge ship hull in a dry dock
+29 | - | Two ship silhouettes side by side, one about three times longer than the other
+30 | - | Ship holds filled with silk, porcelain, tea and lacquerware
+31 | - | Ship deck with large wooden tubs growing vegetables, sailors tending them
+32 | - | Special water-carrier ships with large barrels sailing beside the main fleet
+33 | - | Signal flags and lanterns hanging from masts, ships communicating at night
+34 | - | Interpreter seen from behind with Arabic and Persian scrolls on a desk aboard ship
+35 | - | Old sea map of the Indian Ocean with a long glowing route from China to Africa
+36 | - | Tropical harbour of Malacca, wooden houses on stilts, ships at anchor
+37 | - | Busy Indian port of Calicut, spice warehouses, merchants loading pepper
+38 | - | Fortress harbour of Hormuz in the Persian Gulf, blue water, desert coast
+39 | - | East African coast with coral stone town and dhows, the treasure fleet offshore
+40 | - | Local ruler seen from behind receiving bales of silk and porcelain from Chinese envoys on a beach
+41 | - | Foreign envoys in diverse robes seen from behind walking into a huge Chinese palace gate
+42 | - | Night sea, a navigator seen from behind using a compass and star charts
+43 | - | Silhouette of the fleet at sunset passing a lighthouse
+44 | - | Zheng He's fleet anchored in a bay at night, lanterns reflecting on the water
+45 | - | A giraffe walking on a ship's deck, sailors watching in amazement
+46 | - | Chinese court painting style: a giraffe led by a handler, officials bowing
+47 | EMPEROR_YONGLE | Emperor in silhouette looking at the giraffe in a palace courtyard
+48 | - | Old stone stele in Sri Lanka with three carved inscriptions side by side
+49 | - | Close-up of the carved stone: three blocks of different scripts, abstract, no readable letters
+50 | ZHENG_HE | Admiral seen from behind standing in front of a mosque, a temple and a harbour
+51 | - | Colourful Chinese-style mosque in Indonesia with green and red roofs
+52 | - | Pirate ships in the dark near Palembang, the treasure fleet approaching
+53 | - | Sea battle at dusk, burning pirate ships, the treasure fleet in formation
+54 | - | Merchant ships sailing peacefully through a calm strait at sunrise
+55 | - | Empty throne in a dark palace hall, a single shaft of light
+56 | - | Court officials seen from behind arguing at a long table, scrolls and coins
+57 | - | Great Wall being rebuilt, workers carrying stones, mountains in the background
+58 | - | Empty treasury chamber, a few scattered coins on a stone floor
+59 | ZHENG_HE | Older admiral seen from behind on a ship's deck, grey sky, the last voyage
+60 | - | Simple tomb in a green hillside near Nanjing, morning mist
+61 | - | Shipyard falling into decay, rotting hulls, weeds growing
+62 | - | Official seen from behind holding a stack of documents beside a burning brazier
+63 | - | Three small European ships on the open ocean, 1490s
+64 | - | Portuguese ships rounding the Cape of Good Hope in a storm
+65 | - | Harbour of Calicut, small Portuguese ships arriving, local merchants watching
+66 | - | Empty sea where the giant fleet once was, only waves and a distant small ship
+67 | - | World map with arrows of European ships spreading over all oceans
+68 | - | Split image: the giant treasure fleet and a modern container port in China
+69 | - | Golden calligraphic ornament over a map of many peoples, abstract, no readable letters
+70 | ZHENG_HE | Admiral seen from behind on a pier, shaking hands with a local merchant, ships behind them
+71 | - | A boy seen from behind on a road, his long shadow shaped like a ship
+72 | - | Comment bubble with a small ship and a question mark
+73 | - | Two phones, a video link flying from one to the other
+74 | - | Small European country on a globe casting a huge shadow over the oceans

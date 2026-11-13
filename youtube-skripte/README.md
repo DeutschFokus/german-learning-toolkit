@@ -14,6 +14,12 @@
 | 10 | [Geld ohne Zinsen: islamisches Finanzwesen](10-islamische-finanzierung.md) | 80 | 7,4 s | ~9:55 |
 | 11 | [Wie Kinder 600 Seiten auswendig lernen](11-hafiz-gedaechtnis.md) | 78 | 7,4 s | ~9:35 |
 | 12 | [Warum die Deutschen ihr Bargeld so lieben](12-bargeld-1923.md) | 73 | 7,8 s | ~9:33 |
+| 13 | [Zheng He: der muslimische Admiral](13-zheng-he.md) | 74 | 7,5 s | ~9:13 |
+| 14 | [Zakat: Wie viel musst du wirklich geben?](14-zakat-berechnen.md) | 88 | 6,9 s | ~10:07 |
+| 15 | [Was nachts in deinem Gehirn passiert](15-schlaf-lernhack.md) | 76 | 7,6 s | ~9:39 |
+| 16 | [Warum so viele Deutsche zur Miete wohnen](16-miete-deutschland.md) | 75 | 7,8 s | ~9:43 |
+
+Die Skripte 13–16 sind nach einer stärkeren Story-Formel gebaut: kalter Einstieg, drei offene Fragen, eine Figur als roter Faden, Re-Hooks und ein Wendepunkt am Ende. Die Formel und über 25 neue Ideen stehen in [IDEEN.md](IDEEN.md).
 
 Die Skripte 5–8 sind die Folgevideos, die in den Outros von 1–4 angekündigt werden (1→5, 2→6, 3→7, 4→8). Jedes Folgevideo kündigt im Outro schon das nächste Thema an: Ibn Battuta, islamische Finanzierung ohne Zinsen, Gedächtnistechniken der Koran-Hafiz und die Bargeld-Liebe der Deutschen.
 

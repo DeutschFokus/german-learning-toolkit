@@ -1,0 +1,77 @@
+# cue | characters | scene (English, no readable text in the image)
+01 | - | 1960s American suburb at night, a single lit window in a house
+02 | - | Teenager seen from behind in a 1960s bedroom, a wall clock showing late night
+03 | - | Large old wall clock, the minute hand blurred from moving fast
+04 | - | Calendar with eleven days crossed out in red
+05 | - | Brain glowing in alarming red, cracks of light across it
+06 | - | Pilot's cockpit at night, a pilot seen from behind resting his head
+07 | - | Teenager seen from behind playing basketball in a 1960s gym, friends watching
+08 | - | Researcher seen from behind with a clipboard in a 1960s room
+09 | - | Blurred hallway, double vision effect, a teenager seen from behind
+10 | - | Teenager seen from behind sitting with his head in his hands, stormy mood
+11 | - | Street sign blurring into a strange shape, dreamlike distortion
+12 | - | Teenager seen from behind in a sports locker room daydreaming, a football field in his imagination
+13 | - | Math worksheet with a simple subtraction left unfinished
+14 | - | Teenager seen from behind finally lying down in a dark room, the clock stopped
+15 | - | Morning light through a window, a rested teenager seen from behind opening curtains
+16 | - | Warning sign in front of a dark bedroom door
+17 | - | Thick record book closed with a red ribbon beside an empty bed
+18 | - | Brain at night glowing like a busy city seen from above
+19 | - | Night-shift workers in an orderly warehouse, glowing boxes being sorted
+20 | - | Boxes labelled with simple icons being moved from a small shelf to a huge archive
+21 | - | Bin of crumpled paper beside a neat archive shelf, sorting continues
+22 | - | Laboratory with a small maze, a rat running through it, 1990s style
+23 | - | Glowing neurons firing in a sequence like a path of lights
+24 | - | Sleeping rat in a cage at night, the same path of lights glowing above it
+25 | - | Film strip replaying the maze route in fast forward
+26 | - | Student seen from behind sleeping at a desk on top of open books, light patterns above her head
+27 | - | 1920s university lab, two students seen from behind memorising lists
+28 | - | Split image: one student sleeping, one student awake at a desk
+29 | - | Two bar charts, the sleeping group's bar clearly higher
+30 | - | Student seen from behind closing a book and switching off a desk lamp
+31 | - | Moon and an hourglass, a glowing brain resting between them
+32 | - | Teenager seen from behind at a school desk at 8 a.m., dark winter morning outside
+33 | - | Person seen from behind proudly holding a coffee cup, five tally marks on a whiteboard
+34 | - | Crowd seen from behind, only a tiny handful of people glowing
+35 | - | Tired person seen from behind at a desk, a fading battery icon above his head
+36 | - | Clock showing 3 a.m., a dark bedroom with moonlight
+37 | - | Wave graph descending into deep slow waves like ocean swells
+38 | - | Deep ocean in dark blue, slow large waves
+39 | - | Sudden short bursts of light on a calm wave line, like sparks
+40 | - | Four sleep cycle waves in a row across a night timeline
+41 | - | Alarm clock ringing at the end of a sleep cycle wave
+42 | - | Colourful dreamlike landscape with floating objects
+43 | - | Water flowing through narrow channels in a glowing brain, washing away dark particles
+44 | - | Street sweepers seen from behind cleaning an empty city at night
+45 | - | 19th-century German chemistry lab, a chemist seen from behind dozing by a fireplace
+46 | - | Glowing snake biting its own tail, forming a ring in the flames of a fireplace
+47 | - | Close-up of a glowing ring made of flames
+48 | - | Hexagonal ring structure glowing like a chemistry model
+49 | - | Old letter with a question mark beside it
+50 | - | Car keys and a breathalyzer on a table, night
+51 | - | Clock showing 17 hours awake beside a glass of water and a car key
+52 | - | German road sign scene at night, a car driving on a dark country road
+53 | - | Student seen from behind in an exam hall with tired posture, a clock on the wall
+54 | - | Empty bed beside a desk full of notes and energy drink cans, no brand names
+55 | - | Long-haul aircraft cockpit at night, two pilots seen from behind
+56 | - | One pilot seen from behind napping in his seat while the other flies
+57 | - | Two gauges side by side: one labelled alertness rising, one performance rising
+58 | - | Two glowing percentages on a cockpit display beside the sleeping pilot
+59 | - | Kitchen timer set to 20 minutes on a sofa armrest
+60 | - | Quiet room at midday, sunlight through curtains, a pillow on a prayer mat corner
+61 | - | Night sky over a quiet neighbourhood with a mosque, early hours before dawn
+62 | - | Golden calligraphic ornament on dark background, abstract, no readable letters
+63 | - | Seven glowing stars arranged in a row over a dark bedroom window
+64 | - | Alarm clock showing the same time on seven different calendar days
+65 | VIEWER | Young man seen from behind stepping outside into bright morning sunlight
+66 | - | Coffee cup beside a clock showing early afternoon, a red line crossing the cup
+67 | - | Phone charging in a kitchen, bedroom door closed
+68 | - | Dark bedroom with an open window, a thermometer showing a cool temperature
+69 | - | Kitchen timer and a small pillow on a sofa
+70 | VIEWER | Young man seen from behind reading flashcards in bed under a warm lamp
+71 | - | Teenager seen from behind at a 1960s science fair stand, people looking at his poster
+72 | - | Calendar page torn in half, a peaceful bed behind it
+73 | - | Brain like a library at night, glowing books being placed on shelves
+74 | - | Comment bubble with a moon and a number inside
+75 | - | Two phones, a video link flying from one to the other
+76 | - | Crescent moon over a peaceful city at dawn, a glass of water and dates on a windowsill

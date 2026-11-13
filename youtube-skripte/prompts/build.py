@@ -101,6 +101,15 @@ CHARS = {
         "SULTAN MUHAMMAD IBN TUGHLUQ (14th-century ruler of Delhi), seen from behind or in silhouette: "
         "gold-embroidered red silk robe, jeweled turban, guards with spears."
     ),
+    "ZHENG_HE": (
+        "ZHENG HE (15th-century Chinese Muslim admiral), seen from behind or in silhouette: very tall, "
+        "long dark-red silk robe with gold embroidery, black official's hat with side flaps, sword at the "
+        "belt, a rolled sea chart in one hand."
+    ),
+    "EMPEROR_YONGLE": (
+        "YONGLE EMPEROR (15th-century Ming ruler), only in silhouette from behind: yellow dragon robe, "
+        "black winged crown, seated or standing in a vast palace hall."
+    ),
     "HAFIZ_CHILD": (
         "HAFIZ CHILD (12-year-old boy), always from behind: short white prayer cap, light-blue long "
         "shirt, dark trousers, wooden Quran stand in front of him."
@@ -133,6 +142,10 @@ LIST = [
     ("10", "10-islamische-finanzierung.md", "Geld ohne Zinsen: islamisches Finanzwesen", "emerald green and cream, clean architectural light"),
     ("11", "11-hafiz-gedaechtnis.md", "Wie Kinder 600 Seiten auswendig lernen", "candlelight gold and deep indigo"),
     ("12", "12-bargeld-1923.md", "Warum die Deutschen ihr Bargeld so lieben", "sepia for 1914–1948 scenes, cool modern tones for today"),
+    ("13", "13-zheng-he.md", "Zheng He: der muslimische Admiral", "deep ocean blue, crimson sails, lantern gold"),
+    ("14", "14-zakat-berechnen.md", "Zakat: Wie viel musst du wirklich geben?", "warm kitchen lamplight, soft gold and deep green"),
+    ("15", "15-schlaf-lernhack.md", "Was nachts in deinem Gehirn passiert", "midnight blue, moonlight silver, soft violet"),
+    ("16", "16-miete-deutschland.md", "Warum so viele Deutsche zur Miete wohnen", "warm brick red, overcast grey, golden window light"),
 ]
 
 

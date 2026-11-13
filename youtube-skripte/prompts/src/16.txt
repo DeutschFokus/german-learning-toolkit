@@ -1,0 +1,76 @@
+# cue | characters | scene (English, no readable text in the image)
+01 | VIEWER | Two colleagues seen from behind in a workshop break room, coffee cups, a German city through the window
+02 | - | Old apartment block in Romania with balconies, sunny day
+03 | VIEWER | Young man seen from behind looking out of the window at rows of rental apartment buildings
+04 | - | Two bar charts side by side, one almost full, one less than half
+05 | - | Map of Europe where Germany is coloured lightest of all
+06 | - | Swiss town with tall rental apartment buildings and mountains behind
+07 | - | Two flags, German and Swiss, above two rows of identical doorbells
+08 | - | Question mark made of house keys
+09 | - | Scale with a house key on one side and a rental contract on the other
+10 | - | Old photo album opening to a sepia picture of a destroyed city
+11 | - | Grey socialist-era apartment blocks under a winter sky
+12 | - | Old document being signed at a table, a key handed over, early 1990s
+13 | - | Family seen from behind standing in a small apartment, holding a key
+14 | - | Apartment blocks with satellite dishes, children playing outside
+15 | - | Old building with cracks in the facade, a renovation scaffold
+16 | - | German city in ruins in 1945, rubble everywhere, a church tower still standing
+17 | - | Aerial view of destroyed residential streets, sepia
+18 | - | Long trek of refugees seen from behind on a muddy road, handcarts
+19 | - | Family seen from behind in a crowded single room, beds side by side
+20 | - | Woman seen from behind passing bricks along a chain of people in ruins
+21 | - | 1950s government building, officials seen from behind at a long table
+22 | - | Construction site of 1950s apartment blocks, cranes, workers
+23 | - | Signed law document from 1950 on a desk, a pen and an official stamp
+24 | - | Rows of identical new apartment buildings in the 1950s, sunlight
+25 | - | Cooperative housing estate with green courtyards, residents seen from behind gardening
+26 | - | Long waiting list on a clipboard beside a cooperative building entrance
+27 | - | Family seen from behind moving boxes into a bright new apartment
+28 | - | Old rental contract on a table beside a key, warm light
+29 | - | Paragraph symbol shaped like a shield in front of an apartment door
+30 | - | Rental contract with an open-ended date line, no readable text
+31 | - | Landlord silhouette at a door, a shield blocking the doorway
+32 | - | Old tenant seen from behind watering plants on a balcony of a long-time apartment
+33 | - | City map with a heat map of rental prices
+34 | - | Two people seen from behind in two apartments, one relaxed, one nervous on a phone
+35 | - | Calm apartment window at night, a shield glowing on the front door
+36 | - | Price tag on a house with a second, smaller tag hanging below it
+37 | - | Tax form beside a model house, a percentage sign glowing
+38 | - | Notary's desk with a stamp and documents
+39 | - | Estate agent's business card on a table beside house keys
+40 | - | Calculator showing a large extra amount beside a house price
+41 | - | Moving boxes in front of two different cities on a map
+42 | - | Old savings book beside a piggy bank, sepia photo of grandparents
+43 | - | Chain wrapped around a model house, a family hesitating seen from behind
+44 | - | Open Quran on a wooden stand, warm light, calligraphy abstract and not readable
+45 | - | Model house held by two partner hands, a crescent ornament in the background
+46 | - | Long queue of people seen from behind in front of an apartment viewing
+47 | - | Rising line chart over a city skyline
+48 | - | Chart of social housing units shrinking over decades, small houses disappearing
+49 | - | A single small house icon left on an empty chart
+50 | - | Official certificate form on a table beside an apartment key, no readable text
+51 | - | Dozens of people seen from behind crowding a small apartment during a viewing
+52 | - | Family seen from behind in a small apartment, children's toys everywhere
+53 | - | Two people seen from behind on two staircases, one climbing higher
+54 | - | Chart where homeowners' wealth bar towers over renters' wealth bar
+55 | - | Map of Europe with wealth bars per country, Germany's bar surprisingly low
+56 | - | Monthly mortgage payment becoming a brick in a growing wall of a house
+57 | - | Rent payment flying out of a wallet and disappearing
+58 | VIEWER | Young man seen from behind sitting on a bench at the workshop, thinking
+59 | - | Scale perfectly balanced between a house and a stack of coins
+60 | - | Two paths in a park, both leading to the same sunny hill
+61 | - | Person seen from behind on a sofa with shopping bags all around
+62 | - | Retired person seen from behind looking at a rent bill and a small pension statement
+63 | - | Moving van in front of a new city, a person seen from behind with a backpack
+64 | - | Broken heating boiler with a landlord's repair van outside
+65 | - | Two colleagues seen from behind talking at a workbench, a notebook between them
+66 | - | Old Romanian apartment being renovated, a paint roller on the wall
+67 | VIEWER | Young man seen from behind setting up a savings plan on his phone
+68 | VIEWER | Young man seen from behind looking at a small house in the evening, a key in his hand
+69 | - | Two different keys on one key ring, warm light
+70 | - | Calendar with a savings goal marked years ahead, a small model house on top
+71 | - | Map of Europe with homeownership bars, Germany's bar glowing
+72 | - | Balance scale between a key and a rental contract
+73 | - | Comment bubble with a house and a key symbol
+74 | - | Two phones, a video link flying from one to the other
+75 | - | Endless corridor of filing cabinets and rubber stamps, a person seen from behind with a form

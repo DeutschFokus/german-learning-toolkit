@@ -1,0 +1,89 @@
+# cue | characters | scene (English, no readable text in the image)
+01 | VIEWER | Young man seen from behind at a kitchen table at night, laptop open, a calculator and a cup of tea
+02 | - | Laptop screen showing a banking app with a balance, blurred numbers
+03 | VIEWER | Young man seen from behind rubbing his neck, a question mark reflected in the window
+04 | - | Golden coins stacked on a kitchen table beside prayer beads
+05 | - | Notebook page with a sum circled, a pen lying on it
+06 | - | Hand stopping before a common mistake, a red warning light
+07 | - | Desert town at dawn, a man seen from behind carrying an empty sack through an empty market
+08 | - | Five glowing pillars in a row, the third one highlighted
+09 | - | Clear water flowing over stones, purifying, sunlight
+10 | - | Two hands side by side: one dropping a coin into a box voluntarily, one handing over a fixed share
+11 | - | Field of wheat with one grain sprouting into seven heavy ears
+12 | - | Coin dropping into a hand, then a tree of coins growing from it
+13 | - | Two glowing keys on a wooden table
+14 | - | Scale with a threshold line, a stack of coins rising above it
+15 | - | Lunar calendar with twelve crescent moons arranged in a circle
+16 | - | Calendar where the year is slightly shorter, about eleven days marked differently
+17 | - | Hourglass beside a pile of coins
+18 | - | Gold bars and silver coins side by side on a scale
+19 | - | Gold weighed on a fine jeweler's scale, about 85 grams
+20 | - | Silver coins weighed on a scale, a larger pile of about 595 grams
+21 | - | Price chart of gold with a marked example price
+22 | - | Calculator showing 85 times 100 equals 8,500
+23 | - | Small pile of silver coins beside a much larger pile of gold
+24 | - | Scholars seen from behind discussing over books at a long table
+25 | - | Open notebook with two columns, gold and silver
+26 | VIEWER | Young man seen from behind writing a list in a notebook at the kitchen table
+27 | - | Banking app on a phone showing a balance, euro coins beside it
+28 | - | Envelope with banknotes hidden in a drawer
+29 | - | Small gold coin in an open palm, warm light
+30 | - | Phone screen with an investment portfolio chart, no logos
+31 | - | Stack of shares certificates beside a calculator
+32 | - | Two hands, one lending money to another, an IOU between them
+33 | - | Empty column in a notebook marked with a dash
+34 | - | Cozy apartment living room with a sofa and bookshelf
+35 | - | Car parked in front of an apartment building
+36 | - | Wardrobe with clothes and a shelf of books
+37 | - | Mechanic's toolbox with wrenches and a laptop for work
+38 | - | Gold bracelet on a velvet cloth
+39 | - | Credit card bill lying on the table with a red due date
+40 | - | Minus sign glowing over a small stack of coins
+41 | - | Mortgage contract with only the current month's instalment highlighted
+42 | - | Notebook with a clean addition, numbers in a column
+43 | - | Calculator display showing 13,500
+44 | - | Scale where a pile of coins rises clearly above the threshold line
+45 | - | Large glowing fraction one fortieth
+46 | - | Calculator showing 13,000 times 0.025 equals 325
+47 | VIEWER | Young man seen from behind leaning back in his chair, relieved
+48 | - | Red warning triangle above a calendar
+49 | - | Calendar where a date in Ramadan is circled, then a different date in summer
+50 | - | Calendar with one fixed day marked every year
+51 | - | Calendar page with one day circled in gold, the same day marked on next year's page
+52 | - | Forgotten gold coin in a dusty drawer, a pension savings folder beside it
+53 | - | Checklist with five ticked boxes
+54 | - | Two different gifts: a bag of rice for a holiday and a stack of coins
+55 | - | Bag of rice and dates handed over before a holiday prayer at dawn
+56 | - | Eight glowing circles arranged in a ring, each with a simple symbol
+57 | - | Person seen from behind at a food bank counter
+58 | - | Officials seen from behind collecting and recording donations
+59 | - | Two hands reaching out in friendship across a table
+60 | - | Broken chains lying on the ground
+61 | - | Person seen from behind holding a pile of unpaid bills
+62 | - | Path of light leading towards a mosque and a school
+63 | - | Stranded traveler seen from behind sitting on a suitcase at a station
+64 | - | Family dinner table seen from behind, parents and children
+65 | - | Donation box at a German mosque entrance
+66 | - | Laptop showing a charity website with project photos, no logos
+67 | - | Donation receipt beside a tax form
+68 | VIEWER | Young man seen from behind handing an envelope to an older neighbour at a door
+69 | - | Envelope placed on the doormat of a neighbour's apartment
+70 | - | Hands passing an envelope discreetly
+71 | - | Old Damascus at dusk, minarets and a palace, 8th century
+72 | - | Ruler seen from behind in simple clothes, an oil lamp, piles of documents
+73 | - | Zakat collector seen from behind with a sack walking through a peaceful town
+74 | - | Empty town square, the collector standing alone with a full sack
+75 | - | Coins being used to free captives and pay debts, hands receiving help
+76 | - | Golden light over a city, a balance scale in perfect equilibrium
+77 | - | World map with countless small glowing points of light
+78 | - | Huge pile of coins seen from above, people seen from behind around it
+79 | - | Child seen from behind walking into a school with a backpack
+80 | VIEWER | Young man seen from behind closing his laptop, a calm smile in the reflection of the window
+81 | - | Neighbour's kitchen with a full fridge, a child seen from behind with a new school bag
+82 | - | Coins turning into growing green sprouts
+83 | - | Simple checklist on paper: list, subtract debts, compare with nisab, multiply, give
+84 | - | Scholar and a young man seen from behind talking at a table in a mosque library
+85 | - | Comment bubble with a calculator symbol
+86 | - | Two phones, a video link flying from one to the other
+87 | - | Grand historic hospital courtyard with fountain, an endowment document with a seal on a table
+88 | - | Ancient public fountain with an ornate stone frame, still flowing today
