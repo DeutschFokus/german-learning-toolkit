@@ -1,0 +1,77 @@
+# cue | characters | scene (English, no readable text in the image)
+01 | ANDREI | A man seen from behind arriving at a German train station with one suitcase, grey morning
+02 | - | Signed job contract on a table beside a train ticket
+03 | - | Office desk, a human resources employee seen from behind pointing at a form
+04 | ANDREI | Man seen from behind at a bank counter, the clerk shaking her head
+05 | ANDREI | Man seen from behind in a crowded apartment viewing, others holding folders
+06 | - | Credit report illustrated as an empty folder with a question mark
+07 | - | Empty file with a new name tag, a landlord silhouette shaking his head
+08 | - | Circle of arrows connecting a bank, a house and a payslip, spinning endlessly
+09 | ANDREI | Man seen from behind standing in the middle of a spinning circle of paper forms
+10 | - | Locked box with a paper key inside, glowing question mark
+11 | - | Two coffee cups on a workbench, one steaming, waiting for a second person
+12 | - | Endless corridor of filing cabinets and rubber stamps
+13 | - | 18th-century French salon, a writing desk covered with green cloth
+14 | - | Writing desk labelled with a small symbol of a desk, beside a crown
+15 | - | Huge desk towering over a small town like a ruler
+16 | - | Prussian palace in the early 18th century, soldiers marching in the courtyard
+17 | - | King seen from behind in a blue uniform checking ledgers at a desk
+18 | - | Officials seen from behind at long desks writing in identical ledgers
+19 | - | Old official stamp pressing onto paper, ink glistening
+20 | - | Early 20th-century study, a German scholar seen from behind writing at a desk
+21 | - | Four glowing symbols: a rulebook, a file folder, a ladder, a balance scale
+22 | - | Two citizens seen from behind at the same counter, one rich, one poor, treated identically
+23 | - | Medieval scene of a noble handing a bag of coins to an official under the table
+24 | - | Modern German counter with a waiting-number display, calm and orderly
+25 | - | World map where Germany is marked in a clean light colour, other regions darker
+26 | - | Map of Germany split into 16 states, each with its own small stack of papers
+27 | - | Thousands of tiny town hall icons spread across a map of Germany
+28 | - | Two neighbouring town halls, one with a laptop sign, one with a paper queue
+29 | - | Courthouse in Germany with columns, a citizen seen from behind walking up the steps
+30 | - | Official seen from behind writing a long justification in a file
+31 | - | Thick file folder being stamped and placed on a tall shelf
+32 | - | Lock symbol made of documents, data streams being blocked
+33 | - | Two office buildings that cannot pass a file to each other, a wall between them
+34 | - | Huge pile of German tax books towering over a small person seen from behind
+35 | - | Stamp reading MYTH over a stack of books
+36 | - | Tax form with many boxes on a kitchen table, a person seen from behind sighing
+37 | - | Government building with a large digital screen showing a countdown to 2022
+38 | - | Calendar page for the end of 2022 with a large red X
+39 | - | Old town of Tallinn with digital ID symbols floating above it
+40 | - | Fax machine in a German office beside a modern laptop
+41 | - | Office worker seen from behind buried in paper, a clock on the wall
+42 | - | Politicians seen from behind at a podium with a large pair of scissors cutting red tape
+43 | ANDREI | Man seen from behind sitting on a bench outside a town hall, a folder on his lap
+44 | ANDREI | Man seen from behind looking at his phone, a hostel booking on the screen
+45 | - | Workshop break room, two men seen from behind on a bench, one sharing coffee from a thermos
+46 | VIEWER | Young man seen from behind listening carefully, nodding
+47 | - | Locked box opening, a paper key glowing inside
+48 | - | Form for a landlord's confirmation on a table, signed with a pen, no readable text
+49 | VIEWER, ANDREI | Two men seen from behind at a kitchen table signing a document together
+50 | - | Town hall counter, a stamp coming down on a registration form
+51 | - | Bank counter with a basic account card being handed over
+52 | - | Simple bank card glowing above a backpack and a hostel key
+53 | ANDREI | Man seen from behind holding a new bank card, relieved
+54 | - | Envelope with an official seal arriving in a mailbox
+55 | - | Mailbox with a different official letter on top, a man seen from behind laughing
+56 | VIEWER, ANDREI | Two men seen from behind laughing in a workshop, tools in hand
+57 | - | Calendar page flipping forward one year in a workshop
+58 | - | Two colleagues seen from behind in the workshop break room, the window of the earlier video
+59 | - | Balance scale with a stack of forms on one side and a shield on the other
+60 | - | Citizen seen from behind receiving the same treatment at a counter as a businessman beside him
+61 | - | Overgrown jungle made of paper and red tape
+62 | - | Golden calligraphic ornament over a balanced scale, abstract, no readable letters
+63 | - | Rulebook turning into a helpful signpost on a path
+64 | - | Five glowing folders arranged in a row on a desk
+65 | - | Phone showing the number 115 on a keypad
+66 | - | Laptop showing a tax portal, a cup of tea beside it
+67 | - | Calendar with a deadline circled, an envelope with an official letter beside it
+68 | - | Neatly labelled home folders on a shelf: one for each area of life
+69 | - | Bank counter, a person seen from behind confidently presenting a printed law paragraph
+70 | - | Person seen from behind holding a small key in front of a big stack of forms
+71 | - | Circle of arrows breaking open into a straight path
+72 | - | Shield standing in front of a citizen, a crumbling wall of paper behind it
+73 | - | Comment bubble with a rubber stamp inside
+74 | - | Two phones with a video link flying from one to the other
+75 | - | Quiet German shopping street on a Sunday, all shutters closed, church bells
+76 | - | Old constitution book on a table with a Sunday calendar page beside it

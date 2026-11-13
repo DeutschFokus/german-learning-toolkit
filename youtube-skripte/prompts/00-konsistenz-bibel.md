@@ -26,7 +26,7 @@ Cinematic documentary still, 16:9 widescreen, 35mm film look, soft natural light
 Jede Figur hat genau einen festen Kartentext. Die Liste zeigt, in welchen Skripten sie vorkommt.
 
 - VIEWER (recurring modern protagonist, always the same person): slim young adult, short dark hair, always seen from behind, face never visible; navy wool jacket over a grey hoodie, dark slim jeans, white sneakers, grey canvas backpack with a brown leather strap.  
-  *Skripte: 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12, 14, 15, 16*
+  *Skripte: 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12, 14, 15, 16, 17, 18, 19, 20*
 - AL-KHWARIZMI (9th-century Baghdad mathematician), seen from behind or in shadow: long pale-blue linen robe, dark brown wool outer robe, white turban, reed pen in hand, wooden writing board.  
   *Skripte: 01*
 - IBN AL-HAYTHAM (10th-century scientist), seen in silhouette or from behind: long dark-green robe, dark wool cloak, white turban, brass oil lamp in one hand, small lens in the other.  
@@ -65,6 +65,8 @@ Jede Figur hat genau einen festen Kartentext. Die Liste zeigt, in welchen Skript
   *Skripte: 13*
 - YONGLE EMPEROR (15th-century Ming ruler), only in silhouette from behind: yellow dragon robe, black winged crown, seated or standing in a vast palace hall.  
   *Skripte: 13*
+- ANDREI (Romanian mechanic in his early thirties), seen from behind: broad shoulders, dark-blond buzz cut, olive-green work jacket, grey cargo trousers, brown work boots.  
+  *Skripte: 20*
 - HAFIZ CHILD (12-year-old boy), always from behind: short white prayer cap, light-blue long shirt, dark trousers, wooden Quran stand in front of him.  
   *Skripte: 11*
 - QURAN TEACHER (older man), seen in profile with face turned away: long grey robe, white cap, thin wooden pointer in one hand.  
@@ -100,3 +102,7 @@ Jede Figur hat genau einen festen Kartentext. Die Liste zeigt, in welchen Skript
 | 14 | Zakat: Wie viel musst du wirklich geben? | warm kitchen lamplight, soft gold and deep green |
 | 15 | Was nachts in deinem Gehirn passiert | midnight blue, moonlight silver, soft violet |
 | 16 | Warum so viele Deutsche zur Miete wohnen | warm brick red, overcast grey, golden window light |
+| 17 | Warum ausgerechnet Europa die Ozeane beherrschte | stormy Atlantic grey-blue, parchment beige, detective-desk amber |
+| 18 | Waqf: Wie ein Brunnen seit 1.400 Jahren Gutes tut | desert sand, cool well-water turquoise, warm lamp gold |
+| 19 | Was beim Fasten in deinem Körper passiert | pre-dawn indigo, midday white heat, sunset orange |
+| 20 | Warum Deutschland so viel Bürokratie hat | office grey, stamp-ink red, autumn light through windows |

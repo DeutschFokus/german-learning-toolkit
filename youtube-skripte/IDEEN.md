@@ -14,12 +14,21 @@ Alle Ideen sind halal, Edutainment und für ein deutsches Publikum gedacht. Jede
 
 ## Schon angekündigt (als Nächstes produzieren)
 
+Die vier Themen aus den Outros von 13–16 sind jetzt als Skripte 17–20 fertig. Deren Outros kündigen diese an:
+
 | Kündigt an | Video | Hook |
 |---|---|---|
-| Skript 13 | **Warum ausgerechnet Europa die Ozeane beherrschte** | „Um 1400 war Europa arm, zerstritten und klein. 200 Jahre später gehörten ihm die Meere. Wie?“ |
-| Skript 14 | **Waqf: Stiftungen, die 1.000 Jahre halten** | „Im Kairo des 13. Jahrhunderts gab es ein Krankenhaus, das Patienten kostenlos behandelte und ihnen beim Entlassen sogar Geld mitgab.“ |
-| Skript 15 | **Was beim Fasten in deinem Körper passiert** | „2016 bekam ein Japaner den Nobelpreis für die Erforschung der Selbstreinigung deiner Zellen. Was hat das mit dem Ramadan zu tun?“ |
-| Skript 16 | **Warum Deutschland so viel Bürokratie hat** | „In Deutschland gibt es ein Formular dafür, ein Formular zu beantragen. Fast. Woher kommt das?“ |
+| Skript 17 | **Das Osmanische Reich: über 600 Jahre** | „Ein kleines Fürstentum in Anatolien wurde zu einem Reich auf drei Kontinenten. Und es hielt länger als fast jedes andere.“ |
+| Skript 18 | **Krankenhäuser im Mittelalter (Bimaristan)** | „Im 13. Jahrhundert gab es in Kairo ein Krankenhaus mit Apotheke, Lehrbetrieb und kostenloser Behandlung für alle.“ |
+| Skript 19 | **Was Zucker mit deinem Gehirn macht** | „Macht Zucker süchtig? Die Antwort ist komplizierter, als Influencer behaupten.“ |
+| Skript 20 | **Warum sonntags alles zu hat** | „Der Sonntag ist in Deutschland durch die Verfassung geschützt. Seit über 100 Jahren.“ |
+
+## Was die Skripte 17–20 noch besser macht
+
+- **Mystery-Box:** Eine große Frage wird im ersten Satzblock gestellt und erst ganz am Ende geöffnet (das Konto des Brunnens, der Nobelpreis, der Ausweg aus der Schleife).
+- **Zwischen-Belohnung zur Hälfte:** eine kleine, überraschende Geschichte (Piri Reis, die Stiftung für zerbrochene Teller, der Steuer-Mythos), damit niemand in der Mitte abspringt.
+- **Wiederkehrende Figuren:** Yusuf und Andrei tauchen in mehreren Videos auf. Zuschauer bauen eine Beziehung auf und schauen weitere Folgen.
+- **Konkrete Aufgabe am Ende:** Basiskonto, Behördennummer 115, Sadaqa-Dschariya-Ideen, Suhur-Tipps. Nützliche Videos werden gespeichert und geteilt.
 
 ## Islam und Deutschland (sehr gut teilbar in der Community)
 

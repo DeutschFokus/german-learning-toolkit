@@ -1,0 +1,81 @@
+# cue | characters | scene (English, no readable text in the image)
+01 | - | Medieval European town in 1400, muddy streets, small wooden houses, grey sky
+02 | - | Golden Chinese palace and huge ships in a harbour, sunlit
+03 | - | Busy Ottoman and Arab trading port with domes, minarets and full warehouses
+04 | - | Plague-stricken European village, empty streets, crosses on doors, fog
+05 | - | Empty fields and abandoned farms in medieval Europe, ravens on a fence
+06 | - | Small European ships setting sail from a harbour at dawn, a giant shadow of the globe behind
+07 | - | Detective's desk with five face-down cards and a magnifying glass
+08 | - | Five shadowy silhouettes lined up against a wall like suspects
+09 | - | Old map torn in the middle, a glowing question mark over the tear
+10 | - | Medieval European market where spices are sold in tiny quantities at high prices
+11 | - | Pepper and cinnamon on a merchant's scale beside gold coins
+12 | - | Long chain of merchants handing a spice sack from Asia across the Middle East to Venice
+13 | - | Constantinople in 1453, Ottoman army before the great walls, cannons firing
+14 | - | European merchant seen from behind staring at a map of the sea
+15 | - | Card being turned over, showing a ship in a storm
+16 | - | Portuguese coastline with a small fortress and caravels in the harbour
+17 | - | Prince seen from behind at a window overlooking the Atlantic, maps on a table
+18 | - | Small caravel turning back in heavy waves near a desert coast
+19 | - | Calendar with decades flipping, a ship slowly moving along a coastline map
+20 | - | Card being turned over, showing a compass and an astrolabe
+21 | - | Compass, gunpowder and a sheet of paper on a table, Chinese ornaments behind
+22 | - | Arab dhow with a triangular sail cutting through the waves
+23 | - | Brass astrolabe on an old map of al-Andalus
+24 | - | European caravel combining square and triangular sails on the open ocean
+25 | - | Hands joining puzzle pieces with Chinese, Arab and European patterns
+26 | - | Caravel with both square and triangular sails crossing a rough Atlantic
+27 | - | Gutenberg printing press in Mainz, freshly printed map sheets hanging to dry
+28 | - | Hundreds of identical sea charts stacked in a workshop
+29 | - | Scale with a compass on one side and a question mark on the other
+30 | - | Abandoned Chinese shipyard with rotting hulls beside a busy European harbour
+31 | - | Detective's desk, two of five cards turned over, three still face down
+32 | - | Ottoman galley fleet in the Mediterranean, crescent flags on the masts
+33 | - | Ottoman admiral seen from behind on a galley, the sea battle in the distance
+34 | - | Old parchment map with coastlines of Africa and South America, ornate ships drawn on it
+35 | - | Close-up of the map's margin with small handwritten notes, no readable text
+36 | - | Istanbul palace library, the map displayed in a glass case
+37 | - | Card being turned over, showing a pile of gold and a sword
+38 | - | Three small ships on the open Atlantic, 1492
+39 | - | Globe with a far too small Earth drawn on it, a scholar's correct larger outline glowing behind
+40 | - | Al-Biruni's mountain silhouette and a glowing Earth radius line from the earlier video
+41 | - | Small ship approaching an unexpected green coastline across the ocean
+42 | - | Portuguese ships arriving in Calicut harbour, local merchants watching from the shore
+43 | - | Navigator seen from behind on a dhow, pointing across the ocean to a Portuguese captain
+44 | - | Old Arabic navigation manuscript with star diagrams beside a question mark
+45 | - | Ships unloading sacks of pepper in Lisbon harbour, crowds amazed
+46 | - | Old document with two red wax seals dividing a globe with a line
+47 | - | Coastal village seen from the sea, people seen from behind watching ships arrive
+48 | - | Dark harbour with chained figures seen from behind being led onto a ship, somber tone
+49 | - | Broken chains lying on a dark beach at dusk, quiet memorial mood
+50 | - | Candle burning before a dark ocean, quiet and serious
+51 | - | Card being turned over, showing a stack of share certificates
+52 | - | Amsterdam harbour in 1602, many tall ships, merchants on the quay
+53 | - | Merchants seen from behind buying paper shares at a wooden counter
+54 | - | Hundreds of small coins flowing together into one large ship
+55 | - | Company flag flying over a fortress with cannons in a tropical harbour
+56 | - | Coins and a sword lying on the same map
+57 | - | Three treasure chests in a row, one opening while two stay locked
+58 | - | Card being turned over, showing a map of Europe broken into many pieces
+59 | - | Map of Europe in 1500 split into dozens of kingdoms and city-states in different colours
+60 | - | Sailor seen from behind presenting a map to a king who waves him away
+61 | - | The same sailor seen from behind presenting his map at a different royal court
+62 | - | Split image: one emperor's single closed door in China, many open doors across Europe
+63 | - | Emperor's seal stamping a closed decree, ships fading in the background
+64 | - | Several European rulers in silhouette racing small ships across a map
+65 | - | Row of doors, one closing and the next one swinging open with light
+66 | - | Blacksmiths in different workshops competing, sparks flying
+67 | - | Detective's desk, the fifth card glowing brightly among the others
+68 | - | Puzzle of Europe whose many pieces fit together into a ship
+69 | - | Scholars seen from behind debating in front of a large world map
+70 | - | Bookshelf with history books, several bookmarks sticking out
+71 | - | Single giant ship docked forever beside many small ships sailing out
+72 | VIEWER | Young man seen from behind reading job offers on a laptop, several open tabs
+73 | - | Sailor seen from behind walking away from a palace towards another city
+74 | VIEWER | Young man seen from behind knocking on a second office door after leaving the first
+75 | - | Old merchant's workshop where foreign tools from different cultures hang side by side
+76 | - | Golden calligraphic ornament above a candle, abstract, no readable letters
+77 | - | Five cards lying on a table, one glowing
+78 | - | Comment bubble with a small ship and a puzzle piece
+79 | - | Two phones with a video link flying from one to the other
+80 | - | Ottoman sultan's throne room in silhouette, maps of three continents on the walls

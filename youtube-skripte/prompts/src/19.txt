@@ -1,0 +1,81 @@
+# cue | characters | scene (English, no readable text in the image)
+01 | VIEWER | Young man seen from behind in a dark kitchen at 3 a.m., a small lamp, a glass of water and dates
+02 | - | Summer sky over Hamburg rooftops, the sun setting very late, a clock showing nearly 10 p.m.
+03 | - | Calendar wheel with the crescent moon moving through four seasons
+04 | - | Snowy German street at dusk, lit windows, an early iftar table inside
+05 | - | Car workshop at noon in summer heat, a mechanic seen from behind under a car
+06 | - | Human body outline made of light inside a large clock face
+07 | - | Nobel prize medal on dark velvet beside a microscope
+08 | - | Glowing living cell under a microscope, tiny bubbles forming inside
+09 | - | Hand reaching for a large plate of fried food at sunset, a red warning glow
+10 | - | Bowl of oats, eggs, yogurt and dates on a kitchen table at night
+11 | - | Glowing digestive system as a gentle illustration, food turning into light
+12 | - | Light energy being stored into small boxes in the liver and muscles
+13 | - | Morning prayer mat at dawn, first light through a window
+14 | - | Warehouse shelves full of glowing energy boxes, a worker taking some out
+15 | - | Liver illustrated as a golden storage room releasing energy
+16 | - | Blood sugar line staying steady on a calm graph
+17 | - | Mechanic seen from behind working calmly at a workbench in the morning
+18 | - | Clock showing midday, a mechanic's stomach area glowing faintly
+19 | - | Hormone molecule labelled as a small glowing messenger rushing to the brain
+20 | - | Calendar with daily meal times marked, a wave rising exactly at those times
+21 | - | Clock with three glowing meal markers, a soft wave rising at each one
+22 | - | Wave rising and then falling back calmly on a beach
+23 | - | Series of gentle waves rising and falling on a calm sea at noon
+24 | VIEWER | Young man seen from behind drinking nothing, focused at work, the hunger wave passing behind him
+25 | - | Simple hormone graph with peaks and valleys over a working day
+26 | - | Coffee cup crossed out, a person seen from behind holding his head
+27 | - | Empty water glass and an empty coffee cup side by side on a workbench
+28 | - | Large switch on a control panel being flipped from a sugar symbol to a fat droplet symbol
+29 | - | Liver storage room nearly empty, only a few energy boxes left
+30 | - | Fat cells releasing glowing droplets that travel through the body
+31 | - | Small glowing particles labelled as an alternative fuel flowing toward the brain
+32 | - | Brain glowing calmly with a steady soft light
+33 | - | Laboratory mice in a clean cage, a researcher seen from behind taking notes
+34 | - | Human silhouette made of light with a partly unfinished, sketched area
+35 | - | Japanese laboratory, a researcher seen from behind at a microscope, yeast cultures in dishes
+36 | - | Microscope view of a cell, small bubbles forming around old parts inside it
+37 | - | Recycling plant inside a cell illustrated with tiny workers sorting old parts
+38 | - | Two cells side by side, the hungry one with more recycling bubbles
+39 | - | Magnifying glass over a human silhouette with a question mark
+40 | - | Research papers on a desk with open question marks drawn in the margins
+41 | - | Golden glowing cell, peaceful and clean
+42 | - | Fitness app with a 16-hour timer beside a Ramadan lantern
+43 | - | Glass of water allowed in one image, crossed out in the other
+44 | - | Late afternoon sun in a hot workshop, a mechanic seen from behind wiping sweat
+45 | - | Dry riverbed with cracks, a single drop of water above it
+46 | - | Person seen from behind sitting in shade, slightly tired, a glass of water waiting for sunset
+47 | - | Warning sign beside a thermometer showing high heat
+48 | - | Golden calligraphic ornament on dark background, abstract, no readable letters
+49 | - | Gentle open hand of light above a calendar with a few days marked for later
+50 | - | Elderly person, pregnant woman and a sick person seen from behind, gentle light
+51 | - | Sunset over Hamburg, the sky turning orange, a family table waiting
+52 | - | Hands breaking open a date beside a glass of water on a table
+53 | - | Dates glowing with small light particles representing quick energy and minerals
+54 | - | Short prayer in a quiet room after breaking the fast, the meal waiting in the background
+55 | - | Calm stomach illustration glowing softly, a clock with a short pause marked
+56 | - | Huge table full of fried food, sweets and sugary drinks, no brand names
+57 | - | Person seen from behind eating very fast from a large plate, a clock spinning
+58 | - | Blood sugar line shooting up sharply and then crashing down
+59 | - | Scale showing more weight after a month, a calendar of Ramadan beside it
+60 | - | Two plates side by side: a balanced meal and an overloaded plate
+61 | - | Seven glowing crescent moons in a row over a night sky
+62 | - | Bowl of oats, whole grain bread and eggs on a table at night
+63 | - | Large water bottle with time marks, sipped between sunset and dawn
+64 | - | Salt shaker crossed out beside a plate of salty snacks
+65 | - | Coffee cup getting smaller over a calendar week before Ramadan
+66 | - | Dates and a glass of water at sunset on a wooden table
+67 | VIEWER | Young man seen from behind sleeping a short nap on a sofa in the afternoon
+68 | - | Person seen from behind taking a calm evening walk after iftar
+69 | - | Night sky over a mosque during Ramadan, lanterns glowing
+70 | - | Golden abstract calligraphic ornament over a crescent moon, no readable letters
+71 | - | Person seen from behind resisting a plate of food on a table during the day
+72 | - | Phone face down on a table beside a Quran stand
+73 | - | Puppet strings being cut above a brain, callback image
+74 | - | Hands passing a food box to a neighbour at a door in the evening
+75 | - | Several fasting traditions symbolised: a church window, a lantern, a crescent, all in calm light
+76 | - | Clock with a body outline glowing gold at the end of the day
+77 | - | Waves calming at sunset beside a table with dates and water
+78 | - | Comment bubble with a date fruit and a glass of water
+79 | - | Two phones with a video link flying from one to the other
+80 | - | Sugar cubes forming the shape of a brain, a warning glow around it

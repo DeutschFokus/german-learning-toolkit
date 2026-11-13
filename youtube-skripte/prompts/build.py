@@ -110,6 +110,10 @@ CHARS = {
         "YONGLE EMPEROR (15th-century Ming ruler), only in silhouette from behind: yellow dragon robe, "
         "black winged crown, seated or standing in a vast palace hall."
     ),
+    "ANDREI": (
+        "ANDREI (Romanian mechanic in his early thirties), seen from behind: broad shoulders, dark-blond "
+        "buzz cut, olive-green work jacket, grey cargo trousers, brown work boots."
+    ),
     "HAFIZ_CHILD": (
         "HAFIZ CHILD (12-year-old boy), always from behind: short white prayer cap, light-blue long "
         "shirt, dark trousers, wooden Quran stand in front of him."
@@ -146,6 +150,10 @@ LIST = [
     ("14", "14-zakat-berechnen.md", "Zakat: Wie viel musst du wirklich geben?", "warm kitchen lamplight, soft gold and deep green"),
     ("15", "15-schlaf-lernhack.md", "Was nachts in deinem Gehirn passiert", "midnight blue, moonlight silver, soft violet"),
     ("16", "16-miete-deutschland.md", "Warum so viele Deutsche zur Miete wohnen", "warm brick red, overcast grey, golden window light"),
+    ("17", "17-europa-ozeane.md", "Warum ausgerechnet Europa die Ozeane beherrschte", "stormy Atlantic grey-blue, parchment beige, detective-desk amber"),
+    ("18", "18-waqf-stiftungen.md", "Waqf: Wie ein Brunnen seit 1.400 Jahren Gutes tut", "desert sand, cool well-water turquoise, warm lamp gold"),
+    ("19", "19-fasten-koerper.md", "Was beim Fasten in deinem Körper passiert", "pre-dawn indigo, midday white heat, sunset orange"),
+    ("20", "20-buerokratie.md", "Warum Deutschland so viel Bürokratie hat", "office grey, stamp-ink red, autumn light through windows"),
 ]
 
 

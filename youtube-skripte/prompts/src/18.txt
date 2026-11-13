@@ -1,0 +1,77 @@
+# cue | characters | scene (English, no readable text in the image)
+01 | - | Ancient stone well in the desert near Medina at dawn, a rope and a bucket
+02 | - | Date palm farm with green rows of palms, irrigation channels
+03 | - | Old document beside a modern banking app screen with no readable text
+04 | - | Old ledger book and a modern bank card lying side by side on a wooden table
+05 | - | Locked wooden box with a glowing keyhole, a question mark floating above
+06 | - | Grand medieval hospital courtyard, a fountain, patients resting in shade
+07 | - | Broken ceramic plate on a stone floor, a small boy's shadow beside it
+08 | - | Tree with deep roots and branches heavy with fruit
+09 | - | Hands placing a small model house into a glass case labelled with a seal
+10 | - | Lock on a gate, beside it fruit being handed out to people seen from behind
+11 | - | Spring of water flowing endlessly from a rock
+12 | - | Fertile date gardens of Khaybar at sunset, green fields, no people
+13 | - | Open hands holding fresh dates, warm light
+14 | - | Old document with a seal and three crossed-out symbols: a coin, a gift box, a family tree
+15 | - | Golden calligraphic ornament on dark background, abstract, no readable letters
+16 | - | Three glowing symbols in a row: a flowing water drop, an open book, a child seen from behind praying
+17 | - | Hourglass with water flowing through it instead of sand
+18 | - | Medina in the 7th century, dry land, people seen from behind carrying empty water jars
+19 | - | Coins being exchanged for a single jar of water at a well
+20 | - | Leather pouch of coins placed on a wooden table beside a well deed
+21 | - | Water flowing freely into many jars held by hands of all ages
+22 | - | The same well over centuries: different eras of clothing on the jars' carriers, only hands visible
+23 | - | Ruins of different empires fading one after another behind the same well
+24 | - | Date palms growing around the old well, workers seen from behind harvesting
+25 | - | Map of the Islamic world with thousands of small glowing points: wells, schools, hospitals
+26 | - | Stone bridge over a river, travelers crossing, a small fountain at the end
+27 | - | Courtyard of al-Qarawiyyin in Fes, students in a circle
+28 | - | Classroom in an old madrasa, children seen from behind with writing boards
+29 | - | Grand domed hospital in medieval Cairo, arched halls, sunlight
+30 | - | Hospital ward with clean beds separated by arches, caretakers seen from behind
+31 | - | Pharmacy shelves with jars of medicine and herbs
+32 | - | Patient seen from behind leaving the hospital gate, receiving a small purse and clothes
+33 | - | Recovering patient seen from behind resting at home by a window
+34 | - | German hospital billing statement on a table beside a stethoscope
+35 | - | Damascus market street in the 14th century, a traveler seen from behind watching a scene
+36 | - | A boy seen from behind standing frozen over a shattered porcelain dish in a street
+37 | - | Passer-by seen from behind kneeling to gather shards into a cloth
+38 | - | Office with a shelf of new dishes, a caretaker seen from behind handing one over
+39 | - | The boy seen from behind walking home with a new dish, sunlight
+40 | - | Old endowment document with a seal beside a single new ceramic plate
+41 | - | Stray cats resting in the shade of an old courtyard, bowls of water
+42 | - | Bride seen from behind in a simple wedding dress, a small gift box in her hands
+43 | - | Big question mark made of many small acts of kindness
+44 | - | Ottoman landscape with villages and fields, small seals glowing over many plots of land
+45 | - | Old bathhouse and a covered market whose rent flows as glowing coins into a school
+46 | - | Old stone kitchen in Jerusalem, huge copper pots steaming, morning light
+47 | - | Queue of people seen from behind with bowls at a kitchen window
+48 | - | Soup bowl in two hands, steam rising, early morning light
+49 | - | Calendar pages flying through centuries, the same soup pot steaming
+50 | - | Medieval Oxford college courtyard, stone arches, students in gowns seen from behind
+51 | - | Scale balancing an old waqf document and an old European charter
+52 | - | Fuggerei in Augsburg with ochre houses and green shutters, sunlight
+53 | - | Modern German foundation office building with many name plates, no readable text
+54 | - | Government building in the 19th century, officials seen from behind with files
+55 | - | Stack of old waqf deeds being moved into a state archive
+56 | - | Unused dry fountain in a quiet old square
+57 | - | Young people seen from behind looking at a modern project board with water wells and schools
+58 | - | Locked wooden box from the beginning, the lid slowly opening
+59 | - | The old well and the date farm in golden evening light
+60 | - | Flowing water turning into coins and then into food on many tables
+61 | - | Hourglass that never runs out, sand flowing forever
+62 | VIEWER | Young man seen from behind sitting on a bench, thinking, a notebook on his knee
+63 | - | Hands planting a small tree in soil, sunlight
+64 | - | Young tree in a garden with birds eating from its branches
+65 | VIEWER | Young man seen from behind teaching a younger boy to repair a bicycle
+66 | - | Well being dug in a dry village, children seen from behind waiting with buckets
+67 | - | Phone screen with a small standing-order setup, a heart symbol
+68 | - | Calendar with the same small transfer repeating every month
+69 | - | Old stone well and a newly dug well side by side, both with water
+70 | - | Child seen from behind drinking water from a well a century in the future
+71 | - | Spring of water flowing from a rock, sunrise
+72 | - | Montage of a hospital, a school and a soup kitchen under one glowing seal
+73 | - | Comment bubble with a tree and a water drop inside
+74 | - | Two phones with a video link flying from one to the other
+75 | - | Medieval hospital hall with arches, physicians seen from behind with books
+76 | - | Physician seen from behind examining a patient by lamplight in a medieval ward
