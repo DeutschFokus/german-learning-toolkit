@@ -12,6 +12,10 @@ Every scene of every script has a complete, copy-paste-ready prompt here. Each p
 | 06 Deutsche Bahn | [06-deutsche-bahn-bildprompts.md](06-deutsche-bahn-bildprompts.md) | 40 | Tobias (2 outfits), Helga, Werner, the German train, the Swiss train |
 | 07 Der Döner | [07-doener-bildprompts.md](07-doener-bildprompts.md) | 37 | Ahmet (3 ages), Emre, Mert, The Pioneer (2 ages) |
 | 08 Die Zuckerlüge | [08-zucker-luege-bildprompts.md](08-zucker-luege-bildprompts.md) | 39 | The American scientist, The British scientist (2 ages), The Executive, The Researcher, Sarah |
+| 09 Ibn al-Haytham | [09-ibn-al-haytham-bildprompts.md](09-ibn-al-haytham-bildprompts.md) | 45 | Hasan (3 ages), The Caliph |
+| 10 Die Ballonflucht | [10-ballonflucht-bildprompts.md](10-ballonflucht-bildprompts.md) | 50 | Peter, Günter, Doris, Petra, the two older boys, the two little ones, The investigator, the escape balloon, the second balloon |
+| 11 Semmelweis | [11-semmelweis-bildprompts.md](11-semmelweis-bildprompts.md) | 49 | Ignaz (2 ages), Professor Klein, Jakob |
+| 12 Die Aldi-Entführung | [12-aldi-entfuehrung-bildprompts.md](12-aldi-entfuehrung-bildprompts.md) | 48 | Theo (3 ages), Karl (3 ages), The lawyer, The safecracker, The bishop |
 
 All characters with their explanations and reference sheet prompts in one place: [charakter-bibel.md](charakter-bibel.md).
 
@@ -28,12 +32,12 @@ All characters with their explanations and reference sheet prompts in one place:
 - **Never shorten or reword a character description.** The identical wording in every prompt is what keeps the face, hair and clothes stable.
 - Every character has a signature (a color, a garment, an object) that no one else in that video has — for example the King's white-and-gold robe, Tobias's orange keychain or Anna's copper-red hair strand. If Copilot gets the face slightly wrong, the signature still makes the character recognizable. Check the signature before you accept an image.
 - Don't type real names into Copilot. It refuses public figures or invents a different face. The prompts already describe everyone without names.
-- Characters based on recent or living real people (The Librarian, The Visionary, The Pioneer, The Researcher, The British scientist) are deliberately shown only from behind, in profile in shadow, as a silhouette or as hands.
+- Characters based on recent or living real people (The Librarian, The Visionary, The Pioneer, The Researcher, The British scientist, both families in 10, everyone in 12) are deliberately shown only from behind, in profile in shadow, as a silhouette or as hands. The Caliph in 09 is also kept in shadow on purpose.
 
 ## Common problems
 
 - **The image isn't 16:9:** reply "Same image in 16:9 widescreen", or extend the sides in your editor's AI expand tool.
-- **Copilot refuses a scene** (most likely in the battle scenes of 05 or the war scenes of 02): reply "Make it calmer: no weapons in use, show the moment just before" or replace words like "soldiers" with "men in uniforms". Don't add names or real logos.
+- **Copilot refuses a scene** (most likely in the battle scenes of 05, the war scenes of 02, the asylum scene of 11 or the kidnapping scenes of 12): reply "Make it calmer: no weapons in use, show the moment just before" or replace words like "soldiers" with "men in uniforms". Don't add names or real logos.
 - **Text appears in the image** (signs, newspapers, screens): reply "Same image, remove all text and letters".
 - **Shorts (9:16):** reply "Same image as a vertical 9:16 version, keep everything identical", or crop the 16:9 image in your editor.
 

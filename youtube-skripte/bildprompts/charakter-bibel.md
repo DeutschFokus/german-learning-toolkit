@@ -1114,3 +1114,589 @@ LIGHT: even, soft studio lighting.
 RULES: No text, letters, numbers, labels or arrows. No other people and no background scenery. Modest clothing. No logos, no brand names, no readable labels, letters or documents. No real, identifiable person. Never show anyone's body in a mocking or shaming way.
 ```
 
+## 09 · Ibn al-Haytham – Der Mann, der den Verrückten spielte
+
+**Main style:** Cinematic semi-realistic digital painting of medieval Cairo and Basra around the year 1000, warm candlelight and golden sunlight, deep shadows, rich ochre, sand, indigo and turquoise tones, visible volumetric light beams, realistic proportions.
+
+**Alternative style `modern`** (scenes 04, 16, 39, 40, 41, 42): Clean cinematic present-day photo-realistic look, natural light, shallow depth of field.
+
+**Alternative style `manuscript`** (scenes 28): Medieval scientific drawing in brown ink on aged, slightly stained parchment, delicate fine lines, soft vignette.
+
+**Video-specific rules:** No depiction of the Prophet Muhammad or his companions. No weapons, no violence. Arabic or Latin writing only as abstract decorative strokes, never readable. The Caliph's face is never shown clearly.
+
+### Hasan (Ibn al-Haytham)
+
+**Who / why this look:** The hero, a scholar who lived around 965–1040, so he gets a fixed fictional look. Signature: indigo-blue robe and the small brown leather notebook he always carries.
+
+**Appears in scenes:** 01, 02, 08, 12, 13, 14, 15, 17, 18, 19, 20, 21, 23, 24, 25, 29, 34
+
+**Fixed description** (already pasted into every scene prompt — never change a word):
+
+> Hasan: an Arab scholar of about 45 with light-brown skin, a lean face, a high forehead, deep-set dark-brown eyes and a short, neatly trimmed black beard with grey streaks, wearing a white wrapped turban, a long dark indigo-blue robe with a plain sand-colored sash and brown leather sandals, always carrying a small brown leather-bound notebook.
+
+**Reference sheet prompt** (generate this first, save the best result):
+
+```text
+Create one widescreen 16:9 character reference sheet.
+Show the same single person four times side by side on a plain light-grey studio background: front view, three-quarter view, side profile and a full-body front view. Neutral expression, relaxed pose, identical face, hair, body and clothing in all four views.
+STYLE: Cinematic semi-realistic digital painting of medieval Cairo and Basra around the year 1000, warm candlelight and golden sunlight, deep shadows, rich ochre, sand, indigo and turquoise tones, visible volumetric light beams, realistic proportions.
+CHARACTER: Hasan: an Arab scholar of about 45 with light-brown skin, a lean face, a high forehead, deep-set dark-brown eyes and a short, neatly trimmed black beard with grey streaks, wearing a white wrapped turban, a long dark indigo-blue robe with a plain sand-colored sash and brown leather sandals, always carrying a small brown leather-bound notebook.
+LIGHT: even, soft studio lighting.
+RULES: No text, letters, numbers, labels or arrows. No other people and no background scenery. Modest clothing. No depiction of the Prophet Muhammad or his companions. No weapons, no violence. Arabic or Latin writing only as abstract decorative strokes, never readable. The Caliph's face is never shown clearly.
+```
+
+### Hasan (young, Basra)
+
+**Who / why this look:** The same man at about 25 in Basra. Same indigo robe and notebook so viewers recognize him.
+
+**Appears in scenes:** 06
+
+**Fixed description** (already pasted into every scene prompt — never change a word):
+
+> Young Hasan: an Arab scholar of about 25 with light-brown skin, a lean face, a high forehead, deep-set dark-brown eyes and a short black beard without any grey, wearing a white wrapped turban, a long dark indigo-blue robe with a plain sand-colored sash and brown leather sandals, carrying a small brown leather-bound notebook.
+
+**Reference sheet prompt** (generate this first, save the best result):
+
+```text
+Create one widescreen 16:9 character reference sheet.
+Show the same single person four times side by side on a plain light-grey studio background: front view, three-quarter view, side profile and a full-body front view. Neutral expression, relaxed pose, identical face, hair, body and clothing in all four views.
+STYLE: Cinematic semi-realistic digital painting of medieval Cairo and Basra around the year 1000, warm candlelight and golden sunlight, deep shadows, rich ochre, sand, indigo and turquoise tones, visible volumetric light beams, realistic proportions.
+CHARACTER: Young Hasan: an Arab scholar of about 25 with light-brown skin, a lean face, a high forehead, deep-set dark-brown eyes and a short black beard without any grey, wearing a white wrapped turban, a long dark indigo-blue robe with a plain sand-colored sash and brown leather sandals, carrying a small brown leather-bound notebook.
+LIGHT: even, soft studio lighting.
+RULES: No text, letters, numbers, labels or arrows. No other people and no background scenery. Modest clothing. No depiction of the Prophet Muhammad or his companions. No weapons, no violence. Arabic or Latin writing only as abstract decorative strokes, never readable. The Caliph's face is never shown clearly.
+```
+
+### Hasan (old age)
+
+**Who / why this look:** The same man at about 70, after his release. White beard, same robe and notebook.
+
+**Appears in scenes:** 35, 43
+
+**Fixed description** (already pasted into every scene prompt — never change a word):
+
+> Old Hasan: the same Arab scholar at about 70 with light-brown skin, a thin lined face, a high forehead, deep-set dark-brown eyes and a short white beard, wearing a white wrapped turban, a long faded indigo-blue robe with a sand-colored sash, holding a small brown leather-bound notebook.
+
+**Reference sheet prompt** (generate this first, save the best result):
+
+```text
+Create one widescreen 16:9 character reference sheet.
+Show the same single person four times side by side on a plain light-grey studio background: front view, three-quarter view, side profile and a full-body front view. Neutral expression, relaxed pose, identical face, hair, body and clothing in all four views.
+STYLE: Cinematic semi-realistic digital painting of medieval Cairo and Basra around the year 1000, warm candlelight and golden sunlight, deep shadows, rich ochre, sand, indigo and turquoise tones, visible volumetric light beams, realistic proportions.
+CHARACTER: Old Hasan: the same Arab scholar at about 70 with light-brown skin, a thin lined face, a high forehead, deep-set dark-brown eyes and a short white beard, wearing a white wrapped turban, a long faded indigo-blue robe with a sand-colored sash, holding a small brown leather-bound notebook.
+LIGHT: even, soft studio lighting.
+RULES: No text, letters, numbers, labels or arrows. No other people and no background scenery. Modest clothing. No depiction of the Prophet Muhammad or his companions. No weapons, no violence. Arabic or Latin writing only as abstract decorative strokes, never readable. The Caliph's face is never shown clearly.
+```
+
+### The Caliph
+
+**Who / why this look:** The feared, unpredictable ruler of Cairo. Shown only from behind, as a silhouette or with his face in deep shadow — that keeps him mysterious and respectful. Signature: plain all-white robes and his small grey donkey.
+
+**Appears in scenes:** 01, 10, 12, 18
+
+**Fixed description** (already pasted into every scene prompt — never change a word):
+
+> The Caliph: a slim young ruler of about 26, always seen from behind, as a silhouette or with his face in deep shadow so that only a glint of his eyes is visible, wearing plain flowing white robes and a simple white turban without any jewels; when outdoors he rides a small grey donkey with a plain brown leather saddle.
+
+**Reference sheet prompt** (generate this first, save the best result):
+
+```text
+Create one widescreen 16:9 character reference sheet.
+Show the same single person four times side by side on a plain light-grey studio background: full-body back view, three-quarter back view, side profile with the face in deep shadow, and a close-up of the hands and sleeves. The face is never visible.
+STYLE: Cinematic semi-realistic digital painting of medieval Cairo and Basra around the year 1000, warm candlelight and golden sunlight, deep shadows, rich ochre, sand, indigo and turquoise tones, visible volumetric light beams, realistic proportions.
+CHARACTER: The Caliph: a slim young ruler of about 26, always seen from behind, as a silhouette or with his face in deep shadow so that only a glint of his eyes is visible, wearing plain flowing white robes and a simple white turban without any jewels; when outdoors he rides a small grey donkey with a plain brown leather saddle.
+LIGHT: even, soft studio lighting.
+RULES: No text, letters, numbers, labels or arrows. No other people and no background scenery. Modest clothing. No depiction of the Prophet Muhammad or his companions. No weapons, no violence. Arabic or Latin writing only as abstract decorative strokes, never readable. The Caliph's face is never shown clearly.
+```
+
+## 10 · Die Ballonflucht – 28 Minuten bis zur Freiheit
+
+**Main style:** Cinematic semi-realistic digital illustration of East Germany in 1979, muted greys, olive greens and browns by day, cold night blues lit by warm orange burner flames and harsh white searchlights, soft film grain, realistic proportions.
+
+**Alternative style `modern`** (scenes 47): Clean present-day photo-realistic look, natural museum light, crisp detail.
+
+**Alternative style `diagram`** (scenes 12): Simple clean educational illustration on a dark-blue background, soft glow, no labels or arrows with text.
+
+**Video-specific rules:** The two families are real people: never show their faces — only from behind, as silhouettes, in deep shadow or as hands. No flags, no state emblems or national symbols, no insignia on uniforms, no weapons fired, no blood. No brand logos on cars or products.
+
+### Peter (the burner man)
+
+**Who / why this look:** Electrician and trained aircraft mechanic who built the burner. Real person, so never his face. Signature: worn brown leather jacket.
+
+**Appears in scenes:** 02, 06, 07, 10, 11, 14, 15, 17, 19, 25, 26, 30, 31, 32, 33, 34, 35, 39, 41, 42, 43
+
+**Fixed description** (already pasted into every scene prompt — never change a word):
+
+> Peter: an East German man of about 37, stocky build, short dark-brown hair with a side parting, always seen from behind, as a silhouette or with his face in deep shadow — never his face; wearing a worn brown leather jacket over a beige shirt, dark-grey trousers and brown work boots.
+
+**Reference sheet prompt** (generate this first, save the best result):
+
+```text
+Create one widescreen 16:9 character reference sheet.
+Show the same single person four times side by side on a plain light-grey studio background: full-body back view, three-quarter back view, side profile with the face in deep shadow, and a close-up of the hands and sleeves. The face is never visible.
+STYLE: Cinematic semi-realistic digital illustration of East Germany in 1979, muted greys, olive greens and browns by day, cold night blues lit by warm orange burner flames and harsh white searchlights, soft film grain, realistic proportions.
+CHARACTER: Peter: an East German man of about 37, stocky build, short dark-brown hair with a side parting, always seen from behind, as a silhouette or with his face in deep shadow — never his face; wearing a worn brown leather jacket over a beige shirt, dark-grey trousers and brown work boots.
+LIGHT: even, soft studio lighting.
+RULES: No text, letters, numbers, labels or arrows. No other people and no background scenery. Modest clothing. The two families are real people: never show their faces — only from behind, as silhouettes, in deep shadow or as hands. No flags, no state emblems or national symbols, no insignia on uniforms, no weapons fired, no blood. No brand logos on cars or products.
+```
+
+### Günter (the tailor)
+
+**Who / why this look:** The young mason who sewed the balloons night after night. Real living person, so never his face. Signature: mustard-yellow knitted sweater.
+
+**Appears in scenes:** 02, 06, 10, 13, 14, 16, 26, 29, 30, 32, 34, 41, 42, 43
+
+**Fixed description** (already pasted into every scene prompt — never change a word):
+
+> Günter: a young East German man of about 24, tall and slim, thick wavy brown hair over the collar, always seen from behind, as a silhouette or with his face in deep shadow — never his face; wearing a mustard-yellow knitted sweater, faded blue jeans and grey canvas shoes.
+
+**Reference sheet prompt** (generate this first, save the best result):
+
+```text
+Create one widescreen 16:9 character reference sheet.
+Show the same single person four times side by side on a plain light-grey studio background: full-body back view, three-quarter back view, side profile with the face in deep shadow, and a close-up of the hands and sleeves. The face is never visible.
+STYLE: Cinematic semi-realistic digital illustration of East Germany in 1979, muted greys, olive greens and browns by day, cold night blues lit by warm orange burner flames and harsh white searchlights, soft film grain, realistic proportions.
+CHARACTER: Günter: a young East German man of about 24, tall and slim, thick wavy brown hair over the collar, always seen from behind, as a silhouette or with his face in deep shadow — never his face; wearing a mustard-yellow knitted sweater, faded blue jeans and grey canvas shoes.
+LIGHT: even, soft studio lighting.
+RULES: No text, letters, numbers, labels or arrows. No other people and no background scenery. Modest clothing. The two families are real people: never show their faces — only from behind, as silhouettes, in deep shadow or as hands. No flags, no state emblems or national symbols, no insignia on uniforms, no weapons fired, no blood. No brand logos on cars or products.
+```
+
+### Doris (Peter's wife)
+
+**Who / why this look:** Real person, never her face. Signature: dark-green hooded parka.
+
+**Appears in scenes:** 02, 07, 17, 19, 33, 34, 37, 40, 43
+
+**Fixed description** (already pasted into every scene prompt — never change a word):
+
+> Doris: an East German woman of about 37, medium height, short dark-blonde wavy hair, always seen from behind or with her face in deep shadow — never her face; wearing a dark-green hooded parka, long dark-brown trousers and brown boots.
+
+**Reference sheet prompt** (generate this first, save the best result):
+
+```text
+Create one widescreen 16:9 character reference sheet.
+Show the same single person four times side by side on a plain light-grey studio background: full-body back view, three-quarter back view, side profile with the face in deep shadow, and a close-up of the hands and sleeves. The face is never visible.
+STYLE: Cinematic semi-realistic digital illustration of East Germany in 1979, muted greys, olive greens and browns by day, cold night blues lit by warm orange burner flames and harsh white searchlights, soft film grain, realistic proportions.
+CHARACTER: Doris: an East German woman of about 37, medium height, short dark-blonde wavy hair, always seen from behind or with her face in deep shadow — never her face; wearing a dark-green hooded parka, long dark-brown trousers and brown boots.
+LIGHT: even, soft studio lighting.
+RULES: No text, letters, numbers, labels or arrows. No other people and no background scenery. Modest clothing. The two families are real people: never show their faces — only from behind, as silhouettes, in deep shadow or as hands. No flags, no state emblems or national symbols, no insignia on uniforms, no weapons fired, no blood. No brand logos on cars or products.
+```
+
+### Petra (Günter's wife)
+
+**Who / why this look:** Real person, never her face. Signature: red cardigan and a long single braid.
+
+**Appears in scenes:** 02, 16, 34, 37, 40, 43
+
+**Fixed description** (already pasted into every scene prompt — never change a word):
+
+> Petra: a young East German woman of about 24, slim, long light-brown hair in a single braid down her back, always seen from behind or with her face in deep shadow — never her face; wearing a buttoned-up red knitted cardigan over a cream blouse and a long grey skirt to the ankles with dark tights.
+
+**Reference sheet prompt** (generate this first, save the best result):
+
+```text
+Create one widescreen 16:9 character reference sheet.
+Show the same single person four times side by side on a plain light-grey studio background: full-body back view, three-quarter back view, side profile with the face in deep shadow, and a close-up of the hands and sleeves. The face is never visible.
+STYLE: Cinematic semi-realistic digital illustration of East Germany in 1979, muted greys, olive greens and browns by day, cold night blues lit by warm orange burner flames and harsh white searchlights, soft film grain, realistic proportions.
+CHARACTER: Petra: a young East German woman of about 24, slim, long light-brown hair in a single braid down her back, always seen from behind or with her face in deep shadow — never her face; wearing a buttoned-up red knitted cardigan over a cream blouse and a long grey skirt to the ankles with dark tights.
+LIGHT: even, soft studio lighting.
+RULES: No text, letters, numbers, labels or arrows. No other people and no background scenery. Modest clothing. The two families are real people: never show their faces — only from behind, as silhouettes, in deep shadow or as hands. No flags, no state emblems or national symbols, no insignia on uniforms, no weapons fired, no blood. No brand logos on cars or products.
+```
+
+### The two older boys
+
+**Who / why this look:** Peter and Doris's sons, about 15 and 11. Real people, faces always hidden. Signature: navy and brown anoraks.
+
+**Appears in scenes:** 02, 17, 19, 33, 34, 37, 40
+
+**Fixed description** (already pasted into every scene prompt — never change a word):
+
+> The two older boys: two East German brothers of about 15 and 11, the elder taller with dark-brown hair in a navy-blue anorak, the younger with lighter brown hair in a brown anorak, both in dark trousers; always seen from behind or with faces hidden.
+
+**Reference sheet prompt** (generate this first, save the best result):
+
+```text
+Create one widescreen 16:9 character reference sheet.
+Show the same single person four times side by side on a plain light-grey studio background: full-body back view, three-quarter back view, side profile with the face in deep shadow, and a close-up of the hands and sleeves. The face is never visible.
+STYLE: Cinematic semi-realistic digital illustration of East Germany in 1979, muted greys, olive greens and browns by day, cold night blues lit by warm orange burner flames and harsh white searchlights, soft film grain, realistic proportions.
+CHARACTER: The two older boys: two East German brothers of about 15 and 11, the elder taller with dark-brown hair in a navy-blue anorak, the younger with lighter brown hair in a brown anorak, both in dark trousers; always seen from behind or with faces hidden.
+LIGHT: even, soft studio lighting.
+RULES: No text, letters, numbers, labels or arrows. No other people and no background scenery. Modest clothing. The two families are real people: never show their faces — only from behind, as silhouettes, in deep shadow or as hands. No flags, no state emblems or national symbols, no insignia on uniforms, no weapons fired, no blood. No brand logos on cars or products.
+```
+
+### The two little ones
+
+**Who / why this look:** Günter and Petra's small sons, a pre-schooler and a toddler. Faces always hidden. Signature: yellow-and-brown checked wool blanket.
+
+**Appears in scenes:** 02, 34, 37, 40
+
+**Fixed description** (already pasted into every scene prompt — never change a word):
+
+> The two little ones: two small boys, about 5 and 2 years old, wrapped together in a red-and-white checked wool blanket, with knitted blue woolly hats; always seen from behind or with faces hidden in the blanket.
+
+**Reference sheet prompt** (generate this first, save the best result):
+
+```text
+Create one widescreen 16:9 character reference sheet.
+Show the same single person four times side by side on a plain light-grey studio background: full-body back view, three-quarter back view, side profile with the face in deep shadow, and a close-up of the hands and sleeves. The face is never visible.
+STYLE: Cinematic semi-realistic digital illustration of East Germany in 1979, muted greys, olive greens and browns by day, cold night blues lit by warm orange burner flames and harsh white searchlights, soft film grain, realistic proportions.
+CHARACTER: The two little ones: two small boys, about 5 and 2 years old, wrapped together in a red-and-white checked wool blanket, with knitted blue woolly hats; always seen from behind or with faces hidden in the blanket.
+LIGHT: even, soft studio lighting.
+RULES: No text, letters, numbers, labels or arrows. No other people and no background scenery. Modest clothing. The two families are real people: never show their faces — only from behind, as silhouettes, in deep shadow or as hands. No flags, no state emblems or national symbols, no insignia on uniforms, no weapons fired, no blood. No brand logos on cars or products.
+```
+
+### The escape balloon
+
+**Who / why this look:** The third balloon that made it to the West. Its patchwork of four fabrics is the visual hook of the video — keep it identical in every image.
+
+**Appears in scenes:** 01, 02, 35, 36, 38, 43, 47, 50
+
+**Fixed description** (already pasted into every scene prompt — never change a word):
+
+> The escape balloon: a huge home-made hot-air balloon about 28 metres tall, its envelope sewn from many uneven vertical patchwork strips of red-and-white striped bed ticking, dark-blue umbrella fabric, olive-green tent nylon and beige taffeta with visible crooked seams; below it hangs a small square platform of thin grey steel sheet with four corner posts and a simple rope railing, with a home-made burner of four propane gas bottles and pipes in the middle.
+
+**Reference sheet prompt** (generate this first, save the best result):
+
+```text
+Create one widescreen 16:9 character reference sheet.
+Show this recurring element from four angles side by side on a plain light-grey background: front view, three-quarter view, side view and a detail close-up.
+STYLE: Cinematic semi-realistic digital illustration of East Germany in 1979, muted greys, olive greens and browns by day, cold night blues lit by warm orange burner flames and harsh white searchlights, soft film grain, realistic proportions.
+ELEMENT: The escape balloon: a huge home-made hot-air balloon about 28 metres tall, its envelope sewn from many uneven vertical patchwork strips of red-and-white striped bed ticking, dark-blue umbrella fabric, olive-green tent nylon and beige taffeta with visible crooked seams; below it hangs a small square platform of thin grey steel sheet with four corner posts and a simple rope railing, with a home-made burner of four propane gas bottles and pipes in the middle.
+LIGHT: even, soft studio lighting.
+RULES: No text, letters, numbers, labels or arrows. No other people and no background scenery. Modest clothing. The two families are real people: never show their faces — only from behind, as silhouettes, in deep shadow or as hands. No flags, no state emblems or national symbols, no insignia on uniforms, no weapons fired, no blood. No brand logos on cars or products.
+```
+
+### The second balloon
+
+**Who / why this look:** The smaller taffeta balloon of the failed first flight. Different colors so it is never confused with the final one.
+
+**Appears in scenes:** 17, 18, 20
+
+**Fixed description** (already pasted into every scene prompt — never change a word):
+
+> The second balloon: a smaller home-made hot-air balloon with an envelope of shiny beige and light-brown taffeta panels with visible seams, hanging above a small square platform of thin grey steel sheet with a simple home-made burner of two propane gas bottles.
+
+**Reference sheet prompt** (generate this first, save the best result):
+
+```text
+Create one widescreen 16:9 character reference sheet.
+Show this recurring element from four angles side by side on a plain light-grey background: front view, three-quarter view, side view and a detail close-up.
+STYLE: Cinematic semi-realistic digital illustration of East Germany in 1979, muted greys, olive greens and browns by day, cold night blues lit by warm orange burner flames and harsh white searchlights, soft film grain, realistic proportions.
+ELEMENT: The second balloon: a smaller home-made hot-air balloon with an envelope of shiny beige and light-brown taffeta panels with visible seams, hanging above a small square platform of thin grey steel sheet with a simple home-made burner of two propane gas bottles.
+LIGHT: even, soft studio lighting.
+RULES: No text, letters, numbers, labels or arrows. No other people and no background scenery. Modest clothing. The two families are real people: never show their faces — only from behind, as silhouettes, in deep shadow or as hands. No flags, no state emblems or national symbols, no insignia on uniforms, no weapons fired, no blood. No brand logos on cars or products.
+```
+
+### The investigator
+
+**Who / why this look:** A fictional state-security officer who stands for the whole Stasi hunt. Not a real person, so his face may be shown. Signature: long grey trench coat and thin wire-rimmed glasses.
+
+**Appears in scenes:** 22, 44, 45
+
+**Fixed description** (already pasted into every scene prompt — never change a word):
+
+> The investigator: a fictional East German security officer of about 50, thin and pale with receding grey hair combed back, thin wire-rimmed glasses and thin lips, wearing a grey suit, a white shirt with a narrow grey tie and a long grey trench coat.
+
+**Reference sheet prompt** (generate this first, save the best result):
+
+```text
+Create one widescreen 16:9 character reference sheet.
+Show the same single person four times side by side on a plain light-grey studio background: front view, three-quarter view, side profile and a full-body front view. Neutral expression, relaxed pose, identical face, hair, body and clothing in all four views.
+STYLE: Cinematic semi-realistic digital illustration of East Germany in 1979, muted greys, olive greens and browns by day, cold night blues lit by warm orange burner flames and harsh white searchlights, soft film grain, realistic proportions.
+CHARACTER: The investigator: a fictional East German security officer of about 50, thin and pale with receding grey hair combed back, thin wire-rimmed glasses and thin lips, wearing a grey suit, a white shirt with a narrow grey tie and a long grey trench coat.
+LIGHT: even, soft studio lighting.
+RULES: No text, letters, numbers, labels or arrows. No other people and no background scenery. Modest clothing. The two families are real people: never show their faces — only from behind, as silhouettes, in deep shadow or as hands. No flags, no state emblems or national symbols, no insignia on uniforms, no weapons fired, no blood. No brand logos on cars or products.
+```
+
+## 11 · Semmelweis – Der Arzt, der das Händewaschen erfand
+
+**Main style:** Cinematic semi-realistic digital painting with an oil-painting feel, Vienna in the 1840s, candlelight and grey daylight, deep browns, blacks and creamy whites with muted green accents, soft shadows, realistic proportions.
+
+**Alternative style `modern`** (scenes 04, 25, 43, 44, 45, 46, 47, 49): Clean, bright present-day photo-realistic look, natural light, crisp whites, shallow depth of field.
+
+**Video-specific rules:** Hospital scenes are always dignified: patients fully covered and modestly dressed, women with long sleeves and covered hair. No dead bodies, no wounds, no blood, no medical gore; dissection tables are always covered with a plain white sheet and nothing beneath it is visible. No depiction of the Prophet Muhammad or his companions.
+
+### Ignaz (young doctor)
+
+**Who / why this look:** The hero, a doctor of the 1840s, so he gets a fixed look loosely inspired by old portraits. Signature: dark-green waistcoat and the thick brown ledger with a green ribbon.
+
+**Appears in scenes:** 03, 06, 10, 11, 12, 14, 15, 16, 18, 22, 26, 28, 30, 31, 48
+
+**Fixed description** (already pasted into every scene prompt — never change a word):
+
+> Ignaz: a doctor of about 29, stocky, a round full face with ruddy cheeks, light-blue eyes, receding light-brown hair combed back, light-brown side whiskers and a full moustache, wearing a black frock coat over a dark-green waistcoat, a white shirt with a black cravat, often carrying a thick brown ledger with a green ribbon bookmark.
+
+**Reference sheet prompt** (generate this first, save the best result):
+
+```text
+Create one widescreen 16:9 character reference sheet.
+Show the same single person four times side by side on a plain light-grey studio background: front view, three-quarter view, side profile and a full-body front view. Neutral expression, relaxed pose, identical face, hair, body and clothing in all four views.
+STYLE: Cinematic semi-realistic digital painting with an oil-painting feel, Vienna in the 1840s, candlelight and grey daylight, deep browns, blacks and creamy whites with muted green accents, soft shadows, realistic proportions.
+CHARACTER: Ignaz: a doctor of about 29, stocky, a round full face with ruddy cheeks, light-blue eyes, receding light-brown hair combed back, light-brown side whiskers and a full moustache, wearing a black frock coat over a dark-green waistcoat, a white shirt with a black cravat, often carrying a thick brown ledger with a green ribbon bookmark.
+LIGHT: even, soft studio lighting.
+RULES: No text, letters, numbers, labels or arrows. No other people and no background scenery. Modest clothing. Hospital scenes are always dignified: patients fully covered and modestly dressed, women with long sleeves and covered hair. No dead bodies, no wounds, no blood, no medical gore; dissection tables are always covered with a plain white sheet and nothing beneath it is visible. No depiction of the Prophet Muhammad or his companions.
+```
+
+### Ignaz (older, 1860s)
+
+**Who / why this look:** The same man in his mid-40s, worn out and angry. Same green waistcoat, now crumpled.
+
+**Appears in scenes:** 32, 34, 36
+
+**Fixed description** (already pasted into every scene prompt — never change a word):
+
+> Older Ignaz: the same doctor at about 45, heavier, a bald crown with grey hair at the sides, grey side whiskers and moustache, light-blue eyes with deep tired lines, wearing a crumpled black frock coat over a dark-green waistcoat, a white shirt and a loosened black cravat.
+
+**Reference sheet prompt** (generate this first, save the best result):
+
+```text
+Create one widescreen 16:9 character reference sheet.
+Show the same single person four times side by side on a plain light-grey studio background: front view, three-quarter view, side profile and a full-body front view. Neutral expression, relaxed pose, identical face, hair, body and clothing in all four views.
+STYLE: Cinematic semi-realistic digital painting with an oil-painting feel, Vienna in the 1840s, candlelight and grey daylight, deep browns, blacks and creamy whites with muted green accents, soft shadows, realistic proportions.
+CHARACTER: Older Ignaz: the same doctor at about 45, heavier, a bald crown with grey hair at the sides, grey side whiskers and moustache, light-blue eyes with deep tired lines, wearing a crumpled black frock coat over a dark-green waistcoat, a white shirt and a loosened black cravat.
+LIGHT: even, soft studio lighting.
+RULES: No text, letters, numbers, labels or arrows. No other people and no background scenery. Modest clothing. Hospital scenes are always dignified: patients fully covered and modestly dressed, women with long sleeves and covered hair. No dead bodies, no wounds, no blood, no medical gore; dissection tables are always covered with a plain white sheet and nothing beneath it is visible. No depiction of the Prophet Muhammad or his companions.
+```
+
+### Professor Klein
+
+**Who / why this look:** His boss, who refused to listen. Signature: bald head with bushy white side whiskers and a stern jaw.
+
+**Appears in scenes:** 09, 28
+
+**Fixed description** (already pasted into every scene prompt — never change a word):
+
+> Professor Klein: an elderly Viennese professor of about 60, bald with bushy white side whiskers, small stern grey eyes, a heavy jaw and a disapproving mouth, wearing a long black tailcoat, a high white collar and a black silk cravat.
+
+**Reference sheet prompt** (generate this first, save the best result):
+
+```text
+Create one widescreen 16:9 character reference sheet.
+Show the same single person four times side by side on a plain light-grey studio background: front view, three-quarter view, side profile and a full-body front view. Neutral expression, relaxed pose, identical face, hair, body and clothing in all four views.
+STYLE: Cinematic semi-realistic digital painting with an oil-painting feel, Vienna in the 1840s, candlelight and grey daylight, deep browns, blacks and creamy whites with muted green accents, soft shadows, realistic proportions.
+CHARACTER: Professor Klein: an elderly Viennese professor of about 60, bald with bushy white side whiskers, small stern grey eyes, a heavy jaw and a disapproving mouth, wearing a long black tailcoat, a high white collar and a black silk cravat.
+LIGHT: even, soft studio lighting.
+RULES: No text, letters, numbers, labels or arrows. No other people and no background scenery. Modest clothing. Hospital scenes are always dignified: patients fully covered and modestly dressed, women with long sleeves and covered hair. No dead bodies, no wounds, no blood, no medical gore; dissection tables are always covered with a plain white sheet and nothing beneath it is visible. No depiction of the Prophet Muhammad or his companions.
+```
+
+### Jakob (the friend)
+
+**Who / why this look:** His friend and colleague whose death gave him the answer. Signature: round wire spectacles and a brown frock coat.
+
+**Appears in scenes:** 16
+
+**Fixed description** (already pasted into every scene prompt — never change a word):
+
+> Jakob: a friendly doctor of about 43, slim, dark curly hair, round wire spectacles, clean-shaven, a warm smile, wearing a brown frock coat over a grey-striped waistcoat and a white shirt with a dark cravat.
+
+**Reference sheet prompt** (generate this first, save the best result):
+
+```text
+Create one widescreen 16:9 character reference sheet.
+Show the same single person four times side by side on a plain light-grey studio background: front view, three-quarter view, side profile and a full-body front view. Neutral expression, relaxed pose, identical face, hair, body and clothing in all four views.
+STYLE: Cinematic semi-realistic digital painting with an oil-painting feel, Vienna in the 1840s, candlelight and grey daylight, deep browns, blacks and creamy whites with muted green accents, soft shadows, realistic proportions.
+CHARACTER: Jakob: a friendly doctor of about 43, slim, dark curly hair, round wire spectacles, clean-shaven, a warm smile, wearing a brown frock coat over a grey-striped waistcoat and a white shirt with a dark cravat.
+LIGHT: even, soft studio lighting.
+RULES: No text, letters, numbers, labels or arrows. No other people and no background scenery. Modest clothing. Hospital scenes are always dignified: patients fully covered and modestly dressed, women with long sleeves and covered hair. No dead bodies, no wounds, no blood, no medical gore; dissection tables are always covered with a plain white sheet and nothing beneath it is visible. No depiction of the Prophet Muhammad or his companions.
+```
+
+## 12 · Die Aldi-Entführung – Der reiche Mann, den keiner erkannte
+
+**Main style:** Cinematic semi-realistic digital illustration with a 1970s West German film look, rainy streets and sodium street lamps, muted browns, beiges, greys and olive greens, soft film grain, realistic proportions.
+
+**Alternative style `early`** (scenes 05, 06, 07, 08, 09, 10): Warm sepia-tinted early 20th-century photo look, soft grain, faded edges, realistic proportions.
+
+**Alternative style `modern`** (scenes 38, 39, 40, 44, 46, 47, 48): Clean, bright present-day photo-realistic look, natural light, shallow depth of field.
+
+**Alternative style `map`** (scenes 14, 16): Clean minimalist infographic map illustration, flat muted colors, soft glow, no labels, names or text.
+
+**Video-specific rules:** Everyone in this story is a real person: never show an identifiable face — only from behind, as a silhouette, in deep shadow or as hands. No weapons, no violence. No real store logos or brand names, no readable price tags; shop fronts and products are plain and unbranded.
+
+### Theo
+
+**Who / why this look:** The kidnapped Aldi founder. Real, recent person, so never his face. Signature: plain beige belted raincoat and a plain black briefcase — the look that confused his kidnappers.
+
+**Appears in scenes:** 02, 15, 21, 22, 23
+
+**Fixed description** (already pasted into every scene prompt — never change a word):
+
+> Theo: a modest German businessman of about 49, medium height, slightly stooped, thinning dark-blond hair combed back, always seen from behind, as a silhouette or with his face in deep shadow — never his face; wearing a plain beige belted raincoat over a cheap grey off-the-rack suit, a plain dark tie and black lace-up shoes, carrying a plain black leather briefcase.
+
+**Reference sheet prompt** (generate this first, save the best result):
+
+```text
+Create one widescreen 16:9 character reference sheet.
+Show the same single person four times side by side on a plain light-grey studio background: full-body back view, three-quarter back view, side profile with the face in deep shadow, and a close-up of the hands and sleeves. The face is never visible.
+STYLE: Cinematic semi-realistic digital illustration with a 1970s West German film look, rainy streets and sodium street lamps, muted browns, beiges, greys and olive greens, soft film grain, realistic proportions.
+CHARACTER: Theo: a modest German businessman of about 49, medium height, slightly stooped, thinning dark-blond hair combed back, always seen from behind, as a silhouette or with his face in deep shadow — never his face; wearing a plain beige belted raincoat over a cheap grey off-the-rack suit, a plain dark tie and black lace-up shoes, carrying a plain black leather briefcase.
+LIGHT: even, soft studio lighting.
+RULES: No text, letters, numbers, labels or arrows. No other people and no background scenery. Modest clothing. Everyone in this story is a real person: never show an identifiable face — only from behind, as a silhouette, in deep shadow or as hands. No weapons, no violence. No real store logos or brand names, no readable price tags; shop fronts and products are plain and unbranded.
+```
+
+### Karl
+
+**Who / why this look:** His older brother, head of the southern half. Never his face. Signature: grey felt hat and navy-blue overcoat.
+
+**Appears in scenes:** 15
+
+**Fixed description** (already pasted into every scene prompt — never change a word):
+
+> Karl: a German businessman of about 51, tall and lean with an upright posture, short grey-brown hair, always seen from behind, as a silhouette or with his face in deep shadow — never his face; wearing a grey felt hat, a navy-blue wool overcoat over a dark suit and dark leather gloves.
+
+**Reference sheet prompt** (generate this first, save the best result):
+
+```text
+Create one widescreen 16:9 character reference sheet.
+Show the same single person four times side by side on a plain light-grey studio background: full-body back view, three-quarter back view, side profile with the face in deep shadow, and a close-up of the hands and sleeves. The face is never visible.
+STYLE: Cinematic semi-realistic digital illustration with a 1970s West German film look, rainy streets and sodium street lamps, muted browns, beiges, greys and olive greens, soft film grain, realistic proportions.
+CHARACTER: Karl: a German businessman of about 51, tall and lean with an upright posture, short grey-brown hair, always seen from behind, as a silhouette or with his face in deep shadow — never his face; wearing a grey felt hat, a navy-blue wool overcoat over a dark suit and dark leather gloves.
+LIGHT: even, soft studio lighting.
+RULES: No text, letters, numbers, labels or arrows. No other people and no background scenery. Modest clothing. Everyone in this story is a real person: never show an identifiable face — only from behind, as a silhouette, in deep shadow or as hands. No weapons, no violence. No real store logos or brand names, no readable price tags; shop fronts and products are plain and unbranded.
+```
+
+### Theo (young shopkeeper)
+
+**Who / why this look:** Theo in the late 1940s and 1950s. Signature: beige shop coat (a hint of the later raincoat).
+
+**Appears in scenes:** 09, 10
+
+**Fixed description** (already pasted into every scene prompt — never change a word):
+
+> Young Theo: a thin young German shopkeeper of about 26 with dark-blond hair, always seen from behind or with his face in shadow; wearing a beige cotton shop coat over a white shirt with rolled-up sleeves and dark trousers.
+
+**Reference sheet prompt** (generate this first, save the best result):
+
+```text
+Create one widescreen 16:9 character reference sheet.
+Show the same single person four times side by side on a plain light-grey studio background: full-body back view, three-quarter back view, side profile with the face in deep shadow, and a close-up of the hands and sleeves. The face is never visible.
+STYLE: Cinematic semi-realistic digital illustration with a 1970s West German film look, rainy streets and sodium street lamps, muted browns, beiges, greys and olive greens, soft film grain, realistic proportions.
+CHARACTER: Young Theo: a thin young German shopkeeper of about 26 with dark-blond hair, always seen from behind or with his face in shadow; wearing a beige cotton shop coat over a white shirt with rolled-up sleeves and dark trousers.
+LIGHT: even, soft studio lighting.
+RULES: No text, letters, numbers, labels or arrows. No other people and no background scenery. Modest clothing. Everyone in this story is a real person: never show an identifiable face — only from behind, as a silhouette, in deep shadow or as hands. No weapons, no violence. No real store logos or brand names, no readable price tags; shop fronts and products are plain and unbranded.
+```
+
+### Karl (young shopkeeper)
+
+**Who / why this look:** Karl in the late 1940s and 1950s. Signature: grey shop coat and a dark tie.
+
+**Appears in scenes:** 09, 10
+
+**Fixed description** (already pasted into every scene prompt — never change a word):
+
+> Young Karl: a tall, lean young German shopkeeper of about 28 with short dark-brown hair, always seen from behind or with his face in shadow; wearing a grey cotton shop coat over a white shirt with a dark tie and dark trousers.
+
+**Reference sheet prompt** (generate this first, save the best result):
+
+```text
+Create one widescreen 16:9 character reference sheet.
+Show the same single person four times side by side on a plain light-grey studio background: full-body back view, three-quarter back view, side profile with the face in deep shadow, and a close-up of the hands and sleeves. The face is never visible.
+STYLE: Cinematic semi-realistic digital illustration with a 1970s West German film look, rainy streets and sodium street lamps, muted browns, beiges, greys and olive greens, soft film grain, realistic proportions.
+CHARACTER: Young Karl: a tall, lean young German shopkeeper of about 28 with short dark-brown hair, always seen from behind or with his face in shadow; wearing a grey cotton shop coat over a white shirt with a dark tie and dark trousers.
+LIGHT: even, soft studio lighting.
+RULES: No text, letters, numbers, labels or arrows. No other people and no background scenery. Modest clothing. Everyone in this story is a real person: never show an identifiable face — only from behind, as a silhouette, in deep shadow or as hands. No weapons, no violence. No real store logos or brand names, no readable price tags; shop fronts and products are plain and unbranded.
+```
+
+### Theo (old age)
+
+**Who / why this look:** Theo in his eighties. Same beige raincoat.
+
+**Appears in scenes:** 42
+
+**Fixed description** (already pasted into every scene prompt — never change a word):
+
+> Old Theo: the same modest man in his eighties, slightly stooped, thin white hair, seen only from behind; wearing a plain beige belted raincoat over a grey suit.
+
+**Reference sheet prompt** (generate this first, save the best result):
+
+```text
+Create one widescreen 16:9 character reference sheet.
+Show the same single person four times side by side on a plain light-grey studio background: full-body back view, three-quarter back view, side profile with the face in deep shadow, and a close-up of the hands and sleeves. The face is never visible.
+STYLE: Cinematic semi-realistic digital illustration with a 1970s West German film look, rainy streets and sodium street lamps, muted browns, beiges, greys and olive greens, soft film grain, realistic proportions.
+CHARACTER: Old Theo: the same modest man in his eighties, slightly stooped, thin white hair, seen only from behind; wearing a plain beige belted raincoat over a grey suit.
+LIGHT: even, soft studio lighting.
+RULES: No text, letters, numbers, labels or arrows. No other people and no background scenery. Modest clothing. Everyone in this story is a real person: never show an identifiable face — only from behind, as a silhouette, in deep shadow or as hands. No weapons, no violence. No real store logos or brand names, no readable price tags; shop fronts and products are plain and unbranded.
+```
+
+### Karl (old age)
+
+**Who / why this look:** Karl in his eighties. Same grey felt hat and navy coat.
+
+**Appears in scenes:** 42
+
+**Fixed description** (already pasted into every scene prompt — never change a word):
+
+> Old Karl: the same tall, lean man in his eighties with an upright posture and white hair under a grey felt hat, seen only from behind; wearing a navy-blue wool overcoat.
+
+**Reference sheet prompt** (generate this first, save the best result):
+
+```text
+Create one widescreen 16:9 character reference sheet.
+Show the same single person four times side by side on a plain light-grey studio background: full-body back view, three-quarter back view, side profile with the face in deep shadow, and a close-up of the hands and sleeves. The face is never visible.
+STYLE: Cinematic semi-realistic digital illustration with a 1970s West German film look, rainy streets and sodium street lamps, muted browns, beiges, greys and olive greens, soft film grain, realistic proportions.
+CHARACTER: Old Karl: the same tall, lean man in his eighties with an upright posture and white hair under a grey felt hat, seen only from behind; wearing a navy-blue wool overcoat.
+LIGHT: even, soft studio lighting.
+RULES: No text, letters, numbers, labels or arrows. No other people and no background scenery. Modest clothing. Everyone in this story is a real person: never show an identifiable face — only from behind, as a silhouette, in deep shadow or as hands. No weapons, no violence. No real store logos or brand names, no readable price tags; shop fronts and products are plain and unbranded.
+```
+
+### The lawyer (kidnapper)
+
+**Who / why this look:** The indebted lawyer who planned the kidnapping. Never his face. Signature: camel-colored overcoat and brown leather gloves.
+
+**Appears in scenes:** 01, 19, 20, 21
+
+**Fixed description** (already pasted into every scene prompt — never change a word):
+
+> The lawyer: a well-fed man of about 40 with slicked-back dark hair, always seen from behind, as a silhouette or with his face in deep shadow; wearing a camel-colored double-breasted overcoat over a brown suit and brown leather gloves.
+
+**Reference sheet prompt** (generate this first, save the best result):
+
+```text
+Create one widescreen 16:9 character reference sheet.
+Show the same single person four times side by side on a plain light-grey studio background: full-body back view, three-quarter back view, side profile with the face in deep shadow, and a close-up of the hands and sleeves. The face is never visible.
+STYLE: Cinematic semi-realistic digital illustration with a 1970s West German film look, rainy streets and sodium street lamps, muted browns, beiges, greys and olive greens, soft film grain, realistic proportions.
+CHARACTER: The lawyer: a well-fed man of about 40 with slicked-back dark hair, always seen from behind, as a silhouette or with his face in deep shadow; wearing a camel-colored double-breasted overcoat over a brown suit and brown leather gloves.
+LIGHT: even, soft studio lighting.
+RULES: No text, letters, numbers, labels or arrows. No other people and no background scenery. Modest clothing. Everyone in this story is a real person: never show an identifiable face — only from behind, as a silhouette, in deep shadow or as hands. No weapons, no violence. No real store logos or brand names, no readable price tags; shop fronts and products are plain and unbranded.
+```
+
+### The safecracker (kidnapper)
+
+**Who / why this look:** His accomplice. Never his face. Signature: black leather jacket and dark-grey flat cap.
+
+**Appears in scenes:** 01, 21, 28
+
+**Fixed description** (already pasted into every scene prompt — never change a word):
+
+> The safecracker: a burly man of about 45 with broad shoulders and short-cropped grey hair, always seen from behind, as a silhouette or with his face in deep shadow; wearing a black leather jacket, a dark-grey flat cap and dark trousers.
+
+**Reference sheet prompt** (generate this first, save the best result):
+
+```text
+Create one widescreen 16:9 character reference sheet.
+Show the same single person four times side by side on a plain light-grey studio background: full-body back view, three-quarter back view, side profile with the face in deep shadow, and a close-up of the hands and sleeves. The face is never visible.
+STYLE: Cinematic semi-realistic digital illustration with a 1970s West German film look, rainy streets and sodium street lamps, muted browns, beiges, greys and olive greens, soft film grain, realistic proportions.
+CHARACTER: The safecracker: a burly man of about 45 with broad shoulders and short-cropped grey hair, always seen from behind, as a silhouette or with his face in deep shadow; wearing a black leather jacket, a dark-grey flat cap and dark trousers.
+LIGHT: even, soft studio lighting.
+RULES: No text, letters, numbers, labels or arrows. No other people and no background scenery. Modest clothing. Everyone in this story is a real person: never show an identifiable face — only from behind, as a silhouette, in deep shadow or as hands. No weapons, no violence. No real store logos or brand names, no readable price tags; shop fronts and products are plain and unbranded.
+```
+
+### The bishop
+
+**Who / why this look:** The bishop of Essen who delivered the ransom. Only from behind. Signature: black cassock with purple sash and purple skullcap.
+
+**Appears in scenes:** 26, 27
+
+**Fixed description** (already pasted into every scene prompt — never change a word):
+
+> The bishop: a tall Catholic bishop of about 60 with grey hair, seen only from behind or in deep shadow; wearing a long black cassock with a wide purple sash and a small purple skullcap, without visible jewelry.
+
+**Reference sheet prompt** (generate this first, save the best result):
+
+```text
+Create one widescreen 16:9 character reference sheet.
+Show the same single person four times side by side on a plain light-grey studio background: full-body back view, three-quarter back view, side profile with the face in deep shadow, and a close-up of the hands and sleeves. The face is never visible.
+STYLE: Cinematic semi-realistic digital illustration with a 1970s West German film look, rainy streets and sodium street lamps, muted browns, beiges, greys and olive greens, soft film grain, realistic proportions.
+CHARACTER: The bishop: a tall Catholic bishop of about 60 with grey hair, seen only from behind or in deep shadow; wearing a long black cassock with a wide purple sash and a small purple skullcap, without visible jewelry.
+LIGHT: even, soft studio lighting.
+RULES: No text, letters, numbers, labels or arrows. No other people and no background scenery. Modest clothing. Everyone in this story is a real person: never show an identifiable face — only from behind, as a silhouette, in deep shadow or as hands. No weapons, no violence. No real store logos or brand names, no readable price tags; shop fronts and products are plain and unbranded.
+```
+

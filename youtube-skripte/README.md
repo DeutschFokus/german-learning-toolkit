@@ -1,6 +1,6 @@
 # YouTube-Skripte: Edutainment auf Deutsch (halal, 16:9, nur Bilder)
 
-Eight ready-to-produce scripts for a German faceless edutainment channel. Every one is halal (no riba, gambling, alcohol, music or indecency topics), has about 1,550–1,600 words of narration (10–11 minutes at a documentary pace of ≈150 words/min, still 9.5+ minutes with a fast voice), and is built for an image-only 16:9 video.
+Twelve ready-to-produce scripts for a German faceless edutainment channel. Every one is halal (no riba, gambling, alcohol, music or indecency topics), has about 1,550–1,600 words of narration (10–11 minutes at a documentary pace of ≈150 words/min, still 9.5+ minutes with a fast voice), and is built for an image-only 16:9 video.
 
 | # | Video | Hook (first line) | Why it can pop |
 |---|-------|-------------------|----------------|
@@ -12,11 +12,18 @@ Eight ready-to-produce scripts for a German faceless edutainment channel. Every 
 | 06 | [Deutsche Bahn – Warum die Bahn nie pünktlich ist](06-deutsche-bahn.md) | „Die Schweiz hat eine Regel für Züge aus Deutschland. Sind sie zu spät, dürfen sie oft nicht weiterfahren.“ | Strongest proven German demand of all: Simplicissimus 3.0M, 70 Sekunden Wiki 1.9M (2026). Everyone has a Bahn story = comments |
 | 07 | [Der Döner – Wem gehört Deutschlands Lieblingsessen?](07-doener.md) | „Im April 2024 flog der deutsche Bundespräsident in die Türkei. Mit an Bord: … sechzig Kilo Dönerfleisch.“ | SPIEGEL TV 361k, Terra X 354k. Everyday topic for all Germans, 65 years of the guest-worker agreement in 2026 |
 | 08 | [Die Zuckerlüge – Wie die Industrie die Wissenschaft kaufte](08-zucker-luege.md) | „1967 erschien in einer der angesehensten Medizin-Zeitschriften der Welt eine Arbeit … bezahlt hatte sie die Zuckerindustrie.“ | Health = one of the highest-paying ad niches. Scandal + practical tips. Best published in early January (New Year's resolutions) |
+| 09 | [Ibn al-Haytham – Der Mann, der den Verrückten spielte](09-ibn-al-haytham.md) | „Kairo, im Jahr 1011. Ein Gelehrter steht vor dem unberechenbarsten Herrscher seiner Zeit.“ | Survival thriller + "your phone camera comes from here" twist. Islamic golden age with a German link (Risner, Kepler, Riede). Shared in Muslim communities and by science fans |
+| 10 | [Die Ballonflucht – 28 Minuten bis zur Freiheit](10-ballonflucht.md) | „In der Nacht zum 16. September 1979 steigt über einem Wald in Thüringen etwas in den Himmel, das es eigentlich gar nicht geben dürfte.“ | Pure German story with a ticking clock (the Stasi is closing in). DDR escapes are evergreen in Germany; the 2018 film "Ballon" proved mass interest. Fits 3 October / 9 November |
+| 11 | [Semmelweis – Der Arzt, der das Händewaschen erfand](11-semmelweis.md) | „Wien, im Jahr 1846. In einem der modernsten Krankenhäuser der Welt sterben junge Mütter.“ | Injustice story (hero ends in an asylum) + health niche (high RPM) + something everyone does daily. Fits flu season or 5 May (hand hygiene day) |
+| 12 | [Die Aldi-Entführung – Der reiche Mann, den keiner erkannte](12-aldi-entfuehrung.md) | „Am Abend des 29. November 1971 warten zwei Männer vor einer Firmenzentrale im Ruhrgebiet.“ | True crime + the brand every German knows + business audience (high RPM). The tax twist and Trader Joe's are made for comments and Shorts |
+
+**Batch 3 (09–12) story formula:** one hero, a ticking clock, a mid-video twist and a last chapter that lands in the viewer's own life (phone camera, freedom, washing hands, the supermarket checkout). Use it for new scripts too. More topics with ready hooks: [IDEEN.md](IDEEN.md).
 
 ## Folder layout
 
-- `0X-*.md` — the scripts: narration (quote blocks), numbered scenes with a short image idea, Shorts cut-downs, description, pinned comment.
-- `sprechertext/` — the narration of each video with chapter headings and scene numbers [01], for recording with your own voice.
+- `NN-*.md` — the scripts: narration (quote blocks), numbered scenes with a short image idea, Shorts cut-downs, description, pinned comment.
+- `sprechertext/` — the narration of each video with chapter headings and scene numbers [01], for recording with your own voice. Regenerate after editing a script with `python3 youtube-skripte/sprechertext/export.py`.
+- `IDEEN.md` — backlog of new halal topics with hooks.
 - `bildprompts/` — **full Copilot prompts for every scene**, a character bible and the step-by-step workflow for consistent characters. Start with [bildprompts/README.md](bildprompts/README.md).
 
 ## Production checklist
@@ -35,4 +42,4 @@ Eight ready-to-produce scripts for a German faceless edutainment channel. Every 
 
 **Shorts:** each script lists 3–4 cut-downs. Post 2–3 Shorts in the week after each long video, each ending with „Die ganze Geschichte findest du auf meinem Kanal“ and linking the long video as the related video.
 
-**Upload order (one long video per week):** 01 → 06 → 04 → 05 → 02 → 07 → 03 → 08. Publish 06 around the December timetable change or the holiday travel season and 08 in the first week of January.
+**Upload order (one long video per week):** 01 → 06 → 10 → 04 → 12 → 05 → 09 → 02 → 11 → 07 → 03 → 08. Publish 06 around the December timetable change or the holiday travel season and 08 in the first week of January. If the calendar fits better, move 10 to 3 October or 9 November and 11 to flu season or 5 May.
