@@ -37,12 +37,13 @@ Use the uploaded reference image as the character reference: keep this person's 
 
 ## Figuren, die in mehreren Videos vorkommen
 
-- **Yusuf (moderner Erzähl-Charakter)** – Skript 1 und Skript 10
+- **Yusuf (moderner Erzähl-Charakter)** – Skript 1, Skript 10 und Skript 11
 - **Heinrich Krüger – 1923/24** – Skript 2 und Skript 5
 - **Elisabeth Krüger – 1923** – Skript 2 und Skript 5
 - **Heinrich Krüger – 1913** – Skript 2 und Skript 5
 - **Elisabeth Krüger – 1913 bis 1915** – Skript 2 und Skript 5
 - **Greta und Karl Krüger – 1913** – Skript 2 und Skript 5
+- **Daniel (der Einkäufer)** – Skript 3 und Skript 13
 - **Markus (der Pendler)** – Skript 4 und Skript 9
 
 Diese Figuren verbinden die Videos miteinander. Wer beide Videos sieht, erkennt sie wieder – deshalb ist ihre Beschreibung in allen Skripten exakt gleich.
@@ -1208,4 +1209,387 @@ the Tunis scholar, a fourteenth-century historian in his forties who is always s
 
 ```text
 Create an image in 16:9 widescreen landscape format. A character reference sheet of one single historical figure, shown three times side by side on a plain light-grey studio background: a full-body back view, a full-body side view as a silhouette with the face completely hidden in shadow, and a close-up of the hands and clothing details. The figure: the Tunis scholar, a fourteenth-century historian in his forties who is always shown from behind or with his face hidden in deep shadow (his face is never visible), wearing an elegant black robe with gold trim and a white turban, often writing with a reed pen. Style: cinematic digital painting, dramatic lighting, rich deep colors, highly detailed, atmospheric, epic documentary look. Keep exactly the same face, hair, clothing and colors in all views. No captions, titles, logos or watermarks.
+```
+
+### Skript 11 – Mansa Musa: Der reichste Mensch der Geschichte
+
+**Stil:**
+
+```text
+cinematic digital painting, dramatic lighting, rich deep colors, highly detailed, atmospheric, epic documentary look
+```
+
+**Setup-Nachricht für den Copilot-Chat dieses Videos:**
+
+```text
+In this chat I will ask you to create the images for one video, one by one. Please apply these rules to every image in this chat:
+1. Format: always 16:9 widescreen landscape.
+2. Visual style: cinematic digital painting, dramatic lighting, rich deep colors, highly detailed, atmospheric, epic documentary look.
+3. These recurring characters must look exactly the same every time they appear:
+- Mansa Musa, the king of Mali in the 1320s, a tall, broad-shouldered West African ruler with dark brown skin who is always shown from behind, in silhouette or with his face hidden in deep shadow (his face is never visible), wearing a flowing white robe richly embroidered with gold thread, a high white turban with a thin gold band, heavy gold rings on both hands and a gold-handled walking staff
+- Hassan, a 30-year-old Cairo money changer in 1324 with light-brown skin, a short black beard, dark eyes and a lean build, wearing a blue-and-white striped robe, a small red felt cap and a leather money pouch at his belt, usually sitting behind a polished brass scale at his market stall
+- Yusuf, a 22-year-old man of Turkish heritage who lives in Germany, with warm light-brown skin, short dark-brown wavy hair with a neat side part, a short well-groomed black beard, dark brown eyes, thick straight eyebrows and a slim athletic build, wearing a mustard-yellow hoodie over a plain white T-shirt, dark navy jeans, white sneakers and a slim black wristwatch on his left wrist
+- Hassan in 1336, a 42-year-old Cairo money changer with light-brown skin, a short black beard streaked with grey, dark eyes and a lean build, wearing a blue-and-white striped robe, a small red felt cap and a leather money pouch at his belt, sitting behind a polished brass scale at his market stall
+- Aïssata, a 40-year-old librarian in Timbuktu in 2012 with dark brown skin, a calm, determined face and dark eyes, wearing a long indigo-blue boubou dress with white embroidery, a matching indigo headwrap and small silver earrings
+4. Characters described as never showing their face are always shown from behind, in silhouette or with the face in deep shadow.
+5. No captions, titles, logos or watermarks.
+Please do not create an image yet – just reply "Ready". My image requests follow in the next messages.
+```
+
+#### Mansa Musa – König von Mali
+
+Der König von Mali, der 1324 nach Mekka pilgerte (Skript 11). Aus Respekt und weil niemand weiß, wie er aussah, nie mit Gesicht – nur von hinten, als Silhouette oder im Schatten. Erkennbar an: weißes Gewand mit Goldstickerei, hoher weißer Turban mit Goldband, schwere Goldringe, Stab mit goldenem Griff.
+
+**Kommt vor in:** Thumbnail, Bild 05, Bild 23, Bild 25, Bild 27, Bild 33, Bild 37, Bild 38, Bild 43, Bild 51, Bild 53, Bild 77
+
+**Feste Beschreibung:**
+
+```text
+Mansa Musa, the king of Mali in the 1320s, a tall, broad-shouldered West African ruler with dark brown skin who is always shown from behind, in silhouette or with his face hidden in deep shadow (his face is never visible), wearing a flowing white robe richly embroidered with gold thread, a high white turban with a thin gold band, heavy gold rings on both hands and a gold-handled walking staff
+```
+
+**Referenzblatt-Prompt:**
+
+```text
+Create an image in 16:9 widescreen landscape format. A character reference sheet of one single historical figure, shown three times side by side on a plain light-grey studio background: a full-body back view, a full-body side view as a silhouette with the face completely hidden in shadow, and a close-up of the hands and clothing details. The figure: Mansa Musa, the king of Mali in the 1320s, a tall, broad-shouldered West African ruler with dark brown skin who is always shown from behind, in silhouette or with his face hidden in deep shadow (his face is never visible), wearing a flowing white robe richly embroidered with gold thread, a high white turban with a thin gold band, heavy gold rings on both hands and a gold-handled walking staff. Style: cinematic digital painting, dramatic lighting, rich deep colors, highly detailed, atmospheric, epic documentary look. Keep exactly the same face, hair, clothing and colors in all views. No captions, titles, logos or watermarks.
+```
+
+#### Hassan – Geldwechsler in Kairo, 1324
+
+Erfundener Geldwechsler auf dem Markt von Kairo (Skript 11). Durch seine Augen erleben die Zuschauer, wie das Gold seinen Wert verliert – im Sprechtext wird er als erfunden vorgestellt. Erkennungszeichen: blau-weiß gestreiftes Gewand, rote Filzkappe, Geldbeutel aus Leder, Messingwaage.
+
+**Kommt vor in:** Bild 04, Bild 06, Bild 44, Bild 52
+
+**Feste Beschreibung:**
+
+```text
+Hassan, a 30-year-old Cairo money changer in 1324 with light-brown skin, a short black beard, dark eyes and a lean build, wearing a blue-and-white striped robe, a small red felt cap and a leather money pouch at his belt, usually sitting behind a polished brass scale at his market stall
+```
+
+**Referenzblatt-Prompt:**
+
+```text
+Create an image in 16:9 widescreen landscape format. A character reference sheet of one single person, shown four times side by side on a plain light-grey studio background: front view, three-quarter view, side profile and back view, full body, neutral standing pose, even soft lighting. The person: Hassan, a 30-year-old Cairo money changer in 1324 with light-brown skin, a short black beard, dark eyes and a lean build, wearing a blue-and-white striped robe, a small red felt cap and a leather money pouch at his belt, usually sitting behind a polished brass scale at his market stall. Style: cinematic digital painting, dramatic lighting, rich deep colors, highly detailed, atmospheric, epic documentary look. Keep exactly the same face, hair, clothing and colors in all views. No captions, titles, logos or watermarks.
+```
+
+#### Yusuf (moderner Erzähl-Charakter)
+
+Der moderne Erzähl-Charakter der Islam-Reihe (Skript 1 und 10): ein 22-jähriger Student mit türkischen Wurzeln, der in Deutschland lebt. Er taucht in allen Szenen von heute auf – Handy, Laptop, Hörsaal, Schreibtisch – und gibt den Zuschauern eine feste Bezugsperson. Erkennungszeichen: senfgelber Hoodie, kurzer schwarzer Bart, schwarze Armbanduhr am linken Handgelenk.
+
+**Kommt vor in:** Bild 08, Bild 41, Bild 61, Bild 62, Bild 74, Bild 79
+
+**Feste Beschreibung:**
+
+```text
+Yusuf, a 22-year-old man of Turkish heritage who lives in Germany, with warm light-brown skin, short dark-brown wavy hair with a neat side part, a short well-groomed black beard, dark brown eyes, thick straight eyebrows and a slim athletic build, wearing a mustard-yellow hoodie over a plain white T-shirt, dark navy jeans, white sneakers and a slim black wristwatch on his left wrist
+```
+
+**Referenzblatt-Prompt:**
+
+```text
+Create an image in 16:9 widescreen landscape format. A character reference sheet of one single person, shown four times side by side on a plain light-grey studio background: front view, three-quarter view, side profile and back view, full body, neutral standing pose, even soft lighting. The person: Yusuf, a 22-year-old man of Turkish heritage who lives in Germany, with warm light-brown skin, short dark-brown wavy hair with a neat side part, a short well-groomed black beard, dark brown eyes, thick straight eyebrows and a slim athletic build, wearing a mustard-yellow hoodie over a plain white T-shirt, dark navy jeans, white sneakers and a slim black wristwatch on his left wrist. Style: cinematic digital painting, dramatic lighting, rich deep colors, highly detailed, atmospheric, epic documentary look. Keep exactly the same face, hair, clothing and colors in all views. No captions, titles, logos or watermarks.
+```
+
+#### Hassan – zwölf Jahre später
+
+Derselbe Hassan zwölf Jahre später (Skript 11): graue Strähnen im Bart, sonst dieselbe Kleidung und dieselbe Messingwaage.
+
+**Kommt vor in:** Bild 48
+
+**Feste Beschreibung:**
+
+```text
+Hassan in 1336, a 42-year-old Cairo money changer with light-brown skin, a short black beard streaked with grey, dark eyes and a lean build, wearing a blue-and-white striped robe, a small red felt cap and a leather money pouch at his belt, sitting behind a polished brass scale at his market stall
+```
+
+**Referenzblatt-Prompt:**
+
+```text
+Create an image in 16:9 widescreen landscape format. A character reference sheet of one single person, shown four times side by side on a plain light-grey studio background: front view, three-quarter view, side profile and back view, full body, neutral standing pose, even soft lighting. The person: Hassan in 1336, a 42-year-old Cairo money changer with light-brown skin, a short black beard streaked with grey, dark eyes and a lean build, wearing a blue-and-white striped robe, a small red felt cap and a leather money pouch at his belt, sitting behind a polished brass scale at his market stall. Style: cinematic digital painting, dramatic lighting, rich deep colors, highly detailed, atmospheric, epic documentary look. Keep exactly the same face, hair, clothing and colors in all views. No captions, titles, logos or watermarks.
+```
+
+#### Aïssata – Bibliothekarin in Timbuktu
+
+Erfundene Bibliothekarin (Skript 11), stellvertretend für die echten Bibliothekare und Familien, die 2012 die Handschriften von Timbuktu retteten – im Sprechtext wird das so gesagt. Erkennungszeichen: indigoblaues Gewand mit weißer Stickerei und passendes indigoblaues Kopftuch.
+
+**Kommt vor in:** Bild 68, Bild 69, Bild 72
+
+**Feste Beschreibung:**
+
+```text
+Aïssata, a 40-year-old librarian in Timbuktu in 2012 with dark brown skin, a calm, determined face and dark eyes, wearing a long indigo-blue boubou dress with white embroidery, a matching indigo headwrap and small silver earrings
+```
+
+**Referenzblatt-Prompt:**
+
+```text
+Create an image in 16:9 widescreen landscape format. A character reference sheet of one single person, shown four times side by side on a plain light-grey studio background: front view, three-quarter view, side profile and back view, full body, neutral standing pose, even soft lighting. The person: Aïssata, a 40-year-old librarian in Timbuktu in 2012 with dark brown skin, a calm, determined face and dark eyes, wearing a long indigo-blue boubou dress with white embroidery, a matching indigo headwrap and small silver earrings. Style: cinematic digital painting, dramatic lighting, rich deep colors, highly detailed, atmospheric, epic documentary look. Keep exactly the same face, hair, clothing and colors in all views. No captions, titles, logos or watermarks.
+```
+
+### Skript 12 – Wirecard: 1,9 Milliarden, die es nie gab
+
+**Stil:**
+
+```text
+cinematic photorealistic, moody low-key lighting, cool blue and amber tones, rich detail, thriller documentary style
+```
+
+**Setup-Nachricht für den Copilot-Chat dieses Videos:**
+
+```text
+In this chat I will ask you to create the images for one video, one by one. Please apply these rules to every image in this chat:
+1. Format: always 16:9 widescreen landscape.
+2. Visual style: cinematic photorealistic, moody low-key lighting, cool blue and amber tones, rich detail, thriller documentary style.
+3. These recurring characters must look exactly the same every time they appear:
+- the CEO, a tall man in his fifties who is always shown as a silhouette, from behind or with his face completely in shadow (his face is never visible), with a shaved head, wearing a black turtleneck sweater under a dark grey suit jacket
+- the COO, a slim man in his forties who is always shown as a silhouette, from behind or with his face completely in shadow (his face is never visible), with short slicked-back dark hair, wearing a navy-blue suit with an open-collared white shirt and carrying a black leather briefcase
+- Sophie, a 34-year-old German IT project manager from Munich with light skin, straight shoulder-length platinum-blond hair with a side part, blue-green eyes, thin gold-rimmed round glasses and a slim build, wearing a camel-colored wool blazer over a white turtleneck sweater, dark jeans and a small silver pendant necklace
+- the London reporter, a British investigative journalist in his forties who is always shown from behind or in profile in low light (his face is never clearly visible), with short sandy-brown hair, wearing a dark green waxed jacket over a grey sweater and carrying a worn brown leather notebook
+4. Characters described as never showing their face are always shown from behind, in silhouette or with the face in deep shadow.
+5. No captions, titles, logos or watermarks.
+Please do not create an image yet – just reply "Ready". My image requests follow in the next messages.
+```
+
+#### Der Konzernchef (nur Silhouette)
+
+Der Wirecard-Chef (Skript 12). Weil es um eine echte Person und ein Strafverfahren geht, wird er nie mit Gesicht gezeigt – nur als Silhouette oder von hinten. Erkennbar an: schwarzer Rollkragenpullover unter dunkelgrauem Sakko, kahler Kopf.
+
+**Kommt vor in:** Thumbnail, Bild 13, Bild 19, Bild 38, Bild 52, Bild 68
+
+**Feste Beschreibung:**
+
+```text
+the CEO, a tall man in his fifties who is always shown as a silhouette, from behind or with his face completely in shadow (his face is never visible), with a shaved head, wearing a black turtleneck sweater under a dark grey suit jacket
+```
+
+**Referenzblatt-Prompt:**
+
+```text
+Create an image in 16:9 widescreen landscape format. A character reference sheet of one single historical figure, shown three times side by side on a plain light-grey studio background: a full-body back view, a full-body side view as a silhouette with the face completely hidden in shadow, and a close-up of the hands and clothing details. The figure: the CEO, a tall man in his fifties who is always shown as a silhouette, from behind or with his face completely in shadow (his face is never visible), with a shaved head, wearing a black turtleneck sweater under a dark grey suit jacket. Style: cinematic photorealistic, moody low-key lighting, cool blue and amber tones, rich detail, thriller documentary style. Keep exactly the same face, hair, clothing and colors in all views. No captions, titles, logos or watermarks.
+```
+
+#### Der verschwundene Vorstand (nur Silhouette)
+
+Der Asien-Vorstand, der 2020 verschwand (Skript 12). Echte Person – deshalb nie mit Gesicht. Erkennbar an: marineblauer Anzug, offener weißer Hemdkragen, schwarze Aktentasche, nach hinten gekämmtes dunkles Haar.
+
+**Kommt vor in:** Bild 06, Bild 17, Bild 45, Bild 46, Bild 60, Bild 61
+
+**Feste Beschreibung:**
+
+```text
+the COO, a slim man in his forties who is always shown as a silhouette, from behind or with his face completely in shadow (his face is never visible), with short slicked-back dark hair, wearing a navy-blue suit with an open-collared white shirt and carrying a black leather briefcase
+```
+
+**Referenzblatt-Prompt:**
+
+```text
+Create an image in 16:9 widescreen landscape format. A character reference sheet of one single historical figure, shown three times side by side on a plain light-grey studio background: a full-body back view, a full-body side view as a silhouette with the face completely hidden in shadow, and a close-up of the hands and clothing details. The figure: the COO, a slim man in his forties who is always shown as a silhouette, from behind or with his face completely in shadow (his face is never visible), with short slicked-back dark hair, wearing a navy-blue suit with an open-collared white shirt and carrying a black leather briefcase. Style: cinematic photorealistic, moody low-key lighting, cool blue and amber tones, rich detail, thriller documentary style. Keep exactly the same face, hair, clothing and colors in all views. No captions, titles, logos or watermarks.
+```
+
+#### Sophie (die Kleinanlegerin)
+
+Erfundene Kleinanlegerin aus München (Skript 12). Sie steht für die Zehntausenden, die mit Wirecard-Aktien ihr Erspartes verloren – das wird im Video auch so gesagt. Erkennungszeichen: platinblonder Bob, runde goldene Brille, kamelfarbener Blazer über weißem Rollkragenpullover.
+
+**Kommt vor in:** Bild 08, Bild 22, Bild 23, Bild 24, Bild 25, Bild 43, Bild 58, Bild 82
+
+**Feste Beschreibung:**
+
+```text
+Sophie, a 34-year-old German IT project manager from Munich with light skin, straight shoulder-length platinum-blond hair with a side part, blue-green eyes, thin gold-rimmed round glasses and a slim build, wearing a camel-colored wool blazer over a white turtleneck sweater, dark jeans and a small silver pendant necklace
+```
+
+**Referenzblatt-Prompt:**
+
+```text
+Create an image in 16:9 widescreen landscape format. A character reference sheet of one single person, shown four times side by side on a plain light-grey studio background: front view, three-quarter view, side profile and back view, full body, neutral standing pose, even soft lighting. The person: Sophie, a 34-year-old German IT project manager from Munich with light skin, straight shoulder-length platinum-blond hair with a side part, blue-green eyes, thin gold-rimmed round glasses and a slim build, wearing a camel-colored wool blazer over a white turtleneck sweater, dark jeans and a small silver pendant necklace. Style: cinematic photorealistic, moody low-key lighting, cool blue and amber tones, rich detail, thriller documentary style. Keep exactly the same face, hair, clothing and colors in all views. No captions, titles, logos or watermarks.
+```
+
+#### Der Journalist in London (ohne Gesicht)
+
+Der Journalist der Financial Times, der jahrelang hartnäckig nachfragte (Skript 12). Echte Person – deshalb nur von hinten oder im Halbdunkel. Erkennbar an: dunkelgrüne Wachsjacke, grauer Pullover, abgegriffenes braunes Notizbuch.
+
+**Kommt vor in:** Bild 32, Bild 33, Bild 37, Bild 41, Bild 80
+
+**Feste Beschreibung:**
+
+```text
+the London reporter, a British investigative journalist in his forties who is always shown from behind or in profile in low light (his face is never clearly visible), with short sandy-brown hair, wearing a dark green waxed jacket over a grey sweater and carrying a worn brown leather notebook
+```
+
+**Referenzblatt-Prompt:**
+
+```text
+Create an image in 16:9 widescreen landscape format. A character reference sheet of one single historical figure, shown three times side by side on a plain light-grey studio background: a full-body back view, a full-body side view as a silhouette with the face completely hidden in shadow, and a close-up of the hands and clothing details. The figure: the London reporter, a British investigative journalist in his forties who is always shown from behind or in profile in low light (his face is never clearly visible), with short sandy-brown hair, wearing a dark green waxed jacket over a grey sweater and carrying a worn brown leather notebook. Style: cinematic photorealistic, moody low-key lighting, cool blue and amber tones, rich detail, thriller documentary style. Keep exactly the same face, hair, clothing and colors in all views. No captions, titles, logos or watermarks.
+```
+
+### Skript 13 – Aldi: Die geheimste Familie Deutschlands
+
+**Stil:**
+
+```text
+cinematic photorealistic, warm nostalgic film look, natural light, rich detail, documentary style
+```
+
+**Setup-Nachricht für den Copilot-Chat dieses Videos:**
+
+```text
+In this chat I will ask you to create the images for one video, one by one. Please apply these rules to every image in this chat:
+1. Format: always 16:9 widescreen landscape.
+2. Visual style: cinematic photorealistic, warm nostalgic film look, natural light, rich detail, documentary style.
+3. These recurring characters must look exactly the same every time they appear:
+- the elder brother in 1946, a tall, slim man in his mid-twenties who is always shown from behind or with his face in shadow (his face is never visible), with short dark-blond hair, wearing a grey shopkeeper's apron over a white shirt with rolled-up sleeves and dark trousers
+- the younger brother in 1946, a stocky man in his early twenties who is always shown from behind or with his face in shadow (his face is never visible), with short dark-brown hair, wearing a dark-brown shopkeeper's coat over a white shirt and a thin black tie
+- the younger brother in 1971, a stocky man in his late forties who is always shown from behind or with his face in deep shadow (his face is never visible), with short greying dark hair, wearing a dark charcoal suit, a white shirt, a narrow dark tie and a beige trench coat
+- Daniel, a 38-year-old German office worker with light skin, short dark-blond hair with slightly receding temples, a neatly trimmed short ash-blond beard, blue eyes and a medium build, wearing a navy-blue quilted jacket over a light-grey hoodie, dark jeans and brown leather sneakers, carrying a small olive-green canvas tote bag
+- Anna, a hardworking shopkeeper in her early thirties in 1913 who is always shown from behind or in profile with her face in shadow (her face is never visible), with dark hair pinned up in a bun, wearing a long dark-blue work dress and a white apron
+- the elder brother in 1960, a tall, slim man of forty who is always shown from behind or with his face in shadow (his face is never visible), with short dark-blond hair greying at the temples, wearing a grey-blue three-piece suit
+- the younger brother in 1960, a stocky man of thirty-eight who is always shown from behind or with his face in shadow (his face is never visible), with short dark-brown hair, wearing a dark-brown suit with a thin black tie
+- Helga, a cashier in the 1960s and 1970s in her late twenties with light skin, short curled blond hair, bright blue eyes and a friendly smile, wearing a light-blue work smock with a white collar and a small blank name badge
+4. Characters described as never showing their face are always shown from behind, in silhouette or with the face in deep shadow.
+5. No captions, titles, logos or watermarks.
+Please do not create an image yet – just reply "Ready". My image requests follow in the next messages.
+```
+
+#### Karl Albrecht – 1946
+
+Der ältere Bruder nach dem Krieg (Skript 13). Die Brüder werden bewusst nie von vorne gezeigt – passend zu ihrer berühmten Verschwiegenheit. Erkennbar an: groß und schlank, dunkelblondes Haar, graue Ladenschürze.
+
+**Kommt vor in:** Thumbnail, Bild 09, Bild 24, Bild 32, Bild 35
+
+**Feste Beschreibung:**
+
+```text
+the elder brother in 1946, a tall, slim man in his mid-twenties who is always shown from behind or with his face in shadow (his face is never visible), with short dark-blond hair, wearing a grey shopkeeper's apron over a white shirt with rolled-up sleeves and dark trousers
+```
+
+**Referenzblatt-Prompt:**
+
+```text
+Create an image in 16:9 widescreen landscape format. A character reference sheet of one single historical figure, shown three times side by side on a plain light-grey studio background: a full-body back view, a full-body side view as a silhouette with the face completely hidden in shadow, and a close-up of the hands and clothing details. The figure: the elder brother in 1946, a tall, slim man in his mid-twenties who is always shown from behind or with his face in shadow (his face is never visible), with short dark-blond hair, wearing a grey shopkeeper's apron over a white shirt with rolled-up sleeves and dark trousers. Style: cinematic photorealistic, warm nostalgic film look, natural light, rich detail, documentary style. Keep exactly the same face, hair, clothing and colors in all views. No captions, titles, logos or watermarks.
+```
+
+#### Theo Albrecht – 1946
+
+Der jüngere Bruder nach dem Krieg (Skript 13). Nie von vorne. Erkennbar an: kräftig, dunkelbraunes Haar, dunkelbrauner Ladenkittel, schmale schwarze Krawatte.
+
+**Kommt vor in:** Thumbnail, Bild 09, Bild 24, Bild 32, Bild 35
+
+**Feste Beschreibung:**
+
+```text
+the younger brother in 1946, a stocky man in his early twenties who is always shown from behind or with his face in shadow (his face is never visible), with short dark-brown hair, wearing a dark-brown shopkeeper's coat over a white shirt and a thin black tie
+```
+
+**Referenzblatt-Prompt:**
+
+```text
+Create an image in 16:9 widescreen landscape format. A character reference sheet of one single historical figure, shown three times side by side on a plain light-grey studio background: a full-body back view, a full-body side view as a silhouette with the face completely hidden in shadow, and a close-up of the hands and clothing details. The figure: the younger brother in 1946, a stocky man in his early twenties who is always shown from behind or with his face in shadow (his face is never visible), with short dark-brown hair, wearing a dark-brown shopkeeper's coat over a white shirt and a thin black tie. Style: cinematic photorealistic, warm nostalgic film look, natural light, rich detail, documentary style. Keep exactly the same face, hair, clothing and colors in all views. No captions, titles, logos or watermarks.
+```
+
+#### Theo Albrecht – 1971
+
+Theo in der Nacht der Entführung (Skript 13). Nie von vorne. Erkennbar an: beiger Trenchcoat über anthrazitfarbenem Anzug, ergrautes dunkles Haar.
+
+**Kommt vor in:** Bild 02, Bild 66
+
+**Feste Beschreibung:**
+
+```text
+the younger brother in 1971, a stocky man in his late forties who is always shown from behind or with his face in deep shadow (his face is never visible), with short greying dark hair, wearing a dark charcoal suit, a white shirt, a narrow dark tie and a beige trench coat
+```
+
+**Referenzblatt-Prompt:**
+
+```text
+Create an image in 16:9 widescreen landscape format. A character reference sheet of one single historical figure, shown three times side by side on a plain light-grey studio background: a full-body back view, a full-body side view as a silhouette with the face completely hidden in shadow, and a close-up of the hands and clothing details. The figure: the younger brother in 1971, a stocky man in his late forties who is always shown from behind or with his face in deep shadow (his face is never visible), with short greying dark hair, wearing a dark charcoal suit, a white shirt, a narrow dark tie and a beige trench coat. Style: cinematic photorealistic, warm nostalgic film look, natural light, rich detail, documentary style. Keep exactly the same face, hair, clothing and colors in all views. No captions, titles, logos or watermarks.
+```
+
+#### Daniel (der Einkäufer)
+
+Der Einkäufer aus Skript 3, der nur Milch kaufen wollte. Er führt die Zuschauer durch alle neun Tricks. Erkennungszeichen: dunkelblonde Haare mit leichten Geheimratsecken, kurzer aschblonder Bart, navyblaue Steppjacke, olivgrüner Stoffbeutel.
+
+**Kommt vor in:** Bild 07, Bild 48, Bild 58, Bild 89, Bild 90
+
+**Feste Beschreibung:**
+
+```text
+Daniel, a 38-year-old German office worker with light skin, short dark-blond hair with slightly receding temples, a neatly trimmed short ash-blond beard, blue eyes and a medium build, wearing a navy-blue quilted jacket over a light-grey hoodie, dark jeans and brown leather sneakers, carrying a small olive-green canvas tote bag
+```
+
+**Referenzblatt-Prompt:**
+
+```text
+Create an image in 16:9 widescreen landscape format. A character reference sheet of one single person, shown four times side by side on a plain light-grey studio background: front view, three-quarter view, side profile and back view, full body, neutral standing pose, even soft lighting. The person: Daniel, a 38-year-old German office worker with light skin, short dark-blond hair with slightly receding temples, a neatly trimmed short ash-blond beard, blue eyes and a medium build, wearing a navy-blue quilted jacket over a light-grey hoodie, dark jeans and brown leather sneakers, carrying a small olive-green canvas tote bag. Style: cinematic photorealistic, warm nostalgic film look, natural light, rich detail, documentary style. Keep exactly the same face, hair, clothing and colors in all views. No captions, titles, logos or watermarks.
+```
+
+#### Anna Albrecht – die Mutter, 1913
+
+Die Mutter der Aldi-Gründer, die 1913 den ersten kleinen Laden eröffnete (Skript 13). Echte Person, von der kaum Bilder existieren – deshalb nie mit Gesicht. Erkennbar an: dunkles Haar im Dutt, langes dunkelblaues Arbeitskleid, weiße Schürze.
+
+**Kommt vor in:** Bild 13, Bild 14, Bild 18
+
+**Feste Beschreibung:**
+
+```text
+Anna, a hardworking shopkeeper in her early thirties in 1913 who is always shown from behind or in profile with her face in shadow (her face is never visible), with dark hair pinned up in a bun, wearing a long dark-blue work dress and a white apron
+```
+
+**Referenzblatt-Prompt:**
+
+```text
+Create an image in 16:9 widescreen landscape format. A character reference sheet of one single historical figure, shown three times side by side on a plain light-grey studio background: a full-body back view, a full-body side view as a silhouette with the face completely hidden in shadow, and a close-up of the hands and clothing details. The figure: Anna, a hardworking shopkeeper in her early thirties in 1913 who is always shown from behind or in profile with her face in shadow (her face is never visible), with dark hair pinned up in a bun, wearing a long dark-blue work dress and a white apron. Style: cinematic photorealistic, warm nostalgic film look, natural light, rich detail, documentary style. Keep exactly the same face, hair, clothing and colors in all views. No captions, titles, logos or watermarks.
+```
+
+#### Karl Albrecht – 1960
+
+Karl zur Zeit der Trennung in Nord und Süd (Skript 13). Nie von vorne. Erkennbar an: groß und schlank, graublauer Dreiteiler, Haar an den Schläfen ergraut.
+
+**Kommt vor in:** Bild 36, Bild 38, Bild 39, Bild 41
+
+**Feste Beschreibung:**
+
+```text
+the elder brother in 1960, a tall, slim man of forty who is always shown from behind or with his face in shadow (his face is never visible), with short dark-blond hair greying at the temples, wearing a grey-blue three-piece suit
+```
+
+**Referenzblatt-Prompt:**
+
+```text
+Create an image in 16:9 widescreen landscape format. A character reference sheet of one single historical figure, shown three times side by side on a plain light-grey studio background: a full-body back view, a full-body side view as a silhouette with the face completely hidden in shadow, and a close-up of the hands and clothing details. The figure: the elder brother in 1960, a tall, slim man of forty who is always shown from behind or with his face in shadow (his face is never visible), with short dark-blond hair greying at the temples, wearing a grey-blue three-piece suit. Style: cinematic photorealistic, warm nostalgic film look, natural light, rich detail, documentary style. Keep exactly the same face, hair, clothing and colors in all views. No captions, titles, logos or watermarks.
+```
+
+#### Theo Albrecht – 1960
+
+Theo zur Zeit der Trennung (Skript 13). Nie von vorne. Erkennbar an: kräftig, dunkelbrauner Anzug, schmale schwarze Krawatte.
+
+**Kommt vor in:** Bild 36, Bild 38, Bild 39, Bild 41
+
+**Feste Beschreibung:**
+
+```text
+the younger brother in 1960, a stocky man of thirty-eight who is always shown from behind or with his face in shadow (his face is never visible), with short dark-brown hair, wearing a dark-brown suit with a thin black tie
+```
+
+**Referenzblatt-Prompt:**
+
+```text
+Create an image in 16:9 widescreen landscape format. A character reference sheet of one single historical figure, shown three times side by side on a plain light-grey studio background: a full-body back view, a full-body side view as a silhouette with the face completely hidden in shadow, and a close-up of the hands and clothing details. The figure: the younger brother in 1960, a stocky man of thirty-eight who is always shown from behind or with his face in shadow (his face is never visible), with short dark-brown hair, wearing a dark-brown suit with a thin black tie. Style: cinematic photorealistic, warm nostalgic film look, natural light, rich detail, documentary style. Keep exactly the same face, hair, clothing and colors in all views. No captions, titles, logos or watermarks.
+```
+
+#### Helga (die Kassiererin)
+
+Erfundene Kassiererin (Skript 13) – sie steht für die Tausenden Kassiererinnen, die alle Preise auswendig kannten. Im Sprechtext wird sie so vorgestellt. Erkennungszeichen: kurze blonde Locken, hellblauer Kittel mit weißem Kragen, leeres Namensschild.
+
+**Kommt vor in:** Bild 45, Bild 46, Bild 47, Bild 54
+
+**Feste Beschreibung:**
+
+```text
+Helga, a cashier in the 1960s and 1970s in her late twenties with light skin, short curled blond hair, bright blue eyes and a friendly smile, wearing a light-blue work smock with a white collar and a small blank name badge
+```
+
+**Referenzblatt-Prompt:**
+
+```text
+Create an image in 16:9 widescreen landscape format. A character reference sheet of one single person, shown four times side by side on a plain light-grey studio background: front view, three-quarter view, side profile and back view, full body, neutral standing pose, even soft lighting. The person: Helga, a cashier in the 1960s and 1970s in her late twenties with light skin, short curled blond hair, bright blue eyes and a friendly smile, wearing a light-blue work smock with a white collar and a small blank name badge. Style: cinematic photorealistic, warm nostalgic film look, natural light, rich detail, documentary style. Keep exactly the same face, hair, clothing and colors in all views. No captions, titles, logos or watermarks.
 ```
