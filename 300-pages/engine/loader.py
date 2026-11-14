@@ -58,7 +58,16 @@ class Book:
 
     # -- iteration in book order ------------------------------------------------
     def parts(self) -> Iterator[Union[M.Chapter, M.Station]]:
-        st = self.cfg.series["structure"]
+        cfg = self.cfg
+        if cfg.flex:                                   # all chapters, then one revision unit per chapter
+            for n in range(1, cfg.n_chapters + 1):
+                if n in self.chapters:
+                    yield self.chapters[n]
+            for n in range(1, cfg.n_stations + 1):
+                if n in self.stations:
+                    yield self.stations[n]
+            return
+        st = cfg.structure
         for n in range(1, st["chapters"] + 1):
             if n in self.chapters:
                 yield self.chapters[n]
@@ -102,7 +111,7 @@ def parse_selection(spec: Optional[str]) -> Optional[tuple[set[int], set[int]]]:
     for tok in spec.replace(" ", "").split(","):
         if not tok:
             continue
-        if tok.lower().startswith("z"):
+        if tok.lower().startswith(("z", "w")):
             stations.add(int(tok[1:]))
         elif "-" in tok:
             a, b = tok.split("-")
@@ -126,6 +135,21 @@ def load_book(cfg: Config, selection: Optional[str] = None) -> Book:
     book = Book(cfg, outline)
     sel = parse_selection(selection)
 
+    vfile = cdir / "vocabulary.yaml"                   # one word list for the whole level (optional)
+    if vfile.exists():
+        for i, raw in enumerate(load_yaml(vfile) or []):
+            try:
+                v = M.Vocab.model_validate(raw)
+            except ValidationError as exc:
+                _pydantic_issues(book, vfile, exc)
+                continue
+            if v.id in book.vocab:
+                book.err(f"vocabulary.yaml → '{v.id}'", "duplicate vocabulary id")
+                continue
+            book.vocab[v.id] = v
+            book.vocab_owner[v.id] = "level"
+            _check_vocab(book, v, f"vocabulary.yaml → '{v.id}'")
+
     for path in sorted(cdir.glob("kapitel-*.yaml")):
         n = int(re.search(r"(\d+)", path.stem).group(1))
         if sel and n not in sel[0]:
@@ -138,7 +162,7 @@ def load_book(cfg: Config, selection: Optional[str] = None) -> Book:
         if ch.number != n:
             book.err(path.name, f"file name says chapter {n}, content says {ch.number}")
         book.chapters[ch.number] = ch
-    for path in sorted(cdir.glob("station-*.yaml")):
+    for path in sorted(list(cdir.glob("station-*.yaml")) + list(cdir.glob("wiederholung-*.yaml"))):
         n = int(re.search(r"(\d+)", path.stem).group(1))
         if sel and n not in sel[1]:
             continue
@@ -153,8 +177,8 @@ def load_book(cfg: Config, selection: Optional[str] = None) -> Book:
             if not any(i.where.startswith(f"kapitel-{n:02d}") for i in book.issues):
                 book.err("selection", f"chapter {n} was requested but content/{cfg.level}/kapitel-{n:02d}.yaml does not exist")
         for n in sel[1] - set(book.stations):
-            if not any(i.where.startswith(f"station-{n}") for i in book.issues):
-                book.err("selection", f"station {n} was requested but content/{cfg.level}/station-{n}.yaml does not exist")
+            if not any(i.where.startswith((f"station-{n}", f"wiederholung-{n:02d}")) for i in book.issues):
+                book.err("selection", f"review part {n} was requested but its file does not exist in content/{cfg.level}/")
     validate(book)
     return book
 
@@ -177,12 +201,14 @@ def _strings(obj) -> Iterator[str]:
             yield from _strings(getattr(obj, name))
 
 
-_AUTO_TYPES = (M.TrueFalse, M.MultipleChoice, M.Matching, M.SentenceBuild, M.OddOneOut, M.SortTable)
+_AUTO_TYPES = (M.TrueFalse, M.MultipleChoice, M.Matching, M.OddOneOut, M.SortTable, M.ArticleChoice, M.VocabTranslate, M.VocabMatch)
 
 
 def has_auto_answer(task: M.Task) -> bool:
     for b in task.body:
         if isinstance(b, _AUTO_TYPES):
+            return True
+        if isinstance(b, M.SentenceBuild) and all(it.answer for it in b.items):
             return True
         if isinstance(b, (M.GapText, M.TableFill, M.GrammarBox, M.ReadingText)) and any(_AUTO_MARK.search(s) for s in _strings(b)):
             return True
@@ -204,14 +230,38 @@ def _teile(part) -> list:
     return part.teile
 
 
+def _vocab_ids(obj) -> Iterator[str]:
+    """Vocabulary ids used by the vocabulary blocks inside a task or box."""
+    for b in getattr(obj, "body", []):
+        if isinstance(b, (M.VocabCards, M.ArticleChoice, M.VocabTranslate)):
+            yield from b.items
+        elif isinstance(b, M.VocabMatch):
+            yield from b.left
+
+
+def _check_vocab(book: "Book", v: M.Vocab, where: str) -> None:
+    looks_like_noun = v.pos is None and v.de[:1].isupper() and " " not in v.de.strip()
+    if (v.is_noun or looks_like_noun) and v.pos in (None, "noun"):
+        if not v.article:
+            book.err(where, f"missing article for noun '{v.de}'")
+        if not v.plural:
+            book.err(where, f"missing plural for noun '{v.de}' (use '-', '¨-er', 'Pl.' or 'Sg.')")
+    for lang in book.cfg.langs:
+        if not v.translation(lang).strip():
+            book.err(where, f"missing translation ({lang}) for '{v.de}'")
+    if v.sep and v.sep.replace("|", "") != v.de:
+        book.err(where, f"sep '{v.sep}' does not spell '{v.de}'")
+
+
 def validate(book: Book) -> None:
     cfg = book.cfg
     cast = cfg.series["cast"]
-    seq = [s["id"] for s in cfg.sections if s["id"] != "uebersicht"]
+    seq = [s["id"] for s in cfg.sections if cfg.flex or s["id"] != "uebersicht"]
 
     for part in book.parts():
         key = part.key
-        fname = f"kapitel-{part.number:02d}.yaml" if isinstance(part, M.Chapter) else f"station-{part.number}.yaml"
+        fname = (f"kapitel-{part.number:02d}.yaml" if isinstance(part, M.Chapter) else
+                 f"wiederholung-{part.number:02d}.yaml" if part.kind == "revision" else f"station-{part.number}.yaml")
         if part.level != cfg.level:
             book.err(fname, f"level is '{part.level}' but the file lives in content/{cfg.level}/")
 
@@ -223,27 +273,24 @@ def validate(book: Book) -> None:
                 continue
             book.vocab[v.id] = v
             book.vocab_owner[v.id] = key
-            looks_like_noun = v.pos is None and v.de[:1].isupper() and " " not in v.de.strip()
-            if (v.is_noun or looks_like_noun) and v.pos in (None, "noun"):
-                if not v.article:
-                    book.err(where, f"missing article for noun '{v.de}'")
-                if not v.plural:
-                    book.err(where, f"missing plural for noun '{v.de}' (use '-', '¨-er', 'Pl.' or 'Sg.')")
-            for lang in cfg.langs:
-                if not v.translation(lang).strip():
-                    book.err(where, f"missing translation ({lang}) for '{v.de}'")
-            if v.sep and v.sep.replace("|", "") != v.de:
-                book.err(where, f"sep '{v.sep}' does not spell '{v.de}'")
+            _check_vocab(book, v, where)
 
         # structure ----------------------------------------------------------
         teile = _teile(part)
         for i, t in enumerate(teile, 1):
             if t.nr != i:
                 book.err(f"{fname} → Teil {t.nr}", f"Teile must be numbered 1, 2, 3 …; expected {i}")
+        if not cfg.flex:
+            for t in teile:
+                if t.subtitle is None:
+                    book.err(f"{fname} → Teil {t.nr}", "subtitle is missing")
+            if isinstance(part, M.Chapter) and part.uebersicht is None:
+                book.err(fname, "uebersicht is missing")
         if isinstance(part, M.Chapter):
             order = [t.section for t in teile]
             dedup = [s for i, s in enumerate(order) if i == 0 or s != order[i - 1]]
-            if dedup != seq:
+            in_order = [x for x in seq if x in dedup] == dedup if cfg.flex else dedup == seq
+            if not in_order:
                 book.err(fname, f"sections must come in the order {' → '.join(seq)}; found {' → '.join(dedup)}")
             if len(part.can_do) < 3:
                 book.warn(fname, "fewer than three can-do statements")
@@ -259,22 +306,32 @@ def validate(book: Book) -> None:
         st_transcripts = {t.track: t for t in part.transcripts}
         seen_ids: set[str] = set()
         introduced: set[str] = set()
+        own = {v.id for v in part.vocabulary}
         for t in teile:
             section = getattr(t, "section", "station")
             for b in t.blocks:
                 if isinstance(b, M.PageBreak):
                     continue
                 for w in b.words:
-                    if w not in {v.id for v in part.vocabulary}:
+                    if w not in own and book.vocab_owner.get(w) != "level":
                         book.err(f"{fname} → Teil {t.nr}", f"word '{w}' is not in this file's vocabulary")
                     introduced.add(w)
+                for w in _vocab_ids(b):
+                    if w not in book.vocab:
+                        book.err(f"{fname} → Teil {t.nr}", f"vocabulary block uses '{w}', which is not in the vocabulary")
+                    introduced.add(w)
+                for blk in getattr(b, "body", []):
+                    if isinstance(blk, M.ArticleChoice):
+                        for w in blk.items:
+                            if w in book.vocab and not book.vocab[w].article:
+                                book.err(f"{fname} → Teil {t.nr}", f"article_choice: '{w}' has no article")
                 for sp in _speakers(b):
-                    if sp not in cast:
+                    if sp not in cast and not cfg.flex:      # flex books may use people outside the cast (neutral avatar)
                         book.err(f"{fname} → Teil {t.nr}", f"unknown speaker '{sp}' (not in series.yaml cast)")
                 if isinstance(b, M.Boxed):
                     for n in b.notes:
                         for w in n.words:
-                            if w not in {v.id for v in part.vocabulary}:
+                            if w not in own and book.vocab_owner.get(w) != "level":
                                 book.err(f"{fname} → Teil {t.nr}", f"margin note word '{w}' is not in the vocabulary")
                     continue
                 task: M.Task = b
@@ -287,7 +344,7 @@ def validate(book: Book) -> None:
                 book.tasks[address] = ref
                 for n in task.notes:
                     for w in n.words:
-                        if w not in {v.id for v in part.vocabulary}:
+                        if w not in own and book.vocab_owner.get(w) != "level":
                             book.err(where, f"margin note word '{w}' is not in the vocabulary")
                 # answer
                 if task.answer and address in standalone:
@@ -336,8 +393,8 @@ def validate(book: Book) -> None:
 
     # outline ----------------------------------------------------------------
     nums = [c.number for c in book.outline.chapters]
-    if nums != list(range(1, cfg.series["structure"]["chapters"] + 1)):
-        book.err("book.yaml", f"outline must list chapters 1–{cfg.series['structure']['chapters']} in order")
+    if nums != list(range(1, cfg.n_chapters + 1)):
+        book.err("book.yaml", f"outline must list chapters 1–{cfg.n_chapters} in order")
     for n, ch in book.chapters.items():
         oc = next((c for c in book.outline.chapters if c.number == n), None)
         if oc and oc.title != ch.title:

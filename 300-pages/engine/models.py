@@ -20,8 +20,8 @@ from pydantic import BaseModel, ConfigDict, Field, RootModel, model_validator
 # Filled by the loader from series.yaml before any content is parsed.
 LANGS: list[str] = ["en", "tr"]
 
-Skill = Literal["hoeren", "lesen", "schreiben", "sprechen", "partner", "grammatik"]
-SectionId = Literal["auftakt", "wortschatz", "hauptteil", "vertiefung", "abschlusstest", "rueckblick"]
+Skill = Literal["hoeren", "lesen", "schreiben", "sprechen", "partner", "grammatik", "wortschatz"]
+SectionId = Literal["auftakt", "wortschatz", "hauptteil", "vertiefung", "uebersicht", "abschlusstest", "rueckblick"]
 NoteKind = Literal["tipp", "wort", "landeskunde", "sogehts"]
 
 
@@ -208,6 +208,7 @@ class Image(Strict):
     format: Literal["wide", "square", "tall", "banner", "strip"] = "wide"
     src: Optional[str] = None
     focus: float = 50                         # which part stays visible when the slot crops the picture: 0 = top, 100 = bottom
+    caption: Optional[str] = None             # a German line printed under the picture
     markers: list[Marker] = Field(default_factory=list)
 
 
@@ -246,7 +247,7 @@ class ReadingText(Strict):
 
 class GrammarBox(Strict):
     type: Literal["grammar_box"]
-    title: str
+    title: str = ""                                      # may stay empty when the block heading already names the topic
     head: list[str] = Field(default_factory=list)
     rows: list[list[str]] = Field(default_factory=list)
     first_col_head: bool = False
@@ -333,7 +334,7 @@ class WriteLines(Strict):
 
 class SBItem(Strict):
     given: str
-    answer: str
+    answer: Optional[str] = None      # None = individual answer (the task then needs answer: {open|model})
 
 
 class SentenceBuild(Strict):
@@ -341,6 +342,7 @@ class SentenceBuild(Strict):
     type: Literal["sentence_build"]
     items: list[SBItem]
     example: Optional[SBItem] = None
+    lines: int = 1                    # ruled lines under every item
 
 
 class TableFill(Strict):
@@ -433,6 +435,41 @@ class SelfEval(Strict):
     items: list[Bi]
 
 
+class VocabCards(Strict):
+    """Words of the vocabulary as cards (article colour, plural, translation) or as a compact list."""
+    type: Literal["vocab_cards"]
+    title: Optional[str] = None                 # group label: "Länder und Städte"
+    items: list[str]                            # vocab ids
+    style: Literal["cards", "list"] = "cards"
+
+
+class ArticleChoice(Strict):
+    """der, die or das? One row per noun; the answer is the article of the vocabulary entry."""
+    type: Literal["article_choice"]
+    items: list[str]                            # vocab ids of nouns
+
+
+class VocabTranslate(Strict):
+    """The translation is given, the learner writes the German word (nouns with article)."""
+    type: Literal["vocab_translate"]
+    items: list[str]                            # vocab ids
+
+
+class VocabMatch(Strict):
+    """German words on the left, their translations in another order on the right."""
+    type: Literal["vocab_match"]
+    left: list[str]                             # vocab ids
+    right: list[str]                            # the same ids in the printed order of the right column
+
+    @model_validator(mode="after")
+    def _same_words(self):
+        if sorted(self.left) != sorted(self.right):
+            raise ValueError("vocab_match: left and right must contain the same vocabulary ids")
+        if len(self.left) > 12:
+            raise ValueError("vocab_match: at most 12 pairs")
+        return self
+
+
 class PageBreak(Strict):
     """Editorial page break, like in a manuscript. Rarely needed."""
     type: Literal["page_break"]
@@ -441,7 +478,7 @@ class PageBreak(Strict):
 BodyBlock = Annotated[
     Union[Dialogue, ReadingText, GrammarBox, TypicalMistake, GapText, TrueFalse, MultipleChoice, Matching,
           WriteLines, SentenceBuild, TableFill, OddOneOut, SortTable, Phrases, RoleCards, Bubbles, WordBank,
-          GameGrid, Paragraph, PictureDictionary, SelfEval, Image],
+          GameGrid, Paragraph, PictureDictionary, SelfEval, Image, VocabCards, ArticleChoice, VocabTranslate, VocabMatch],
     Field(discriminator="type")]
 
 
@@ -482,7 +519,8 @@ class Teil(Strict):
     nr: int
     section: SectionId
     title: str
-    subtitle: Loc
+    subtitle: Optional[Loc] = None            # required in fixed books (checked by the loader)
+    new_page: bool = False                    # flex books: start this block on a new page
     blocks: list[TopBlock]
 
 
@@ -524,11 +562,12 @@ class Chapter(Strict):
     subtitle: Loc
     goal: Bi
     can_do: list[CanDo]
-    grammar: list[str]
+    grammar: list[str] = Field(default_factory=list)
+    topics: list[str] = Field(default_factory=list)              # chips on the opener when the book lists themes instead of grammar
     image: Image
-    vocabulary: list[Vocab]
+    vocabulary: list[Vocab] = Field(default_factory=list)        # may be empty when content/<level>/vocabulary.yaml is used
     teile: list[Teil]
-    uebersicht: Uebersicht
+    uebersicht: Optional[Uebersicht] = None                      # fixed books; flex books carry the overview as blocks
     next: Optional[Preview] = None
     answers: list[Answer] = Field(default_factory=list)          # optional stand-alone answers
     transcripts: list[Transcript] = Field(default_factory=list)  # optional stand-alone transcripts
@@ -541,7 +580,8 @@ class Chapter(Strict):
 class StationTeil(Strict):
     nr: int
     title: str
-    subtitle: Loc
+    subtitle: Optional[Loc] = None
+    new_page: bool = False
     kind: Literal["review", "exam"] = "review"
     blocks: list[TopBlock]
 
@@ -554,7 +594,8 @@ class Station(Strict):
     title: str
     subtitle: Loc
     covers: list[int]
-    intro: Bi
+    intro: Optional[Bi] = None
+    kind: Literal["station", "revision"] = "station"     # revision = one unit per chapter at the end of a flex book
     vocabulary: list[Vocab] = Field(default_factory=list)
     teile: list[StationTeil]
     answers: list[Answer] = Field(default_factory=list)
@@ -562,14 +603,14 @@ class Station(Strict):
 
     @property
     def key(self) -> str:
-        return f"Z{self.number}"
+        return f"{'W' if self.kind == 'revision' else 'Z'}{self.number}"
 
 
 class OutlineChapter(Strict):
     number: int
     title: str
     subtitle: Loc
-    grammar: list[str]
+    grammar: list[str] = Field(default_factory=list)
 
 
 class OutlineStation(Strict):
@@ -581,4 +622,4 @@ class Outline(Strict):
     """content/<level>/book.yaml — the plan of the whole book (used for the table of contents)."""
     level: str
     chapters: list[OutlineChapter]
-    stations: list[OutlineStation]
+    stations: list[OutlineStation] = Field(default_factory=list)

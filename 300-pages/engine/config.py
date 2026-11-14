@@ -90,25 +90,64 @@ class Config:
 
     # ── structure ─────────────────────────────────────────────────────────────
     @property
+    def structure(self) -> dict:
+        """The anatomy of this level's book: series.yaml → structure, overridden by levels/<level>.yaml → structure.
+
+        fixed (default)  every section has a page budget; chapters are 24 pages; three review stations.
+        flex             numbered blocks flow inside the sections, only the chapter total is fixed;
+                         one revision unit per chapter follows after the last chapter.
+        """
+        st = dict(self.series["structure"])
+        st.update(self.lv.get("structure") or {})
+        return st
+
+    @property
+    def flex(self) -> bool:
+        return self.structure.get("mode", "fixed") == "flex"
+
+    @property
+    def n_chapters(self) -> int:
+        return int(self.structure["chapters"])
+
+    @property
     def sections(self) -> list[dict]:
-        return self.series["structure"]["sections"]
+        return self.structure["sections"]
 
     def section(self, sid: str) -> dict:
         return next(s for s in self.sections if s["id"] == sid)
 
     @property
     def chapter_pages(self) -> int:
+        if self.flex:
+            return int(self.structure["chapter_pages"])
         return sum(s["pages"] for s in self.sections)
+
+    @property
+    def station_pages(self) -> int:
+        return int(self.structure["revision"]["pages"]) if self.flex else int(self.structure["station_pages"])
+
+    @property
+    def n_stations(self) -> int:
+        return self.n_chapters if self.flex else len(self.structure["stations_after"])
+
+    @property
+    def station_prefix(self) -> str:
+        """Key prefix of review parts: Z2 = Zwischenstation 2, W2 = Wiederholung zu Kapitel 2."""
+        return "W" if self.flex else "Z"
 
     def chapter_start(self, n: int) -> int:
         """Folio of the first page of chapter n (1-based)."""
-        st = self.series["structure"]
+        if self.flex:
+            return 1 + (n - 1) * self.chapter_pages
+        st = self.structure
         stations_before = sum(1 for a in st["stations_after"] if a < n)
         return 1 + (n - 1) * self.chapter_pages + stations_before * st["station_pages"]
 
     def station_start(self, k: int) -> int:
-        """Folio of the first page of review station k (1-based)."""
-        st = self.series["structure"]
+        """Folio of the first page of review station / revision unit k (1-based)."""
+        if self.flex:
+            return 1 + self.n_chapters * self.chapter_pages + (k - 1) * self.station_pages
+        st = self.structure
         after = st["stations_after"][k - 1]
         return 1 + after * self.chapter_pages + (k - 1) * st["station_pages"]
 
@@ -122,8 +161,7 @@ class Config:
 
     @property
     def total_pages(self) -> int:
-        st = self.series["structure"]
-        return st["chapters"] * self.chapter_pages + len(st["stations_after"]) * st["station_pages"]
+        return self.n_chapters * self.chapter_pages + self.n_stations * self.station_pages
 
     # ── colour tokens ─────────────────────────────────────────────────────────
     def level_hue(self, level: str | None = None) -> float:
@@ -133,7 +171,7 @@ class Config:
 
     def chapter_hue(self, k: int, level: str | None = None) -> float:
         spread = self.series["colors"]["chapter"]["spread"]
-        n = self.series["structure"]["chapters"]
+        n = self.n_chapters
         return (self.level_hue(level) + spread - (k - 0.5) * (2 * spread / n)) % 360
 
     def chapter_tokens(self, k: int, level: str | None = None) -> dict[str, str]:
