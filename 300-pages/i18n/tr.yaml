@@ -19,6 +19,8 @@ labels:
   free_sample: Ücretsiz örnek
   sample_note: "Bu ücretsiz bir örnektir. Kitabın tamamında 300 çalışma sayfası vardır: 12 ünite, 3 ara durak, cevap anahtarı, dinleme metinleri ve kelime listesi."
 toc:
+  intro_flex: "On iki bölüm ve her bölüm için bir tekrar ünitesi: tam 300 sayfa {level} Almanca."
+  revision: "Her bölüm için dört sayfa ek alıştırma"
   title: İçindekiler
   intro: "Her biri 24 sayfalık on iki ünite ve dörder sayfalık üç ara durak: tam 300 sayfa {level} Almanca."
   front: Başlamadan önce
@@ -44,6 +46,13 @@ imprint:
   characters: "Bu kitaptaki tüm kişiler ve olaylar kurgusaldır."
   contact: "Soru, düzeltme, öneri? {contact}"
 how:
+  path_flex:
+    auftakt: "Bir resim, hedefin ve bir kontrol listesi. Şimdiden yapabildiklerini işaretle."
+    wortschatz: "Konunun kelimeleri kartlar hâlinde, ardından ilk alıştırmalar."
+    hauptteil: "Diyaloglar, kısa metinler ve bunlar için gereken dil bilgisi."
+    vertiefung: "Daha fazla alıştırma: biçimler, cümleler ve kendi kısa metinlerin."
+    uebersicht: "Kontrol listesi, dil bilgisi, kalıp ifadeler ve bölümün tüm kelimeleri."
+    abschlusstest: "Puanlı kısa bir test. Cevap anahtarından kendini kontrol et."
   title: Bu kitap nasıl çalışır?
   lead: "Her ünite aynı yolu izler; böylece her zaman nerede olduğunu bilirsin. Bu iki sayfaya ayıracağın iki dakika, sonradan sana saatler kazandırır."
   path:
@@ -87,6 +96,7 @@ test:
     - [0, 14, "Acele etme ve üniteyi tekrarla. Bunu başarabilirsin."]
   total: Toplam puanın
 review:
+  lead_flex: "Listeyi yeniden işaretle. Henüz emin değil misin? Sayfa numarası nereye bakacağını gösterir."
   lead: "Listeyi yeniden işaretle ve {page} ile karşılaştır."
   look_again: "Emin değil misin? Tekrar bak:"
 station:
@@ -139,3 +149,11 @@ promo:
   cast_sub: "Sekiz kişi, bir apartman – her ünitede, her seviyede ve videolarda."
   all: Hepsi tek kitapta
   captions: ["Dil bilgisi bir bakışta", "Her ünite için bir test", "Cevap anahtarı", "A–Z kelime listesi"]
+sections:
+  wortschatz: "En önemli kelimeler"
+  hauptteil: "Oku, yaz, tamamla"
+  vertiefung: "Daha fazla alıştırma"
+  uebersicht: "Her şey bir bakışta"
+  abschlusstest: "Ne kadar eminsin?"
+vocab:
+  legend: "Renk artikeli gösterir: mavi = der, kırmızı = die, yeşil = das. Her ismi artikeli ve çoğuluyla birlikte öğren."

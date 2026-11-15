@@ -18,7 +18,7 @@ from . import art
 from . import models as M
 from .config import Config
 from .loader import Book, TaskRef
-from .markup import Inline, NNBSP
+from .markup import Inline, NNBSP, plural_form
 
 _TAGS = re.compile(r"<svg.*?</svg>|<[^>]+>", re.S)
 
@@ -131,9 +131,20 @@ class Renderer:
     def icon(self, name: str, size: str = "5.2mm", title: Optional[str] = None, sw: float = 1.6) -> str:
         return art.icon(name, size, title or name, sw)
 
+    def person(self, key: str) -> str:
+        """Speaker label → cast key (levels/<level>.yaml → cast_map lets a book name map onto a cast member)."""
+        return (self.cfg.lv.get("cast_map") or {}).get(key, key)
+
+    def speaker_name(self, key: str) -> str:
+        k = self.person(key)
+        return self.cast[k]["name"] if k in self.cast else key
+
     def avatar(self, key: str, size: str = "8.6mm") -> str:
         self._n += 1
-        return art.avatar(key, self.cast, size, uid=f"{self._scope}-{self._n}")
+        k = self.person(key)
+        if k not in self.cast:
+            return art.initial_avatar(key, getattr(self, "_tokens", None) or self.cfg.station_tokens(), size)
+        return art.avatar(k, self.cast, size, uid=f"{self._scope}-{self._n}")
 
     def _fid(self, tag: str) -> str:
         self._n += 1
@@ -144,16 +155,16 @@ class Renderer:
         t = target.strip()
         if re.fullmatch(r"p?\d+", t):
             return "p-" + t.lstrip("p")
-        m = re.fullmatch(r"(Z?\d+)\.(\d+)([a-z])", t)
+        m = re.fullmatch(r"([ZW]?\d+)\.(\d+)([a-z])", t)
         if m:
             return f"t-{m.group(1)}-{m.group(2)}-{m.group(3)}"
-        m = re.fullmatch(r"(Z?\d+)\.(\d+)", t)
+        m = re.fullmatch(r"([ZW]?\d+)\.(\d+)", t)
         if m:
             return f"teil-{m.group(1)}-{m.group(2)}"
-        m = re.fullmatch(r"(Z?\d+)\.([a-z]+)", t)
+        m = re.fullmatch(r"([ZW]?\d+)\.([a-z]+)", t)
         if m:
             return f"sec-{m.group(1)}-{m.group(2)}"
-        m = re.fullmatch(r"(Z?\d+)", t)
+        m = re.fullmatch(r"([ZW]?\d+)", t)
         if m:
             return f"k-{m.group(1)}"
         return None
@@ -230,14 +241,14 @@ class Renderer:
 
     def _b_dialogue(self, b: M.Dialogue):
         return self.B.dialogue({"turns": [
-            {"avatar": self.avatar(t.speaker), "name": esc(self.cast[t.speaker]["name"]), "text": self.de(t.text)}
+            {"avatar": self.avatar(t.speaker), "name": esc(self.speaker_name(t.speaker)), "text": self.de(t.text)}
             for t in b.turns]})
 
     def _b_reading_text(self, b: M.ReadingText):
         if b.genre == "chat" or b.turns:
             me = b.turns[1].speaker if len(b.turns) > 1 else None
             other = next((t.speaker for t in b.turns if t.speaker != me), b.turns[0].speaker)
-            return self.B.chat({"contact": esc(self.cast[other]["name"]), "contact_avatar": self.avatar(other, "6.4mm"), "msgs": [
+            return self.B.chat({"contact": esc(self.speaker_name(other)), "contact_avatar": self.avatar(other, "6.4mm"), "msgs": [
                 {"avatar": self.avatar(t.speaker, "7mm"), "text": self.de(t.text), "me": t.speaker == me}
                 for t in b.turns]})
         if b.parts:
@@ -272,7 +283,8 @@ class Renderer:
         v = {"title": self.de(b.title), "label": self.L("grammar"), "icon": self.icon("grammatik", "4.6mm", self.cfg.de("labels.grammar")),
              "head": [self.de(h) for h in b.head], "rows": [[self.de(c) for c in r] for r in b.rows],
              "first_col_head": b.first_col_head, "lines": [self.de(x) for x in b.lines],
-             "note": self.de(b.note) if b.note else "", "rule": self.ex(b.rule) if b.rule else "", "lang": self.cfg.lang}
+             "note": self.de(b.note) if b.note else "", "rule": self.ex(b.rule) if b.rule else "", "lang": self.cfg.lang,
+             "intro": self.ex(b.intro) if b.intro else ""}
         new = self.inline.col.answers[before:]
         if new:
             self._ans.append(self._numbered([(0, a) for _, a in new]))
@@ -310,7 +322,8 @@ class Renderer:
 
     def _b_true_false(self, b: M.TrueFalse):
         t, f = self.cfg.de("labels.true"), self.cfg.de("labels.false")
-        self._ans.append(" &nbsp; ".join(f'<b class="n">{i}</b> {t if it.answer else f}' for i, it in enumerate(b.items, 1)))
+        self._ans.append(" &nbsp; ".join(f'<b class="n">{i}</b> {t if it.answer else f}' + (f' <span class="fx">({self.de(it.fix)})</span>' if it.fix else "")
+                                         for i, it in enumerate(b.items, 1)))
         return self.B.truefalse({"t": t, "f": f, "forms": self.forms,
                                  "items": [{"text": self.de(it.text), "name": self._fid("tf")} for it in b.items]})
 
@@ -330,12 +343,59 @@ class Renderer:
         return self.B.matching({"left": [{"text": self.de(x), "name": self._fid("m")} for x in b.left],
                                 "right": [("ABCDEFGHIJ"[i], self.de(x)) for i, x in enumerate(b.right)], "forms": self.forms})
 
-    def ruled(self, model: str = "", n: int = 1, grow: bool = False) -> str:
-        """A ruled write-in area. `model` (already HTML) is shown in handwriting on the first lines."""
+    # ── vocabulary blocks (words come from the vocabulary, so both editions get their own translations) ──
+    def _plural_full(self, v: M.Vocab) -> str:
+        if not v.is_noun or v.plural_only or v.singular_only or not v.plural:
+            return ""
+        pf = v.plural_form or plural_form(v.de, v.plural)
+        return f"die {pf}" if pf else ""
+
+    def _b_vocab_cards(self, b: M.VocabCards):
+        items = []
+        for wid in b.items:
+            v = self.book.vocab[wid]
+            article, head, suffix = v.notation()
+            tag = self.cfg.de(f"labels.pos.{v.pos}") if v.pos and v.pos != "noun" and self.cfg.de.has(f"labels.pos.{v.pos}") else ""
+            n = len(head) + (len(article) + 1 if article else 0)
+            items.append({"cls": v.gender_class, "article": article, "word": esc(head), "suffix": esc(suffix),
+                          "len": "l3" if n > 21 else "l2" if n > 18 else "l1" if n > 15 else "",
+                          "plural": esc(self._plural_full(v)), "tag": esc(tag), "tr": esc(v.translation(self.cfg.lang)),
+                          "note": "(Pl.)" if v.plural_only else ("(Sg.)" if v.singular_only else "")})
+        return self.B.vcards({"title": self.de(b.title) if b.title else "", "items": items, "style": b.style, "lang": self.cfg.lang,
+                              "pl": esc(self.cfg.de("labels.plural_abbr"))})
+
+    def _b_article_choice(self, b: M.ArticleChoice):
+        vs = [self.book.vocab[w] for w in b.items]
+        self._ans.append(" &nbsp; ".join(f'<b class="n">{i}</b> {v.article}' for i, v in enumerate(vs, 1)))
+        return self.B.artchoice({"forms": self.forms, "two": len(vs) > 6,
+                                 "items": [{"n": i, "word": esc(v.de), "name": self._fid("ac")} for i, v in enumerate(vs, 1)]})
+
+    def _b_vocab_translate(self, b: M.VocabTranslate):
+        vs = [self.book.vocab[w] for w in b.items]
+        full = [f"{v.article} {v.de}" if v.article else v.de for v in vs]
+        self._ans.append(" &nbsp; ".join(f'<b class="n">{i}</b> {esc(x)}' for i, x in enumerate(full, 1)))
+        return self.B.vtranslate({"lang": self.cfg.lang, "two": len(vs) > 6, "forms": self.forms,
+                                  "items": [{"n": i, "tr": esc(v.translation(self.cfg.lang)), "name": self._fid("vt")} for i, v in enumerate(vs, 1)]})
+
+    def _b_vocab_match(self, b: M.VocabMatch):
+        letters = "ABCDEFGHIJKL"
+        ans = [letters[b.right.index(w)] for w in b.left]
+        self._ans.append(" &nbsp; ".join(f'<b class="n">{i}</b> {a}' for i, a in enumerate(ans, 1)))
+        left = []
+        for w in b.left:
+            v = self.book.vocab[w]
+            art_ = f'<span class="{v.gender_class}">{v.article}</span> ' if v.article else ""
+            left.append({"text": art_ + esc(v.de), "name": self._fid("m")})
+        right = [(letters[i], f'<span lang="{self.cfg.lang}">{esc(self.book.vocab[w].translation(self.cfg.lang))}</span>') for i, w in enumerate(b.right)]
+        return self.B.matching({"left": left, "right": right, "forms": self.forms})
+
+    def ruled(self, model: str = "", n: int = 1, grow: bool = False, limit: int = 3) -> str:
+        """A ruled write-in area. `model` (already HTML) is shown in handwriting on the first lines.
+        A growing area may take up to `limit` extra lines when its page has room."""
         wid = f"wl-{self._fid('w')}"
         if grow:
             self._grow_ids.append(wid)
-            self.elastic[wid] = (float(self.cfg.lv["type"]["write_line"]) * self.cfg.bl, 3)
+            self.elastic[wid] = (float(self.cfg.lv["type"]["write_line"]) * self.cfg.bl, limit)
             n += self.grow.get(wid, 0)
         model_rows = 0
         if model:
@@ -349,10 +409,11 @@ class Renderer:
                              "ruled": ruled})
 
     def _b_sentence_build(self, b: M.SentenceBuild):
-        self._ans.append(" &nbsp; ".join(f'<b class="n">{i}</b> {self.de(it.answer)}' for i, it in enumerate(b.items, 1)))
-        ex = {"given": self.de(b.example.given), "ruled": self.ruled(self.de(b.example.answer), 0)} if b.example else None
+        if all(it.answer for it in b.items):
+            self._ans.append(" &nbsp; ".join(f'<b class="n">{i}</b> {self.de(it.answer)}' for i, it in enumerate(b.items, 1)))
+        ex = {"given": self.de(b.example.given), "ruled": self.ruled(self.de(b.example.answer), 0)} if b.example and b.example.answer else None
         return self.B.sentences({"example": ex, "label": "Bsp.",
-                                 "items": [{"given": self.de(it.given), "ruled": self.ruled("", 1)} for it in b.items]})
+                                 "items": [{"given": self.de(it.given), "ruled": self.ruled("", b.lines, b.grow, 1)} for it in b.items]})
 
     def _b_table_fill(self, b: M.TableFill):
         start = len(self.inline.col.answers)
@@ -425,6 +486,7 @@ class Renderer:
         return {"id": iid, "format": fmt + (" nocap" if im.markers else ""), "src": src, "alt": html.escape(alt, quote=True), "style": style, "focus": im.focus,
                 "art": art.placeholder_art(tokens, alt, variant), "icon": self.icon("bild", "4.6mm", self.cfg.de("labels.illustration")),
                 "label": self.L("illustration"), "caption": esc(self.inline.plain(im.description)),
+                "cap": self.de(im.caption) if im.caption else "",
                 "markers": [{"n": m.n, "x": m.x, "y": m.y} for m in im.markers]}
 
     def _b_image(self, b: M.Image):
@@ -543,6 +605,25 @@ class Renderer:
                               "sub": self.ex(teil.subtitle), "lang": self.cfg.lang})
         return Unit(anchor, "teil", str(h), part.key, teil.nr, section, keep_next=True, break_before=True, title=teil.title)
 
+    SECTION_ICONS = {"wortschatz": "wort", "hauptteil": "lesen", "vertiefung": "schreiben", "uebersicht": "grammatik",
+                     "abschlusstest": "check", "rueckblick": "ziel"}
+
+    def section_head(self, part, section: str) -> Unit:
+        """Flex books: the big heading that opens a section on a new page."""
+        name = self.cfg.section(section)["de"]
+        chip = self.icon(self.SECTION_ICONS.get(section, "buch"), "7mm", name)
+        sub = esc(self.cfg.ui(f"sections.{section}")) if self.cfg.ui.has(f"sections.{section}") else ""
+        return self.head_unit(f"sec-{part.key}-{section}", part.key, section, chip, name, sub)
+
+    def block_head(self, part, teil, section: str) -> Optional[Unit]:
+        """Flex books: the small numbered heading of a block. It never ends a page."""
+        if not teil.title:
+            return None
+        anchor = f"teil-{part.key}-{teil.nr}"
+        h = self.B.blk_head({"anchor": anchor, "no": str(teil.nr), "title": self.de(teil.title),
+                             "sub": self.ex(teil.subtitle) if teil.subtitle else "", "lang": self.cfg.lang})
+        return Unit(anchor, "blk", str(h), part.key, teil.nr, section, keep_next=True, break_before=teil.new_page, title=teil.title)
+
     def head_unit(self, uid: str, part_key: str, section: str, chip: str, title: str, sub: str) -> Unit:
         h = self.B.teil_head({"anchor": uid, "no": chip, "title": esc(title), "sub": sub, "lang": self.cfg.lang})
         return Unit(uid, "head", str(h), part_key, 0, section, keep_next=True, break_before=True, title=title)
@@ -589,7 +670,7 @@ class Renderer:
     def next_unit(self, ch: M.Chapter) -> Optional[Unit]:
         if not ch.next:
             return None
-        nmid = self.cfg.chapter_tokens(min(ch.number + 1, self.cfg.series["structure"]["chapters"]))["mid"]
+        nmid = self.cfg.chapter_tokens(min(ch.number + 1, self.cfg.n_chapters))["mid"]
         pts = "".join(f'<li><span lang="de">{self.de(p.de)}</span> <span class="ex" lang="{self.cfg.lang}">{self.ex(p[self.cfg.lang])}</span></li>' for p in ch.next.points)
         uid = f"next-{ch.key}"
         h = (f'<div class="nextc" id="{uid}" style="--nmid:{nmid}"><div><div class="lab" lang="de">{self.L("next_chapter")}</div>'

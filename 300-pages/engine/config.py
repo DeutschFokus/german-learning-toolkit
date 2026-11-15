@@ -116,15 +116,22 @@ class Config:
     def section(self, sid: str) -> dict:
         return next(s for s in self.sections if s["id"] == sid)
 
-    @property
-    def chapter_pages(self) -> int:
+    @staticmethod
+    def _lens(v, n: int) -> list[int]:
+        """A page count for every part: one number for all, or a list with one number per part."""
+        return [int(x) for x in v] if isinstance(v, (list, tuple)) else [int(v)] * n
+
+    def chapter_len(self, n: int) -> int:
+        """Pages of chapter n (opener included)."""
         if self.flex:
-            return int(self.structure["chapter_pages"])
+            return self._lens(self.structure["chapter_pages"], self.n_chapters)[n - 1]
         return sum(s["pages"] for s in self.sections)
 
-    @property
-    def station_pages(self) -> int:
-        return int(self.structure["revision"]["pages"]) if self.flex else int(self.structure["station_pages"])
+    def station_len(self, k: int) -> int:
+        """Pages of review station / revision unit k."""
+        if self.flex:
+            return self._lens(self.structure["revision"]["pages"], self.n_chapters)[k - 1]
+        return int(self.structure["station_pages"])
 
     @property
     def n_stations(self) -> int:
@@ -138,18 +145,18 @@ class Config:
     def chapter_start(self, n: int) -> int:
         """Folio of the first page of chapter n (1-based)."""
         if self.flex:
-            return 1 + (n - 1) * self.chapter_pages
+            return 1 + sum(self.chapter_len(i) for i in range(1, n))
         st = self.structure
         stations_before = sum(1 for a in st["stations_after"] if a < n)
-        return 1 + (n - 1) * self.chapter_pages + stations_before * st["station_pages"]
+        return 1 + (n - 1) * self.chapter_len(1) + stations_before * st["station_pages"]
 
     def station_start(self, k: int) -> int:
         """Folio of the first page of review station / revision unit k (1-based)."""
         if self.flex:
-            return 1 + self.n_chapters * self.chapter_pages + (k - 1) * self.station_pages
+            return 1 + sum(self.chapter_len(i) for i in range(1, self.n_chapters + 1)) + sum(self.station_len(i) for i in range(1, k))
         st = self.structure
         after = st["stations_after"][k - 1]
-        return 1 + after * self.chapter_pages + (k - 1) * st["station_pages"]
+        return 1 + after * self.chapter_len(1) + (k - 1) * st["station_pages"]
 
     def section_start(self, chapter: int, sid: str) -> int:
         folio = self.chapter_start(chapter)
@@ -161,7 +168,8 @@ class Config:
 
     @property
     def total_pages(self) -> int:
-        return self.n_chapters * self.chapter_pages + self.n_stations * self.station_pages
+        return (sum(self.chapter_len(i) for i in range(1, self.n_chapters + 1))
+                + sum(self.station_len(k) for k in range(1, self.n_stations + 1)))
 
     # ── colour tokens ─────────────────────────────────────────────────────────
     def level_hue(self, level: str | None = None) -> float:

@@ -32,8 +32,12 @@
 <div class="teil" id="{{ h.anchor }}"><div><div class="no{{ ' w2' if h.no|length > 1 }}">{{ h.no }}</div></div><div><h2 lang="de">{{ h.title }}</h2><p class="sub" lang="{{ h.lang }}">{{ h.sub }}</p></div></div>
 {% endmacro %}
 
+{% macro blk_head(h) %}
+<div class="blk" id="{{ h.anchor }}"><div><span class="bn{{ ' w2' if h.no|length > 1 }}">{{ h.no }}</span></div><div><h3 lang="de">{{ h.title }}</h3>{% if h.sub %}<span class="bs" lang="{{ h.lang }}">{{ h.sub }}</span>{% endif %}</div></div>
+{% endmacro %}
+
 {% macro station_head(h) %}
-<div class="sthead" id="{{ h.anchor }}"><div class="zn">Z{{ h.no }}</div><div><p class="kap" lang="de">{{ h.kicker }}</p><h1 lang="de">{{ h.title }}</h1><p class="intro" lang="de">{{ h.intro }}</p><p class="sub" lang="{{ h.lang }}">{{ h.sub }}</p></div></div>
+<div class="sthead" id="{{ h.anchor }}"><div class="zn">{{ h.no }}</div><div><p class="kap" lang="de">{{ h.kicker }}</p><h1 lang="de">{{ h.title }}</h1><p class="intro" lang="de">{{ h.intro }}</p><p class="sub" lang="{{ h.lang }}">{{ h.sub }}</p></div></div>
 {% endmacro %}
 
 {# ── margin ──────────────────────────────────────────────────────────────── #}
@@ -71,6 +75,7 @@
 {# ── boxes ───────────────────────────────────────────────────────────────── #}
 {% macro grammar(v) %}
 <div class="gram" lang="de"><div class="gh">{{ v.icon }}<span class="lab">{{ v.label }}</span><span class="tt">{{ v.title }}</span></div>
+{% if v.intro %}<p class="gi" lang="{{ v.lang }}">{{ v.intro }}</p>{% endif %}
 {% if v.rows %}<table>{% if v.head %}<tr>{% for h in v.head %}<th>{{ h }}</th>{% endfor %}</tr>{% endif %}
 {% for r in v.rows %}<tr>{% for c in r %}<td{% if v.first_col_head and loop.first %} class="rh1"{% endif %}>{{ c }}</td>{% endfor %}</tr>{% endfor %}</table>{% endif %}
 {% if v.lines or v.note %}<div class="gl">{% for l in v.lines %}<p>{{ l }}</p>{% endfor %}{% if v.note %}<p class="gn">{{ v.note }}</p>{% endif %}</div>{% endif %}
@@ -112,6 +117,21 @@
 {% macro matching(v) %}
 <div class="match" lang="de"><ol class="ml">{% for it in v.left %}<li><span class="k">{{ loop.index }}</span><span class="tx2">{{ it.text }}</span>{% if v.forms %}<input class="gap mb" type="text" name="{{ it.name }}" aria-label="{{ loop.index }}" style="width:6.4mm">{% else %}<span class="mb"></span>{% endif %}</li>{% endfor %}</ol>
 <ol class="mr">{% for letter, text in v.right %}<li><span class="k"><i>{{ letter }}</i></span><span class="tx2">{{ text }}</span></li>{% endfor %}</ol></div>
+{% endmacro %}
+
+{# ── vocabulary blocks ───────────────────────────────────────────────────── #}
+{% macro vcards(v) %}
+{% if v.title %}<div class="vct lab" lang="de">{{ v.title }}</div>{% endif %}
+{% if v.style == 'list' %}<ul class="vlist" lang="de">{% for it in v.items %}<li><span>{% if it.article %}<span class="{{ it.cls }}">{{ it.article }}</span> {% endif %}<b>{{ it.word }}</b>{{ it.suffix }}</span><em lang="{{ v.lang }}">{{ it.tr }}</em></li>{% endfor %}</ul>
+{% else %}<div class="vcards">{% for it in v.items %}<div class="vc {{ it.cls or 'x' }}"><div class="vw{{ ' ' ~ it.len if it.len }}" lang="de">{% if it.article %}<span class="{{ it.cls }}">{{ it.article }}</span> {% endif %}<b>{{ it.word }}</b>{% if it.note %} <i>{{ it.note }}</i>{% endif %}</div><div class="vp" lang="de">{% if it.plural %}{{ v.pl }} {{ it.plural }}{% elif it.tag %}{{ it.tag }}{% else %}&nbsp;{% endif %}</div><div class="vt" lang="{{ v.lang }}">{{ it.tr }}</div></div>{% endfor %}</div>{% endif %}
+{% endmacro %}
+
+{% macro artchoice(v) %}
+<ol class="artc{{ ' two' if v.two }}" lang="de">{% for it in v.items %}<li><span class="n">{{ it.n }}</span><span class="wd">{{ it.word }}</span><span class="ops">{% for a in ('der', 'die', 'das') %}<span class="op">{{ box(it.name ~ '-' ~ a, a, v.forms) }}<span class="{{ a }}">{{ a }}</span></span>{% endfor %}</span></li>{% endfor %}</ol>
+{% endmacro %}
+
+{% macro vtranslate(v) %}
+<ol class="vtr{{ ' two' if v.two }}">{% for it in v.items %}<li><span class="n">{{ it.n }}</span><span class="tr" lang="{{ v.lang }}">{{ it.tr }}</span>{% if v.forms %}<input class="gap" type="text" name="{{ it.name }}" aria-label="{{ it.n }}">{% else %}<span class="gap"></span>{% endif %}</li>{% endfor %}</ol>
 {% endmacro %}
 
 {% macro lines(v) %}
@@ -157,7 +177,7 @@
 {% endmacro %}
 
 {% macro image(v) %}
-<div class="ph {{ v.format }}" id="{{ v.id }}"{% if v.style %} style="{{ v.style }}"{% endif %}>{% if v.src %}<img src="{{ v.src }}" alt="{{ v.alt }}" style="object-position:50% {{ v.focus }}%">{% else %}{{ v.art }}<div class="ph-cap">{{ v.icon }}<span lang="de"><b>{{ v.label }}</b>{{ v.caption }}</span></div>{% endif %}{% for m in v.markers %}<span class="mk" style="left:{{ m.x }}%;top:{{ m.y }}%">{{ m.n }}</span>{% endfor %}</div>
+<div class="ph {{ v.format }}" id="{{ v.id }}"{% if v.style %} style="{{ v.style }}"{% endif %}>{% if v.src %}<img src="{{ v.src }}" alt="{{ v.alt }}" style="object-position:50% {{ v.focus }}%">{% else %}{{ v.art }}<div class="ph-cap">{{ v.icon }}<span lang="de"><b>{{ v.label }}</b>{{ v.caption }}</span></div>{% endif %}{% for m in v.markers %}<span class="mk" style="left:{{ m.x }}%;top:{{ m.y }}%">{{ m.n }}</span>{% endfor %}</div>{% if v.cap %}<p class="phcapt" lang="de">{{ v.cap }}</p>{% endif %}
 {% endmacro %}
 
 {% macro picdict(v) %}

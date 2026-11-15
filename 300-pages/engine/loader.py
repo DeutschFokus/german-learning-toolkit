@@ -16,7 +16,7 @@ from pydantic import ValidationError
 from . import models as M
 from .config import Config, load_yaml
 
-_TRACK = re.compile(r"^(Z?\d+)\.(\d{2})$")
+_TRACK = re.compile(r"^([ZW]?\d+)\.(\d{2})$")
 _AUTO_MARK = re.compile(r"\[\[.*?\]\]|\{\?[^{}]*\}")
 
 
@@ -240,7 +240,7 @@ def _vocab_ids(obj) -> Iterator[str]:
 
 
 def _check_vocab(book: "Book", v: M.Vocab, where: str) -> None:
-    looks_like_noun = v.pos is None and v.de[:1].isupper() and " " not in v.de.strip()
+    looks_like_noun = v.pos is None and v.de[:1].isupper() and " " not in v.de.strip() and not v.de.rstrip("!?.").endswith(("-",))
     if (v.is_noun or looks_like_noun) and v.pos in (None, "noun"):
         if not v.article:
             book.err(where, f"missing article for noun '{v.de}'")

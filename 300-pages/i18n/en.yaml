@@ -19,6 +19,8 @@ labels:
   free_sample: Free sample
   sample_note: "This is a free sample. The full book has 300 learning pages: 12 chapters, 3 review stations, answer key, transcripts and word list."
 toc:
+  intro_flex: "Twelve chapters and one revision unit for every chapter: exactly 300 pages of {level} German."
+  revision: "Four pages of extra practice for every chapter"
   title: Contents
   intro: "Twelve chapters of 24 pages each and three review stations of four pages: exactly 300 pages of {level} German."
   front: Before you start
@@ -44,6 +46,13 @@ imprint:
   characters: "All people and events in this book are fictional."
   contact: "Questions, corrections, ideas? {contact}"
 how:
+  path_flex:
+    auftakt: "A picture, your goal and a checklist. Tick what you can already do."
+    wortschatz: "The words of the topic as cards, then the first exercises."
+    hauptteil: "Dialogues, short texts and the grammar you need for them."
+    vertiefung: "More practice: forms, sentences and your own short texts."
+    uebersicht: "Checklist, grammar, phrases and all words of the chapter."
+    abschlusstest: "A short test with points. Check yourself in the answer key."
   title: How this book works
   lead: "Every chapter follows the same path, so you always know where you are. Two minutes on this spread will save you hours later."
   path:
@@ -87,6 +96,7 @@ test:
     - [0, 14, "Take your time and repeat the chapter. You can do this."]
   total: Your total
 review:
+  lead_flex: "Tick the list again. Not sure yet? The page number shows where to look."
   lead: "Tick the checklist again – and compare with your ticks on {page}."
   look_again: "Not sure yet? Look again:"
 station:
@@ -140,3 +150,11 @@ promo:
   cast_sub: "Eight people, one house – in every chapter, at every level and in the videos."
   all: Everything in one book
   captions: ["Grammar at a glance", "A test for every chapter", "Answer key", "Word list A–Z"]
+sections:
+  wortschatz: "The most important words"
+  hauptteil: "Read, write, complete"
+  vertiefung: "More practice"
+  uebersicht: "Everything at a glance"
+  abschlusstest: "How sure are you?"
+vocab:
+  legend: "The colour is the article: blue = der, red = die, green = das. Learn every noun with its article and its plural."

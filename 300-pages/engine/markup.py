@@ -183,15 +183,22 @@ class Inline:
     def _gap(self, m: re.Match) -> str:
         answer, _, hint = m.group(1).partition("|")
         answer = html.unescape(answer).strip()
+        lead = ""
+        if "~" in answer:                              # [[F~reund]]: the first letter(s) are printed, the rest is the gap
+            lead, _, rest = answer.partition("~")
+            answer = lead + rest
+        else:
+            rest = answer
         self.col.answers.append((self.col.item, answer))
         self.col.fields += 1
-        width = gap_width_mm(answer)
+        width = gap_width_mm(rest)
         hint_html = f' <span class="hint">({hint.strip()})</span>' if hint.strip() else ""
+        lead_html = f'<span class="glead">{html.escape(lead)}</span>' if lead else ""
         if self.forms:
             name = f"{self.scope}-g{self.col.fields}"
-            return (f'<input class="gap" type="text" name="{name}" aria-label="{name}" '
+            return (f'{lead_html}<input class="gap{" ld" if lead else ""}" type="text" name="{name}" aria-label="{name}" '
                     f'style="width:{width}mm">{hint_html}')
-        return f'<span class="gap" style="width:{width}mm"></span>{hint_html}'
+        return f'{lead_html}<span class="gap{" ld" if lead else ""}" style="width:{width}mm"></span>{hint_html}'
 
     def _choice(self, m: re.Match) -> str:
         opts = [o.strip() for o in m.group(1).split("|")]

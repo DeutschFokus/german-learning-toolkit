@@ -77,6 +77,75 @@ def paginate(units: list[Unit], cap: float, bl: float, gap: float = 1.0) -> list
     return pages
 
 
+def paginate_fit(units: list[Unit], cap: float, bl: float, pages: int, elastic: dict[str, tuple[float, int]],
+                 gap: float = 1.0, max_gap_steps: int = 2) -> tuple[Optional[list[FlowPage]], int]:
+    """Break `units` into exactly `pages` pages – the way a typesetter would for a chapter with a fixed length.
+
+    Of all the ways to do it, the one is chosen where the spare room is spread best: first it goes to
+    elements that can grow (write-in lines, pictures), then to the gaps, and whatever is left counts
+    heavily. The same rules as in paginate() hold: a heading never ends a page, units with
+    break_before start one. Returns (pages, minimum number of pages); pages is None if the units do
+    not fit into the wanted number of pages or cannot be spread over that many.
+    """
+    half = bl / 2
+    n = len(units)
+    inf = float("inf")
+    cand: list[list[tuple[int, float, float]]] = [[] for _ in range(n)]   # start → [(end, used, growth capacity)]
+    for i in range(n):
+        y, cap_grow = 0.0, 0.0
+        for j in range(i, n):
+            u = units[j]
+            if j > i and u.break_before:
+                break
+            used = _snap(y, half) + u.height
+            if used > cap + 0.6 and j > i:
+                break
+            cap_grow += sum(elastic[g][0] * elastic[g][1] for g in u.grow_ids if g in elastic)
+            y = used + gap * bl
+            if not (u.keep_next and j + 1 < n and not units[j + 1].break_before):
+                cand[i].append((j + 1, used, cap_grow))
+            if used > cap + 0.6:
+                break                                  # a single unit that is taller than the page stays alone
+
+    def cost(i: int, j: int, used: float, cap_grow: float) -> float:
+        left = max(0.0, cap - used)
+        rest = max(0.0, left - cap_grow)                                   # elastic elements cannot take this
+        rest2 = max(0.0, rest - (j - i - 1) * max_gap_steps * half)        # … and opening the gaps cannot either
+        c = (left / cap) ** 2 + 6 * (rest / cap) ** 2 + 40 * (rest2 / cap) ** 2
+        return c * (0.4 if j == n or units[j].break_before else 1.0)        # a section may end short
+
+    best = [[inf] * (n + 1) for _ in range(pages + 1)]
+    prev = [[-1] * (n + 1) for _ in range(pages + 1)]
+    best[0][0] = 0.0
+    for p in range(1, pages + 1):
+        for i in range(n):
+            b0 = best[p - 1][i]
+            if b0 == inf:
+                continue
+            for j, used, cap_grow in cand[i]:
+                c = b0 + cost(i, j, used, cap_grow)
+                if c < best[p][j]:
+                    best[p][j], prev[p][j] = c, i
+    minimum = len(paginate(units, cap, bl, gap))
+    if n == 0 or best[pages][n] == inf:
+        return None, minimum
+    cuts = [n]
+    for p in range(pages, 0, -1):
+        cuts.append(prev[p][cuts[-1]])
+    cuts.reverse()
+    out: list[FlowPage] = []
+    for a, b in zip(cuts, cuts[1:]):
+        fp, y = FlowPage(), 0.0
+        for u in units[a:b]:
+            top = _snap(y, half)
+            fp.placed.append(Placed(u, top))
+            y = top + u.height + gap * bl
+        _finish(fp, cap)
+        fp.natural = fp.used
+        out.append(fp)
+    return out, minimum
+
+
 def _finish(p: FlowPage, cap: float) -> None:
     last = p.placed[-1]
     p.used = last.top + last.unit.height
@@ -121,11 +190,18 @@ def justify(p: FlowPage, cap: float, bl: float, elastic: dict[str, tuple[float, 
     steps = int((p.leftover + 0.3) // half)
     if gaps <= 0 or steps <= 0:
         return
-    if steps > gaps * max_gap_steps:
+    room = [max_gap_steps * (2 if pl.unit.kind in ("blk", "teil", "head") else 1) for pl in p.placed[1:]]
+    if steps > sum(room):
         return                                    # cannot fill the page: keep natural spacing
-    extra = [steps // gaps] * gaps
-    for j in range(steps - sum(extra)):
-        extra[gaps - 1 - j] += 1                  # remainder goes to the lower gaps
+    extra = [0] * gaps
+    todo = steps
+    while todo > 0:                               # one half-line at a time, bottom-up, headings first
+        order = sorted(range(gaps), key=lambda g: (extra[g] / room[g], -g))
+        for g in order:
+            if todo and extra[g] < room[g]:
+                extra[g] += 1
+                todo -= 1
+                break
     shift = 0.0
     for idx, pl in enumerate(p.placed):
         if idx > 0:

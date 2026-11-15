@@ -47,7 +47,7 @@
 <div class="grp" lang="de">{{ t.chapters_label }}</div>
 {% for r in t.rows %}
 {% if r.kind == 'chapter' %}<div class="row{{ ' off' if not r.built }}" style="--cm:{{ r.color }}"><span class="no">{{ r.no }}</span><span class="ti">{{ r.link }}<span lang="{{ t.lang }}">{{ r.sub }}</span></span><span class="gr" lang="de">{{ r.grammar }}</span><span class="pg">{{ r.page }}</span></div>
-{% else %}<div class="row zs{{ ' off' if not r.built }}"><span class="no">Z{{ r.no }}</span><span class="ti">{{ r.link }}<span lang="{{ t.lang }}">{{ r.sub }}</span></span><span class="gr"></span><span class="pg">{{ r.page }}</span></div>
+{% else %}<div class="row zs{{ ' off' if not r.built }}"><span class="no">{{ r.no if r.no is string else 'Z' ~ r.no }}</span><span class="ti">{{ r.link }}<span lang="{{ t.lang }}">{{ r.sub }}</span></span><span class="gr"></span><span class="pg">{{ r.page }}</span></div>
 {% endif %}
 {% endfor %}
 <div class="grp" lang="{{ t.lang }}">{{ t.appendix }}</div>
@@ -110,7 +110,7 @@
 {% else %}
 {{ o.image }}
 <div class="tab" style="top:{{ o.tab_top }}mm">{{ o.no }}</div>
-<div class="num{{ ' w2' if o.no|length > 1 }}">{{ o.no }}</div><div class="kap" lang="de">{{ o.kicker }}</div><h1 lang="de"{% if o.long %} class="long"{% endif %} id="{{ o.anchor }}">{{ o.title }}</h1><p class="sub" lang="{{ o.lang }}">{{ o.sub }}</p>
+<div class="num{{ ' w2' if o.no|length > 1 }}">{{ o.no }}</div><div class="kap" lang="de">{{ o.kicker }}</div><h1 lang="de"{% if o.long %} class="long"{% endif %} id="{{ o.anchor }}">{{ o.title }}</h1>{% if o.sub_de %}<p class="sub sde" lang="de">{{ o.sub_de }}</p><p class="sub s2" lang="{{ o.lang }}">{{ o.sub }}</p>{% else %}<p class="sub" lang="{{ o.lang }}">{{ o.sub }}</p>{% endif %}
 <div class="opgrid">
 <div><div class="lab" lang="de">{{ o.goal_icon }}{{ o.goal_label }}</div>{{ o.goalbox }}{{ o.cando }}</div>
 <div><div class="lab" lang="de">{{ o.toc_label }}</div><ul class="toc5" lang="de">{{ o.toc }}</ul><div class="lab" lang="de" style="margin-top:calc(var(--bl)*.5)">{{ o.gram_icon }}{{ o.gram_label }}</div><div class="tags" lang="de">{% for g in o.grammar %}<span>{{ g }}</span>{% endfor %}</div></div>

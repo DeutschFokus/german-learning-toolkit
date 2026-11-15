@@ -7,6 +7,9 @@ line_abbr: "Z."
 series_name: "300 Seiten Deutsch"
 labels:
   words_on_page: Wörter auf dieser Seite
+  topics: Themen
+  plural_abbr: Pl.
+  pos: {verb: Verb, adj: Adjektiv, adv: Adverb}
   goal: Dein Ziel
   can_do_start: "Das kann ich …"
   can_do_end: "Das kann ich jetzt …"

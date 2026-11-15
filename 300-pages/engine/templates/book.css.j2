@@ -562,6 +562,55 @@ mark{mix-blend-mode:multiply}
 .castg{gap:calc(var(--bl)*1.75) 8mm}
 .sthead .intro{font-weight:600;line-height:var(--bl)}
 
+/* ── books with flowing blocks (levels/<level>.yaml → structure.mode: flex) ─ */
+.blk{display:grid}
+.recto .blk,.m .blk{grid-template-columns:var(--label) var(--content);margin-right:calc(var(--gap) + var(--mcol))}
+.verso .blk{grid-template-columns:var(--label) var(--content);margin-left:calc(var(--gap) + var(--mcol))}
+.blk .bn{display:block;width:7.4mm;height:7.4mm;margin-top:calc((var(--bl)*1.5 - 7.4mm)/2);border-radius:50%;background:var(--mid);font-family:"DF Fraunces";font-weight:800;font-size:11.5pt;line-height:7.4mm;text-align:center;color:var(--ink)}
+.blk .bn.w2{font-size:10pt;letter-spacing:-.03em}
+.blk h3{font-family:"DF Fraunces","DF Sans";font-weight:700;font-size:15pt;line-height:calc(var(--bl)*1.5);letter-spacing:-.008em}
+.blk .bs{display:block;font-style:italic;font-size:var(--fs-ex);color:var(--mute);line-height:var(--bl)}
+.sthead.rv .zn{background:var(--mid);color:var(--ink)}
+.tab.rv{background:#fff;color:var(--deep);box-shadow:inset 0 0 0 .8pt var(--mid)}
+.gram .gi{margin-bottom:calc(var(--bl)*.5)} .gram .gi b,.gram .gi .dw{font-weight:700}
+.gram .gh+.gl{margin-top:0;border-top:0;padding-top:0}
+.ak .fx{color:var(--mute)}
+.glead{font-weight:600} .gap.ld{margin-left:.2mm}
+.rvlead{font-style:italic;font-size:var(--fs-ex);color:var(--mute);margin-bottom:calc(var(--bl)*.5)}
+/* vocabulary cards: the coloured edge is the article */
+.vct{display:block;margin-bottom:calc(var(--bl)*.25)}
+.vcards{display:grid;grid-template-columns:repeat(3,1fr);gap:calc(var(--bl)*.5) 2.4mm}
+.vc{position:relative;background:#fff;border-radius:1.6mm;padding:calc(var(--bl)*.25) 2.2mm calc(var(--bl)*.25) 3.6mm;overflow:hidden;box-shadow:inset 0 0 0 .5pt var(--rule)}
+.vc::before{content:"";position:absolute;left:0;top:0;bottom:0;width:1.5mm;background:var(--rule)}
+.vc.der::before{background:var(--der)} .vc.die::before{background:var(--die)} .vc.das::before{background:var(--das)} .vc.pl::before{background:var(--pl)}
+.vc .vw{line-height:var(--bl);white-space:nowrap} .vc .vw b{font-weight:700} .vc .vw i{font-style:normal;font-size:var(--fs-ex);color:var(--mute)}
+.vc .vw.l1{font-size:calc(var(--fs) - 1.2pt)} .vc .vw.l2{font-size:calc(var(--fs) - 2.4pt)} .vc .vw.l3{font-size:calc(var(--fs) - 3.4pt);letter-spacing:-.01em}
+.vc .vp{font-size:calc(var(--fs-ex) - .8pt);line-height:calc(var(--bl)*.75);color:var(--mute);font-style:italic;white-space:nowrap}
+.vc .vt{font-size:var(--fs-ex);line-height:calc(var(--bl)*.75);margin-top:calc(var(--bl)*.25);border-top:.5pt solid var(--line);padding-top:calc(var(--bl)*.25 - .5pt);color:var(--ink)}
+.vlist{display:grid;grid-template-columns:1fr 1fr;column-gap:7mm;font-size:var(--fs-ex)}
+.vlist li{display:flex;justify-content:space-between;align-items:baseline;border-top:.5pt solid var(--line);padding:calc(var(--bl)*.125 - .5pt) 0 calc(var(--bl)*.125);line-height:calc(var(--bl)*.75)}
+.vlist li>span{white-space:nowrap} .vlist em{font-style:italic;color:var(--mute);text-align:right;padding-left:2mm}
+/* der, die or das? */
+.artc li{display:flex;align-items:center;border-top:.5pt solid var(--line);height:calc(var(--bl)*1.5);box-sizing:border-box}
+.artc .n{flex:none;width:6mm;font-weight:700;color:var(--deep)} .artc .wd{flex:1;font-weight:600}
+.artc .ops{flex:none;white-space:nowrap;font-size:0} .artc .op{display:inline-block;margin-left:4.4mm;font-size:var(--fs);font-weight:600}
+.artc .op .box{margin-right:1.2mm}
+.artc.two{display:grid;grid-template-columns:1fr 1fr;column-gap:8mm}
+/* translation → German word */
+.vtr li{display:flex;align-items:flex-end;height:calc(var(--bl)*1.5);box-sizing:border-box;padding-bottom:calc(var(--bl)*.25)}
+.vtr .n{flex:none;width:6mm;font-weight:700;color:var(--deep);line-height:var(--bl)} .vtr .tr{flex:none;font-style:italic;color:var(--mute);padding-right:2.4mm;line-height:var(--bl)}
+.vtr .gap{flex:1;margin:0;width:auto}
+.vtr.two{display:grid;grid-template-columns:1fr 1fr;column-gap:8mm}
+.match .tx2 .der,.match .tx2 .die,.match .tx2 .das{font-weight:600}
+/* opener without a warm-up task: the picture takes the room */
+.op-buehne .sub.sde{font-style:normal;font-weight:600;color:var(--ink)}
+.op-buehne .sub.s2{top:133.6mm;font-size:10pt}
+.op-tall.op-buehne .ph{height:136mm}
+.op-tall.op-buehne .num{top:81mm} .op-tall.op-buehne .num.w2{top:92mm}
+.op-tall.op-buehne .kap{top:140mm} .op-tall.op-buehne h1{top:144mm} .op-tall.op-buehne h1.long{top:149mm}
+.op-tall.op-buehne .sub{top:167.5mm} .op-tall.op-buehne .sub.s2{top:173.6mm}
+.op-tall .opgrid{top:calc({{ pg.top }}mm + var(--bl)*28.5)}
+
 /* ── baseline grid ─────────────────────────────────────────────────────────
    Every block starts on a multiple of half a baseline (the paginator sees to that). Inside a block:
    · small inline labels, hints and tick circles never make a line taller than the baseline;

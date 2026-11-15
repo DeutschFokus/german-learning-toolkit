@@ -82,7 +82,7 @@ class Vocab(Strict):
     type: Literal["vocab"] = "vocab"
     id: str
     de: str
-    pos: Optional[Literal["noun", "verb", "adj", "adv", "phrase", "other"]] = None
+    pos: Optional[Literal["noun", "verb", "adj", "adv", "phrase", "name", "other"]] = None   # name = country, city, person
     article: Optional[Literal["der", "die", "das"]] = None
     plural: Optional[str] = None
     plural_form: Optional[str] = None          # only if the plural cannot be derived from the notation
@@ -252,6 +252,7 @@ class GrammarBox(Strict):
     rows: list[list[str]] = Field(default_factory=list)
     first_col_head: bool = False
     lines: list[str] = Field(default_factory=list)       # example sentences below the table
+    intro: Optional[Loc] = None                          # the explanation, printed above table and examples
     rule: Optional[Loc] = None
     note: Optional[str] = None                           # extra German line (e.g. in + dem = im)
 
@@ -282,6 +283,7 @@ class GapText(Strict):
 class TFItem(Strict):
     text: str
     answer: bool
+    fix: Optional[str] = None                 # the correct statement, printed in the key next to a wrong one
 
 
 class TrueFalse(Strict):
@@ -343,6 +345,7 @@ class SentenceBuild(Strict):
     items: list[SBItem]
     example: Optional[SBItem] = None
     lines: int = 1                    # ruled lines under every item
+    grow: bool = False                # the ruled lines may take one more line each if the page has room
 
 
 class TableFill(Strict):
@@ -560,6 +563,7 @@ class Chapter(Strict):
     number: int
     title: str
     subtitle: Loc
+    subtitle_de: Optional[str] = None                            # a German subtitle; `subtitle` is then printed as its translation
     goal: Bi
     can_do: list[CanDo]
     grammar: list[str] = Field(default_factory=list)

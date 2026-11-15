@@ -17,7 +17,7 @@ from typing import Optional
 from . import art
 from . import models as M
 from .config import MM, Config
-from .layout import ColUnit, FlowPage, Placed, flow_columns, justify, measure, paginate
+from .layout import ColUnit, FlowPage, Placed, flow_columns, justify, measure, paginate, paginate_fit
 from .loader import Book
 from .markup import NNBSP, german_sort_key, plural_form
 from .render import Macros, Renderer, Unit, esc, strip_tags
@@ -36,7 +36,7 @@ def stylesheet(cfg: Config, env, print_: bool = False) -> str:
     fdir = cfg.root / cfg.series["fonts"]["dir"]
     fonts = [{"family": f["family"], "url": (fdir / f["file"]).as_uri(), "weight": f["weight"], "style": f.get("style", "normal")}
              for f in cfg.series["fonts"]["faces"]]
-    palettes = {f"c{k}": cfg.chapter_tokens(k) for k in range(1, cfg.series["structure"]["chapters"] + 1)}
+    palettes = {f"c{k}": cfg.chapter_tokens(k) for k in range(1, cfg.n_chapters + 1)}
     palettes["cz"] = cfg.station_tokens()
     lt = cfg.level_tokens()
     h = cfg.level_hue()
@@ -129,6 +129,7 @@ class Builder:
         self.measured = 0
         self.load_cache()
         self.goal_pad: dict[str, float] = {}           # chapter key → pt that round the goal box up to the grid
+        self.sec_pages: dict[str, dict[str, int]] = {}  # chapter key → pages of each section (flex books)
 
     # ── stylesheet ───────────────────────────────────────────────────────────
     def _css(self) -> str:
@@ -192,7 +193,12 @@ class Builder:
     def palette(self, part) -> tuple[str, dict]:
         if isinstance(part, M.Chapter):
             return f"c{part.number}", self.cfg.chapter_tokens(part.number)
+        if part.kind == "revision":
+            return f"c{part.covers[0]}", self.cfg.chapter_tokens(part.covers[0])
         return "cz", self.cfg.station_tokens()
+
+    def part_len(self, part) -> int:
+        return self.cfg.chapter_len(part.number) if isinstance(part, M.Chapter) else self.cfg.station_len(part.number)
 
     def part_start(self, part) -> int:
         return self.cfg.chapter_start(part.number) if isinstance(part, M.Chapter) else self.cfg.station_start(part.number)
@@ -207,12 +213,24 @@ class Builder:
         pal, tokens = self.palette(part)
         opener_units: list[Unit] = []
         flow: list[Unit] = []
+        if isinstance(part, M.Station) and part.kind == "revision":
+            n = part.covers[0]
+            h = r.B.station_head({"anchor": f"k-{part.key}", "no": str(n), "kicker": esc(cfg.de("labels.review")),
+                                  "title": f'{cfg.de("chapter")} {n} · {r.de(part.title)}', "intro": "",
+                                  "sub": r.ex(part.subtitle), "lang": cfg.lang}).replace('class="sthead"', 'class="sthead rv"', 1)
+            flow.append(Unit(f"k-{part.key}", "head", h, part.key, 0, "station", break_before=True, title=part.title))
+            for teil in part.teile:
+                bh = r.block_head(part, teil, "station")
+                if bh:
+                    flow.append(bh)
+                flow += r.teil_units(part, teil, tokens, "station")
+            return opener_units, flow
         if isinstance(part, M.Station):
             first = True
             for teil in part.teile:
                 if first:
                     covers = cfg.de("labels.station_covers", a=part.covers[0], b=part.covers[-1])
-                    h = r.B.station_head({"anchor": f"k-{part.key}", "no": part.number, "kicker": esc(covers),
+                    h = r.B.station_head({"anchor": f"k-{part.key}", "no": f"Z{part.number}", "kicker": esc(covers),
                                           "title": r.de(part.title), "intro": r.de(part.intro.de),
                                           "sub": r.ex(part.intro[cfg.lang]), "lang": cfg.lang})
                     flow.append(Unit(f"k-{part.key}", "head", str(h), part.key, 0, "station", break_before=True, title=part.title))
@@ -225,6 +243,36 @@ class Builder:
                 first = False
             return opener_units, flow
         ch: M.Chapter = part
+        if cfg.flex:
+            cur = None
+            last_of = {t.section: t.nr for t in ch.teile}
+            for teil in ch.teile:
+                sec = teil.section
+                if sec == "auftakt":
+                    for b in teil.blocks:
+                        if isinstance(b, M.Task):
+                            ref = self.book.tasks[f"{ch.key}.{teil.nr}{b.id}"]
+                            h, _ = r.task_html(ref, tokens, wu=True)
+                            opener_units.append(Unit(ref.anchor, "task", h, ch.key, teil.nr, sec, list(b.words), ref.address,
+                                                     title=r.inline.plain(b.rubric.de)))
+                    continue
+                if sec != cur:
+                    cur = sec
+                    r._tokens = tokens
+                    flow.append(r.section_head(ch, sec))
+                    if sec == "uebersicht":
+                        uid = f"cando-{ch.key}"
+                        lead = f'<p class="rvlead" lang="{cfg.lang}">{esc(cfg.ui("review.lead_flex"))}</p>'
+                        inner = (f'<article class="task boxu" id="{uid}"><div class="tk-l"></div><div class="tk-m">{lead}{r.cando_view(ch, True)}</div>'
+                                 f'<aside class="mn"></aside></article>')
+                        flow.append(Unit(uid, "cando", inner, ch.key, 0, sec))
+                bh = r.block_head(ch, teil, sec)
+                if bh:
+                    flow.append(bh)
+                flow += r.teil_units(ch, teil, tokens, sec)
+                if sec == "abschlusstest" and teil.nr == last_of[sec]:
+                    flow.append(r.total_unit(ch, teil, sec))
+            return opener_units, flow
         for teil in ch.teile:
             sec = teil.section
             if sec == "auftakt":
@@ -286,8 +334,10 @@ class Builder:
             if a.part != cur:
                 cur = a.part
                 part = next(p for p in self.book.parts() if p.key == cur)
-                color = self.palette(part)[1]["mid"] if isinstance(part, M.Chapter) else cfg.series["colors"]["navy"]
-                title = f'{cfg.de("chapter")} {part.number} · {esc(part.title)}' if isinstance(part, M.Chapter) else f'{cfg.de("station")} {part.number}'
+                revision = isinstance(part, M.Station) and part.kind == "revision"
+                color = self.palette(part)[1]["mid"] if isinstance(part, M.Chapter) or revision else cfg.series["colors"]["navy"]
+                title = (f'{cfg.de("chapter")} {part.number} · {esc(part.title)}' if isinstance(part, M.Chapter) else
+                         f'{cfg.de("labels.review")} · {cfg.de("chapter")} {part.covers[0]}' if revision else f'{cfg.de("station")} {part.number}')
                 uid = f"akh-{cur}"
                 out.append((ColUnit(uid, 0, keep_next=True, gap_after=self.bl * 0.4),
                             f'<div class="akh" id="{uid}" style="--cm:{color}" lang="de">{title}</div>'))
@@ -307,7 +357,7 @@ class Builder:
             body = ""
             if tr.turns:
                 for t in tr.turns:
-                    body += f'<div class="tl2"><span class="who">{esc(cast[t.speaker]["name"])}</span><span lang="de">{r.de(t.text)}</span></div>'
+                    body += f'<div class="tl2"><span class="who">{esc(r.speaker_name(t.speaker))}</span><span lang="de">{r.de(t.text)}</span></div>'
             if tr.text:
                 body += f'<div class="tl2"><span class="who"></span><span lang="de">{r.de(tr.text)}</span></div>'
             out.append((ColUnit(uid, 0, gap_after=self.bl * 0.8), f'<div class="trs" id="{uid}">{head}{body}</div>'))
@@ -428,7 +478,16 @@ class Builder:
                 spec.anchors = [f"k-{part.key}", f"sec-{part.key}-auftakt", f"teil-{part.key}-1"] + [u.uid for u in op]
                 learn.append(spec)
                 folio += 1
-            pages = paginate(flow, self.cap, self.bl)
+            target = self.part_len(part) - (1 if isinstance(part, M.Chapter) else 0)
+            pages = None
+            if cfg.flex:
+                pages, minimum = paginate_fit(flow, self.cap, self.bl, target, r.elastic)
+                if pages is None:
+                    name = f"Kapitel {part.number}" if isinstance(part, M.Chapter) else f"Wiederholung {part.number}"
+                    issues.append(("error", name, f"does not fit its length: the content needs at least {minimum + (1 if isinstance(part, M.Chapter) else 0)} "
+                                                  f"page(s), the book plans {self.part_len(part)}"))
+            if pages is None:
+                pages = paginate(flow, self.cap, self.bl)
             for fp in pages:
                 justify(fp, self.cap, self.bl, r.elastic, new_grow)
                 first = fp.placed[0].unit
@@ -443,14 +502,15 @@ class Builder:
                 for s in learn:
                     if s.meta.get("part") == part.key and s.kind == "flow":
                         got[s.meta["section"]] = got.get(s.meta["section"], 0) + 1
+                self.sec_pages[part.key] = got
                 for s in cfg.sections:
-                    if got.get(s["id"], 0) != s["pages"]:
+                    if not cfg.flex and got.get(s["id"], 0) != s["pages"]:
                         issues.append(("error", f"Kapitel {part.number} · {s['de']}",
                                        f"uses {got.get(s['id'], 0)} page(s), budget is {s['pages']}"))
-            else:
+            elif not cfg.flex:
                 n = folio - start
-                if n != cfg.series["structure"]["station_pages"]:
-                    issues.append(("error", f"Zwischenstation {part.number}", f"uses {n} page(s), budget is {cfg.series['structure']['station_pages']}"))
+                if n != cfg.station_len(part.number):
+                    issues.append(("error", f"Zwischenstation {part.number}", f"uses {n} page(s), budget is {cfg.station_len(part.number)}"))
         for s in learn:
             for a in s.anchors:
                 page_of.setdefault(a, s.label)
@@ -492,14 +552,17 @@ class Builder:
 
         # words: where is each word introduced, where else does it occur?
         word_intro: dict[str, str] = {}
+        glossed: set = set()
         page_text: dict[str, str] = {}
         for s in learn:
             us = s.meta.get("units") if s.kind == "opener" else [pl.unit for pl in s.flow.placed]
             words = []
             for u in us:
                 for w in u.words:
-                    if w not in word_intro:
-                        word_intro[w] = s.label
+                    seen = (s.meta["part"], w) if cfg.flex else w
+                    if seen not in glossed:
+                        glossed.add(seen)
+                        word_intro.setdefault(w, s.label)
                         words.append(w)
             s.meta["words"] = words
             page_text[s.label] = " ".join(u.text for u in us)
@@ -557,14 +620,20 @@ class Builder:
         pg = self.cfg.page["tab"]
         if isinstance(part, M.Chapter):
             return f'<div class="tab" style="top:{pg["first"] + (part.number - 1) * pg["step"]:.1f}mm">{part.number}</div>'
+        if part.kind == "revision":
+            return f'<div class="tab rv" style="top:{pg["first"] + (part.covers[0] - 1) * pg["step"]:.1f}mm;font-size:8.6pt">W{part.number}</div>'
         return f'<div class="tab st" style="top:{pg["first"] + 12 * pg["step"]:.1f}mm;font-size:9pt">Z{part.number}</div>'
 
     def running(self, part, section: str, teil_title: str = "") -> str:
         cfg = self.cfg
         if isinstance(part, M.Chapter):
-            prog = [(s["pages"] * 1.25, "on" if s["id"] == section else "") for s in cfg.sections]
+            got = self.sec_pages.get(part.key, {})
+            prog = [((got.get(s["id"], 1) if cfg.flex else s["pages"]) * 1.25, "on" if s["id"] == section else "") for s in cfg.sections]
             return str(self.P.running({"prog": prog, "left": f'{cfg.de("chapter")} {part.number}', "mid": esc(part.title),
                                        "right": esc(cfg.section(section)["de"])}))
+        if part.kind == "revision":
+            return str(self.P.running({"prog": [], "left": cfg.de("labels.review"), "mid": f'{cfg.de("chapter")} {part.covers[0]} · {esc(part.title)}',
+                                       "right": esc(teil_title)}))
         covers = cfg.de("labels.station_covers", a=part.covers[0], b=part.covers[-1])
         return str(self.P.running({"prog": [], "left": f'{cfg.de("station")} {part.number}', "mid": esc(covers), "right": esc(teil_title)}))
 
@@ -590,8 +659,12 @@ class Builder:
                  "toc_label": r.L("in_this_chapter"), "toc": toc, "gram_label": r.L("grammar"),
                  "gram_icon": r.icon("grammatik", "4.6mm", cfg.de("labels.grammar")), "grammar": [esc(g) for g in ch.grammar],
                  "warmup": "".join(u.html for u in spec.meta["units"]), "image": str(r.B.image(im)), "end": f"end-{spec.pid}",
-                 "tab_top": cfg.page["tab"]["first"] + (ch.number - 1) * cfg.page["tab"]["step"]}
-            spec.cls = f"op op-{style}"
+                 "tab_top": cfg.page["tab"]["first"] + (ch.number - 1) * cfg.page["tab"]["step"],
+                 "sub_de": r.de(ch.subtitle_de) if ch.subtitle_de else ""}
+            if ch.topics and not ch.grammar:
+                o.update({"gram_label": r.L("topics"), "gram_icon": r.icon("sprechen", "4.6mm", cfg.de("labels.topics")),
+                          "grammar": [esc(t) for t in ch.topics]})
+            spec.cls = f"op op-{style}" + ("" if spec.meta["units"] else " op-tall")
             spec.inner = str(self.P.opener(o)) + footer + folio
             spec.outline = [(1, f'{cfg.de("chapter")} {ch.number} · {ch.title}', f"k-{ch.key}")] + \
                            [(3, f"{u.address} {u.title}", u.uid) for u in spec.meta["units"]]
@@ -610,12 +683,18 @@ class Builder:
             u = pl.unit
             if u.kind == "teil":
                 spec.outline.append((2, f"{u.part}.{u.teil} {u.title}", u.uid))
+            elif u.kind == "blk":
+                spec.outline.append((3, f"{u.part}.{u.teil} {u.title}", u.uid))
             elif u.kind == "head":
-                if u.uid.startswith("k-"):
+                if u.uid.startswith("k-") and isinstance(part, M.Station) and part.kind == "revision":
+                    spec.outline.append((1, f'{cfg.de("labels.review")} · {cfg.de("chapter")} {part.covers[0]}', u.uid))
+                elif u.uid.startswith("k-"):
                     spec.outline.append((1, f'{cfg.de("station")} {part.number}', u.uid))
+                elif cfg.flex:
+                    spec.outline.append((2, u.title, u.uid))
                 else:
                     spec.outline.append((2, f'{cfg.section("uebersicht")["de"]} · {u.title}', u.uid))
-            elif u.kind == "task":
+            elif u.kind == "task" and not cfg.flex:
                 spec.outline.append((3, f"{u.address} {u.title}", u.uid))
 
     def compose_appendix(self, spec: PageSpec) -> None:
@@ -677,7 +756,7 @@ class Builder:
             rows.append({"kind": "chapter", "no": oc.number, "built": built, "color": cfg.chapter_tokens(oc.number)["mid"], "link": link,
                          "sub": r.ex(oc.subtitle), "grammar": esc(" · ".join(oc.grammar)),
                          "page": f'<a href="#{anchor}">{start}</a>' if anchor in r.built else str(start)})
-            if oc.number in st["stations_after"]:
+            if not cfg.flex and oc.number in st["stations_after"]:
                 k = st["stations_after"].index(oc.number) + 1
                 os_ = next((s for s in self.book.outline.stations if s.number == k), None)
                 anchor = f"k-Z{k}"
@@ -686,6 +765,14 @@ class Builder:
                 link = f'<a href="#{anchor}"><b lang="de">{title}</b></a>' if anchor in r.built else f'<b lang="de">{title}</b>'
                 rows.append({"kind": "station", "no": k, "built": k in self.book.stations, "link": link, "sub": r.ex(os_.subtitle) if os_ else "",
                              "page": f'<a href="#{anchor}">{start}</a>' if anchor in r.built else str(start)})
+        if cfg.flex:
+            first = f"k-{cfg.station_prefix}1"
+            anchor = next((f"k-{cfg.station_prefix}{k}" for k in sorted(self.book.stations)), first)
+            start = cfg.station_start(1)
+            title = esc(cfg.de("labels.review"))
+            link = f'<a href="#{anchor}"><b lang="de">{title}</b></a>' if anchor in r.built else f'<b lang="de">{title}</b>'
+            rows.append({"kind": "station", "no": "W", "built": bool(self.book.stations), "link": link, "sub": esc(cfg.ui("toc.revision")),
+                         "page": f'<a href="#{anchor}">{start}</a>' if anchor in r.built and anchor == first else str(start)})
         front_rows = [{"link": f'<a href="#how"><b lang="de">{esc(cfg.de("labels.how"))}</b></a> <span lang="{cfg.lang}">{esc(cfg.ui("toc.how"))}</span>', "page": '<a href="#how">iv</a>'},
                       {"link": f'<a href="#cast"><b lang="de">{esc(cfg.de("labels.cast"))}</b></a> <span lang="{cfg.lang}">{esc(cfg.ui("toc.cast"))}</span>', "page": '<a href="#cast">vi</a>'}]
         back_rows = []
@@ -695,8 +782,9 @@ class Builder:
             name = f'<b lang="de">{esc(cfg.de("labels.wordlist_long" if key == "wordlist" else "labels." + key))}</b> <span lang="{cfg.lang}">{esc(cfg.ui("toc." + key))}</span>'
             back_rows.append({"built": bool(lab), "link": f'<a href="#{anchor}">{name}</a>' if built else name,
                               "page": (f'<a href="#{anchor}">{lab}</a>' if built else lab)})
-        toc = self.P.toc({"title": esc(cfg.de("labels.contents")), "lang": cfg.lang, "intro": esc(cfg.ui("toc.intro", level=cfg.level_name)),
-                          "front": esc(cfg.ui("toc.front")), "front_rows": front_rows, "chapters_label": f'{cfg.total_pages} {esc(cfg.de("labels.pages"))} · 12 {esc(cfg.de("chapter"))}',
+        toc = self.P.toc({"title": esc(cfg.de("labels.contents")), "lang": cfg.lang,
+                          "intro": esc(cfg.ui("toc.intro_flex" if cfg.flex else "toc.intro", level=cfg.level_name)),
+                          "front": esc(cfg.ui("toc.front")), "front_rows": front_rows, "chapters_label": f'{cfg.total_pages} {esc(cfg.de("labels.pages"))} · {cfg.n_chapters} {esc(cfg.de("chapter"))}',
                           "rows": rows, "appendix": esc(cfg.ui("toc.appendix")), "back_rows": back_rows})
         pages.append(PageSpec("p-iii", "front", "front", "iii", "iii", "recto", "cn", str(toc) + '<div class="folio">iii</div>', "", ["p-iii", "toc"],
                               [(1, cfg.de("labels.contents"), "toc")]))
@@ -709,7 +797,9 @@ class Builder:
                        f'<p class="ex" lang="{cfg.lang}">{esc(cfg.ui("how.task_points")[2])}</p></div><aside class="mn"></aside></article>')
         how1 = self.P.how1({"title": esc(cfg.de("labels.how")), "lang": cfg.lang, "lead": esc(cfg.ui("how.lead")),
                             "path_title": esc(cfg.de("how.path_title")),
-                            "path": [{"pages": s["pages"], "name": esc(s["de"]), "text": esc(cfg.ui(f"how.path.{s['id']}"))} for s in cfg.sections],
+                            "path": [{"pages": s["pages"] if not cfg.flex else i, "name": esc(s["de"]),
+                                      "text": esc(cfg.ui(f"how.path_flex.{s['id']}" if cfg.flex else f"how.path.{s['id']}"))}
+                                     for i, s in enumerate(cfg.sections)],
                             "task_title": esc(cfg.de("how.task_title")), "task": esc(cfg.ui("how.task")), "sample_task": sample_task,
                             "task_points": [esc(x) for x in cfg.ui("how.task_points")],
                             "icons_title": esc(cfg.de("how.icons_title")), "icons": esc(cfg.ui("how.icons")),
@@ -763,7 +853,7 @@ class Builder:
         cfg, r = self.cfg, self.r
         S = cfg.series["series"]
         levels = cfg.series["levels"]
-        complete = not self.sample and len(self.book.chapters) == cfg.series["structure"]["chapters"]
+        complete = not self.sample and len(self.book.chapters) == cfg.n_chapters
         nxt = levels[levels.index(cfg.level) + 1] if cfg.level != levels[-1] else None
         if not complete:
             kicker = cfg.ui("sales.kicker") if self.sample else cfg.edition_title()

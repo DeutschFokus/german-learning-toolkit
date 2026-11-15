@@ -113,6 +113,17 @@ def avatar(key: str, cast: dict, size: str = "8.6mm", uid: str = "") -> str:
             f'<g clip-path="url(#{cid})">{"".join(p)}</g></svg>')
 
 
+def initial_avatar(name: str, tokens: dict, size: str = "8.6mm") -> str:
+    """People who are not part of the cast: a circle in the chapter tint with their initial."""
+    words = [w for w in name.replace(".", " ").split() if w]
+    skip = {"Frau", "Herr", "Dr", "Prof"}
+    core = [w for w in words if w not in skip] or words or ["?"]
+    initial = html.escape(core[0][:1].upper())
+    return (f'<svg class="av" width="{size}" height="{size}" viewBox="0 0 48 48"><title>{html.escape(name)}</title>'
+            f'<circle cx="24" cy="24" r="24" fill="{tokens["soft"]}"/><circle cx="24" cy="24" r="22.6" fill="none" stroke="{tokens["mid"]}" stroke-width="1.6"/>'
+            f'<text x="24" y="32.5" text-anchor="middle" font-family="DF Fraunces" font-weight="800" font-size="24" fill="{tokens["deep"]}">{initial}</text></svg>')
+
+
 # ── QR codes (vector) ────────────────────────────────────────────────────────
 def qr_svg(url: str, title: str, dark: str = "#1B1E2F") -> str:
     q = segno.make(url, error="m", micro=False)
