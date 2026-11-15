@@ -32,7 +32,7 @@ Attach `cast-lena.png` and `cast-mert.png` for the first picture.
 **Chapter opener** → `assets/images/a1/k1-auftakt.jpg`
 
 ```text
-Landscape 3:2. Palette: teal #14A39A, soft mint #C9F1EC, cream, navy, plus the colours of the characters.
+Landscape 3:2. Palette: teal #00B3AD, soft mint #C4F5F1, deep teal #005350, cream, navy, plus the colours of the characters.
 SCENE: The first evening of a German course. Lena and Mert meet at the door of the classroom, shake hands and smile. Behind them a few chairs, a big window with evening light, a round lamp. 
 COMPOSITION: both people in the right two thirds, the lower left corner stays empty wall (the big chapter number sits there). No text, no letters, no numbers.
 ```
@@ -42,7 +42,7 @@ COMPOSITION: both people in the right two thirds, the lower left corner stays em
 The task asks for five things: the man reads a **book**, sits at a **table**, a **notebook** lies next to the book, he drinks **tea**, a **backpack** hangs on the chair. All five must be clearly visible.
 
 ```text
-Landscape 3:2. Palette: teal #14A39A, soft mint #C9F1EC, cream, navy.
+Landscape 3:2. Palette: teal #00B3AD, soft mint #C4F5F1, deep teal #005350, cream, navy.
 SCENE: A young man sits at a wooden table in a quiet library and reads a book. Next to the book lies a closed notebook, a cup of tea stands on the table, and a backpack hangs on the back of his chair. Bookshelves as simple shapes behind him.
 COMPOSITION: man and table in the middle, every object clearly separate and easy to name. No text, no letters, no numbers, the book covers are blank.
 ```
