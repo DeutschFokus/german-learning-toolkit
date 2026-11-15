@@ -102,7 +102,10 @@ class Renderer:
         self.B = Macros(self.env.get_template("blocks.html.j2").module)
         self.inline = Inline(lang=cfg.lang, forms=self.forms, page_ref=self._page_ref, line_ref=self._line_ref,
                              de_page_abbr=cfg.de("page_abbr"), de_line_abbr=cfg.de("line_abbr"))
-        self.cast = cfg.series["cast"]
+        self.cast = cfg.cast
+        self._by_name = {c["name"]: k for k, c in self.cast.items()}
+        self._part = None
+        self.glossed: set[str] = set()                # words already explained in the margin of the current part
         # registries filled by the layout passes -------------------------------
         self.page_of: dict[str, str] = {}             # anchor → folio label
         self.built: set[str] = set()                  # anchors that exist in this build
@@ -133,7 +136,8 @@ class Renderer:
 
     def person(self, key: str) -> str:
         """Speaker label → cast key (levels/<level>.yaml → cast_map lets a book name map onto a cast member)."""
-        return (self.cfg.lv.get("cast_map") or {}).get(key, key)
+        k = (self.cfg.lv.get("cast_map") or {}).get(key, key)
+        return k if k in self.cast else self._by_name.get(k, k)
 
     def speaker_name(self, key: str) -> str:
         k = self.person(key)
@@ -196,8 +200,10 @@ class Renderer:
                 "tr": esc(v.translation(self.cfg.lang))}
 
     # ── margin ───────────────────────────────────────────────────────────────
-    def margin(self, notes: list[M.MarginNote], audio: Optional[M.Audio] = None) -> str:
+    def margin(self, notes: list[M.MarginNote], audio: Optional[M.Audio] = None, words: Optional[list[str]] = None) -> str:
         out = []
+        if words:
+            notes = list(notes) + [M.MarginNote(kind="wort", words=list(words))]
         if audio:
             url = self.cfg.audio_url(audio.track)
             out.append(self.B.audio({
@@ -367,7 +373,7 @@ class Renderer:
     def _b_article_choice(self, b: M.ArticleChoice):
         vs = [self.book.vocab[w] for w in b.items]
         self._ans.append(" &nbsp; ".join(f'<b class="n">{i}</b> {v.article}' for i, v in enumerate(vs, 1)))
-        return self.B.artchoice({"forms": self.forms, "two": len(vs) > 6,
+        return self.B.artchoice({"forms": self.forms, "two": len(vs) > 7 and max(len(v.de) for v in vs) <= 7,
                                  "items": [{"n": i, "word": esc(v.de), "name": self._fid("ac")} for i, v in enumerate(vs, 1)]})
 
     def _b_vocab_translate(self, b: M.VocabTranslate):
@@ -500,6 +506,10 @@ class Renderer:
             items.append({"n": i, "article": article, "cls": v.gender_class, "word": esc(head), "suffix": esc(suffix), "name": self._fid("pd")})
         return self.B.picdict({"image": self.image_view(b.image, self._tokens), "items": items, "forms": self.forms})
 
+    def _b_can_do_list(self, b: M.CanDoList):
+        """The chapter's checklist once more, now with the pages to look at again."""
+        return self.cando_view(self._part, True) if isinstance(self._part, M.Chapter) else ""
+
     def _b_self_eval(self, b: M.SelfEval):
         return self.B.selfeval({"lang": self.cfg.lang,
                                 "items": [{"de": self.de(i.de), "ex": self.ex(i[self.cfg.lang]), "ruled": self.ruled("", 1)} for i in b.items]})
@@ -516,7 +526,7 @@ class Renderer:
         self._seen_types.add(sig)
         return True
 
-    def task_html(self, ref: TaskRef, tokens: dict, wu: bool = False) -> tuple[str, list[str]]:
+    def task_html(self, ref: TaskRef, tokens: dict, wu: bool = False, words: Optional[list[str]] = None) -> tuple[str, list[str]]:
         task = ref.task
         self._tokens = tokens
         self._scope = ref.address.replace(".", "-")
@@ -529,7 +539,7 @@ class Renderer:
         rubric = self.de(task.rubric.de)
         expl = self.ex(task.rubric[self.cfg.lang]) if self._explain(task, ref.part_key) else ""
         body = self.body(task.body)
-        margin = self.margin(task.notes, task.audio)
+        margin = self.margin(task.notes, task.audio, words)
         self._answer(ref)
         l_anchor = "l-" + self._scope
         key = None
@@ -566,19 +576,27 @@ class Renderer:
                  f'<span class="ab" lang="de">{body} {back}</span></div>')
         self.answers[ref.address] = AnswerEntry(ref.address, anchor, ref.anchor, ref.part_key, ref.teil, entry)
 
-    def box_html(self, b: M.Boxed, uid: str, tokens: dict) -> tuple[str, list[str]]:
+    def box_html(self, b: M.Boxed, uid: str, tokens: dict, words: Optional[list[str]] = None) -> tuple[str, list[str]]:
         self._tokens = tokens
         self._scope = uid
         self._n = 0
         self._ans = []
         self._grow_ids = []
         self.inline.begin(uid)
-        out = self.B.boxed({"anchor": uid, "body": self.body(b.body), "margin": self.margin(b.notes)})
+        out = self.B.boxed({"anchor": uid, "body": self.body(b.body), "margin": self.margin(b.notes, None, words),
+                            "full": self.full_width(b)})
         return str(out), list(self._grow_ids)
+
+    @staticmethod
+    def full_width(b) -> bool:
+        """Card grids and word lists run across the whole text block (there is nothing to put next to them)."""
+        return isinstance(b, M.Boxed) and not b.notes and any(isinstance(x, M.VocabCards) for x in b.body)
 
     # ── units of a part ──────────────────────────────────────────────────────
     def teil_units(self, part, teil, tokens: dict, section: str) -> list[Unit]:
         key = part.key
+        self._part = part
+        in_margin = self.cfg.lv.get("words") == "margin"
         units: list[Unit] = []
         brk = False
         k = 0
@@ -586,15 +604,20 @@ class Renderer:
             if isinstance(b, M.PageBreak):
                 brk = True
                 continue
+            words, new = list(b.words), None
+            if in_margin:                              # explain a word once per part, next to the first unit that has room for it
+                new = [] if self.full_width(b) else [w for w in b.words if w not in self.glossed]
+                self.glossed.update(new)
+                words = new
             if isinstance(b, M.Boxed):
                 k += 1
                 uid = f"bx-{key}-{teil.nr}-{k}"
-                h, grow = self.box_html(b, uid, tokens)
-                units.append(Unit(uid, "box", h, key, teil.nr, section, list(b.words), grow_ids=grow, break_before=brk))
+                h, grow = self.box_html(b, uid, tokens, new)
+                units.append(Unit(uid, "box", h, key, teil.nr, section, words, grow_ids=grow, break_before=brk))
             else:
                 ref = self.book.tasks[f"{key}.{teil.nr}{b.id}"]
-                h, grow = self.task_html(ref, tokens)
-                units.append(Unit(ref.anchor, "task", h, key, teil.nr, section, list(b.words), ref.address, grow,
+                h, grow = self.task_html(ref, tokens, words=new)
+                units.append(Unit(ref.anchor, "task", h, key, teil.nr, section, words, ref.address, grow,
                                   break_before=brk, title=self.inline.plain(b.rubric.de)))
             brk = False
         return units

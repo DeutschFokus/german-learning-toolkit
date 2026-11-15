@@ -1,4 +1,4 @@
-# Level A1 — larger type, more white space, more pictures; explanation line on every task
+# Level A1 — explanation line on every task; word help sits in the margin next to the task
 level: a1
 name: A1
 cefr: Beginner
@@ -8,14 +8,52 @@ cover: [0.585, 0.13, 168]   # OKLCH of the cover field; cream type must reach 3:
 
 # Level scaling — one place to make a book airier or denser.
 type:
-  body: 11.5             # pt
-  baseline: 16.5         # pt; every vertical measure is a multiple of half a baseline
-  body_lines: 41          # baselines per page (41 × 16.5 pt)
-  hand: 17.5             # pt, handwriting model answers
+  body: 10.5             # pt
+  baseline: 15.0         # pt; every vertical measure is a multiple of half a baseline
+  body_lines: 47          # baselines per page (47 × 15 pt; one more than A2 because there is no footer strip)
+  hand: 16.5             # pt, handwriting model answers
   write_line: 1.5        # baselines between ruled write-in lines (1.5 keeps the page on the grid)
 explanation: always        # always | new  (new = only the first time a task type appears in a chapter)
+words: margin              # new words are explained next to the task that uses them (default: footer strip)
+
+# The anatomy of this book. It was converted from «Deutsch in Farbe A1» (tools/a1_import), which is
+# built differently from the other levels: numbered blocks flow through five sections, and every
+# chapter has a revision unit at the end of the book.
+structure:
+  mode: flex
+  chapters: 12
+  chapter_pages: 21            # one number for all chapters or a list with one number per chapter (opener included)
+  revision: {pages: 4}         # 12 × 21 + 12 × 4 = 300
+  sections:
+    - {id: auftakt, de: Auftakt}
+    - {id: wortschatz, de: Wortschatz}
+    - {id: hauptteil, de: Hauptteil}
+    - {id: vertiefung, de: Vertiefung}
+    - {id: uebersicht, de: Übersicht}
+    - {id: abschlusstest, de: Abschlusstest}
+
+# The people of this book. Lena and Mert lead through all twelve chapters. Until their character
+# sheets exist (assets/cast/lena.png …), the faces are drawn from these settings.
+cast:
+  lena:  {name: Lena,       full: Lena,        avatar: {skin: "#F2C9A6", hair: "#8A3E22", style: long,  top: "#E9792B", bg: "#FCE3D0"}}
+  mert:  {name: Mert,       full: Mert,        avatar: {skin: "#D9A074", hair: "#1E1512", style: short, top: "#2F5FB3", bg: "#DCE7F8"}}
+  clara: {name: Clara,      full: Clara,       avatar: {skin: "#F0C29A", hair: "#3A2A22", style: bob,   top: "#7B4BB0", bg: "#E9DDF6"}}
+  tom:   {name: Tom,        full: Tom,         avatar: {skin: "#E9B78E", hair: "#B5803A", style: short, top: "#2E8B6B", bg: "#D9F0E6"}}
+  sara:  {name: Sara,       full: Sara,        avatar: {skin: "#C98E5E", hair: "#1E1512", style: bun,   top: "#F4F4F4", bg: "#DDEBF2"}}
+  ben:   {name: Ben,        full: Ben,         avatar: {skin: "#F0C29A", hair: "#5A3A2A", style: curly, top: "#E2B33C", bg: "#FBF0CF", glasses: true}}
+  lukas: {name: Lukas,      full: Lukas,       avatar: {skin: "#E9B78E", hair: "#2B1D17", style: short, top: "#F4F4F4", bg: "#E7E9EE", beard: "#2B1D17"}}
+  weber: {name: Frau Weber, full: Frau Weber,  avatar: {skin: "#F2C9A6", hair: "#8C8F99", style: bob,   top: "#B5446E", bg: "#F6DDE7", glasses: true}}
+bios:
+  lena:  {de: "Lehrerin. Sie wohnt in Hamburg und lernt gern neue Leute kennen.", en: "A teacher. She lives in Hamburg and likes meeting new people.", tr: "Öğretmen. Hamburg’da yaşıyor ve yeni insanlarla tanışmayı seviyor."}
+  mert:  {de: "Ingenieur. Er wohnt in Berlin – und ist in jedem Kapitel dabei.", en: "An engineer. He lives in Berlin – and he is part of every chapter.", tr: "Mühendis. Berlin’de yaşıyor ve her bölümde karşına çıkıyor."}
+  clara: {de: "Grafikerin. Sie wohnt in Wien, in einer kleinen Wohnung.", en: "A graphic designer. She lives in Vienna, in a small flat.", tr: "Grafik tasarımcı. Viyana’da küçük bir dairede yaşıyor."}
+  tom:   {de: "Student. Er kommt aus Wien und wohnt jetzt in Hamburg.", en: "A student. He comes from Vienna and now lives in Hamburg.", tr: "Üniversite öğrencisi. Viyanalı, şimdi Hamburg’da yaşıyor."}
+  sara:  {de: "Ärztin. Sie kommt aus Wien und liest gern Bücher.", en: "A doctor. She comes from Vienna and likes reading books.", tr: "Doktor. Viyanalı ve kitap okumayı seviyor."}
+  ben:   {de: "Student. Er kommt aus Berlin und reist gern.", en: "A student. He comes from Berlin and likes travelling.", tr: "Üniversite öğrencisi. Berlinli ve seyahat etmeyi seviyor."}
+  lukas: {de: "24 Jahre alt, Koch in Zürich. Er spielt gern Fußball.", en: "24 years old, a cook in Zurich. He likes playing football.", tr: "24 yaşında, Zürih’te aşçı. Futbol oynamayı seviyor."}
+  weber: {de: "Die Lehrerin im Deutschkurs.", en: "The teacher of the German course.", tr: "Almanca kursunun öğretmeni."}
 
 # What --sample puts into the free sample (folios; front matter and sales page are always included)
 sample:
-  pages: [101, 102, 103, 104, 105, 106, 107, 120, 121, 122, 123]   # opener, three spreads, overview spread, test spread
+  pages: [1, 2, 3, 4, 5, 6, 7, 8, 9]
   appendix: [L 1, W 1]

@@ -88,6 +88,16 @@ class Config:
         p = self.page
         return p["width"] - p["inner"] - p["outer"]
 
+    @property
+    def cast(self) -> dict:
+        """The people of the series plus the people of this level's book (levels/<level>.yaml → cast)."""
+        return {**self.series["cast"], **(self.lv.get("cast") or {})}
+
+    @property
+    def bios(self) -> dict:
+        """Who is introduced on the page «Die Personen»: the level's own list if it has one."""
+        return self.lv.get("bios") or self.series.get("bios", {})
+
     # ── structure ─────────────────────────────────────────────────────────────
     @property
     def structure(self) -> dict:

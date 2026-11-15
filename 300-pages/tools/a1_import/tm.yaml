@@ -1,0 +1,180 @@
+# Wording for the A1 book: what the old PDF says (the keys) → what the new book prints.
+#
+# The old book gives instructions, block titles, tips and explanations in English only. The new
+# book prints the German instruction first and then a line in the explanation language of the
+# edition (English or Turkish). This file is the translation memory for all of that; convert.py
+# reports every string it cannot find here.
+#
+# In en/tr texts German words are written as {de:Wort}; in German rubrics as *Wort*.
+
+prefix:            # added in front of a rubric when the task starts with something to read or look at
+  dialogue: {de: "Lies den Dialog.", en: "Read the dialogue.", tr: "Diyaloğu oku."}
+  text:     {de: "Lies den Text.", en: "Read the text.", tr: "Metni oku."}
+  email:    {de: "Lies die E-Mail.", en: "Read the e-mail.", tr: "E-postayı oku."}
+  profiles: {de: "Lies die Steckbriefe.", en: "Read the profiles.", tr: "Tanıtım kartlarını oku."}
+  picture:  {de: "Sieh das Bild an.", en: "Look at the picture.", tr: "Resme bak."}
+
+rubrics:
+  "Which article fits? Tick the correct box.":
+    {de: "Welcher Artikel passt? Kreuze an.", tr: "Hangi artikel uygun? İşaretle.", en: "Which article fits? Tick the correct box.", skills: [wortschatz]}
+  "Match. Write the letter in the gap.":
+    {de: "Was passt zusammen? Schreib den Buchstaben in das Kästchen.", en: "Match. Write the letter in the box.", tr: "Eşleştir. Harfi kutuya yaz.", skills: [wortschatz]}
+  "True or false? Tick the correct box.":
+    {de: "Richtig oder falsch? Kreuze an.", tr: "Doğru mu, yanlış mı? İşaretle.", skills: [lesen]}
+  "Answer the questions. Write full sentences.":
+    {de: "Beantworte die Fragen in ganzen Sätzen.", en: "Answer the questions in full sentences.", tr: "Soruları tam cümlelerle cevapla.", skills: [lesen, schreiben]}
+  "Answer the questions in full sentences.":
+    {de: "Beantworte die Fragen in ganzen Sätzen.", tr: "Soruları tam cümlelerle cevapla.", skills: [lesen, schreiben]}
+  "What can you see? Complete the sentences with words from the box.":
+    {de: "Was siehst du auf dem Bild? Ergänze die Sätze mit den Wörtern aus dem Kasten.", en: "What can you see in the picture? Complete the sentences with words from the box.",
+     tr: "Resimde ne görüyorsun? Cümleleri kutudaki kelimelerle tamamla.", skills: [wortschatz], noprefix: true}
+  "Describe the picture. Answer the questions.":
+    {de: "Beschreib das Bild. Beantworte die Fragen.", tr: "Resmi anlat. Soruları cevapla.", skills: [schreiben], noprefix: true}
+  "Write an answer for Frau Berger. Use the formal Sie.":
+    {de: "Die Fragen sind formell (*Sie*). Antworte für Frau Berger.", en: "The questions use the formal {de:Sie}. Write the answers for Frau Berger.",
+     tr: "Sorular resmî ({de:Sie}). Frau Berger’in yerine cevap yaz.", skills: [schreiben]}
+  "Write questions with Wo wohnst du? and Wo wohnt er/sie?":
+    {de: "Wo wohnt er? Wo wohnt sie? Schreib Fragen und Antworten.", en: "Write questions and answers with {de:Wo wohnt …?}",
+     tr: "{de:Wo wohnt …?} ile sorular ve cevaplar yaz.", skills: [grammatik, schreiben]}
+  "Complete the question word: Wie, Wo or Was. The answer helps you.":
+    {de: "Ergänze das Fragewort: *Wie*, *Wo* oder *Was*. Die Antwort hilft dir.", en: "Complete the question word: {de:Wie}, {de:Wo} or {de:Was}. The answer helps you.",
+     tr: "Soru kelimesini tamamla: {de:Wie}, {de:Wo} veya {de:Was}. Cevap sana yardım eder.", skills: [grammatik]}
+  "Complete the question word.":
+    {de: "Ergänze das Fragewort.", tr: "Soru kelimesini tamamla.", skills: [grammatik]}
+  "Write 5 sentences about yourself: name, home town, job.":
+    {de: "Schreib 5 Sätze über dich: Name, Wohnort, Beruf.", tr: "Kendin hakkında 5 cümle yaz: adın, yaşadığın şehir, mesleğin.", skills: [schreiben]}
+  "Ask your partner. Write down the answers.":
+    {de: "Frag deine Partnerin oder deinen Partner. Schreib die Antworten auf.", tr: "Partnerine sor. Cevapları yaz.", skills: [partner, schreiben]}
+  "Make sentences. Mind the word order: the verb is in position 2.":
+    {de: "Bilde Sätze. Achte auf die Wortstellung: Das Verb steht auf Position 2.", tr: "Cümle kur. Kelime sırasına dikkat et: Fiil 2. sırada durur.", skills: [grammatik]}
+  "Make sentences from the words.":
+    {de: "Bilde Sätze aus den Wörtern.", tr: "Kelimelerden cümle kur.", skills: [grammatik]}
+  "Complete the sentences with words from the box. The first letter helps you.":
+    {de: "Ergänze die Sätze mit den Wörtern aus dem Kasten. Der erste Buchstabe hilft dir.", tr: "Cümleleri kutudaki kelimelerle tamamla. İlk harf sana yardım eder.", skills: [wortschatz]}
+  "Write 5 sentences about a friend: name, age, home town, job.":
+    {de: "Schreib 5 Sätze über einen Freund oder eine Freundin: Name, Alter, Wohnort, Beruf.", tr: "Bir arkadaşın hakkında 5 cümle yaz: adı, yaşı, yaşadığı şehir, mesleği.", skills: [schreiben]}
+  "Write 4 sentences: you meet a new person in your German course. Introduce yourself.":
+    {de: "Du triffst eine neue Person im Deutschkurs. Stell dich vor. Schreib 4 Sätze.", en: "You meet a new person in your German course. Introduce yourself. Write 4 sentences.",
+     tr: "Almanca kursunda yeni biriyle tanışıyorsun. Kendini tanıt. 4 cümle yaz.", skills: [schreiben]}
+  "How do you say it in German? Write nouns with the article.":
+    {de: "Wie heißt das auf Deutsch? Schreib Nomen mit Artikel.", tr: "Almancası ne? İsimleri artikeliyle yaz.", skills: [wortschatz]}
+
+rubric_patterns:
+  - match: "Write the plural\\. Example: .+"
+    de: "Schreib den Plural."
+    en: "Write the plural."
+    tr: "Çoğul hâlini yaz."
+    skills: [wortschatz]
+  - match: "Complete the sentences with the correct form of (\\w+)\\."
+    de: "Ergänze die richtige Form von *{1}*."
+    en: "Complete the sentences with the correct form of {de:{1}}."
+    tr: "Cümleleri {de:{1}} fiilinin doğru biçimiyle tamamla."
+    skills: [grammatik]
+  - match: "Complete the sentences with (\\w+)\\."
+    de: "Ergänze die richtige Form von *{1}*."
+    en: "Complete the sentences with the correct form of {de:{1}}."
+    tr: "Cümleleri {de:{1}} fiilinin doğru biçimiyle tamamla."
+    skills: [grammatik]
+  - match: "Write (\\d+) sentences about the topic “(.+?)”\\. Use words from this chapter\\."
+    de: "Schreib {1} Sätze zum Thema „{2}“. Benutze Wörter aus diesem Kapitel."
+    en: "Write {1} sentences about the topic “{2}”. Use words from this chapter."
+    tr: "“{2}” konusunda {1} cümle yaz. Bu bölümün kelimelerini kullan."
+    skills: [schreiben]
+
+titles:            # block headings: old → German title + its translation
+  "Practise the vocabulary": {de: "Wörter lernen und üben", en: "Learn and practise the words", tr: "Kelimeleri öğren ve alıştır"}
+  "Im Deutschkurs": {en: "In the German course", tr: "Almanca kursunda"}
+  "Eine E-Mail von Clara": {en: "An e-mail from Clara", tr: "Clara’dan bir e-posta"}
+  "Das Verb sein": {en: "The verb “sein”", tr: "“sein” fiili"}
+  "Heißen und wohnen": {de: "heißen und wohnen", en: "The verbs “heißen” and “wohnen”", tr: "“heißen” ve “wohnen” fiilleri"}
+  "In der Bibliothek": {en: "In the library", tr: "Kütüphanede"}
+  "Steckbriefe": {en: "Profiles", tr: "Tanıtım kartları"}
+  "Woher kommst du?": {en: "Where are you from?", tr: "Nerelisin?"}
+  "Guten Tag!": {en: "Good day! – the formal way", tr: "İyi günler! – resmî hitap"}
+  "Im Café": {en: "In the café", tr: "Kafede"}
+  "Mein Deutschkurs": {en: "My German course", tr: "Almanca kursum"}
+  "Übungen: Fragen": {en: "Practice: questions", tr: "Alıştırmalar: sorular"}
+  "Sich vorstellen": {en: "Introducing yourself", tr: "Kendini tanıtmak"}
+  "Partnerarbeit": {en: "Pair work", tr: "Eşli çalışma"}
+  "Wiederholung: Sätze bilden": {en: "Revision: making sentences", tr: "Tekrar: cümle kurmak"}
+  "Practise sentences": {de: "Sätze üben", en: "Practising sentences", tr: "Cümle alıştırmaları"}
+  "More writing": {de: "Noch mehr schreiben", en: "More writing", tr: "Daha fazla yazma"}
+  "I can …": {de: "Das kann ich jetzt", en: "What I can do now", tr: "Artık bunları yapabiliyorum"}
+  "Verbs in the present tense": {de: "Verben im Präsens", en: "Verbs in the present tense", tr: "Şimdiki zamanda fiiller"}
+  "Useful phrases": {de: "Nützliche Sätze", en: "Useful phrases", tr: "Faydalı ifadeler"}
+  "Vocabulary of the chapter": {de: "Wörter des Kapitels", en: "The words of the chapter – cover the right side and test yourself", tr: "Bölümün kelimeleri – sağ tarafı kapat ve kendini sına"}
+  "Vocabulary": {de: "Wortschatz", en: "Vocabulary", tr: "Kelime bilgisi"}
+  "Sentences": {de: "Sätze", en: "Sentences", tr: "Cümleler"}
+  "Writing": {de: "Schreiben", en: "Writing", tr: "Yazma"}
+
+title_patterns:
+  - {match: "Übungen: (.+)", en: "Practice: “{1}”", tr: "Alıştırmalar: “{1}”"}
+
+texts:             # explanations and tips (old English → marked-up English + Turkish)
+  "The verb sein is irregular. In the present tense: ich bin, du bist, er/sie/es ist, wir sind, ihr seid, sie/Sie sind.":
+    en: "The verb {de:sein} is irregular. In the present tense: {de:ich bin, du bist, er/sie/es ist, wir sind, ihr seid, sie/Sie sind}."
+    tr: "{de:sein} fiili düzensizdir. Şimdiki zamanda: {de:ich bin, du bist, er/sie/es ist, wir sind, ihr seid, sie/Sie sind}."
+  "Learn the forms of sein by heart. You need them every day.":
+    en: "Learn the forms of {de:sein} by heart. You need them every day."
+    tr: "{de:sein} fiilinin biçimlerini ezberle. Onlara her gün ihtiyacın olacak."
+  "The verbs heißen and wohnen are almost regular. The ending -st goes with du, the ending -t with er/sie/es. Present tense: ich heiße, du heißt, er/sie/es heißt; ich wohne, du wohnst, er/sie/es wohnt.":
+    en: "The verbs {de:heißen} and {de:wohnen} are almost regular. The ending {de:-st} goes with {de:du}, the ending {de:-t} with {de:er/sie/es}. Present tense: {de:ich heiße, du heißt, er/sie/es heißt; ich wohne, du wohnst, er/sie/es wohnt}."
+    tr: "{de:heißen} ve {de:wohnen} fiilleri neredeyse düzenlidir. {de:du} ile {de:-st}, {de:er/sie/es} ile {de:-t} eki kullanılır. Şimdiki zaman: {de:ich heiße, du heißt, er/sie/es heißt; ich wohne, du wohnst, er/sie/es wohnt}."
+  "The ending shows the person: -e for ich, -st for du, -t for er, sie and es.":
+    en: "The ending shows the person: {de:-e} for {de:ich}, {de:-st} for {de:du}, {de:-t} for {de:er}, {de:sie} and {de:es}."
+    tr: "Ek, kişiyi gösterir: {de:ich} için {de:-e}, {de:du} için {de:-st}, {de:er}, {de:sie} ve {de:es} için {de:-t}."
+  "The verb kommen: ich komme, du kommst, er/sie/es kommt. To say where you are from, use aus. With die Schweiz: aus der Schweiz. Countries without an article: aus Deutschland.":
+    en: "The verb {de:kommen}: {de:ich komme, du kommst, er/sie/es kommt}. To say where you are from, use {de:aus}. With {de:die Schweiz}: {de:aus der Schweiz}. Countries without an article: {de:aus Deutschland}."
+    tr: "{de:kommen} fiili: {de:ich komme, du kommst, er/sie/es kommt}. Nereli olduğunu söylemek için {de:aus} kullanılır. {de:die Schweiz} ile: {de:aus der Schweiz}. Artikelsiz ülkeler: {de:aus Deutschland}."
+  "Say the examples out loud. That helps you remember the forms.":
+    tr: "Örnekleri sesli söyle. Bu, biçimleri aklında tutmana yardım eder."
+  "This list helps you: tick what you can already do with confidence. Repeat what does not work yet.":
+    en: "Tick what you can already do with confidence. Not sure yet? The page number shows where to look again."
+    tr: "Güvenle yapabildiklerini işaretle. Henüz emin değil misin? Sayfa numarası nereye tekrar bakacağını gösterir."
+
+subtitles:         # the German subtitle of a chapter → its translation (also used for the table of contents)
+  "Sich begrüßen und vorstellen": {en: "Greeting people and introducing yourself", tr: "Selamlaşmak ve kendini tanıtmak"}
+  "Über Personen sprechen": {en: "Talking about people", tr: "Kişiler hakkında konuşmak"}
+  "Den Alltag beschreiben": {en: "Describing everyday life", tr: "Günlük hayatı anlatmak"}
+  "Lebensmittel, Preise und Wünsche": {en: "Food, prices and wishes", tr: "Gıda maddeleri, fiyatlar ve istekler"}
+  "Im Restaurant bestellen": {en: "Ordering in a restaurant", tr: "Restoranda sipariş vermek"}
+  "Räume, Möbel und Orte beschreiben": {en: "Describing rooms, furniture and places", tr: "Odaları, mobilyaları ve yerleri tarif etmek"}
+  "Berufe, Arbeitsorte und Fähigkeiten": {en: "Jobs, workplaces and skills", tr: "Meslekler, iş yerleri ve beceriler"}
+  "Hobbys und Vorlieben": {en: "Hobbies and likes", tr: "Hobiler ve tercihler"}
+  "Verkehrsmittel und Wege beschreiben": {en: "Transport and describing the way", tr: "Ulaşım araçları ve yol tarifi"}
+  "Vom Wetter erzählen und Vergangenes sagen": {en: "Talking about the weather and about the past", tr: "Havadan söz etmek ve geçmişi anlatmak"}
+  "Körper, Beschwerden und Termine": {en: "Body, complaints and appointments", tr: "Vücut, şikâyetler ve randevular"}
+  "Wiederholen, prüfen und weitermachen": {en: "Revise, check and carry on", tr: "Tekrar et, kontrol et ve devam et"}
+
+goals:
+  "Introduce yourself, greet other people and ask simple questions about name and home town.":
+    de: "Du stellst dich vor, begrüßt andere und stellst einfache Fragen zu Name und Wohnort."
+    tr: "Kendini tanıtırsın, başkalarını selamlarsın ve ad ile yaşanılan yer hakkında basit sorular sorarsın."
+
+cando:             # ref = number of the block where the learner can look again
+  "introduce myself and others": {de: "Ich kann mich und andere vorstellen.", en: "I can introduce myself and others.", tr: "Kendimi ve başkalarını tanıtabilirim.", ref: 2}
+  "ask for name and home town": {de: "Ich kann nach Name und Wohnort fragen.", en: "I can ask for name and home town.", tr: "Ad ve yaşanılan yeri sorabilirim.", ref: 14}
+  "say where I come from": {de: "Ich kann sagen, woher ich komme.", en: "I can say where I come from.", tr: "Nereli olduğumu söyleyebilirim.", ref: 8}
+  "greet people politely": {de: "Ich kann Personen höflich begrüßen.", en: "I can greet people politely.", tr: "İnsanları kibarca selamlayabilirim.", ref: 9}
+  "count to five": {de: "Ich kann bis fünf zählen.", en: "I can count to five.", tr: "Beşe kadar sayabilirim.", ref: 1}
+
+phrases:
+  "Hallo! Ich heiße …": {en: "Hello! My name is …", tr: "Merhaba! Benim adım …"}
+  "Wie heißt du? / Wie heißen Sie?": {en: "What is your name? (informal / formal)", tr: "Adın ne? / Adınız ne?"}
+  "Woher kommst du? – Ich komme aus …": {en: "Where are you from? – I am from …", tr: "Nerelisin? – …-liyim."}
+  "Wo wohnst du? – Ich wohne in …": {en: "Where do you live? – I live in …", tr: "Nerede oturuyorsun? – …-de oturuyorum."}
+  "Freut mich!": {en: "Nice to meet you!", tr: "Memnun oldum!"}
+
+images:            # description = brief for a new illustration and alternative text of last resort
+  k1-auftakt:
+    description: "Zwei Frauen sitzen in einem hellen Café an einem Tisch und unterhalten sich. Beide halten eine Tasse und lachen."
+    en: "Two women sit at a table in a bright café and talk; both hold a cup and laugh."
+    tr: "İki kadın aydınlık bir kafede masada oturmuş sohbet ediyor; ikisinin de elinde fincan var, gülüyorlar."
+  k1-b6:
+    description: "Ein junger Mann sitzt in einer Bibliothek an einem Tisch und liest ein Buch. Auf dem Tisch liegen ein Notizbuch und eine Tasse Tee."
+    en: "A young man sits at a table in a library and reads a book; a notebook and a cup of tea are on the table."
+    tr: "Genç bir adam kütüphanede bir masada oturmuş kitap okuyor; masada bir defter ve bir fincan çay var."
+    focus: 62
+
+revision:          # subtitle of the revision units; {n} = chapter number
+  subtitle: {en: "Four pages of extra practice for chapter {n}", tr: "{n}. bölüm için dört sayfa ek alıştırma"}

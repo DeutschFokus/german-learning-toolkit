@@ -1,6 +1,10 @@
 import fitz, glob, re
-UP = "/root/.claude/uploads/9f8f440e-accd-5562-9a69-0ddd5b4d7ae8/"
-FILES = sorted(glob.glob(UP + "*Deutsch_in_Farbe*.pdf"), key=lambda f: int(re.search(r"Part_(\d)", f).group(1)))
+import os
+# Where the four source PDFs of «Deutsch in Farbe A1» lie (Part_1 … Part_4). Set A1_SOURCE to another folder if needed.
+UP = os.environ.get("A1_SOURCE", "/root/.claude/uploads/9f8f440e-accd-5562-9a69-0ddd5b4d7ae8/")
+FILES = sorted(glob.glob(os.path.join(UP, "*Deutsch_in_Farbe*.pdf")), key=lambda f: int(re.search(r"Part_(\d)", f).group(1)))
+if len(FILES) != 4:
+    raise SystemExit(f"Source PDFs not found in {UP} (expected 4 files *Deutsch_in_Farbe*Part_N*.pdf). Set A1_SOURCE.")
 DOCS = [fitz.open(f) for f in FILES]
 def page(n):
     return DOCS[(n - 1) // 80][(n - 1) % 80]

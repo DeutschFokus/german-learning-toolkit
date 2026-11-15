@@ -211,6 +211,7 @@ class Builder:
         """Returns (opener task units, flow units)."""
         r, cfg = self.r, self.cfg
         pal, tokens = self.palette(part)
+        r.glossed = set()
         opener_units: list[Unit] = []
         flow: list[Unit] = []
         if isinstance(part, M.Station) and part.kind == "revision":
@@ -260,12 +261,6 @@ class Builder:
                     cur = sec
                     r._tokens = tokens
                     flow.append(r.section_head(ch, sec))
-                    if sec == "uebersicht":
-                        uid = f"cando-{ch.key}"
-                        lead = f'<p class="rvlead" lang="{cfg.lang}">{esc(cfg.ui("review.lead_flex"))}</p>'
-                        inner = (f'<article class="task boxu" id="{uid}"><div class="tk-l"></div><div class="tk-m">{lead}{r.cando_view(ch, True)}</div>'
-                                 f'<aside class="mn"></aside></article>')
-                        flow.append(Unit(uid, "cando", inner, ch.key, 0, sec))
                 bh = r.block_head(ch, teil, sec)
                 if bh:
                     flow.append(bh)
@@ -347,7 +342,6 @@ class Builder:
     def transcript_units(self) -> list[tuple[ColUnit, str]]:
         r, cfg = self.r, self.cfg
         out = []
-        cast = cfg.series["cast"]
         for track in sorted(self.book.tracks):
             ref, au, tr = self.book.tracks[track]
             uid = "tr-" + track.replace(".", "-")
@@ -591,7 +585,7 @@ class Builder:
     # ── words-on-this-page footer ────────────────────────────────────────────
     def words_footer(self, words: list[str], pid: str) -> str:
         cfg, r = self.cfg, self.r
-        if not words:
+        if not words or cfg.lv.get("words") == "margin":
             return ""
         width = self.pw_w * MM
         gap = self.pw_gap * MM + 1.9
@@ -840,8 +834,8 @@ class Builder:
                             "tips_title": esc(cfg.ui("how.tips_title")), "tips": [esc(t) for t in cfg.ui("how.tips")]})
         pages.append(PageSpec("p-v", "front", "front", "v", "v", "recto", "c5", str(how2) + '<div class="folio">v</div>', "", ["p-v"]))
         # cast
-        bios = cfg.series.get("bios", {})
-        people = [{"avatar": art.avatar(k, cfg.series["cast"], "24mm", uid="cast"), "name": esc(cfg.series["cast"][k]["full"]),
+        bios = cfg.bios
+        people = [{"avatar": art.avatar(k, cfg.cast, "24mm", uid="cast"), "name": esc(cfg.cast[k]["full"]),
                    "bio": r.de(b["de"]), "bio_tr": r.inline.ex(b[cfg.lang])} for k, b in bios.items()]
         cast = self.P.cast({"title": esc(cfg.de("labels.cast")), "lang": cfg.lang, "lead": esc(cfg.ui("cast.lead")), "people": people})
         pages.append(PageSpec("p-vi", "front", "front", "vi", "vi", "verso", "cn", str(cast) + '<div class="folio">vi</div>', "", ["p-vi", "cast"],

@@ -568,8 +568,9 @@ mark{mix-blend-mode:multiply}
 .verso .blk{grid-template-columns:var(--label) var(--content);margin-left:calc(var(--gap) + var(--mcol))}
 .blk .bn{display:block;width:7.4mm;height:7.4mm;margin-top:calc((var(--bl)*1.5 - 7.4mm)/2);border-radius:50%;background:var(--mid);font-family:"DF Fraunces";font-weight:800;font-size:11.5pt;line-height:7.4mm;text-align:center;color:var(--ink)}
 .blk .bn.w2{font-size:10pt;letter-spacing:-.03em}
-.blk h3{font-family:"DF Fraunces","DF Sans";font-weight:700;font-size:15pt;line-height:calc(var(--bl)*1.5);letter-spacing:-.008em}
-.blk .bs{display:block;font-style:italic;font-size:var(--fs-ex);color:var(--mute);line-height:var(--bl)}
+.blk .bt{display:flex;flex-wrap:wrap;align-items:baseline}
+.blk h3{font-family:"DF Fraunces","DF Sans";font-weight:700;font-size:15pt;line-height:calc(var(--bl)*1.5);letter-spacing:-.008em;margin-right:3.2mm}
+.blk .bs{font-style:italic;font-size:var(--fs-ex);color:var(--mute);line-height:var(--bl)}
 .sthead.rv .zn{background:var(--mid);color:var(--ink)}
 .tab.rv{background:#fff;color:var(--deep);box-shadow:inset 0 0 0 .8pt var(--mid)}
 .gram .gi{margin-bottom:calc(var(--bl)*.5)} .gram .gi b,.gram .gi .dw{font-weight:700}
@@ -580,6 +581,10 @@ mark{mix-blend-mode:multiply}
 /* vocabulary cards: the coloured edge is the article */
 .vct{display:block;margin-bottom:calc(var(--bl)*.25)}
 .vcards{display:grid;grid-template-columns:repeat(3,1fr);gap:calc(var(--bl)*.5) 2.4mm}
+.task.full .tk-l,.task.full .mn{display:none}
+.recto .task.full .tk-m,.verso .task.full .tk-m,.m .task.full .tk-m{grid-column:1 / 5}
+.task.full .vcards{grid-template-columns:repeat(4,1fr);column-gap:3mm}
+.task.full .vlist{grid-template-columns:1fr 1fr 1fr}
 .vc{position:relative;background:#fff;border-radius:1.6mm;padding:calc(var(--bl)*.25) 2.2mm calc(var(--bl)*.25) 3.6mm;overflow:hidden;box-shadow:inset 0 0 0 .5pt var(--rule)}
 .vc::before{content:"";position:absolute;left:0;top:0;bottom:0;width:1.5mm;background:var(--rule)}
 .vc.der::before{background:var(--der)} .vc.die::before{background:var(--die)} .vc.das::before{background:var(--das)} .vc.pl::before{background:var(--pl)}
@@ -591,7 +596,7 @@ mark{mix-blend-mode:multiply}
 .vlist li{display:flex;justify-content:space-between;align-items:baseline;border-top:.5pt solid var(--line);padding:calc(var(--bl)*.125 - .5pt) 0 calc(var(--bl)*.125);line-height:calc(var(--bl)*.75)}
 .vlist li>span{white-space:nowrap} .vlist em{font-style:italic;color:var(--mute);text-align:right;padding-left:2mm}
 /* der, die or das? */
-.artc li{display:flex;align-items:center;border-top:.5pt solid var(--line);height:calc(var(--bl)*1.5);box-sizing:border-box}
+.artc li{display:flex;align-items:center;border-top:.5pt solid var(--line);height:calc(var(--bl)*1.25);box-sizing:border-box}
 .artc .n{flex:none;width:6mm;font-weight:700;color:var(--deep)} .artc .wd{flex:1;font-weight:600}
 .artc .ops{flex:none;white-space:nowrap;font-size:0} .artc .op{display:inline-block;margin-left:4.4mm;font-size:var(--fs);font-weight:600}
 .artc .op .box{margin-right:1.2mm}

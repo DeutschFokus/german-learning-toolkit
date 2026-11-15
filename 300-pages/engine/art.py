@@ -47,6 +47,8 @@ ICON_PATHS = {
     "voice": '<path d="M4.500 10v4"/><path d="M8.300 7v10"/><path d="M12 4.500v15"/><path d="M15.700 7.500v9"/><path d="M19.500 10v4"/>',
 }
 
+ICON_PATHS["wortschatz"] = ICON_PATHS["wort"]          # the skill "vocabulary" shares the icon of the word notes
+
 
 def icon(name: str, size: str = "5mm", title: Optional[str] = None, sw: float = 1.6, cls: str = "") -> str:
     t = f"<title>{html.escape(title)}</title>" if title else f"<title>{name}</title>"

@@ -382,7 +382,7 @@ class SortTable(Strict):
 
 
 class PhraseGroup(Strict):
-    title: str
+    title: str = ""
     items: list[Bi]
 
 
@@ -473,6 +473,11 @@ class VocabMatch(Strict):
         return self
 
 
+class CanDoList(Strict):
+    """The can-do list of the chapter, printed again in the overview (with page references)."""
+    type: Literal["can_do_list"]
+
+
 class PageBreak(Strict):
     """Editorial page break, like in a manuscript. Rarely needed."""
     type: Literal["page_break"]
@@ -481,7 +486,7 @@ class PageBreak(Strict):
 BodyBlock = Annotated[
     Union[Dialogue, ReadingText, GrammarBox, TypicalMistake, GapText, TrueFalse, MultipleChoice, Matching,
           WriteLines, SentenceBuild, TableFill, OddOneOut, SortTable, Phrases, RoleCards, Bubbles, WordBank,
-          GameGrid, Paragraph, PictureDictionary, SelfEval, Image, VocabCards, ArticleChoice, VocabTranslate, VocabMatch],
+          GameGrid, Paragraph, PictureDictionary, SelfEval, Image, VocabCards, ArticleChoice, VocabTranslate, VocabMatch, CanDoList],
     Field(discriminator="type")]
 
 

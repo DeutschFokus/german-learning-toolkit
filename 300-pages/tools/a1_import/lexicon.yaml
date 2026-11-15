@@ -1,0 +1,101 @@
+# Vocabulary supplement for the A1 book, keyed by the headword as the old PDF prints it.
+#
+# The old book gives every word with an English gloss; cards also give the plural. This file adds
+# what is missing: the Turkish translation (tr), the plural of nouns that only occur in page
+# footers (plural, in the series notation), corrections (de, pos, en) and a better card group.
+# convert.py lists every word it cannot complete from here.
+
+# ── Kapitel 1 · cards ────────────────────────────────────────────────────────
+"der Name": {tr: "isim, ad"}
+"die Stadt": {tr: "şehir"}
+"das Land": {tr: "ülke"}
+"der Beruf": {tr: "meslek"}
+"heißen": {tr: "adı … olmak (ich heiße)"}
+"wohnen": {tr: "oturmak, yaşamak (ich wohne)"}
+"die Schweiz": {tr: "İsviçre", plural: Sg.}
+"das Österreich": {de: Österreich, article: null, pos: name, tr: "Avusturya"}      # countries without article
+"Österreich": {pos: name, tr: "Avusturya"}
+"Deutschland": {pos: name, tr: "Almanya"}
+"die Hauptstadt": {tr: "başkent"}
+"der Koch": {tr: "aşçı (erkek)", group: BERUFE}
+"die Ärztin": {tr: "doktor (kadın)", group: BERUFE}
+"eins": {tr: "bir (1)"}
+"zwei": {tr: "iki (2)"}
+"drei": {tr: "üç (3)"}
+"vier": {tr: "dört (4)"}
+"fünf": {tr: "beş (5)"}
+"das Alter": {tr: "yaş", plural: Sg.}
+"die Frau": {tr: "kadın"}
+"der Mann": {tr: "erkek, adam"}
+"das Kind": {tr: "çocuk"}
+"der Freund": {tr: "arkadaş (erkek)"}
+"die Freundin": {tr: "arkadaş (kadın)"}
+"der Kollege": {tr: "iş arkadaşı (erkek)"}
+"der Lehrer": {tr: "öğretmen (erkek)"}
+"die Lehrerin": {tr: "öğretmen (kadın)"}
+"der Student": {tr: "üniversite öğrencisi (erkek)"}
+"die Studentin": {tr: "üniversite öğrencisi (kadın)"}
+"der Ingenieur": {tr: "mühendis"}
+"der Verkäufer": {tr: "satış elemanı (erkek)"}
+"die Frage": {tr: "soru"}
+"die Antwort": {tr: "cevap"}
+"der Satz": {tr: "cümle"}
+"das Wort": {tr: "kelime"}
+"die Sprache": {tr: "dil"}
+"der Kurs": {tr: "kurs"}
+"sprechen": {tr: "konuşmak"}
+"lernen": {tr: "öğrenmek"}
+"fragen": {tr: "sormak"}
+"antworten": {tr: "cevap vermek"}
+"kommen": {tr: "gelmek"}
+"sein": {tr: "olmak"}
+
+# ── Kapitel 1 · words in the page footers ────────────────────────────────────
+"Bern": {pos: name, tr: "Bern"}
+"Japan": {pos: name, tr: "Japonya"}
+"Köln": {pos: name, tr: "Köln"}
+"Spanien": {pos: name, tr: "İspanya"}
+"Wien": {pos: name, tr: "Viyana"}
+"Zürich": {pos: name, tr: "Zürih"}
+"die Türkei": {tr: "Türkiye", plural: Sg.}
+"Guten Tag": {pos: phrase, tr: "iyi günler (resmî)"}
+"Hallo": {pos: other, tr: "merhaba"}
+"Sie": {pos: other, tr: "siz (resmî hitap)"}
+"auch": {tr: "de, da; ayrıca"}
+"aus": {tr: "-den, -dan"}
+"aus + Dativ": {tr: "-den, -dan (ülke veya şehir)"}
+"bilden": {tr: "oluşturmak, kurmak"}
+"danke": {tr: "teşekkürler"}
+"das Buch": {tr: "kitap", plural: "¨-er"}
+"das Jahr": {tr: "yıl", plural: "-e"}
+"das Notizbuch": {tr: "not defteri", plural: "¨-er"}
+"der Partner": {tr: "partner (erkek)", plural: "-"}
+"der Rucksack": {tr: "sırt çantası", plural: "¨-e"}
+"der Tisch": {tr: "masa", plural: "-e"}
+"die Form": {tr: "biçim", plural: "-en"}
+"die Grafikerin": {tr: "grafik tasarımcı (kadın)", plural: "-nen"}
+"die Klasse": {tr: "sınıf", plural: "-n"}
+"die Wohnung": {tr: "daire, ev", plural: "-en"}
+"die Zahl": {tr: "sayı", plural: "-en"}
+"du": {tr: "sen"}
+"du wohnst": {tr: "oturuyorsun, yaşıyorsun"}
+"er heißt": {tr: "onun adı …"}
+"er kommt": {tr: "o geliyor"}
+"er/sie/es ist": {tr: "o …-dir"}
+"gern": {en: "gladly; I like to … (ich spiele gern)", tr: "severek; … yapmayı severim (ich spiele gern)"}
+"ich bin": {tr: "ben …-im"}
+"ich komme": {tr: "geliyorum"}
+"ihr seid": {tr: "siz …-siniz (samimi)"}
+"interessant": {tr: "ilginç"}
+"jetzt": {tr: "şimdi"}
+"oft": {tr: "sık sık"}
+"was": {tr: "ne"}
+"wie": {tr: "nasıl"}
+"wiederholen": {tr: "tekrar etmek"}
+"willkommen": {tr: "hoş geldin, hoş geldiniz"}
+"wir sind": {tr: "biz …-iz"}
+"wo": {tr: "nerede"}
+"woher": {tr: "nereden"}
+"zusammen": {tr: "birlikte"}
+"lesen": {tr: "okumak"}
+"sich vorstellen": {tr: "kendini tanıtmak"}

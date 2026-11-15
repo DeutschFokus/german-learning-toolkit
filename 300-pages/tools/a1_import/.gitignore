@@ -1,0 +1,3 @@
+# intermediate files of the A1 import: the whole old book as data – regenerate with parse.py and assemble.py
+raw.json
+book.json

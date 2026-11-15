@@ -255,7 +255,7 @@ def _check_vocab(book: "Book", v: M.Vocab, where: str) -> None:
 
 def validate(book: Book) -> None:
     cfg = book.cfg
-    cast = cfg.series["cast"]
+    cast = cfg.cast
     seq = [s["id"] for s in cfg.sections if cfg.flex or s["id"] != "uebersicht"]
 
     for part in book.parts():

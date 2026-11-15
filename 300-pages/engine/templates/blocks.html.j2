@@ -21,7 +21,7 @@
 {% endmacro %}
 
 {% macro boxed(b) %}
-<article class="task boxu" id="{{ b.anchor }}">
+<article class="task boxu{{ ' full' if b.full }}" id="{{ b.anchor }}">
 <div class="tk-l"></div>
 <div class="tk-m"><div class="tk-b">{{ b.body }}</div></div>
 <aside class="mn">{{ b.margin }}</aside>
@@ -33,7 +33,7 @@
 {% endmacro %}
 
 {% macro blk_head(h) %}
-<div class="blk" id="{{ h.anchor }}"><div><span class="bn{{ ' w2' if h.no|length > 1 }}">{{ h.no }}</span></div><div><h3 lang="de">{{ h.title }}</h3>{% if h.sub %}<span class="bs" lang="{{ h.lang }}">{{ h.sub }}</span>{% endif %}</div></div>
+<div class="blk" id="{{ h.anchor }}"><div><span class="bn{{ ' w2' if h.no|length > 1 }}">{{ h.no }}</span></div><div class="bt"><h3 lang="de">{{ h.title }}</h3>{% if h.sub %}<span class="bs" lang="{{ h.lang }}">{{ h.sub }}</span>{% endif %}</div></div>
 {% endmacro %}
 
 {% macro station_head(h) %}
@@ -91,7 +91,7 @@
 
 {% macro phrases(v) %}
 <div class="phr">{% if v.title %}<div class="gh" lang="de">{{ v.icon }}<span class="lab">{{ v.label }}</span><span class="tt">{{ v.title }}</span></div>{% endif %}
-{% for g in v.groups %}<div class="phg"><h4 lang="de">{{ g.title }}</h4>{% for de, ex in g.items %}<div class="pr"><span lang="de">{{ de }}</span><span lang="{{ v.lang }}">{{ ex }}</span></div>{% endfor %}</div>{% endfor %}</div>
+{% for g in v.groups %}<div class="phg">{% if g.title %}<h4 lang="de">{{ g.title }}</h4>{% endif %}{% for de, ex in g.items %}<div class="pr"><span lang="de">{{ de }}</span><span lang="{{ v.lang }}">{{ ex }}</span></div>{% endfor %}</div>{% endfor %}</div>
 {% endmacro %}
 
 {# ── exercises ───────────────────────────────────────────────────────────── #}
