@@ -72,6 +72,7 @@ class Unit:
     break_before: bool = False
     height: float = 0.0             # pt — set by the measure pass
     title: str = ""                 # bookmark text
+    gap: Optional[float] = None     # space above in baselines (None = the normal distance between units)
 
     @property
     def text(self) -> str:
@@ -103,7 +104,8 @@ class Renderer:
         self.inline = Inline(lang=cfg.lang, forms=self.forms, page_ref=self._page_ref, line_ref=self._line_ref,
                              de_page_abbr=cfg.de("page_abbr"), de_line_abbr=cfg.de("line_abbr"))
         self.cast = cfg.cast
-        self._by_name = {c["name"]: k for k, c in self.cast.items()}
+        own = cfg.lv.get("cast")                       # a book with its own people is not mixed with the series cast by name
+        self._by_name = {c["name"]: k for k, c in (own or self.cast).items()}
         self._part = None
         self.glossed: set[str] = set()                # words already explained in the margin of the current part
         # registries filled by the layout passes -------------------------------
@@ -120,6 +122,9 @@ class Renderer:
         self._n = 0
         self._seen_types: set = set()
         self._grow_ids: list[str] = []
+        self._chunks: Optional[list[tuple[str, float]]] = None    # while set, long lists hand over their later rows as separate pieces
+        self._wide = False
+        self.last_chunks: list[tuple[str, float]] = []
 
     # ── small helpers ────────────────────────────────────────────────────────
     def de(self, s) -> str:
@@ -236,6 +241,18 @@ class Renderer:
         fn = getattr(self, "_b_" + b.type)
         return str(fn(b))
 
+    def _ranges(self, rows: int, head: int = 2, tail: int = 2, least: int = 5) -> list[tuple[int, int]]:
+        """How a long list is cut into pieces that the paginator may put on different pages:
+        `head` rows stay with the instruction, `tail` rows end the list, every row in between stands alone."""
+        if self._chunks is None or rows < least:
+            return [(0, rows)]
+        return [(0, head)] + [(i, i + 1) for i in range(head, rows - tail)] + [(rows - tail, rows)]
+
+    def _emit(self, pieces: list[str], gap: float) -> str:
+        if self._chunks is not None:
+            self._chunks += [(p, gap) for p in pieces[1:]]
+        return pieces[0]
+
     def _numbered(self, pairs: list[tuple[int, str]]) -> str:
         """Group inline answers by item number: 1 schließt · schreibe  2 ist · nehmen"""
         groups: dict[int, list[str]] = {}
@@ -257,12 +274,16 @@ class Renderer:
             return self.B.chat({"contact": esc(self.speaker_name(other)), "contact_avatar": self.avatar(other, "6.4mm"), "msgs": [
                 {"avatar": self.avatar(t.speaker, "7mm"), "text": self.de(t.text), "me": t.speaker == me}
                 for t in b.turns]})
+        if b.parts and b.genre == "profile":
+            return self.B.cards({"kind": "profile", "n": 1, "cards": [
+                {"label": "", "title": esc(p.label or p.title or ""), "text": self.de(p.text), "author": "",
+                 "avatar": self.avatar(p.label or p.title or "?", "9.4mm")} for p in b.parts]})
         if b.parts:
             kind = "listing" if b.genre == "listing" else "notecards"
             n = 1 if (kind == "listing" or any(len(p.text) > 90 for p in b.parts)) else min(3, len(b.parts))
             return self.B.cards({"kind": kind, "n": n, "cards": [
                 {"label": esc(p.label or ""), "title": self.de(p.title) if p.title else "", "text": self.de(p.text),
-                 "author": self.de(p.author) if p.author else ""} for p in b.parts]})
+                 "author": self.de(p.author) if p.author else "", "avatar": ""} for p in b.parts]})
         rid = f"rt-{self._scope}-{b.id or self._fid('r')}"
         if b.line_numbers:
             self.inline.text_scope = rid
@@ -324,7 +345,13 @@ class Renderer:
             example = re.sub(r"\[\[(.*?)\]\]", lambda m: f'<span class="gap filled" style="width:{max(13, 8 + 2.15 * len(m.group(1)))}mm"><span class="hw">{esc(m.group(1))}</span></span>', esc(b.example))
         if new:
             self._ans.append(self._numbered(new))
-        return self.B.gaptext({"bank": bank, "items": items, "text": text, "compact": b.compact, "example": example})
+        cols = 2 if (b.compact or self._wide) else 1
+        rows = [items[i:i + cols] for i in range(0, len(items), cols)]
+        pieces = []
+        for k, (a, z) in enumerate(self._ranges(len(rows)) if items and not text else [(0, len(rows))]):
+            pieces.append(str(self.B.gaptext({"bank": bank if k == 0 else [], "items": [x for r in rows[a:z] for x in r], "text": text if k == 0 else "",
+                                              "compact": b.compact, "example": example if k == 0 else "", "start": a * cols})))
+        return self._emit(pieces, 0.5)
 
     def _b_true_false(self, b: M.TrueFalse):
         t, f = self.cfg.de("labels.true"), self.cfg.de("labels.false")
@@ -373,15 +400,22 @@ class Renderer:
     def _b_article_choice(self, b: M.ArticleChoice):
         vs = [self.book.vocab[w] for w in b.items]
         self._ans.append(" &nbsp; ".join(f'<b class="n">{i}</b> {v.article}' for i, v in enumerate(vs, 1)))
-        return self.B.artchoice({"forms": self.forms, "two": len(vs) > 7 and max(len(v.de) for v in vs) <= 7,
-                                 "items": [{"n": i, "word": esc(v.de), "name": self._fid("ac")} for i, v in enumerate(vs, 1)]})
+        two = len(vs) > 7 and max(len(v.de) for v in vs) <= 7
+        items = [{"n": i, "word": esc(v.de), "name": self._fid("ac")} for i, v in enumerate(vs, 1)]
+        cols = 2 if (two or self._wide) else 1
+        rows = [items[i:i + cols] for i in range(0, len(items), cols)]
+        return self._emit([str(self.B.artchoice({"forms": self.forms, "two": two, "items": [x for r in rows[a:z] for x in r]}))
+                           for a, z in self._ranges(len(rows))], 0.0)
 
     def _b_vocab_translate(self, b: M.VocabTranslate):
         vs = [self.book.vocab[w] for w in b.items]
         full = [f"{v.article} {v.de}" if v.article else v.de for v in vs]
         self._ans.append(" &nbsp; ".join(f'<b class="n">{i}</b> {esc(x)}' for i, x in enumerate(full, 1)))
-        return self.B.vtranslate({"lang": self.cfg.lang, "two": len(vs) > 6, "forms": self.forms,
-                                  "items": [{"n": i, "tr": esc(v.translation(self.cfg.lang)), "name": self._fid("vt")} for i, v in enumerate(vs, 1)]})
+        items = [{"n": i, "tr": esc(v.translation(self.cfg.lang)), "name": self._fid("vt")} for i, v in enumerate(vs, 1)]
+        cols = 2 if self._wide else 1
+        rows = [items[i:i + cols] for i in range(0, len(items), cols)]
+        return self._emit([str(self.B.vtranslate({"lang": self.cfg.lang, "two": False, "forms": self.forms, "items": [x for r in rows[a:z] for x in r]}))
+                           for a, z in self._ranges(len(rows))], 0.0)
 
     def _b_vocab_match(self, b: M.VocabMatch):
         letters = "ABCDEFGHIJKL"
@@ -418,8 +452,9 @@ class Renderer:
         if all(it.answer for it in b.items):
             self._ans.append(" &nbsp; ".join(f'<b class="n">{i}</b> {self.de(it.answer)}' for i, it in enumerate(b.items, 1)))
         ex = {"given": self.de(b.example.given), "ruled": self.ruled(self.de(b.example.answer), 0)} if b.example and b.example.answer else None
-        return self.B.sentences({"example": ex, "label": "Bsp.",
-                                 "items": [{"given": self.de(it.given), "ruled": self.ruled("", b.lines, b.grow, 1)} for it in b.items]})
+        items = [{"n": i, "given": self.de(it.given), "ruled": self.ruled("", b.lines, b.grow, 1)} for i, it in enumerate(b.items, 1)]
+        return self._emit([str(self.B.sentences({"example": ex if a == 0 else None, "label": "Bsp.", "items": items[a:z]}))
+                           for a, z in self._ranges(len(items), 1, 1, 3)], 0.5)
 
     def _b_table_fill(self, b: M.TableFill):
         start = len(self.inline.col.answers)
@@ -449,7 +484,7 @@ class Renderer:
                                  "rows": b.rows, "forms": self.forms, "name": self._fid("st")})
 
     def _b_phrases(self, b: M.Phrases):
-        return self.B.phrases({"title": self.de(b.title) if b.title else "", "label": self.L("phrases"),
+        return self.B.phrases({"title": self.de(b.title) if b.title else "", "label": self.L("phrases"), "head": bool(b.title) or self.cfg.flex,
                                "icon": self.icon("phrases", "4.6mm", self.cfg.de("labels.phrases")), "lang": self.cfg.lang,
                                "groups": [{"title": self.de(g.title), "items": [(self.de(i.de), self.ex(i[self.cfg.lang])) for i in g.items]}
                                           for g in b.groups]})
@@ -538,7 +573,13 @@ class Renderer:
         icons = "".join(self.icon(s, "5.2mm", self.cfg.de(f"labels.skills.{s}")) for s in task.skills)
         rubric = self.de(task.rubric.de)
         expl = self.ex(task.rubric[self.cfg.lang]) if self._explain(task, ref.part_key) else ""
-        body = self.body(task.body)
+        self._wide = self.wide_task(task)
+        body = self.body(task.body[:-1])
+        # a long list may continue on the next page – but never away from the text or picture it belongs to
+        has_input = any(isinstance(x, (M.Dialogue, M.ReadingText, M.Image, M.PictureDictionary, M.GrammarBox)) for x in task.body[:-1])
+        self._chunks = [] if (self.cfg.flex and not wu and task.body and not has_input) else None
+        body += self.block(task.body[-1]) if task.body else ""
+        self.last_chunks, self._chunks = self._chunks or [], None
         margin = self.margin(task.notes, task.audio, words)
         self._answer(ref)
         l_anchor = "l-" + self._scope
@@ -549,7 +590,8 @@ class Renderer:
             key = {"label": "L 0", "href": ""}
         out = self.B.task({"anchor": ref.anchor, "prefix": esc(prefix), "letter": letter, "long": len(prefix) > 3, "icons": icons,
                            "rubric": rubric, "expl": expl, "lang": self.cfg.lang, "points": task.points, "key": key,
-                           "body": body, "margin": margin, "wu": wu})
+                           "body": body, "margin": margin, "wu": wu, "wide": self._wide})
+        self._wide = False
         return str(out), list(self._grow_ids)
 
     def _answer(self, ref: TaskRef) -> None:
@@ -587,6 +629,10 @@ class Renderer:
                             "full": self.full_width(b)})
         return str(out), list(self._grow_ids)
 
+    def wide_task(self, b) -> bool:
+        """A drill that runs across text column and margin (only where the margin is always on the right)."""
+        return isinstance(b, M.Task) and b.wide and not b.notes and not b.audio and self.cfg.lv.get("mirror", True) is False
+
     @staticmethod
     def full_width(b) -> bool:
         """Card grids and word lists run across the whole text block (there is nothing to put next to them)."""
@@ -606,19 +652,28 @@ class Renderer:
                 continue
             words, new = list(b.words), None
             if in_margin:                              # explain a word once per part, next to the first unit that has room for it
-                new = [] if self.full_width(b) else [w for w in b.words if w not in self.glossed]
+                new = [] if self.full_width(b) or self.wide_task(b) else [w for w in b.words if w not in self.glossed]
                 self.glossed.update(new)
                 words = new
             if isinstance(b, M.Boxed):
                 k += 1
                 uid = f"bx-{key}-{teil.nr}-{k}"
+                if in_margin:                          # words on cards are introduced there (for the word list), without a margin note
+                    words = [w for x in b.body if isinstance(x, M.VocabCards) for w in x.items] + list(new)
                 h, grow = self.box_html(b, uid, tokens, new)
                 units.append(Unit(uid, "box", h, key, teil.nr, section, words, grow_ids=grow, break_before=brk))
             else:
                 ref = self.book.tasks[f"{key}.{teil.nr}{b.id}"]
                 h, grow = self.task_html(ref, tokens, words=new)
-                units.append(Unit(ref.anchor, "task", h, key, teil.nr, section, words, ref.address, grow,
+                units.append(Unit(ref.anchor, "task", h, key, teil.nr, section, words, ref.address, [g for g in grow if f'id="{g}"' in h],
                                   break_before=brk, title=self.inline.plain(b.rubric.de)))
+                wide = " wide" if self.wide_task(b) else ""
+                for i, (piece, gap) in enumerate(self.last_chunks, 1):      # the rest of a long list: pieces that may move to the next page
+                    uid = f"{ref.anchor}-c{i}"
+                    ph = (f'<article class="task cont{wide}" id="{uid}"><div class="tk-l"></div><div class="tk-m"><div class="tk-b">{piece}</div></div>'
+                          f'<aside class="mn"></aside></article>')
+                    units.append(Unit(uid, "cont", ph, key, teil.nr, section, [], "", [g for g in grow if f'id="{g}"' in piece], gap=gap))
+                self.last_chunks = []
             brk = False
         return units
 
@@ -636,7 +691,9 @@ class Renderer:
         name = self.cfg.section(section)["de"]
         chip = self.icon(self.SECTION_ICONS.get(section, "buch"), "7mm", name)
         sub = esc(self.cfg.ui(f"sections.{section}")) if self.cfg.ui.has(f"sections.{section}") else ""
-        return self.head_unit(f"sec-{part.key}-{section}", part.key, section, chip, name, sub)
+        u = self.head_unit(f"sec-{part.key}-{section}", part.key, section, chip, name, sub)
+        u.break_before = not self.cfg.section(section).get("flow", False)     # flow: the section may start in the middle of a page
+        return u
 
     def block_head(self, part, teil, section: str) -> Optional[Unit]:
         """Flex books: the small numbered heading of a block. It never ends a page."""
@@ -646,6 +703,18 @@ class Renderer:
         h = self.B.blk_head({"anchor": anchor, "no": str(teil.nr), "title": self.de(teil.title),
                              "sub": self.ex(teil.subtitle) if teil.subtitle else "", "lang": self.cfg.lang})
         return Unit(anchor, "blk", str(h), part.key, teil.nr, section, keep_next=True, break_before=teil.new_page, title=teil.title)
+
+    def filler_html(self, i: int, uid: str) -> str:
+        """A learning tip in a speech bubble, said by one of the people of the book."""
+        f = (self.cfg.lv.get("fillers") or [])[i]
+        who = self.person(f["who"])
+        name = self.cast[who]["name"] if who in self.cast else f["who"]
+        self._n += 1
+        face = art.avatar(who, self.cast, "11.6mm", uid=f"{uid}") if who in self.cast else art.initial_avatar(name, self.cfg.station_tokens(), "11.6mm")
+        return (f'<article class="task boxu filler" id="{uid}"><div class="tk-l">{face}</div><div class="tk-m"><div class="fbub">'
+                f'<span class="lab" lang="de">{esc(self.cfg.de("labels.says", name=name))}</span>'
+                f'<p class="fd" lang="de">{self.de(f["de"])}</p><p class="fx" lang="{self.cfg.lang}">{self.ex(f[self.cfg.lang])}</p></div></div>'
+                f'<aside class="mn"></aside></article>')
 
     def head_unit(self, uid: str, part_key: str, section: str, chip: str, title: str, sub: str) -> Unit:
         h = self.B.teil_head({"anchor": uid, "no": chip, "title": esc(title), "sub": sub, "lang": self.cfg.lang})

@@ -8,6 +8,7 @@ series_name: "300 Seiten Deutsch"
 labels:
   words_on_page: Wörter auf dieser Seite
   topics: Themen
+  says: "{name} sagt"
   plural_abbr: Pl.
   pos: {verb: Verb, adj: Adjektiv, adv: Adverb}
   goal: Dein Ziel
@@ -74,6 +75,12 @@ labels:
     Betreff: Betreff
 how:
   path_title: 24 Seiten – immer derselbe Weg
+  path_title_flex: Jedes Kapitel – immer derselbe Weg
+  cards_title: Wörter auf Karten
+  tip_title: Tipps zum Lernen
+  wordhelp_title: Wort-Hilfe am Rand
+  rev_title: Wiederholung am Ende
+  rev_sample: "Wiederholung · Kapitel 1"
   task_title: Jede Aufgabe hat eine Adresse
   icons_title: Sechs Symbole
   colors_title: Artikel haben Farben

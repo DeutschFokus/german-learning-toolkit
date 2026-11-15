@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import datetime as _dt
 import hashlib
+import math
 import html
 import pickle
 import re
@@ -52,7 +53,8 @@ def stylesheet(cfg: Config, env, print_: bool = False) -> str:
         fonts=fonts, t=cfg.base_tokens(), lv=lt, palettes=palettes, pg=pg, tw=cfg.text_width_mm,
         content_w=round(pg["main"] - pg["label_col"], 3), body_h=cfg.body_height_pt, bl=cfg.bl, fs=body,
         fs_ex=body - 1, fs_note=round(body * 0.786, 2), fs_read=round(body - 0.3, 2), hw=cfg.lv["type"]["hand"],
-        wl=float(cfg.lv["type"]["write_line"]) * cfg.bl, sheet_w=sheet_w, sheet_h=sheet_h, pw_w=PW_WIDTH, pw_h=15, pw_gap=PW_GAP)
+        wl=float(cfg.lv["type"]["write_line"]) * cfg.bl, sheet_w=sheet_w, sheet_h=sheet_h, pw_w=PW_WIDTH, pw_h=15, pw_gap=PW_GAP,
+        flex=cfg.flex)
     odd = sorted({w for w in re.findall(r"font-weight:\s*(\d+)", css) if int(w) % 100 or not 100 <= int(w) <= 900})
     if odd:
         raise SystemExit(f"book.css.j2 uses font weights WeasyPrint would silently ignore: {', '.join(odd)}")
@@ -130,6 +132,7 @@ class Builder:
         self.load_cache()
         self.goal_pad: dict[str, float] = {}           # chapter key → pt that round the goal box up to the grid
         self.sec_pages: dict[str, dict[str, int]] = {}  # chapter key → pages of each section (flex books)
+        self.opener_k: dict[str, float] = {}            # chapter key → baseline on which the text of a tall opener starts
 
     # ── stylesheet ───────────────────────────────────────────────────────────
     def _css(self) -> str:
@@ -196,6 +199,17 @@ class Builder:
         if part.kind == "revision":
             return f"c{part.covers[0]}", self.cfg.chapter_tokens(part.covers[0])
         return "cz", self.cfg.station_tokens()
+
+    @property
+    def has_audio(self) -> bool:
+        return bool(self.book.tracks) or not self.cfg.flex
+
+    @property
+    def mirror(self) -> bool:
+        return self.cfg.lv.get("mirror", True) is not False
+
+    def side(self, folio: int) -> str:
+        return "recto" if folio % 2 or not self.mirror else "verso"
 
     def part_len(self, part) -> int:
         return self.cfg.chapter_len(part.number) if isinstance(part, M.Chapter) else self.cfg.station_len(part.number)
@@ -363,6 +377,8 @@ class Builder:
         vocab = sorted(self.book.vocab.values(), key=lambda v: (german_sort_key(v.de), v.de))
         letter = None
         for v in vocab:
+            if self.book.vocab_owner.get(v.id) == "level" and v.id not in self.word_intro:
+                continue                               # a level-wide word list: only the words of the parts in this build
             first = german_sort_key(v.de)[:1].upper()
             if first != letter:
                 letter = first
@@ -396,6 +412,10 @@ class Builder:
         for p in parts:                                     # chapter goals: measured so the opener stays on the grid
             if isinstance(p, M.Chapter):
                 items.append((f'<div class="op op-{cfg.series["design"]["opener"]}">{self.goalbox(p, 0.0)}</div>', 122.0))
+                items.append((f'<div class="op op-{cfg.series["design"]["opener"]}"><div id="opcol-{p.key}"><div class="lab" lang="de">{r.L("goal")}</div>'
+                              f'{self.goalbox(p, 0.0)}{r.cando_view(p, False)}</div></div>', 122.0))
+        n_fill = len(cfg.lv.get("fillers") or [])
+        items += [(r.filler_html(i, f"fillm-{i}"), tw) for i in range(n_fill)]
         ans = self.answer_units()
         trs = self.transcript_units()
         colw2 = round((tw - 8) / 2, 3)
@@ -417,6 +437,10 @@ class Builder:
             if g is not None:
                 pad = (-(g[3] - g[1])) % half
                 self.goal_pad[p.key] = 0.0 if pad < 0.05 or half - pad < 0.05 else round(pad, 2)
+            g = geom.get(f"opcol-{p.key}")
+            if g is not None:                           # an opener without warm-up: where the text may start so that it ends at the foot of the page
+                k = math.floor((self.cap - (g[3] - g[1]) - self.goal_pad.get(p.key, 0.0)) / half - 1) / 2
+                self.opener_k[p.key] = max(21.5, min(31.0, k))
 
         # heights (without the lines that were grown in the previous round)
         missing = []
@@ -459,6 +483,7 @@ class Builder:
         # paginate the learning parts
         page_of: dict[str, str] = {}
         new_grow: dict[str, int] = {}
+        fill_no = 0
         learn: list[PageSpec] = []
         issues = []
         for part in parts:
@@ -467,7 +492,7 @@ class Builder:
             start = self.part_start(part)
             folio = start
             if isinstance(part, M.Chapter):
-                spec = PageSpec(f"p-{folio}", "opener", "learn", str(folio), str(folio), "recto" if folio % 2 else "verso", pal,
+                spec = PageSpec(f"p-{folio}", "opener", "learn", str(folio), str(folio), self.side(folio), pal,
                                 meta={"part": part.key, "section": "auftakt", "units": op})
                 spec.anchors = [f"k-{part.key}", f"sec-{part.key}-auftakt", f"teil-{part.key}-1"] + [u.uid for u in op]
                 learn.append(spec)
@@ -475,7 +500,7 @@ class Builder:
             target = self.part_len(part) - (1 if isinstance(part, M.Chapter) else 0)
             pages = None
             if cfg.flex:
-                pages, minimum = paginate_fit(flow, self.cap, self.bl, target, r.elastic)
+                pages, minimum = paginate_fit(flow, self.cap, self.bl, target, r.elastic, max_gap_steps=3)
                 if pages is None:
                     name = f"Kapitel {part.number}" if isinstance(part, M.Chapter) else f"Wiederholung {part.number}"
                     issues.append(("error", name, f"does not fit its length: the content needs at least {minimum + (1 if isinstance(part, M.Chapter) else 0)} "
@@ -483,9 +508,19 @@ class Builder:
             if pages is None:
                 pages = paginate(flow, self.cap, self.bl)
             for fp in pages:
-                justify(fp, self.cap, self.bl, r.elastic, new_grow)
+                justify(fp, self.cap, self.bl, r.elastic, new_grow, max_gap_steps=3 if cfg.flex else 2, partial=cfg.flex)
                 first = fp.placed[0].unit
-                spec = PageSpec(f"p-{folio}", "flow", "learn", str(folio), str(folio), "recto" if folio % 2 else "verso", pal, flow=fp,
+                if n_fill and first.section != "abschlusstest":      # a page that ends far too short gets a tip at its foot (never in a test)
+                    i = fill_no % n_fill
+                    g = geom.get(f"fillm-{i}")
+                    h = (g[3] - g[1]) if g else 0.0
+                    if h and self.cap - fp.used >= h + 5 * self.bl:
+                        uid = f"fill-{folio}"
+                        top = math.floor((self.cap - h) / half) * half
+                        fp.placed.append(Placed(Unit(uid, "fill", r.filler_html(i, uid), part.key, 0, first.section, height=h), top))
+                        fp.used, fp.leftover = top + h, max(0.0, self.cap - top - h)
+                        fill_no += 1
+                spec = PageSpec(f"p-{folio}", "flow", "learn", str(folio), str(folio), self.side(folio), pal, flow=fp,
                                 meta={"part": part.key, "section": first.section, "teil": first.teil})
                 spec.anchors = [pl.unit.uid for pl in fp.placed]
                 learn.append(spec)
@@ -659,7 +694,7 @@ class Builder:
                 o.update({"gram_label": r.L("topics"), "gram_icon": r.icon("sprechen", "4.6mm", cfg.de("labels.topics")),
                           "grammar": [esc(t) for t in ch.topics]})
             spec.cls = f"op op-{style}" + ("" if spec.meta["units"] else " op-tall")
-            spec.inner = str(self.P.opener(o)) + footer + folio
+            spec.inner = f'<div class="opv" style="--opk:{self.opener_k.get(ch.key, 21.5):g}">{self.P.opener(o)}</div>' + footer + folio
             spec.outline = [(1, f'{cfg.de("chapter")} {ch.number} · {ch.title}', f"k-{ch.key}")] + \
                            [(3, f"{u.address} {u.title}", u.uid) for u in spec.meta["units"]]
             return
@@ -668,7 +703,7 @@ class Builder:
         if isinstance(part, M.Station):
             t = next((t for t in part.teile if t.nr == spec.meta.get("teil")), None) or part.teile[0]
             teil_title = t.title
-        body = "".join(f'<div class="u" style="top:{pl.top:.2f}pt">{pl.unit.html}</div>' for pl in fp.placed)
+        body = "".join(f'<div class="u{" mid" if pl.unit.kind == "head" and pl.top > 1 else ""}" style="top:{pl.top:.2f}pt">{pl.unit.html}</div>' for pl in fp.placed)
         if fp.placed and fp.placed[0].unit.kind in ("teil", "head") and fp.placed[0].top < 1:
             spec.cls = "tstart"                        # a section starts here: coloured band across the top of the page
         spec.inner = (self.running(part, spec.meta["section"], teil_title) + self.tab(part)
@@ -731,8 +766,8 @@ class Builder:
                               "copyright": esc(cfg.ui("imprint.copyright", year=S["year"], publisher=S["publisher"])),
                               "version": esc(cfg.ui("imprint.version", version=S["version"], date=today)),
                               "licence_title": esc(cfg.ui("imprint.licence_title")), "licence": esc(cfg.ui("imprint.licence")),
-                              "audio_title": esc(cfg.ui("imprint.audio_title")),
-                              "audio": esc(cfg.ui("imprint.audio" if S.get("audio_url") else "imprint.audio_channel")).format(url=yt_link),
+                              "audio_title": esc(cfg.ui("imprint.audio_title")) if self.has_audio else "",
+                              "audio": esc(cfg.ui("imprint.audio" if S.get("audio_url") else "imprint.audio_channel")).format(url=yt_link) if self.has_audio else "",
                               "fonts_title": esc(cfg.ui("imprint.fonts_title")), "fonts": esc(cfg.ui("imprint.fonts")),
                               "credits": esc(" · ".join(cfg.series["fonts"]["credits"])),
                               "characters": esc(cfg.ui("imprint.characters")),
@@ -771,6 +806,8 @@ class Builder:
                       {"link": f'<a href="#cast"><b lang="de">{esc(cfg.de("labels.cast"))}</b></a> <span lang="{cfg.lang}">{esc(cfg.ui("toc.cast"))}</span>', "page": '<a href="#cast">vi</a>'}]
         back_rows = []
         for key, anchor in (("answers", "ax-answers"), ("transcripts", "ax-transcripts"), ("wordlist", "ax-wordlist")):
+            if key == "transcripts" and not self.has_audio:
+                continue
             lab = r.page_of.get(anchor, "")
             built = anchor in r.built
             name = f'<b lang="de">{esc(cfg.de("labels.wordlist_long" if key == "wordlist" else "labels." + key))}</b> <span lang="{cfg.lang}">{esc(cfg.ui("toc." + key))}</span>'
@@ -789,20 +826,24 @@ class Builder:
                        f'<div class="tk-m"><div class="rub"><span class="de" lang="de">{esc(cfg.de("how.sample_rubric"))}</span><span class="meta">'
                        f'<span class="score">/ 6</span><span class="lkey">L 3</span></span></div>'
                        f'<p class="ex" lang="{cfg.lang}">{esc(cfg.ui("how.task_points")[2])}</p></div><aside class="mn"></aside></article>')
+        skills = ("hoeren", "lesen", "schreiben", "sprechen", "partner", "grammatik") if self.has_audio else \
+                 ("wortschatz", "lesen", "schreiben", "sprechen", "partner", "grammatik")
+        kinds = ("tipp", "wort", "landeskunde", "sogehts") if not cfg.flex else ("tipp", "wort")
+        if cfg.flex:
+            sample_task = sample_task.replace("<i>5.2</i><b>d</b>", "<i>1.2</i><b>a</b>")
         how1 = self.P.how1({"title": esc(cfg.de("labels.how")), "lang": cfg.lang, "lead": esc(cfg.ui("how.lead")),
-                            "path_title": esc(cfg.de("how.path_title")),
-                            "path": [{"pages": s["pages"] if not cfg.flex else i, "name": esc(s["de"]),
+                            "path_title": esc(cfg.de("how.path_title_flex" if cfg.flex else "how.path_title")),
+                            "path": [{"pages": s["pages"] if not cfg.flex else (i or ""), "name": esc(s["de"]),
                                       "text": esc(cfg.ui(f"how.path_flex.{s['id']}" if cfg.flex else f"how.path.{s['id']}"))}
                                      for i, s in enumerate(cfg.sections)],
-                            "task_title": esc(cfg.de("how.task_title")), "task": esc(cfg.ui("how.task")), "sample_task": sample_task,
+                            "task_title": esc(cfg.de("how.task_title")), "task": esc(cfg.ui("how.task_flex" if cfg.flex else "how.task")), "sample_task": sample_task,
                             "task_points": [esc(x) for x in cfg.ui("how.task_points")],
                             "icons_title": esc(cfg.de("how.icons_title")), "icons": esc(cfg.ui("how.icons")),
-                            "icon_list": [(r.icon(s, "7mm", cfg.de(f"labels.skills.{s}")), esc(cfg.de(f"labels.skills.{s}")))
-                                          for s in ("hoeren", "lesen", "schreiben", "sprechen", "partner", "grammatik")],
+                            "icon_list": [(r.icon(s, "7mm", cfg.de(f"labels.skills.{s}")), esc(cfg.de(f"labels.skills.{s}"))) for s in skills],
                             "colors_title": esc(cfg.de("how.colors_title")), "colors": esc(cfg.ui("how.colors")),
                             "margin_title": esc(cfg.de("how.margin_title")), "margin": esc(cfg.ui("how.margin")),
                             "margin_items": [{"kind": k, "icon": r.icon(k, "4.2mm", cfg.de(f"labels.notes.{k}")), "label": esc(cfg.de(f"labels.notes.{k}")),
-                                              "text": esc(cfg.ui(f"how.margin_items.{k}"))} for k in ("tipp", "wort", "landeskunde", "sogehts")]})
+                                              "text": esc(cfg.ui(f"how.margin_items.{k}"))} for k in kinds]})
         pages.append(PageSpec("p-iv", "front", "front", "iv", "iv", "verso", "c5", str(how1) + '<div class="folio">iv</div>', "", ["p-iv", "how"],
                               [(1, cfg.de("labels.how"), "how")]))
         url = cfg.audio_url("5.01")
@@ -824,20 +865,41 @@ class Builder:
         legend = legend.replace(f"{NNBSP} ", NNBSP)
         sample_refs = (f'<div class="read" lang="de"><div class="tx">{marks}<p>{"<br>".join(esc(x) for x in cfg.de("how.sample_note"))}</p></div></div>'
                        f'<p class="refleg" lang="de">{legend}</p>')
-        how2 = self.P.how2({"lang": cfg.lang,
-                            "audio_title": esc(cfg.de("how.audio_title")), "audio": esc(cfg.ui("how.audio")), "sample_audio": sample_audio,
-                            "mistake_title": esc(cfg.de("how.mistake_title")), "mistake": esc(cfg.ui("how.mistake")), "sample_mistake": sample_mistake,
+        slot = {"audio_title": esc(cfg.de("how.audio_title")), "audio": esc(cfg.ui("how.audio")), "sample_audio": sample_audio,
+                "mistake_title": esc(cfg.de("how.mistake_title")), "mistake": esc(cfg.ui("how.mistake")), "sample_mistake": sample_mistake,
+                "words_title": esc(cfg.de("how.words_title")), "words": esc(cfg.ui("how.words")), "sample_words": sample_words,
+                "refs_title": esc(cfg.de("how.refs_title")), "refs": esc(cfg.ui("how.refs")), "sample_refs": sample_refs}
+        if cfg.flex:
+            nouns = [v for v in self.book.vocab.values() if v.article and v.plural and len(v.de) <= 7 and not v.plural_only and not v.singular_only]
+            pick = [next((v for v in nouns if v.article == a), None) for a in ("der", "die")]
+            cards = str(r.B.vcards({"title": "", "style": "cards", "lang": cfg.lang, "pl": esc(cfg.de("labels.plural_abbr")), "items": [
+                {"cls": v.gender_class, "article": v.article, "word": esc(v.de), "suffix": "", "len": "", "plural": esc(r._plural_full(v)), "tag": "",
+                 "tr": esc(v.translation(cfg.lang)), "note": ""} for v in pick if v]}))
+            words = [v for v in self.book.vocab.values() if v.article and v.plural][:2]
+            note = str(r.B.note({"kind": "wort", "label": esc(cfg.de("labels.notes.wort")), "icon": r.icon("wort", "4.2mm", cfg.de("labels.notes.wort")), "text": "",
+                                 "lang": cfg.lang, "entries": [{"de": f'<span class="{v.gender_class}">{v.article}</span> {esc(v.de)}{esc(v.notation()[2])}',
+                                                                "tr": esc(v.translation(cfg.lang))} for v in words]}))
+            tip = r.filler_html(0, "how-tip").replace('class="task boxu filler"', 'class="filler hf"') if cfg.lv.get("fillers") else ""
+            rev = f'<div class="hrev"><span class="tab rv">W1</span><b lang="de">{esc(cfg.de("how.rev_sample"))}</b></div>'
+            slot = {"audio_title": esc(cfg.de("how.cards_title")), "audio": esc(cfg.ui("how.cards")), "sample_audio": cards,
+                    "mistake_title": esc(cfg.de("how.tip_title")), "mistake": esc(cfg.ui("how.tip")), "sample_mistake": tip,
+                    "words_title": esc(cfg.de("how.wordhelp_title")), "words": esc(cfg.ui("how.wordhelp")), "sample_words": f'<div class="mn hmn">{note}</div>',
+                    "refs_title": esc(cfg.de("how.rev_title")), "refs": esc(cfg.ui("how.rev")), "sample_refs": rev}
+        how2 = self.P.how2({"lang": cfg.lang, "wide_first": cfg.flex,
+                            "audio_title": slot["audio_title"], "audio": slot["audio"], "sample_audio": slot["sample_audio"],
+                            "mistake_title": slot["mistake_title"], "mistake": slot["mistake"], "sample_mistake": slot["sample_mistake"],
                             "hand_title": esc(cfg.de("how.hand_title")), "hand": esc(cfg.ui("how.hand")), "sample_lines": sample_lines,
                             "check_title": esc(cfg.de("how.check_title")), "check": esc(cfg.ui("how.check")), "sample_cando": sample_cando,
-                            "words_title": esc(cfg.de("how.words_title")), "words": esc(cfg.ui("how.words")), "sample_words": sample_words,
-                            "refs_title": esc(cfg.de("how.refs_title")), "refs": esc(cfg.ui("how.refs")), "sample_refs": sample_refs,
+                            "words_title": slot["words_title"], "words": slot["words"], "sample_words": slot["sample_words"],
+                            "refs_title": slot["refs_title"], "refs": slot["refs"], "sample_refs": slot["sample_refs"],
                             "tips_title": esc(cfg.ui("how.tips_title")), "tips": [esc(t) for t in cfg.ui("how.tips")]})
         pages.append(PageSpec("p-v", "front", "front", "v", "v", "recto", "c5", str(how2) + '<div class="folio">v</div>', "", ["p-v"]))
         # cast
         bios = cfg.bios
         people = [{"avatar": art.avatar(k, cfg.cast, "24mm", uid="cast"), "name": esc(cfg.cast[k]["full"]),
                    "bio": r.de(b["de"]), "bio_tr": r.inline.ex(b[cfg.lang])} for k, b in bios.items()]
-        cast = self.P.cast({"title": esc(cfg.de("labels.cast")), "lang": cfg.lang, "lead": esc(cfg.ui("cast.lead")), "people": people})
+        cast = self.P.cast({"title": esc(cfg.de("labels.cast")), "lang": cfg.lang,
+                            "lead": esc(cfg.ui("cast.lead_book" if cfg.lv.get("cast") else "cast.lead")), "people": people})
         pages.append(PageSpec("p-vi", "front", "front", "vi", "vi", "verso", "cn", str(cast) + '<div class="folio">vi</div>', "", ["p-vi", "cast"],
                               [(1, cfg.de("labels.cast"), "cast")]))
         return pages
@@ -852,7 +914,7 @@ class Builder:
         if not complete:
             kicker = cfg.ui("sales.kicker") if self.sample else cfg.edition_title()
             title, body, button = cfg.ui("sales.title"), cfg.ui("sales.body", level=cfg.level_name), cfg.ui("sales.button")
-            points = cfg.ui("sales.points")
+            points = cfg.ui("sales.points_flex" if cfg.flex else "sales.points")
         else:
             kicker, points = cfg.ui("sales.kicker_full", level=cfg.level_name), []
             key = "full" if nxt else "last"
@@ -953,7 +1015,7 @@ class Builder:
         seq += learn_final
         prev_side = seq[-1].side if seq else "verso"
         for s in appendix:
-            s.side = "verso" if prev_side == "recto" else "recto"
+            s.side = "verso" if prev_side == "recto" and self.mirror else "recto"
             prev_side = s.side
             src = {"answers": ans_html, "transcripts": trs_html, "wordlist": wl_html}[s.group]
             s.meta["htmls"] = src
@@ -1001,6 +1063,8 @@ class Builder:
                 s.meta["units"] = [fresh[u.uid] for u in s.meta["units"]]
             else:
                 for pl in s.flow.placed:
+                    if pl.unit.uid not in fresh:           # tips at the foot of a page are not part of the content
+                        continue
                     h = pl.unit.height
                     pl.unit = fresh[pl.unit.uid]
                     pl.unit.height = h

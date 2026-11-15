@@ -46,6 +46,11 @@ imprint:
   characters: "All people and events in this book are fictional."
   contact: "Questions, corrections, ideas? {contact}"
 how:
+  cards: "Every chapter starts with its most important words on cards. The coloured edge is the article; below it you find the plural and the translation."
+  tip: "Now and then one of the people in this book gives you a learning tip."
+  wordhelp: "New words are explained next to the task that uses them – with article, plural and translation."
+  rev: "At the back of the book every chapter has four more pages of practice. The tab W1 belongs to chapter 1."
+  task_flex: "1.2 a means chapter 1, block 2, task a. You find the same address in the answer key and in cross-references."
   path_flex:
     auftakt: "A picture, your goal and a checklist. Tick what you can already do."
     wortschatz: "The words of the topic as cards, then the first exercises."
@@ -85,6 +90,7 @@ how:
     - "Say it out loud. Read every dialogue twice – once as each speaker."
     - "Check the answer key only after you have tried. Mistakes are part of the plan."
 cast:
+  lead_book: "You will meet these people again and again in this book."
   title: The people in this book
   lead: "You will meet these neighbours, friends and colleagues again and again – in every chapter and at every level."
 test:
@@ -118,6 +124,11 @@ wordlist:
   title: Word list A–Z
   lead: "All new words of this book with the pages where you find them. Bold page = where the word is introduced. Separable verbs are shown like this: ein|ziehen."
 sales:
+  points_flex:
+    - "12 chapters and 12 revision units – exactly 300 pages"
+    - "The words of every chapter on cards, in article colours"
+    - "A test in every chapter, answer key and word list A–Z"
+    - "Interactive PDF: linked contents, answers and page references"
   kicker: You have reached the end of the sample
   title: "Ready for all|300 pages?"                 # | = line break
   body: "The full book takes you through twelve chapters of {level} German – with audio for every listening task, an answer key for every exercise and a test at the end of each chapter."

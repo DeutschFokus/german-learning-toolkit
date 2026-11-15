@@ -31,7 +31,7 @@ def geometry(res, cfg, doc) -> tuple[list[str], list[tuple]]:
     pg = cfg.page
     off = (pg["slug"] + pg["bleed"]) * MM if cfg.flags.get("print") else 0.0
     body_top = pg["top"] * MM + off
-    footer_top = pg["footer_top"] * MM + off
+    footer_top = (pg["folio_top"] if cfg.lv.get("words") == "margin" else pg["footer_top"]) * MM + off
     for i, s in enumerate(res.pages):
         if s.kind == "opener":
             end = final.get(f"end-{s.pid}")

@@ -229,7 +229,7 @@ class ReadingText(Strict):
     """A text to read. `genre` picks the typographic costume, nothing else."""
     type: Literal["reading_text"]
     id: Optional[str] = None
-    genre: Literal["email", "notice", "listing", "article", "chat", "note", "plain"] = "plain"
+    genre: Literal["email", "notice", "listing", "article", "chat", "note", "profile", "plain"] = "plain"
     title: Optional[str] = None
     kicker: Optional[str] = None
     meta: dict[str, str] = Field(default_factory=dict)   # email: von / an / betreff
@@ -502,6 +502,7 @@ class Task(Strict):
     answer: Optional[Answer] = None
     words: list[str] = Field(default_factory=list)       # vocab ids that are new in this task
     explain: Optional[bool] = None            # force / suppress the explanation line
+    wide: bool = False                        # drills: run across text column and margin, lists in two columns (books without mirrored pages)
 
     @model_validator(mode="after")
     def _checks(self):

@@ -9,7 +9,7 @@
 
 {# ── a task: address + skill icons · rubric + body · margin ──────────────── #}
 {% macro task(t) %}
-<article class="task{{ ' wu' if t.wu }}" id="{{ t.anchor }}">
+<article class="task{{ ' wu' if t.wu }}{{ ' wide' if t.wide }}" id="{{ t.anchor }}">
 <div class="tk-l"><span class="addr{{ ' long' if t.long }}"><i>{{ t.prefix }}</i><b>{{ t.letter }}</b></span><span class="skills">{{ t.icons }}</span></div>
 <div class="tk-m">
 <div class="rub"><span class="de" lang="de">{{ t.rubric }}</span>{% if t.points or t.key %}<span class="meta">{% if t.points %}<span class="score">/ {{ t.points }}</span>{% endif %}{% if t.key %}{% if t.key.href %}<a class="lkey" href="{{ t.key.href }}">{{ t.key.label }}</a>{% else %}<span class="lkey">{{ t.key.label }}</span>{% endif %}{% endif %}</span>{% endif %}</div>
@@ -33,7 +33,7 @@
 {% endmacro %}
 
 {% macro blk_head(h) %}
-<div class="blk" id="{{ h.anchor }}"><div><span class="bn{{ ' w2' if h.no|length > 1 }}">{{ h.no }}</span></div><div class="bt"><h3 lang="de">{{ h.title }}</h3>{% if h.sub %}<span class="bs" lang="{{ h.lang }}">{{ h.sub }}</span>{% endif %}</div></div>
+<div class="blk" id="{{ h.anchor }}"><div><span class="bn{{ ' w2' if h.no|length > 1 }}">{{ h.no }}</span></div><div class="bt"><h3 lang="de">{{ h.title }}</h3>{% if h.sub %} <span class="bs" lang="{{ h.lang }}">{{ h.sub }}</span>{% endif %}</div></div>
 {% endmacro %}
 
 {% macro station_head(h) %}
@@ -65,7 +65,7 @@
 {% endmacro %}
 
 {% macro cards(v) %}
-<div class="cards {{ v.kind }} n{{ v.n }}" lang="de">{% for c in v.cards %}<div class="card{{ ' has-au' if c.author }}{{ ' has-cl' if c.label }}">{% if c.label %}<span class="cl">{{ c.label }}</span>{% endif %}{% if c.title %}<span class="ct">{{ c.title }}</span>{% endif %}{{ c.text }}{% if c.author %}<span class="au">{{ c.author }}</span>{% endif %}</div>{% endfor %}</div>
+<div class="cards {{ v.kind }} n{{ v.n }}" lang="de">{% for c in v.cards %}<div class="card{{ ' has-au' if c.author }}{{ ' has-cl' if c.label }}">{{ c.avatar }}{% if c.label %}<span class="cl">{{ c.label }}</span>{% endif %}{% if c.title %}<span class="ct">{{ c.title }}</span>{% endif %}{{ c.text }}{% if c.author %}<span class="au">{{ c.author }}</span>{% endif %}</div>{% endfor %}</div>
 {% endmacro %}
 
 {% macro chat(v) %}
@@ -90,7 +90,7 @@
 {% endmacro %}
 
 {% macro phrases(v) %}
-<div class="phr">{% if v.title %}<div class="gh" lang="de">{{ v.icon }}<span class="lab">{{ v.label }}</span><span class="tt">{{ v.title }}</span></div>{% endif %}
+<div class="phr">{% if v.title or v.head %}<div class="gh" lang="de">{{ v.icon }}<span class="lab">{{ v.label }}</span><span class="tt">{{ v.title }}</span></div>{% endif %}
 {% for g in v.groups %}<div class="phg">{% if g.title %}<h4 lang="de">{{ g.title }}</h4>{% endif %}{% for de, ex in g.items %}<div class="pr"><span lang="de">{{ de }}</span><span lang="{{ v.lang }}">{{ ex }}</span></div>{% endfor %}</div>{% endfor %}</div>
 {% endmacro %}
 
@@ -102,7 +102,7 @@
 {% macro gaptext(v) %}
 {% if v.bank %}{{ bank(v.bank) }}{% endif %}
 {% if v.text %}<p class="gaptext" lang="de">{{ v.text }}</p>{% endif %}
-{% if v.items or v.example %}<ol class="items{{ ' compact' if v.compact }}" lang="de">{% if v.example %}<li class="exa"><span class="tag">Bsp.</span>{{ v.example }}</li>{% endif %}{% for it in v.items %}<li>{{ it }}</li>{% endfor %}</ol>{% endif %}
+{% if v.items or v.example %}<ol class="items{{ ' compact' if v.compact }}" lang="de"{% if v.start %} style="counter-reset:it {{ v.start }}"{% endif %}>{% if v.example %}<li class="exa"><span class="tag">Bsp.</span>{{ v.example }}</li>{% endif %}{% for it in v.items %}<li>{{ it }}</li>{% endfor %}</ol>{% endif %}
 {% endmacro %}
 
 {% macro truefalse(v) %}
@@ -123,7 +123,7 @@
 {% macro vcards(v) %}
 {% if v.title %}<div class="vct lab" lang="de">{{ v.title }}</div>{% endif %}
 {% if v.style == 'list' %}<ul class="vlist" lang="de">{% for it in v.items %}<li><span>{% if it.article %}<span class="{{ it.cls }}">{{ it.article }}</span> {% endif %}<b>{{ it.word }}</b>{{ it.suffix }}</span><em lang="{{ v.lang }}">{{ it.tr }}</em></li>{% endfor %}</ul>
-{% else %}<div class="vcards">{% for it in v.items %}<div class="vc {{ it.cls or 'x' }}"><div class="vw{{ ' ' ~ it.len if it.len }}" lang="de">{% if it.article %}<span class="{{ it.cls }}">{{ it.article }}</span> {% endif %}<b>{{ it.word }}</b>{% if it.note %} <i>{{ it.note }}</i>{% endif %}</div><div class="vp" lang="de">{% if it.plural %}{{ v.pl }} {{ it.plural }}{% elif it.tag %}{{ it.tag }}{% else %}&nbsp;{% endif %}</div><div class="vt" lang="{{ v.lang }}">{{ it.tr }}</div></div>{% endfor %}</div>{% endif %}
+{% else %}<div class="vcards">{% for it in v.items %}<div class="vc{{ ' a-' ~ it.cls if it.cls }}"><div class="vw{{ ' ' ~ it.len if it.len }}" lang="de">{% if it.article %}<span class="{{ it.cls }}">{{ it.article }}</span> {% endif %}<b>{{ it.word }}</b>{% if it.note %} <i>{{ it.note }}</i>{% endif %}</div><div class="vp" lang="de">{% if it.plural %}{{ v.pl }} {{ it.plural }}{% elif it.tag %}{{ it.tag }}{% else %}&nbsp;{% endif %}</div><div class="vt" lang="{{ v.lang }}">{{ it.tr }}</div></div>{% endfor %}</div>{% endif %}
 {% endmacro %}
 
 {% macro artchoice(v) %}
@@ -142,7 +142,7 @@
 
 {% macro sentences(v) %}
 <ol class="sb" lang="de">{% if v.example %}<li class="exa"><span class="g"><span class="tag">{{ v.label }}</span>{{ v.example.given }}</span>{{ v.example.ruled }}</li>{% endif %}
-{% for it in v.items %}<li><span class="g"><span class="n">{{ loop.index }}</span>{{ it.given }}</span>{{ it.ruled }}</li>{% endfor %}</ol>
+{% for it in v.items %}<li><span class="g"><span class="n">{{ it.n }}</span>{{ it.given }}</span>{{ it.ruled }}</li>{% endfor %}</ol>
 {% endmacro %}
 
 {% macro tablefill(v) %}

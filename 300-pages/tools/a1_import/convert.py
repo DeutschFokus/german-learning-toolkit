@@ -199,6 +199,9 @@ class Vocabulary:
                 forms.add(pf)
         if e.get("pos") == "verb" or (not e.get("article") and e["de"].endswith("en") and e["de"].islower() and " " not in e["de"]):
             forms.add(re.sub(r"e?n$", "", e["de"]))
+        m = re.fullmatch(r"(?:ich|du|er|sie|es|wir|ihr|Sie|er/sie/es|sie/Sie) (\w+)", e["de"])
+        if m:
+            forms.add(m.group(1))
         pat = "|".join(re.escape(f) for f in sorted(forms, key=len, reverse=True))
         return re.compile(r"(?<![A-Za-zÄÖÜäöüß])(?:" + pat + r")", 0 if e.get("article") else re.I)
 
@@ -382,7 +385,7 @@ class Converter:
             title = ctx.get("title", "")
             if all(re.match(r"[A-ZÄÖÜ][\wäöüß]+: ", p) for p in paras) and len(paras) > 1:
                 parts = [{"label": p.split(": ", 1)[0], "text": p.split(": ", 1)[1]} for p in paras]
-                body.append({"type": "reading_text", "genre": "note", "parts": parts, "line_numbers": False})
+                body.append({"type": "reading_text", "genre": "profile", "parts": parts, "line_numbers": False})
                 return body, notes, "profiles"
             if "E-Mail" in title or "Mail" in title:
                 meta = {}
@@ -571,7 +574,8 @@ class Converter:
                 if a and not individual:
                     entry["answer"] = a
                 sb_items.append(entry)
-            sb = {"type": "sentence_build", "items": sb_items, "lines": 1, "grow": True}     # one line each; a second one if the page has room
+            # one line per answer is the least; where a page has room, the paginator gives every answer a second line (as the old book had)
+            sb = {"type": "sentence_build", "items": sb_items, "lines": 1, "grow": True}
             body.append(sb)
             if individual or not all("answer" in x for x in sb_items):
                 model = " ".join(f"**{n}** {a}" for n, a in sorted(ans_items.items())) if ans_items else model_text
@@ -587,11 +591,24 @@ class Converter:
             answer = {"open": True}
             if model_text and model_text != " ".join(hands):
                 answer["model"] = model_text
+        if not pre_body and body:                          # long drills run in two columns across text column and margin
+            ex = body[-1]
+            n = len(ex.get("items", []))
+            if (ex["type"] == "article_choice" and n > 6) or (ex["type"] == "vocab_translate" and n > 5) or \
+               (ex["type"] == "gap_text" and n >= 6 and not ex.get("bank") and max(self.width(x) for x in ex["items"]) <= 68):
+                task["wide"] = True
+                ex.pop("compact", None)
         if body:
             task["body"] = body
         if answer:
             task["answer"] = answer
         return task
+
+    @staticmethod
+    def width(x: str) -> float:
+        """Rough printed width of an item in mm: text plus its write-in gaps."""
+        gaps = re.findall(r"\[\[(.*?)\]\]", x)
+        return len(re.sub(r"\[\[.*?\]\]", "", x)) * 1.9 + sum(max(13, 8 + 2.15 * len(g.split("~")[-1])) + 1.6 for g in gaps)
 
     def gap_text(self, items: list[dict], ans: dict[int, str], bank: list[str], t: dict, where: str) -> dict:
         out_items = []
@@ -629,10 +646,7 @@ class Converter:
             gt["example"] = example
         if bank:
             gt["bank"] = bank
-        def width(x: str) -> float:                      # rough printed width in mm: text plus the write-in gaps
-            gaps = re.findall(r"\[\[(.*?)\]\]", x)
-            return len(re.sub(r"\[\[.*?\]\]", "", x)) * 1.75 + sum(max(13, 8 + 2.15 * len(g.split("~")[-1])) + 1.6 for g in gaps)
-        if len(out_items) >= 4 and max(width(x) for x in out_items) <= 46:
+        if len(out_items) >= 4 and max(self.width(x) for x in out_items) <= 46:
             gt["compact"] = True
         return gt
 
@@ -713,8 +727,9 @@ class Converter:
         sub = self.tm.simple("subtitles", src["subtitle"], "Chapter subtitles without translation")
         goal = self.tm.simple("goals", src["goal"], "Chapter goals without German / Turkish wording") if src["goal"] else None
         if goal is None:
-            REP.add("Chapters without a goal in the old book", f"Kapitel {n}")
-            goal = {"de": "⟦DE⟧", "tr": "⟦TR⟧"}
+            goal = (self.tm.d.get("goals_new") or {}).get(n)
+            REP.add("FIXED · the old book printed no goal for this chapter; one was written" if goal else "Chapters without a goal in the old book", f"Kapitel {n}")
+            goal = goal or {"de": "⟦DE⟧", "en": "⟦EN⟧", "tr": "⟦TR⟧"}
         iid = f"k{n}-auftakt"
         if src.get("picture"):
             self.pictures.append((src["page"], tuple(src["picture"]), iid))

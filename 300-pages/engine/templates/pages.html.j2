@@ -32,7 +32,7 @@
 <p>{{ i.expl }}</p>
 <p style="margin-top:calc(var(--bl)*.875)">{{ i.copyright }}<br>{{ i.version }}</p>
 <h3>{{ i.licence_title }}</h3><p>{{ i.licence }}</p>
-<h3>{{ i.audio_title }}</h3><p>{{ i.audio }}</p>
+{% if i.audio %}<h3>{{ i.audio_title }}</h3><p>{{ i.audio }}</p>{% endif %}
 <h3>{{ i.fonts_title }}</h3><p>{{ i.fonts }}<br>{{ i.credits }}</p>
 <p style="margin-top:calc(var(--bl)*.875)">{{ i.characters }}<br>{{ i.contact }}</p>
 </div>
@@ -78,7 +78,7 @@
 <div class="fm how h2">
 <div class="grid2" style="margin-top:0">
 <div class="cd"><h2 lang="de">{{ h.audio_title }}</h2><p class="expl" lang="{{ h.lang }}">{{ h.audio }}</p>
-<div class="smp" style="width:42mm">{{ h.sample_audio }}</div></div>
+<div class="smp"{% if not h.wide_first %} style="width:42mm"{% endif %}>{{ h.sample_audio }}</div></div>
 <div class="cd"><h2 lang="de">{{ h.mistake_title }}</h2><p class="expl" lang="{{ h.lang }}">{{ h.mistake }}</p>
 <div class="smp">{{ h.sample_mistake }}</div></div>
 <div class="cd"><h2 lang="de">{{ h.hand_title }}</h2><p class="expl" lang="{{ h.lang }}">{{ h.hand }}</p>

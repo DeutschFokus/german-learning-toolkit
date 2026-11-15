@@ -25,6 +25,7 @@ teile:
           de: Welcher Artikel passt? Kreuze an.
           en: Which article fits? Tick the correct box.
           tr: Hangi artikel uygun? İşaretle.
+        wide: true
         body:
           - type: article_choice
             items:
@@ -83,6 +84,7 @@ teile:
           de: Wie heißt das auf Deutsch? Schreib Nomen mit Artikel.
           en: How do you say it in German? Write nouns with the article.
           tr: Almancası ne? İsimleri artikeliyle yaz.
+        wide: true
         body:
           - type: vocab_translate
             items:
@@ -170,8 +172,8 @@ teile:
         words:
           - aus-dativ
           - grafikerin
-          - er-heisst
           - heissen
+          - ich-bin
           - ich-komme
           - kommen
           - lesen
@@ -205,7 +207,7 @@ teile:
               - Freund
               - Grafikerin
         words:
-          - ich-bin
+          - er-heisst
           - auch
           - jetzt
           - wien

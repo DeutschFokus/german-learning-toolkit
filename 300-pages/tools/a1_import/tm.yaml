@@ -151,6 +151,12 @@ goals:
     de: "Du stellst dich vor, begrüßt andere und stellst einfache Fragen zu Name und Wohnort."
     tr: "Kendini tanıtırsın, başkalarını selamlarsın ve ad ile yaşanılan yer hakkında basit sorular sorarsın."
 
+goals_new:         # chapters whose goal is missing in the old book (on the opener of chapter 5 it fell off the page)
+  5:
+    de: "Du bestellst im Restaurant Essen und Getränke und sagst höflich, was du möchtest."
+    en: "Order food and drinks in a restaurant and say politely what you would like."
+    tr: "Restoranda yiyecek ve içecek sipariş edersin ve ne istediğini kibarca söylersin."
+
 cando:             # ref = number of the block where the learner can look again
   "introduce myself and others": {de: "Ich kann mich und andere vorstellen.", en: "I can introduce myself and others.", tr: "Kendimi ve başkalarını tanıtabilirim.", ref: 2}
   "ask for name and home town": {de: "Ich kann nach Name und Wohnort fragen.", en: "I can ask for name and home town.", tr: "Ad ve yaşanılan yeri sorabilirim.", ref: 14}

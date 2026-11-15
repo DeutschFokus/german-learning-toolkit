@@ -217,6 +217,30 @@ revision, Teil 2 (`kind: exam`) a mini mock exam; four pages.
 
 The six levels in this repository are already configured; `python build.py --covers` shows them.
 
+## Bring in an existing book
+
+A book that already exists as a PDF can be poured into the template instead of being written again.
+`tools/a1_import/` does this for «Deutsch in Farbe A1» and is the model for the other levels:
+
+```bash
+python tools/a1_import/parse.py               # PDF pages → raw.json (what is on every page)
+python tools/a1_import/assemble.py            # → book.json (chapters → sections → blocks → tasks)
+python tools/a1_import/convert.py --chapters 1    # → content/a1/*.yaml, pictures, report.md
+python tools/fit_plan.py --level a1           # how long is every chapter → chapter_pages
+```
+
+The old book only gives English instructions, so `tm.yaml` holds the German instruction and the
+Turkish line for every English one, plus block titles, tips, can-do statements and goals;
+`lexicon.yaml` completes the vocabulary (Turkish, missing plurals). `report.md` lists everything
+the converter could not find there and every glitch of the old book it repaired. A chapter is ready
+when its part of the report is empty.
+
+Converted books use `structure.mode: flex` in `levels/<level>.yaml`: numbered blocks flow through
+the sections, only the length of a chapter is fixed (`chapter_pages`, one number per chapter), and
+each chapter has a four-page revision unit at the back (`wiederholung-NN.yaml`, tab W1 …). Long lists
+may continue on the next page, a page that ends far too short gets a learning tip from one of the
+book's people (`fillers`), and new words are explained in the margin next to the task (`words: margin`).
+
 ## Add a language
 
 1. Copy `i18n/en.yaml` to `i18n/<code>.yaml` and translate every value. Keep the keys and the

@@ -53,6 +53,12 @@ def _snap(y: float, step: float) -> float:
     return math.ceil((y - 0.05) / step) * step
 
 
+def _gap(u: Unit, default: float) -> float:
+    """Space above a unit in baselines: the pieces of one list sit closer together than two tasks."""
+    g = getattr(u, "gap", None)
+    return default if g is None else g
+
+
 def paginate(units: list[Unit], cap: float, bl: float, gap: float = 1.0) -> list[FlowPage]:
     """Fill pages top to bottom. Every unit starts on a half-baseline; a heading never ends a page."""
     half = bl / 2
@@ -60,15 +66,16 @@ def paginate(units: list[Unit], cap: float, bl: float, gap: float = 1.0) -> list
     cur = FlowPage()
     y = 0.0
     for i, u in enumerate(units):
-        need = u.height
-        if u.keep_next and i + 1 < len(units):
-            need += gap * bl + units[i + 1].height
-        top = _snap(y, half)
+        need, k = u.height, i
+        while units[k].keep_next and k + 1 < len(units) and not units[k + 1].break_before:
+            need += _gap(units[k + 1], gap) * bl + units[k + 1].height      # section head → block head → first task
+            k += 1
+        top = _snap(y + _gap(u, gap) * bl, half) if cur.placed else 0.0
         if cur.placed and (u.break_before or top + need > cap + 0.6):
             pages.append(cur)
             cur, top = FlowPage(), 0.0
         cur.placed.append(Placed(u, top))
-        y = top + u.height + gap * bl
+        y = top + u.height
     if cur.placed:
         pages.append(cur)
     for p in pages:
@@ -97,11 +104,11 @@ def paginate_fit(units: list[Unit], cap: float, bl: float, pages: int, elastic: 
             u = units[j]
             if j > i and u.break_before:
                 break
-            used = _snap(y, half) + u.height
+            used = (_snap(y + _gap(u, gap) * bl, half) if j > i else 0.0) + u.height
             if used > cap + 0.6 and j > i:
                 break
             cap_grow += sum(elastic[g][0] * elastic[g][1] for g in u.grow_ids if g in elastic)
-            y = used + gap * bl
+            y = used
             if not (u.keep_next and j + 1 < n and not units[j + 1].break_before):
                 cand[i].append((j + 1, used, cap_grow))
             if used > cap + 0.6:
@@ -110,9 +117,9 @@ def paginate_fit(units: list[Unit], cap: float, bl: float, pages: int, elastic: 
     def cost(i: int, j: int, used: float, cap_grow: float) -> float:
         left = max(0.0, cap - used)
         rest = max(0.0, left - cap_grow)                                   # elastic elements cannot take this
-        rest2 = max(0.0, rest - (j - i - 1) * max_gap_steps * half)        # … and opening the gaps cannot either
+        rest2 = max(0.0, rest - sum(1 for u in units[i + 1:j] if u.kind != "cont") * max_gap_steps * half)   # … and opening the gaps cannot either
         c = (left / cap) ** 2 + 6 * (rest / cap) ** 2 + 40 * (rest2 / cap) ** 2
-        return c * (0.4 if j == n or units[j].break_before else 1.0)        # a section may end short
+        return c * (0.85 if j == n or units[j].break_before else 1.0)       # a section may end a little shorter than other pages
 
     best = [[inf] * (n + 1) for _ in range(pages + 1)]
     prev = [[-1] * (n + 1) for _ in range(pages + 1)]
@@ -137,9 +144,9 @@ def paginate_fit(units: list[Unit], cap: float, bl: float, pages: int, elastic: 
     for a, b in zip(cuts, cuts[1:]):
         fp, y = FlowPage(), 0.0
         for u in units[a:b]:
-            top = _snap(y, half)
+            top = _snap(y + _gap(u, gap) * bl, half) if fp.placed else 0.0
             fp.placed.append(Placed(u, top))
-            y = top + u.height + gap * bl
+            y = top + u.height
         _finish(fp, cap)
         fp.natural = fp.used
         out.append(fp)
@@ -154,7 +161,7 @@ def _finish(p: FlowPage, cap: float) -> None:
 
 
 def justify(p: FlowPage, cap: float, bl: float, elastic: dict[str, tuple[float, int]], grow: dict[str, int],
-            max_gap_steps: int = 2, gap: float = 1.0) -> None:
+            max_gap_steps: int = 2, gap: float = 1.0, partial: bool = False) -> None:
     """Use spare room: first let elastic elements grow (write-in lines, illustration slots), then open
     the gaps evenly — but only if that fills the page exactly. Otherwise the natural rhythm is kept.
 
@@ -164,9 +171,9 @@ def justify(p: FlowPage, cap: float, bl: float, elastic: dict[str, tuple[float, 
 
     def reflow() -> None:
         y = 0.0
-        for pl in p.placed:
-            pl.top = _snap(y, half)
-            y = pl.top + pl.unit.height + gap * bl
+        for k, pl in enumerate(p.placed):
+            pl.top = _snap(y + _gap(pl.unit, gap) * bl, half) if k else 0.0
+            y = pl.top + pl.unit.height
         _finish(p, cap)
 
     growable = [(pl, gid) for pl in p.placed for gid in pl.unit.grow_ids if gid in elastic]
@@ -190,13 +197,18 @@ def justify(p: FlowPage, cap: float, bl: float, elastic: dict[str, tuple[float, 
     steps = int((p.leftover + 0.3) // half)
     if gaps <= 0 or steps <= 0:
         return
-    room = [max_gap_steps * (2 if pl.unit.kind in ("blk", "teil", "head") else 1) for pl in p.placed[1:]]
+    # how far each gap may open: more in front of headings, not at all inside a list that was cut into pieces
+    room = [0 if pl.unit.kind == "cont" else max_gap_steps * (2 if pl.unit.kind in ("blk", "teil", "head") else 1) for pl in p.placed[1:]]
     if steps > sum(room):
-        return                                    # cannot fill the page: keep natural spacing
+        if not partial:
+            return                                # cannot fill the page: keep natural spacing
+        steps = sum(room)                         # … or open every gap as far as it goes and let the page end a little short
+        if steps <= 0:
+            return
     extra = [0] * gaps
     todo = steps
     while todo > 0:                               # one half-line at a time, bottom-up, headings first
-        order = sorted(range(gaps), key=lambda g: (extra[g] / room[g], -g))
+        order = sorted((g for g in range(gaps) if room[g]), key=lambda g: (extra[g] / room[g], -g))
         for g in order:
             if todo and extra[g] < room[g]:
                 extra[g] += 1

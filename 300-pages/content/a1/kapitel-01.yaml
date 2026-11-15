@@ -143,6 +143,7 @@ teile:
           de: Welcher Artikel passt? Kreuze an.
           en: Which article fits? Tick the correct box.
           tr: Hangi artikel uygun? İşaretle.
+        wide: true
         body:
           - type: article_choice
             items:
@@ -216,7 +217,6 @@ teile:
               - fuenf
               - schweiz
         words:
-          - du-wohnst
           - er-heisst
   - nr: 2
     section: hauptteil
@@ -258,6 +258,7 @@ teile:
                 fix: Sie ist Lehrerin.
         words:
           - du
+          - du-wohnst
           - hallo
           - ich-bin
           - was
@@ -454,7 +455,7 @@ teile:
           tr: Tanıtım kartlarını oku. Doğru mu, yanlış mı? İşaretle.
         body:
           - type: reading_text
-            genre: note
+            genre: profile
             parts:
               - label: Lukas
                 text: Ich heiße Lukas. Ich bin 24 Jahre alt. Ich wohne in Zürich. Ich bin Koch. Ich spiele gern Fußball.
@@ -555,7 +556,6 @@ teile:
           - willkommen
           - woher
           - danke
-          - er-heisst
           - heissen
           - ich-bin
           - ich-komme
@@ -606,6 +606,7 @@ teile:
                 answer: false
                 fix: Lena möchte einen Tee.
         words:
+          - er-heisst
           - interessant
           - lehrerin
           - student
@@ -798,7 +799,6 @@ teile:
         answer:
           open: true
         words:
-          - er-heisst
           - heissen
           - lehrerin
           - partner
@@ -833,6 +833,7 @@ teile:
           model: Ich heiße Ben. Ich komme aus Berlin. Ich wohne in Hamburg.
         words:
           - du
+          - er-heisst
           - kommen
           - woher
   - nr: 17
@@ -864,7 +865,6 @@ teile:
         words:
           - freund
           - bilden
-          - ich-komme
           - satz
           - koeln
           - wiederholen
@@ -901,6 +901,7 @@ teile:
             lines: 1
             grow: true
         words:
+          - ich-komme
           - aus-dativ
           - er-kommt
           - heissen
@@ -996,7 +997,6 @@ teile:
               en: Tick what you can already do with confidence. Not sure yet? The page number shows where to look again.
               tr: Güvenle yapabildiklerini işaretle. Henüz emin değil misin? Sayfa numarası nereye tekrar bakacağını gösterir.
         words:
-          - du-wohnst
           - er-kommt
           - er-sie-es-ist
           - heissen
@@ -1082,6 +1082,7 @@ teile:
                     en: Nice to meet you!
                     tr: Memnun oldum!
         words:
+          - du-wohnst
           - antworten
           - deutschland
           - fragen
@@ -1163,8 +1164,6 @@ teile:
               - Wir [[sind]] in Wien.
               - Du [[bist]] Clara.
         words:
-          - du-wohnst
-          - er-heisst
           - form
           - sein
           - wien
@@ -1220,6 +1219,8 @@ teile:
               - '[[Was]] bist du von Beruf?'
         words:
           - beruf
+          - du-wohnst
+          - er-heisst
       - type: task
         id: e
         skills:

@@ -8,13 +8,14 @@ cover: [0.585, 0.13, 168]   # OKLCH of the cover field; cream type must reach 3:
 
 # Level scaling — one place to make a book airier or denser.
 type:
-  body: 10.5             # pt
+  body: 11.0             # pt – half a point larger than A2, on the same baseline grid
   baseline: 15.0         # pt; every vertical measure is a multiple of half a baseline
   body_lines: 47          # baselines per page (47 × 15 pt; one more than A2 because there is no footer strip)
-  hand: 16.5             # pt, handwriting model answers
+  hand: 17.0             # pt, handwriting model answers
   write_line: 1.5        # baselines between ruled write-in lines (1.5 keeps the page on the grid)
 explanation: always        # always | new  (new = only the first time a task type appears in a chapter)
 words: margin              # new words are explained next to the task that uses them (default: footer strip)
+mirror: false              # every page has the margin column on the right (a book for screens: no left and right pages)
 
 # The anatomy of this book. It was converted from «Deutsch in Farbe A1» (tools/a1_import), which is
 # built differently from the other levels: numbered blocks flow through five sections, and every
@@ -22,13 +23,16 @@ words: margin              # new words are explained next to the task that uses 
 structure:
   mode: flex
   chapters: 12
-  chapter_pages: 21            # one number for all chapters or a list with one number per chapter (opener included)
-  revision: {pages: 4}         # 12 × 21 + 12 × 4 = 300
+  # One number for all chapters or one per chapter (opener included). This plan comes from
+  # `python tools/fit_plan.py --level a1`, which measures every chapter and spreads the spare pages;
+  # it is close to the old book (23 20 20 23 20 20 21 22 21 22 20 21). Run the tool again when content changes.
+  chapter_pages: [21, 20, 20, 23, 20, 20, 21, 22, 21, 22, 20, 22]
+  revision: {pages: 4}         # 252 + 12 × 4 = 300
   sections:
     - {id: auftakt, de: Auftakt}
     - {id: wortschatz, de: Wortschatz}
-    - {id: hauptteil, de: Hauptteil}
-    - {id: vertiefung, de: Vertiefung}
+    - {id: hauptteil, de: Hauptteil, flow: true}       # flow: may start in the middle of a page (with a band across the page)
+    - {id: vertiefung, de: Vertiefung, flow: true}
     - {id: uebersicht, de: Übersicht}
     - {id: abschlusstest, de: Abschlusstest}
 
@@ -52,6 +56,24 @@ bios:
   ben:   {de: "Student. Er kommt aus Berlin und reist gern.", en: "A student. He comes from Berlin and likes travelling.", tr: "Üniversite öğrencisi. Berlinli ve seyahat etmeyi seviyor."}
   lukas: {de: "24 Jahre alt, Koch in Zürich. Er spielt gern Fußball.", en: "24 years old, a cook in Zurich. He likes playing football.", tr: "24 yaşında, Zürih’te aşçı. Futbol oynamayı seviyor."}
   weber: {de: "Die Lehrerin im Deutschkurs.", en: "The teacher of the German course.", tr: "Almanca kursunun öğretmeni."}
+
+# Learning tips from the two leads. Where a page ends more than nine lines short (a long reading
+# task could not move up), one of them is set at the foot of the page. Delete the list to switch this off.
+fillers:
+  - {who: lena, de: "Lern Nomen immer mit Artikel: der, die oder das.", en: "Always learn nouns with their article: der, die or das.", tr: "İsimleri her zaman artikeliyle öğren: der, die ya da das."}
+  - {who: mert, de: "Sprich die Sätze laut. Das hilft!", en: "Say the sentences out loud. It helps!", tr: "Cümleleri yüksek sesle söyle. İşe yarıyor!"}
+  - {who: lena, de: "Fehler sind normal. Mach einfach weiter!", en: "Mistakes are normal. Just keep going!", tr: "Hata yapmak normal. Devam et!"}
+  - {who: mert, de: "Schreib jeden Tag drei Sätze auf Deutsch.", en: "Write three sentences in German every day.", tr: "Her gün Almanca üç cümle yaz."}
+  - {who: lena, de: "Wiederhole die Wörter morgen noch einmal.", en: "Repeat the words once more tomorrow.", tr: "Kelimeleri yarın bir kez daha tekrar et."}
+  - {who: mert, de: "Zehn Minuten jeden Tag sind besser als zwei Stunden am Sonntag.", en: "Ten minutes every day are better than two hours on Sunday.", tr: "Her gün on dakika, pazar günü iki saatten daha iyidir."}
+  - {who: lena, de: "Lies den Text zweimal: erst schnell, dann genau.", en: "Read the text twice: first quickly, then carefully.", tr: "Metni iki kez oku: önce hızlıca, sonra dikkatlice."}
+  - {who: mert, de: "Kontrolliere deine Antworten mit den Lösungen.", en: "Check your answers in the answer key.", tr: "Cevaplarını cevap anahtarından kontrol et."}
+  - {who: lena, de: "Lern das Verb immer mit einem Beispielsatz.", en: "Always learn a verb with an example sentence.", tr: "Fiili her zaman örnek bir cümleyle öğren."}
+  - {who: mert, de: "Du verstehst nicht alles? Kein Problem. Lies weiter!", en: "You don’t understand everything? No problem. Keep reading!", tr: "Her şeyi anlamıyor musun? Sorun değil. Okumaya devam et!"}
+  - {who: lena, de: "Schreib neue Wörter auf Karten: vorne Deutsch, hinten deine Sprache.", en: "Write new words on cards: German on the front, your language on the back.", tr: "Yeni kelimeleri kartlara yaz: ön yüze Almanca, arka yüze kendi dilin."}
+  - {who: mert, de: "Lern zusammen mit einem Partner. Das macht mehr Spaß.", en: "Study together with a partner. It is more fun.", tr: "Bir arkadaşınla birlikte çalış. Daha eğlenceli olur."}
+  - {who: lena, de: "Hör deutsche Musik oder schau ein Video auf Deutsch.", en: "Listen to German music or watch a video in German.", tr: "Almanca müzik dinle ya da Almanca bir video izle."}
+  - {who: mert, de: "Gut gemacht! Mach jetzt eine kleine Pause.", en: "Well done! Now take a short break.", tr: "Aferin! Şimdi kısa bir mola ver."}
 
 # What --sample puts into the free sample (folios; front matter and sales page are always included)
 sample:

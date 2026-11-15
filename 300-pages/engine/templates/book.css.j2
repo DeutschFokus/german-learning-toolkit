@@ -568,26 +568,56 @@ mark{mix-blend-mode:multiply}
 .verso .blk{grid-template-columns:var(--label) var(--content);margin-left:calc(var(--gap) + var(--mcol))}
 .blk .bn{display:block;width:7.4mm;height:7.4mm;margin-top:calc((var(--bl)*1.5 - 7.4mm)/2);border-radius:50%;background:var(--mid);font-family:"DF Fraunces";font-weight:800;font-size:11.5pt;line-height:7.4mm;text-align:center;color:var(--ink)}
 .blk .bn.w2{font-size:10pt;letter-spacing:-.03em}
-.blk .bt{display:flex;flex-wrap:wrap;align-items:baseline}
-.blk h3{font-family:"DF Fraunces","DF Sans";font-weight:700;font-size:15pt;line-height:calc(var(--bl)*1.5);letter-spacing:-.008em;margin-right:3.2mm}
-.blk .bs{font-style:italic;font-size:var(--fs-ex);color:var(--mute);line-height:var(--bl)}
+.blk .bt{font-family:"DF Fraunces","DF Sans";font-size:15pt;line-height:calc(var(--bl)*1.5)}   /* the heading font sets the line; nothing else may stretch it */
+.blk h3{display:inline;font-weight:700;font-size:15pt;letter-spacing:-.008em;margin-right:1.6mm}
+.blk .bs{font-family:"DF Sans";font-style:italic;font-size:var(--fs-ex);color:var(--mute);white-space:nowrap;line-height:0}
+/* a section that starts in the middle of a page: the band of the page top, drawn behind the heading */
+.u.mid{z-index:0}
+.u.mid::before{content:"";position:absolute;z-index:-1;left:-40mm;width:300mm;top:calc(var(--bl)*-.5);height:calc(var(--bl)*4);background:var(--soft)}
 .sthead.rv .zn{background:var(--mid);color:var(--ink)}
 .tab.rv{background:#fff;color:var(--deep);box-shadow:inset 0 0 0 .8pt var(--mid)}
 .gram .gi{margin-bottom:calc(var(--bl)*.5)} .gram .gi b,.gram .gi .dw{font-weight:700}
+{% if flex %}
+/* refinements that came with the converted books; the other levels keep their measured layout */
 .gram .gh+.gl{margin-top:0;border-top:0;padding-top:0}
 .ak .fx{color:var(--mute)}
 .glead{font-weight:600} .gap.ld{margin-left:.2mm}
 .rvlead{font-style:italic;font-size:var(--fs-ex);color:var(--mute);margin-bottom:calc(var(--bl)*.5)}
+.read.plain .tx{padding-top:calc(var(--bl)*.5 - .6pt)}
+.bank{row-gap:calc(var(--bl)*.5)}
+{% endif %}
+.task.cont .tk-b{margin-top:0}
+/* drills across text column and margin: lists in two columns */
+.task.wide .mn{display:none}
+.task.wide ol.items{display:grid;grid-template-columns:1fr 1fr;gap:calc(var(--bl)*.5) 10mm}
+.task.wide ol.items>li{margin-bottom:0}
+.task.wide .artc,.task.wide .vtr{display:grid;grid-template-columns:1fr 1fr;column-gap:10mm}
+/* samples on the page «So funktioniert dieses Buch» */
+.how .vcards{grid-template-columns:1fr 1fr}
+.how .hf{display:grid;grid-template-columns:15mm 1fr}
+.how .hmn{width:var(--mcol)}
+.how .hrev{display:flex;align-items:center;gap:3mm} .how .hrev .tab{position:static;flex:none}
+/* a tip at the foot of a page: face and speech bubble */
+.filler .tk-l .av{display:block;margin-top:calc((var(--bl)*3 - 11.6mm)/2)}
+.filler .fbub{position:relative;background:var(--wash);border-radius:3mm;padding:calc(var(--bl)*.5) 5mm;min-height:calc(var(--bl)*2)}
+.filler .fbub::before{content:"";position:absolute;left:-2.2mm;top:calc(var(--bl)*1.5 - 2.2mm);border:2.2mm solid transparent;border-right-color:var(--wash);border-left-width:0}
+.filler .fd{font-family:"DF Fraunces","DF Sans";font-weight:600;font-size:12.5pt;line-height:var(--bl)}
+.filler .fx{font-style:italic;font-size:var(--fs-ex);color:var(--mute);line-height:var(--bl)}
+/* profile cards: face, name, text */
+.cards.profile{grid-template-columns:1fr;gap:calc(var(--bl)*.5)}
+.profile .card{border:.6pt solid var(--rule);background:#fff;padding:calc(var(--bl)*.5 - .6pt) 4mm calc(var(--bl)*.5 - .6pt) 16.5mm;font-size:var(--fs);min-height:calc(var(--bl)*2)}
+.profile .card .av{position:absolute;left:3.6mm;top:calc(var(--bl)*.5 - .6pt + (var(--bl)*2 - 9.4mm)/2)}
+.profile .card .ct{display:block;font-size:6.8pt;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--deep);padding:0;line-height:var(--bl)}
 /* vocabulary cards: the coloured edge is the article */
-.vct{display:block;margin-bottom:calc(var(--bl)*.25)}
+.vct{display:block;margin-bottom:calc(var(--bl)*.5)}
 .vcards{display:grid;grid-template-columns:repeat(3,1fr);gap:calc(var(--bl)*.5) 2.4mm}
 .task.full .tk-l,.task.full .mn{display:none}
 .recto .task.full .tk-m,.verso .task.full .tk-m,.m .task.full .tk-m{grid-column:1 / 5}
 .task.full .vcards{grid-template-columns:repeat(4,1fr);column-gap:3mm}
 .task.full .vlist{grid-template-columns:1fr 1fr 1fr}
-.vc{position:relative;background:#fff;border-radius:1.6mm;padding:calc(var(--bl)*.25) 2.2mm calc(var(--bl)*.25) 3.6mm;overflow:hidden;box-shadow:inset 0 0 0 .5pt var(--rule)}
-.vc::before{content:"";position:absolute;left:0;top:0;bottom:0;width:1.5mm;background:var(--rule)}
-.vc.der::before{background:var(--der)} .vc.die::before{background:var(--die)} .vc.das::before{background:var(--das)} .vc.pl::before{background:var(--pl)}
+.vc{position:relative;background:#fff;border-radius:1.6mm;padding:calc(var(--bl)*.5) 2.2mm calc(var(--bl)*.5) 3.8mm;overflow:hidden;box-shadow:inset 0 0 0 .5pt var(--rule)}
+.vc::before{content:"";position:absolute;left:0;top:0;bottom:0;width:1.6mm;background:var(--rule)}
+.vc.a-der::before{background:var(--der)} .vc.a-die::before{background:var(--die)} .vc.a-das::before{background:var(--das)} .vc.a-pl::before{background:var(--pl)}
 .vc .vw{line-height:var(--bl);white-space:nowrap} .vc .vw b{font-weight:700} .vc .vw i{font-style:normal;font-size:var(--fs-ex);color:var(--mute)}
 .vc .vw.l1{font-size:calc(var(--fs) - 1.2pt)} .vc .vw.l2{font-size:calc(var(--fs) - 2.4pt)} .vc .vw.l3{font-size:calc(var(--fs) - 3.4pt);letter-spacing:-.01em}
 .vc .vp{font-size:calc(var(--fs-ex) - .8pt);line-height:calc(var(--bl)*.75);color:var(--mute);font-style:italic;white-space:nowrap}
@@ -595,26 +625,27 @@ mark{mix-blend-mode:multiply}
 .vlist{display:grid;grid-template-columns:1fr 1fr;column-gap:7mm;font-size:var(--fs-ex)}
 .vlist li{display:flex;justify-content:space-between;align-items:baseline;border-top:.5pt solid var(--line);padding:calc(var(--bl)*.125 - .5pt) 0 calc(var(--bl)*.125);line-height:calc(var(--bl)*.75)}
 .vlist li>span{white-space:nowrap} .vlist em{font-style:italic;color:var(--mute);text-align:right;padding-left:2mm}
-/* der, die or das? */
-.artc li{display:flex;align-items:center;border-top:.5pt solid var(--line);height:calc(var(--bl)*1.25);box-sizing:border-box}
-.artc .n{flex:none;width:6mm;font-weight:700;color:var(--deep)} .artc .wd{flex:1;font-weight:600}
-.artc .ops{flex:none;white-space:nowrap;font-size:0} .artc .op{display:inline-block;margin-left:4.4mm;font-size:var(--fs);font-weight:600}
-.artc .op .box{margin-right:1.2mm}
+/* der, die or das? – rows like table rows: the list starts a quarter line low, so the words sit on the grid */
+.artc li{display:flex;align-items:flex-start;border-bottom:.5pt solid var(--line);padding:calc(var(--bl)*.5) 0 0;height:calc(var(--bl)*1.5);box-sizing:border-box}
+.artc .n{flex:none;width:7mm;font-weight:700;color:var(--deep)} .artc .wd{flex:1;font-weight:600}
+.artc .ops{flex:none;white-space:nowrap;font-size:0} .artc .op{display:inline-block;margin-left:5mm;font-size:var(--fs);font-weight:600}
+.artc .op .box{margin-right:1.3mm}
 .artc.two{display:grid;grid-template-columns:1fr 1fr;column-gap:8mm}
 /* translation → German word */
-.vtr li{display:flex;align-items:flex-end;height:calc(var(--bl)*1.5);box-sizing:border-box;padding-bottom:calc(var(--bl)*.25)}
-.vtr .n{flex:none;width:6mm;font-weight:700;color:var(--deep);line-height:var(--bl)} .vtr .tr{flex:none;font-style:italic;color:var(--mute);padding-right:2.4mm;line-height:var(--bl)}
+.vtr li{display:flex;align-items:flex-start;padding:calc(var(--bl)*.5) 0 0;height:calc(var(--bl)*1.5);box-sizing:border-box}
+.vtr .n{flex:none;width:7mm;font-weight:700;color:var(--deep)} .vtr .tr{flex:none;font-style:italic;color:var(--mute);padding-right:2.4mm}
 .vtr .gap{flex:1;margin:0;width:auto}
 .vtr.two{display:grid;grid-template-columns:1fr 1fr;column-gap:8mm}
 .match .tx2 .der,.match .tx2 .die,.match .tx2 .das{font-weight:600}
-/* opener without a warm-up task: the picture takes the room */
+/* opener without a warm-up task: the picture takes the room (everything hangs on its height --oph) */
 .op-buehne .sub.sde{font-style:normal;font-weight:600;color:var(--ink)}
 .op-buehne .sub.s2{top:133.6mm;font-size:10pt}
-.op-tall.op-buehne .ph{height:136mm}
-.op-tall.op-buehne .num{top:81mm} .op-tall.op-buehne .num.w2{top:92mm}
-.op-tall.op-buehne .kap{top:140mm} .op-tall.op-buehne h1{top:144mm} .op-tall.op-buehne h1.long{top:149mm}
-.op-tall.op-buehne .sub{top:167.5mm} .op-tall.op-buehne .sub.s2{top:173.6mm}
-.op-tall .opgrid{top:calc({{ pg.top }}mm + var(--bl)*28.5)}
+.opv{--oph:calc({{ pg.top }}mm + var(--bl)*var(--opk) - 45mm)}
+.op-tall.op-buehne .ph{height:var(--oph)}
+.op-tall.op-buehne .num{top:calc(var(--oph) - 55mm)} .op-tall.op-buehne .num.w2{top:calc(var(--oph) - 44mm)}
+.op-tall.op-buehne .kap{top:calc(var(--oph) + 4mm)} .op-tall.op-buehne h1{top:calc(var(--oph) + 8mm)} .op-tall.op-buehne h1.long{top:calc(var(--oph) + 13mm)}
+.op-tall.op-buehne .sub{top:calc(var(--oph) + 31.5mm)} .op-tall.op-buehne .sub.s2{top:calc(var(--oph) + 37.8mm)}
+.op-tall .opgrid{top:calc({{ pg.top }}mm + var(--bl)*var(--opk))}
 
 /* ── baseline grid ─────────────────────────────────────────────────────────
    Every block starts on a multiple of half a baseline (the paginator sees to that). Inside a block:
