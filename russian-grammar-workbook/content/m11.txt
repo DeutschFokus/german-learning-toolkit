@@ -1,0 +1,281 @@
+@module 11
+@part II
+@title Plural nouns and plural cases
+@ru Множественное число — студенты, студентов, студентам, студентами, о студентах
+@learn Form the nominative plural, including друзья, братья, люди, дети, дома, учителя.
+@learn Master the genitive plural: -ов / -ев, -ей and the zero ending (книг, ошибок, стран).
+@learn Use the easy plural endings: -ам, -ами, -ах on nouns and -ым, -ыми, -ых on adjectives.
+@learn Decide the accusative plural: things like the nominative, people like the genitive.
+@target с моими студентами
+@target количество учеников
+@target из арабоязычных стран
+@target много ошибок
+@target своим студентам
+@remix Redo Stage A in the singular, then back to the plural without looking (своим студентам → своему студенту → своим студентам).
+@remix For items 17–24, put the same noun into all six plural cases in short sentences.
+@remix List ten things in your room and say «У меня нет …» in the genitive plural for each.
+
+@lesson
+## Nominative plural: a quick reminder
+Masculine and feminine nouns take **-ы / -и** (студенты, книги), neuter nouns **-а / -я** (места, задания). Some masculine nouns take stressed **-а / -я**: *дома, города, учителя, паспорта, вечера, номера.* Learn the irregular ones as pairs: *друг → друзья, брат → братья, сын → сыновья, стул → стулья, человек → люди, ребёнок → дети, имя → имена, время → времена.*
+
+## The genitive plural — the one form to learn
+| Singular ends in | Genitive plural | Examples |
+|---|---|---|
+| consonant (masculine) | -ов | студентов, вопросов, уроков |
+| -й (masculine) | -ев | музеев, трамваев |
+| -ж, -ш, -ч, -щ, -ь (masculine) | -ей | врачей, карандашей, учителей, рублей |
+| -а / -я (feminine) | zero | книг, минут, недель, стран, школ |
+| -ка, -га after a consonant | zero + о / е | ошибок, девушек, ручек, сумок |
+| -ия, -ие | -ий | лекций, станций, заданий, упражнений |
+| -ь (feminine) | -ей | тетрадей, вещей, ночей |
+| -о (neuter) | zero | слов, мест, писем, окон |
+
+Irregular forms you need constantly: **людей, детей, друзей, братьев, денег**, and after numbers **лет** (years) and **человек** (people).
+
+## The other plural cases are easy
+| Case | Noun | Adjective | мои, эти, все |
+|---|---|---|---|
+| Dative | -ам / -ям | -ым / -им | моим, этим, всем |
+| Instrumental | -ами / -ями (людьми, детьми) | -ыми / -ими | моими, этими, всеми |
+| Prepositional | -ах / -ях | -ых / -их | моих, этих, всех |
+| Accusative | things = nominative; people = genitive | same rule | same rule |
+
+> Я работаю **с моими студентами**. || instrumental plural: -ими … -ами
+> Это зависит от **количества учеников**. || genitive plural -ов
+> Многие студенты **из арабоязычных стран**. || genitive plural: -ых + zero
+> В диктанте было **много ошибок**. || zero ending with a fill vowel
+> Я помогаю **своим студентам**. || dative plural -ам
+> Я люблю **своих студентов**. || people: accusative = genitive
+
+::: mistakes Typical slips
+!> с моим студентами || с моими студентами || every word goes into the plural
+!> много студенты || много студентов || много → genitive plural
+!> количество ученики || количество учеников || "the number of" → genitive plural
+!> из арабоязычные страны || из арабоязычных стран || genitive plural: -ых, zero ending
+!> много ошибков || много ошибок || feminine nouns: zero ending
+:::
+@endlesson
+
+@stage A
+#A
+Q: В нашей группе много студент__.
+H: много → genitive plural
+A: студентов
+W: «Много» + a countable noun → genitive plural. Masculine nouns ending in a hard consonant take -ов: студентов.
+
+#A
+Q: У меня больше нет вопрос__.
+H: нет → genitive plural
+A: вопросов
+W: «Нет» → genitive; "no questions" is plural: вопрос → вопросов (-ов).
+
+#A
+Q: В диктанте было много ошиб__.
+H: много → genitive plural
+A: ошибок
+W: Feminine -а nouns have no ending in the genitive plural: ошибка → ошибок. An «о» is inserted to break up the consonants -бк-.
+
+#A
+Q: Я пишу сообщения сво__ студент__.
+H: кому? → dative plural
+A: своим студентам
+W: «Писать кому?» → dative plural: свои → своим, студенты → студентам (-ам).
+
+#A
+Q: Мы долго говорили о наш__ друз__.
+H: о ком? → prepositional plural
+A: наших друзьях
+W: Prepositional plural: наши → наших, друзья → друзьях (-ях on the plural stem «друзь-»).
+
+#B
+Q: В нашем доме живёт много __________ (дети).
+H: много → genitive plural
+A: детей
+W: «Много» → genitive plural. «Дети» is irregular: детей.
+
+#B
+Q: Я работаю с __________ (иностранные студенты).
+H: с кем? → instrumental plural
+A: иностранными студентами
+W: Instrumental plural: иностранные → иностранными (-ыми), студенты → студентами (-ами).
+
+#B
+Q: На этой улице нет __________ (хорошие магазины).
+H: нет → genitive plural
+A: хороших магазинов
+W: Genitive plural: хорошие → хороших (after ш: -их), магазины → магазинов (-ов).
+
+@stage B
+#A
+Q: Количество учени__ в группе зависит от сезона.
+A: учеников
+W: "The number of students" → genitive plural: ученик → учеников (-ов).
+
+#B
+Q: В этом году к нам приехало много студентов из __________ (арабоязычные страны).
+A: арабоязычных стран
+W: «Из» → genitive plural: арабоязычные → арабоязычных (-ых), страны → стран (feminine: zero ending).
+
+#A
+Q: Я купил билеты для всех мо__ друз__.
+A: моих друзей
+W: «Для» → genitive plural: мои → моих, друзья → друзей (-ей).
+
+#B
+Q: Сколько у вас __________ (свободные места)?
+A: свободных мест
+W: «Сколько» → genitive plural: свободные → свободных (-ых), места → мест (neuter: zero ending).
+
+#A
+Q: Мы прочитали пять интересн__ стат__.
+A: интересных статей
+W: From «пять» on, numbers take the genitive plural: интересных (-ых), статья → статей (nouns in -ья take -ей).
+
+#B
+Q: Я давно не видел __________ (мои старые подруги).
+A: моих старых подруг
+W: «Видеть кого?» → accusative plural of people = genitive plural: моих старых подруг (feminine -а → zero ending).
+
+#A
+Q: В нашем город__ много красив__ здани__.
+A: городе; красивых зданий
+W: «В нашем городе» (где?) → prepositional singular: -е. «Много» → genitive plural: красивых зданий (nouns in -ие → -ий).
+
+#B
+Q: Мы часто ездим к __________ (наши родственники).
+A: нашим родственникам
+W: «К» + dative plural: наши → нашим, родственники → родственникам (-ам).
+
+@stage C
+#A
+Q: Я люблю мо__ студент__ и всегда помогаю мо__ студент__.
+A: моих студентов; моим студентам
+W: «Любить кого?» → accusative plural of people = genitive plural: моих студентов. «Помогать кому?» → dative plural: моим студентам.
+
+#A
+Q: Я читаю эт__ книг__ и рассказываю об эт__ книг__ друзьям.
+A: эти книги; этих книгах
+W: «Читать что?» → accusative plural of things = nominative: эти книги. «Рассказывать о чём?» → prepositional plural: этих книгах.
+
+#B
+Q: У меня нет __________ (братья), но много __________ (друзья).
+A: братьев; друзей
+W: Genitive plural of the irregular plurals: братья → братьев, друзья → друзей (after «нет» and «много»).
+
+#B
+Q: Я разговариваю с __________ (люди), а потом пишу __________ (люди).
+A: людьми; людям
+W: «С кем?» → instrumental plural: людьми (irregular -ьми). «Писать кому?» → dative plural: людям.
+
+#A
+Q: Сколько у тебя урок__ в неделю? — Шесть урок__.
+A: уроков; уроков
+W: «Сколько» and «шесть» both take the genitive plural: урок → уроков.
+
+#A
+Q: Мы купили нов__ стулья, но нет нов__ стол__.
+A: новые; новых столов
+W: «Купить что?» → accusative plural of things = nominative: новые стулья. «Нет» → genitive plural: новых столов.
+
+#C
+Q: Мы дружим ___ наш__ сосед__.
+A: с нашими соседями
+W: «Дружить с кем?» → «с» + instrumental plural: наши → нашими, соседи → соседями (-ями).
+
+#C
+Q: Мои дети учатся ___ разн__ школ__.
+A: в разных школах
+W: «Учиться где?» → «в» + prepositional plural: разных (-ых) школах (-ах).
+
+@stage D
+#F
+Q: в / наш / город / нет / хороший / рестораны
+N: Build a present-tense sentence.
+A: В нашем городе нет хороших ресторанов.
+W: «В нашем городе» → prepositional singular. «Нет» → genitive plural: хороших ресторанов (-их after ш, -ов).
+
+#F
+Q: я / любить / проводить / время / с / мой / друзья
+N: Build a present-tense sentence.
+A: Я люблю проводить время со своими друзьями.
+V: Я люблю проводить время с моими друзьями.
+W: «С кем?» → instrumental plural: своими (моими) друзьями (-ими, -ями); «с» → «со» before «св-».
+
+#G
+Q: В моей группе двадцать студентов из разные страны.
+N: Find and correct 1 error (a whole phrase).
+A: В моей группе двадцать студентов из разных стран.
+W: «Из» → genitive plural: разные страны → разных стран (-ых; feminine zero ending). «Двадцать студентов» is already correct.
+
+#H
+Q: Я пишу письмо своей подруге.
+N: Make «подруга» plural.
+A: Я пишу письмо своим подругам.
+W: Dative plural: своей подруге → своим подругам (-им, -ам). One letter to several friends — «письмо» stays singular.
+
+#H
+Q: Мы говорили о нашем новом преподавателе.
+N: Make «преподаватель» plural.
+A: Мы говорили о наших новых преподавателях.
+W: Prepositional plural: нашем новом преподавателе → наших новых преподавателях (-их, -ых, -ях).
+
+#H
+Q: У меня нет свободной минуты.
+N: Make «минута» plural.
+A: У меня нет свободных минут.
+W: Genitive plural: свободной минуты → свободных минут (-ых; feminine zero ending: минута → минут).
+
+#I
+Q: На прошлой неделе я __________ (проверить) все тетради мо__ ученик__ и __________ (найти) много ошибок.
+N: The speaker is a man.
+A: проверил; моих учеников; нашёл
+W: Masculine past: проверил; «найти» has the irregular past нашёл. "The notebooks of my students" → genitive plural: моих учеников (-их, -ов).
+
+#I
+Q: Я __________ (знать) всех сво__ сосед__ и часто __________ (помогать) им.
+A: знаю; своих соседей; помогаю
+W: Present я-forms: знаю, помогаю. «Знать кого?» → accusative plural of people = genitive plural: своих соседей. «Им» is the dative pronoun after «помогать».
+
+@stage E
+#A
+Q: В Германии много красив__ замк__ и старинн__ город__.
+A: красивых замков; старинных городов
+W: «Много» → genitive plural: красивых замков (-ых, -ов), старинных городов (-ых, -ов).
+
+#A
+Q: Я подарил цветы всем мо__ коллег__.
+A: моим коллегам
+W: «Подарить кому?» → dative plural: мои → моим, коллеги → коллегам (-ам).
+
+#B
+Q: Мы долго разговаривали с __________ (наши дети) о __________ (их планы).
+A: нашими детьми; их планах
+W: «С кем?» → instrumental plural: нашими детьми (irregular -ьми). «О чём?» → prepositional plural: их планах («их» never changes).
+
+#B
+Q: Сколько у вас __________ (упражнения) в домашнем задании?
+A: упражнений
+W: «Сколько» → genitive plural: упражнения → упражнений (nouns in -ие → -ий).
+
+#B
+Q: В этом магазине нет __________ (дешёвые вещи).
+A: дешёвых вещей
+W: «Нет» → genitive plural: дешёвые → дешёвых (-ых), вещи → вещей (feminine -ь nouns → -ей).
+
+#F
+Q: в / этот / школа / учиться / дети / из / разный / страны
+N: Build the sentence "Children from different countries study at this school."
+A: В этой школе учатся дети из разных стран.
+W: «Где?» → prepositional: в этой школе. «Дети» is the plural subject → учатся. «Из» → genitive plural: разных стран.
+
+#F
+Q: у / мой / родители / много / друзья
+N: Build the sentence "My parents have a lot of friends."
+A: У моих родителей много друзей.
+W: «У» + genitive plural: мои родители → моих родителей. «Много» → genitive plural: друзей.
+
+#I
+Q: В нашей школе __________ (работать) много хорош__ учител__, и все они __________ (любить) свою работу.
+A: работает; хороших учителей; любят
+W: With «много» the verb is normally singular: работает. «Много» → genitive plural: хороших учителей (-их, -ей). «Все они» → plural verb: любят.

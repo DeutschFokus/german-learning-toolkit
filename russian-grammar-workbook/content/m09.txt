@@ -1,0 +1,282 @@
+@module 9
+@part II
+@title Adjective endings in all six cases
+@ru Окончания прилагательных — новый, синий, русский, хороший, большой
+@learn Use one ending system in all six cases, with its hard (новый) and soft (синий) spellings.
+@learn Apply the spelling rules after г, к, х and ж, ш, ч, щ (русским, хорошего) and the stressed -ой type (большой).
+@learn Find the ending fast with the question word: какого? → нового, каким? → новым.
+@learn Make long phrases agree: с моими русскоязычными студентами, в новой квартире.
+@target в новой квартире
+@target о хорошем преподавателе
+@target с русскоязычными студентами
+@target к китайскому языку
+@target из арабоязычных стран
+@remix Redo Stage C changing the adjective type: новый → синий → русский → хороший; check the spelling each time.
+@remix Read every Stage B answer aloud with the question word first: «в какой? — в новой квартире».
+@remix Take one noun phrase (наш новый преподаватель) and put it into all six cases in your own sentences.
+
+@lesson
+## One system, three spellings
+Adjectives have **one** set of endings. What changes is only the spelling:
+- **hard** stems — новый, старый, красивый (most adjectives);
+- **soft** stems in -ний — синий, последний, летний, зимний, вечерний, утренний: every vowel in the ending is "soft" (-его, -ему, -юю);
+- **mixed** stems in г, к, х, ж, ш, ч, щ — русский, хороший, свежий — and the stressed type **большой, молодой, другой**.
+
+| Case | Masculine | Neuter | Feminine | Plural |
+|---|---|---|---|---|
+| Nominative | новый · синий | новое · синее | новая · синяя | новые · синие |
+| Genitive | нового · синего | = masc. | новой · синей | новых · синих |
+| Dative | новому · синему | = masc. | новой · синей | новым · синим |
+| Accusative | = nom. (thing) / = gen. (person) | = nom. | новую · синюю | = nom. (things) / = gen. (people) |
+| Instrumental | новым · синим | = masc. | новой · синей | новыми · синими |
+| Prepositional | новом · синем | = masc. | новой · синей | новых · синих |
+
+Notice how little there is to learn for the feminine: outside the nominative it has only **-ой** (genitive, dative, instrumental, prepositional) and **-ую** (accusative).
+
+::: rule Spelling rules
+After **г, к, х, ж, ш, ч, щ** write **и**, never ы: *русским, хорошими, тихих.* After **ж, ш, ч, щ** an unstressed о becomes **е**: *хорошего, хорошем, свежее* — but stressed endings keep о: *большого, большом, чужого.*
+:::
+
+::: tip The question word gives you the ending
+The question word **какой** declines exactly like an adjective, so its last letters show the ending you need: *какого? → нового, какому? → новому, каким? → новым, каком? → новом, какой? (fem.) → новой, какую? → новую, каких? → новых.*
+:::
+
+> Я живу **в новой квартире**. || prepositional feminine -ой
+> Мы говорили **о хорошем преподавателе**. || prepositional masculine, -ем after ш
+> Я работаю **с русскоязычными студентами**. || instrumental plural -ыми
+> Это относится **к китайскому языку**. || dative masculine, after к → -ому
+> Мои студенты **из арабоязычных стран**. || genitive plural -ых
+> Я купила **летнюю куртку**. || soft accusative feminine -юю
+
+::: contrast Большой is not always masculine
+**большой** is the masculine nominative (*большой рюкзак*) — but the same letters are also the feminine genitive, dative, instrumental and prepositional (*у большой сумки, в большой комнате*). Only the noun tells you which one you have.
+:::
+
+::: mistakes Typical slips
+!> в новом квартире || в новой квартире || квартира is feminine → -ой
+!> русскым студентам || русским студентам || after к always и
+!> о хорошом фильме || о хорошем фильме || unstressed after ш → е
+!> синую куртку || синюю куртку || soft adjective → -юю
+!> с моими новые студентами || с моими новыми студентами || every word changes
+:::
+@endlesson
+
+@stage A
+#A
+Q: Я живу в нов__ квартире.
+H: где? → prepositional feminine
+A: новой
+W: «В квартире» answers где? → prepositional feminine: новая → новой.
+
+#A
+Q: У меня нет син__ ручки.
+H: нет чего? → genitive feminine
+A: синей
+W: «Нет» → genitive feminine. «Синий» is a soft adjective, so -ой is spelled -ей: синяя → синей.
+
+#A
+Q: Я звоню русск__ другу.
+H: кому? → dative masculine
+A: русскому
+W: «Звонить кому?» → dative masculine: русский → русскому (-ому).
+
+#A
+Q: Мы гуляли в стар__ парке.
+H: где? → prepositional masculine
+A: старом
+W: «В парке» answers где? → prepositional masculine: старый → старом.
+
+#A
+Q: Я пользуюсь хорош__ словарём.
+H: чем? → instrumental masculine
+A: хорошим
+W: «Пользоваться чем?» → instrumental masculine: хороший → хорошим (after ш always -им).
+
+#A
+Q: Мы ждём последн__ автобус и очень мёрзнем.
+H: что? → a masculine thing
+A: последний
+W: A masculine thing in the accusative does not change: последний автобус (the soft adjective keeps -ий).
+
+#B
+Q: Я купила __________ (летняя куртка).
+H: что? → accusative feminine
+A: летнюю куртку
+W: Accusative feminine. «Летний» is soft, so -ую is spelled -юю: летняя → летнюю; куртка → куртку.
+
+#B
+Q: Мы говорили о __________ (русская культура).
+H: о чём? → prepositional feminine
+A: русской культуре
+W: «Говорить о чём?» → prepositional feminine: русская → русской, культура → культуре.
+
+@stage B
+#A
+Q: Я работаю с русскоязычн__ студент__ из разн__ стран.
+A: русскоязычными студентами; разных
+W: «С кем?» → instrumental plural (students from different countries): русскоязычными студентами (-ыми, -ами). «Из» → genitive plural: разные страны → разных стран.
+
+#B
+Q: Мы долго стояли на __________ (холодный вокзал).
+A: холодном вокзале
+W: «Стоять где?» → на + prepositional masculine: холодный → холодном, вокзал → вокзале.
+
+#A
+Q: Я подарил младш__ сестр__ красив__ кукл__.
+A: младшей сестре; красивую куклу
+W: «Подарить кому?» → dative feminine: младшей сестре (-ей after ш, unstressed). «Что?» → accusative feminine: красивую куклу (-ую, -у).
+
+#B
+Q: Я познакомился с __________ (молодой русский писатель).
+A: молодым русским писателем
+W: «Познакомиться с кем?» → instrumental: молодой → молодым, русский → русским (after к: -им), писатель → писателем.
+
+#A
+Q: В нашем город__ нет хорош__ ресторан__.
+A: городе; хорошего ресторана
+W: «В нашем городе» (где?) → prepositional: -е. «Нет» → genitive masculine: хорошего (unstressed after ш → -его), ресторана.
+
+#B
+Q: Мы купили билеты на __________ (вечерняя электричка).
+A: вечернюю электричку
+W: «Билеты на что?» → на + accusative feminine. Soft adjective: вечерняя → вечернюю (-юю); электричка → электричку.
+
+#A
+Q: Мне нравятся люди с добр__ сердц__.
+A: добрым сердцем
+W: «С чем?» → instrumental neuter: доброе сердце → добрым сердцем (-ым; after ц an unstressed -ом is spelled -ем).
+
+#B
+Q: Я рассказал друзьям о __________ (свой будущий проект).
+A: своём будущем проекте
+W: Prepositional masculine: свой → своём, будущий → будущем (unstressed after щ → -ем), проект → проекте.
+
+@stage C
+#A
+Q: Это нов__ студентка. Я знаю эт__ нов__ студентк__. Я помогаю нов__ студентк__.
+A: новая; эту новую студентку; новой студентке
+W: After «это» → nominative: новая. «Знать кого?» → accusative: эту новую студентку (-ую, -у). «Помогать кому?» → dative: новой студентке (-ой, -е).
+
+#A
+Q: У меня нет больш__ сумки, но есть больш__ рюкзак.
+A: большой; большой
+W: Same letters, two cases: «нет большой сумки» is genitive feminine (-ой); «есть большой рюкзак» is nominative masculine (stressed -ой).
+
+#A
+Q: Я живу в русск__ городе, работаю в русск__ школе и пишу русск__ друзьям.
+A: русском; русской; русским
+W: Prepositional masculine: в русском городе. Prepositional feminine: в русской школе. Dative plural: русским друзьям (after к: -им).
+
+#B
+Q: Мы долго смотрели на __________ (синее море), а потом купались в __________ (синее море).
+A: синее море; синем море
+W: «Смотреть на что?» → на + accusative; neuter → no change: синее море. «Купаться где?» → в + prepositional: синем (soft -ем) море (-е).
+
+#A
+Q: Мы говорим о хорош__ погод__, а вы — о хорош__ фильм__.
+A: хорошей погоде; хорошем фильме
+W: Prepositional feminine: хорошей (unstressed after ш → -ей). Prepositional masculine: хорошем (-ем after ш). Nouns: погоде, фильме.
+
+#B
+Q: Я встретил __________ (молодой врач) и разговаривал с __________ (молодой врач).
+A: молодого врача; молодым врачом
+W: «Встретить кого?» → accusative of a person = genitive: молодого врача. «С кем?» → instrumental: молодым врачом (stressed -ом after ч).
+
+#C
+Q: Я поеду ___ летн__ отпуск ___ Испани__.
+A: в летний отпуск; в Испанию
+W: «Поехать куда?» → в + accusative twice: в летний отпуск (a masculine thing, no change), в Испанию (-ия → -ию).
+
+#C
+Q: Сын вернулся ___ летн__ лагер__ вчера вечером.
+A: из летнего лагеря
+W: «Вернуться откуда?» → из + genitive: летний (soft) → летнего, лагерь → лагеря.
+
+@stage D
+#F
+Q: я / мечтать / о / большой / светлый / квартира
+N: Build a present-tense sentence.
+A: Я мечтаю о большой светлой квартире.
+W: «Мечтать о чём?» → prepositional feminine: большая → большой, светлая → светлой, квартира → квартире.
+
+#F
+Q: мы / жить / в / маленький / тихий / город
+N: Build a present-tense sentence.
+A: Мы живём в маленьком тихом городе.
+W: Prepositional masculine: маленький → маленьком, тихий → тихом (-ом: о is fine after к and х), город → городе.
+
+#F
+Q: она / работать / с / иностранный / студенты
+N: Build a present-tense sentence.
+A: Она работает с иностранными студентами.
+W: «С кем?» → instrumental plural: иностранные студенты → иностранными студентами (-ыми, -ами).
+
+#G
+Q: Я давно мечтаю о новый красный машине.
+N: Find and correct 2 errors.
+A: Я давно мечтаю о новой красной машине.
+W: «Мечтать о чём?» → prepositional feminine; every adjective must agree with «машине»: новой, красной (-ой).
+
+#I
+Q: Вчера я __________ (купить) нов__ телефон в больш__ магазин__ на соседн__ улиц__.
+N: The speaker is a woman.
+A: купила; новый; большом магазине; соседней улице
+W: Feminine past: купила. «Купить что?» → accusative, a masculine thing: новый (no change). «Где?» → prepositional: большом магазине (stressed -ом), соседней улице (soft -ей).
+
+#A
+Q: Я не люблю холодн__ зим__ и жарк__ лет__.
+A: холодную зиму; жаркое лето
+W: «Любить что?» → accusative. Feminine: холодная зима → холодную зиму. Neuter: жаркое лето stays the same.
+
+#A
+Q: Мы смотрели фильм о молод__ русск__ художнике.
+A: молодом русском
+W: Prepositional masculine: молодой → молодом, русский → русском (the noun: художник → художнике).
+
+#B
+Q: Я уже месяц не видел __________ (мои близкие друзья).
+A: моих близких друзей
+W: «Видеть кого?» → accusative of people in the plural = genitive plural: моих близких друзей (-их after к; друзья → друзей).
+
+@stage E
+#A
+Q: В последн__ врем__ я много работаю.
+A: последнее время
+W: «В последнее время» (lately) is a fixed phrase with the accusative: neuter «время» does not change; the soft adjective → последнее.
+
+#A
+Q: Я позвонил стар__ друг__ и пригласил его на нов__ выставку.
+A: старому другу; новую
+W: «Позвонить кому?» → dative: старому другу. «Пригласить на что?» → на + accusative feminine: новую выставку.
+
+#A
+Q: Мой брат работает в крупн__ международн__ компании.
+A: крупной международной
+W: «Работать где?» → prepositional feminine: крупная → крупной, международная → международной (компания → компании).
+
+#B
+Q: Мой друг гордится __________ (своя русская культура).
+A: своей русской культурой
+W: «Гордиться чем?» → instrumental feminine: своей русской культурой (-ой, -ой, -ой).
+
+#B
+Q: Мне не хватает __________ (свободное время) и __________ (хорошая погода).
+A: свободного времени; хорошей погоды
+W: «Не хватает» (there isn't enough) takes the genitive, like «нет»: свободного времени, хорошей погоды.
+
+#B
+Q: Я часто пишу __________ (мои бывшие студенты).
+A: моим бывшим студентам
+W: «Писать кому?» → dative plural: мои → моим, бывшие → бывшим, студенты → студентам.
+
+#B
+Q: Мы обсуждали проблемы __________ (современная молодёжь).
+A: современной молодёжи
+W: "Problems of modern youth" → genitive: современная → современной, молодёжь → молодёжи (feminine -ь → -и).
+
+#F
+Q: в / этот / старый / дом / жить / мой / бабушка
+N: Build the sentence "My grandmother lives in this old house."
+A: Моя бабушка живёт в этом старом доме.
+V: В этом старом доме живёт моя бабушка.
+W: «Жить где?» → prepositional masculine: этот → этом, старый → старом, дом → доме.

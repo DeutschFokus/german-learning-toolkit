@@ -461,6 +461,12 @@ WORD = re.compile(r"[А-Яа-яЁё]+(?:-[А-Яа-яЁё]+)*")
 CASE_NAMES = {"nominative": {"nomn"}, "genitive": {"gent", "gen2"}, "dative": {"datv"},
               "accusative": {"accs"}, "instrumental": {"ablt"}, "prepositional": {"loct", "loc2"}}
 SKIP_POS = {"PREP", "CONJ", "PRCL", "INTJ", "ADVB", "PRED", "COMP", "NUMR"}
+# real words missing from the analyser's dictionary
+ALLOW = {"видеосвязь", "видеосвязи", "видеосвязью", "русскоязычный", "арабоязычных", "онлайн"}
+
+
+def known(morph, w):
+    return w in ALLOW or morph.word_is_known(w)
 
 
 def norm(s):
@@ -543,11 +549,11 @@ def morph_check(ref, ex, morph, warns):
     t, q, a, w = ex["type"], ex.get("Q", ""), ex.get("A", ""), ex.get("W", "")
     # 1) every Cyrillic word in the answer must be a known form
     for tok in WORD.findall(a):
-        if not morph.word_is_known(norm(tok)) and len(tok) > 1:
+        if not known(morph, norm(tok)) and len(tok) > 1:
             warns.append(f"{ref}: unknown word in answer: {tok}")
     if t not in "G":
         for tok in WORD.findall(re.sub(r"[А-Яа-яЁё]*_{2,}", " ", q)):
-            if not morph.word_is_known(norm(tok)) and len(tok) > 1:
+            if not known(morph, norm(tok)) and len(tok) > 1:
                 warns.append(f"{ref}: unknown word in question: {tok}")
     # 2) agreement inside noun-phrase answers (A/B): one shared case+number
     if t in "AB":

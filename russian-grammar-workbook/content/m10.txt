@@ -1,0 +1,284 @@
+@module 10
+@part II
+@title Possessive and demonstrative pronouns
+@ru Мой, твой, свой, наш, ваш · этот, тот, весь · чей?
+@learn Decline мой / наш / этот / тот / весь in all cases and make them agree with the noun.
+@learn Know which words never change: его, её, их.
+@learn Use свой correctly: required when a third-person subject owns the thing, impossible inside the subject.
+@learn Ask чей? чья? чьё? чьи? and answer with possessives.
+@target со своими студентами
+@target своему другу
+@target обо всех наших планах
+@target в этом доме · в том ресторане
+@target Олег и его жена
+@remix Redo Stage A changing every possessive: мой → наш, твой → ваш; then every этот → тот.
+@remix Rewrite items 9–16 with a different subject (я / ты / он / они) and decide again between свой and его / её / их.
+@remix Describe your family in six sentences, using свой at least three times correctly.
+
+@lesson
+## Possessives decline like adjectives
+**Мой, твой, свой** decline in exactly the same way; **наш** and **ваш** form a second pattern. **Его, её, их** (his, her, their) never change: *с его сестрой, в её квартире, их детям.*
+
+| Case | Masculine | Feminine | Neuter | Plural |
+|---|---|---|---|---|
+| Nominative | мой · наш | моя · наша | моё · наше | мои · наши |
+| Genitive | моего · нашего | моей · нашей | = masc. | моих · наших |
+| Dative | моему · нашему | моей · нашей | = masc. | моим · нашим |
+| Accusative | мой / моего · наш / нашего | мою · нашу | моё · наше | мои / моих · наши / наших |
+| Instrumental | моим · нашим | моей · нашей | = masc. | моими · нашими |
+| Prepositional | моём · нашем | моей · нашей | = masc. | моих · наших |
+
+## Этот, тот, весь
+| Case | Masculine | Feminine | Neuter | Plural |
+|---|---|---|---|---|
+| Nominative | этот · тот · весь | эта · та · вся | это · то · всё | эти · те · все |
+| Genitive | этого · того · всего | этой · той · всей | = masc. | этих · тех · всех |
+| Dative | этому · тому · всему | этой · той · всей | = masc. | этим · тем · всем |
+| Accusative | = nom. / = gen. | эту · ту · всю | = nom. | = nom. / = gen. |
+| Instrumental | этим · тем · всем | этой · той · всей | = masc. | этими · теми · всеми |
+| Prepositional | этом · том · всём | этой · той · всей | = masc. | этих · тех · всех |
+
+The question **чей? чья? чьё? чьи?** (whose?) agrees in the same way: *Чья это книга? Чьи это ключи?* Before **всём, всех, мне** the preposition о becomes **обо**: *обо всех наших планах.*
+
+## Свой: "one's own"
+**Свой** points back to the **subject of its own clause**. It declines like мой.
+- With **он, она, они** (and names) it is **required** when the subject owns the thing: *Олег любит свою жену.* — «его жену» would mean another man's wife.
+- With **я, ты, мы, вы** both are correct, and свой usually sounds more natural: *Я разговариваю со своими (моими) студентами.*
+- It is **never part of the subject** and is not used after «это»: *Олег и его жена живут здесь. Это его машина.*
+
+> Анна звонит **своей маме**. || her own mother
+> Анна и **её мама** живут вместе. || inside the subject: её
+> Я помогаю **своим студентам**. || also correct: моим
+> Ты знаешь **всех моих друзей**? || the friends are mine, not the subject's
+> Я рассказал вам **обо всех наших планах**. || обо before всех
+
+::: mistakes Typical slips
+!> Олег любит его жену (his own) || Олег любит свою жену || third-person owner = subject → свой
+!> мой брат и своя жена || мой брат и его жена || свой never stands in the subject
+!> в этим доме || в этом доме || этим is instrumental or dative plural
+!> с моя сестра || с моей сестрой || possessives decline with the noun
+!> о всех наших планах || обо всех наших планах || о → обо before всех
+:::
+@endlesson
+
+@stage A
+#A
+Q: Это тво__ телефон или мо__?
+H: телефон → masculine nominative
+A: твой; мой
+W: After «это» the noun is nominative, and «телефон» is masculine: твой, мой (the second one refers to the same noun).
+
+#A
+Q: Я не знаю ваш__ фамили__.
+H: что? → accusative feminine
+A: вашу фамилию
+W: «Знать что?» → accusative feminine: ваша → вашу, фамилия → фамилию (-ия → -ию).
+
+#A
+Q: Мы очень гордимся наш__ детьми.
+H: кем? → instrumental plural
+A: нашими
+W: «Гордиться кем?» → instrumental plural: наши → нашими (agreeing with «детьми»).
+
+#A
+Q: Ты знаешь эт__ человека?
+H: кого? → a masculine person
+A: этого
+W: «Знать кого?» → accusative of a masculine person = genitive form: этот → этого.
+
+#B
+Q: Я живу в __________ (этот дом) уже десять лет.
+H: где? → prepositional
+A: этом доме
+W: «Жить где?» → prepositional masculine: этот → этом, дом → доме.
+
+#B
+Q: Я хорошо помню __________ (та встреча).
+H: что? → accusative feminine
+A: ту встречу
+W: «Помнить что?» → accusative feminine: та → ту, встреча → встречу.
+
+#A
+Q: Я рассказал об этом вс__ сво__ друзьям.
+H: кому? → dative plural
+A: всем своим
+W: «Рассказать кому?» → dative plural: все → всем, свои → своим (друзьям).
+
+#A
+Q: Ч__ это книга? — Это моя книга.
+H: книга → feminine
+A: Чья
+W: «Чей» (whose) agrees like a possessive: чей (m), чья (f), чьё (n), чьи (pl). «Книга» is feminine → чья.
+
+@stage B
+#A
+Q: Анна каждый день звонит сво__ мам__.
+A: своей маме
+W: «Звонить кому?» → dative feminine: своей маме. Анна calls her own mother, so «свой» is required; «её маме» would mean another woman's mother.
+
+#A
+Q: Олег показал нам фотографии сво__ нов__ квартир__.
+A: своей новой квартиры
+W: "Photos of his own new flat" → genitive feminine: своей новой квартиры. With the third-person subject Олег, «свой» refers back to him.
+
+#B
+Q: Мой брат часто ездит к __________ (своя девушка) в Минск.
+A: своей девушке
+W: «К» + dative: своя девушка → своей девушке. «Свой» because the girlfriend belongs to the subject (мой брат).
+
+#B
+Q: Я прочитал __________ (вся эта книга) за один вечер.
+A: всю эту книгу
+W: «Прочитать что?» → accusative feminine: вся → всю, эта → эту, книга → книгу.
+
+#A
+Q: Мы говорили обо вс__ наш__ проблем__.
+A: всех наших проблемах
+W: «Говорить о чём?» → prepositional plural: все → всех, наши → наших, проблемы → проблемах. «О» becomes «обо» before «всех».
+
+#B
+Q: Студенты задали __________ (тот преподаватель) много вопросов.
+A: тому преподавателю
+W: «Задать кому?» → dative masculine: тот → тому, преподаватель → преподавателю.
+
+#A
+Q: Я ничего не знаю об эт__ человек__.
+A: этом человеке
+W: «Знать о ком?» → prepositional: этот → этом, человек → человеке; «о» → «об» before the vowel of «этом».
+
+#B
+Q: Мы работаем с __________ (ваши студенты).
+A: вашими студентами
+W: «С кем?» → instrumental plural: ваши → вашими, студенты → студентами.
+
+@stage C
+#B
+Q: Анна взяла __________ (свой / её) сумку и ушла.
+A: свою
+W: The bag belongs to the subject (Анна), so Russian uses «свой»: свою сумку. «Её сумку» would mean some other woman's bag.
+
+#B
+Q: Анна ушла, а __________ (свой / её) сумка осталась на столе.
+A: её
+W: «Сумка» is the subject of «осталась». «Свой» never stands inside the subject, so you need «её»: её сумка.
+
+#B
+Q: Мой брат продал __________ (своя / его старая машина).
+A: свою старую машину
+W: The car belongs to the subject (мой брат) → «свой». «Продать что?» → accusative feminine: свою старую машину.
+
+#B
+Q: Мой брат и __________ (свой / его) жена живут в Москве.
+A: его
+W: «Жена» is part of the subject («мой брат и его жена»), and «свой» cannot be used inside the subject → его.
+
+#B
+Q: Они пригласили нас на __________ (их / своя свадьба).
+A: свою свадьбу
+W: The wedding is theirs and «они» is the subject → «свой». «Пригласить на что?» → на + accusative: свою свадьбу (-ую, -у).
+
+#A
+Q: Это не мо__ ключи, это ключи мо__ сестр__.
+A: мои; моей сестры
+W: «Ключи» is plural → мои. "The keys of my sister" → genitive: моя сестра → моей сестры.
+
+#A
+Q: Я положил вещи в сво__ комнат__, а Олег — в сво__.
+A: свою комнату; свою
+W: «Положить куда?» → в + accusative feminine: свою комнату. In each clause «свой» refers to that clause's own subject: я → my room, Олег → his room.
+
+#C
+Q: Мы долго ждали ___ т__ мест__, где договорились встретиться.
+A: на том месте
+W: «Ждать где?» → на + prepositional: тот → том, место → месте.
+
+@stage D
+#F
+Q: каждый / вечер / Олег / гулять / с / свой / собака
+N: Build a present-tense sentence.
+A: Каждый вечер Олег гуляет со своей собакой.
+V: Олег каждый вечер гуляет со своей собакой.
+W: «С кем?» → instrumental: своя собака → своей собакой; «с» → «со» before «св-». The dog belongs to Олег, the subject, so «свой».
+
+#F
+Q: я / рассказать / о / весь / мой / планы / вам
+N: Build the sentence "I'll tell you about all my plans."
+A: Я расскажу вам обо всех своих планах.
+V: Я расскажу вам обо всех моих планах.
+W: «Рассказать кому?» → вам. «О чём?» → prepositional plural: все → всех, свои (мои) → своих (моих), планы → планах; «о» → «обо» before «всех».
+
+#G
+Q: Мой друг и своя жена любят свои дети.
+N: Find and correct 2 errors.
+A: Мой друг и его жена любят своих детей.
+W: Inside the subject «свой» is impossible → его жена. «Любить кого?» → accusative plural of people = genitive plural: своих детей.
+
+#H
+Q: Я люблю этот город.
+N: Replace «город» with «страна».
+A: Я люблю эту страну.
+W: Accusative feminine: этот город (a masculine thing, unchanged) → эту страну (-у, -у).
+
+#I
+Q: Олег __________ (позвонить) сво__ брат__ и __________ (пригласить) его на сво__ день рождения.
+A: позвонил; своему брату; пригласил; свой
+W: Masculine past: позвонил, пригласил. «Позвонить кому?» → dative: своему брату. «Пригласить на что?» → на + accusative; «день рождения» is a masculine thing → свой (unchanged).
+
+#I
+Q: В эт__ кафе __________ (работать) мо__ сестра, а в т__ ресторане — её муж.
+A: этом; работает; моя; том
+W: «Где?» → prepositional: в этом кафе («кафе» is neuter and indeclinable), в том ресторане (тот → том). «Моя сестра» is the subject → работает.
+
+#A
+Q: Я знаю всех сво__ сосед__.
+A: своих соседей
+W: «Знать кого?» → accusative plural of people = genitive plural: свои соседи → своих соседей (-их, -ей).
+
+#A
+Q: Ты уже прочитал вс__ эт__ книги?
+A: все эти
+W: «Прочитать что?» → accusative plural of things = nominative: все эти книги.
+
+@stage E
+#A
+Q: Мы очень благодарны наш__ учител__ за вс__ его помощь.
+A: нашему учителю; всю
+W: «Благодарен кому?» → dative: нашему учителю. «За что?» → за + accusative feminine: вся → всю («помощь» is a feminine -ь noun).
+
+#A
+Q: Я уже говорил об этом т__ человек__, который сидел рядом с тобой.
+A: тому человеку
+W: «Говорить кому?» → dative: тот → тому, человек → человеку.
+
+#B
+Q: Учитель доволен __________ (все свои студенты).
+A: всеми своими студентами
+W: «Доволен кем?» → instrumental plural: все → всеми, свои → своими, студенты → студентами.
+
+#B
+Q: Чьи это вещи? — Это вещи __________ (тот мужчина) у окна.
+A: того мужчины
+W: "The things of that man" → genitive: тот → того, мужчина → мужчины («мужчина» declines like a feminine -а noun but takes masculine pronouns).
+
+#G
+Q: Мы видели твой сестру в этим магазине.
+N: Find and correct 2 errors.
+A: Мы видели твою сестру в этом магазине.
+W: «Видеть кого?» → accusative feminine: твою сестру. «Где?» → prepositional: в этом магазине («этим» is instrumental or dative plural).
+
+#I
+Q: Мария __________ (рассказать) нам о сво__ поездк__ и __________ (показать) все сво__ фотографии.
+A: рассказала; своей поездке; показала; свои
+W: Feminine past: рассказала, показала. «О чём?» → prepositional: своей поездке. «Показать что?» → accusative plural of things = nominative: все свои фотографии.
+
+#F
+Q: ты / знать / все / мой / друзья
+N: Build the question "Do you know all my friends?"
+A: Ты знаешь всех моих друзей?
+W: «Знать кого?» → accusative plural of people = genitive plural: всех моих друзей. «Моих» is right here: the friends are mine, not the subject's (ты), so «своих» would mean "your own".
+
+#F
+Q: Олег / и / его / жена / жить / в / этот / новый / дом
+N: Build a present-tense sentence.
+A: Олег и его жена живут в этом новом доме.
+W: «Его жена» is part of the subject, so «свой» is impossible. A plural subject → живут. «Где?» → prepositional: этом новом доме.

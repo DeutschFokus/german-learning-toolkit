@@ -1,0 +1,280 @@
+@module 6
+@part II
+@title Dative case
+@ru Дательный падеж — кому? чему?
+@learn Use the dative for the person who receives, benefits or is addressed: помогать, звонить, отвечать, объяснять.
+@learn Build мне нравится, мне нужен / нужна / нужно / нужны, мне холодно and age with the dative.
+@learn Form the dative singular and plural of nouns, adjectives and possessives.
+@learn Use к + dative for going to a person and по + dative for по телефону, по интернету.
+@target помогаю моему другу
+@target звоню своей маме
+@target отвечаю преподавателю
+@target помогаю своим студентам
+@target мне нужен новый ноутбук
+@remix Redo Stage A with plural people: моему другу → моим друзьям, маме → родителям.
+@remix Turn every Stage B sentence into a question with «Кому …?» and answer it with a pronoun (ему, ей, им).
+@remix Write five true sentences: «Мне нравится …», «Мне нужен / нужна …», «Мне … лет».
+
+@lesson
+## What the dative does
+The dative answers **кому? чему?** — "to whom, for whom". It marks the person who **receives** something, **benefits** from it or **experiences** it. Many of your most frequent verbs need it:
+
+**давать / дать, дарить, показывать, объяснять, рассказывать, говорить, писать, звонить, отвечать, помогать, советовать, мешать, обещать, верить, покупать** (for someone).
+
+It also carries a whole family of "impersonal" sentences in which the person stands in the dative: *мне нравится, мне нужно, мне можно / нельзя, мне холодно, мне скучно, мне тридцать лет.*
+
+## The endings
+| | Masculine / neuter | Feminine | Plural |
+|---|---|---|---|
+| Noun | -у / -ю: брату, учителю, окну | -е: сестре, маме · -ии: Марии, России · -и: дочери, тетради | -ам / -ям: студентам, друзьям |
+| Adjective | -ому / -ему: новому, хорошему | -ой / -ей: новой, хорошей | -ым / -им: новым, хорошим |
+| мой / наш / этот | моему, нашему, этому | моей, нашей, этой | моим, нашим, этим |
+
+Personal pronouns: **мне, тебе, ему, ей, нам, вам, им** (after a preposition: к нему, к ней, к ним).
+
+::: rule Нужен, нужна, нужно, нужны
+The person who needs is dative; the thing needed is the **subject** (nominative), and «нужен» agrees with it: *Мне нужен новый ноутбук. Мне нужна помощь. Мне нужно время. Мне нужны деньги.* With a verb, use **нужно / надо** + infinitive: *Мне нужно работать.*
+:::
+
+> Я помогаю **моему другу**. || помогать кому? → dative
+> Я звоню **своей маме** каждый день. || feminine -е
+> Преподаватель объясняет **студентам** правило. || the person is dative, the rule accusative
+> **Мне нравится** этот город. || the city is the subject
+> **Моему брату** двадцать лет. || age → dative
+> Я иду **к врачу**. || к + dative = to a person
+> Мы говорим **по телефону**. || по + dative
+
+::: contrast Моим студентам or с моим студентом?
+**Моим, нашим, своим, новым** appear in two places: dative plural (*помогаю своим студентам*) and instrumental singular (*разговариваю со своим студентом*). The noun ending decides: **-ам / -ям** = dative plural, **-ом / -ем** = instrumental singular.
+:::
+
+::: mistakes Typical slips
+!> помогаю мой друг || помогаю моему другу || помогать кому? → dative
+!> я звоню моего брата || я звоню моему брату || звонить кому? → dative
+!> я спрашиваю преподавателю || я спрашиваю преподавателя || but спрашивать кого? → accusative
+!> мне нужно новый ноутбук || мне нужен новый ноутбук || нужен agrees with the thing
+!> я нравлюсь этот фильм || мне нравится этот фильм || the person who likes is dative
+:::
+@endlesson
+
+@stage A
+#A
+Q: Каждый вечер я помогаю мо__ друг__ с немецким.
+H: кому? → dative
+A: моему другу
+W: «Помогать кому?» → dative. Masculine singular: мой → моему (-ему), друг → другу (-у).
+
+#A
+Q: Я звоню мам__ каждое воскресенье.
+H: кому? → dative
+A: маме
+W: «Звонить кому?» → dative. Feminine nouns in -а take -е: мама → маме.
+
+#A
+Q: Я пишу сообщение сво__ студентк__.
+H: кому? → dative
+A: своей студентке
+W: «Писать кому?» → dative. Feminine singular: своя → своей, студентка → студентке (-а → -е).
+
+#B
+Q: Я подарил цветы __________ (моя бабушка).
+H: кому? → dative
+A: моей бабушке
+W: «Дарить кому?» → dative: моя → моей, бабушка → бабушке (-а → -е).
+
+#B
+Q: __________ (я) нравится этот город.
+H: кому? → dative
+A: Мне
+W: With «нравиться» the person who likes stands in the dative: я → мне. «Этот город» is the nominative subject — that is why the verb is «нравится».
+
+#A
+Q: Преподаватель объясняет нов__ студент__ грамматику.
+H: кому? → dative
+A: новому студенту
+W: «Объяснять кому что?» — the person is dative: новый → новому (-ому), студент → студенту (-у). «Грамматику» is the accusative object.
+
+#B
+Q: Сколько лет __________ (твой брат)?
+H: кому? → dative
+A: твоему брату
+W: Age is expressed with the dative: «Сколько лет твоему брату? — Ему двадцать лет.» Masculine: твой → твоему, брат → брату.
+
+#A
+Q: Мне нуж__ нов__ ноутбук.
+H: что? → the subject
+A: нужен новый
+W: The person who needs is dative (мне); the thing needed is the nominative subject. «Ноутбук» is masculine → нужен новый ноутбук (нужна for feminine, нужно for neuter, нужны for plural).
+
+@stage B
+#A
+Q: Я часто звоню мо__ стар__ преподавател__ из Москвы.
+A: моему старому преподавателю
+W: «Звонить кому?» → dative: мой → моему, старый → старому, преподаватель → преподавателю (-ь → -ю).
+
+#B
+Q: Я хочу показать __________ (наша новая квартира) __________ (мои родители).
+A: нашу новую квартиру; моим родителям
+W: «Показать что?» → accusative: нашу новую квартиру. «Кому?» → dative plural: мои родители → моим родителям (-им, -ям).
+
+#A
+Q: Анна быстро отвечает всем сво__ студент__ в чате.
+A: своим студентам
+W: «Отвечать кому?» → dative. «Всем» shows the plural: свои студенты → своим студентам (-им, -ам).
+
+#B
+Q: Врач советует __________ (мой отец) больше гулять.
+A: моему отцу
+W: «Советовать кому?» → dative: мой → моему, отец → отцу (the е drops out in all other forms: отца, отцу).
+
+#A
+Q: Мне холодно, а мо__ сестр__ жарко.
+A: моей сестре
+W: States and feelings put the person in the dative: мне холодно, моей сестре жарко. Feminine: моя → моей, сестра → сестре.
+
+#B
+Q: __________ (мы) нужно купить продукты на неделю.
+A: Нам
+W: «Нужно» + infinitive needs the person in the dative: мы → нам.
+
+#A
+Q: Не мешай мне, пожалуйста: я пишу письмо сво__ дочер__.
+A: своей дочери
+W: «Писать кому?» → dative. «Дочь» has special forms: дочь → дочери (like мать → матери). The possessive is feminine: своей.
+
+#D
+Q: Ты __________ (помогать) своим студентам после урока? — Да, я всегда им __________ (помогать).
+A: помогаешь; помогаю
+W: Regular first conjugation: помогаю, помогаешь, помогает. «Своим студентам» and «им» are the dative objects of «помогать».
+
+@stage C
+#A
+Q: Я вижу мо__ брат__ и звоню мо__ сестр__.
+A: моего брата; моей сестре
+W: «Видеть кого?» → accusative: моего брата. «Звонить кому?» → dative: моей сестре. Different verbs, different cases.
+
+#B
+Q: Я спрашиваю __________ (преподаватель), а потом отвечаю __________ (преподаватель).
+A: преподавателя; преподавателю
+W: «Спрашивать кого?» → accusative: преподавателя. «Отвечать кому?» → dative: преподавателю. Learn the two verbs as a pair.
+
+#A
+Q: Мне нравится эт__ песн__, а моему брату нравятся эт__ песн__.
+A: эта песня; эти песни
+W: The thing liked is the nominative subject. Singular: эта песня + нравится; plural: эти песни + нравятся. The people who like are dative: мне, моему брату.
+
+#B
+Q: Это подарок для __________ (мой брат). Я подарю его __________ (мой брат) завтра.
+A: моего брата; моему брату
+W: «Для» → genitive: моего брата. «Подарить кому?» → dative: моему брату. Same person, two different cases.
+
+#A
+Q: Я люблю сво__ бабушк__ и часто звоню ей.
+A: свою бабушку
+W: «Любить кого?» → accusative: свою бабушку. With «звонить» the pronoun is dative: ей (not её).
+
+#C
+Q: Завтра я иду ___ врач__.
+A: к врачу
+W: Going to a person → «к» + dative: врач → врачу. Never «в врача»; «у врача» (genitive) means "at the doctor's".
+
+#C
+Q: Мы часто говорим ___ телефон__, но редко видимся.
+A: по телефону
+W: «По телефону» (on the phone) → «по» + dative: телефон → телефону. Same pattern: по интернету, по видеосвязи.
+
+#B
+Q: Эта книга нужна __________ (наша учительница), а не __________ (я).
+A: нашей учительнице; мне
+W: The person who needs is dative: наша учительница → нашей учительнице (-ей, -е); я → мне. «Книга» is the subject, so «нужна» is feminine.
+
+@stage D
+#F
+Q: я / помогать / свой / студенты / исправлять / ошибки
+N: Build a present-tense sentence.
+A: Я помогаю своим студентам исправлять ошибки.
+V: Я помогаю своим студентам исправлять их ошибки.
+W: «Помогать кому?» → dative plural: свои студенты → своим студентам. «Помогать» + infinitive: исправлять ошибки (accusative plural, unchanged).
+
+#F
+Q: преподаватель / объяснять / мы / новый / правило
+N: Build the sentence "The teacher explains the new rule to us."
+A: Преподаватель объясняет нам новое правило.
+W: «Объяснять кому что?» — the person is dative (мы → нам), the thing accusative (новое правило: neuter, unchanged).
+
+#F
+Q: сколько / лет / твой / сестра
+N: Build the question "How old is your sister?"
+A: Сколько лет твоей сестре?
+W: Age uses the dative: твоя сестра → твоей сестре. The answer would be «Ей двадцать пять лет».
+
+#F
+Q: мне / не / нравиться / этот / новый / песни
+N: Build the sentence "I don't like these new songs."
+A: Мне не нравятся эти новые песни.
+W: The person who likes is dative (мне); the songs are the nominative plural subject (эти новые песни), so the verb is plural: нравятся.
+
+#G
+Q: Я всегда помогаю мой друг, а он помогает моя сестра.
+N: Find and correct 2 errors.
+A: Я всегда помогаю моему другу, а он помогает моей сестре.
+W: «Помогать кому?» → dative: мой друг → моему другу, моя сестра → моей сестре.
+
+#H
+Q: Я звоню своему другу.
+N: Make «друг» plural.
+A: Я звоню своим друзьям.
+W: Dative plural: свой → своим (-им), друзья → друзьям (-ям). The plural stem «друзь-» keeps its soft sign.
+
+#I
+Q: Вчера я __________ (позвонить) сво__ сестр__ и __________ (рассказать) ей о новой работе.
+N: The speaker is a woman.
+A: позвонила; своей сестре; рассказала
+W: Female speaker → past in -ла: позвонила, рассказала. «Позвонить кому?» → dative: своя сестра → своей сестре.
+
+#D
+Q: Что вы __________ (советовать) мне прочитать? — Я __________ (советовать) вам эту книгу.
+A: советуете; советую
+W: Verbs in -овать replace -ова- with -у- in the present: советую, советуешь … советуете.
+
+@stage E
+#A
+Q: Мо__ нов__ коллег__ двадцать восемь лет, а он уже начальник.
+A: Моему новому коллеге
+W: Age → dative. «Он» shows a man, so the adjectives are masculine: моему новому; «коллега» declines like a feminine -а noun → коллеге.
+
+#A
+Q: Я обещал наш__ клиент__ ответить до вечера.
+A: нашему клиенту
+W: «Обещать кому?» → dative: наш → нашему, клиент → клиенту.
+
+#B
+Q: Мы купили __________ (наши дети) новые игрушки.
+A: нашим детям
+W: «Купить кому?» (for someone) → dative plural: наши дети → нашим детям (-им, -ям).
+
+#B
+Q: __________ (вы) не скучно на этих уроках?
+A: Вам
+W: The person who feels something is dative: вы → вам. «Скучно» (bored) works like «холодно» and «интересно».
+
+#B
+Q: __________ (Мария) очень нравится жить в Германии.
+A: Марии
+W: The person who likes is dative. Names in -ия take -ии: Мария → Марии.
+
+#C
+Q: Каждую субботу я езжу ___ сво__ родител__ на дачу.
+A: к своим родителям
+W: Going to people → «к» + dative: свои родители → своим родителям (-им, -ям).
+
+#D
+Q: Почему ты мне никогда не __________ (звонить)? — Я __________ (звонить) тебе каждый день!
+A: звонишь; звоню
+W: «Звонить» is second conjugation with the stress on the ending: звоню, звонишь, звонит. «Мне» and «тебе» are dative: звонить кому?
+
+#F
+Q: мой / друг / нужен / новый / работа
+N: Build the sentence "My friend needs a new job."
+A: Моему другу нужна новая работа.
+W: The person who needs is dative: мой друг → моему другу. «Работа» is the feminine subject, so «нужен» → нужна and «новый» → новая.

@@ -1,0 +1,279 @@
+@module 8
+@part II
+@title Prepositional case
+@ru Предложный падеж — где? о ком? о чём?
+@learn Use в / на + prepositional for location (где?) and на + prepositional for transport (на автобусе).
+@learn Use о / об / обо + prepositional after думать, говорить, рассказывать, мечтать, спрашивать.
+@learn Form the endings, including -ии (в России), -и (в тетради) and the special -у (в лесу, в прошлом году).
+@learn Build negative phrases like ни в одной русскоязычной стране.
+@target думаю о моём плане
+@target работаю на ноутбуке
+@target в России
+@target ни в одной русскоязычной стране
+@target в прошлом году
+@remix Redo Stage A with the opposite question: в Москве → в Москву, о моём плане → мой план (subject).
+@remix Rewrite items 9–16 in the plural where it makes sense: о нашей поездке → о наших поездках.
+@remix Write five sentences «Я часто думаю о …» and five «Я никогда не был(а) в …».
+
+@lesson
+## Two jobs: where and about
+The prepositional case only ever appears after a preposition — hence its name. It has two main jobs and two smaller ones:
+- **в / на** + где? — location: *в школе, на работе, в России, на ноутбуке*;
+- **о (об, обо)** + о ком? о чём? — "about": *думать, говорить, рассказывать, мечтать, спрашивать, читать, писать, беспокоиться о …*;
+- **на** + transport: *на автобусе, на метро, на машине*;
+- **в / на** + some time phrases: *в прошлом году, в январе, на этой неделе*.
+
+## The endings
+| | Masculine / neuter | Feminine | Plural |
+|---|---|---|---|
+| Noun | -е: брате, доме, окне · -и after -ий, -ие: санатории, задании | -е: сестре, работе · -и: России, тетради, связи | -ах / -ях: студентах, друзьях |
+| Adjective | -ом / -ем: новом, хорошем, синем | -ой / -ей: новой, хорошей | -ых / -их: новых, хороших |
+| мой, наш, этот | моём, нашем, этом | моей, нашей, этой | моих, наших, этих |
+
+Pronouns: **обо мне, о тебе, о нём, о ней, о нас, о вас, о них.** The preposition о becomes **об** before a vowel (*об этом, об Анне, об отпуске*) and **обо** in *обо мне, обо всём*.
+
+::: rule The special -у for location
+About twenty masculine nouns take a stressed **-у** after в / на when they mean a place: *в лесу, в саду, в аэропорту, в шкафу, на полу, на мосту, на берегу, в углу* — and *в прошлом году*. After о they are regular: *о лесе, об аэропорте*.
+:::
+
+> Я думаю **о моём плане**. || о чём? the whole phrase changes
+> Я работаю **на ноутбуке**. || where the work happens
+> Мои родители живут **в России**. || -ия → -ии
+> Я не был **ни в одной русскоязычной стране**. || ни в одной … needs не before the verb
+> **В прошлом году** я был в Китае. || год → в году
+> Я еду на работу **на автобусе**. || transport: на + prepositional
+
+::: contrast One ending, several cases
+Feminine **-е** is both prepositional and dative (*о сестре / сестре*), and the adjective ending **-ой / -ей** is shared by the genitive, dative, instrumental and prepositional feminine (*новой*). Never guess from the ending — decide the case from the preposition or verb first.
+:::
+
+::: mistakes Your real mistakes
+!> думаю о мой план || думаю о моём плане || о + prepositional, every word changes
+!> я живу в Россия || я живу в России || -ия → -ии
+!> не был ни в один русскоязычный страна || не был ни в одной русскоязычной стране || every word agrees
+!> в прошлом годе || в прошлом году || год takes -у after в
+!> о этом || об этом || о → об before a vowel
+:::
+@endlesson
+
+@stage A
+#A
+Q: Всю ночь я думал о мо__ нов__ план__.
+H: о чём? → prepositional
+A: моём новом плане
+W: «Думать о чём?» → prepositional. Masculine singular: мой → моём, новый → новом, план → плане (-е).
+
+#A
+Q: Мой брат живёт в Москв__.
+H: где? → prepositional
+A: Москве
+W: «Жить где?» → в + prepositional: Москва → Москве (-а → -е).
+
+#A
+Q: Мои родители живут в Росси__.
+H: где? → prepositional
+A: России
+W: Nouns in -ия take -ии in the prepositional: Россия → России.
+
+#A
+Q: Сейчас я на работ__.
+H: где? → prepositional
+A: работе
+W: «Где?» → на + prepositional: работа → работе. «Работа» always takes «на».
+
+#B
+Q: Мы говорили о __________ (наша новая учительница).
+H: о ком? → prepositional
+A: нашей новой учительнице
+W: «Говорить о ком?» → prepositional feminine: наша → нашей, новая → новой, учительница → учительнице (-а → -е).
+
+#B
+Q: Я работаю на __________ (старый ноутбук).
+H: на чём? → prepositional
+A: старом ноутбуке
+W: «Работать на чём?» — the device is treated as a place → на + prepositional: старый → старом, ноутбук → ноутбуке.
+
+#A
+Q: Летом мы отдыхали в лес__ на берег__ реки.
+H: где? → special -у
+A: лесу; берегу
+W: Some masculine nouns take a stressed -у for location: в лесу, на берегу (also в саду, в аэропорту, на полу, в шкафу).
+
+#A
+Q: Расскажи мне о сво__ семь__.
+H: о чём? → prepositional
+A: своей семье
+W: «Рассказать о ком / о чём?» → prepositional feminine: своя семья → своей семье (-я → -е).
+
+@stage B
+#A
+Q: Моя сестра никогда не была ни в одн__ русскоязычн__ стран__.
+A: одной русскоязычной стране
+W: «Быть где?» → в + prepositional feminine: одна → одной, русскоязычная → русскоязычной, страна → стране. «Ни в одной» (not in a single) needs «не» before the verb.
+
+#B
+Q: Мой друг учится в __________ (Московский университет).
+A: Московском университете
+W: «Учиться где?» → в + prepositional: Московский → Московском, университет → университете.
+
+#A
+Q: Я часто вспоминаю о наш__ поездк__ в Китай.
+A: нашей поездке
+W: «Вспоминать о чём?» → prepositional: наша → нашей, поездка → поездке. «В Китай» is the direction of the trip — accusative.
+
+#B
+Q: Анна мечтает о __________ (большой дом) у моря.
+A: большом доме
+W: «Мечтать о чём?» → prepositional: большой → большом (stressed -ом), дом → доме.
+
+#A
+Q: Мой телефон лежит в шкаф__, а ключи — на пол__.
+A: шкафу; полу
+W: Both nouns take the special stressed -у for location: в шкафу, на полу (like в лесу, в саду).
+
+#C
+Q: Я никогда не думаю ___ этом.
+A: об этом
+W: «О» becomes «об» before a vowel: об этом, об Анне, об отпуске. «Это» in the prepositional → этом.
+
+#A
+Q: В прошл__ год__ я был в Китае.
+A: прошлом году
+W: «В каком году?» → в + prepositional, and «год» takes the special -у: в прошлом году. «Прошлый» → прошлом.
+
+#D
+Q: О чём вы __________ (думать)? — Мы __________ (думать) о нашем отпуске.
+A: думаете; думаем
+W: Regular first conjugation: думаю, думаешь … думаем, думаете. «О нашем отпуске» is the prepositional object.
+
+@stage C
+#C
+Q: Я еду ___ работ__ ___ автобус__.
+A: на работу на автобусе
+W: «Еду куда?» → на + accusative: работа → работу. «На чём?» (means of transport) → на + prepositional: автобус → автобусе.
+
+#A
+Q: Я иду в банк, потому что мой брат работает в банк__.
+A: банке
+W: «Иду (куда?) в банк» — accusative, unchanged. «Работает (где?) в банке» — prepositional (-е).
+
+#A
+Q: Вечером я разговариваю со сво__ студент__ об их ошибк__.
+A: своими студентами; ошибках
+W: «Разговаривать с кем?» → instrumental plural: своими студентами. «О чём?» → prepositional plural: ошибки → ошибках (-ах); before «их» the preposition is «об».
+
+#B
+Q: Я думаю о __________ (ты), а ты думаешь обо __________ (я)?
+A: тебе; мне
+W: Prepositional pronouns: о тебе, обо мне (о → обо before «мне»).
+
+#C
+Q: Я долго стоял ___ остановк__, а потом поехал ___ такси.
+A: на остановке; на такси
+W: «Стоять где?» → на + prepositional: остановка → остановке. Transport → на + prepositional; «такси» never changes.
+
+#A
+Q: Мы живём на втор__ этаж__, а работаем на пят__ этаж__.
+A: втором этаже; пятом этаже
+W: Floors take «на». «Где?» → prepositional: второй → втором, пятый → пятом, этаж → этаже.
+
+#B
+Q: Мы долго говорили о __________ (твой брат) и о __________ (его жена).
+A: твоём брате; его жене
+W: «О ком?» → prepositional: твой → твоём, брат → брате; «его» never changes, жена → жене.
+
+#A
+Q: Я плохо понимаю, что пишут в эт__ стать__.
+A: этой статье
+W: «Где?» (in the article) → в + prepositional: эта → этой, статья → статье (-я → -е).
+
+@stage D
+#F
+Q: я / не / быть / ни в одной / русскоязычный / страна
+N: Build a past-tense sentence. The speaker is a man.
+A: Я не был ни в одной русскоязычной стране.
+W: «Быть где?» → в + prepositional: ни в одной русскоязычной стране (-ой, -ой, -е). «Ни в одной» requires «не» before the verb. Masculine past: был.
+
+#F
+Q: о / мой / план / я / рассказать / ты / завтра
+N: Build the sentence "I'll tell you about my plan tomorrow."
+A: Завтра я расскажу тебе о моём плане.
+V: Я расскажу тебе о моём плане завтра. · Завтра я расскажу тебе о своём плане.
+W: «Рассказать кому?» → dative: тебе. «О чём?» → prepositional: мой план → моём плане. «Рассказать» is perfective, so расскажу (з → ж) is the future.
+
+#F
+Q: мы / жить / в / большой / квартира / в / центр
+N: Build a present-tense sentence.
+A: Мы живём в большой квартире в центре.
+W: «Жить где?» → prepositional: большая квартира → большой квартире, центр → центре.
+
+#F
+Q: в / этот / ресторан / работать / мой / сестра
+N: Build the sentence "My sister works in this restaurant."
+A: Моя сестра работает в этом ресторане.
+V: В этом ресторане работает моя сестра.
+W: «Работать где?» → в + prepositional: этот ресторан → этом ресторане. «Моя сестра» is the nominative subject.
+
+#G
+Q: Мои родители живут в Германия, а я живу в маленький город.
+N: Find and correct 2 errors.
+A: Мои родители живут в Германии, а я живу в маленьком городе.
+W: «Жить где?» → prepositional: Германия → Германии (-ии); маленький город → маленьком городе (-ом, -е).
+
+#H
+Q: Я иду в новую школу.
+N: Change it to location: "I study at the new school."
+A: Я учусь в новой школе.
+W: Direction (куда?) takes the accusative: в новую школу. Location (где?) takes the prepositional: в новой школе (-ой, -е).
+
+#I
+Q: Вчера мы __________ (говорить) ___ наш__ нов__ проект__ ___ видеосвязи.
+A: говорили; о нашем новом проекте; по
+W: Past plural: говорили. «О чём?» → prepositional: о нашем новом проекте. «По видеосвязи» (via video call) uses «по» + dative.
+
+#C
+Q: Ты когда-нибудь был ___ Байкал__?
+A: на Байкале
+W: Lake Baikal takes «на» (like на озере, на море): на Байкале — prepositional -е.
+
+@stage E
+#B
+Q: Мы часто вспоминаем о __________ (наши старые друзья).
+A: наших старых друзьях
+W: «Вспоминать о ком?» → prepositional plural: наши → наших, старые → старых, друзья → друзьях (-ях).
+
+#B
+Q: Книга лежит на __________ (твой письменный стол).
+A: твоём письменном столе
+W: «Лежать где?» → на + prepositional: твой → твоём, письменный → письменном, стол → столе.
+
+#B
+Q: Я прочитал интересную статью о __________ (Сибирь).
+A: Сибири
+W: «О чём?» → prepositional. «Сибирь» is a feminine -ь noun → Сибири (-и).
+
+#B
+Q: Сколько студентов в __________ (ваша группа)?
+A: вашей группе
+W: «Где?» → в + prepositional: ваша → вашей, группа → группе.
+
+#C
+Q: Моя подруга работает ___ почт__, а её муж — ___ аэропорт__.
+A: на почте; в аэропорту
+W: The post office takes «на»: на почте (-е). An airport takes «в» and the special stressed -у: в аэропорту.
+
+#C
+Q: Не беспокойся ___ мне, у меня всё хорошо.
+A: обо мне
+W: «Беспокоиться о ком?» → prepositional; before «мне» the preposition becomes «обо»: обо мне.
+
+#D
+Q: Где ты __________ (жить)? — Я __________ (жить) в центре, недалеко от метро.
+A: живёшь; живу
+W: «Жить» uses the stem жив-: живу, живёшь, живёт … живут. «В центре» answers где? → prepositional.
+
+#F
+Q: в / свободный / время / я / заниматься / в / спортзал
+N: Build a present-tense sentence.
+A: В свободное время я занимаюсь в спортзале.
+W: «В свободное время» (in my free time) is a fixed time phrase with the accusative. «Заниматься где?» → в + prepositional: спортзал → спортзале.

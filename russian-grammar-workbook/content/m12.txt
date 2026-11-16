@@ -1,0 +1,275 @@
+@module 12
+@part II
+@title Mixed-case mastery
+@ru Все шесть падежей — как выбрать правильную форму
+@learn Use a four-step routine to choose the case: trigger → question word → gender and number → endings.
+@learn Recognise the main triggers of all six cases at a glance.
+@learn Handle endings that look the same in different cases (моим, новой, -е, -ии).
+@learn Change one noun phrase through several cases in a row.
+@target у моего соседа
+@target с моими родителями
+@target о своей семье
+@target к своему другу
+@target без твоей помощи
+@remix Redo Stage C with a new noun phrase each time (наш новый преподаватель → моя старая подруга → эти студенты).
+@remix Cover the answers of Stage B and say the trigger and the question word aloud before writing anything.
+@remix Write one sentence for each of the six cases about the same person in your life.
+
+@lesson
+## The four-step routine
+Ending mistakes rarely come from not knowing the endings. They come from **skipping the decision**. Before you write any ending, run through four steps:
+- **Trigger.** Is there a preposition? A verb that demands a case? A quantity word? Nothing at all (then it is probably the subject)?
+- **Question word.** Ask the question the trigger asks: кто? кого? кому? с кем? где? о чём? откуда?
+- **Gender and number** of the noun — not of the word you are looking at.
+- **Endings** on every word of the phrase: pronoun, adjective and noun.
+
+## Case finder
+| Case | Questions | Typical triggers |
+|---|---|---|
+| Nominative | кто? что? | the subject; after это, вот, где; у меня есть …; мне нравится … |
+| Genitive | кого? чего? | нет, у (owner), "of", много / мало / сколько, 5+; из, с (from), от, до, после, без, для, около, кроме; зависеть от |
+| Dative | кому? чему? | давать, дарить, помогать, звонить, отвечать, советовать; нравиться, нужно, age; к, по |
+| Accusative | кого? что? куда? | the direct object; в / на + куда?; через; каждую неделю |
+| Instrumental | кем? чем? | с (with); пользоваться, интересоваться, заниматься, стать, работать кем; был / буду + role; за, под, над, перед, между |
+| Prepositional | где? о ком? о чём? | в / на + где?; о, об, обо; на + transport |
+
+::: contrast One form, several cases
+**моим / новым** = dative plural (*моим студентам*) or instrumental singular (*с моим студентом*). **моей / новой** = genitive, dative, instrumental or prepositional feminine. **-е** on a feminine noun = dative or prepositional (*сестре*). **России** = genitive, dative or prepositional. The ending alone never tells you the case — the trigger does.
+:::
+
+> Я думаю **о своей семье**. || о → prepositional
+> **У моего соседа** большая собака. || у + owner → genitive
+> Я подарил **сестре** новый телефон. || подарить кому? → dative
+> Я жду **моего старшего брата**. || ждать кого? → accusative (person)
+> Мы занимаемся **русским языком**. || заниматься чем? → instrumental
+> Я вернулся **из России**, но мысли — **в России**. || same form, two cases
+
+::: mistakes Typical slips
+!> разговаривал с моя мама || разговаривал с моей мамой || с → instrumental, every word
+!> думаю о мой брат || думаю о моём брате || о → prepositional
+!> я звоню моего друга || я звоню моему другу || звонить кому? → dative
+!> без твоя помощь || без твоей помощи || без → genitive
+!> он стал хороший врач || он стал хорошим врачом || стать кем? → instrumental
+:::
+@endlesson
+
+@stage A
+#A
+Q: Я часто думаю о сво__ семь__.
+H: о чём?
+A: своей семье
+W: «О чём?» → prepositional feminine: своя семья → своей семье (-ей, -е).
+
+#A
+Q: У мо__ сосед__ большая собака.
+H: у кого?
+A: моего соседа
+W: «У кого?» names the owner → genitive: мой сосед → моего соседа. The dog is the nominative subject.
+
+#A
+Q: Я подарил сестр__ нов__ телефон.
+H: кому? что?
+A: сестре; новый
+W: «Подарить кому?» → dative: сестре. «Что?» → accusative of a masculine thing = nominative: новый телефон.
+
+#A
+Q: Мы занимаемся русск__ язык__ три раза в неделю.
+H: чем?
+A: русским языком
+W: «Заниматься чем?» → instrumental: русским языком (after к: -им).
+
+#B
+Q: Я жду __________ (мой старший брат).
+H: кого?
+A: моего старшего брата
+W: «Ждать кого?» → accusative of a masculine person = genitive form: моего старшего брата.
+
+#B
+Q: Эта сумка __________ (моя подруга).
+H: чья?
+A: моей подруги
+W: "The bag of my friend" → genitive: моя подруга → моей подруги (after г: -и).
+
+#A
+Q: Мы живём недалеко от больш__ парк__.
+H: от чего?
+A: большого парка
+W: «Недалеко от» → genitive masculine: большой → большого, парк → парка.
+
+#B
+Q: Я разговариваю со __________ (своя новая соседка).
+H: с кем?
+A: своей новой соседкой
+W: «С кем?» → instrumental feminine: своей новой соседкой (-ей, -ой, -ой).
+
+@stage B
+#A
+Q: Мой друг работает в больш__ международн__ компани__.
+A: большой международной компании
+W: «Работать где?» → prepositional feminine: большой, международной (-ой), компания → компании (-ия → -ии).
+
+#A
+Q: Я позвонил мо__ стар__ друг__ и спросил его о нов__ работ__.
+A: моему старому другу; новой работе
+W: «Позвонить кому?» → dative: моему старому другу. «Спросить о чём?» → prepositional: новой работе.
+
+#B
+Q: Я нигде не могу найти __________ (моя синяя ручка).
+A: мою синюю ручку
+W: «Найти что?» → accusative feminine: мою синюю ручку (soft adjective -юю).
+
+#A
+Q: Сколько стоит билет до Москв__?
+A: Москвы
+W: «До» (as far as, to) → genitive: Москва → Москвы (-а → -ы). A ticket "to Moscow" is «билет до Москвы» or «билет в Москву».
+
+#B
+Q: Мы гордимся __________ (наш сын): он стал __________ (хороший врач).
+A: нашим сыном; хорошим врачом
+W: «Гордиться кем?» and «стать кем?» both take the instrumental: нашим сыном, хорошим врачом.
+
+#A
+Q: Я рассказал коллег__ о сво__ отпуск__ в Итали__.
+A: коллеге; своём отпуске; Италии
+W: «Рассказать кому?» → dative: коллеге. «О чём?» → prepositional: своём отпуске. «Где?» → prepositional: Италии (-ия → -ии).
+
+#B
+Q: Без __________ (твоя помощь) я не могу закончить проект.
+A: твоей помощи
+W: «Без» → genitive: твоя помощь → твоей помощи (feminine -ь → -и).
+
+#A
+Q: Мой брат увлекается стар__ машин__ — у него их пять.
+A: старыми машинами
+W: «Увлекаться чем?» → instrumental; «их пять» shows the plural: старыми машинами (-ыми, -ами).
+
+@stage C
+#A
+Q: Это наш нов__ преподаватель. Мы любим наш__ нов__ преподавател__ и часто говорим о наш__ нов__ преподавател__.
+A: новый; нашего нового преподавателя; нашем новом преподавателе
+W: After «это» → nominative: новый. «Любить кого?» → accusative of a person = genitive form: нашего нового преподавателя. «О ком?» → prepositional: нашем новом преподавателе.
+
+#A
+Q: У меня есть сестр__. Я часто звоню сестр__ и очень горжусь сестр__.
+A: сестра; сестре; сестрой
+W: «Есть» + nominative: сестра. «Звонить кому?» → dative: сестре. «Гордиться кем?» → instrumental: сестрой.
+
+#B
+Q: Я иду в __________ (большой магазин), а мой брат уже в __________ (большой магазин).
+A: большой магазин; большом магазине
+W: «Иду куда?» → accusative of a thing → unchanged. «Уже где?» → prepositional: большом магазине.
+
+#B
+Q: Мы ждём __________ (наша учительница), а потом пойдём к __________ (наша учительница) домой.
+A: нашу учительницу; нашей учительнице
+W: «Ждать кого?» → accusative feminine: нашу учительницу. «К кому?» → dative: нашей учительнице.
+
+#C
+Q: Я вернулся ___ Росси__, но мои мысли всё ещё ___ Росси__.
+A: из России; в России
+W: «Вернуться откуда?» → «из» + genitive: России. «Где?» → «в» + prepositional: России. The forms are identical (-ии), but the cases differ.
+
+#C
+Q: Я поставил вазу ___ стол, а книги лежат ___ стол__.
+A: на стол; на столе
+W: «Поставить куда?» → «на» + accusative: стол (unchanged). «Лежать где?» → «на» + prepositional: столе.
+
+#A
+Q: Я хорошо знаю эт__ город, потому что жил в эт__ город__ пять лет.
+A: этот; этом городе
+W: «Знать что?» → accusative of a thing = nominative: этот город. «Жить где?» → prepositional: этом городе.
+
+#B
+Q: Мне очень нравится __________ (твоя сестра). Я часто думаю о __________ (твоя сестра).
+A: твоя сестра; твоей сестре
+W: With «нравится» the person liked is the nominative subject: твоя сестра. «Думать о ком?» → prepositional: твоей сестре.
+
+@stage D
+#F
+Q: я / пользоваться / этот / словарь / уже / пять / лет
+N: Build a present-tense sentence.
+A: Я пользуюсь этим словарём уже пять лет.
+W: «Пользоваться чем?» → instrumental: этим словарём (stressed ending -ём). Present tense, because it is still going on.
+
+#F
+Q: мой / сестра / нужен / помощь / твой
+N: Build the sentence "My sister needs your help."
+A: Моей сестре нужна твоя помощь.
+W: The person who needs is dative: моей сестре. «Помощь» is a feminine subject → нужна твоя помощь.
+
+#G
+Q: Я разговаривал с моя мама о мой брат.
+N: Find and correct 2 errors.
+A: Я разговаривал с моей мамой о моём брате.
+W: «С кем?» → instrumental: моей мамой. «О ком?» → prepositional: моём брате.
+
+#H
+Q: У меня есть новая машина.
+N: Make it negative.
+A: У меня нет новой машины.
+W: «Есть» + nominative becomes «нет» + genitive: новая машина → новой машины.
+
+#I
+Q: Вчера я __________ (ходить) в гости ___ сво__ друг__, и мы весь вечер __________ (говорить) о футбол__.
+N: The speaker is a man.
+A: ходил; к своему другу; говорили; футболе
+W: «Ходил» = went and came back. Going to a person → «к» + dative: к своему другу. Plural past: говорили. «О чём?» → prepositional: футболе.
+
+#I
+Q: Моя подруга __________ (работать) учительниц__ в школ__ недалеко от наш__ дом__.
+A: работает; учительницей; школе; нашего дома
+W: «Работать кем?» → instrumental: учительницей (-ей after ц, unstressed). «Где?» → prepositional: школе. «Недалеко от» → genitive: нашего дома.
+
+#A
+Q: После урок__ я пишу сообщения всем студент__, которые не пришли.
+A: урока; студентам
+W: «После» → genitive: урок → урока. «Писать кому?» → dative plural: всем студентам.
+
+#C
+Q: Мои друзья живут ___ Казан__, и я часто езжу ___ ним.
+A: в Казани; к ним
+W: «Жить где?» → «в» + prepositional: Казань → Казани (feminine -ь → -и). Going to people → «к» + dative: к ним.
+
+@stage E
+#A
+Q: Я благодарю вас за ваш__ подарок и за ваш__ помощь.
+A: ваш; вашу
+W: «Благодарить за что?» → «за» + accusative: ваш подарок (a masculine thing, unchanged), вашу помощь (feminine -у).
+
+#A
+Q: Мы с друзь__ ходили на концерт русск__ рок-групп__.
+A: друзьями; русской рок-группы
+W: «Мы с друзьями» → instrumental plural: друзьями. "A concert of a Russian rock band" → genitive: русской рок-группы.
+
+#A
+Q: Я никогда не был в Японии, но много читал о японск__ культур__ и истори__.
+A: японской культуре; истории
+W: «Читать о чём?» → prepositional feminine: японской культуре и истории (-ии). One adjective can describe both nouns.
+
+#B
+Q: Скажите, пожалуйста, как доехать до __________ (Красная площадь)?
+A: Красной площади
+W: «До» → genitive: Красная площадь → Красной площади (feminine -ь → -и).
+
+#C
+Q: Я пью кофе ___ молок__, потому что не люблю чёрный кофе.
+A: с молоком
+W: «С» (with) → instrumental: молоко → молоком. Black coffee has no milk, so here you need «с».
+
+#F
+Q: я / ехать / к / мой / бабушка / на / поезд
+N: Build a present-tense sentence.
+A: Я еду к моей бабушке на поезде.
+V: Я еду к своей бабушке на поезде. · Я еду на поезде к своей бабушке.
+W: Going to a person → «к» + dative: к моей (своей) бабушке. Transport → «на» + prepositional: на поезде.
+
+#F
+Q: в / наш / группа / есть / студенты / из / Египет / и / Сирия
+N: Build a present-tense sentence.
+A: В нашей группе есть студенты из Египта и Сирии.
+W: «Где?» → prepositional: в нашей группе. «Есть» + nominative: студенты. «Из» → genitive: Египта, Сирии (-ия → -ии).
+
+#I
+Q: Каждую субботу я __________ (ездить) ___ дач__ с мо__ родител__.
+A: езжу; на дачу; моими родителями
+W: «Ездить» → я езжу (д → ж). «Куда?» → «на» + accusative: дачу. «С кем?» → instrumental plural: моими родителями.

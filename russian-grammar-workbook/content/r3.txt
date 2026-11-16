@@ -1,0 +1,194 @@
+@review 3
+@title Pronouns, plurals and all six cases
+@covers Modules 10–12 (with Modules 1–9 recycled)
+@intro The end of Part II: all six cases, singular and plural, with possessives, demonstratives and свой. Use the four-step routine from Module 12 on every gap — trigger, question word, gender and number, then endings.
+
+@block 1 | Endings and forms
+#A
+Q: Олег часто помогает сво__ младш__ сестр__ с математикой.
+A: своей младшей сестре
+W: «Помогать кому?» → dative feminine. The sister is Олег's own and he is the subject → свой: своей младшей сестре.
+
+#A
+Q: Я не знаю, ч__ это ключи.
+A: чьи
+W: «Ключи» is plural, so «чей» (whose) takes the plural form: чьи.
+
+#A
+Q: В этом году в нашу школу пришло пять нов__ учител__.
+A: новых учителей
+W: «Пять» → genitive plural: новых учителей (-ых, -ей). With numbers from five the verb is usually neuter singular: пришло.
+
+#A
+Q: Я рассказал обо всём сво__ жен__.
+A: своей жене
+W: «Рассказать кому?» → dative: своя жена → своей жене. «Обо всём» = about everything (о → обо before «всём»).
+
+#A
+Q: Мы купили подарки для всех наш__ родственник__.
+A: наших родственников
+W: «Для» → genitive plural: всех наших родственников (-их, -ов).
+
+#A
+Q: Анна и е__ муж живут в т__ доме напротив.
+A: её; том
+W: «Её» is part of the subject, so «свой» is impossible; «её» never changes. «Где?» → prepositional: тот → том.
+
+#A
+Q: Я встретил всех сво__ одноклассник__ на встрече выпускников.
+A: своих одноклассников
+W: «Встретить кого?» → accusative plural of people = genitive plural: всех своих одноклассников (-их, -ов).
+
+#A
+Q: Мы говорили с эт__ люд__ целый час.
+A: этими людьми
+W: «С кем?» → instrumental plural: эти люди → этими людьми (irregular -ьми).
+
+#B
+Q: У __________ (мои соседи) три собаки.
+A: моих соседей
+W: «У» + genitive plural names the owners: мои соседи → моих соседей.
+
+#B
+Q: Я посоветовал __________ (все мои студенты) этот сериал.
+A: всем моим студентам
+W: «Посоветовать кому?» → dative plural: все → всем, мои → моим, студенты → студентам.
+
+#B
+Q: Ты знаешь __________ (эти девушки)?
+A: этих девушек
+W: «Знать кого?» → accusative plural of people = genitive plural: этих девушек (-ка nouns: zero ending with an inserted е).
+
+#B
+Q: Он очень доволен __________ (своя новая квартира).
+A: своей новой квартирой
+W: «Доволен чем?» → instrumental feminine: своей новой квартирой. The flat belongs to the subject (он) → свой.
+
+#B
+Q: Мы прожили в Москве пять __________ (год).
+A: лет
+W: After 5 and more, «год» has the special genitive plural «лет»: пять лет (but два года).
+
+@block 2 | Prepositions and verbs
+#C
+Q: Мы дружим ___ наш__ нов__ соседями.
+A: с нашими новыми соседями
+W: «Дружить с кем?» → «с» + instrumental plural: нашими новыми соседями (-ими, -ыми, -ями).
+
+#C
+Q: Я получил письма ___ всех сво__ студент__.
+A: от всех своих студентов
+W: From people → «от» + genitive plural: всех своих студентов.
+
+#C
+Q: Мы часто ходим в гости ___ сво__ друзь__.
+A: к своим друзьям
+W: «Ходить в гости к кому?» → «к» + dative plural: своим друзьям.
+
+#C
+Q: Мы долго говорили ___ т__ фильм__, который смотрели вчера.
+A: о том фильме
+W: «Говорить о чём?» → «о» + prepositional: тот → том, фильм → фильме.
+
+#D
+Q: Мои дети __________ (учиться) в школе, а я __________ (учиться) в университете.
+A: учатся; учусь
+W: «Учиться» is a second-conjugation reflexive verb: учусь, учишься, учится … учатся.
+
+#D
+Q: Ты __________ (мочь) мне помочь? — Я __________ (мочь), но только вечером.
+A: можешь; могу
+W: «Мочь»: могу, можешь, может, можем, можете, могут — г in the я- and они-forms, ж everywhere else.
+
+#D
+Q: Что вы __________ (хотеть) на ужин? — Мы __________ (хотеть) рыбу.
+A: хотите; хотим
+W: «Хотеть» mixes two patterns: хочу, хочешь, хочет in the singular, but хотим, хотите, хотят in the plural.
+
+#D
+Q: Где ты __________ (покупать) продукты? — Я обычно __________ (покупать) их на рынке.
+A: покупаешь; покупаю
+W: A regular first-conjugation verb: покупаю, покупаешь, покупает.
+
+#B
+Q: Я хочу познакомить тебя с __________ (мои лучшие друзья).
+A: моими лучшими друзьями
+W: «Познакомить с кем?» → instrumental plural: моими лучшими друзьями (-ими, -ими after ш, -ями).
+
+#B
+Q: Мы ничего не знаем о __________ (эти люди).
+A: этих людях
+W: «О ком?» → prepositional plural: эти люди → этих людях.
+
+@block 3 | Whole sentences
+#F
+Q: Анна / звонить / свой / родители / каждый / день
+N: Build a present-tense sentence.
+A: Анна звонит своим родителям каждый день.
+V: Анна каждый день звонит своим родителям.
+W: «Звонить кому?» → dative plural: своим родителям. The parents are Анна's own and she is the subject → свой.
+
+#F
+Q: мы / видеть / этот / фильм / в / прошлый / год
+N: Build a past-tense sentence.
+A: Мы видели этот фильм в прошлом году.
+V: В прошлом году мы видели этот фильм.
+W: «Видеть что?» → accusative of a thing = nominative: этот фильм. «В прошлом году» → prepositional with the special -у.
+
+#F
+Q: у / мы / в / группа / много / студенты / из / Китай
+N: Build the sentence "We have many students from China in our group."
+A: У нас в группе много студентов из Китая.
+W: «У нас в группе» (in our group): у + genitive pronoun, в + prepositional. «Много» → genitive plural: студентов. «Из» → genitive: Китая.
+
+#F
+Q: я / думать / о / все / мой / ошибки
+N: Build a present-tense sentence.
+A: Я думаю обо всех своих ошибках.
+V: Я думаю обо всех моих ошибках.
+W: «Думать о чём?» → prepositional plural: всех своих (моих) ошибках; «о» → «обо» before «всех».
+
+#F
+Q: мой / брат / работать / врач / в / этот / больница
+N: Build a present-tense sentence.
+A: Мой брат работает врачом в этой больнице.
+W: «Работать кем?» → instrumental: врачом. «Где?» → prepositional: в этой больнице.
+
+#G
+Q: Мой брат и своя жена приехали к нам с своими детьми.
+N: Find and correct 2 errors.
+A: Мой брат и его жена приехали к нам со своими детьми.
+W: Inside the subject «свой» is impossible → его жена. Before «св-» the preposition «с» becomes «со»: со своими детьми.
+
+#G
+Q: Я давно не видел мои старые друзья.
+N: Find and correct 1 error (a whole phrase).
+A: Я давно не видел моих старых друзей.
+V: Я давно не видел своих старых друзей.
+W: «Видеть кого?» → accusative plural of people = genitive plural: моих старых друзей.
+
+#H
+Q: Я знаю этого студента.
+N: Make «студент» plural.
+A: Я знаю этих студентов.
+W: Accusative plural of people = genitive plural: этого студента → этих студентов.
+
+#I
+Q: Вчера мы __________ (быть) в гостях у наш__ друз__ и __________ (говорить) с ними об их дет__.
+A: были; наших друзей; говорили; детях
+W: Plural past: были, говорили. «У кого?» → genitive plural: наших друзей. «Об их детях» → prepositional plural: детях; «о» → «об» before «их».
+
+#I
+Q: Олег __________ (подарить) сво__ жен__ цветы, а она __________ (подарить) ему книгу.
+A: подарил; своей жене; подарила
+W: Past: подарил (он), подарила (она). «Подарить кому?» → dative: своей жене — his own wife, so «свой».
+
+#A
+Q: Мне совсем не нравятся эт__ нов__ правила.
+A: эти новые
+W: With «нравятся» the thing liked is the nominative plural subject: эти новые правила.
+
+#A
+Q: Я написал сообщение всем сво__ коллег__ о т__ встрече.
+A: своим коллегам; той
+W: «Написать кому?» → dative plural: всем своим коллегам. «О чём?» → prepositional feminine: той встрече.
