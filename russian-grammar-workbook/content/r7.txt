@@ -1,0 +1,198 @@
+@review 7
+@title Aspect, reflexive verbs and verbs of motion
+@covers Modules 22–26 (with cases recycled)
+@intro The end of Part IV. Most gaps ask for a decision about aspect, the right member of a confusing pair or the right verb of motion. For aspect, look for the clue in the context first: process, repetition, result, one moment, a sequence.
+
+@block 1 | Aspect and verb choice
+#E
+Q: Я долго __________ (искать / найти) свой паспорт и наконец __________ (искать / найти) его под диваном.
+N: The speaker is a man.
+A: искал; нашёл
+W: «Долго» presents the search as a process → imperfective: искал. «Наконец» marks the result → perfective: нашёл.
+
+#E
+Q: Мои студенты часто __________ (задавать / задать) мне интересные вопросы.
+A: задают
+W: «Часто» = repetition → imperfective present: задают («задавать» drops -ва-: задаю, задаёшь … задают).
+
+#E
+Q: Можно я __________ (задавать / задать) вам один вопрос?
+A: задам
+W: One specific question → perfective future: задам (irregular: задам, задашь, задаст, зададим, зададите, зададут).
+
+#E
+Q: Вчера я весь день __________ (исправлять / исправить) ошибки в тексте, но ещё не закончил.
+N: The speaker is a man.
+A: исправлял
+W: «Весь день» and «ещё не закончил» describe a process without the final result → imperfective: исправлял.
+
+#E
+Q: Я __________ (исправлять / исправить) все ошибки — можешь проверить текст ещё раз.
+N: The speaker is a woman.
+A: исправила
+W: All the mistakes are fixed and the text is ready for the next step → perfective: исправила.
+
+#E
+Q: Ты уже __________ (покупать / купить) билеты на поезд?
+N: You are talking to a woman.
+A: купила
+W: «Уже» + a question about the result (do we have the tickets?) → perfective: купила.
+
+#E
+Q: Я никогда не __________ (терять / потерять) документы — я очень аккуратная.
+A: теряю
+W: «Никогда» + a general habit in the present → imperfective: не теряю.
+
+#E
+Q: Каждый раз, когда я __________ (приезжать / приехать) в Москву, я хожу в Третьяковскую галерею.
+A: приезжаю
+W: «Каждый раз» = repetition → imperfective: приезжаю.
+
+#E
+Q: Когда я __________ (приезжать / приехать) в Москву в следующий раз, я обязательно позвоню тебе.
+A: приеду
+W: One future arrival followed by another action → perfective future after «когда»: приеду.
+
+#E
+Q: Пока дети __________ (спать / поспать), мы успели убраться в квартире.
+A: спали
+W: «Пока» (while) + an ongoing state in the background → imperfective: спали.
+
+#D
+Q: Я __________ (учиться) в университете и __________ (учить) китайский по вечерам.
+A: учусь; учу
+W: «Учиться где?» → учусь в университете. «Учить что?» → учу китайский (an accusative object, so no -ся).
+
+#D
+Q: Ты меня __________ (слышать)? — Да, я тебя хорошо __________ (слышать).
+A: слышишь; слышу
+W: The perception of sound → «слышать»: ты слышишь, я слышу (after ш the ending is -у).
+
+#D
+Q: Вчера мы __________ (ходить) в бассейн, а потом __________ (поехать) к бабушке.
+A: ходили; поехали
+W: A completed round trip → «ходить»: ходили. Then setting off by transport → «поехать»: поехали.
+
+#D
+Q: Вчера я __________ (узнать), что мой брат __________ (жениться).
+N: The speaker is a woman.
+A: узнала; женился
+W: «Узнать» (to find out) → узнала. «Жениться» (said of a man getting married) → женился.
+
+#D
+Q: Мои родители __________ (познакомиться) в поезде, когда __________ (ехать) в Сочи.
+A: познакомились; ехали
+W: «Познакомиться» (to get to know each other) → познакомились. On the way in one direction → «ехать»: ехали.
+
+@block 2 | Cases
+#A
+Q: Я пользуюсь эт__ программ__ уже два года.
+A: этой программой
+W: «Пользоваться чем?» → instrumental feminine: эта программа → этой программой.
+
+#A
+Q: Мы встречаемся с наш__ преподавател__ по средам.
+A: нашим преподавателем
+W: «Встречаться с кем?» → instrumental: наш преподаватель → нашим преподавателем.
+
+#A
+Q: Мой сын учится игр__ на пианино.
+A: игре
+W: «Учиться чему?» → dative: игра → игре. More often you will hear «учится играть на пианино».
+
+#A
+Q: Я боюсь опоздать на последн__ поезд.
+A: последний
+W: «Опоздать на что?» → на + accusative; a masculine thing → unchanged: последний поезд.
+
+#A
+Q: Анна интересуется современн__ искусств__.
+A: современным искусством
+W: «Интересоваться чем?» → instrumental neuter: современное искусство → современным искусством (-ым, -ом).
+
+#B
+Q: Мы долго разговаривали с __________ (наши новые коллеги).
+A: нашими новыми коллегами
+W: «Разговаривать с кем?» → instrumental plural: нашими новыми коллегами (-ими, -ыми, -ами).
+
+#B
+Q: Я каждый день хожу пешком до __________ (станция) метро.
+A: станции
+W: «До» (as far as) → genitive: станция → станции (-ия → -ии).
+
+#B
+Q: Мне кажется, этот фильм понравится __________ (твои дети).
+A: твоим детям
+W: The people who will like it are dative: твои дети → твоим детям. «Этот фильм» is the subject → понравится.
+
+#C
+Q: Мы вернулись ___ мор__ загорелые и отдохнувшие.
+A: с моря
+W: «На море» → "from the sea" is «с моря» (с + genitive).
+
+#C
+Q: Каждое утро я езжу ___ работ__ ___ трамва__.
+A: на работу на трамвае
+W: «Куда?» → на + accusative: работу. Transport → на + prepositional: трамвай → трамвае (-й → -е).
+
+@block 3 | Whole sentences
+#F
+Q: я / начать / заниматься / йога / в / прошлый / год
+N: Build a past-tense sentence. The speaker is a woman.
+A: Я начала заниматься йогой в прошлом году.
+V: В прошлом году я начала заниматься йогой.
+W: «Начать» + an imperfective infinitive: начала заниматься. «Заниматься чем?» → instrumental: йогой. «В прошлом году» → prepositional (-у).
+
+#F
+Q: пока / мы / ждать / поезд / пойти / дождь
+N: Build a past-tense sentence: "While we were waiting for the train, it started to rain."
+A: Пока мы ждали поезд, пошёл дождь.
+W: «Пока» + an ongoing activity → imperfective: ждали. The rain started at one moment → «пойти»: дождь пошёл (= it started raining).
+
+#F
+Q: давай / встретиться / завтра / у / вход / в / парк
+N: Build the suggestion "Let's meet tomorrow at the entrance to the park."
+A: Давай встретимся завтра у входа в парк.
+V: Давай завтра встретимся у входа в парк.
+W: «Давай» + the perfective мы-form for one planned event: встретимся. «У входа» → у + genitive. «В парк» shows where the entrance leads.
+
+#F
+Q: я / не / успеть / позвонить / ты / вчера
+N: Build a past-tense sentence. The speaker is a man.
+A: Я не успел позвонить тебе вчера.
+V: Вчера я не успел тебе позвонить.
+W: «Успеть» + a perfective infinitive: успел позвонить. «Позвонить кому?» → dative: тебе.
+
+#G
+Q: Я учусь китайский язык, потому что интересуюсь китайская культура.
+N: Find and correct 2 errors.
+A: Я учу китайский язык, потому что интересуюсь китайской культурой.
+W: «Учиться» takes no accusative object → учу китайский язык. «Интересоваться чем?» → instrumental: китайской культурой.
+
+#G
+Q: Я не слышаю тебя, повтори, пожалуйста, ещё раз.
+N: Find and correct 1 error.
+A: Я не слышу тебя, повтори, пожалуйста, ещё раз.
+W: The я-form of «слышать» is «слышу»: it is a second-conjugation verb, and after ш the ending is -у.
+
+#G
+Q: Мой брат каждое лето едет к бабушке в деревню.
+N: Find and correct 1 error.
+A: Мой брат каждое лето ездит к бабушке в деревню.
+W: «Каждое лето» = regular trips → «ездить», not «ехать»: он ездит.
+
+#H
+Q: Каждый день я покупаю продукты в этом магазине.
+N: Say "Yesterday I bought groceries for the whole week." The speaker is a woman.
+A: Вчера я купила продукты на всю неделю.
+W: One completed purchase with a result → perfective: купила. «На всю неделю» → на + accusative (a planned period).
+
+#I
+Q: Вчера ко мне __________ (приходить) подруга: мы __________ (пить) чай, а потом она __________ (уйти).
+A: приходила; пили; ушла
+W: «Приходила» = she came and has gone again (imperfective: the result is cancelled). Plural past: пили. One departure → «уйти»: ушла.
+
+#I
+Q: Я __________ (надеяться), что завтра мы __________ (увидеться) и __________ (обсудить) наш проект.
+A: надеюсь; увидимся; обсудим
+W: «Надеяться» → я надеюсь. Single future events → perfective: увидимся (reciprocal -ся), обсудим.

@@ -1,0 +1,292 @@
+@module 23
+@part IV
+@title Perfective and imperfective II
+@ru Вид в отрицании, вопросах, просьбах и последовательностях
+@learn Negate correctly: не читал (it did not happen at all) vs не прочитал (the expected result was not reached).
+@learn Use the imperfective infinitive after начать, продолжать, закончить, перестать and любить.
+@learn Ask the right question: Ты читал …? (experience) vs Ты прочитал …? (result).
+@learn Choose the aspect in requests and warnings (Повторите! · Повторяйте каждый день · Не забудь!) and in sequences vs simultaneous actions.
+@target Я не читал эту книгу
+@target Я начал учить китайский
+@target Повторите, пожалуйста!
+@target Не забудь!
+@target Когда я поужинал, я пошёл гулять
+@remix For every Stage C pair, explain to yourself in one English sentence why each aspect fits.
+@remix Turn the requests in Stages B and D into the polite вы-form and the informal ты-form.
+@remix Write five things you have never done (Я никогда не …) and five things you did not manage to do this week (Я не успел …).
+
+@lesson
+## Aspect in negation
+Negation is where the two aspects say clearly different things.
+
+| не + imperfective | не + perfective |
+|---|---|
+| The action did not happen at all: *Я не читал эту книгу* (I haven't read it). | The expected result was not reached: *Я не прочитал книгу до конца.* |
+| Never, not once: *Я ни разу не опаздывал.* | One expected action failed: *Я не позвонил маме, хотя обещал.* |
+
+## Verbs that need an imperfective infinitive
+After **начинать / начать, продолжать, заканчивать / закончить, переставать / перестать, уставать** and after **любить, нравиться** (doing something in general) the infinitive is always **imperfective**: *начал учить, закончил писать, перестал пить кофе, люблю готовить.* After **успеть** (to manage in time) a single complete task is perfective: *не успела сделать.*
+
+## Questions
+*Ты читал «Мастера и Маргариту»?* asks about experience — did this activity ever happen? *Ты прочитал книгу, которую я тебе дал?* asks about the result — is it finished? *Ты уже решил?* — has the decision been made?
+
+## Requests and warnings
+| Perfective imperative | Imperfective imperative |
+|---|---|
+| one specific action: *Повторите, пожалуйста! Позвони мне!* | a regular activity or general rule: *Повторяйте каждый день.* |
+| a warning about an accident: *Не забудь паспорт! Не потеряй ключи!* | a prohibition: *Не опаздывайте! Не звони мне так поздно.* |
+
+The imperative is built from the present / future stem: *повтор-ят → повтори(те), чита-ют → читай(те), откро-ют → открой(те), забуд-ут → забудь.*
+
+## One after another, or at the same time?
+*Когда я **поужинал**, я **пошёл** гулять* — first one finished, then the next (perfective). *Когда я **ужинал**, я **смотрел** новости* — both at once (imperfective). **Пока** (while) always links simultaneous imperfective actions.
+
+::: contrast Came and left
+*Вчера ко мне **приходил** друг* — he came and has gone again (imperfective: the result is cancelled). *Смотри, к нам **пришли** гости!* — they arrived and are here now (perfective).
+:::
+
+::: mistakes Typical slips
+!> я начал выучить русский || я начал учить русский || after начать → imperfective
+!> каждое утро я выпью кофе || каждое утро я пью кофе || routine → imperfective
+!> я не прочитал эту книгу (never opened it) || я не читал эту книгу || nothing happened → imperfective
+!> повторите новые слова каждый день || повторяйте новые слова каждый день || regular activity → imperfective
+!> не забывай паспорт (for tomorrow's trip) || не забудь паспорт || one warning → perfective
+:::
+@endlesson
+
+@stage A
+#E
+Q: Я ещё не __________ (читать / прочитать) этот роман — даже не открывал его.
+H: not at all → imperfective
+N: The speaker is a man.
+A: читал
+W: «Даже не открывал» shows the action did not happen at all → negated imperfective: не читал.
+
+#E
+Q: Я начал роман, но ещё не __________ (читать / прочитать) его до конца.
+H: the result is missing → perfective
+N: The speaker is a man.
+A: прочитал
+W: The action started but the expected result was not reached → negated perfective: не прочитал.
+
+#E
+Q: Я начал __________ (учить / выучить) китайский в прошлом году.
+H: начать + infinitive
+A: учить
+W: After «начать / начинать», «закончить», «продолжать», «перестать» the infinitive is always imperfective: начал учить.
+
+#E
+Q: Когда я __________ (ужинать / поужинать), я обычно смотрю новости.
+H: at the same time
+A: ужинаю
+W: Two actions happening at the same time, and regularly → imperfective: ужинаю.
+
+#E
+Q: Когда я __________ (ужинать / поужинать), я пошёл гулять.
+H: one after the other
+N: The speaker is a man.
+A: поужинал
+W: First one action was completed, then the next began → perfective: поужинал.
+
+#E
+Q: Завтра я __________ (вставать / встать) в шесть, потому что у меня ранний поезд.
+H: one occasion
+A: встану
+W: One specific occasion in the future → perfective future: встану.
+
+#E
+Q: Обычно я __________ (вставать / встать) в семь.
+H: habit
+A: встаю
+W: «Обычно» = a habit → imperfective, present tense: встаю.
+
+#E
+Q: Ты __________ (закрывать / закрыть) окно? На улице холодно!
+H: asking about the result
+N: You are talking to a man.
+A: закрыл
+W: The speaker wants to know whether the window is closed now (the result) → perfective: закрыл.
+
+@stage B
+#E
+Q: Вчера я так и не __________ (звонить / позвонить) маме, хотя обещал.
+N: The speaker is a man.
+A: позвонил
+V: не звонил (simply states that no call happened)
+W: One specific action that was expected («хотя обещал») did not happen → negated perfective: не позвонил.
+
+#E
+Q: Ты когда-нибудь __________ (видеть / увидеть) настоящий снег? — Нет, никогда не __________ (видеть / увидеть).
+N: Both speakers are men.
+A: видел; видел
+W: Questions and answers about experience («когда-нибудь», «никогда») → imperfective: видел.
+
+#E
+Q: Мне нужно __________ (покупать / купить) хлеб — дома ничего нет.
+A: купить
+W: One specific purchase whose result is needed → perfective infinitive: купить.
+
+#E
+Q: Я не люблю __________ (покупать / купить) одежду в интернете.
+A: покупать
+W: After «любить» (to like doing something in general) the imperfective infinitive names the activity: покупать.
+
+#E
+Q: Пожалуйста, __________ (повторять / повторить) последнее предложение!
+A: повторите
+W: A polite request for one specific action → perfective imperative: повторите.
+
+#E
+Q: __________ (повторять / повторить) новые слова каждый день — тогда вы их не забудете.
+A: Повторяйте
+W: An instruction about a regular activity («каждый день») → imperfective imperative: повторяйте.
+
+#E
+Q: Я перестал __________ (пить / выпить) кофе по вечерам.
+A: пить
+W: After «перестать» (to stop doing) the infinitive is always imperfective: пить.
+
+#E
+Q: Не волнуйтесь, мы обязательно __________ (находить / найти) решение.
+A: найдём
+W: A confident promise about one result → perfective future: найдём.
+
+@stage C
+#E
+Q: — Ты __________ (брать / взять) зонт? — Да, он у меня в сумке.
+N: You are talking to a woman.
+A: взяла
+W: The result is present now (the umbrella is in the bag) → perfective: взяла.
+
+#E
+Q: Вчера ко мне __________ (приходить / прийти) друг, но сейчас его уже нет.
+A: приходил
+W: The visit happened and is over — he came and left → imperfective: приходил. «Пришёл» would mean he arrived and is still here.
+
+#E
+Q: Смотри, к нам __________ (приходить / прийти) гости! Открой дверь.
+A: пришли
+W: The guests have just arrived and are here now → perfective: пришли.
+
+#E
+Q: За десять лет я ни разу не __________ (опаздывать / опоздать) на работу.
+N: The speaker is a man.
+A: опаздывал
+W: «Ни разу» (not once) negates the activity over a whole period → imperfective: не опаздывал.
+
+#E
+Q: Сегодня я опять __________ (опаздывать / опоздать) на работу — автобус сломался.
+N: The speaker is a woman.
+A: опоздала
+W: One specific event today → perfective: опоздала.
+
+#E
+Q: Мы с друзьями __________ (встречаться / встретиться) каждую пятницу в кафе.
+A: встречаемся
+W: «Каждую пятницу» = repetition → imperfective, present tense: встречаемся.
+
+#E
+Q: Давай __________ (встречаться / встретиться) завтра у метро в шесть.
+A: встретимся
+W: «Давай» + one planned event → perfective in the мы-form: встретимся (= let's meet).
+
+#E
+Q: Когда я __________ (говорить / сказать) по телефону, не перебивай меня, пожалуйста.
+A: говорю
+W: An ongoing activity during which something else should not happen → imperfective: говорю.
+
+@stage D
+#D
+Q: Не __________ (забыть) взять паспорт!
+A: забудь
+W: A warning not to let something happen by accident uses the perfective imperative: не забудь! It is built from the future stem забуд-.
+
+#D
+Q: __________ (открыть) учебники на странице двадцать, пожалуйста.
+A: Откройте
+W: A one-time instruction to a group → perfective imperative with -те: откро-ют → откройте.
+
+#F
+Q: я / ещё / не / закончить / писать / отчёт
+N: Build the sentence "I haven't finished writing the report yet." The speaker is a man.
+A: Я ещё не закончил писать отчёт.
+W: «Закончить» is followed by the imperfective infinitive: закончил писать. The negated perfective says the expected result is not there yet.
+
+#F
+Q: ты / когда-нибудь / быть / в / Китай
+N: Build the question "Have you ever been to China?"
+A: Ты когда-нибудь был в Китае?
+V: Ты когда-нибудь была в Китае?
+W: A question about experience → past of «быть»: был / была. «Где?» → в + prepositional: Китае.
+
+#G
+Q: Я начал выучить русский язык два года назад.
+N: Find and correct 1 error.
+A: Я начал учить русский язык два года назад.
+W: After «начать» Russian uses the imperfective infinitive: начал учить. «Выучить» (to learn completely) cannot follow «начать».
+
+#H
+Q: Я прочитал эту книгу.
+N: Make it negative: "I haven't read this book at all."
+A: Я не читал эту книгу.
+V: Я не читала эту книгу.
+W: To say the action did not happen at all, Russian negates the imperfective: не читал. «Не прочитал» would mean you started but did not finish.
+
+#I
+Q: Когда я __________ (прийти) домой, мама уже __________ (приготовить) ужин, и мы сразу __________ (сесть) за стол.
+N: The speaker is a man.
+A: пришёл; приготовила; сели
+W: A sequence of completed events → perfective throughout: пришёл, приготовила (already done before), сели.
+
+#I
+Q: Пока я __________ (ждать) автобус, я __________ (читать) новости на телефоне.
+N: The speaker is a woman.
+A: ждала; читала
+W: «Пока» (while) links two activities going on at the same time → imperfective: ждала, читала.
+
+@stage E
+#E
+Q: Ты уже __________ (решать / решить), куда поедешь летом?
+A: решил
+V: решила (to a woman)
+W: You are asking whether the decision has been made — a result → perfective: решил.
+
+#E
+Q: Извините, я не __________ (понимать / понять) последний вопрос. Можно ещё раз?
+N: The speaker is a man.
+A: понял
+W: Failing to grasp one specific question → negated perfective: не понял. («Я не понимаю» = I don't understand, in the present.)
+
+#E
+Q: Наш сын долго __________ (уговаривать / уговорить) нас и наконец __________ (уговаривать / уговорить) купить собаку.
+A: уговаривал; уговорил
+W: «Долго» describes the attempts → imperfective: уговаривал. «Наконец» marks the success → perfective: уговорил.
+
+#D
+Q: __________ (позвонить) мне, когда __________ (приехать)!
+A: Позвони; приедешь
+W: A one-time request → perfective imperative: позвони. After «когда» Russian uses the future: приедешь.
+
+#D
+Q: Дети, не __________ (опаздывать) на урок!
+A: опаздывайте
+W: A general prohibition («не» + a kind of behaviour) uses the imperfective imperative; addressed to several people → -те: не опаздывайте.
+
+#F
+Q: я / не / успеть / сделать / домашний / задание
+N: Build the sentence "I didn't manage to do my homework." The speaker is a woman.
+A: Я не успела сделать домашнее задание.
+W: «Успеть» (to manage in time) is followed by a perfective infinitive for one complete task: успела сделать.
+
+#F
+Q: обычно / я / повторять / слова / перед / сон
+N: Build a present-tense sentence.
+A: Обычно я повторяю слова перед сном.
+V: Я обычно повторяю слова перед сном.
+W: «Обычно» = a habit → imperfective: повторяю. «Перед» → instrumental: сон → сном.
+
+#G
+Q: Каждое утро я выпью кофе и прочитаю новости.
+N: Find and correct 2 errors.
+A: Каждое утро я пью кофе и читаю новости.
+W: «Каждое утро» = a routine → imperfective present: пью, читаю. «Выпью, прочитаю» are perfective futures and cannot describe a habit.

@@ -1,0 +1,278 @@
+@module 26
+@part IV
+@title Essential verbs of motion
+@ru Глаголы движения — идти / ходить, ехать / ездить, прийти, уйти, вернуться
+@learn Choose идти / ехать (one direction, now, on the way) or ходить / ездить (habits, round trips).
+@learn Choose on foot (идти, ходить) or by transport (ехать, ездить).
+@learn Use the prefixed verbs: пойти / поехать (set off), прийти / приехать (arrive), уйти / уехать (leave), вернуться (return).
+@learn Combine them with куда?, откуда? and transport: в школу, из школы, на автобусе, пешком.
+@target я хожу в спортзал
+@target вчера я ходил в кино
+@target я езжу на работу на метро
+@target когда я шёл домой
+@target я вернулся с работы
+@remix Redo Stage A with the opposite situation: now ↔ every day, on foot ↔ by car.
+@remix Describe your last trip with five prefixed verbs (поехал, приехал, ушёл, вернулся …).
+@remix Write three sentences about where you were yesterday with ходил / ездил instead of был.
+
+@lesson
+## Two pairs of motion verbs
+Russian distinguishes **on foot** from **by transport**, and **one direction** from **round trips and habits**:
+
+| | One direction: now, on the way, a specific trip | Round trips, habits, ability |
+|---|---|---|
+| on foot | **идти**: иду, идёшь, идут · past шёл, шла, шли | **ходить**: хожу, ходишь, ходят · past ходил |
+| by transport | **ехать**: еду, едешь, едут · past ехал | **ездить**: езжу, ездишь, ездят · past ездил |
+
+**Идти / ехать** describe movement in one direction: right now (*Я иду в магазин*), on the way when something happens (*Когда я шёл домой, начался дождь*), or one specific planned trip (*Завтра я еду в Москву*).
+**Ходить / ездить** describe regular trips (*Я хожу в спортзал три раза в неделю*), a completed round trip in the past (*Вчера я ходил в кино* = I went and came back = I was at the cinema) and general ability (*Ребёнок уже ходит*).
+
+## Prefixes: set off, arrive, leave, return
+| Verb (impf. / pf.) | Meaning | Examples |
+|---|---|---|
+| — / пойти, поехать | to set off | Пойдём в кафе! Он пошёл в магазин. Завтра я поеду в Казань. |
+| приходить / прийти · приезжать / приехать | to arrive | Он всегда приходит вовремя. Гости пришли. Поезд приезжает в восемь. |
+| уходить / уйти · уезжать / уехать | to leave | Я ухожу с работы в пять. Анна уже ушла. |
+| возвращаться / вернуться | to return | Я вернулся домой поздно. |
+
+Prefixed verbs form ordinary aspect pairs, so everything from Modules 22–23 applies: *всегда приходит* (habit) vs *сегодня пришёл* (one event). Learn the irregular forms: *приду, придёшь; пришёл, пришла; ушёл, ушла; пошёл, пошла.*
+
+::: rule Where to, where from, how
+Куда? → в / на + accusative (в школу, на работу), к + dative (к врачу). Откуда? → из / с + genitive (из школы, с работы), от + genitive (от врача). How? → на + prepositional (на автобусе, на метро, на такси) or пешком (on foot).
+:::
+
+::: mistakes Typical slips
+!> вчера я шёл в кино (and came back) || вчера я ходил в кино || a round trip → ходить
+!> я иду в спортзал каждый день || я хожу в спортзал каждый день || habit → ходить
+!> я хожу на работу на метро || я езжу на работу на метро || by transport → ездить
+!> я ездю на работу || я езжу на работу || д → ж in the я-form
+!> сегодня он приходил вовремя || сегодня он пришёл вовремя || one arrival → perfective
+:::
+@endlesson
+
+@stage A
+#D
+Q: Смотри, вон __________ (идти / ходить) наш учитель!
+H: right now, one direction
+A: идёт
+W: One direction, happening right now → «идти»: он идёт.
+
+#D
+Q: Я __________ (идти / ходить) в спортзал три раза в неделю.
+H: regularly, there and back
+A: хожу
+W: Regular trips there and back → «ходить»: я хожу (д → ж in the я-form).
+
+#D
+Q: Куда ты __________ (ехать / ездить)? — На вокзал.
+H: now, by transport
+A: едешь
+W: By transport, one direction, right now → «ехать»: ты едешь.
+
+#D
+Q: Мои родители часто __________ (ехать / ездить) на дачу.
+H: regularly
+A: ездят
+W: Repeated trips by transport → «ездить»: они ездят.
+
+#D
+Q: Вчера мы __________ (идти / ходить) в театр.
+H: went and came back
+A: ходили
+W: A completed round trip in the past (we went and are back) → «ходить»: ходили. It means the same as «мы были в театре».
+
+#D
+Q: Когда я __________ (идти / ходить) на работу, я встретил старого друга.
+H: on the way
+A: шёл
+W: On the way, in one direction, when something else happened → «идти»: шёл (irregular past).
+
+#C
+Q: Моя сестра едет ___ университет ___ трамва__.
+H: куда? + transport
+A: в университет на трамвае
+W: Destination → в + accusative: университет (a thing, unchanged). Means of transport → на + prepositional: трамвай → трамвае.
+
+#A
+Q: Обычно я хожу на работу пешк__, а зимой езжу на метро.
+H: on foot
+A: пешком
+W: «Пешком» (on foot) is a fixed adverb; with «ходить» it stresses walking, in contrast to «ездить на метро».
+
+@stage B
+#D
+Q: Завтра я __________ (пойти / поехать) в Москву на поезде.
+A: поеду
+W: By transport («на поезде») → «поехать»: поеду (the perfective future of setting off).
+
+#D
+Q: Давай __________ (пойти / поехать) в кино пешком — это недалеко.
+A: пойдём
+W: On foot («пешком») → «пойти», not «поехать». «Давай» + the мы-form of the perfective = let's go: давай пойдём.
+
+#D
+Q: Где твой брат? — Он __________ (пойти / поехать) в магазин за углом, скоро вернётся.
+A: пошёл
+W: A shop around the corner → he walked there; he has set off and is not here now → «пойти» in the past: пошёл.
+
+#D
+Q: Во сколько ты обычно __________ (приходить / уходить) с работы?
+A: уходишь
+W: Leaving a place → «уходить» (у- = away from); «с работы» shows the place you leave. A regular habit → imperfective: уходишь.
+
+#D
+Q: Наш поезд __________ (приезжать / уезжать) в Казань в восемь утра.
+A: приезжает
+W: Arriving at a destination («в Казань») → при-: приезжает. The present tense is used for timetables.
+
+#D
+Q: Вчера я поздно __________ (вернуться) домой.
+N: The speaker is a woman.
+A: вернулась
+W: «Вернуться» (to come back) → feminine past with -сь: вернулась.
+
+#D
+Q: Мы __________ (ехать) на дачу, когда пошёл дождь.
+A: ехали
+W: On the way, in one direction, when something happened → «ехать»: ехали.
+
+#D
+Q: В прошлом году мы __________ (ездить) в Италию.
+A: ездили
+W: A completed trip there and back in the past → «ездить»: ездили (= we were in Italy).
+
+@stage C
+#D
+Q: Сейчас я __________ (идти / ходить) в библиотеку. Хочешь со мной?
+A: иду
+W: Right now, in one direction → «идти»: я иду. «Хочешь со мной?» confirms it is happening at this moment.
+
+#D
+Q: Я часто __________ (идти / ходить) в библиотеку, потому что там тихо.
+A: хожу
+W: «Часто» = repeated trips there and back → «ходить»: я хожу (д → ж in the я-form).
+
+#E
+Q: Наш преподаватель всегда __________ (приходить / прийти) на урок вовремя.
+A: приходит
+W: «Всегда» = a habit → imperfective «приходить»: он приходит. The perfective «прийти» would describe one particular arrival.
+
+#E
+Q: Сегодня преподаватель __________ (приходить / прийти) на урок на пять минут раньше.
+A: пришёл
+W: One specific arrival today → perfective: пришёл (irregular past).
+
+#E
+Q: Когда ты __________ (приезжать / приехать) в Москву, позвони мне.
+A: приедешь
+W: One future arrival, after which the next action follows → perfective future: приедешь (Russian uses the future after «когда»).
+
+#E
+Q: Мой брат каждое лето __________ (приезжать / приехать) к нам в гости.
+A: приезжает
+W: «Каждое лето» = repetition → imperfective: приезжает.
+
+#C
+Q: Сегодня я ушёл ___ работ__ рано и поехал ___ врач__.
+A: с работы; к врачу
+W: «Уйти откуда?» → с + genitive: с работы (на работе → с работы). Going to a person → к + dative: к врачу.
+
+#C
+Q: Мы приехали ___ аэропорт__ ___ такси.
+A: из аэропорта на такси
+W: Origin → из + genitive: аэропорта. Transport → на + prepositional: на такси (indeclinable).
+
+@stage D
+#C
+Q: Каждое утро я отвожу дочь ___ детск__ сад.
+A: в детский сад
+W: «Куда?» → в + accusative: детский сад (a masculine thing, unchanged).
+
+#C
+Q: Вечером я забираю дочь ___ детск__ сад__.
+A: из детского сада
+W: «Откуда?» → из + genitive: детский сад → детского сада. A place that takes «в» takes «из» for 'from'.
+
+#F
+Q: вчера / мы / ходить / в / новый / музей
+N: Build a past-tense sentence.
+A: Вчера мы ходили в новый музей.
+W: A completed round trip → «ходить» in the past: ходили. «Куда?» → в + accusative: новый музей (unchanged).
+
+#F
+Q: я / ехать / на / работа / на / велосипед / каждый / день
+N: Build a present-tense sentence. Choose the right verb of motion.
+A: Я езжу на работу на велосипеде каждый день.
+V: Каждый день я езжу на работу на велосипеде.
+W: «Каждый день» = regular trips → «ездить», not «ехать»: я езжу (д → ж). Transport: на велосипеде.
+
+#G
+Q: Вчера я шёл в кино с друзьями, а сегодня я хожу в театр.
+N: Find and correct 2 errors.
+A: Вчера я ходил в кино с друзьями, а сегодня я иду в театр.
+W: A completed round trip in the past → «ходил». One trip happening today → «иду».
+
+#H
+Q: Я иду в аптеку.
+N: Say it about yesterday: "I went to the pharmacy (and came back)." The speaker is a man.
+A: Вчера я ходил в аптеку.
+W: A completed round trip in the past is expressed with «ходить»: ходил. «Шёл» would mean "I was on my way".
+
+#I
+Q: Вчера я __________ (уйти) с работы в пять, __________ (поехать) в центр и __________ (вернуться) домой только в десять.
+N: The speaker is a woman.
+A: ушла; поехала; вернулась
+W: A sequence of single completed movements → perfective: ушла (irregular past), поехала, вернулась.
+
+#I
+Q: Мой сын каждый день __________ (ходить) в школу пешком, а я __________ (ездить) на работу на машине.
+A: ходит; езжу
+W: Regular trips → «ходить» / «ездить»: он ходит; я езжу (д → ж in the я-form).
+
+@stage E
+#A
+Q: Куда вы ид__? — Мы ид__ на концерт.
+A: идёте; идём
+W: Right now, one direction → «идти»: вы идёте, мы идём (stressed endings, written with ё).
+
+#C
+Q: Мои друзья приехали ___ Германи__ ___ две недели.
+A: из Германии на две недели
+W: Origin → из + genitive: Германии. A planned length of stay → на + accusative: на две недели.
+
+#D
+Q: Ты когда-нибудь __________ (ехать / ездить) на поезде через всю Россию?
+N: You are talking to a man.
+A: ездил
+W: Experience of a trip (ever) → «ездить» in the past: ездил.
+
+#D
+Q: Куда вы __________ (пойти) после урока? — Мы __________ (пойти) в кафе.
+A: пойдёте; пойдём
+W: «Пойти» (to set off on foot) is perfective → future: пойдёте, пойдём.
+
+#F
+Q: когда / я / идти / домой / начаться / дождь
+N: Build a past-tense sentence. The speaker is a man.
+A: Когда я шёл домой, начался дождь.
+W: On the way («когда я шёл») → «идти»: шёл. The rain started at one moment → perfective: начался.
+
+#F
+Q: мы / уехать / из / Москва / в / прошлый / год
+N: Build a past-tense sentence.
+A: Мы уехали из Москвы в прошлом году.
+V: В прошлом году мы уехали из Москвы.
+W: «Уехать» (to leave by transport) → уехали. «Откуда?» → из + genitive: Москвы. «В прошлом году» → prepositional.
+
+#F
+Q: обычно / я / приходить / домой / в / семь / часы
+N: Build a present-tense sentence.
+A: Обычно я прихожу домой в семь часов.
+V: Я обычно прихожу домой в семь часов.
+W: «Обычно» = a habit → imperfective «приходить»: я прихожу (д → ж). Clock time: в семь часов.
+
+#G
+Q: Мой брат переехал в Москву в прошлом году, и теперь он ходит на работу на метро.
+N: Find and correct 1 error.
+A: Мой брат переехал в Москву в прошлом году, и теперь он ездит на работу на метро.
+W: Going by metro is travelling by transport, so the verb is «ездить», not «ходить»: он ездит. «Ходить» is for going on foot.

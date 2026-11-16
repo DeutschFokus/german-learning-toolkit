@@ -1,0 +1,288 @@
+@module 25
+@part IV
+@title Verbs that learners confuse
+@ru Слушать или слышать? Учить, изучать или учиться? Пользоваться или использовать?
+@learn Separate deliberate actions from perception: слушать / слышать, смотреть / видеть.
+@learn Separate states from events: знать (to know) / узнать (to find out, to recognise).
+@learn Use говорить, сказать and разговаривать, and учить, изучать and учиться, each in its own job.
+@learn Choose пользоваться + instrumental or использовать + accusative, and спросить (a question) or попросить (a request).
+@target Я тебя не слышу
+@target Я слушаю музыку
+@target Я учу своих студентов немецкому
+@target пользуюсь телефоном · использую телефон
+@target Я попросил помочь
+@remix For every verb in the lesson table, write one true sentence about your own week.
+@remix Redo Stage C in the present or future tense and decide again which aspect fits.
+@remix Translate ten sentences from your last German lesson plan that contain "learn", "teach", "hear", "listen", "ask".
+
+@lesson
+## Why these verbs are confusing
+English often uses one verb where Russian has two or three with clearly different jobs. Learn them as **sets**, each with its own grammar:
+
+| Verb | Job | Example |
+|---|---|---|
+| слушать (послушать) | to listen to — on purpose | Я слушаю музыку. |
+| слышать (услышать) | to hear — perception | Я тебя не слышу. Я услышал шум. |
+| смотреть (посмотреть) | to look, watch — on purpose | Я смотрю фильм. Смотри на часы! |
+| видеть (увидеть) | to see — perception | Я вижу дом. Я увидел друга. |
+| знать | to know — a state | Я знаю его адрес. |
+| узнать (узнавать) | to find out; to recognise | Я узнал новость. Я тебя не узнал. |
+| говорить (сказать) | to speak a language; to talk; to say, tell | Он говорит по-русски. Что он сказал? |
+| разговаривать | to have a conversation — never with an object | Мы долго разговаривали. |
+| учить (выучить) | to learn, memorise; to teach (кого? чему?) | Учу слова. Учу студентов немецкому. |
+| изучать | to study a subject in depth | Изучаю историю. |
+| учиться | to be a student; to learn how to | Учусь в университете. Учусь плавать. |
+| заниматься | to study, work on, do (a sport) | Занимаюсь русским. |
+| пользоваться + instrumental | to use (regularly) | Пользуюсь телефоном. |
+| использовать + accusative | to use, utilise | Использую телефон. |
+| спрашивать (спросить) | to ask a question | Он спросил, где метро. |
+| просить (попросить) | to ask for, request | Он попросил помочь. |
+
+::: tip Your own sentence
+«У меня была плохая связь, поэтому ты меня не **услышала**» — perception (слышать), one moment that failed (perfective). With a good connection you would ask «Ты меня **слышишь**?», and in a lecture «Пожалуйста, **слушайте** внимательно».
+:::
+
+::: mistakes Typical slips
+!> я слышаю музыку || я слушаю музыку || listening on purpose → слушать (and слышу, not слышаю)
+!> я учусь русский язык || я учу русский язык || учиться takes no accusative object
+!> я спросил его помочь || я попросил его помочь || a request → попросить
+!> я пользуюсь телефон || я пользуюсь телефоном || пользоваться + instrumental
+!> я тебя не знал (didn't recognise you) || я тебя не узнал || recognising → узнать
+:::
+@endlesson
+
+@stage A
+#D
+Q: Каждое утро я __________ (слушать / слышать) новости по радио.
+H: listening on purpose
+A: слушаю
+W: «Слушать» = to listen to something deliberately (an activity). «Слышать» = to hear, to perceive a sound. Listening to the news → слушаю.
+
+#D
+Q: Говорите громче, я вас плохо __________ (слушать / слышать).
+H: perception
+A: слышу
+W: The problem is perception (noise or a bad connection) → «слышать»: я слышу (after ш the ending is -у).
+
+#D
+Q: Ты __________ (знать / узнать), где живёт Анна?
+H: a state of knowledge
+A: знаешь
+W: «Знать» = to know (a state); «узнать» = to find out (an event). A question about what you know now → знаешь.
+
+#D
+Q: Вчера я __________ (знать / узнать), что у нас будет новый директор.
+H: the moment you learnt it
+N: The speaker is a man.
+A: узнал
+W: The moment of receiving new information → «узнать» (to find out): узнал.
+
+#D
+Q: Мой брат хорошо __________ (говорить / разговаривать) по-китайски.
+H: speaking a language
+A: говорит
+W: To speak a language is «говорить по-китайски». «Разговаривать» means to have a conversation with someone.
+
+#A
+Q: Мой сын всегда говор__ правду.
+H: an object → говорить
+A: говорит
+W: Only «говорить» can take an object («говорить правду») or a clause («говорит, что …»). «Разговаривать» means "to have a conversation" and takes no object.
+
+#D
+Q: Я __________ (учить / изучать) новые слова каждый вечер.
+H: memorising
+A: учу
+W: «Учить» = to learn by heart, memorise (слова, стихи, правила). «Изучать» = to study a subject in depth (историю, литературу).
+
+#B
+Q: Я часто пользуюсь __________ (этот словарь), а мой коллега использует __________ (этот словарь) редко.
+H: пользоваться чем? · использовать что?
+A: этим словарём; этот словарь
+W: «Пользоваться» takes the instrumental: этим словарём. «Использовать» takes the accusative: этот словарь (a thing, unchanged). Same meaning, different case.
+
+@stage B
+#D
+Q: Моя дочь __________ (учиться / изучать) в третьем классе.
+A: учится
+W: «Учиться где?» = to be a pupil or student somewhere: учится в классе, в школе. «Изучать» needs an object — a subject you study.
+
+#D
+Q: В университете мой брат __________ (учить / изучать) историю Китая.
+A: изучает
+W: «Изучать» = to study a subject seriously, in depth: изучает историю. «Учить историю» would sound like memorising facts for a test.
+
+#D
+Q: Я __________ (учить / учиться) своих студентов немецкому языку.
+A: учу
+W: «Учить кого? чему?» = to teach someone something: учу студентов (accusative) немецкому языку (dative).
+
+#D
+Q: Мой сын сейчас __________ (учить / учиться) плавать.
+A: учится
+W: «Учиться» + infinitive = to learn how to do something: учится плавать.
+
+#D
+Q: Я не __________ (знать / узнать) тебя — ты так изменился!
+N: The speaker is a man.
+A: узнал
+W: «Узнать» also means "to recognise": я не узнал тебя (I didn't recognise you). «Не знал» would mean "I didn't know you at all".
+
+#A
+Q: На уроке студенты пользу__ телефон__ как словарём.
+A: пользуются; телефонами
+W: «Пользоваться» → они пользуются, + instrumental: телефонами. With «использовать» you would say «используют телефоны».
+
+#D
+Q: В этом рецепте я __________ (пользоваться / использовать) только свежие овощи.
+A: использую
+W: The object is accusative («свежие овощи»), so the verb must be «использовать»: использую (-ова- → -у-). «Пользоваться» would need the instrumental.
+
+#C
+Q: Я весь вечер смотрел ___ звёзд__ и думал о будущем.
+A: на звёзды
+W: «Смотреть на что?» (to look at) → на + accusative: звёзды (a plural thing, unchanged). Without «на», «смотреть» means to watch (фильм, сериал).
+
+@stage C
+#E
+Q: Ночью я __________ (слышать / услышать) странный шум за окном и проснулся.
+N: The speaker is a man.
+A: услышал
+W: One moment of perception that causes a reaction («и проснулся») → perfective: услышал.
+
+#E
+Q: Я хорошо __________ (слышать / услышать) тебя, говори!
+A: слышу
+W: An ongoing ability to hear right now → imperfective, present tense: слышу.
+
+#E
+Q: Ты меня не __________ (слышать / услышать), потому что у меня была плохая связь.
+N: You are talking to a woman.
+A: услышала
+V: не слышала (describes the state of not hearing)
+W: Not catching what was said at that moment → perfective: не услышала — exactly your own sentence. «Не слышала» is also possible and describes the state.
+
+#E
+Q: В парке я __________ (видеть / увидеть) старого друга и сразу подошёл к нему.
+N: The speaker is a man.
+A: увидел
+W: The moment of catching sight of someone, followed by a reaction → perfective: увидел.
+
+#E
+Q: Я давно не __________ (видеть / увидеть) своих родителей.
+N: The speaker is a man.
+A: видел
+W: «Давно не» describes a long period without the action → imperfective: не видел.
+
+#E
+Q: Что он тебе __________ (говорить / сказать) вчера?
+A: сказал
+W: One specific statement → perfective: сказал. «Говорить / сказать» form the aspect pair for "say, tell".
+
+#E
+Q: Он всегда __________ (говорить / сказать) мне, что я слишком много работаю.
+A: говорит
+W: «Всегда» = a repeated action → imperfective: говорит.
+
+#E
+Q: Как ты __________ (узнавать / узнать) об этом? — Мне сказал брат.
+N: You are talking to a man.
+A: узнал
+W: The moment of getting the information → perfective: узнал.
+
+@stage D
+#F
+Q: я / не / слышать / ты / плохой / связь / из-за
+N: Build the sentence "I can't hear you because of the bad connection."
+A: Я не слышу тебя из-за плохой связи.
+V: Я тебя не слышу из-за плохой связи.
+W: «Слышать» = to perceive sound → я не слышу (-у after ш). «Из-за» (because of) → genitive: плохой связи.
+
+#F
+Q: я / учить / мой / студенты / немецкий / язык
+N: Build the sentence "I teach my students German."
+A: Я учу своих студентов немецкому языку.
+V: Я учу моих студентов немецкому языку.
+W: «Учить кого? чему?» = to teach someone something: своих студентов (accusative of people) + немецкому языку (dative).
+
+#F
+Q: вчера / я / узнать / что / мой / подруга / выйти / замуж
+N: Build a past-tense sentence. The speaker is a man.
+A: Вчера я узнал, что моя подруга вышла замуж.
+W: «Узнать» (to find out) → узнал. «Выйти замуж» (to get married, said of a woman) → вышла (irregular past of «выйти»).
+
+#G
+Q: Я слышаю музыку каждый вечер, когда готовлю ужин.
+N: Find and correct 1 error.
+A: Я слушаю музыку каждый вечер, когда готовлю ужин.
+W: Listening to music on purpose is «слушать»: слушаю. «Слышать» just means to hear — and its я-form would be «слышу», never «слышаю».
+
+#G
+Q: Мой брат учится испанский язык и знает много новых слов каждый день.
+N: Find and correct 2 errors.
+A: Мой брат учит испанский язык и узнаёт много новых слов каждый день.
+W: «Учиться» cannot take an accusative object → учит испанский язык. Finding out new things again and again is «узнавать», the imperfective of «узнать»: узнаёт.
+
+#H
+Q: Я знаю его новый адрес.
+N: Say "Yesterday I found out his new address." The speaker is a woman.
+A: Вчера я узнала его новый адрес.
+W: «Знать» = to know (a state); «узнать» = to find out (an event): узнала.
+
+#H
+Q: Он говорит, что устал.
+N: Put it in the past as one single statement.
+A: Он сказал, что устал.
+W: One statement in the past → perfective «сказать»: сказал. The present «говорит» belongs to the imperfective partner.
+
+#I
+Q: Мой брат __________ (учиться) в университете, __________ (изучать) математику и __________ (учить) испанский.
+A: учится; изучает; учит
+W: «Учиться» (to be a student somewhere): учится в университете. «Изучать» (to study a subject in depth): изучает математику. «Учить» (to learn a language for practical use): учит испанский.
+
+@stage E
+#E
+Q: Давай __________ (смотреть / посмотреть) этот фильм сегодня вечером!
+A: посмотрим
+W: «Давай» + one planned, whole event → perfective in the мы-form: посмотрим.
+
+#E
+Q: Когда я __________ (видеть / увидеть) его в первый раз, он мне сразу понравился.
+N: The speaker is a woman.
+A: увидела
+W: «В первый раз» + an immediate reaction → one moment → perfective: увидела.
+
+#E
+Q: Извините, вы не __________ (говорить / сказать), который час?
+A: скажете
+W: A polite request for one piece of information uses the perfective future: «Вы не скажете …?» (Could you tell me …?).
+
+#B
+Q: Я пользуюсь только __________ (бесплатные приложения).
+A: бесплатными приложениями
+W: «Пользоваться» → instrumental plural: бесплатными приложениями (-ыми, -ями).
+
+#F
+Q: ты / смотреть / этот / сериал / когда-нибудь
+N: Build the question "Have you ever watched this series?"
+A: Ты когда-нибудь смотрел этот сериал?
+V: Ты когда-нибудь смотрела этот сериал?
+W: A question about experience → imperfective: смотрел (смотрела). «Сериал» is an accusative thing (unchanged).
+
+#F
+Q: я / попросить / студенты / говорить / медленнее
+N: Build the sentence "I asked the students to speak more slowly." The speaker is a woman.
+A: Я попросила студентов говорить медленнее.
+W: «Попросить кого?» (to ask someone to do something) → accusative: студентов, + infinitive. «Спросить» would mean asking a question.
+
+#G
+Q: Я спросил своего брата помочь мне с переездом.
+N: Find and correct 1 error.
+A: Я попросил своего брата помочь мне с переездом.
+W: Asking someone to do something is «просить / попросить» + infinitive. «Спрашивать / спросить» is for questions: спросил, где …
+
+#I
+Q: Я __________ (спросить) у преподавателя, что значит это слово, а потом __________ (попросить) его объяснить ещё раз.
+N: The speaker is a man.
+A: спросил; попросил
+W: A question → «спросить»: спросил. A request to do something → «попросить»: попросил + infinitive.

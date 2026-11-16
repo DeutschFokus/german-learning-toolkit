@@ -1,0 +1,285 @@
+@module 24
+@part IV
+@title Reflexive verbs
+@ru Возвратные глаголы — учиться, заниматься, интересоваться, встречаться, бояться, нравиться
+@learn Conjugate -ся verbs in the present and past: -ся after a consonant, -сь after a vowel.
+@learn Recognise the five kinds of -ся verbs: oneself, each other, "by itself", -ся-only verbs, and verbs that govern a case.
+@learn Tell transitive and intransitive pairs apart: начинать урок / урок начинается, вернуть книгу / вернуться домой.
+@learn Never give a -ся verb an accusative object: учу русский язык, but учусь в университете.
+@target интересуюсь русским языком
+@target встречаюсь со своими студентами
+@target урок начинается в девять
+@target мне нравится · мне кажется
+@target я учу слова · я учусь в школе
+@remix Redo Stage A in the past tense twice: as a man and as a woman (занимался / занималась).
+@remix For every Stage C sentence, make a new one with the other member of the pair.
+@remix Write six sentences about your weekly routine using six different -ся verbs.
+
+@lesson
+## -ся or -сь?
+A reflexive verb carries the particle **-ся** after a consonant and **-сь** after a vowel. Conjugate the verb normally, then add the particle:
+
+| | заниматься | учиться |
+|---|---|---|
+| я | занимаюсь | учусь |
+| ты | занимаешься | учишься |
+| он, она | занимается | учится |
+| мы | занимаемся | учимся |
+| вы | занимаетесь | учитесь |
+| они | занимаются | учатся |
+| past | занимался, занималась, занимались | учился, училась, учились |
+
+## Five kinds of -ся verbs
+| Kind | Examples |
+|---|---|
+| the action returns to the subject | одеваться, умываться, готовиться |
+| "each other" | встречаться, видеться, знакомиться, договариваться |
+| a thing does it "by itself" | начинаться, заканчиваться, открываться, закрываться, возвращаться |
+| verbs that only exist with -ся | бояться, смеяться, нравиться, надеяться, улыбаться, казаться |
+| verbs with a case | заниматься чем?, интересоваться чем?, бояться чего?, учиться где? / чему? |
+
+::: rule No accusative object after -ся
+A -ся verb never takes a direct object. *Я учу русский язык* (учить что?) but *Я учусь в университете* (учиться где?). *Учитель начинает урок* but *Урок начинается в девять.* *Я вернул книгу* (give back) but *Я вернулся домой* (come back).
+:::
+
+> Я **интересуюсь** русским языком. || интересоваться чем? → instrumental
+> Я **встречаюсь** со своими студентами онлайн. || встречаться с кем?
+> Урок **начинается** в девять. || the lesson begins "by itself"
+> Мне **нравится** этот город. Мне **кажется**, ты прав. || impersonal, with a dative person
+> Мои родители **познакомились** в университете. || "each other", past plural
+
+::: mistakes Typical slips
+!> я учусь русский язык || я учу русский язык || -ся verbs take no accusative object
+!> урок начинает в девять || урок начинается в девять || the lesson is the subject
+!> она вернула домой || она вернулась домой || вернуть = give back; вернуться = come back
+!> вы занимаетеся || вы занимаетесь || after a vowel → -сь
+!> мне нравлюсь этот город || мне нравится этот город || нравиться agrees with the thing liked
+:::
+@endlesson
+
+@stage A
+#D
+Q: Я __________ (заниматься) русским каждый день.
+H: я · -сь after a vowel
+A: занимаюсь
+W: Reflexive verbs add -ся after a consonant and -сь after a vowel: занимаю + сь → занимаюсь.
+
+#D
+Q: Чем ты __________ (интересоваться)?
+H: ты · -ова- → -у-
+A: интересуешься
+W: -ова- → -у-, then the normal ending + -ся: интересуешь + ся → интересуешься.
+
+#D
+Q: Где __________ (учиться) твой брат?
+H: он · second conjugation
+A: учится
+W: «Учиться» is second conjugation: учусь, учишься, учится. After the consonant т the particle is -ся.
+
+#D
+Q: Мы __________ (встречаться) с друзьями по субботам.
+H: мы · -ся
+A: встречаемся
+W: встречаем + ся → встречаемся (-ся after the consonant м).
+
+#D
+Q: Мои дети __________ (бояться) грозы.
+H: они · second conjugation
+A: боятся
+W: «Бояться» is second conjugation: боюсь, боишься, боится … боятся. The object is genitive: грозы.
+
+#D
+Q: Вы __________ (смеяться) надо мной?
+H: вы · stem сме-
+A: смеётесь
+W: «Смеяться»: смеюсь, смеёшься, смеётся, смеёмся, смеётесь, смеются. After the vowel of -те the particle is -сь.
+
+#A
+Q: Мне очень нрав__ этот город.
+H: the city is the subject
+A: нравится
+W: «Нравиться» agrees with the thing liked: этот город (он) → нравится. The person who likes is dative (мне).
+
+#A
+Q: Урок начина__ в девять.
+H: the lesson is the subject
+A: начинается
+W: «Начинаться» (to begin, with no object): the lesson is the subject → начинается. Compare «Учитель начинает урок» — an object, no -ся.
+
+@stage B
+#D
+Q: Вчера мы __________ (познакомиться) с новыми соседями.
+A: познакомились
+W: Plural past + -сь (after the vowel и): познакомились.
+
+#D
+Q: Анна __________ (вернуться) из отпуска загорелая и счастливая.
+A: вернулась
+W: Feminine past + -сь: вернулась («вернуться» = to come back).
+
+#D
+Q: Во сколько __________ (открываться) этот магазин?
+A: открывается
+W: The shop is the subject — it opens "by itself" → открываться: он открывается.
+
+#D
+Q: Я __________ (надеяться), что погода будет хорошей.
+A: надеюсь
+W: «Надеяться»: надеюсь, надеешься, надеется (-сь after the vowel ю).
+
+#D
+Q: Мой брат __________ (одеваться) очень долго, и мы всегда опаздываем.
+A: одевается
+W: «Одеваться» (to get dressed): the action returns to the subject. Он одевается.
+
+#D
+Q: Мне __________ (казаться), что ты устал.
+A: кажется
+W: «Казаться» (to seem) is used impersonally with a dative person: мне кажется (з → ж in all present forms).
+
+#D
+Q: Почему ты __________ (улыбаться)? Что случилось?
+A: улыбаешься
+W: «Улыбаться»: улыбаюсь, улыбаешься (-ся after the consonant ш).
+
+#D
+Q: Студенты __________ (готовиться) к экзамену уже месяц.
+A: готовятся
+W: «Готовиться» is second conjugation: готовлюсь (в → вл), готовишься … готовятся. Present tense: it is still going on.
+
+@stage C
+#A
+Q: Учитель начина__ урок ровно в девять. — Да, у нас урок всегда начина__ в девять.
+A: начинает; начинается
+W: With an object («урок») the verb has no -ся: учитель начинает урок. When the lesson itself is the subject, -ся is added: урок начинается.
+
+#B
+Q: Я __________ (вернуть) книгу в библиотеку и __________ (вернуться) домой.
+N: The speaker is a man.
+A: вернул; вернулся
+W: «Вернуть что?» (to give back) takes an object, no -ся: вернул книгу. «Вернуться» (to come back) has no object: вернулся домой.
+
+#B
+Q: Мама __________ (одевать) сына, а потом __________ (одеваться) сама.
+A: одевает; одевается
+W: «Одевать кого?» (to dress someone) takes an object. «Одеваться» (to dress oneself) turns the action back on the subject.
+
+#A
+Q: Магазин открыва__ в восемь, а продавец открыва__ дверь в семь пятьдесят.
+A: открывается; открывает
+W: The shop opens "by itself" → открывается. The shop assistant opens the door (an object) → открывает, without -ся.
+
+#B
+Q: Я __________ (учить) новые слова, а мой сын __________ (учиться) в школе.
+A: учу; учится
+W: «Учить что?» (to learn something) takes an accusative object: учу слова. «Учиться где?» (to study somewhere) has no direct object: учится в школе.
+
+#D
+Q: Мы с тобой так давно не __________ (видеться)!
+A: виделись
+W: «Видеться» means "to see each other": plural past + -сь: виделись. Compare «видеть кого?» with an object.
+
+#E
+Q: Когда фильм __________ (начинаться / начаться), я уже спал.
+A: начался
+W: The start of the film is one moment in time → perfective: начался.
+
+#E
+Q: Фильмы в этом кинотеатре обычно __________ (начинаться / начаться) вовремя.
+A: начинаются
+W: «Обычно» describes a regular pattern → imperfective, present tense: начинаются.
+
+@stage D
+#F
+Q: мой / брат / увлекаться / фотография / с / детство
+N: Build a present-tense sentence.
+A: Мой брат увлекается фотографией с детства.
+W: «Увлекаться чем?» → instrumental: фотографией. «С детства» = since childhood (с + genitive). Present tense, because it still continues.
+
+#F
+Q: мы / договориться / встретиться / у / кинотеатр
+N: Build a past-tense sentence.
+A: Мы договорились встретиться у кинотеатра.
+W: Plural past + -сь: договорились. «У» + genitive: кинотеатра.
+
+#F
+Q: я / не / нравиться / когда / люди / опаздывать
+N: Build the sentence "I don't like it when people are late."
+A: Мне не нравится, когда люди опаздывают.
+W: The person who likes is dative: мне. With a когда-clause as the "thing liked", the verb is singular: не нравится. «Люди» → они опаздывают.
+
+#G
+Q: Я учусь русский язык и интересуюсь русская литература.
+N: Find and correct 2 errors.
+A: Я учу русский язык и интересуюсь русской литературой.
+V: Я учусь русскому языку и интересуюсь русской литературой.
+W: «Учиться» cannot take an accusative object: say «учу русский язык» (or «учусь русскому языку»). «Интересоваться чем?» → instrumental: русской литературой.
+
+#H
+Q: Я занимаюсь спортом.
+N: Put it in the past. The speaker is a woman.
+A: Я занималась спортом.
+W: Feminine past -ла + -сь (after a vowel): занималась.
+
+#H
+Q: Магазин закрывается в девять.
+N: Make «магазин» plural.
+A: Магазины закрываются в девять.
+W: A plural subject → они закрываются (-ются + -ся).
+
+#I
+Q: Вчера я __________ (встретиться) с мо__ стар__ подруг__, и мы долго __________ (смеяться).
+N: The speaker is a woman.
+A: встретилась; моей старой подругой; смеялись
+W: Feminine past + -сь: встретилась. «С кем?» → instrumental: моей старой подругой. Plural past: смеялись.
+
+#I
+Q: Мой сын __________ (учиться) в музыкальной школе и __________ (заниматься) футболом, а дочь __________ (интересоваться) химией.
+A: учится; занимается; интересуется
+W: Three reflexive verbs in the он / она-form: учится, занимается, интересуется (all with -ся after т).
+
+@stage E
+#A
+Q: Как давно вы занима__ русским языком?
+A: занимаетесь
+W: «Вы» → -ете, then -сь after the vowel: занимаетесь. Present tense, because it is still going on.
+
+#A
+Q: Мои родители познаком__ в университете тридцать лет назад.
+A: познакомились
+W: «Познакомиться» means "to get to know each other": plural past + -сь: познакомились.
+
+#D
+Q: Летом мы __________ (собираться) поехать в Китай.
+A: собираемся
+W: «Собираться» + infinitive = to plan to do something: мы собираемся (-ся after м).
+
+#B
+Q: Мой сын очень боится __________ (врачи) и __________ (уколы).
+A: врачей; уколов
+W: «Бояться» → genitive: врачи → врачей (-ей after ч), уколы → уколов (-ов).
+
+#F
+Q: когда / начинаться / урок / по / понедельник
+N: Build the question "When does the lesson start on Mondays?"
+A: Когда начинается урок по понедельникам?
+V: Во сколько начинается урок по понедельникам?
+W: The lesson is the subject → начинается (-ся). «По понедельникам» → по + dative plural (regularly).
+
+#F
+Q: я / надеяться / что / мы / скоро / увидеться
+N: Build the sentence "I hope we'll see each other soon."
+A: Я надеюсь, что мы скоро увидимся.
+W: «Надеяться» → я надеюсь. «Увидеться» (perfective, "each other") → мы увидимся = future.
+
+#G
+Q: Вчера моя сестра вернула домой поздно и сразу легла спать.
+N: Find and correct 1 error.
+A: Вчера моя сестра вернулась домой поздно и сразу легла спать.
+W: Coming back home needs «вернуться» with -ся: вернулась. «Вернуть» means "to give something back" and needs an object.
+
+#I
+Q: Почему ты __________ (сердиться)? Я не __________ (хотеть) тебя обидеть, мне очень __________ (нравиться) наша дружба.
+N: The speaker is a man.
+A: сердишься; хотел; нравится
+W: «Сердиться» → ты сердишься. «Хотеть» → masculine past: хотел. «Наша дружба» is the subject → нравится.
