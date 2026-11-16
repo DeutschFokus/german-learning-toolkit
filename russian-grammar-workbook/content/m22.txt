@@ -1,0 +1,293 @@
+@module 22
+@part IV
+@title Perfective and imperfective I
+@ru Вид глагола — читал или прочитал?
+@learn See the real difference: imperfective presents an activity, a process or a habit; perfective presents one whole event, usually with a result.
+@learn Use the context markers: долго, весь день, каждый день, обычно → imperfective; наконец, сразу, уже (result), за два часа → perfective.
+@learn Know how your verb pairs are built: prefix (сделать), suffix (решить, объяснить), different word (сказать).
+@learn Remember that perfective verbs have no present tense: напишу means "I will write".
+@target делать / сделать
+@target читать / прочитать
+@target объяснять / объяснить
+@target исправлять / исправить
+@target звонить / позвонить
+@remix For every Stage C pair, write a third sentence of your own with a clear marker (каждый день / наконец / весь вечер).
+@remix Redo Stages A and B in the future tense (читал → буду читать, прочитал → прочитаю) and check the meaning.
+@remix Describe yesterday twice: once as activities (что я делал), once as results (что я сделал).
+
+@lesson
+## Two ways to see the same action
+Almost every Russian verb comes as a **pair**: an imperfective verb (несовершенный вид) and a perfective verb (совершенный вид) — *делать / сделать, читать / прочитать.* They describe the same kind of action, but they present it differently.
+
+The common shortcut "imperfective = unfinished, perfective = finished" is not accurate. *Вчера я читал эту книгу* can describe a book you did finish; the imperfective simply does not focus on the result. Think instead:
+- **Imperfective** looks at the action **from inside**: a process, an activity, a repeated event, or simply the name of what was going on.
+- **Perfective** looks at the action **as one whole event**, usually with a result or a change in the situation.
+
+| Imperfective (НСВ) | Perfective (СВ) |
+|---|---|
+| process, duration: долго, весь вечер, два часа | one whole event with a result: прочитал книгу — it is finished |
+| repetition, habit: каждый день, часто, обычно, всегда | one event at a point in time: вдруг, сразу, в восемь часов |
+| two actions at the same time: пока …, когда … | a sequence of events: пришёл, поел и лёг спать |
+| just naming the activity: Что ты делал? — Читал. | reaching the goal: наконец, уже + result, за два часа |
+| experience: Ты читал Достоевского? | |
+
+## How the pairs are built
+| Pattern | Your verbs |
+|---|---|
+| a prefix makes the perfective | делать → сделать, писать → написать, читать → прочитать, звонить → позвонить, готовить → приготовить, учить → выучить |
+| a different suffix | решать → решить, покупать → купить, объяснять → объяснить, исправлять → исправить, обсуждать → обсудить, предлагать → предложить, начинать → начать, заканчивать → закончить, забывать → забыть, рассказывать → рассказать, спрашивать → спросить, отвечать → ответить, находить → найти, терять → потерять |
+| a different word | говорить → сказать, брать → взять, класть → положить |
+
+::: rule Perfective verbs have no present tense
+The "present" forms of a perfective verb mean the **future**: *я пишу* (I am writing) but *я напишу* (I will write). To describe what is happening now, you always need the imperfective.
+:::
+
+> Вчера я **весь вечер читал** детектив. || process over a period
+> Вчера я **прочитал** детектив **до конца**. || a whole event with a result
+> Мой брат **каждый день звонит** маме. || repetition
+> Брат **позвонил** маме и **рассказал** новости. || a sequence of single events
+> Студенты **долго решали** задачу и **наконец решили** её. || effort → success
+
+::: mistakes Typical slips
+!> я каждый день позвонил маме || я каждый день звонил маме || repetition → imperfective
+!> я весь вечер прочитал || я весь вечер читал || duration → imperfective
+!> наконец я решал задачу || наконец я решил задачу || наконец → the result
+!> Ты уже писал отчёт? (I need it now) || Ты уже написал отчёт? || asking about the result
+!> я сейчас напишу письмо (= now) || я сейчас пишу письмо || напишу is future
+:::
+@endlesson
+
+@stage A
+#E
+Q: Вчера я весь вечер __________ (читать / прочитать) детектив.
+H: весь вечер → process
+N: The speaker is a man.
+A: читал
+W: «Весь вечер» describes the activity over a period of time and says nothing about a result → imperfective: читал.
+
+#E
+Q: Вчера я __________ (читать / прочитать) детектив до конца и узнал, кто убийца.
+H: до конца → result
+N: The speaker is a man.
+A: прочитал
+W: «До конца» and the result («узнал, кто убийца») present the reading as one finished whole → perfective: прочитал.
+
+#E
+Q: Мой брат каждый день __________ (звонить / позвонить) маме.
+H: каждый день → repetition
+A: звонит
+W: «Каждый день» = repetition → imperfective. Only imperfective verbs have a present tense: звонит.
+
+#E
+Q: Вчера брат __________ (звонить / позвонить) маме и рассказал ей новости.
+H: one call, then the next step
+A: позвонил
+W: One specific call followed by the next action («и рассказал») → perfective: позвонил.
+
+#E
+Q: Я обычно __________ (покупать / купить) продукты в субботу.
+H: обычно → habit
+A: покупаю
+W: «Обычно» describes a habit → imperfective, here in the present: покупаю.
+
+#E
+Q: Вчера я __________ (покупать / купить) новые кроссовки. Вот они!
+H: the result is here
+N: The speaker is a woman.
+A: купила
+W: The result is right there («Вот они!») → perfective: купила.
+
+#E
+Q: Студенты долго __________ (решать / решить) эту задачу.
+H: долго → process
+A: решали
+W: «Долго» focuses on the process and how long it lasted → imperfective: решали.
+
+#E
+Q: Наконец студенты __________ (решать / решить) задачу!
+H: наконец → result
+A: решили
+W: «Наконец» marks the moment the goal is reached → perfective: решили.
+
+@stage B
+#E
+Q: Мы часто __________ (обсуждать / обсудить) с коллегами новые методы преподавания.
+A: обсуждаем
+W: «Часто» = a repeated activity → imperfective, present tense: обсуждаем.
+
+#E
+Q: Вчера на собрании мы __________ (обсуждать / обсудить) все вопросы и приняли решение.
+A: обсудили
+W: All the questions were covered and a decision followed → one complete event with a result → perfective: обсудили.
+
+#E
+Q: Мой преподаватель всегда терпеливо __________ (объяснять / объяснить) мне грамматику.
+A: объясняет
+W: «Всегда» = a regular, repeated action → imperfective: объясняет.
+
+#E
+Q: Спасибо, вы очень хорошо __________ (объяснять / объяснить) это правило — теперь я всё понимаю!
+A: объяснили
+W: The result is there («теперь я всё понимаю») → perfective: объяснили.
+
+#E
+Q: Я постоянно __________ (терять / потерять) ключи.
+A: теряю
+W: «Постоянно» (all the time) = repetition → imperfective, present tense: теряю.
+
+#E
+Q: Кажется, я __________ (терять / потерять) ключи. Ты их не видел?
+N: The speaker is a woman.
+A: потеряла
+W: One event whose consequence is felt now (the keys are gone) → perfective: потеряла.
+
+#E
+Q: Пока мама __________ (готовить / приготовить) ужин, дети делали уроки.
+A: готовила
+W: «Пока» (while) links two activities happening at the same time → imperfective: готовила.
+
+#E
+Q: Мама __________ (готовить / приготовить) ужин, и мы сели за стол.
+A: приготовила
+W: A finished action that allows the next one («и мы сели за стол») → perfective: приготовила.
+
+@stage C
+#E
+Q: Мои студенты часто __________ (забывать / забыть) домашнее задание.
+A: забывают
+W: «Часто» = a repeated action → imperfective, present tense: забывают.
+
+#E
+Q: Сегодня Анна __________ (забывать / забыть) домашнее задание дома.
+A: забыла
+W: One specific event today → perfective: забыла.
+
+#E
+Q: Ты уже __________ (писать / написать) отчёт? — Да, вот он.
+N: The person asked is a man.
+A: написал
+W: «Уже» + a result you can hand over («вот он») → perfective: написал.
+
+#E
+Q: Что ты делал вчера вечером? — Я __________ (писать / написать) отчёт.
+N: The speaker is a man.
+A: писал
+W: «Что ты делал?» asks about the activity, not about a result → imperfective: писал.
+
+#E
+Q: Я много раз __________ (спрашивать / спросить) его об этом, но он так и не ответил.
+N: The speaker is a man.
+A: спрашивал
+W: «Много раз» = repetition, and there was no result («так и не ответил») → imperfective: спрашивал.
+
+#E
+Q: Я __________ (спрашивать / спросить) у прохожего дорогу, и он сразу её показал.
+N: The speaker is a man.
+A: спросил
+W: One question followed immediately by its result («он сразу её показал») → perfective: спросил.
+
+#E
+Q: На экзамене Олег __________ (отвечать / ответить) на все вопросы правильно и получил пятёрку.
+A: ответил
+W: All the questions were answered, with a result (a top mark) → perfective: ответил.
+
+#E
+Q: Олег всегда __________ (отвечать / ответить) на вопросы очень подробно.
+A: отвечает
+W: «Всегда» describes his habit → imperfective, present tense: отвечает.
+
+@stage D
+#D
+Q: Вчера я __________ (начать) новую книгу, а сегодня уже её __________ (закончить).
+N: The speaker is a woman.
+A: начала; закончила
+W: The start and the end are single moments → perfective pasts: начала, закончила (feminine -ла).
+
+#D
+Q: Обычно урок __________ (начинаться) в девять и __________ (заканчиваться) в половине одиннадцатого.
+A: начинается; заканчивается
+W: A regular schedule → imperfective verbs in the present: начинается, заканчивается.
+
+#D
+Q: Завтра я __________ (исправить) все ошибки и __________ (отправить) тебе текст.
+A: исправлю; отправлю
+W: Perfective verbs → simple future: исправить → исправлю, отправить → отправлю (в → вл in the я-form).
+
+#F
+Q: я / уже / прочитать / этот / книга / и / вернуть / её / в / библиотека
+N: Build a past-tense sentence. The speaker is a man.
+A: Я уже прочитал эту книгу и вернул её в библиотеку.
+W: Two completed actions in sequence → perfective: прочитал, вернул. «В библиотеку» → accusative (куда?).
+
+#F
+Q: вчера / мы / долго / гулять / по / парк
+N: Build a past-tense sentence.
+A: Вчера мы долго гуляли по парку.
+W: «Долго» → the activity over time → imperfective: гуляли. «По парку» → по + dative.
+
+#G
+Q: Вчера я весь вечер прочитал книгу, но не дочитал её.
+N: Find and correct 1 error (the verb).
+A: Вчера я весь вечер читал книгу, но не дочитал её.
+W: «Весь вечер» describes a process, and «не дочитал» says the end was not reached → imperfective: читал. «Прочитал» would claim the whole book was read.
+
+#H
+Q: Каждый день я покупаю газету.
+N: Change it to "Yesterday I bought a newspaper" (one newspaper, a single purchase).
+A: Вчера я купил газету.
+V: Вчера я купила газету.
+W: Repetition («каждый день») needs the imperfective; one completed purchase takes the perfective: купил / купила.
+
+#I
+Q: Вчера я __________ (делать / сделать) домашнее задание три часа, а потом __________ (звонить / позвонить) другу.
+N: The speaker is a woman.
+A: делала; позвонила
+W: «Три часа» describes the duration of the activity → imperfective: делала. Then one single call → perfective: позвонила.
+
+@stage E
+#E
+Q: Ты когда-нибудь __________ (читать / прочитать) Достоевского?
+A: читал
+V: читала (to a woman)
+W: A question about experience ("have you ever …?") asks whether the activity ever happened at all → imperfective: читал.
+
+#E
+Q: Дети, вы уже __________ (делать / сделать) уроки? Тогда можно гулять!
+A: сделали
+W: «Уже» + a result that allows the next thing («тогда можно гулять») → perfective: сделали.
+
+#E
+Q: Мой коллега всегда __________ (предлагать / предложить) мне помощь, когда у меня много работы.
+A: предлагает
+W: «Всегда, когда …» describes a repeated situation → imperfective, present tense: предлагает.
+
+#D
+Q: Что ты __________ (сказать)? Я не расслышал.
+N: You are talking to a man.
+A: сказал
+W: «Сказать» (the perfective partner of «говорить») names one utterance: сказал. Masculine past.
+
+#D
+Q: Мы __________ (обсудить) этот вопрос завтра, а сегодня __________ (отдыхать).
+A: обсудим; отдыхаем
+W: «Обсудить» is perfective → обсудим = future. «Отдыхать» is imperfective → present tense now: отдыхаем.
+
+#F
+Q: сначала / я / сделать / домашний / задание / потом / пойти / гулять
+N: Build a past-tense sentence. The speaker is a man.
+A: Сначала я сделал домашнее задание, потом пошёл гулять.
+V: Сначала я сделал домашнее задание, а потом пошёл гулять.
+W: «Сначала … потом» = a sequence of completed actions → perfective: сделал, пошёл.
+
+#F
+Q: я / обычно / проверять / тетради / вечером
+N: Build a present-tense sentence.
+A: Я обычно проверяю тетради вечером.
+V: Обычно я проверяю тетради вечером.
+W: «Обычно» = a habit → imperfective: проверяю. «Вечером» is a time word (instrumental).
+
+#G
+Q: Каждый день я позвонил маме, а вчера я звонил ей и рассказал новость.
+N: Find and correct 2 errors.
+A: Каждый день я звонил маме, а вчера я позвонил ей и рассказал новость.
+W: «Каждый день» = repetition → imperfective: звонил. Yesterday's single call followed by «и рассказал» → perfective: позвонил.

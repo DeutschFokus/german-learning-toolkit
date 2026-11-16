@@ -1,0 +1,275 @@
+@module 21
+@part IV
+@title Future tense
+@ru Будущее время — буду писать · напишу
+@learn Form the compound future of imperfective verbs: буду, будешь … + infinitive.
+@learn Form the simple future of perfective verbs by conjugating them: напишу, позвоню, куплю.
+@learn Choose between them: process, duration, repetition (буду писать) or one finished result (напишу).
+@learn Use the future after когда and если, and never combine буду with a perfective verb.
+@target я позвоню тебе завтра
+@target я буду звонить каждый день
+@target когда я приеду, я позвоню
+@target через два месяца мой китайский станет лучше
+@remix Redo Stage C in the past tense (буду писать → писал, напишу → написал) and compare the meanings.
+@remix Rewrite items 9–16 with a new subject (я → мы → они) and check every future form.
+@remix Write your plans for next week: four sentences with буду + infinitive and four with a perfective future.
+
+@lesson
+## Two futures
+Russian has two ways to talk about the future, one for each aspect.
+
+| Imperfective verbs: буду + infinitive | Perfective verbs: conjugate the verb |
+|---|---|
+| Я **буду писать** статью весь день. | Я **напишу** статью к вечеру. |
+| Я **буду звонить** тебе каждый день. | Я **позвоню** тебе в восемь. |
+| Что ты **будешь делать** в субботу? | Я **сделаю** это до пятницы. |
+
+The future of **быть** is **буду, будешь, будет, будем, будете, будут**: *Завтра я буду дома. У меня будет время.* A perfective verb conjugated in the "present" pattern **already means the future**: *напишу, скажу, куплю, приеду, позвоню.* That is why **буду + perfective** is always wrong.
+
+## Which one?
+**Imperfective future** (буду + infinitive): the activity itself, a process over time (*весь день, два часа, до полуночи*), repetition (*каждый день*), or a question about what someone will be doing.
+**Perfective future** (simple form): one complete action with a result, a promise, a deadline, or a sequence of steps (*напишу и отправлю*).
+
+::: rule Future after когда and если
+English says "when I **arrive**, I'll call". Russian uses the **future in both clauses**: *Когда я приеду, я позвоню. Если завтра будет хорошая погода, мы поедем на дачу.*
+:::
+
+> Завтра я **буду работать** весь день. || duration → imperfective
+> Я **позвоню** тебе вечером. || one call → perfective
+> **Через два месяца** мой китайский **станет** лучше. || станет = future of стать
+> Когда я **закончу** работу, я **позвоню** тебе. || future after когда
+> В следующем году я **буду изучать** китайский. || an ongoing activity
+
+::: mistakes Typical slips
+!> я буду написать || я напишу || perfective verbs never take буду
+!> когда я приеду, я буду позвонить || когда я приеду, я позвоню || one action → perfective future
+!> мы будем остаться дома || мы останемся дома || остаться is perfective
+!> когда я заканчиваю работу (tomorrow) || когда я закончу работу || future after когда
+!> у меня будут свободное время || у меня будет свободное время || будет agrees with время
+:::
+@endlesson
+
+@stage A
+#D
+Q: Завтра я __________ (работать) весь день.
+H: imperfective → буду + infinitive
+A: буду работать
+W: «Работать» is imperfective, so its future is compound: буду + infinitive. «Весь день» describes an activity over a period.
+
+#D
+Q: Мы __________ (быть) дома в восемь.
+H: future of быть
+A: будем
+W: The future of «быть»: буду, будешь, будет, будем, будете, будут. «Мы» → будем.
+
+#D
+Q: Я __________ (позвонить) тебе вечером.
+H: perfective → simple future
+A: позвоню
+W: «Позвонить» is perfective: its present-pattern form means the future: позвоню, позвонишь, позвонит.
+
+#D
+Q: Что ты __________ (делать) в субботу?
+H: imperfective → буду + infinitive
+A: будешь делать
+W: «Делать» is imperfective: future = будешь + делать. You are asking about the activity, not about a result.
+
+#D
+Q: Завтра я __________ (купить) новый телефон.
+H: perfective
+A: куплю
+W: «Купить» is perfective → simple future: куплю (п → пл in the я-form), купишь, купит.
+
+#D
+Q: Наши гости __________ (приехать) в семь часов.
+H: perfective
+A: приедут
+W: «Приехать» is perfective → simple future: приеду, приедешь … приедут.
+
+#D
+Q: Летом мы __________ (отдыхать) на море.
+H: imperfective
+A: будем отдыхать
+W: «Отдыхать» is imperfective (an activity over time) → compound future: будем отдыхать.
+
+#D
+Q: Я обязательно __________ (сказать) тебе правду.
+H: perfective
+A: скажу
+W: «Сказать» is perfective → simple future, with з → ж in every form: скажу, скажешь, скажет.
+
+@stage B
+#D
+Q: Когда я __________ (закончить) работу, я __________ (позвонить) тебе.
+A: закончу; позвоню
+W: Russian uses the future after «когда» for a future event (English uses the present: "when I finish"). Both are single completed actions → perfective: закончу, позвоню.
+
+#D
+Q: Если завтра __________ (быть) хорошая погода, мы __________ (поехать) на дачу.
+A: будет; поедем
+W: After «если» Russian uses the future for a future event: будет. «Поехать» is perfective → поедем.
+
+#D
+Q: С понедельника я __________ (читать) по-русски каждый вечер.
+A: буду читать
+W: A repeated future activity («каждый вечер») → imperfective compound future: буду читать.
+
+#D
+Q: Мы __________ (обсудить) этот вопрос на следующей неделе.
+A: обсудим
+W: «Обсудить» is perfective → simple future: обсужу, обсудишь … обсудим.
+
+#D
+Q: На экзамене студенты __________ (писать) контрольную два часа.
+A: будут писать
+W: «Два часа» measures the duration of the activity → imperfective future: будут писать.
+
+#D
+Q: Не волнуйся, я не __________ (забыть) твой день рождения!
+A: забуду
+W: «Забыть» is perfective → simple future on the stem забуд-: забуду, забудешь.
+
+#D
+Q: Завтра я не __________ (смочь) прийти, но в пятницу __________ (прийти) обязательно.
+A: смогу; приду
+W: «Смочь» (the perfective of «мочь») gives the future: смогу, сможешь. «Прийти» → приду.
+
+#D
+Q: После урока мы __________ (пойти) в кафе.
+A: пойдём
+W: «Пойти» is perfective → simple future: пойду, пойдёшь … пойдём.
+
+@stage C
+#E
+Q: Завтра я весь день __________ (писать / написать) статью.
+A: буду писать
+W: «Весь день» describes the process over a period, without promising the result → imperfective future: буду писать.
+
+#E
+Q: Завтра я __________ (писать / написать) статью и сразу отправлю её редактору.
+A: напишу
+W: A finished result that makes the next step possible («и сразу отправлю») → perfective future: напишу.
+
+#E
+Q: Я __________ (звонить / позвонить) тебе каждый день, пока ты в отпуске.
+A: буду звонить
+W: A repeated action («каждый день») → imperfective future: буду звонить.
+
+#E
+Q: Я __________ (звонить / позвонить) тебе сегодня ровно в восемь.
+A: позвоню
+W: One specific call at a specific time → perfective future: позвоню.
+
+#E
+Q: В следующем году я __________ (изучать / изучить) китайский язык.
+A: буду изучать
+W: Studying a language is an ongoing activity → imperfective future: буду изучать. «Изучу» would promise to master it completely.
+
+#E
+Q: Не волнуйся, я __________ (делать / сделать) это до пятницы.
+A: сделаю
+W: A promise of a finished result by a deadline → perfective future: сделаю.
+
+#E
+Q: Сегодня вечером мы с друзьями __________ (смотреть / посмотреть) футбол до полуночи.
+A: будем смотреть
+W: «До полуночи» stresses how long the activity lasts → imperfective future: будем смотреть.
+
+#E
+Q: Подожди минутку, я сейчас __________ (находить / найти) нужный файл.
+A: найду
+W: One action whose result matters (the file found) → perfective future: найду.
+
+@stage D
+#F
+Q: через / две / неделя / я / начать / новый / курс
+N: Build a future-tense sentence.
+A: Через две недели я начну новый курс.
+V: Я начну новый курс через две недели.
+W: «Начать» is perfective → simple future: начну, начнёшь. «Через две недели»: after «две» the noun is genitive singular.
+
+#F
+Q: я / обязательно / объяснить / ты / это / правило
+N: Build the sentence "I'll definitely explain this rule to you."
+A: Я обязательно объясню тебе это правило.
+W: «Объяснить» is perfective → simple future: объясню. «Кому?» → dative: тебе. «Что?» → accusative: это правило.
+
+#F
+Q: летом / мы / жить / у / бабушка / в / деревня
+N: Build the sentence "In summer we'll be living at grandma's in the village."
+A: Летом мы будем жить у бабушки в деревне.
+W: «Жить» is imperfective → compound future: будем жить. «У бабушки» → genitive; «в деревне» → prepositional.
+
+#G
+Q: Завтра я буду написать письмо и потом буду позвонить тебе.
+N: Find and correct 2 errors.
+A: Завтра я напишу письмо и потом позвоню тебе.
+W: «Буду» combines only with imperfective infinitives. Perfective verbs form the future on their own: напишу, позвоню.
+
+#H
+Q: Я читаю эту книгу.
+N: Put it in the future as an ongoing activity.
+A: Я буду читать эту книгу.
+W: An imperfective verb forms the future with «буду» + infinitive: буду читать.
+
+#H
+Q: Я сделал домашнее задание.
+N: Put it in the future.
+A: Я сделаю домашнее задание.
+W: «Сделать» is perfective → simple future: сделаю (no «буду»).
+
+#I
+Q: Когда я __________ (приехать) в Москву, я __________ (позвонить) тебе, и мы __________ (встретиться).
+A: приеду; позвоню; встретимся
+W: Future after «когда» → приеду (perfective). A chain of single future actions → perfective: позвоню, встретимся (встречусь, встретишься … встретимся).
+
+#I
+Q: Завтра у меня __________ (быть) свободное время, поэтому я __________ (заниматься) русским весь вечер.
+A: будет; буду заниматься
+W: «У меня будет» + the nominative subject (свободное время). «Весь вечер» → an activity over time → imperfective future: буду заниматься.
+
+@stage E
+#A
+Q: Завтра мы буд__ работать до вечера, а потом пойд__ в кино.
+A: будем; пойдём
+W: «Мы»: будем (+ an imperfective infinitive) and пойдём (the simple future of perfective «пойти»).
+
+#A
+Q: Через месяц мой брат законч__ университет и стан__ врачом.
+A: закончит; станет
+W: Both verbs are perfective, so their present-pattern forms mean the future: закончит, станет (он).
+
+#E
+Q: Я уверен, что через год ты __________ (говорить / сказать) по-русски свободно.
+A: будешь говорить
+W: Speaking fluently is an ongoing ability, not one completed act → imperfective future: будешь говорить. «Скажешь» would mean saying one particular thing.
+
+#E
+Q: Когда ты __________ (читать / прочитать) эту книгу, дай её мне, пожалуйста.
+A: прочитаешь
+W: The second action can only happen after the first is finished → perfective future: прочитаешь. Russian uses the future after «когда» here.
+
+#F
+Q: если / ты / хотеть / я / помочь / ты
+N: Build the sentence "If you want, I'll help you."
+A: Если ты хочешь, я помогу тебе.
+V: Если хочешь, я тебе помогу.
+W: «Хотеть» → ты хочешь (you want now). «Помочь» is perfective → simple future: помогу. «Помочь кому?» → dative: тебе.
+
+#F
+Q: что / ты / делать / после / урок
+N: Build the question "What will you do after the lesson?"
+A: Что ты будешь делать после урока?
+W: Asking about an activity → imperfective future: будешь делать. «После» → genitive: урока.
+
+#G
+Q: Если завтра будет дождь, мы будем остаться дома.
+N: Find and correct 1 error.
+A: Если завтра будет дождь, мы останемся дома.
+W: «Остаться» is perfective, so it cannot combine with «буду»: мы останемся (simple future). «Будет дождь» is correct: «быть» itself forms its future with будет.
+
+#H
+Q: Я звоню маме каждый день.
+N: Put it in the future.
+A: Я буду звонить маме каждый день.
+W: A repeated action («каждый день») stays imperfective, so the future is буду + звонить.

@@ -1,0 +1,192 @@
+@review 6
+@title Present, past and future
+@covers Modules 19–21 (with cases recycled)
+@intro Verbs take the lead: conjugation, past-tense agreement, the two futures and a first round of aspect choices. The case questions are there to keep Parts I–III alive.
+
+@block 1 | Verb forms and aspect
+#D
+Q: Мы с сестрой часто __________ (ездить) к бабушке, а мама __________ (ездить) к ней каждый день.
+A: ездим; ездит
+W: «Ездить» is second conjugation: мы ездим, она ездит. Only the я-form changes д → ж (езжу).
+
+#D
+Q: Я __________ (вставать) рано, а мои дети __________ (вставать) поздно.
+A: встаю; встают
+W: «Вставать» drops -ва- in the present: встаю, встаёшь … встают.
+
+#D
+Q: Что ты __________ (рисовать)? — Я __________ (рисовать) наш дом.
+A: рисуешь; рисую
+W: «Рисовать» replaces -ова- with -у-: рисую, рисуешь, рисует.
+
+#D
+Q: Вчера Анна __________ (лечь) спать в десять, а её брат __________ (лечь) в два часа ночи.
+A: легла; лёг
+W: «Лечь» has an irregular past: лёг (masculine), легла (feminine), легли (plural).
+
+#D
+Q: Мы долго __________ (ждать) автобус, но он так и не __________ (прийти).
+A: ждали; пришёл
+W: Plural past: ждали. «Автобус» is masculine → пришёл (irregular past of «прийти»).
+
+#D
+Q: Почему ты не __________ (прийти) вчера на урок? — Я __________ (болеть).
+N: Both speakers are women.
+A: пришла; болела
+W: Feminine past: пришла (irregular: пришёл, пришла), болела.
+
+#D
+Q: Завтра я __________ (быть) занят, но в субботу __________ (смочь) встретиться.
+A: буду; смогу
+W: The future of «быть»: буду (занят). «Смочь» is perfective → смогу = future.
+
+#D
+Q: Если ты __________ (опоздать), мы __________ (уехать) без тебя.
+A: опоздаешь; уедем
+W: Russian uses the future after «если» for a future event: опоздаешь (perfective). «Уехать» → уедем (perfective future).
+
+#D
+Q: Мой сын __________ (хотеть) научиться играть на гитаре, и мы __________ (купить) ему гитару на день рождения.
+A: хочет; купим
+W: «Хотеть» → он хочет (now). «Купить» is perfective → мы купим = future.
+
+#D
+Q: Вы __________ (есть) мясо? — Нет, мы не __________ (есть) мяса: мы вегетарианцы.
+A: едите; едим
+W: «Есть» (to eat) is irregular: ем, ешь, ест, едим, едите, едят.
+
+#E
+Q: Вчера я два часа __________ (решать / решить) задачу и наконец __________ (решать / решить) её.
+A: решал; решил
+W: «Два часа» describes the effort over time → imperfective: решал. «Наконец» marks the successful result → perfective: решил.
+
+#E
+Q: Каждое лето мы __________ (отдыхать / отдохнуть) на море.
+A: отдыхаем
+W: A repeated, habitual action («каждое лето») → imperfective, here in the present: отдыхаем.
+
+#E
+Q: Я __________ (покупать / купить) хлеб каждый день, но сегодня забыла.
+A: покупаю
+W: «Каждый день» = repetition → imperfective: покупаю.
+
+#E
+Q: Подожди, я сейчас __________ (заканчивать / закончить) письмо, и пойдём.
+A: закончу
+W: One action whose completion allows the next step → perfective future: закончу.
+
+#E
+Q: Мой брат __________ (учить / выучить) все слова за один вечер.
+A: выучил
+W: «За один вечер» (within one evening) presents a completed result → perfective: выучил («выучить» = to learn completely).
+
+@block 2 | Cases
+#A
+Q: Я пользуюсь эт__ приложени__ каждый день.
+A: этим приложением
+W: «Пользоваться чем?» → instrumental: это приложение → этим приложением (-им, -ем).
+
+#A
+Q: Вчера мы ходили в гости к наш__ нов__ сосед__ — к Ивану и его жене.
+A: нашим новым соседям
+W: «К» + dative; two people → plural: нашим новым соседям (-им, -ым, -ям).
+
+#A
+Q: Я рассказал о сво__ поездк__ всем коллег__.
+A: своей поездке; коллегам
+W: «О чём?» → prepositional: своей поездке. «Рассказать кому?» → dative plural: всем коллегам.
+
+#A
+Q: У мо__ брат__ нет машин__, поэтому он ездит на велосипеде.
+A: моего брата; машины
+W: «У» + genitive names the owner: моего брата. «Нет» → genitive: машины.
+
+#A
+Q: Мы гордимся нашим сыном: он стал хорош__ врач__.
+A: хорошим врачом
+W: «Стать кем?» → instrumental: хорошим врачом (stressed -ом after ч).
+
+#B
+Q: Я очень благодарен __________ (наш учитель).
+A: нашему учителю
+W: The adjective «благодарен» asks кому? → dative: нашему учителю.
+
+#B
+Q: Мне нужно купить подарок для __________ (моя сестра).
+A: моей сестры
+W: «Для» (for) → genitive feminine: моя сестра → моей сестры (-ей, -ы).
+
+#B
+Q: Через три __________ (месяц) я поеду в Китай.
+A: месяца
+W: After 3 → genitive singular: месяц → месяца (1 месяц, 2–4 месяца, 5+ месяцев). «Через» + accusative = in three months.
+
+#B
+Q: Студенты задают __________ (я) много вопросов.
+A: мне
+W: «Задавать кому?» → dative: я → мне. «Много вопросов» is the genitive plural after «много».
+
+#C
+Q: Я вернусь ___ работ__ в шесть и сразу пойду ___ спортзал.
+A: с работы; в спортзал
+W: «С работы» (from work) → с + genitive. «Куда?» → в + accusative: спортзал (unchanged).
+
+#C
+Q: Летом мы будем отдыхать ___ Чёрн__ мор__ две недели.
+A: на Чёрном море
+W: The sea takes «на»; где? → prepositional: на Чёрном море.
+
+@block 3 | Whole sentences
+#F
+Q: завтра / я / встать / в / шесть / часы
+N: Build a future-tense sentence.
+A: Завтра я встану в шесть часов.
+W: «Встать» (perfective) → simple future: встану. Clock time: в шесть часов (6 → genitive plural).
+
+#F
+Q: вчера / мы / весь / вечер / смотреть / фотографии / из / отпуск
+N: Build a past-tense sentence.
+A: Вчера мы весь вечер смотрели фотографии из отпуска.
+W: «Весь вечер» (duration) → imperfective: смотрели. «Из отпуска» → из + genitive.
+
+#F
+Q: когда / я / закончить / университет / я / стать / учитель
+N: Build the sentence "When I finish university, I'll become a teacher."
+A: Когда я закончу университет, я стану учителем.
+W: Future after «когда»: закончу (perfective). «Стану» = the future of «стать». «Стать кем?» → instrumental: учителем.
+
+#F
+Q: мой / подруга / уже / три / год / жить / в / Испания
+N: Build the sentence "My friend (f) has been living in Spain for three years."
+A: Моя подруга уже три года живёт в Испании.
+V: Моя подруга живёт в Испании уже три года.
+W: Still going on → present tense: живёт. After 3 → года. «Где?» → в + prepositional: Испании.
+
+#G
+Q: Вчера моя сестра не могл прийти, потому что она болел.
+N: Find and correct 2 errors.
+A: Вчера моя сестра не могла прийти, потому что она болела.
+W: «Сестра» / «она» → feminine past: могла (irregular past of «мочь»), болела.
+
+#G
+Q: Когда я буду приехать в Москву, я тебе пишу.
+N: Find and correct 2 errors.
+A: Когда я приеду в Москву, я тебе напишу.
+W: «Приехать» is perfective: its future is «приеду», never «буду приехать». The main clause refers to the future too → perfective future: напишу.
+
+#H
+Q: Каждый день я покупаю свежий хлеб.
+N: Put it in the past.
+A: Каждый день я покупал свежий хлеб.
+V: Каждый день я покупала свежий хлеб.
+W: A repeated action keeps the imperfective: покупал (a man speaking) or покупала (a woman).
+
+#I
+Q: Завтра я __________ (встретиться) со сво__ друзь__, и мы __________ (пойти) в нов__ ресторан.
+A: встречусь; своими друзьями; пойдём; новый
+W: «Встретиться» is perfective → встречусь (т → ч in the я-form). «Со своими друзьями» → instrumental plural. «Пойти» → пойдём. «В новый ресторан» → accusative, unchanged.
+
+#I
+Q: Вчера мой брат __________ (купить) машину, а сегодня он __________ (ехать) на ней на работу.
+A: купил; едет
+W: Masculine past: купил. Present tense now: он едет (stem ед-). «На ней» = by it (на машине).

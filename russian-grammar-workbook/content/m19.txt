@@ -1,0 +1,289 @@
+@module 19
+@part IV
+@title Present-tense conjugation
+@ru Настоящее время — читаю, говорю, пишу, могу, хочу
+@learn Conjugate first-conjugation (-е- / -ё-) and second-conjugation (-и-) verbs in all six persons.
+@learn Handle stem changes: писать → пишу, жить → живу, давать → даю, советовать → советую.
+@learn Apply the я-form consonant change of the second conjugation: вижу, хожу, плачу, люблю, готовлю.
+@learn Master the irregular verbs you need daily: хотеть, мочь, есть, ехать, идти.
+@target я могу · ты можешь
+@target я хочу · мы хотим
+@target я пишу · они пишут
+@target я хожу · он ходит
+@target они любят
+@remix Redo Stage A in all six persons for each verb (читаю, читаешь … читают) — out loud, without the table.
+@remix Change every subject in Stage C to its opposite number (я ↔ мы, ты ↔ вы, он ↔ они).
+@remix Describe a normal working day with ten different verbs in the present tense.
+
+@lesson
+## Two conjugations
+Every Russian verb belongs to one of two families. They differ in the vowel of the endings: **-е- / -ё-** (first conjugation) or **-и-** (second conjugation), and in the они-form: **-ут / -ют** or **-ат / -ят**.
+
+| | 1st: читать | 2nd: говорить |
+|---|---|---|
+| я | читаю | говорю |
+| ты | читаешь | говоришь |
+| он, она | читает | говорит |
+| мы | читаем | говорим |
+| вы | читаете | говорите |
+| они | читают | говорят |
+
+How do you know the family? Most verbs in **-ить** are second conjugation; most verbs in **-ать, -ять, -овать** are first. About a dozen verbs in -еть / -ать belong to the second conjugation and are worth learning as a list: **видеть, смотреть, сидеть, лежать, слышать, держать, спать, стоять, бояться, зависеть, терпеть.**
+
+## Patterns inside the first conjugation
+| Pattern | Examples |
+|---|---|
+| -овать / -евать → -у- | советовать → советую, танцевать → танцую, пользоваться → пользуюсь |
+| -авать drops -ва- | давать → даю, вставать → встаю, узнавать → узнаю |
+| consonant change in every form | писать → пишу, пишешь; сказать → скажу; искать → ищу |
+| a new stem | жить → живу; пить → пью; мыть → мою; ждать → жду; брать → беру |
+| stressed endings → ё | живёшь, ждёшь, идёшь, пьёшь, даёшь |
+
+## The я-form change in the second conjugation
+Only the **я-form** changes its last consonant: д → ж (видеть → вижу, ходить → хожу), т → ч (платить → плачу), с → ш (просить → прошу), з → ж (возить → вожу), ст → щ (чистить → чищу), and б, п, в, м add л (люблю, куплю, готовлю, кормлю). All other forms keep the original consonant: *хожу, ходишь, ходит.*
+
+::: rule Spelling after ж, ш, ч, щ
+These letters are never followed by ю or я in endings: *слышу, слышат; учу, учат; держу, держат.*
+:::
+
+| | хотеть | мочь | есть (eat) | ехать | идти |
+|---|---|---|---|---|---|
+| я | хочу | могу | ем | еду | иду |
+| ты | хочешь | можешь | ешь | едешь | идёшь |
+| он, она | хочет | может | ест | едет | идёт |
+| мы | хотим | можем | едим | едем | идём |
+| вы | хотите | можете | едите | едете | идёте |
+| они | хотят | могут | едят | едут | идут |
+
+::: mistakes Typical slips
+!> я можу || я могу || г in the я- and они-forms
+!> я пишаю || я пишу || stem пиш-, no -а-
+!> они любют || они любят || second conjugation: -ят
+!> я ходю || я хожу || д → ж in the я-form
+!> я хотю || я хочу || хотеть is irregular
+:::
+@endlesson
+
+@stage A
+#D
+Q: Я каждый день __________ (читать) новости по-русски.
+H: 1st conj. · я
+A: читаю
+W: First conjugation: the stem чита- + -ю: читаю (читаешь, читает …).
+
+#D
+Q: Мы __________ (говорить) с учителем только по-русски.
+H: 2nd conj. · мы
+A: говорим
+W: Second conjugation: the stem говор- + -им: мы говорим.
+
+#D
+Q: Что ты __________ (делать) вечером?
+H: 1st conj. · ты
+A: делаешь
+W: First conjugation: the stem дела- + -ешь: ты делаешь (делаю, делаешь, делает … делают). Most verbs in -ать follow this model.
+
+#D
+Q: Мои студенты хорошо __________ (понимать) по-немецки.
+H: 1st conj. · они
+A: понимают
+W: First conjugation, они-form: понима- + -ют: понимают.
+
+#D
+Q: Ты __________ (видеть) тот красный дом?
+H: 2nd conj. · ты
+A: видишь
+W: Second conjugation: вид- + -ишь: видишь. Only the я-form changes д → ж (вижу).
+
+#D
+Q: Я __________ (видеть) этого человека каждый день.
+H: 2nd conj. · я · д → ж
+A: вижу
+W: Second-conjugation verbs change the last stem consonant in the я-form only: видеть → вижу (д → ж).
+
+#D
+Q: Мы __________ (жить) в маленькой квартире.
+H: stem жив-
+A: живём
+W: «Жить» adds -в-: живу, живёшь, живёт, живём, живёте, живут. The ending is stressed, so you write -ём.
+
+#D
+Q: Она __________ (писать) письмо бабушке.
+H: stem пиш-
+A: пишет
+W: «Писать» has the stem пиш- in every present-tense form: пишу, пишешь, пишет.
+
+@stage B
+#D
+Q: Мои дети __________ (любить) мороженое, а я __________ (любить) торты.
+A: любят; люблю
+W: Second conjugation: они любят. In the я-form б → бл: люблю.
+
+#D
+Q: Ты __________ (хотеть) чаю? — Нет, спасибо, я __________ (хотеть) кофе.
+A: хочешь; хочу
+W: «Хотеть» is irregular: хочу, хочешь, хочет in the singular, хотим, хотите, хотят in the plural.
+
+#D
+Q: Вы __________ (знать), где здесь аптека? — Нет, я не __________ (знать).
+A: знаете; знаю
+W: A regular first-conjugation verb: знаю, знаешь, знает … знаете.
+
+#D
+Q: Я __________ (платить) за квартиру каждый месяц.
+A: плачу
+W: Second conjugation; т → ч in the я-form: платить → плачу (платишь, платит).
+
+#D
+Q: Наша кошка весь день __________ (спать) на диване.
+A: спит
+W: «Спать» is second conjugation: сплю, спишь, спит (п → пл only in the я-form).
+
+#D
+Q: Я __________ (просить) тебя: говори медленнее!
+A: прошу
+W: Second conjugation; с → ш in the я-form: просить → прошу (просишь, просит).
+
+#D
+Q: Мы __________ (ждать) автобус уже двадцать минут.
+A: ждём
+W: «Ждать» is first conjugation with the stem жд-: жду, ждёшь, ждёт, ждём, ждёте, ждут.
+
+#D
+Q: Вечером я __________ (готовить) ужин, а муж __________ (мыть) посуду.
+A: готовлю; моет
+W: «Готовить»: в → вл in the я-form: готовлю. «Мыть» has the stem мо-: мою, моешь, моет.
+
+@stage C
+#D
+Q: Я __________ (ходить) в спортзал, а мой брат __________ (ходить) в бассейн.
+A: хожу; ходит
+W: Second conjugation: only the я-form changes д → ж: хожу, but он ходит.
+
+#D
+Q: Ты __________ (слышать) музыку? — Да, я хорошо её __________ (слышать).
+A: слышишь; слышу
+W: Second conjugation; after ш the я-ending is -у (not -ю): слышу, слышишь. The они-form is слышат.
+
+#D
+Q: Мы __________ (давать) уроки онлайн, а наши коллеги __________ (давать) уроки в школе.
+A: даём; дают
+W: Verbs in -авать drop -ва- in the present: даю, даёшь, даёт, даём, даёте, дают.
+
+#D
+Q: Почему ты всегда __________ (опаздывать)? — Я не __________ (опаздывать), это твои часы спешат!
+A: опаздываешь; опаздываю
+W: A regular first-conjugation verb: опаздываю, опаздываешь, опаздывает.
+
+#D
+Q: Студенты __________ (учить) новые слова, а преподаватель __________ (проверять) их.
+A: учат; проверяет
+W: «Учить» is second conjugation; after ч the они-form is -ат: учат. «Проверять» is first conjugation: он проверяет.
+
+#D
+Q: Я __________ (рисовать) с детства, а мой сын __________ (танцевать).
+A: рисую; танцует
+W: Verbs in -овать / -евать replace the suffix with -у-: рисовать → рисую, танцевать → танцует.
+
+#D
+Q: Что вы __________ (пить) по утрам? — Мы __________ (пить) зелёный чай.
+A: пьёте; пьём
+W: «Пить» has the stem пь-: пью, пьёшь, пьёт, пьём, пьёте, пьют.
+
+#D
+Q: Я не __________ (мочь) найти ключи. Ты __________ (мочь) мне помочь?
+A: могу; можешь
+W: «Мочь»: могу, можешь, может, можем, можете, могут — г in the я- and они-forms, ж in all the others.
+
+@stage D
+#F
+Q: мой / студенты / писать / диктант / каждый / неделя
+N: Build a present-tense sentence.
+A: Мои студенты пишут диктант каждую неделю.
+V: Каждую неделю мои студенты пишут диктант.
+W: «Писать» → они пишут (stem пиш-). «Каждую неделю» is the accusative of time.
+
+#F
+Q: я / не / понимать / почему / ты / не / звонить / я
+N: Build the sentence "I don't understand why you don't call me."
+A: Я не понимаю, почему ты мне не звонишь.
+V: Я не понимаю, почему ты не звонишь мне.
+W: «Понимать» → я понимаю. «Звонить» (second conjugation) → ты звонишь. «Кому?» → dative: мне. Russian puts a comma before «почему».
+
+#F
+Q: мы / с / жена / ездить / на / работа / на / метро
+N: Build a present-tense sentence.
+A: Мы с женой ездим на работу на метро.
+W: «Мы с женой» takes a plural verb: ездим (second conjugation). «На работу» (куда?) → accusative. «На метро» = by metro.
+
+#G
+Q: Я не можу прийти, потому что весь день пишаю отчёт.
+N: Find and correct 2 errors.
+A: Я не могу прийти, потому что весь день пишу отчёт.
+W: «Мочь» → я могу (г, not ж, in the я-form). «Писать» → я пишу (stem пиш-, no -а-).
+
+#G
+Q: Мои дети любют спорт и ходят в бассейн, а я ходю в спортзал.
+N: Find and correct 2 errors.
+A: Мои дети любят спорт и ходят в бассейн, а я хожу в спортзал.
+W: The second-conjugation они-form ends in -ят: любят. In the я-form д → ж: хожу.
+
+#H
+Q: Я живу в Берлине и работаю в школе.
+N: Change the subject to «мы».
+A: Мы живём в Берлине и работаем в школе.
+W: «Жить» → мы живём (stressed -ём). «Работать» → мы работаем (-ем).
+
+#H
+Q: Ты пишешь мне каждый день?
+N: Change «ты» to «вы».
+A: Вы пишете мне каждый день?
+W: The first-conjugation вы-form ends in -ете: пишете (the stem пиш- stays).
+
+#I
+Q: Каждое утро я __________ (вставать) в шесть, __________ (пить) кофе и __________ (идти) на работу.
+A: встаю; пью; иду
+W: «Вставать» drops -ва-: встаю. «Пить» → пью (stem пь-). «Идти» → иду.
+
+@stage E
+#A
+Q: Мы с друзьями игра__ в футбол, а наши жёны говор__ о политике.
+A: играем; говорят
+W: «Мы с друзьями» means мы → играем (first conjugation). «Наши жёны» = они → говорят (second conjugation, -ят).
+
+#A
+Q: Я плохо сплю, потому что сосед__ громко слуша__ музыку.
+A: соседи; слушают
+W: «Соседи» is a plural subject → они слушают (first conjugation -ют).
+
+#D
+Q: Куда вы __________ (ехать)? — Мы __________ (ехать) в аэропорт.
+A: едете; едем
+W: «Ехать» uses the stem ед-: еду, едешь, едет, едем, едете, едут.
+
+#D
+Q: Мой брат __________ (есть) очень быстро, а я __________ (есть) медленно.
+A: ест; ем
+W: «Есть» (to eat) is irregular: ем, ешь, ест, едим, едите, едят.
+
+#F
+Q: ты / часто / пользоваться / этот / словарь
+N: Build the question "Do you often use this dictionary?"
+A: Ты часто пользуешься этим словарём?
+W: «Пользоваться» (-ова- → -у-): ты пользуешься. «Чем?» → instrumental: этим словарём.
+
+#F
+Q: что / ты / советовать / я / читать / по-русски
+N: Build the question "What do you recommend I read in Russian?"
+A: Что ты советуешь мне читать по-русски?
+W: «Советовать» (-ова- → -у-): ты советуешь. «Советовать кому?» → dative: мне, + infinitive: читать.
+
+#I
+Q: Мы __________ (жить) далеко от центра, поэтому __________ (ездить) на работу на машине и __________ (тратить) на дорогу час.
+A: живём; ездим; тратим
+W: «Мы» → живём (stem жив-), ездим and тратим (second conjugation; the д → ж and т → ч changes appear only in the я-form: езжу, трачу).
+
+#I
+Q: Мой сын __________ (хотеть) стать врачом и много __________ (учиться), а дочь __________ (мечтать) о театре.
+A: хочет; учится; мечтает
+W: «Хотеть» → он хочет. «Учиться» (second conjugation, reflexive) → он учится. «Мечтать» → она мечтает.

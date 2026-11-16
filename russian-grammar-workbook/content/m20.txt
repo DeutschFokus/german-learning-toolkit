@@ -1,0 +1,296 @@
+@module 20
+@part IV
+@title Past tense
+@ru Прошедшее время — работал, работала, работали · был, была, было
+@learn Form the past tense: infinitive stem + -л, -ла, -ло, -ли (and -лся, -лась, -лись).
+@learn Make the past agree with the subject's gender and number — including я, ты and polite вы.
+@learn Learn the irregular pasts: шёл, пришёл, нашёл, мог, ел, сел, лёг.
+@learn Use был / была / было / были correctly, including impersonal «мне было холодно» and «не было».
+@target у меня была плохая связь
+@target ты меня не услышала
+@target она пришла · он пришёл
+@target я мог · она могла
+@target мне было холодно
+@remix Redo Stages A and B twice: once as a man speaking, once as a woman speaking.
+@remix Turn every present-tense sentence in Module 19, Stage C, into the past tense.
+@remix Write what you did yesterday from morning to evening in eight sentences.
+
+@lesson
+## Formation: stem + л
+Take the infinitive, remove **-ть**, and add **-л, -ла, -ло, -ли**. The past has **no person endings** — only gender and number:
+
+| | работать | говорить | заниматься |
+|---|---|---|---|
+| он (я, ты — a man) | работал | говорил | занимался |
+| она (я, ты — a woman) | работала | говорила | занималась |
+| оно | работало | говорило | занималось |
+| они, мы, вы | работали | говорили | занимались |
+
+So *я работал* is said by a man and *я работала* by a woman. **Вы** always takes the plural, even when you politely address one person: *Вы были в Москве?* Reflexive verbs add **-ся** after a consonant and **-сь** after a vowel: *занимался, занималась.*
+
+## Irregular pasts
+| Infinitive | Past |
+|---|---|
+| идти | шёл, шла, шли |
+| прийти / уйти | пришёл, пришла, пришли · ушёл, ушла, ушли |
+| найти | нашёл, нашла, нашли |
+| мочь / помочь | мог, могла, могли · помог, помогла |
+| есть (eat) | ел, ела, ели |
+| сесть / лечь | сел, села · лёг, легла |
+| нести | нёс, несла, несли |
+| привыкнуть | привык, привыкла, привыкли |
+
+## The past of быть
+**был, была, было, были** agrees with the **subject**: *У меня была плохая связь* (связь is feminine). Sentences without a subject use the neuter **было**: *Мне было холодно. Не было интернета. Сколько людей было на концерте?*
+
+> Вчера у меня **была плохая связь**. || the subject is «связь» (f)
+> Поэтому ты меня не **услышала**. || addressed to a woman
+> Моя сестра **пришла** поздно. || irregular: пришёл, пришла
+> Я не **мог** прийти. || irregular: мог, могла
+> Мне **было** очень холодно. || no subject → neuter
+
+::: tip A first look at aspect
+Past-tense verbs come in two aspects. **Смотрел весь вечер** describes the activity over a period (imperfective); **посмотрел фильм** presents a finished whole (perfective). Modules 22 and 23 train this choice; here you meet it twice.
+:::
+
+::: mistakes Your real mistakes
+!> у меня был плохая связь || у меня была плохая связь || связь is feminine → была
+!> ты меня не услышал (to a woman) || ты меня не услышала || ты = she → -ла
+!> она пришёл || она пришла || the past agrees in gender
+!> я можил || я мог || irregular past of мочь
+!> мне был холодно || мне было холодно || no subject → было
+:::
+@endlesson
+
+@stage A
+#D
+Q: Вчера я __________ (работать) до восьми вечера.
+H: the speaker is a man
+A: работал
+W: Past = stem + -л. A male speaker uses the masculine form: работал.
+
+#D
+Q: Анна __________ (читать) эту книгу в прошлом году.
+H: она
+A: читала
+W: «Анна» is a woman, so the past is feminine: the stem чита- + -ла: читала. A man would say «читал».
+
+#D
+Q: Мои родители __________ (жить) в деревне.
+H: они
+A: жили
+W: Plural past: the stem жи- + -ли: жили. The past has no person endings, only gender and number.
+
+#D
+Q: Письмо __________ (лежать) на столе.
+H: оно
+A: лежало
+W: «Письмо» is neuter, so the past ends in -ло: лежало.
+
+#D
+Q: Вчера мы __________ (быть) в театре.
+H: мы
+A: были
+W: Plural past of «быть»: были (был, была, было, были).
+
+#D
+Q: Ты __________ (заниматься) вчера спортом, Маша?
+H: ты = Маша
+A: занималась
+W: «Ты» is a woman → feminine past -ла; after a vowel the reflexive particle is -сь: занималась.
+
+#D
+Q: Мой брат __________ (идти) домой, когда начался дождь.
+H: irregular
+A: шёл
+W: «Идти» has an irregular past: шёл, шла, шло, шли.
+
+#D
+Q: Мы долго искали ключи и наконец __________ (найти) их.
+H: irregular
+A: нашли
+W: «Найти» builds its past on наш-: нашёл, нашла, нашли.
+
+@stage B
+#D
+Q: Вчера у меня __________ (быть) плохая связь, поэтому урок __________ (закончиться) рано.
+A: была; закончился
+W: «Связь» is feminine → была. «Урок» is masculine → закончился (-лся).
+
+#D
+Q: Я не __________ (мочь) прийти, потому что __________ (болеть).
+N: The speaker is a woman.
+A: могла; болела
+W: «Мочь» has an irregular past: мог, могла, могли. «Болеть» → болела (feminine -ла).
+
+#D
+Q: Почему вы мне не __________ (позвонить)?
+A: позвонили
+W: «Вы» always takes the plural past, even when it politely addresses one person: вы позвонили.
+
+#D
+Q: Студенты __________ (прийти) на урок вовремя, а преподаватель __________ (опоздать).
+N: The teacher is a woman.
+A: пришли; опоздала
+W: «Прийти» → пришли (irregular: пришёл, пришла, пришли). «Опоздать» → опоздала (feminine).
+
+#D
+Q: В детстве мой сын всегда __________ (есть) всё, что __________ (лежать) на тарелке.
+A: ел; лежало
+W: «Есть» (to eat) → ел, ела, ели. «Всё» is neuter, so the verb in the clause is neuter: лежало.
+
+#D
+Q: Мне __________ (быть) очень холодно, и я __________ (надеть) свитер.
+N: The speaker is a man.
+A: было; надел
+W: Impersonal sentences with a dative person («мне холодно») use the neuter past: было. «Надеть» → надел (masculine).
+
+#D
+Q: Когда я __________ (быть) маленький, я __________ (бояться) темноты.
+N: The speaker is a man.
+A: был; боялся
+W: «Быть» → был (masculine). «Бояться» → боялся (masculine -лся).
+
+#D
+Q: Где вы __________ (отдыхать) прошлым летом? — Мы __________ (ездить) в Испанию.
+A: отдыхали; ездили
+W: Plural past: отдыхали, ездили («ездили» = went there and came back).
+
+@stage C
+#D
+Q: Мой брат __________ (прийти) домой в семь, а сестра __________ (прийти) в девять.
+A: пришёл; пришла
+W: «Прийти» has irregular past forms: пришёл (masculine), пришла (feminine), пришли (plural).
+
+#D
+Q: Олег __________ (мочь) помочь нам, но не __________ (захотеть).
+A: мог; захотел
+W: «Мочь» → мог (masculine, irregular). «Захотеть» → захотел (regular).
+
+#D
+Q: Анна __________ (сесть) на диван, а Олег __________ (лечь) на пол.
+A: села; лёг
+W: Irregular pasts: сесть → сел, села; лечь → лёг, легла.
+
+#D
+Q: Вчера __________ (быть) моя очередь готовить ужин, а сегодня — твоя.
+A: была
+W: The past of «быть» agrees with its subject «очередь» (feminine): была.
+
+#D
+Q: В этом году __________ (быть) очень холодная зима, а лето __________ (быть) жаркое.
+A: была; было
+W: «Быть» agrees with each subject: зима (feminine) → была, лето (neuter) → было.
+
+#E
+Q: Вчера я весь вечер __________ (смотреть / посмотреть) сериал.
+N: The speaker is a man.
+A: смотрел
+W: «Весь вечер» describes the activity over a period of time → imperfective: смотрел. «Посмотрел» would present a finished whole (for example, one episode).
+
+#E
+Q: Вчера я __________ (смотреть / посмотреть) новый фильм и сразу __________ (написать) отзыв.
+N: The speaker is a man.
+A: посмотрел; написал
+W: A chain of completed actions («и сразу») → perfective: first посмотрел, then написал.
+
+#D
+Q: Раньше мы __________ (жить) в Москве, но два года назад __________ (переехать) в Петербург.
+A: жили; переехали
+W: Plural past: жили (a state over a period), переехали (a single move).
+
+@stage D
+#F
+Q: вчера / у / я / быть / плохой / связь
+N: Build a past-tense sentence.
+A: Вчера у меня была плохая связь.
+V: У меня вчера была плохая связь.
+W: «Связь» (feminine) is the subject, so the past of «быть» agrees with it: была плохая связь.
+
+#F
+Q: поэтому / ты / я / не / услышать
+N: Build the sentence "That's why you didn't hear me." You are talking to a woman.
+A: Поэтому ты меня не услышала.
+V: Поэтому ты не услышала меня.
+W: Feminine past: услышала. «Услышать кого?» → accusative: меня. The object pronoun usually stands before the negated verb.
+
+#F
+Q: мы / с / брат / не / видеть / друг друга / пять / лет
+N: Build the sentence "My brother and I hadn't seen each other for five years."
+A: Мы с братом не видели друг друга пять лет.
+W: «Мы с братом» → plural past: видели. Duration without a preposition: пять лет.
+
+#G
+Q: Вчера моя сестра пришёл поздно, потому что у неё был плохой связь.
+N: Find and correct 2 errors (each error is a whole phrase).
+A: Вчера моя сестра пришла поздно, потому что у неё была плохая связь.
+W: «Сестра» is feminine → пришла. «Связь» is feminine → была плохая связь (verb and adjective both agree).
+
+#H
+Q: Я читаю интересную книгу.
+N: Put it in the past. The speaker is a woman.
+A: Я читала интересную книгу.
+W: Past = stem + -ла for a female speaker: читала. The object does not change.
+
+#I
+Q: Вчера мы __________ (ходить) в кино, но фильм нам не __________ (понравиться), и мы __________ (уйти) раньше.
+A: ходили; понравился; ушли
+W: Plural past: ходили (went and came back). «Фильм» is the masculine subject of «понравиться» → понравился. «Уйти» → ушли (irregular: ушёл, ушла, ушли).
+
+#I
+Q: Когда моя бабушка __________ (быть) молодой, она __________ (работать) учительницей и __________ (жить) в Сибири.
+A: была; работала; жила
+W: The subject is «бабушка», so every verb is feminine: была, работала, жила.
+
+#D
+Q: Сколько людей __________ (быть) на концерте? — Там __________ (быть) человек триста.
+A: было; было
+W: With «сколько» and with approximate numbers the past of «быть» is neuter singular: было. («Человек триста» = about three hundred people.)
+
+@stage E
+#A
+Q: Вчера мы забыл__ телефон дома, а наша дочь забыл__ ключи.
+A: забыли; забыла
+W: «Мы» → plural past: забыли. «Дочь» is feminine → забыла.
+
+#A
+Q: Мои студенты написал__ контрольную, а я её провер__ вечером.
+N: The speaker is a woman.
+A: написали; проверила
+W: «Студенты» → plural past: написали. A female speaker → проверила.
+
+#D
+Q: Ты уже __________ (поесть)? — Нет, я ещё не __________ (есть).
+N: Both speakers are men.
+A: поел; ел
+W: «Поесть» → поел; «есть» → ел. The past of «есть» is ел, ела, ели.
+
+#F
+Q: я / родиться / в / маленький / город / на / юг / Германия
+N: Build a past-tense sentence. The speaker is a woman.
+A: Я родилась в маленьком городе на юге Германии.
+W: Feminine past with -сь: родилась. «Где?» → prepositional: маленьком городе, на юге. "Of Germany" → genitive: Германии.
+
+#F
+Q: вы / быть / когда-нибудь / в / Россия
+N: Build the polite question "Have you ever been to Russia?"
+A: Вы когда-нибудь были в России?
+V: Вы были когда-нибудь в России?
+W: «Вы» always takes the plural past: были. «Быть где?» → в + prepositional: России.
+
+#G
+Q: Вчера мы ходил в ресторан, но там было очень много людей, и мы ушёл.
+N: Find and correct 2 errors.
+A: Вчера мы ходили в ресторан, но там было очень много людей, и мы ушли.
+W: «Мы» → plural past: ходили, ушли (irregular: ушёл, ушла, ушли). «Было много людей» is correct: with «много» the verb is neuter.
+
+#H
+Q: Мой брат живёт в Москве и работает в банке.
+N: Put it in the past.
+A: Мой брат жил в Москве и работал в банке.
+W: The subject «мой брат» is masculine → жил, работал. The places stay the same: в Москве, в банке.
+
+#I
+Q: Вчера моя подруга __________ (прийти) ко мне в гости, мы __________ (пить) чай и долго __________ (разговаривать).
+A: пришла; пили; разговаривали
+W: «Прийти» → пришла (feminine, irregular). Plural past: пили, разговаривали.
