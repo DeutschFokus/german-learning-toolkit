@@ -1,0 +1,84 @@
+The last pages condense the workbook into decision tools you can keep next to you while speaking, writing or preparing a lesson.
+
+## Prepositions by case
+| Case | Prepositions | Examples |
+|---|---|---|
+| Genitive | из, с (from, since), от, до, после, без, для, у, около, напротив, кроме, из-за, во время, недалеко от | из России, с работы, от брата, до вечера, после урока, без сахара, у меня |
+| Dative | к, по | к врачу, к пятнице, по телефону, по субботам |
+| Accusative | в, на (куда?), через, за (for, within), про, на (for a period) | в школу, на работу, через две недели, за помощь, на неделю |
+| Instrumental | с (with), за, под, над, перед, между | с другом, за домом, перед уроком, между лесом и рекой |
+| Prepositional | в, на (где?), о / об / обо | в России, на работе, о моём плане, обо мне |
+
+**One place, one preposition:** в ↔ из, на ↔ с, к ↔ от (people). *в школе → в школу → из школы; на работе → на работу → с работы; у врача → к врачу → от врача.*
+
+## Verbs and the cases they demand
+| Case | Verbs |
+|---|---|
+| Accusative | видеть, слушать, смотреть, любить, знать, понимать, ждать (people), искать, спрашивать, просить, благодарить, поздравлять (с + instr.), учить, изучать |
+| Genitive | бояться, желать, ждать (ответа), зависеть от, устать от, отказаться от |
+| Dative | помогать, звонить, отвечать, советовать, мешать, обещать, верить, дарить, давать, показывать, объяснять, нравиться, нужно; готовиться к, относиться к, привыкать к |
+| Instrumental | пользоваться, интересоваться, заниматься, увлекаться, гордиться, руководить, стать, быть (past / future), работать (кем?); встречаться с, знакомиться с, согласиться с |
+| Prepositional | думать о, говорить о, рассказывать о, мечтать о, заботиться о, беспокоиться о; участвовать в, сомневаться в, разбираться в |
+| на + accusative | отвечать на, смотреть на, надеяться на, жаловаться на, обижаться на |
+
+## The aspect decision guide
+| Ask yourself | If yes → |
+|---|---|
+| Is it happening now? Is it a habit (каждый день, обычно, часто, всегда)? | imperfective |
+| Does the sentence stress duration (долго, весь вечер, два часа)? | imperfective |
+| Do two actions happen at the same time (пока …)? | imperfective |
+| Am I just naming the activity or asking about experience (Ты читал …?) | imperfective |
+| After начать, продолжать, закончить, перестать, любить? | imperfective infinitive |
+| Is it one whole event with a result (прочитал книгу — it is finished)? | perfective |
+| Is it a sequence of completed steps (пришёл, поел, лёг)? | perfective |
+| Is there a goal reached (наконец, уже + result, за два часа, успеть)? | perfective |
+| A one-time request or a warning (Повторите! Не забудь!)? | perfective |
+| A future promise about one result (я напишу, я позвоню)? | perfective future — never «буду» + perfective |
+
+## Verbs of motion
+| | Now / on the way / one trip | Habit / round trip / ability |
+|---|---|---|
+| on foot | идти: иду, идёшь · шёл, шла | ходить: хожу, ходишь · ходил |
+| by transport | ехать: еду, едешь · ехал | ездить: езжу, ездишь · ездил |
+| set off | пойти, поехать | — |
+| arrive / leave / return | прийти, приехать / уйти, уехать / вернуться | приходить, приезжать / уходить, уезжать / возвращаться |
+
+*Вчера я ходил в кино* = I went and came back. *Когда я шёл домой* = on my way home.
+
+## Time expressions
+| When | How |
+|---|---|
+| в понедельник, в семь часов | в + accusative |
+| на этой / прошлой / следующей неделе | на + prepositional |
+| в мае, в этом месяце, в прошлом году | в + prepositional |
+| утром, вечером, летом, зимой | instrumental, no preposition |
+| через две недели, через два месяца | через + accusative (in, from now) |
+| два дня назад | accusative + назад |
+| до пятницы, после урока, с девяти до пяти | genitive |
+| к пятнице | к + dative (by) |
+| два часа, всю неделю | accusative, no preposition (duration) |
+| на неделю, за два дня | на / за + accusative |
+| каждый день, каждую неделю · по субботам | accusative · по + dative plural |
+| Как давно ты работаешь здесь? | present tense for what is still going on |
+
+## Your signature patterns — the final checklist
+| Pattern | Rule | Modules |
+|---|---|---|
+| с моими студентами | с + instrumental plural | 7, 11 |
+| с моим учителем | the whole phrase changes | 7, 29 |
+| пользуюсь ноутбуком · работаю на ноутбуке | пользоваться + instrumental · на + prepositional | 7, 8, 17 |
+| помогаю моему другу · своим студентам | помогать + dative | 6, 17 |
+| думаю о моём плане | о + prepositional | 8 |
+| отвечаю на этот вопрос | отвечать на + accusative | 2, 17 |
+| относится к китайскому языку | к + dative | 14 |
+| с преподавателем испанского языка | "of Spanish" stays genitive | 4, 18 |
+| через две недели · через два месяца | две + feminine; 2–4 → genitive singular | 15, 16 |
+| у меня нет свободного времени | нет + genitive; время → времени | 4 |
+| у меня была плохая связь · ты меня не услышала | the past agrees with the subject | 20, 25 |
+| зависит от количества учеников | от + genitive; "of students" → genitive plural | 5, 11 |
+| из арабоязычных стран | из + genitive plural | 5, 11 |
+| я не был ни в одной русскоязычной стране | в + prepositional; ни … не | 8, 18 |
+| Как давно ты работаешь здесь? | present for an ongoing situation | 15 |
+| интересуюсь русским языком | интересоваться + instrumental | 7, 24 |
+
+When one of these appears in your speech correctly without thinking, tick it off. When all sixteen are ticked, you have done what this workbook was built for.

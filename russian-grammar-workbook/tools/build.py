@@ -218,7 +218,7 @@ def inline(s, gaps=False, ru=False):
 
 
 def L(s):  # lesson text: English in sans, Russian runs in serif
-    return inline(s, ru=True)
+    return inline(s, gaps=True, ru=True)
 
 
 # ----------------------------------------------------------------------------- lesson markup
@@ -647,13 +647,38 @@ def markup_file(stem):
     return p.read_text(encoding="utf-8").splitlines()
 
 
+def book_stats():
+    st = stats(list(UNITS.values()))
+    total = sum(st.values())
+    mods = sum(1 for u in UNITS.values() if u["kind"] == "module")
+    revs = sum(1 for u in UNITS.values() if u["kind"] == "review")
+    return st, total, mods, revs
+
+
+def distribution_table():
+    st, total, _, _ = book_stats()
+    rows = []
+    for lab, codes, share in TYPE_GROUPS:
+        n = sum(st[c] for c in codes)
+        tags = ", ".join(TYPES[c][0] for c in codes)
+        rows.append(f"<tr><td>{esc(lab)}</td><td>{tags}</td><td class='num'>{n:,}</td>"
+                    f"<td class='num'>{100 * n / max(total, 1):.1f}%</td><td class='num'>{share * 100:.0f}%</td></tr>")
+    rows.append(f"<tr class='tot'><td>Total</td><td></td><td class='num'>{total:,}</td><td class='num'>100%</td><td></td></tr>")
+    return ('<table class="mini dist"><thead><tr><th>Exercise family</th><th>Tags in the margin</th><th>Exercises</th>'
+            '<th>Share</th><th>Target</th></tr></thead><tbody>' + "".join(rows) + "</tbody></table>")
+
+
 def render_front_section(stem, anchor, title, runhead, level=1):
     lines = markup_file(stem)
     if lines is None:
         return ""
-    return (f'<section class="front" id="{anchor}"><h1 class="fm-title" style="string-set: runhead \'{runhead}\'; '
-            f'parthead \'\'; bookmark-level: {level}; bookmark-label: \'{title}\'">{esc(title)}</h1>'
-            f'<div class="lesson">{render_markup(lines)}</div></section>')
+    _, total, mods, revs = book_stats()
+    lines = [ln.replace("{{TOTAL}}", f"{total:,}").replace("{{MODULES}}", str(mods)).replace("{{REVIEWS}}", str(revs))
+             for ln in lines]
+    body = render_markup(lines).replace("<p>@@DISTRIBUTION@@</p>", distribution_table())
+    return (f'<section class="front" id="{anchor}"><h1 class="fm-title" style="string-set: runhead \'{runhead}\', parthead \'\'; '
+            f'bookmark-level: {level}; bookmark-label: \'{title}\'">{esc(title)}</h1>'
+            f'<div class="lesson">{body}</div></section>')
 
 
 def render_cover(total_ex):
@@ -664,7 +689,10 @@ def render_cover(total_ex):
 <div class="cv-main"><div class="cv-title">Russian<br/>Grammar<br/>Mastery</div>
 <div class="cv-ru">Русская грамматика без угадывания</div>
 <div class="cv-rule"></div>
-<div class="cv-sub">A personalized workbook built from real mistakes.<br/>30 modules · 8 cumulative reviews · {total_ex:,} sentence exercises,<br/>each with its answer and a short explanation directly underneath.</div></div>
+<div class="cv-sub">A personalized workbook built from real mistakes —<br/>every exercise a complete Russian sentence, with its answer<br/>and a short explanation directly underneath.</div></div>
+<div class="cv-stats"><div class="cv-stat"><div class="cv-n">30</div><div class="cv-l">modules</div></div>
+<div class="cv-stat"><div class="cv-n">8</div><div class="cv-l">cumulative reviews</div></div>
+<div class="cv-stat"><div class="cv-n">{total_ex:,}</div><div class="cv-l">sentence exercises</div></div></div>
 <div class="cv-foot">Cases · Endings · Prepositions · Conjugation · Aspect · Word order</div></section>'''
 
 

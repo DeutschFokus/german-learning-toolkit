@@ -1,0 +1,47 @@
+## How an exercise page works
+Every exercise follows the same layout:
+- the **number** and a small **type tag** in the left margin;
+- an **instruction** in italics when the task needs one (tense, speaker, number of errors);
+- the **Russian sentence** in large type, with gaps or chunks;
+- a **writing line** for your answer;
+- the **answer** and a short **explanation** in small grey type underneath.
+
+Before you start a page, cover the grey lines with a bookmark, a folded sheet or a ruler. Write your answer, then slide the cover down to check — one exercise at a time. The grey text is deliberately quiet so that you do not read it by accident, but it stays legible when you look for it, also in black-and-white print.
+
+## Reading the gaps
+| Gap | Meaning | Example |
+|---|---|---|
+| a short line after a stem | write only the ending (which may be empty) | мо__ нов__ → моим новым |
+| a medium line | write one whole word, usually a preposition | ___ работ__ → с работы |
+| a long line + words in brackets | write the brackets in the right form | ___________ (мой друг) → моему другу |
+| chunks separated by boxes | build a full sentence from dictionary forms | я / помогать / мой / брат |
+
+Words in the brackets are always in their dictionary form: nominative singular for nouns and adjectives, the infinitive for verbs. When two verbs are given — *(читать / прочитать)* — choose one and put it in the right form. In error-correction tasks an "error" can be a whole phrase: if one wrong case decision spoils three words, that counts as one error.
+
+## Hints, notes and alternatives
+In **Stage A** of each module a small teal **hint** names the question word or the case. Later stages remove it. Instructions such as *"The speaker is a woman"* are there whenever Russian grammar needs that information (past tense, ты-forms). A grey **"Also correct"** line lists other natural answers — Russian word order is flexible, and мой / свой or two aspects are sometimes both possible. If your answer matches one of them, it is right.
+
+## The five stages of a module
+| Stage | Purpose |
+|---|---|
+| A · Guided practice | one rule at a time, with hints |
+| B · Independent practice | longer sentences, no case labels |
+| C · Contrast practice | look-alike sentences that need different forms |
+| D · Mixed practice | unjumble, correct, transform, mixed completion |
+| E · Mastery check | everything without hints — this is the test |
+
+## The 90% rule
+Count your correct answers for the whole module and enter them in the **progress tracker** at the end of the module and in the **master tracker** at the front of the book. The target is **36 / 40 (90%) without looking at the answers**. Count an answer as correct only if every word is right: ending, spelling and agreement (writing е for ё is fine).
+
+Below 90%, do **not** simply redo the same 40 sentences — you would only be remembering answers. Use the **retry remix** box at the end of the module: it tells you how to turn the same sentences into new ones (singular ↔ plural, masculine ↔ feminine, present ↔ past, another subject). Do the remix, wait a few days, then take the Stage E mastery check again.
+
+## Reviews
+After each group of modules there is a **cumulative review** of 35 questions. Reviews recycle earlier grammar in new sentences and have no hints. Take them on a separate day, not straight after the last module. A review below 32 / 35 tells you which modules to revisit: write the module number next to every mistake.
+
+## A realistic plan
+Two or three sessions of 45–60 minutes a week: the lesson and Stages A–B in the first session, Stages C–E in the second. At that pace one module takes about a week, and the whole workbook about eight months including reviews. An intensive plan (one module every two or three days) takes about three months. Steady beats intensive: grammar becomes automatic through spaced repetition, not through one long weekend.
+
+## Small print
+- Stress marks (´) appear in lesson examples to help pronunciation. Russians do not write them in normal texts, and you do not need to write them in your answers.
+- **ё** is printed where it matters (живёшь, моём); writing е instead is not an error in Russian, but ё shows you the stress.
+- Explanations are in English, with Russian forms in «guillemets». "→" means "becomes" or "requires".

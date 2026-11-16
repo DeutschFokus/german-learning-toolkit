@@ -35,8 +35,8 @@ b { font-weight: 650; }
 
 /* ------------------------------------------------------------------ cover */
 .cover { page: cover; position: relative; height: 296mm; color: #F7F2E8; overflow: hidden; }
-.cv-pattern { position: absolute; right: -6mm; top: 24mm; width: 92mm; text-align: right; }
-.cv-q { font-family: "PT Serif"; font-style: italic; font-size: 25pt; line-height: 1.55; color: #2E4A60; }
+.cv-pattern { position: absolute; right: 22mm; top: 20mm; width: 90mm; text-align: right; }
+.cv-q { font-family: "PT Serif"; font-style: italic; font-size: 21pt; line-height: 1.6; color: #34506A; }
 .cv-top { position: absolute; left: 24mm; top: 24mm; font-size: 7.8pt; font-weight: 600; letter-spacing: .2em;
   text-transform: uppercase; color: #7FB7B2; }
 .cv-main { position: absolute; left: 24mm; top: 92mm; width: 150mm; }
@@ -212,3 +212,13 @@ td.m-note { font-size: 7.8pt; color: #6B7385; }
 .rev-title { font-size: 21pt; font-weight: 650; color: #1E2B45; margin: 1.6mm 0 1mm; letter-spacing: -.01em; }
 .rev-cov { font-size: 8.4pt; color: #5B6478; font-weight: 600; }
 .rev-intro { font-size: 9pt; color: #43506A; margin: 2.4mm 0 0; }
+
+/* ------------------------------------------------------------------ front-matter extras */
+table.dist td.num, table.dist th:nth-child(n+3) { text-align: right; font-feature-settings: "tnum"; }
+table.dist tr.tot td { font-weight: 650; border-top: .8pt solid #1E2B45; background: #F7F2E8 !important; }
+table.dist td:first-child { color: #1E2B45; }
+
+.cv-stats { position: absolute; left: 24mm; bottom: 42mm; width: 162mm; display: flex; border-top: .6pt solid #3D5274; padding-top: 6mm; }
+.cv-stat { flex: 1; }
+.cv-n { font-family: "Noto Serif Display"; font-weight: 300; font-size: 30pt; line-height: 1; color: #9FCFCA; }
+.cv-l { font-size: 7.4pt; letter-spacing: .14em; text-transform: uppercase; color: #9AA6BC; margin-top: 2.2mm; }

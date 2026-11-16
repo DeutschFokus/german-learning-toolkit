@@ -1,0 +1,50 @@
+## Why this workbook exists
+You already understand a great deal of Russian. You follow conversations, you read simple texts, and you can often say surprisingly complex things. What breaks down is **production**: the moment you build a sentence yourself, the endings, the cases, the prepositions and the verb forms start to wobble. Multiple-choice exercises do not fix this — you can usually recognise the right answer. You need to **generate** it.
+
+So this workbook does one thing, {{TOTAL}} times: it puts you in front of a complete Russian sentence and asks you to make the grammatical decision yourself — the missing ending, the right preposition, the verb form, the aspect, the word order, the mistake hidden in the sentence.
+
+## Built from your own mistakes
+Every module was designed around errors you actually made in conversation. They are not presented once and forgotten; they come back again and again, in new sentences, other genders, other numbers and other cases:
+
+!> с моя учитель || с моим учителем || every word of the phrase changes
+!> пользуюсь ноутбук || пользуюсь ноутбуком || пользоваться чем?
+!> помогаю мой друг || помогаю моему другу || помогать кому?
+!> думаю о мой план || думаю о моём плане || о + prepositional
+!> на этом вопрос || на этот вопрос || отвечать на + accusative
+!> относится к китайский язык || относится к китайскому языку || к + dative
+!> с преподавателем испанском || с преподавателем испанского языка || "of Spanish" → genitive
+!> через два неделм || через две недели || неделя is feminine: две недели
+!> у меня нет свободное время || у меня нет свободного времени || нет → genitive
+
+The sentences themselves come from your world: teaching German online, students from Arabic-speaking countries, learning Russian and Chinese, laptops, phones and bad connections, the gym, friends, plans and travel — mixed with shops, restaurants, transport and home life, so that the grammar does not stay tied to one topic.
+
+## What is inside
+{{MODULES}} modules in five parts, {{REVIEWS}} cumulative reviews and {{TOTAL}} numbered exercises. Every exercise has its answer and a short explanation of **why** the form is needed and **how** the word changes, printed in small grey type directly under the writing line. There is no separate answer key to flip to.
+
+@@DISTRIBUTION@@
+
+| Part | Modules | Focus |
+|---|---|---|
+| I · Foundations | 1–5 | gender, nominative, accusative (objects and direction), genitive |
+| II · All six cases | 6–12 | dative, instrumental, prepositional, adjectives, pronouns, plurals, mixed cases |
+| III · Prepositions and relationships | 13–18 | в / на / из / с, к / от / у, time, numbers, verb government, long sentences |
+| IV · Verbs | 19–26 | present, past, future, aspect, reflexive verbs, confusable verbs, verbs of motion |
+| V · Sentence construction | 27–30 | word order, sentence building, error correction, full integration |
+
+## The nine exercise types
+Each exercise carries a small tag in the left margin that tells you what to do:
+
+| Tag | What you do | Example |
+|---|---|---|
+| ENDINGS | Fill in the missing endings. | Я живу в больш__ дом__. → большом доме |
+| FORM | Put the dictionary form into the right form. | Я помогаю ___ (мой брат). → моему брату |
+| PREP+CASE | Insert the preposition and the endings. | Я думаю ___ мо__ работ__. → о моей работе |
+| VERB FORM | Conjugate the verb. | Я ___ (писать). → пишу |
+| ASPECT | Choose perfective or imperfective and conjugate. | (читать / прочитать) |
+| UNJUMBLE | Build a sentence from dictionary-form chunks. | я / помогать / мой / брат |
+| CORRECT | Find and fix the stated number of errors. | с моя учитель → с моим учителем |
+| TRANSFORM | Change number, tense, person or meaning. | singular → plural |
+| MIXED | Several decisions in one sentence. | verbs and endings together |
+
+## Who it is for
+An adult learner at A1+ to early A2 in independent production — someone who understands more than they can reliably produce. The grammar stays within A1–A2: it goes deep rather than wide, because the goal is not to have seen every rule but to apply the essential ones automatically in real sentences.
