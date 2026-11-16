@@ -1,0 +1,155 @@
+// Phase 2 representative sample. These 20 exercises later move into Review 8.
+@module 0
+@part II
+@title Representative sample
+@ru Образец — все типы упражнений
+@learn See every exercise type once: endings, forms, prepositions, verbs, aspect, unjumbling, correction.
+@learn Check the answer layout: small grey answer and explanation directly under each writing line.
+@learn Check Cyrillic typography, stress marks and spacing.
+@target с моими студентами
+@target пользоваться ноутбуком
+@target нет свободного времени
+@target с работы
+@remix Redo items 1–8 changing every singular noun phrase to plural (моим другом → моими друзьями).
+
+@lesson
+## The instrumental in one minute
+The instrumental answers **кем?** and **чем?** You need it after **с** (together with), after verbs such as **пользоваться**, **интересоваться**, **заниматься**, and to say what someone works as (**работать кем?**). The whole phrase changes, not just the noun: *с моя учитель* is wrong because only the noun was touched.
+
+| | Masculine / neuter | Feminine | Plural |
+|---|---|---|---|
+| Noun | -ом / -ем (-ём) | -ой / -ей (-ёй), -ью | -ами / -ями |
+| Adjective | -ым / -им | -ой / -ей | -ыми / -ими |
+| мой, твой, свой | моим | моей | моими |
+| наш, ваш | нашим | нашей | нашими |
+
+> Я разгова́риваю с **мои́м но́вым преподава́телем**. || I talk with my new teacher.
+> Я по́льзуюсь **ноутбу́ком** и **телефо́ном**. || I use a laptop and a phone.
+> Она́ рабо́тает **врачо́м**. || She works as a doctor.
+
+::: mistakes Your real mistakes
+!> с моя учитель || с моим учителем || pronoun, adjective and noun all change
+!> пользуюсь ноутбук || пользуюсь ноутбуком || пользоваться always asks чем?
+!> с моим студентом (many) || с моими студентами || plural instrumental: -ими … -ами
+:::
+
+::: contrast Работаю на ноутбуке vs пользуюсь ноутбуком
+«Работать на ноутбуке» names the device as the place where the work happens: **на** + prepositional (где?). «Пользоваться ноутбуком» is a verb that simply demands the instrumental (чем?). Same laptop, two different grammatical relationships.
+:::
+@endlesson
+
+@stage A
+#A
+Q: Я живу в больш__ нов__ дом__ недалеко от центра.
+H: где? → prepositional
+A: большом новом доме
+W: «Жить в…» answers где?, so the place is prepositional. Masculine singular: большой → большом (stressed -ом), новый → новом, дом → доме (-е).
+
+#B
+Q: Я часто помогаю __________ (мой младший брат) с домашним заданием.
+H: кому? → dative
+A: моему младшему брату
+W: «Помогать кому?» → dative. Masculine singular: мой → моему, младший → младшему (-ему: the stem ends in ш and the ending is unstressed), брат → брату (-у).
+
+#B
+Q: У меня нет __________ (свободное время) на этой неделе.
+H: нет чего? → genitive
+A: свободного времени
+W: «Нет» (absence) → genitive. Neuter singular: свободное → свободного; «время» has the special genitive «времени» (nouns in -мя insert -ен-: имя → имени).
+
+#D
+Q: Каждый день я __________ (писать) студентам короткие сообщения.
+H: я · present
+A: пишу
+W: Present tense, я-form. «Писать» switches to the stem пиш- in every present-tense form: пишу, пишешь, пишет … пишут.
+
+@stage B
+#A
+Q: Каждую неделю я разговариваю со всеми мо__ русскоязычн__ студент__.
+A: моими русскоязычными студентами
+W: «Разговаривать с кем?» → instrumental. «Всеми» signals plural, so every word takes instrumental plural: мои → моими, русскоязычные → русскоязычными, студенты → студентами (-ами).
+
+#B
+Q: Мы долго говорили о __________ (наш новый проект).
+A: нашем новом проекте
+W: «Говорить о чём?» → prepositional. Masculine singular: наш → нашем, новый → новом, проект → проекте (-е).
+
+#C
+Q: Я каждый день думаю ___ мо__ будущ__ работ__.
+A: о моей будущей работе
+W: «Думать о чём?» → «о» + prepositional. Feminine singular: моя → моей, будущая → будущей (soft-type ending after щ), работа → работе (-е).
+
+#D
+Q: Ты __________ (мочь) позвонить мне завтра утром?
+A: можешь
+W: Present tense, ты-form of «мочь»: могу, можешь, может, можем, можете, могут. The г of the я- and они-forms becomes ж in all the other forms.
+
+@stage C
+#C
+Q: Я работаю ___ ноутбук__, а мой брат работает ___ офис__.
+A: на ноутбуке; в офисе
+W: Both answer где? → prepositional (-е). A laptop is the device you work on → «на ноутбуке»; an office is an enclosed space → «в офисе».
+
+#C
+Q: В семь часов я вернулся ___ работ__ и сразу лёг спать.
+A: с работы
+W: Russians say «на работе» (где?) and «на работу» (куда?), so «from» is «с» + genitive: работа → работы. Places that take «на» take «с» for origin; places with «в» take «из».
+
+#E
+Q: Вчера я два часа __________ (читать / прочитать) статью, но так и не закончил её.
+A: читал
+W: «Два часа» measures how long the activity lasted, and «не закончил» rules out a finished result, so imperfective «читал». «Прочитал» would claim the whole article was read.
+
+#E
+Q: Вчера вечером я наконец __________ (писать / написать) отчёт и отправил его начальнику.
+A: написал
+W: «Наконец» and the next step («отправил») present the writing as a finished whole with a result → perfective «написал». In a chain of single completed actions, each verb is perfective.
+
+@stage D
+#F
+Q: вчера / встретиться / мой / с / хороший друг / я
+N: Build a natural past-tense sentence. The speaker is a man.
+A: Вчера я встретился со своим хорошим другом.
+V: Вчера я встретился с моим хорошим другом. · Я вчера встретился со своим хорошим другом.
+W: «Встретиться с кем?» → instrumental: мой хороший друг → своим (or моим) хорошим другом. Masculine past with -ся: встретился. «С» becomes «со» before «св-». Neutral order: time – subject – verb – partner.
+
+#F
+Q: я / пользоваться / телефон / и / ноутбук / одновременно / мочь
+N: Build a present-tense sentence.
+A: Я могу пользоваться телефоном и ноутбуком одновременно.
+V: Я могу одновременно пользоваться телефоном и ноутбуком.
+W: «Мочь» + infinitive: я могу пользоваться. «Пользоваться чем?» → instrumental: телефон → телефоном, ноутбук → ноутбуком (-ом). «Одновременно» can stand before the infinitive or at the end.
+
+#G
+Q: Завтра я позвоню мой старый друг и расскажу ему о мой план.
+N: Find and correct 2 errors (each error is a whole phrase).
+A: Завтра я позвоню моему старому другу и расскажу ему о моём плане.
+W: «Позвонить кому?» → dative: моему старому другу (-ему, -ому, -у). «Рассказать о чём?» → prepositional: мой план → моём плане.
+
+#H
+Q: Я помогаю своему новому студенту.
+N: Make «студент» plural.
+A: Я помогаю своим новым студентам.
+W: «Помогать кому?» stays dative; dative plural: своим новым (-ым) студентам (-ам). Careful: «своим новым» also looks like instrumental singular — the noun ending -ам shows it is dative plural.
+
+@stage E
+#I
+Q: Вчера я __________ (встретиться) с мо__ стар__ подруг__ и __________ (рассказать) ей о сво__ нов__ работ__.
+N: The speaker is a man.
+A: встретился; моей старой подругой; рассказал; своей новой работе
+W: «Вчера» → past; male speaker → встретился. «С кем?» → instrumental feminine: моей старой подругой. «Рассказал» presents one completed telling (perfective). «О чём?» → prepositional feminine: своей новой работе.
+
+#A
+Q: Анна, у меня была плох__ связ__, поэтому ты меня не услышал__.
+A: плохая связь; услышала
+W: «Связь» is feminine (-ь) and is the subject after «у меня была», so it stays nominative: плохая связь. «Ты» is Анна, so the past tense is feminine: услышала («услышать» = to catch, perceive).
+
+#D
+Q: Вчера мои друзья __________ (прийти) на вечеринку очень поздно.
+A: пришли
+W: Past tense with a plural subject («друзья») → -ли. «Прийти» has an irregular past stem: пришёл, пришла, пришли.
+
+#E
+Q: Завтра я __________ (покупать / купить) билеты и сразу пришлю тебе фотографию.
+A: куплю
+W: One specific future purchase whose result matters for the next step → perfective. Conjugating the perfective gives the future: куплю (п → пл in the я-form).

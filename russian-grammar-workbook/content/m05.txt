@@ -1,0 +1,287 @@
+@module 5
+@part I
+@title Genitive case: prepositions
+@ru Родительный падеж с предлогами — из, с, от, до, после, без, для, у
+@learn Use the genitive after из, с, от, до, после, без, для, у, около, напротив, из-за, кроме.
+@learn Say where someone comes from: в → из, на → с, к → от (из школы, с работы, от врача).
+@learn Use зависеть от + genitive and time limits like с утра до вечера.
+@learn Recognise the genitive plural in phrases like из арабоязычных стран.
+@target с работы
+@target из России
+@target из арабоязычных стран
+@target зависит от количества учеников
+@target после урока · до вечера
+@remix Redo Stage A swapping each preposition for its opposite: из ↔ в, с ↔ на, после ↔ до.
+@remix For every place in Stage C, write all three forms: куда? где? откуда?
+@remix Write five sentences "Это зависит от …" about your own lessons and plans.
+
+@lesson
+## Prepositions that always take the genitive
+| Preposition | Meaning | Example |
+|---|---|---|
+| из | from, out of (в-places) | из России, из школы |
+| с (со) | from, off (на-places, surfaces); since | с работы, со стола, с утра |
+| от | from a person; away from | от брата, недалеко от центра |
+| до | until; as far as; before | до вечера, до центра, до урока |
+| после | after | после урока |
+| без | without | без сахара |
+| для | for | для мамы |
+| у | at someone's place; by, near | у меня дома, у окна |
+| около, напротив | near · opposite | около парка, напротив банка |
+| из-за | because of | из-за погоды |
+| кроме | except | кроме брата |
+| во время | during | во время урока |
+
+The endings are the genitive endings from Module 4: masculine / neuter **-а / -я**, feminine **-ы / -и**, adjectives **-ого / -его** and **-ой / -ей**.
+
+## Where from? The three-way pattern
+| Куда? → accusative | Где? → prepositional | Откуда? → genitive |
+|---|---|---|
+| в школу | в школе | из школы |
+| в Россию | в России | из России |
+| на работу | на работе | с работы |
+| на концерт | на концерте | с концерта |
+| к врачу (dative) | у врача | от врача |
+
+::: rule в ↔ из · на ↔ с · к ↔ от
+A place that takes **в** takes **из** for "from"; a place that takes **на** takes **с**; a person you go **к** (to) you come **от** (from). *Я на работе → я иду с работы. Я в России → я из России.*
+:::
+
+## Verbs that need от
+**зависеть от** (depend on), **устать от** (be tired of), **отказаться от** (refuse). The case after от is always genitive:
+> Это зависит **от количества учеников**. || It depends on the number of students.
+> Я получил письмо **от моего старого друга**. || From a person: от.
+> Многие мои студенты **из арабоязычных стран**. || Genitive plural: -ых … zero ending.
+> Магазин работает **с девяти до девяти**. || From … until: both genitive.
+> Он взял книгу **со стола**. || с → со before ст-, сл- and similar clusters.
+
+::: mistakes Typical slips
+!> вернулся из работы || вернулся с работы || на работе → с работы
+!> зависит от количество || зависит от количества || от → genitive (-о → -а)
+!> из Германия || из Германии || -ия → -ии
+!> из арабоязычные страны || из арабоязычных стран || genitive plural: -ых, zero ending
+!> подарок от мой друг || подарок от моего друга || от → genitive
+:::
+@endlesson
+
+@stage A
+#A
+Q: Мой новый студент из Испани__.
+H: из + genitive
+A: Испании
+W: «Из» (from, out of) → genitive. Nouns in -ия change to -ии: Испания → Испании.
+
+#A
+Q: Моя жена приходит с работ__ в шесть часов.
+H: с + genitive
+A: работы
+W: «Работа» takes «на» (на работе), so "from work" is «с» + genitive: работа → работы.
+
+#A
+Q: Я пью кофе без сахар__.
+H: без + genitive
+A: сахара
+W: «Без» (without) → genitive: сахар → сахара (-а).
+
+#A
+Q: Этот подарок для мо__ мам__.
+H: для + genitive
+A: моей мамы
+W: «Для» (for) → genitive: моя → моей, мама → мамы (-а → -ы).
+
+#B
+Q: После __________ (урок) мы пьём чай.
+H: после + genitive
+A: урока
+W: «После» (after) → genitive: урок → урока (-а).
+
+#B
+Q: Сегодня я работаю до __________ (вечер).
+H: до + genitive
+A: вечера
+W: «До» (until) → genitive: вечер → вечера (-а).
+
+#A
+Q: Наш дом находится недалеко от станци__ метро.
+H: от + genitive
+A: станции
+W: «Недалеко от» (not far from) → genitive: станция → станции (-ия → -ии). «Метро» is indeclinable.
+
+#B
+Q: Я получил письмо от __________ (мой старый друг).
+H: от кого? → genitive
+A: моего старого друга
+W: «От» + a person (from someone) → genitive: мой → моего, старый → старого, друг → друга.
+
+@stage B
+#C
+Q: Многие мои студенты — ___ арабоязычн__ стран.
+A: из арабоязычных стран
+W: «Из» (origin) → genitive. Plural: арабоязычные страны → арабоязычных стран (adjective -ых; «страна» has a zero ending in the genitive plural).
+
+#C
+Q: Это зависит ___ количеств__ учеников.
+A: от количества учеников
+W: «Зависеть от» + genitive: количество → количества (-о → -а). «Учеников» is a second genitive (plural of «ученик»): the number of students.
+
+#A
+Q: Я приехал в Германию из Турци__ десять лет назад.
+A: Турции
+W: «Из» → genitive: Турция → Турции (-ия → -ии).
+
+#C
+Q: Студенты пришли ___ лекци__ уставшие.
+A: с лекции
+W: Lectures take «на» (на лекции), so "from a lecture" is «с» + genitive: лекция → лекции.
+
+#B
+Q: Я не могу жить без __________ (мой телефон).
+A: моего телефона
+W: «Без» → genitive: мой → моего, телефон → телефона.
+
+#A
+Q: Магазин работает с девят__ утра до девят__ вечера.
+A: девяти; девяти
+W: «С … до …» (from … until) → both genitive. Numbers in -ь decline like feminine -ь nouns: девять → девяти. «Утра» and «вечера» are genitive too.
+
+#A
+Q: Мы живём около парк__, а наша школа находится напротив банк__.
+A: парка; банка
+W: «Около» (near) and «напротив» (opposite) both take the genitive: парк → парка, банк → банка.
+
+#D
+Q: Во сколько ты __________ (приходить) с работы? — Обычно я __________ (приходить) в семь.
+A: приходишь; прихожу
+W: «Приходить» is second conjugation: прихожу, приходишь, приходит. The д → ж change happens only in the я-form.
+
+@stage C
+#C
+Q: В три часа я забираю сына ___ школ__, а утром отвожу его ___ школ__.
+A: из школы; в школу
+W: «Забирать откуда?» → «из» + genitive: школы. «Отводить куда?» → «в» + accusative: школу. A в-place takes «из» for "from".
+
+#C
+Q: Я вернулся ___ концерт__ поздно, а моя сестра ещё ___ концерт__.
+A: с концерта; на концерте
+W: Concerts take «на»: «на концерте» (где? → prepositional). So "from the concert" is «с» + genitive: с концерта.
+
+#C
+Q: Анна приехала ___ Москв__, а Олег — ___ Урал__.
+A: из Москвы; с Урала
+W: A city takes «в» → "from" is «из»: из Москвы. The Urals take «на» (на Урале) → "from" is «с»: с Урала. Both are genitive.
+
+#A
+Q: Это письмо от мо__ бабушк__ для мо__ брат__.
+A: моей бабушки; моего брата
+W: «От» (from a person) and «для» (for) both take the genitive: моя бабушка → моей бабушки (after к: -и), мой брат → моего брата.
+
+#C
+Q: Я взял книгу ___ стол__ и положил её ___ сумк__.
+A: со стола; в сумку
+W: «Взять откуда?» → «с» + genitive (off the table): стол → стола; before «ст-» the preposition becomes «со». «Положить куда?» → «в» + accusative: сумку.
+
+#B
+Q: Сейчас я у __________ (зубной врач), а потом поеду домой.
+A: зубного врача
+W: «У» + a person = at someone's place → genitive: зубной → зубного, врач → врача. Going there would be «к врачу» (dative, Module 14).
+
+#A
+Q: После работ__ я иду в спортзал, а до работ__ гуляю с собакой.
+A: работы; работы
+W: «После» (after) and «до» (before) both take the genitive: работа → работы.
+
+#B
+Q: Мы ничего не делали из-за __________ (плохая погода).
+A: плохой погоды
+W: «Из-за» (because of) → genitive: плохая → плохой, погода → погоды.
+
+@stage D
+#F
+Q: мой / студенты / из / арабоязычный / страны / многие
+N: Build the sentence "Many of my students are from Arabic-speaking countries."
+A: Многие мои студенты из арабоязычных стран.
+V: Многие мои студенты — из арабоязычных стран.
+W: «Из» → genitive plural: арабоязычные страны → арабоязычных стран (adjective -ых, noun with zero ending). «Многие мои студенты» is the nominative subject.
+
+#F
+Q: цена / зависеть / от / сезон
+N: Build the sentence "The price depends on the season."
+A: Цена зависит от сезона.
+W: «Зависеть от» + genitive: сезон → сезона. «Зависеть» is second conjugation: она зависит.
+
+#F
+Q: я / не / пить / кофе / без / молоко / никогда
+N: Build the sentence "I never drink coffee without milk."
+A: Я никогда не пью кофе без молока.
+W: «Без» → genitive: молоко → молока. With «никогда» Russian also needs «не» before the verb. «Пить» → я пью.
+
+#G
+Q: Мой друг приехал из Россия, а его жена — из Германия.
+N: Find and correct 2 errors.
+A: Мой друг приехал из России, а его жена — из Германии.
+W: «Из» → genitive: Россия → России, Германия → Германии (-ия → -ии).
+
+#H
+Q: Я иду на работу.
+N: Change it to "I'm coming back from work."
+A: Я иду с работы.
+V: Я возвращаюсь с работы.
+W: The opposite of «на» + accusative (direction) is «с» + genitive (origin): на работу → с работы.
+
+#I
+Q: Вчера мои родители __________ (вернуться) ___ дач__, а сестра — ___ университет__.
+A: вернулись; с дачи; из университета
+W: Plural past with -ся: вернулись. «Дача» takes «на» (на даче) → "from" is «с дачи»; «университет» takes «в» → «из университета». Both are genitive.
+
+#C
+Q: Я получил подарок ___ сво__ студент__ из Каира.
+A: от своего студента
+W: From a person → «от» + genitive: свой студент → своего студента. «Из» is for places (из Каира), «от» for people.
+
+#A
+Q: Магазин находится напротив нов__ торгов__ центр__.
+A: нового торгового центра
+W: «Напротив» (opposite) → genitive: новый → нового, торговый → торгового, центр → центра.
+
+@stage E
+#B
+Q: Я сделал это специально для __________ (ты).
+A: тебя
+W: «Для» → genitive of «ты»: тебя (the same form as the accusative).
+
+#B
+Q: Сколько времени ехать от __________ (ваш дом) до __________ (университет)?
+A: вашего дома; университета
+W: «От … до …» (from … to) → both genitive: ваш дом → вашего дома, университет → университета.
+
+#C
+Q: Сегодня я вышел ___ дом__ в семь часов, а пришёл ___ работ__ в восемь.
+A: из дома; на работу
+W: «Выйти откуда?» → «из» + genitive: дом → дома. «Прийти куда?» → «на» + accusative: работа → работу.
+
+#C
+Q: Я не видел тебя ___ прошл__ лет__!
+A: с прошлого лета
+W: «С» + genitive can mean "since": прошлое лето → прошлого лета (-ого, -а).
+
+#D
+Q: Я __________ (зависеть) от расписания, а мои студенты __________ (зависеть) от интернета.
+A: завишу; зависят
+W: «Зависеть» is second conjugation: завишу, зависишь, зависит … зависят. Only the я-form changes д → ж.
+
+#A
+Q: Я пришёл в класс без учебник__ и без тетрад__.
+A: учебника; тетради
+W: «Без» → genitive: учебник → учебника (-а), тетрадь → тетради (feminine -ь → -и).
+
+#B
+Q: Кроме __________ (мой брат), никто не знает о моём плане.
+A: моего брата
+W: «Кроме» (except) → genitive: мой брат → моего брата.
+
+#F
+Q: после / урок / я / пойти / в / спортзал / сразу
+N: Build a future-tense sentence: "Right after the lesson I'll go to the gym."
+A: Сразу после урока я пойду в спортзал.
+V: После урока я сразу пойду в спортзал.
+W: «После» → genitive: урок → урока. «Пойти» (perfective) → я пойду = future. «В спортзал» answers куда? → accusative.

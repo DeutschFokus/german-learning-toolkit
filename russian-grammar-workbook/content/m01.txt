@@ -1,0 +1,306 @@
+@module 1
+@part I
+@title Gender and the nominative case
+@ru Род и именительный падеж — кто? что?
+@learn Tell masculine, feminine and neuter nouns apart from the last letter — and know the exceptions.
+@learn Make мой, наш, этот and adjectives agree with the noun in the nominative.
+@learn Form regular and irregular plurals (студенты, друзья, дети, люди).
+@learn Use the nominative for subjects, after это / вот / где, and with у меня есть and мне нравится.
+@target мой / моя / моё / мои
+@target новый · новая · новое · новые
+@target этот / эта / это / эти
+@target плохая связь
+@target русские студенты
+@remix Redo Stage A with every noun in the plural (мой новый ноутбук → мои новые ноутбуки).
+@remix Redo items 9–16 replacing мой with наш and твой with ваш; check every ending again.
+@remix Cover the nouns in Stage C and say the gender of each one aloud before you look.
+
+@lesson
+## Gender: look at the last letter
+Every Russian noun has a gender, and every word that describes it copies that gender. Usually the last letter tells you which one it is.
+
+| Noun ends in | Gender | Examples |
+|---|---|---|
+| consonant, -й | masculine | стол, телефон, ноутбук, музей, чай |
+| -а, -я | feminine | работа, неделя, Россия, школа |
+| -о, -е, -ё | neuter | окно, письмо, задание, море |
+| -мя | neuter | время, имя |
+| -ь | masculine or feminine: learn it with the word | учитель, день, словарь (m) · связь, тетрадь, ночь, жизнь (f) |
+
+Two exceptions matter at once. Words for men in -а / -я are masculine: **папа, дедушка, мужчина, дядя, Саша**. And **кофе** is masculine: *мой кофе*. Nouns in **-тель** (учитель, преподаватель, писатель) are always masculine.
+
+## Agreement: the whole phrase follows the noun
+Possessives, demonstratives and adjectives take the noun's gender and number. In the nominative they look like this:
+
+| | Masculine | Feminine | Neuter | Plural |
+|---|---|---|---|---|
+| мой (твой, свой) | мой | моя | моё | мои |
+| наш (ваш) | наш | наша | наше | наши |
+| этот | этот | эта | это | эти |
+| новый | новый | новая | новое | новые |
+| хороший | хороший | хорошая | хорошее | хорошие |
+| русский | русский | русская | русское | русские |
+| большой (stressed end) | большой | большая | большое | большие |
+| последний (soft) | последний | последняя | последнее | последние |
+
+**Его, её, их** (his, her, their) never change: *его сестра, её брат, их дети*.
+
+::: rule Two spelling rules you will use all the time
+After **г, к, х, ж, ш, ч, щ** write **и**, never ы: русские, хорошие, книги, ученики. After **ж, ш, ч, щ, ц** an unstressed **о** becomes **е**: хорошее (not хорошое), but stressed большое keeps о.
+:::
+
+## The plural in the nominative
+Masculine and feminine nouns take **-ы / -и**: студент → студенты, задача → задачи, учебник → учебники. Neuter nouns take **-а / -я**: окно → окна, задание → задания. Learn these irregular plurals now — they are everywhere:
+
+| Singular | Plural | | Singular | Plural |
+|---|---|---|---|---|
+| друг | друзья | | человек | люди |
+| брат | братья | | ребёнок | дети |
+| сын | сыновья | | дом | дома |
+| учитель | учителя | | город | города |
+
+Some nouns exist only in the plural: **деньги, очки, часы, брюки**. Everything that agrees with them is plural: *твои очки*.
+
+## Where the nominative appears
+> **Мой брат** работает в банке. || The subject of the sentence.
+> Это **мой новый** преподаватель. || After «это» (this is) — no verb "is" in the present.
+> Где **мои ключи**? || After «где» and «вот».
+> У меня есть **хороший словарь**. || The thing you have is the grammatical subject.
+> Мне нравится **эта песня**. || The thing that pleases you is the subject.
+> **Моя сестра** — врач. || A dash replaces "is"; both sides stay nominative.
+
+::: contrast Это or этот?
+**Это** = "this is / these are" and never changes: *Это мой ноутбук. Это мои студенты.* **Этот / эта / это / эти** = "this (one)" in front of a noun and agrees with it: *Этот ноутбук новый. Эта книга интересная.* Compare: *Это новая книга* (This is a new book) and *Эта книга новая* (This book is new).
+:::
+
+::: mistakes Typical slips
+!> моя новый ноутбук || мой новый ноутбук || ноутбук ends in a consonant: masculine
+!> мой новая связь || моя новая связь || связь is a feminine -ь noun
+!> русскые студенты || русские студенты || after к always и
+!> мой очки || мои очки || очки exists only in the plural
+:::
+@endlesson
+
+@stage A
+#A
+Q: Это мо__ нов__ ноутбук.
+H: ноутбук → masculine
+A: мой новый
+W: «Ноутбук» ends in a consonant, so it is masculine. Masculine nominative: мой, новый (-ый).
+
+#A
+Q: Это мо__ нов__ квартира.
+H: -а → feminine
+A: моя новая
+W: «Квартира» ends in -а → feminine. Feminine nominative: моя, новая (-ая).
+
+#A
+Q: Это наш__ нов__ задание на завтра.
+H: -ие → neuter
+A: наше новое
+W: «Задание» ends in -е → neuter. Neuter nominative: наш → наше (-е), новый → новое (-ое).
+
+#A
+Q: Где мо__ телефон и мо__ ключи?
+H: ключи → plural
+A: мой; мои
+W: After «где» the things you are looking for are subjects (nominative). «Телефон» is masculine singular → мой; «ключи» is plural (one key = ключ) → мои.
+
+#B
+Q: __________ (этот) урок очень интересный.
+H: урок → masculine
+A: Этот
+W: «Урок» is masculine (consonant), so the demonstrative is «этот». It agrees with the noun — it is not the unchanging «это» (this is).
+
+#B
+Q: Сегодня __________ (хороший) погода.
+H: погода → feminine
+A: хорошая
+W: «Погода» ends in -а → feminine: хороший → хорошая (-ая). The ш in the stem does not affect the ending -ая.
+
+#B
+Q: Мои __________ (русский) друзья живут в Казани.
+H: друзья → plural
+A: русские
+W: «Друзья» (the irregular plural of «друг») needs plural agreement: русский → русские. After к the spelling rule demands -ие, never -ые.
+
+#A
+Q: Мне очень нравится тво__ нов__ фото.
+H: фото → neuter
+A: твоё новое
+W: «Фото» (short for фотография) is neuter and never changes its own form. It is the subject of «нравится» (it is what pleases), so nominative: твоё, новое.
+
+@stage B
+#A
+Q: Мо__ брат — врач, а мо__ сестра — учительница.
+A: мой; моя
+W: «Брат» is masculine → мой; «сестра» is feminine → моя. In the present tense the dash replaces "is", and both sides stay nominative.
+
+#A
+Q: Это мо__ лучш__ подруга Лена.
+A: моя лучшая
+W: «Подруга» is feminine → моя лучшая (-ая). «Лучший» (best) behaves like «хороший»: лучшая, лучшее, лучшие.
+
+#B
+Q: В комнате есть __________ (большой) окно и маленький стол.
+A: большое
+W: «Окно» ends in -о → neuter: большой → большое. The ending is stressed here, so it keeps -ое.
+
+#B
+Q: Это __________ (наш, новый) преподавательница испанского языка.
+A: наша новая
+W: «Преподавательница» ends in -а → feminine: наш → наша, новый → новая. Note the fixed phrase «испанского языка» (of Spanish) — the language stays in the genitive after the noun.
+
+#B
+Q: Где __________ (твой) очки?
+A: твои
+W: «Очки» (glasses) exists only in the plural, so the possessive is plural: твои. The same goes for деньги, часы (watch) and брюки.
+
+#A
+Q: Эт__ студент__ из Китая, их зовут Ли и Ван, а эт__ студентка из Египта.
+A: Эти студенты; эта
+W: «Их зовут Ли и Ван» shows two people → nominative plural: эти студенты (-ы). «Студентка» ends in -а → feminine: эта.
+
+#A
+Q: Сегодня у меня плох__ интернет и очень медленн__ связь.
+A: плохой; медленная
+W: «Интернет» is masculine → плохой (stressed ending -ой, like «большой»). «Связь» is a feminine -ь noun → медленная. With -ь nouns the gender has to be learnt with the word.
+
+#D
+Q: Мой новый студент __________ (жить) в Берлине и __________ (работать) в банке.
+A: живёт; работает
+W: The subject «мой новый студент» is one person (он), so both verbs take the он-form: жить → живёт (stem жив-), работать → работает.
+
+@stage C
+#A
+Q: Эт__ книга очень интересная. — Да, эт__ интересная книга.
+A: Эта; это
+W: In the first sentence the word stands before the noun and agrees with feminine «книга» → эта. In the answer it means "this is", so it is the unchanging «это».
+
+#A
+Q: Мо__ кофе остыл, а тво__ чай ещё горячий.
+A: мой; твой
+W: «Кофе» ends in -е but is masculine — a famous exception (the verb «остыл» is masculine too). «Чай» ends in -й → masculine → твой.
+
+#A
+Q: Наш__ папа — инженер, а наш__ мама — врач.
+A: наш; наша
+W: «Папа» ends in -а but means a man, so it is masculine: наш папа. «Мама» is feminine: наша.
+
+#B
+Q: Это __________ (мой) время, а не твоё!
+A: моё
+W: Nouns in -мя (время, имя) are neuter, so «мой» → моё — exactly like «твоё» in the same sentence.
+
+#A
+Q: Мо__ словарь — на столе, а мо__ тетрадь — в сумке.
+A: мой; моя
+W: Both nouns end in -ь but have different genders: «словарь» is masculine → мой, «тетрадь» is feminine → моя. Learn -ь nouns together with мой or моя.
+
+#B
+Q: Мне очень нравятся __________ (этот, новый) песни.
+A: эти новые
+W: «Песни» is plural (одна песня) and is the subject of «нравятся», so nominative plural: эти новые. The plural verb «нравятся» confirms it.
+
+#B
+Q: Мне нравится __________ (этот, новый) песня.
+A: эта новая
+W: Here «песня» is singular feminine → эта новая, and the verb is singular «нравится». Compare: нравятся эти новые песни.
+
+#A
+Q: Наш__ сыновья учатся в школе, а наш__ дочь уже работает.
+A: наши; наша
+W: «Сыновья» is the irregular plural of «сын» → наши. «Дочь» ends in -ь and is feminine → наша.
+
+@stage D
+#F
+Q: это / новый / мой / преподаватель / испанского языка
+N: Build the sentence "This is my new Spanish teacher."
+A: Это мой новый преподаватель испанского языка.
+W: «Это» (this is) + a nominative phrase; the possessive comes first, then the adjective: мой новый преподаватель. «Испанского языка» (of Spanish) follows the noun it describes.
+
+#F
+Q: у / есть / хороший / меня / словарь / русский
+N: Build the sentence "I have a good Russian dictionary."
+A: У меня есть хороший русский словарь.
+W: «У меня есть» + nominative: the thing you have is the subject. The evaluating adjective usually comes before the one that names the type: хороший русский словарь.
+
+#F
+Q: мой / жить / в Казани / старый / подруга
+N: Build a present-tense sentence about one female friend.
+A: Моя старая подруга живёт в Казани.
+V: В Казани живёт моя старая подруга. (focus on who lives there)
+W: «Подруга» is feminine → моя старая. The verb agrees with the subject (она): жить → живёт. Neutral order: subject – verb – place.
+
+#G
+Q: Это мой новая тетрадь, а это моя старый учебник.
+N: Find and correct 2 errors.
+A: Это моя новая тетрадь, а это мой старый учебник.
+W: «Тетрадь» is a feminine -ь noun → моя (новая was already right). «Учебник» is masculine → мой старый; «моя старый» mixed two genders.
+
+#H
+Q: Мой новый студент живёт в Каире.
+N: Make it plural: several new students.
+A: Мои новые студенты живут в Каире.
+W: In the plural every word changes: мой → мои, новый → новые, студент → студенты, and the verb follows the subject: живёт → живут.
+
+#H
+Q: Это мой старый друг.
+N: Talk about a female friend instead.
+A: Это моя старая подруга.
+W: The feminine counterpart of «друг» is «подруга». Feminine nominative: моя (-я), старая (-ая). «Это» never changes.
+
+#I
+Q: Мо__ нов__ студентка __________ (жить) в Каире, а мо__ стар__ студенты __________ (жить) в Дубае.
+A: Моя новая; живёт; мои старые; живут
+W: «Студентка» is feminine singular → моя новая … живёт (она). «Студенты» is plural → мои старые … живут (они).
+
+#D
+Q: Мои студенты хорошо __________ (говорить) по-английски.
+A: говорят
+W: The subject «мои студенты» = они. «Говорить» is a second-conjugation verb (говорю, говоришь, говорит …), so the они-form ends in -ят: говорят.
+
+@stage E
+#B
+Q: Где __________ (наш, новый) упражнения? Я их не вижу.
+A: наши новые
+W: «Упражнения» is plural (одно упражнение → упражнения), and «их» confirms it → наши новые. Neuter nouns in -е form the plural in -я.
+
+#B
+Q: У тебя очень __________ (красивый) имя.
+A: красивое
+W: «Имя» ends in -мя and is neuter (like «время»): красивый → красивое. After «у тебя» the noun itself is still nominative.
+
+#B
+Q: Мне нравятся __________ (твой, русский) друзья.
+A: твои русские
+W: «Друзья» is the plural of «друг», and the plural verb «нравятся» shows it is the subject → nominative plural: твои русские (к + -ие).
+
+#A
+Q: Как__ хорош__ погода сегодня!
+A: Какая хорошая
+W: «Погода» is feminine → какая хорошая (-ая). The question word «какой» agrees exactly like an adjective.
+
+#D
+Q: Наша преподавательница __________ (говорить) по-русски, по-немецки и по-китайски.
+A: говорит
+W: The subject is one woman (она) → говорит. Second conjugation: говорю, говоришь, говорит.
+
+#F
+Q: интересный / очень / этот / урок / быть
+N: Build a past-tense sentence: "This lesson was very interesting."
+A: Этот урок был очень интересный.
+V: Этот урок был очень интересным.
+W: «Урок» is masculine → этот … был (masculine past of «быть»). After «был» the adjective may stay nominative (интересный) or take the instrumental (интересным); both are correct.
+
+#F
+Q: где / мой / ключи / и / мой / кошелёк
+N: Build a question.
+A: Где мои ключи и мой кошелёк?
+V: Где мой кошелёк и мои ключи?
+W: «Где» opens the question, and the things you are looking for are nominative subjects. «Ключи» is plural → мои; «кошелёк» is masculine → мой.
+
+#I
+Q: Эт__ нов__ телефон очень удобный, а эт__ стар__ ноутбук __________ (работать) медленно.
+A: Этот новый; этот старый; работает
+W: «Телефон» and «ноутбук» are both masculine → этот новый, этот старый. The subject of the second clause is one thing (он) → работает.

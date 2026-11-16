@@ -1,0 +1,214 @@
+/* Russian Grammar Mastery — print stylesheet (WeasyPrint)
+   Palette: navy #1E2B45 · ink #1B2130 · teal #2C7A78 · cream #F7F2E8 · sand #E6DECC
+   Type: PT Serif (Russian text), Inter (English / interface), Noto Serif Display (numerals) */
+
+@page {
+  size: A4;
+  margin: 21mm 19mm 19mm 21mm;
+  @top-left {
+    content: string(runhead, first-except);
+    font-family: Inter; font-size: 6.6pt; font-weight: 600; letter-spacing: .12em;
+    text-transform: uppercase; color: #5E6A80; vertical-align: bottom; padding-bottom: 6mm;
+  }
+  @top-right {
+    content: string(parthead, first-except);
+    font-family: Inter; font-size: 6.6pt; font-weight: 500; letter-spacing: .1em;
+    text-transform: uppercase; color: #A2A9B5; vertical-align: bottom; padding-bottom: 6mm;
+  }
+  @bottom-center {
+    content: counter(page);
+    font-family: Inter; font-size: 7.6pt; font-weight: 600; color: #1E2B45; vertical-align: top; padding-top: 5mm;
+  }
+}
+@page cover { margin: 0; background: #1E2B45;
+  @top-left { content: none } @top-right { content: none } @bottom-center { content: none } }
+@page partpage { margin: 0; background: #F7F2E8;
+  @top-left { content: none } @top-right { content: none } @bottom-center { content: none } }
+
+html { font-family: Inter, "DejaVu Sans", sans-serif; font-size: 9.3pt; line-height: 1.47; color: #1E2B45;
+  font-variant-ligatures: common-ligatures; }
+body { margin: 0; }
+h1, h2, h3, h4, h5, h6 { bookmark-level: none; }
+b { font-weight: 650; }
+.ru { font-family: "PT Serif", serif; font-size: 1.07em; }
+.pb { break-after: page; }
+
+/* ------------------------------------------------------------------ cover */
+.cover { page: cover; position: relative; height: 296mm; color: #F7F2E8; overflow: hidden; }
+.cv-pattern { position: absolute; right: -6mm; top: 24mm; width: 92mm; text-align: right; }
+.cv-q { font-family: "PT Serif"; font-style: italic; font-size: 25pt; line-height: 1.55; color: #2E4A60; }
+.cv-top { position: absolute; left: 24mm; top: 24mm; font-size: 7.8pt; font-weight: 600; letter-spacing: .2em;
+  text-transform: uppercase; color: #7FB7B2; }
+.cv-main { position: absolute; left: 24mm; top: 92mm; width: 150mm; }
+.cv-title { font-family: "Noto Serif Display"; font-weight: 300; font-size: 54pt; line-height: 1.02; color: #F7F2E8;
+  letter-spacing: -.01em; }
+.cv-ru { font-family: "PT Serif"; font-style: italic; font-size: 15pt; color: #9FCFCA; margin-top: 7mm; }
+.cv-rule { width: 28mm; height: 1.4pt; background: #2C9A95; margin: 9mm 0 7mm; }
+.cv-sub { font-size: 10pt; line-height: 1.6; color: #C9D0DC; }
+.cv-foot { position: absolute; left: 24mm; bottom: 22mm; font-size: 7.4pt; letter-spacing: .16em; text-transform: uppercase;
+  color: #7F8BA3; }
+
+/* ------------------------------------------------------------------ front matter */
+.front, .toc { break-before: page; }
+.fm-title { font-family: "Noto Serif Display"; font-weight: 400; font-size: 28pt; line-height: 1.1; color: #1E2B45;
+  margin: 2mm 0 7mm; letter-spacing: -.005em; }
+.toc ul { list-style: none; margin: 0; padding: 0; }
+.toc li a { color: inherit; text-decoration: none; display: block; }
+.toc li a::after { content: leader(dotted) " " target-counter(attr(href), page); color: #1E2B45; font-weight: 600;
+  font-size: 8.4pt; }
+.toc-fm { font-size: 9.4pt; font-weight: 600; margin: 0 0 1.4mm; }
+.toc-part { margin: 5mm 0 1.6mm; font-size: 10.4pt; font-weight: 650; color: #1E2B45; break-after: avoid; }
+.tp-k { display: inline-block; width: 15mm; font-size: 7pt; letter-spacing: .14em; text-transform: uppercase; color: #2C7A78; }
+.toc-mod, .toc-rev { font-size: 9pt; margin: 0 0 .9mm 0; padding-left: 15mm; }
+.toc-rev { color: #2C7A78; font-weight: 600; }
+.toc-cov { font-weight: 400; color: #7A8293; font-size: 8pt; }
+.tm-n { display: inline-block; width: 8.5mm; font-weight: 600; color: #2C7A78; font-feature-settings: "tnum"; }
+
+.mt { width: 100%; border-collapse: collapse; font-size: 7.8pt; }
+.mt th { background: #1E2B45; color: #fff; font-weight: 600; text-align: left; padding: 1.2mm 1.6mm; font-size: 7pt;
+  letter-spacing: .03em; }
+.mt td { border-bottom: .5pt solid #E6DECC; padding: 1.15mm 1.6mm; height: 4mm; }
+.mt .mt-l { width: 66mm; }
+.mt .mt-c { color: #9AA1AD; text-align: right; width: 13mm; }
+.mt-part td { background: #F7F2E8; font-weight: 650; font-size: 7.4pt; letter-spacing: .06em; text-transform: uppercase;
+  color: #2C7A78; }
+.mt-box { width: 9mm; text-align: center; }
+.cb { display: inline-block; width: 2.8mm; height: 2.8mm; border: .7pt solid #8E97A6; border-radius: .6mm; }
+.mt-intro { font-size: 9pt; color: #4C566B; margin: -3mm 0 4mm; }
+
+/* ------------------------------------------------------------------ part opener */
+.part-open { page: partpage; break-before: page; padding: 42mm 26mm 20mm 26mm; position: relative; height: 296mm;
+  box-sizing: border-box; }
+.po-k { font-size: 8pt; font-weight: 700; letter-spacing: .24em; text-transform: uppercase; color: #2C7A78; }
+.po-num { font-family: "Noto Serif Display"; font-weight: 200; font-size: 130pt; line-height: 1; color: #1E2B45;
+  margin: 2mm 0 4mm -2mm; }
+.po-title { font-size: 25pt; font-weight: 650; line-height: 1.15; color: #1E2B45; margin: 0 0 5mm; max-width: 140mm;
+  letter-spacing: -.01em; }
+.po-desc { font-size: 10.5pt; line-height: 1.6; color: #43506A; max-width: 135mm; margin: 0 0 12mm; }
+.po-list { list-style: none; padding: 0; margin: 0; border-top: .8pt solid #1E2B45; max-width: 150mm; }
+.po-list li { border-bottom: .5pt solid #DCD3C0; padding: 2.2mm 0; font-size: 10pt; }
+.po-list a { color: #1E2B45; text-decoration: none; display: block; }
+.po-list a::after { content: leader(" ") target-counter(attr(href), page); font-weight: 600; color: #2C7A78; }
+.pl-n { display: inline-block; width: 12mm; font-weight: 600; color: #2C7A78; font-feature-settings: "tnum"; }
+
+/* ------------------------------------------------------------------ module opener */
+.module { break-before: page; }
+.mod-open { background: #F7F2E8; border-radius: 2.5mm; padding: 8mm 9mm 7mm; margin: 0 0 7mm; position: relative; }
+.mod-num { position: absolute; right: 8mm; top: 3mm; font-family: "Noto Serif Display"; font-weight: 200;
+  font-size: 66pt; line-height: 1; color: #2C7A78; }
+.mod-kicker { font-size: 6.9pt; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: #2C7A78; }
+.mod-title { font-size: 23pt; font-weight: 650; line-height: 1.12; color: #1E2B45; margin: 2.5mm 0 1.2mm;
+  letter-spacing: -.012em; max-width: 125mm; }
+.mod-ru { font-family: "PT Serif"; font-style: italic; font-size: 12.5pt; color: #3B4863; margin-bottom: 5mm; }
+.mod-cols { display: flex; gap: 7mm; border-top: .6pt solid #DCD3C0; padding-top: 3.5mm; }
+.mod-learn { flex: 1.25; }
+.mod-targets { flex: 1; }
+.mod-lab { font-size: 6.6pt; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: #6E7890;
+  margin-bottom: 1.6mm; }
+.mod-learn ul { margin: 0; padding-left: 3.6mm; font-size: 8.5pt; line-height: 1.45; }
+.mod-learn li { margin-bottom: .7mm; }
+.mod-learn li::marker { color: #2C7A78; }
+.tchip { display: inline-block; font-family: "PT Serif"; font-size: 9.6pt; background: #fff; border: .5pt solid #DCD3C0;
+  border-radius: 1.6mm; padding: .5mm 2mm; margin: 0 1.2mm 1.4mm 0; color: #1B2130; }
+
+/* ------------------------------------------------------------------ lesson */
+.lesson { font-size: 9.3pt; }
+.lesson p { margin: 0 0 2.3mm; }
+.lesson h3 { font-size: 11.4pt; font-weight: 650; color: #1E2B45; margin: 5.2mm 0 1.8mm; break-after: avoid;
+  letter-spacing: -.005em; }
+.lesson h3::before { content: ""; display: inline-block; width: 2.4mm; height: 2.4mm; background: #2C7A78;
+  border-radius: .5mm; margin-right: 2.2mm; vertical-align: .25mm; }
+.lesson h4 { font-size: 9.4pt; font-weight: 650; color: #2C7A78; margin: 3.6mm 0 1.2mm; break-after: avoid; }
+.lesson ul { margin: 0 0 2.6mm; padding-left: 4.2mm; }
+.lesson li { margin-bottom: .8mm; }
+.lesson li::marker { color: #2C7A78; }
+table.mini { border-collapse: collapse; width: 100%; margin: 1.6mm 0 3.6mm; font-size: 8.5pt; break-inside: avoid; }
+table.mini th { text-align: left; font-weight: 600; color: #fff; background: #1E2B45; padding: 1.25mm 2mm; font-size: 7.3pt;
+  letter-spacing: .04em; }
+table.mini td { padding: 1.1mm 2mm; border-bottom: .5pt solid #E6DECC; vertical-align: top; }
+table.mini tbody tr:nth-child(even) td { background: #FBF8F2; }
+table.mini td:first-child { font-weight: 600; color: #34425E; }
+table.eg { width: 100%; border-collapse: collapse; margin: 1.2mm 0 3.4mm; break-inside: avoid; }
+table.eg td { padding: 1mm 0; vertical-align: baseline; border-bottom: .4pt dotted #DCD3C0; }
+td.eg-ru { font-family: "PT Serif"; font-size: 10.5pt; width: 57%; padding-right: 5mm; color: #1B2130; }
+td.eg-ru b { color: #1F6664; font-weight: 700; }
+td.eg-en { font-size: 8.2pt; color: #6B7385; }
+.box { border-left: 2.2pt solid #2C7A78; background: #F7F2E8; padding: 3mm 4.2mm 1.6mm; margin: 3mm 0 4mm;
+  break-inside: avoid; border-radius: 0 2mm 2mm 0; }
+.box p:last-child, .box table:last-child, .box ul:last-child { margin-bottom: 1.4mm; }
+.box-title { font-size: 7.1pt; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: #2C7A78;
+  margin-bottom: 1.6mm; }
+.box-mistakes { border-left-color: #B4654A; background: #FAF3EE; }
+.box-mistakes .box-title { color: #A55A41; }
+.box-contrast { border-left-color: #1E2B45; background: #F1F3F7; }
+.box-contrast .box-title { color: #1E2B45; }
+.box-tip { border-left-color: #2C7A78; background: #EAF3F2; }
+.box-rule table.mini td, .box-contrast table.mini td { background: transparent !important; }
+table.mist { width: 100%; border-collapse: collapse; margin: .4mm 0 1.6mm; }
+table.mist td { padding: .9mm 0; vertical-align: baseline; border-bottom: .4pt dotted #E3C9BC; }
+td.m-wrong { font-family: "PT Serif"; font-size: 10pt; color: #9C6A5A; width: 33%; padding-right: 3mm; }
+.m-s { text-decoration: line-through; text-decoration-color: #D9A898; }
+td.m-ok { font-family: "PT Serif"; font-size: 10pt; color: #1B2130; width: 35%; padding-right: 3mm; font-weight: 700; }
+td.m-note { font-size: 7.8pt; color: #6B7385; }
+.m-x { font-family: "DejaVu Sans"; color: #B4654A; font-size: 8pt; text-decoration: none; display: inline-block; }
+.m-v { font-family: "DejaVu Sans"; color: #2C7A78; font-size: 8pt; }
+
+/* ------------------------------------------------------------------ practice */
+.practice-head { margin: 7mm 0 0; padding: 2.4mm 0 2.4mm; border-top: 2pt solid #1E2B45; font-size: 7.6pt; color: #6B7385;
+  break-after: avoid; }
+.practice-head span { font-size: 8pt; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: #1E2B45; }
+.stage { margin: 5mm 0 4.2mm; border-top: .6pt solid #C9C0AD; padding-top: 2.4mm; }
+.stage-k { font-size: 6.8pt; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: #2C7A78; }
+.dots { margin-left: 2mm; letter-spacing: 0; }
+.dot { display: inline-block; width: 1.7mm; height: 1.7mm; border-radius: 50%; border: .6pt solid #2C7A78; margin-right: .8mm;
+  vertical-align: .15mm; }
+.dot.on { background: #2C7A78; }
+.stage-t { font-size: 12.5pt; font-weight: 650; color: #1E2B45; margin-top: .6mm; letter-spacing: -.005em; }
+.stage-d { font-size: 8.2pt; color: #5B6478; }
+.keep { break-inside: avoid; }
+.keep-end { break-inside: avoid; }
+
+.ex { position: relative; padding-left: 15.5mm; margin: 0 0 4.6mm; break-inside: avoid; }
+.ex-num { position: absolute; left: 0; top: .2mm; font-size: 10.5pt; font-weight: 650; color: #2C7A78;
+  font-feature-settings: "tnum"; }
+.ex-tag { position: absolute; left: 0; top: 6.1mm; font-size: 5.2pt; font-weight: 700; letter-spacing: .09em; color: #9FB0B4; }
+.ex-n { font-size: 8.1pt; font-style: italic; color: #56607A; margin: 0 0 .7mm; }
+.ex-q { font-family: "PT Serif"; font-size: 11.6pt; line-height: 1.45; color: #1B2130; }
+.ex-line { height: 7.4mm; border-bottom: .5pt solid #CFC7B6; }
+.ex-a { margin-top: 1.9mm; font-size: 7.7pt; font-weight: 600; color: #878D97; line-height: 1.35; }
+.ex-v { font-size: 7.1pt; color: #8F949D; font-style: italic; line-height: 1.38; }
+.ex-w { font-size: 7.2pt; color: #8F949D; line-height: 1.42; margin-top: .25mm; }
+.gap { display: inline-block; border-bottom: .75pt solid #6F7D97; height: .95em; vertical-align: -.16em; }
+.gap-end { width: 1.5em; margin: 0 .05em 0 .02em; }
+.gap-word { width: 2.3em; margin: 0 .12em; }
+.gap-long { width: 7.6em; margin: 0 .12em; }
+.hint { font-family: Inter; font-size: 6.7pt; font-weight: 600; color: #2C7A78; background: #E6F0EF; border-radius: 1.4pt;
+  padding: .3mm 1.4mm; margin-left: 2.2mm; white-space: nowrap; vertical-align: .15em; }
+.chip { display: inline-block; border: .6pt solid #D5CDBC; background: #FBF8F2; border-radius: 1.8pt; padding: .15mm 1.7mm;
+  margin: .4mm .9mm .4mm 0; font-size: 10.8pt; line-height: 1.35; }
+.tF .ex-q { line-height: 1.6; }
+
+/* ------------------------------------------------------------------ tracker & remix */
+.tracker { margin: 7mm 0 3mm; border: .8pt solid #1E2B45; border-radius: 2mm; padding: 3mm 4mm 2.6mm; }
+.tr-title { font-size: 7.2pt; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: #1E2B45;
+  margin-bottom: 1.6mm; }
+.tracker table { width: 100%; border-collapse: collapse; font-size: 7.8pt; }
+.tracker th { text-align: left; font-weight: 600; color: #6B7385; font-size: 6.8pt; padding: .8mm 1.5mm;
+  border-bottom: .6pt solid #1E2B45; }
+.tracker td { height: 6.5mm; border-bottom: .5pt solid #DCD3C0; padding: 0 1.5mm; color: #5B6478; }
+.tracker .w1 { width: 24mm; } .tracker .w2 { width: 20mm; } .tracker .w3 { width: 12mm; }
+.tracker .frac { text-align: right; color: #A2A9B5; }
+.tr-note { font-size: 7.3pt; color: #6B7385; margin-top: 1.8mm; }
+.remix { margin: 0 0 3mm; background: #EAF3F2; border-radius: 2mm; padding: 2.8mm 4mm 1.6mm; }
+.remix-title { font-size: 7.1pt; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: #2C7A78;
+  margin-bottom: 1.2mm; }
+.remix ul { margin: 0; padding-left: 4mm; font-size: 8.3pt; }
+.remix li { margin-bottom: .9mm; }
+
+/* ------------------------------------------------------------------ review */
+.review { break-before: page; }
+.rev-open { border-top: 3pt solid #2C7A78; padding-top: 4mm; margin-bottom: 4mm; }
+.rev-k { font-size: 7pt; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: #2C7A78; }
+.rev-title { font-size: 21pt; font-weight: 650; color: #1E2B45; margin: 1.6mm 0 1mm; letter-spacing: -.01em; }
+.rev-cov { font-size: 8.4pt; color: #5B6478; font-weight: 600; }
+.rev-intro { font-size: 9pt; color: #43506A; margin: 2.4mm 0 0; }

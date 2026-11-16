@@ -1,0 +1,193 @@
+@review 1
+@title Nominative, accusative and genitive
+@covers Modules 1–5
+@intro Thirty-five new sentences mixing everything from Part I. There are no hints: for each gap, first ask the question the verb or preposition asks (кто? кого? что? куда? где? откуда? чего?), then choose the ending. Score yourself before moving on to Part II.
+
+@block 1 | Endings and forms
+#A
+Q: Мо__ нов__ соседка — очень весёлый человек.
+A: Моя новая
+W: «Соседка» is feminine and the subject → nominative: моя новая. «Человек» stays masculine even when it describes a woman.
+
+#A
+Q: Я каждый день вижу эт__ красив__ девушк__ в метро.
+A: эту красивую девушку
+W: «Видеть кого?» → accusative feminine: эта → эту, красивая → красивую, девушка → девушку.
+
+#A
+Q: Сегодня у меня нет учебник__, можно посмотреть в тво__ книг__?
+A: учебника; твою книгу
+W: «Нет» → genitive: учебник → учебника. «Посмотреть в (куда?)» → accusative: твоя книга → твою книгу.
+
+#A
+Q: Мы ждём наш__ нов__ коллег__ из Минска — её зовут Ирина.
+A: нашу новую коллегу
+W: «Ждать кого?» → accusative; «её зовут Ирина» shows a woman: наша новая коллега → нашу новую коллегу («коллега» declines like a feminine -а noun).
+
+#A
+Q: Мой сын поступил в университет, а дочь ещё учится в школ__.
+A: школе
+W: «Учиться где?» → в + prepositional: школа → школе. Compare «поступил (куда?) в университет» — accusative, unchanged.
+
+#A
+Q: Это номер телефона наш__ преподавател__ русского языка.
+A: нашего преподавателя
+W: "The phone number of our teacher" → genitive: наш → нашего, преподаватель → преподавателя (-ь → -я). «Русского языка» is a second genitive.
+
+#A
+Q: Каждую пятниц__ мы ходим в бассейн, а каждое воскресень__ — в парк.
+A: пятницу; воскресенье
+W: "How often" → accusative. Feminine: каждая пятница → каждую пятницу. «Воскресенье» is neuter, so its accusative looks like the nominative.
+
+#A
+Q: У мо__ старш__ сестр__ трое детей.
+A: моей старшей сестры
+W: «У» + genitive names the owner: моя старшая сестра → моей старшей сестры (-ей after ш, -ы).
+
+#B
+Q: Мне очень нравится __________ (ваш новый офис).
+A: ваш новый офис
+W: With «мне нравится» the thing that pleases is the subject → nominative, so the phrase stays: ваш новый офис.
+
+#B
+Q: Я хорошо знаю __________ (ваш новый директор).
+A: вашего нового директора
+W: «Знать кого?» → accusative; a masculine person takes genitive-like endings: вашего нового директора. Compare the previous sentence: same phrase, different case.
+
+#B
+Q: Мой брат живёт без __________ (машина) и без __________ (телевизор).
+A: машины; телевизора
+W: «Без» → genitive: машина → машины (-ы), телевизор → телевизора (-а).
+
+#B
+Q: Я положила __________ (твои очки) на __________ (книжная полка).
+A: твои очки; книжную полку
+W: «Положить что?» → accusative; «очки» is a plural thing → no change. «Куда?» → на + accusative: книжная полка → книжную полку.
+
+@block 2 | Prepositions and verbs
+#C
+Q: Мы с женой переехали ___ Петербург__ ___ Москв__.
+A: из Петербурга в Москву
+W: Origin → «из» + genitive: Петербург → Петербурга. Destination → «в» + accusative: Москва → Москву.
+
+#C
+Q: Летом мы ездили ___ мор__, а теперь снова сидим ___ офис__.
+A: на море; в офисе
+W: «Ездили куда?» → «на» + accusative: море (neuter, unchanged). «Сидим где?» → «в» + prepositional: офис → офисе.
+
+#C
+Q: Студенты ждут меня ___ вход__ в университет.
+A: у входа
+W: «У» + genitive = by, at: вход → входа. The students wait by the entrance.
+
+#C
+Q: Я купил эти цветы ___ сво__ жен__.
+A: для своей жены
+W: «Для» (for) → genitive: своя жена → своей жены (-ей, -ы).
+
+#C
+Q: Магазин открыт ___ утр__ до ночи.
+A: с утра
+W: «С … до …» (from … until) → genitive: утро → утра (-о → -а). «До ночи» is genitive too (ночь → ночи).
+
+#C
+Q: Я только что вернулся ___ магазин__, а сестра — ___ подруг__.
+A: из магазина; от подруги
+W: From a в-place → «из»: из магазина. From a person's home → «от»: от подруги. Both take the genitive.
+
+#D
+Q: Куда вы __________ (ехать) на выходные? — Мы __________ (ехать) на дачу.
+A: едете; едем
+W: «Ехать» (by transport, now or planned): еду, едешь, едет, едем, едете, едут.
+
+#D
+Q: Мой брат __________ (ездить) на работу на велосипеде, а я __________ (ходить) пешком.
+A: ездит; хожу
+W: Regular trips → «ездить» / «ходить» (both second conjugation): он ездит; я хожу (д → ж only in the я-form).
+
+#D
+Q: У нас вчера не __________ (быть) урока, потому что преподаватель __________ (быть) болен.
+A: было; был
+W: «Не было» + genitive has no subject → neuter «было». In «преподаватель был болен» the subject is masculine → был.
+
+#B
+Q: Это зависит от __________ (твоё решение).
+A: твоего решения
+W: «Зависеть от» → genitive: твоё → твоего, решение → решения (-е → -я).
+
+#B
+Q: Я сижу у __________ (открытое окно).
+A: открытого окна
+W: «У» + genitive = by, next to: открытое → открытого, окно → окна.
+
+@block 3 | Whole sentences
+#F
+Q: у / мой / друг / нет / свободный / время
+N: Build a present-tense sentence.
+A: У моего друга нет свободного времени.
+W: «У» + genitive (owner): мой друг → моего друга. «Нет» + genitive: свободное время → свободного времени.
+
+#F
+Q: я / ждать / мой / подруга / у / кинотеатр
+N: Build a present-tense sentence.
+A: Я жду мою подругу у кинотеатра.
+V: Я жду свою подругу у кинотеатра. · У кинотеатра я жду свою подругу.
+W: «Ждать кого?» → accusative: мою (свою) подругу. «У» + genitive = next to: кинотеатр → кинотеатра.
+
+#F
+Q: мы / ехать / из / аэропорт / в / гостиница
+N: Build a present-tense sentence.
+A: Мы едем из аэропорта в гостиницу.
+W: «Ехать» → мы едем. Origin → «из» + genitive: аэропорта. Destination → «в» + accusative: гостиница → гостиницу.
+
+#F
+Q: это / подарок / для / мой / младший / брат
+N: Build the sentence "This is a present for my younger brother."
+A: Это подарок для моего младшего брата.
+W: «Для» → genitive: мой младший брат → моего младшего брата (-его after ш, -а).
+
+#F
+Q: каждый / утро / я / слушать / новости / на / кухня
+N: Build a present-tense sentence.
+A: Каждое утро я слушаю новости на кухне.
+V: Я слушаю новости на кухне каждое утро.
+W: «Каждое утро» is neuter, so the time accusative looks like the nominative. «Слушать что?» → accusative: новости (a plural thing, unchanged). «Где?» → на + prepositional: кухня → кухне.
+
+#G
+Q: Мой брат работает в банк, а его жена ходит в школе.
+N: Find and correct 2 errors.
+A: Мой брат работает в банке, а его жена ходит в школу.
+W: «Работать где?» → prepositional: в банке. «Ходить куда?» → accusative: в школу.
+
+#G
+Q: У меня нет брат, но есть две сестры и много друзья.
+N: Find and correct 2 errors.
+A: У меня нет брата, но есть две сестры и много друзей.
+W: «Нет» → genitive: брат → брата. «Много» → genitive plural: друзья → друзей. «Две сестры» is already correct.
+
+#H
+Q: Я иду в магазин.
+N: Change it to "I'm coming from the shop."
+A: Я иду из магазина.
+W: «В» + accusative (direction) becomes «из» + genitive (origin): в магазин → из магазина.
+
+#I
+Q: Вчера я __________ (видеть) мо__ стар__ друг__ ___ вокзал__.
+N: The speaker is a man.
+A: видел; моего старого друга; на вокзале
+W: Masculine past: видел. «Видеть кого?» → accusative animate: моего старого друга. «Где?» → «на» + prepositional: вокзал → вокзале (stations take «на»).
+
+#I
+Q: Мой друг __________ (жить) в Москв__, но сейчас он __________ (ехать) ___ Петербург.
+A: живёт; Москве; едет; в Петербург
+W: «Жить где?» → prepositional: Москва → Москве. «Ехать куда?» → «в» + accusative: Петербург (no change). Verbs in the он-form: живёт, едет.
+
+#A
+Q: Это фотография мо__ родител__ на их свадьбе.
+A: моих родителей
+W: "Of my parents" → genitive plural: мои родители → моих родителей (-их, -ей).
+
+#A
+Q: Мне нравится тво__ нов__ причёска!
+A: твоя новая
+W: With «мне нравится» the thing that pleases is the subject → nominative feminine: твоя новая причёска.

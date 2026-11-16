@@ -1,0 +1,287 @@
+@module 3
+@part I
+@title Accusative case: direction
+@ru Куда? — в школу, на работу · Где? — в школе, на работе
+@learn Separate direction (куда? → accusative) from location (где? → prepositional).
+@learn Choose в or на — and keep the same preposition for "where" and "where to".
+@learn Use direction with going, moving and placing verbs: идти, ехать, переехать, положить, поставить.
+@learn Handle -ия nouns (в Россию / в России), indeclinable nouns (в кафе, в кино) and домой / дома.
+@target в Россию / в России
+@target на работу / на работе
+@target в спортзал
+@target домой / дома
+@remix Redo Stage A as location sentences: еду в Москву → живу в Москве, иду на работу → я на работе.
+@remix Redo items 17–24 swapping the verbs (работаю ↔ еду, был ↔ иду) and rewrite every phrase.
+@remix Make a list of ten places you go to this week and write one куда? and one где? sentence for each.
+
+@lesson
+## Где? or куда?
+Russian strictly separates **location** (где? — where?) from **direction** (куда? — where to?). With the prepositions **в** and **на**, direction takes the **accusative** and location takes the **prepositional**. Same preposition, different case — the verb tells you which question you are answering.
+
+| | Куда? → accusative | Где? → prepositional |
+|---|---|---|
+| school | в школу | в школе |
+| Russia | в Россию | в России |
+| Moscow | в Москву | в Москве |
+| work | на работу | на работе |
+| concert | на концерт | на концерте |
+| a new restaurant | в новый ресторан | в новом ресторане |
+| a new school | в новую школу | в новой школе |
+| home | домой | дома |
+
+Direction uses exactly the accusative endings from Module 2: feminine -у / -ю, everything else (things) unchanged. Location endings are mostly **-е**, **-и** for -ия and feminine -ь nouns, and **-ом / -ой** on adjectives — Module 8 drills them fully.
+
+## Which verbs ask куда? and which ask где?
+**Куда?** идти, ехать, ходить, ездить, пойти, поехать, переехать, опаздывать, приглашать, поступать, положить, поставить, повесить.
+**Где?** быть, жить, работать, учиться, находиться, сидеть, стоять, лежать, висеть, отдыхать.
+
+> Я **иду в школу**. Я **в школе**. || Going there · being there.
+> Я **кладу** телефон **на стол**. Телефон **лежит на столе**. || Placing (куда?) · lying (где?).
+> Мы **переезжаем в Россию**. Мы **живём в России**. || -ия → -ию / -ии.
+> Я **иду домой**. Я **дома**. || Home: adverbs, no preposition.
+
+## В or на?
+**В** goes with buildings and enclosed spaces, countries and cities: в школу, в магазин, в банк, в офис, в спортзал, в кино, в театр, в ресторан, в университет, в Россию, в Москву.
+**На** goes with events and activities, open spaces and a fixed list of words: на работу, на урок, на лекцию, на концерт, на вечеринку, на выставку, на встречу, на экзамен · на улицу, на площадь, на море, на пляж, на дачу · на вокзал, на почту, на рынок, на стадион, на остановку, на кухню.
+
+::: rule One place, one preposition
+Whichever preposition a place takes for "where", it takes the same one for "where to": *на работе → на работу, в банке → в банк.* Only the case changes. (The matching "from" is coming in Module 5: из for в-places, с for на-places.)
+:::
+
+::: contrast To a person
+People are not places: *I'm going to my friend / to the doctor* is **к** + dative — *к другу, к врачу* (Module 14). Never *в врача*.
+:::
+
+::: mistakes Typical slips
+!> я иду в школе || я иду в школу || going → куда? → accusative
+!> я работаю в банк || я работаю в банке || working → где? → prepositional
+!> я еду в России || я еду в Россию || -ия → -ию for direction
+!> я иду в работу || я иду на работу || работа always takes на
+!> я иду в дом || я иду домой || "home" is the adverb домой
+:::
+@endlesson
+
+@stage A
+#A
+Q: Завтра я еду в Москв__.
+H: куда? → accusative
+A: Москву
+W: «Ехать куда?» → в + accusative. Feminine -а → -у: Москва → Москву.
+
+#A
+Q: Каждое утро моя дочь идёт в школ__.
+H: куда? → accusative
+A: школу
+W: «Идти куда?» → direction → в + accusative: школа → школу (-а → -у).
+
+#A
+Q: Летом мы поедем в Росси__.
+H: куда? → accusative
+A: Россию
+W: Direction → в + accusative. Nouns in -ия change -я → -ю: Россия → Россию (like Германия → Германию).
+
+#A
+Q: Я опаздываю на работ__!
+H: куда? → accusative
+A: работу
+W: «Опаздывать куда?» → на + accusative: работа → работу. «Работа» always takes «на»: на работу (куда?), на работе (где?).
+
+#A
+Q: Вечером мы идём в нов__ ресторан.
+H: куда? → a masculine thing
+A: новый
+W: Direction → в + accusative. «Ресторан» is a masculine thing, so the phrase does not change: в новый ресторан.
+
+#B
+Q: В субботу мы идём на __________ (интересная выставка).
+H: куда? → accusative
+A: интересную выставку
+W: Exhibitions are events, so they take «на». Direction → accusative: интересная → интересную, выставка → выставку.
+
+#B
+Q: Мой брат переехал в __________ (другая страна).
+H: куда? → accusative
+A: другую страну
+W: «Переехать куда?» → в + accusative. Feminine singular: другая → другую, страна → страну.
+
+#A
+Q: Положи, пожалуйста, книг__ на полк__.
+H: что? куда? → accusative
+A: книгу; полку
+W: «Положить что?» → accusative: книга → книгу. «Куда?» → на + accusative: полка → полку. Placing verbs always ask куда?
+
+@stage B
+#C
+Q: После работы я обычно хожу ___ спортзал.
+A: в спортзал
+W: «Ходить куда?» → direction → accusative. A gym is a building, so it takes «в»; «спортзал» is a masculine thing and does not change.
+
+#C
+Q: Сегодня вечером мы идём ___ вечеринк__ к Максиму.
+A: на вечеринку
+W: Parties are events → «на». Direction → accusative: вечеринка → вечеринку (-а → -у).
+
+#C
+Q: Завтра у меня экзамен, поэтому я иду ___ библиотек__.
+A: в библиотеку
+W: A library is a building → «в». «Иду куда?» → accusative: библиотека → библиотеку.
+
+#A
+Q: В понедельник я еду в командировк__ в Казан__.
+A: командировку; Казань
+W: «В командировку» (on a business trip) and «в Казань» both answer куда? → accusative. «Командировка» → командировку; «Казань» is a feminine -ь noun, so its accusative looks the same.
+
+#B
+Q: Ты пойдёшь со мной на __________ (новая лекция)?
+A: новую лекцию
+W: Lectures are events → «на». Direction → accusative: новая → новую, лекция → лекцию (-ия → -ию).
+
+#D
+Q: Куда ты __________ (идти)? — Я __________ (идти) в аптеку.
+A: идёшь; иду
+W: «Идти» (to go on foot, right now): иду, идёшь, идёт, идём, идёте, идут. The ending is stressed, so you write -ё-: идёшь.
+
+#A
+Q: Мы часто ездим на мор__ или на дач__ к друзьям.
+A: море; дачу
+W: Both places take «на» and answer куда? → accusative. «Море» is neuter → no change; «дача» is feminine → дачу.
+
+#D
+Q: Каждое лето мои родители __________ (ездить) в Италию.
+A: ездят
+W: «Ездить» (regular trips there and back) is second conjugation: езжу, ездишь, ездит … ездят. Only the я-form has д → ж (езжу).
+
+@stage C
+#C
+Q: Я работаю ___ банк__, а моя жена каждый день ездит ___ университет.
+A: в банке; в университет
+W: «Работать где?» → в + prepositional: банк → банке. «Ездить куда?» → в + accusative: университет (a thing, no change). Same preposition, different question, different case.
+
+#C
+Q: Сейчас я ___ работ__, но в шесть часов иду ___ спортзал.
+A: на работе; в спортзал
+W: «Где я сейчас?» → на + prepositional: на работе. «Иду куда?» → в + accusative: в спортзал. «Работа» always takes «на», a gym takes «в».
+
+#A
+Q: Мой друг живёт в Германи__, но часто ездит в Росси__.
+A: Германии; Россию
+W: «Жить где?» → prepositional: Германия → Германии (-ия → -ии). «Ездить куда?» → accusative: Россия → Россию (-ия → -ию).
+
+#A
+Q: Книга лежит на полк__. Положи, пожалуйста, ручк__ тоже на полк__.
+A: полке; ручку; полку
+W: «Лежать где?» → на + prepositional: полке. «Положить что?» → accusative: ручку; «куда?» → на + accusative: полку. Position verbs ask где?, placing verbs ask куда?
+
+#C
+Q: Мы долго сидели ___ кафе, а потом пошли ___ кино.
+A: в кафе; в кино
+W: «Кафе» and «кино» never change, so only the question shows the case: «сидели где?» (prepositional) and «пошли куда?» (accusative). Both take «в».
+
+#A
+Q: Сейчас мы на концерт__, а завтра идём на выставк__.
+A: концерте; выставку
+W: «Мы на …» (где?) → prepositional: концерт → концерте. «Идём куда?» → accusative: выставка → выставку.
+
+#B
+Q: Мои студенты из Бразилии хотят поехать в __________ (Санкт-Петербург), а потом в __________ (Москва).
+A: Санкт-Петербург; Москву
+W: Direction → в + accusative. «Санкт-Петербург» is a masculine thing → no change; «Москва» → Москву.
+
+#C
+Q: Вчера я был ___ почт__, а сегодня иду ___ банк.
+A: на почте; в банк
+W: «Был где?» → prepositional; the post office takes «на»: почта → почте. «Иду куда?» → в + accusative: банк (no change).
+
+@stage D
+#F
+Q: в / я / университет / каждый день / ездить / на автобусе
+N: Build a present-tense sentence.
+A: Каждый день я езжу в университет на автобусе.
+V: Я каждый день езжу в университет на автобусе.
+W: «Ездить» (regular trips) → я езжу (д → ж only in the я-form). «Куда?» → в + accusative: в университет. «На автобусе» (by bus) is a separate prepositional phrase.
+
+#F
+Q: мы / пойти / в субботу / в / театр / Большой
+N: Build a future-tense sentence: "On Saturday we'll go to the Bolshoi Theatre."
+A: В субботу мы пойдём в Большой театр.
+V: Мы пойдём в Большой театр в субботу.
+W: «Пойти» (perfective) gives the future: мы пойдём. «Куда?» → в + accusative; a masculine thing does not change: в Большой театр.
+
+#F
+Q: ты / хотеть / со мной / на / концерт / пойти
+N: Build a question.
+A: Ты хочешь пойти со мной на концерт?
+V: Хочешь пойти со мной на концерт?
+W: «Хотеть» → ты хочешь + infinitive «пойти». Concerts take «на»; direction → accusative: на концерт (no change).
+
+#G
+Q: Каждый день я хожу на работе, а вечером иду в спортзале.
+N: Find and correct 2 errors.
+A: Каждый день я хожу на работу, а вечером иду в спортзал.
+W: Verbs of going ask куда?, so they need the accusative: на работе → на работу, в спортзале → в спортзал. The prepositional (-е) answers где?
+
+#H
+Q: Мы живём в маленькой деревне.
+N: Change it to direction: "We are moving to a small village."
+A: Мы переезжаем в маленькую деревню.
+W: «Жить где?» → prepositional (в маленькой деревне); «переезжать куда?» → accusative: в маленькую деревню (-ую, -ю).
+
+#I
+Q: Сегодня я __________ (ехать) ___ работ__ на метро, а мой муж __________ (ехать) ___ аэропорт на такси.
+A: еду; на работу; едет; в аэропорт
+W: «Ехать»: еду (я), едет (он). Both destinations answer куда? → accusative: на работу (работа → работу) and в аэропорт (no change; an airport takes «в»).
+
+#C
+Q: После урока студенты пошли ___ столов__.
+A: в столовую
+W: «Пошли куда?» → в + accusative. «Столовая» (canteen) is a noun that declines like an adjective: столовая → столовую (-ую).
+
+#A
+Q: Я положила ключи в сумк__, а сумк__ — на стул.
+A: сумку; сумку
+W: «Положить куда?» → в + accusative: в сумку. In the second part «сумку» is the object (положила что?) → accusative again. «Стул» is a masculine thing → no change.
+
+@stage E
+#B
+Q: Летом мы хотим поехать в __________ (Южная Корея).
+A: Южную Корею
+W: Countries take «в»; direction → accusative: Южная → Южную, Корея → Корею (-я → -ю).
+
+#B
+Q: Можно я положу __________ (твоя куртка) на __________ (этот стул)?
+A: твою куртку; этот стул
+W: «Положить что?» → accusative: твоя куртка → твою куртку. «Куда?» → на + accusative; «стул» is a masculine thing → этот стул (no change).
+
+#B
+Q: Моя сестра поступила в __________ (медицинская академия).
+A: медицинскую академию
+W: «Поступить куда?» (to get into a university) → в + accusative: медицинская → медицинскую, академия → академию (-ия → -ию).
+
+#C
+Q: Ты уже был ___ Кремл__? — Нет, завтра пойду ___ Красн__ площадь.
+A: в Кремле; на Красную площадь
+W: «Был где?» → в + prepositional: Кремль → Кремле. «Пойду куда?» → на + accusative: «площадь» is a feminine -ь noun and keeps its form, but the adjective changes: Красную.
+
+#C
+Q: Анна живёт ___ втор__ этаж__, а я поднимаюсь ___ трет__ этаж.
+A: на втором этаже; на третий этаж
+W: Floors take «на». «Живёт где?» → prepositional: втором этаже. «Поднимаюсь куда?» → accusative: третий этаж (a masculine thing, no change).
+
+#D
+Q: Почему вы всегда __________ (опаздывать) на урок?
+A: опаздываете
+W: «Вы» → -ете. «Опаздывать» is a regular first-conjugation verb: опаздываю, опаздываешь … опаздываете.
+
+#F
+Q: завтра / я / поехать / в / Россия / первый раз
+N: Build a future-tense sentence: "Tomorrow I'm going to Russia for the first time."
+A: Завтра я первый раз поеду в Россию.
+V: Завтра я поеду в Россию в первый раз.
+W: «Поехать» (perfective) → я поеду = future. Direction → в + accusative: Россия → Россию.
+
+#F
+Q: мои / студенты / в / ездить / Германия / летом / часто
+N: Build a present-tense sentence.
+A: Летом мои студенты часто ездят в Германию.
+V: Мои студенты часто ездят в Германию летом.
+W: «Ездить» (regular trips) → они ездят. Direction → в + accusative: Германия → Германию (-ия → -ию).

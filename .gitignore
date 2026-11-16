@@ -216,3 +216,10 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Russian workbook build by-products
+russian-grammar-workbook/output/*.html
+russian-grammar-workbook/output/ledger-*.csv
+russian-grammar-workbook/output/m??.pdf
+russian-grammar-workbook/output/r?.pdf
+russian-grammar-workbook/output/sample.pdf

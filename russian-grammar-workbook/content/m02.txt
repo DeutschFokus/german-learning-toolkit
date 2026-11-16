@@ -1,0 +1,283 @@
+@module 2
+@part I
+@title Accusative case: objects
+@ru Винительный падеж — кого? что?
+@learn Recognise the direct object: the person or thing that receives the action.
+@learn Change feminine phrases (мою новую книгу) and keep inanimate masculine and neuter phrases unchanged.
+@learn Use the genitive-looking form for people and animals: моего друга, нашего преподавателя.
+@learn Use accusative pronouns (меня, тебя, его, её, нас, вас, их) and time phrases like каждую неделю.
+@target моего друга
+@target мою сестру
+@target на этот вопрос
+@target каждую неделю
+@target исправлять свои ошибки
+@remix Redo Stage A with the opposite gender: моего соседа → мою соседку, мою подругу → моего друга.
+@remix Redo items 9–16 with plural objects (эту ошибку → эти ошибки, моего друга → моих друзей).
+@remix For every Stage C sentence, say aloud whether the object is a person or a thing before you write.
+
+@lesson
+## What the accusative does
+The accusative marks the **direct object**: the person or thing that the action goes to. It answers **кого?** (whom?) for people and animals and **что?** (what?) for things. Most everyday verbs take it: видеть, смотреть, читать, писать, слушать, любить, знать, понимать, помнить, ждать, искать, покупать, спрашивать, просить, делать, изучать, исправлять.
+
+## The endings
+The key question is: **is the object a person (or animal), or a thing?** Masculine and plural objects change only when they are alive. Feminine objects always change.
+
+| | Masc. thing | Masc. person | Feminine | Neuter |
+|---|---|---|---|---|
+| Noun | ноутбук (no change) | студента, учителя | книгу, неделю · тетрадь (-ь: no change) | письмо (no change) |
+| Adjective | новый, хороший | нового, хорошего | новую, хорошую, синюю | новое, хорошее |
+| мой / наш | мой, наш | моего, нашего | мою, нашу | моё, наше |
+| этот | этот | этого | эту | это |
+
+In the plural, things do not change (*мои новые книги*), while people take the genitive plural (*моих новых студентов, своих друзей*). You will drill the genitive plural properly in Module 11.
+
+Masculine nouns in -а decline like feminine ones, but their adjectives stay masculine: **моего папу, нашего дедушку, Сашу**.
+
+::: rule Pronouns
+**меня, тебя, его, её, нас, вас, их.** *Ты меня слышишь? — Да, я тебя хорошо слышу.* After a preposition add н-: *на него, про неё*.
+:::
+
+## Examples
+> Я жду **моего друга**. || I'm waiting for my friend (person → -его … -а).
+> Я покупаю **новый телефон**. || A thing, masculine: no change.
+> Я люблю **свою работу**. || Feminine: -ую … -у.
+> Я исправляю **свои ошибки**. || Plural thing: no change.
+> Я вижу **своих студентов** каждый день. || Plural people: genitive plural.
+> Я отвечаю **на этот вопрос**. || «Отвечать на что?» — на + accusative.
+> **Каждую неделю** я хожу в спортзал. || How often → accusative.
+
+::: contrast Not every object is accusative
+Some verbs demand other cases, and these are exactly the ones you mix up: **помогать / звонить / отвечать кому?** take the dative (*помогаю моему другу*), **пользоваться / интересоваться чем?** take the instrumental (*пользуюсь ноутбуком*). The accusative is for the plain object: *вижу моего друга, покупаю ноутбук*. «Спрашивать кого?» is accusative: *я спрашиваю преподавателя*.
+:::
+
+::: mistakes Typical slips
+!> я вижу мой брат || я вижу моего брата || a person: masculine animate → -его … -а
+!> читаю интересная книга || читаю интересную книгу || feminine -а → -у, adjective -ую
+!> спрашиваю моему преподавателю || спрашиваю моего преподавателя || спрашивать кого? → accusative
+!> отвечаю на этом вопрос || отвечаю на этот вопрос || на + accusative; the phrase does not mix cases
+:::
+@endlesson
+
+@stage A
+#A
+Q: Я читаю интересн__ книг__.
+H: что? → accusative
+A: интересную книгу
+W: «Читать что?» → accusative. Feminine nouns in -а change to -у (книга → книгу), and the adjective takes -ую: интересная → интересную.
+
+#A
+Q: Я каждый день вижу мо__ стар__ сосед__.
+H: кого? → a person
+A: моего старого соседа
+W: «Видеть кого?» → accusative. «Сосед» is a man — masculine animate — so the accusative looks like the genitive: мой → моего, старый → старого, сосед → соседа (-а).
+
+#A
+Q: Мы купили нов__ ноутбук.
+H: что? → a thing
+A: новый
+W: «Купить что?» → accusative. A masculine thing (inanimate) does not change in the accusative: новый ноутбук stays exactly as in the nominative.
+
+#B
+Q: Я очень люблю __________ (моя младшая сестра).
+H: кого? → feminine
+A: мою младшую сестру
+W: «Любить кого?» → accusative. Feminine singular: моя → мою, младшая → младшую (-ую), сестра → сестру (-у).
+
+#B
+Q: Ты знаешь __________ (этот преподаватель)?
+H: кого? → a person
+A: этого преподавателя
+W: «Знать кого?» → accusative. «Преподаватель» is a masculine person, so accusative = genitive: этот → этого, преподаватель → преподавателя (-ь → -я).
+
+#B
+Q: Вечером я смотрю __________ (новое видео) о русской грамматике.
+H: что? → neuter
+A: новое видео
+W: «Смотреть что?» → accusative. Neuter nouns never change in the accusative, so the phrase stays «новое видео» («видео» itself is indeclinable).
+
+#A
+Q: Я жду мо__ подруг__ уже двадцать минут.
+H: кого? → feminine
+A: мою подругу
+W: «Ждать кого?» → accusative (a specific person). Feminine: моя → мою, подруга → подругу (-а → -у).
+
+#B
+Q: Я хорошо помню __________ (наша первая встреча).
+H: что? → feminine
+A: нашу первую встречу
+W: «Помнить что?» → accusative. Feminine singular: наша → нашу, первая → первую, встреча → встречу (-а → -у).
+
+@stage B
+#A
+Q: Каждое утро я слушаю русск__ радио, а вечером смотрю нов__ русск__ фильм.
+A: русское; новый русский
+W: «Слушать что?» and «смотреть что?» → accusative. «Радио» is neuter → русское (same as nominative); «фильм» is a masculine thing → новый русский (no change).
+
+#A
+Q: Я часто спрашиваю мо__ преподавател__ о грамматике.
+A: моего преподавателя
+W: «Спрашивать кого?» → accusative (not dative!). «Преподаватель» is a masculine person → моего преподавателя (-его, -я).
+
+#B
+Q: Вчера я встретил на улице __________ (наш старый учитель).
+A: нашего старого учителя
+W: «Встретить кого?» → accusative. A masculine person → genitive-like endings: наш → нашего, старый → старого, учитель → учителя.
+
+#B
+Q: Я хочу исправить __________ (эта ошибка) прямо сейчас.
+A: эту ошибку
+W: «Исправить что?» → accusative. Feminine singular: эта → эту, ошибка → ошибку (-а → -у).
+
+#A
+Q: Мой брат каждую суббот__ навещает наш__ бабушк__.
+A: субботу; нашу бабушку
+W: «Каждую субботу» (how often) is accusative: суббота → субботу. «Навещать кого?» → accusative feminine: наша бабушка → нашу бабушку.
+
+#B
+Q: Я понимаю __________ (твоя проблема), но не знаю, как помочь.
+A: твою проблему
+W: «Понимать что?» → accusative. Feminine singular: твоя → твою, проблема → проблему (-а → -у).
+
+#D
+Q: Мои студенты __________ (писать) диктант, а я __________ (проверять) их ошибки.
+A: пишут; проверяю
+W: «Студенты» = они → пишут: «писать» uses the stem пиш- in the present. «Я» → проверяю: a regular first-conjugation verb (проверяю, проверяешь …).
+
+#A
+Q: Анна очень любит сво__ работ__ и сво__ студент__ — их у неё двадцать.
+A: свою работу; своих студентов
+W: «Любить что / кого?» → accusative. Feminine thing: своя работа → свою работу. «Их двадцать» shows the plural; plural people take the genitive plural: свои студенты → своих студентов.
+
+@stage C
+#A
+Q: Я вижу нов__ стол, а мой брат видит нов__ сосед__.
+A: новый; нового соседа
+W: Both objects are masculine accusative, but «стол» is a thing → новый стол (no change), while «сосед» is a person → нового соседа (-ого, -а).
+
+#A
+Q: Я жду автобус, а моя сестра ждёт сво__ муж__.
+A: своего мужа
+W: «Ждать» + accusative. «Автобус» is a thing, so it does not change. «Муж» is a masculine person → своего мужа (-его, -а).
+
+#B
+Q: Я люблю __________ (мой папа), а он любит __________ (футбол).
+A: моего папу; футбол
+W: «Папа» changes like a feminine -а noun (папу), but it is a man, so «мой» takes the masculine animate form: моего папу. «Футбол» is a thing → no change.
+
+#C
+Q: Я сейчас отвечаю ___ эт__ сложн__ вопрос.
+A: на этот сложный вопрос
+W: «Отвечать на что?» → «на» + accusative, not prepositional. «Вопрос» is a masculine thing, so the phrase keeps its nominative form: этот сложный вопрос. «На этом вопросе» would mean "on this question" (location).
+
+#A
+Q: Я знаю эт__ девушк__, но не знаю её брат__.
+A: эту девушку; брата
+W: «Знать кого?» → accusative. Feminine: эта девушка → эту девушку. «Брат» is a masculine person → брата. «Её» (her) never changes.
+
+#A
+Q: Я читаю эт__ письмо, а ты читаешь эт__ статью.
+A: это; эту
+W: «Письмо» is neuter → это (neuter accusative = nominative). «Статья» is feminine → эту, and the noun itself takes -ю: статья → статью.
+
+#B
+Q: Я покупаю __________ (свежий хлеб) и __________ (свежая рыба).
+A: свежий хлеб; свежую рыбу
+W: «Покупать что?» → accusative. «Хлеб» is a masculine thing → no change. «Рыба» is feminine → рыбу, and свежая → свежую (-ую).
+
+#B
+Q: Я плохо понимаю __________ (этот человек), когда он говорит быстро.
+A: этого человека
+W: «Понимать кого?» → accusative. «Человек» is a masculine person → этот → этого, человек → человека.
+
+@stage D
+#F
+Q: я / ждать / мой / друг / на остановке
+N: Build a present-tense sentence.
+A: Я жду моего друга на остановке.
+V: Я жду своего друга на остановке. · На остановке я жду своего друга.
+W: «Ждать кого?» → accusative; «друг» is a masculine person → моего (своего) друга. «Ждать» → я жду.
+
+#F
+Q: каждый / неделя / я / навещать / бабушка
+N: Build the sentence "I visit my grandmother every week."
+A: Каждую неделю я навещаю бабушку.
+V: Я навещаю бабушку каждую неделю.
+W: «How often?» is accusative: каждая неделя → каждую неделю. «Навещать кого?» → accusative: бабушка → бабушку.
+
+#F
+Q: она / любить / свой / новый / работа / очень
+N: Build a present-tense sentence.
+A: Она очень любит свою новую работу.
+W: «Любить что?» → accusative feminine: свою новую работу (-ую, -у). With «она» as subject, «свою» means her own job; «её работу» could mean another woman's.
+
+#G
+Q: Я вижу мой старый друг каждый день.
+N: Find and correct 1 error (a whole phrase).
+A: Я вижу моего старого друга каждый день.
+W: «Видеть кого?» → accusative, and «друг» is a person: мой старый друг → моего старого друга. «Каждый день» is correct: «день» is a thing, so it keeps the nominative form.
+
+#H
+Q: Я люблю свою сестру.
+N: Replace «сестра» with «брат».
+A: Я люблю своего брата.
+W: Still accusative, but now a masculine person: свою сестру → своего брата (-его, -а).
+
+#I
+Q: Я __________ (ждать) мо__ нов__ студентк__, а она __________ (искать) мой кабинет.
+A: жду; мою новую студентку; ищет
+W: «Ждать» → жду. «Ждать кого?» → accusative feminine: мою новую студентку. «Искать» changes ск → щ: ищу, ищешь, ищет. «Мой кабинет» is a thing, so it stays unchanged.
+
+#D
+Q: Ты __________ (знать) мою сестру? — Конечно, я её хорошо __________ (знать).
+A: знаешь; знаю
+W: A regular first-conjugation verb: знаю, знаешь, знает … знают. «Мою сестру» and «её» are its accusative objects.
+
+#A
+Q: Я плохо слышу тебя, у меня плох__ связ__. Повтори, пожалуйста, последн__ фраз__.
+A: плохая связь; последнюю фразу
+W: «У меня плохая связь»: «связь» is the subject (nominative, feminine). «Повторить что?» → accusative: последняя фраза → последнюю фразу (soft adjective -юю).
+
+@stage E
+#A
+Q: Мы долго ждали наш__ преподавательниц__, но она не пришла.
+A: нашу преподавательницу
+W: «Ждать кого?» → accusative feminine: наша → нашу, преподавательница → преподавательницу (-а → -у).
+
+#A
+Q: Вы знаете эт__ нов__ студент__ из Бразилии? Его зовут Педро.
+A: этого нового студента
+W: «Знать кого?» → accusative; «его зовут Педро» shows one man → masculine animate: этого нового студента (-ого, -а).
+
+#B
+Q: Я очень хорошо помню __________ (мой первый учитель) русского языка.
+A: моего первого учителя
+W: «Помнить кого?» → accusative; «учитель» is a masculine person → моего первого учителя. «Русского языка» (of Russian) stays genitive.
+
+#B
+Q: Ты уже видел __________ (их новая квартира)?
+A: их новую квартиру
+W: «Видеть что?» → accusative feminine: новая → новую, квартира → квартиру. «Их» (their) never changes.
+
+#D
+Q: Что ты __________ (делать) сегодня вечером? — Я __________ (смотреть) новый сериал.
+A: делаешь; смотрю
+W: «Делать» (first conjugation): делаю, делаешь → ты делаешь. «Смотреть» (second conjugation): смотрю, смотришь → я смотрю. «Новый сериал» is a masculine thing: accusative = nominative.
+
+#F
+Q: я / хотеть / исправлять / свой / ошибки
+N: Build a present-tense sentence.
+A: Я хочу исправлять свои ошибки.
+V: Я хочу исправлять мои ошибки.
+W: «Хотеть» → я хочу + infinitive. «Исправлять что?» → accusative; «ошибки» are things, so the plural accusative = nominative: свои ошибки.
+
+#F
+Q: вчера / я / встретить / в кафе / наш / старый / учительница
+N: Build a past-tense sentence. The speaker is a woman.
+A: Вчера я встретила в кафе нашу старую учительницу.
+V: Вчера в кафе я встретила нашу старую учительницу.
+W: Female speaker → встретила. «Встретить кого?» → accusative feminine: наша старая учительница → нашу старую учительницу.
+
+#I
+Q: Вечером я __________ (читать) эт__ интересн__ стать__ и __________ (слушать) русск__ музык__.
+A: читаю; эту интересную статью; слушаю; русскую музыку
+W: Present я-forms: читаю, слушаю. Both verbs take the accusative: статья → статью (-я → -ю) with эту интересную; музыка → музыку with русскую.
