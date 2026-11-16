@@ -1,0 +1,281 @@
+@module 13
+@part III
+@title В / на / из / с
+@ru Где? Куда? Откуда? — в школе, на работе, из школы, с работы
+@learn Choose в or на for buildings, open spaces, events, regions — and online places (на сайте, в чате).
+@learn Run the full system: где? (prepositional), куда? (accusative), откуда? (genitive).
+@learn Pair the prepositions correctly: в ↔ из, на ↔ с.
+@learn Use the other meanings of из and с: made of, a source, since, from … to.
+@target на работе · с работы
+@target в России · из России
+@target на сайте · в чате
+@target на втором курсе
+@target из интернета
+@remix For every place in Stages A and B, write all three forms: где? куда? откуда?
+@remix Redo items 17–24 swapping the verbs (стоял ↔ зашёл, вышел ↔ вошёл) and fix the prepositions.
+@remix Describe your working day online in six sentences with на уроке, в чате, на сайте, в приложении.
+
+@lesson
+## В or на?
+**В** means "inside" — buildings, rooms, enclosed spaces, cities and countries. **На** means "on" — surfaces and open spaces — and is also used with events, activities and a list of words you simply learn.
+
+| в (inside) | на (surface, open space, event, fixed list) |
+|---|---|
+| в школе, в университете, в офисе, в банке, в магазине | на работе, на заводе, на почте, на вокзале, на рынке, на стадионе |
+| в комнате, в квартире, в доме | на кухне, на балконе, на этаже |
+| в городе, в деревне, в России, в Москве | на улице, на площади, на юге, на Кавказе, на Урале, на острове |
+| в парке, в лесу, в саду | на море, на озере, на даче, на берегу |
+| в кино, в театре, в музее | на концерте, на выставке, на уроке, на лекции, на курсах |
+| в интернете, в чате, в приложении | на сайте, на экране, на платформе |
+| в отпуске, в командировке | на каникулах, на пенсии, на втором курсе |
+
+## The complete system
+| | Где? → prepositional | Куда? → accusative | Откуда? → genitive |
+|---|---|---|---|
+| в-places | в школе | в школу | из школы |
+| на-places | на работе | на работу | с работы |
+| people | у врача (genitive) | к врачу (dative) | от врача (genitive) |
+
+::: rule в ↔ из · на ↔ с
+Learn each place **with its preposition** and the rest follows: *на концерте → с концерта, в отпуске → из отпуска, на даче → с дачи, в Сибири → из Сибири.*
+:::
+
+## Other jobs of из and с
+**из** + genitive also means **made of** (*из дерева, из стекла*), the **source** of information (*из интернета, из книги*) and **one of** (*один из студентов*). **с** + genitive means **since** (*с утра, с понедельника*) and appears in **from … to** (*с девяти до пяти*). With the instrumental, «с» means *with* (Module 7).
+
+> Мой брат работает **на заводе**. || factories take на
+> Я нашёл информацию **на сайте**. || websites take на
+> Мы обсуждали это **в чате**. || a chat is "inside"
+> Сын учится **на втором курсе**. || university year: на
+> Я вернулся **с концерта** и сразу лёг спать. || на концерте → с концерта
+> Этот стол сделан **из дерева**. || made of → из
+
+::: mistakes Typical slips
+!> в работе || на работе || работа always takes на
+!> из работы || с работы || на-places take с for "from"
+!> в кухне || на кухне || kitchens take на
+!> в первом курсе || на первом курсе || university years take на
+!> на интернете || в интернете || but: на сайте
+:::
+@endlesson
+
+@stage A
+#C
+Q: Мой брат работает ___ завод__.
+H: где? завод → на
+A: на заводе
+W: Factories take «на»: на заводе (где? → prepositional -е). Compare: в офисе, в банке.
+
+#C
+Q: Летом мы отдыхали ___ Кавказ__.
+H: где? Кавказ → на
+A: на Кавказе
+W: Mountain regions such as the Caucasus and the Urals take «на»: на Кавказе, на Урале (prepositional -е).
+
+#C
+Q: Я нашёл эту информацию ___ сайт__ университета.
+H: где? сайт → на
+A: на сайте
+W: Websites take «на»: на сайте (prepositional -е). But: в интернете, в приложении, в чате.
+
+#C
+Q: Мы обсуждали это ___ чат__ группы.
+H: где? чат → в
+A: в чате
+W: A chat is treated as an enclosed space → «в чате» (prepositional -е). «Группы» is a genitive: the chat of the group.
+
+#A
+Q: Мои родители сейчас на пенси__.
+H: где? → prepositional
+A: пенсии
+W: «На пенсии» (retired) takes a fixed «на»; пенсия → пенсии (-ия → -ии).
+
+#A
+Q: Студенты сидят в аудитори__ номер пять.
+H: где? → prepositional
+A: аудитории
+W: A lecture room is an enclosed space → «в»; аудитория → аудитории (-ия → -ии).
+
+#B
+Q: Мой сын учится на __________ (второй курс).
+H: где? → prepositional
+A: втором курсе
+W: University years take «на»: на втором курсе (второй → втором, курс → курсе).
+
+#B
+Q: Вчера мы вернулись из __________ (летний отпуск).
+H: откуда? → genitive
+A: летнего отпуска
+W: «В отпуске» → "from holiday" is «из отпуска»: из + genitive; the soft adjective летний → летнего.
+
+@stage B
+#C
+Q: Каждое лето мы ездим ___ дач__, а осенью возвращаемся ___ дач__.
+A: на дачу; с дачи
+W: «На даче» is the place. Куда? → «на дачу» (accusative -у); откуда? → «с дачи» (genitive -и, after ч).
+
+#C
+Q: Мой друг приехал ___ Сибир__ и теперь живёт ___ Москв__.
+A: из Сибири; в Москве
+W: «В Сибири» → origin «из Сибири» (genitive, feminine -ь → -и). «Жить где?» → в + prepositional: Москве.
+
+#C
+Q: Вчера я видел твою сестру ___ рынк__.
+A: на рынке
+W: Markets take «на»: на рынке (the о of «рынок» drops in all other forms: рынка, рынке).
+
+#C
+Q: Мы встретились ___ остановк__ и вместе поехали ___ университет.
+A: на остановке; в университет
+W: Bus stops take «на»: на остановке (где?). «Поехали куда?» → в + accusative: в университет (unchanged).
+
+#A
+Q: Анна пришла с урок__ и сразу легла спать.
+A: урока
+W: Lessons take «на» (на уроке), so "from the lesson" is «с урока» — с + genitive.
+
+#B
+Q: Я только что вернулся с __________ (футбольный матч).
+A: футбольного матча
+W: Matches take «на» (на матче), so "from" is «с» + genitive: футбольного матча.
+
+#C
+Q: Летом я работал ___ ферм__ ___ Канад__.
+A: на ферме в Канаде
+W: Farms take «на»: на ферме. Countries take «в»: в Канаде. Both are prepositional (-е).
+
+#A
+Q: Где ты была? — Я была на почт__, а потом в аптек__.
+A: почте; аптеке
+W: «На почте» (the post office takes на) and «в аптеке» (a pharmacy takes в). Both answer где? → prepositional -е.
+
+@stage C
+#C
+Q: Мой брат ___ кухн__, а мама ___ комнат__.
+A: на кухне; в комнате
+W: Kitchens take «на» (на кухне), rooms take «в» (в комнате). Both are prepositional.
+
+#C
+Q: Я долго стоял ___ улиц__, а потом зашёл ___ магазин.
+A: на улице; в магазин
+W: «Стоял где?» → на + prepositional: на улице. «Зашёл куда?» → в + accusative: в магазин.
+
+#C
+Q: Он вышел ___ здани__ и пошёл ___ площадь.
+A: из здания; на площадь
+W: «Выйти откуда?» → из + genitive: здания (a building takes «в»). «Пошёл куда?» → на + accusative: площадь (a square takes «на»; the feminine -ь noun does not change).
+
+#C
+Q: Самолёт прилетел ___ Пекин__ в шесть часов, а улетел ___ Шанхай в восемь.
+A: из Пекина; в Шанхай
+W: Origin → «из» + genitive: Пекина. Destination → «в» + accusative: Шанхай (unchanged).
+
+#C
+Q: Эту новость я узнал ___ интернет__, а не ___ газет__.
+A: из интернета; из газеты
+W: Information comes «из» a source: из интернета, из газеты, из книги — «из» + genitive.
+
+#A
+Q: Я купила этот свитер в нов__ магазин__ на нашей улиц__.
+A: новом магазине; улице
+W: «В магазине» and «на улице» both answer где? → prepositional: новом магазине, улице.
+
+#B
+Q: Мы смотрели фильм на __________ (большой экран).
+A: большом экране
+W: Screens take «на»: на большом экране (-ом, -е).
+
+#C
+Q: Этот стол сделан ___ дерев__.
+A: из дерева
+W: «Из» + genitive also says what something is made of: дерево → дерева (also из стекла, из металла).
+
+@stage D
+#F
+Q: мы / жить / на / пятый / этаж / в / новый / дом
+N: Build a present-tense sentence.
+A: Мы живём на пятом этаже в новом доме.
+W: Floors take «на»: на пятом этаже; buildings take «в»: в новом доме. Both are prepositional.
+
+#F
+Q: она / вернуться / с / работа / в / семь / часы
+N: Build a past-tense sentence.
+A: Она вернулась с работы в семь часов.
+W: «Работа» takes «на», so the origin is «с работы» (genitive). «В семь часов»: from five on, «час» → часов. Feminine past with -ся: вернулась.
+
+#G
+Q: Мой сын учится в первом курсе в университете.
+N: Find and correct 1 error.
+A: Мой сын учится на первом курсе в университете.
+W: University years take «на»: на первом курсе. The university itself takes «в»: в университете.
+
+#H
+Q: Я сейчас на концерте.
+N: Say "I'm coming back from the concert."
+A: Я возвращаюсь с концерта.
+V: Я иду с концерта.
+W: «На концерте» (где?) → origin «с концерта» (с + genitive).
+
+#I
+Q: Вчера я __________ (быть) ___ выставк__, а потом __________ (пойти) ___ кафе с друзьями.
+N: The speaker is a woman.
+A: была; на выставке; пошла; в кафе
+W: Feminine past: была, пошла. Exhibitions take «на»: на выставке (где?). «Пошла куда?» → в + accusative: в кафе (indeclinable).
+
+#I
+Q: Мой друг __________ (переехать) ___ Москв__ ___ Петербург, потому что нашёл там работу.
+A: переехал; из Москвы; в Петербург
+W: Masculine past: переехал. Origin → «из» + genitive: Москвы. Destination → «в» + accusative: Петербург.
+
+#A
+Q: Я оставил телефон на стол__ в кабинет__.
+A: столе; кабинете
+W: «На столе» (on the table) and «в кабинете» (in the office) both answer где? → prepositional -е.
+
+#C
+Q: Моя дочь сейчас ___ каникул__ у бабушки.
+A: на каникулах
+W: School holidays take «на»: на каникулах (prepositional plural -ах; «каникулы» exists only in the plural).
+
+@stage E
+#A
+Q: Мой брат живёт на юг__ Франци__.
+A: юге Франции
+W: Compass points take «на»: на юге (prepositional -е). "Of France" → genitive: Франции.
+
+#A
+Q: Она вышла из дом__ и пошла на остановк__.
+A: дома; остановку
+W: «Выйти откуда?» → из + genitive: дома. «Пошла куда?» → на + accusative: остановку.
+
+#A
+Q: Мы договорились встретиться у вход__ в метро.
+A: входа
+W: «У» + genitive = by, next to: вход → входа. «В метро» shows where the entrance leads (indeclinable).
+
+#B
+Q: Я узнал об этом из __________ (последнее сообщение) моего друга.
+A: последнего сообщения
+W: «Из» + genitive (the source): последнее → последнего (soft -его), сообщение → сообщения.
+
+#B
+Q: Мои студенты учатся на __________ (разные курсы).
+A: разных курсах
+W: Courses take «на»: на курсах. Prepositional plural: разных курсах (-ых, -ах).
+
+#B
+Q: Летом мы были на __________ (Чёрное море).
+A: Чёрном море
+W: The sea takes «на»: на море. Prepositional neuter: Чёрном море.
+
+#F
+Q: я / найти / этот / рецепт / в / интернет
+N: Build a past-tense sentence. The speaker is a man.
+A: Я нашёл этот рецепт в интернете.
+W: «Найти» has an irregular past: нашёл. «В интернете» (где?) → в + prepositional. «Этот рецепт» is an accusative thing (unchanged).
+
+#F
+Q: после / работа / я / идти / на / тренировка / в / спортзал
+N: Build a present-tense sentence.
+A: После работы я иду на тренировку в спортзал.
+W: «После» → genitive: работы. «Иду куда?» → на тренировку (activities take «на», accusative -у) and в спортзал (a building takes «в»).

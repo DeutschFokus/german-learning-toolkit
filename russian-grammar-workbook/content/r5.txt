@@ -1,0 +1,194 @@
+@review 5
+@title Numbers, verb government and long sentences
+@covers Modules 16–18 (with Modules 1–15 recycled)
+@intro The end of Part III. Numbers decide noun forms, verbs decide cases, and который takes its case from its own clause. Chunk the long sentences before you write.
+
+@block 1 | Endings and forms
+#A
+Q: В нашем классе пятнадцать ученик__ и два учител__.
+A: учеников; учителя
+W: 15 → genitive plural: учеников. 2 → genitive singular: учителя.
+
+#A
+Q: Мой отец гордится сво__ работ__ в больниц__.
+A: своей работой; больнице
+W: «Гордиться чем?» → instrumental: своей работой. «Где?» → prepositional: больнице.
+
+#A
+Q: Мы всегда желаем друг другу счасть__ и здоровь__.
+A: счастья; здоровья
+W: «Желать чего?» → genitive: счастье → счастья, здоровье → здоровья (-е → -я).
+
+#A
+Q: Моему сыну двадцать два год__, а дочери девятнадцать лет.
+A: года
+W: 22 ends in «два» → genitive singular: года. 19 → лет (11–20 behave like 5+).
+
+#A
+Q: Не забудь позвонить бабушк__ и поздравить её с праздник__.
+A: бабушке; праздником
+W: «Позвонить кому?» → dative: бабушке. «Поздравить с чем?» → с + instrumental: праздником.
+
+#A
+Q: Я сомневаюсь в правильност__ эт__ ответ__.
+A: правильности этого ответа
+W: «Сомневаться в чём?» → в + prepositional: правильность → правильности (feminine -ь → -и). "Of this answer" → genitive: этого ответа.
+
+#A
+Q: Вчера в магазине я встретил нашего нов__ сосед__ с его собак__.
+A: нового соседа; собакой
+W: «Встретить кого?» → accusative of a person: нашего нового соседа. «С кем?» → instrumental: собакой.
+
+#B
+Q: Я прочитал эту статью за два __________ (час).
+A: часа
+W: After 2 → genitive singular: час → часа. «За два часа» = it took two hours.
+
+#B
+Q: Мы обращались к __________ (разные специалисты), но никто не помог.
+A: разным специалистам
+W: «Обращаться к кому?» → к + dative plural: разным специалистам.
+
+#B
+Q: Студент, с __________ (который) я разговаривал, приехал из Индии.
+A: которым
+W: «Который» refers to «студент» (masculine singular); in its own clause it follows «с» (с кем?) → instrumental: с которым.
+
+#B
+Q: Книга, __________ (который) ты мне подарил, очень интересная.
+A: которую
+W: «Который» refers to «книга» (feminine); in its clause it is the object of «подарил» (что?) → accusative: которую.
+
+#B
+Q: В нашей семье три __________ (ребёнок).
+A: ребёнка
+V: трое детей (a collective number, very common in speech)
+W: After 3 → genitive singular: ребёнок → ребёнка.
+
+@block 2 | Prepositions and verbs
+#C
+Q: Мы надеемся ___ ваш__ понимани__.
+A: на ваше понимание
+W: «Надеяться на что?» → на + accusative: ваше понимание (neuter, unchanged).
+
+#C
+Q: Мои дети уже привыкли ___ нов__ школ__.
+A: к новой школе
+W: «Привыкнуть к» → к + dative: новая школа → новой школе.
+
+#C
+Q: Я разбираюсь ___ немецк__ грамматик__ лучше, чем в русской.
+A: в немецкой грамматике
+W: «Разбираться в чём?» → в + prepositional: немецкой грамматике.
+
+#C
+Q: Мы долго спорили ___ сво__ брат__ ___ политике.
+A: со своим братом о
+W: «Спорить с кем?» → с + instrumental: своим братом («со» before «св-»). «О чём?» → о + prepositional: политике.
+
+#C
+Q: Это правило не относится ___ эт__ слов__.
+A: к этому слову
+W: «Относиться к» → к + dative: это слово → этому слову (-ому, -у).
+
+#D
+Q: Я __________ (надеяться), что ты __________ (прийти) на мой день рождения.
+A: надеюсь; придёшь
+W: «Надеяться»: надеюсь, надеешься, надеется. «Прийти» is perfective, so its present-tense form gives the future: ты придёшь.
+
+#D
+Q: Вы __________ (участвовать) в конференции? — Да, мы всегда __________ (участвовать).
+A: участвуете; участвуем
+W: -овать verbs replace -ова- with -у-: участвую, участвуешь … участвуем, участвуете.
+
+#D
+Q: Почему ты __________ (сердиться) на меня? — Я не __________ (сердиться)!
+A: сердишься; сержусь
+W: «Сердиться» is second conjugation; д → ж only in the я-form: сержусь, сердишься, сердится.
+
+#D
+Q: Я __________ (желать) вам удачи, а мои коллеги __________ (желать) вам успехов.
+A: желаю; желают
+W: «Желать» (first conjugation): желаю, желаешь … желают. The things wished are genitive: удачи, успехов.
+
+#B
+Q: Мы ждём __________ (ваш ответ) до пятницы.
+A: вашего ответа
+V: ваш ответ (common in speech)
+W: With an abstract thing «ждать» usually takes the genitive: вашего ответа.
+
+#B
+Q: Я познакомился с девушкой, __________ (который) живёт в соседнем доме.
+A: которая
+W: «Который» takes the gender of «девушкой» (feminine), but in its own clause it is the subject of «живёт» → nominative: которая.
+
+@block 3 | Whole sentences
+#F
+Q: у / мы / в / офис / работать / двадцать / пять / человек
+N: Build the sentence "Twenty-five people work in our office."
+A: У нас в офисе работает двадцать пять человек.
+V: У нас в офисе работают двадцать пять человек.
+W: 25 ends in «пять» → genitive plural: человек. With numbers 5+ the verb is often singular (работает); the plural is also correct.
+
+#F
+Q: я / бояться / опоздать / на / самолёт
+N: Build the sentence "I'm afraid of missing the plane."
+A: Я боюсь опоздать на самолёт.
+W: «Бояться» + infinitive: боюсь опоздать. «Опоздать на что?» → на + accusative: самолёт (unchanged).
+
+#F
+Q: мы / поздравить / наш / учительница / с / день / рождения
+N: Build a past-tense sentence.
+A: Мы поздравили нашу учительницу с днём рождения.
+W: «Поздравить кого?» → accusative: нашу учительницу. «С чем?» → с + instrumental: с днём рождения.
+
+#F
+Q: это / зависеть / от / ты / а / не / от / я
+N: Build the sentence "It depends on you, not on me."
+A: Это зависит от тебя, а не от меня.
+W: «Зависеть от» → от + genitive pronouns: тебя, меня.
+
+#F
+Q: дом / в / который / я / жить / очень / старый
+N: Build the sentence "The house I live in is very old."
+A: Дом, в котором я живу, очень старый.
+W: «Который» refers to «дом» (masculine); in its clause it answers где? → в + prepositional: в котором. The который-clause sits between commas.
+
+#G
+Q: Я жду твой ответ уже три дни.
+N: Find and correct 1 error.
+A: Я жду твой ответ уже три дня.
+V: Я жду твоего ответа уже три дня.
+W: After 3 → genitive singular: день → дня. With «ждать», an abstract object can be accusative (твой ответ) or, more formally, genitive (твоего ответа).
+
+#G
+Q: Студенты, которые я помогаю, приехали из Китай.
+N: Find and correct 2 errors.
+A: Студенты, которым я помогаю, приехали из Китая.
+W: «Помогать кому?» → the relative pronoun is dative plural: которым. «Из» → genitive: Китая.
+
+#H
+Q: У меня два брата.
+N: Change it to five brothers.
+A: У меня пять братьев.
+W: After 5 → genitive plural: the irregular plural братья → братьев (like стулья → стульев). With 2–4 it was genitive singular: два брата.
+
+#I
+Q: Я __________ (знать) девушку, __________ (который) __________ (работать) в нашей библиотеке.
+A: знаю; которая; работает
+W: «Я знаю» (present). «Который» refers to «девушку» (feminine) and is the subject of its clause → которая. Verb: она работает.
+
+#I
+Q: Через три недел__ мы __________ (поехать) к нашим друзьям в Минск на пять дн__.
+A: недели; поедем; дней
+W: After 3 → genitive singular: недели. «Поехать» → мы поедем (future). After 5 → genitive plural: дней.
+
+#A
+Q: Я пишу статьи для сайт__ нашей школ__.
+A: сайта; школы
+W: «Для» → genitive: сайт → сайта. "The site of our school" → genitive: нашей школы.
+
+#A
+Q: Мой друг интересуется стар__ русск__ фильм__ — у него их сотни.
+A: старыми русскими фильмами
+W: «Интересоваться чем?» → instrumental; «их сотни» shows the plural: старыми русскими фильмами (-ыми, -ими, -ами).

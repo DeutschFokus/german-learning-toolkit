@@ -1,0 +1,194 @@
+@review 4
+@title Prepositions of place, people and time
+@covers Modules 13–15 (with Parts I–II recycled)
+@intro Places, people and time: в / на / из / с, к / у / от, and the time map. For every gap, first decide which system you are in — a place, a person or a time — and then which question it answers.
+
+@block 1 | Endings and forms
+#A
+Q: Моя сестра работает на почт__, а её муж — в банк__.
+A: почте; банке
+W: The post office takes «на», a bank takes «в»; both answer где? → prepositional -е.
+
+#A
+Q: Мы вернулись с мор__ загорелые и счастливые.
+A: моря
+W: «На море» → "from the sea" is «с моря»: с + genitive (море → моря).
+
+#A
+Q: Мой отец уже два год__ на пенси__.
+A: года; пенсии
+W: After «два» → genitive singular: года. «На пенсии» (retired) → prepositional -ии.
+
+#A
+Q: Я всегда готовлюсь к урок__ заранее.
+A: уроку
+W: «Готовиться к» (prepare for) → к + dative: урок → уроку. The same pattern: готовиться к экзамену.
+
+#A
+Q: Я позвоню тебе через недел__.
+A: неделю
+W: «Через» + accusative (in, from now): неделя → неделю.
+
+#A
+Q: Анна всю жизнь живёт на север__ Росси__.
+A: севере России
+W: Compass points take «на»: на севере (prepositional -е). "Of Russia" → genitive: России.
+
+#A
+Q: Мы ходим в кино по пятниц__.
+A: пятницам
+W: Regular days → «по» + dative plural: по пятницам (every Friday).
+
+#B
+Q: Вчера я был у __________ (мой зубной врач).
+A: моего зубного врача
+W: «У» + genitive = at someone's: мой зубной врач → моего зубного врача.
+
+#B
+Q: Я получил сообщение от __________ (наша преподавательница).
+A: нашей преподавательницы
+W: From a person → «от» + genitive: наша преподавательница → нашей преподавательницы.
+
+#B
+Q: Я жил в Санкт-Петербурге до __________ (прошлая весна).
+A: прошлой весны
+W: «До» → genitive: прошлая весна → прошлой весны.
+
+#B
+Q: Эту книгу я купил для __________ (наш младший сын).
+A: нашего младшего сына
+W: «Для» → genitive: наш младший сын → нашего младшего сына.
+
+#B
+Q: Как вы относитесь к __________ (современное искусство)?
+A: современному искусству
+W: «Относиться к» → к + dative: современное искусство → современному искусству (-ому, -у).
+
+@block 2 | Prepositions and verbs
+#C
+Q: Мои друзья вернулись ___ Урал__, а я — ___ Сибир__.
+A: с Урала; из Сибири
+W: «На Урале» → "from" is «с Урала»; «в Сибири» → "from" is «из Сибири». Both are genitive.
+
+#C
+Q: Мы обычно ужинаем ___ кухн__, а гостей принимаем ___ гостин__.
+A: на кухне; в гостиной
+W: Kitchens take «на»: на кухне. «Гостиная» (living room) declines like an adjective: в гостиной (-ой).
+
+#C
+Q: Я заеду ___ тебе ___ семь час__.
+A: к тебе в семь часов
+W: To a person → «к» + dative: к тебе. Clock time → «в» + accusative: в семь часов.
+
+#C
+Q: Мы с Олегом знакомы ___ школ__.
+A: со школы
+W: «С» + genitive = since: со школы (since our school days). Before «шк-» the preposition becomes «со».
+
+#C
+Q: Это лекарство хорошо помогает ___ простуд__.
+A: от простуды
+W: A remedy against something → «от» + genitive: простуда → простуды.
+
+#C
+Q: Мой рейс прилетает ___ Москв__ ___ восемь утра.
+A: из Москвы в восемь
+W: Origin → «из» + genitive: Москвы. Clock time → «в» + accusative: в восемь («утра» = of the morning, genitive).
+
+#D
+Q: Во сколько вы __________ (вставать) по утрам? — Я __________ (вставать) в шесть.
+A: встаёте; встаю
+W: «Вставать» drops -ва- in the present: встаю, встаёшь … встаёте.
+
+#D
+Q: Когда ты __________ (возвращаться) домой? — Обычно я __________ (возвращаться) в семь.
+A: возвращаешься; возвращаюсь
+W: A regular -аться verb: возвращаюсь, возвращаешься, возвращается.
+
+#D
+Q: Мы __________ (отдыхать) на море каждое лето, а наши друзья __________ (ездить) в горы.
+A: отдыхаем; ездят
+W: «Мы отдыхаем» (first conjugation). «Они ездят» (second conjugation: езжу, ездишь … ездят).
+
+#D
+Q: Сколько времени ты __________ (тратить) на дорогу? — Я __________ (тратить) час.
+A: тратишь; трачу
+W: «Тратить» (second conjugation) changes т → ч only in the я-form: трачу, тратишь.
+
+#B
+Q: Мы не виделись с __________ (наша свадьба).
+A: нашей свадьбы
+W: «С» + genitive = since: наша свадьба → нашей свадьбы.
+
+#B
+Q: Я пришёл на урок без __________ (домашнее задание).
+A: домашнего задания
+W: «Без» → genitive: домашнее задание → домашнего задания (soft -его, -я).
+
+@block 3 | Whole sentences
+#F
+Q: я / ходить / к / друг / в / гости / вчера
+N: Build a past-tense sentence. The speaker is a man.
+A: Вчера я ходил в гости к другу.
+V: Вчера я ходил к другу в гости.
+W: «Ходил» = went and came back. To a person → «к» + dative: к другу. «В гости» (visiting) is a fixed phrase.
+
+#F
+Q: магазин / работать / с / восемь / до / десять / вечера
+N: Build the sentence "The shop is open from eight to ten in the evening."
+A: Магазин работает с восьми до десяти вечера.
+W: «С … до …» → genitive: восемь → восьми, десять → десяти. «Работать» describes opening hours.
+
+#F
+Q: через / две / неделя / мы / поехать / в / отпуск
+N: Build a future-tense sentence.
+A: Через две недели мы поедем в отпуск.
+V: Мы поедем в отпуск через две недели.
+W: «Через» + accusative: через две недели (genitive singular after «две»). «Поехать» → мы поедем = future. «В отпуск» answers куда? → accusative.
+
+#F
+Q: мой / сын / учиться / на / третий / курс / в / университет
+N: Build a present-tense sentence.
+A: Мой сын учится на третьем курсе в университете.
+W: University years take «на»: на третьем курсе (третий → третьем). «В университете» → prepositional. «Учиться» → он учится.
+
+#F
+Q: я / не / видеть / мой / брат / с / прошлый / год
+N: Build the sentence "I haven't seen my brother since last year." The speaker is a woman.
+A: Я не видела своего брата с прошлого года.
+V: Я не видела моего брата с прошлого года.
+W: «Видеть кого?» → accusative of a person: своего (моего) брата. «С» + genitive = since: с прошлого года. Feminine past: видела.
+
+#G
+Q: Я вернулся из работы и сразу пошёл у друга.
+N: Find and correct 2 errors.
+A: Я вернулся с работы и сразу пошёл к другу.
+W: «На работе» → "from work" is «с работы». Going to a person → «к другу» (dative); «у друга» means being there.
+
+#G
+Q: В следующей неделе я буду в Москве в понедельнике.
+N: Find and correct 2 errors.
+A: На следующей неделе я буду в Москве в понедельник.
+W: Weeks take «на»: на следующей неделе. Days take «в» + accusative: в понедельник.
+
+#H
+Q: Я еду к бабушке.
+N: Say "I'm at my grandmother's."
+A: Я у бабушки.
+W: «К» + dative (going to a person) becomes «у» + genitive (being at someone's place): к бабушке → у бабушки.
+
+#I
+Q: В прошл__ год__ я __________ (жить) в Пекине, а ___ следующ__ год__ поеду в Шанхай.
+N: The speaker is a man.
+A: прошлом году; жил; в следующем году
+W: Years take «в» + prepositional with -у: в прошлом году, в следующем году. Masculine past: жил.
+
+#A
+Q: Мы вышли из кинотеатр__ и пошли на площад__.
+A: кинотеатра; площадь
+W: «Выйти откуда?» → из + genitive: кинотеатра. «Пойти куда?» → на + accusative: площадь (feminine -ь, unchanged).
+
+#A
+Q: Я всегда беру зонт, когда выхожу на улиц__ осень__.
+A: улицу; осенью
+W: «Выходить куда?» → на + accusative: улицу. Seasons → instrumental without a preposition: осенью.

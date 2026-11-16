@@ -1,0 +1,280 @@
+@module 14
+@part III
+@title К / от / у / для / без
+@ru Дательный и родительный с предлогами — к другу, у друга, от друга
+@learn Use the people triangle: к + dative (to), у + genitive (at), от + genitive (from).
+@learn Use к for attitude, preparation and deadlines: относиться к, готовиться к, к пятнице.
+@learn Use от for distance, remedies and causes: далеко от, лекарство от, устать от.
+@learn Use для (for) and без (without) with the genitive, and ко мне / ко всем.
+@target относится к китайскому языку
+@target к врачу · у врача · от врача
+@target для своих студентов
+@target без твоего совета
+@target далеко от центра
+@remix Redo Stage C with different people (врач → бабушка → наши соседи) — all three forms each time.
+@remix Rewrite items 9–16 as questions: «К кому ты едешь?», «У кого вы жили?», «От кого письмо?»
+@remix Write five sentences «Я хорошо / плохо отношусь к …» about habits, food and languages.
+
+@lesson
+## The people triangle
+People are not places, so they do not take в or на. Instead Russian uses a triangle of three prepositions:
+
+| | Куда? → к + dative | Где? → у + genitive | Откуда? → от + genitive |
+|---|---|---|---|
+| the doctor | к врачу | у врача | от врача |
+| my mother | к маме | у мамы | от мамы |
+| our friends | к друзьям | у друзей | от друзей |
+
+*Утром я пошёл к врачу, час сидел у врача, а потом пошёл от врача в аптеку.* Before **мне** and **всем**, к becomes **ко**: *ко мне, ко всем.*
+
+## К + dative: more than "to"
+- **towards** an object: *подойти к окну*;
+- **by** a time (deadline): *к пятнице, к вечеру, к концу недели*;
+- **attitude and preparation**: *относиться к, готовиться к, привыкать к, обращаться к*.
+
+## От, у, для, без + genitive
+**от** — from a person (*письмо от друга*), distance (*далеко от центра*), a remedy (*лекарство от кашля*), a cause (*устать от шума*), and **зависеть от**. **у** — at someone's place (*у бабушки*), the owner (*у меня есть*), next to (*у окна*). **для** — for, intended for (*для мамы, для начинающих*). **без** — without (*без сахара*).
+
+> Как ты относишься **к китайскому языку**? || к + dative masculine: -ому, -у
+> Это правило относится **к китайскому языку**. || "applies to"
+> Мы готовимся **к экзамену**. || preparation → к
+> Я сделаю это **к пятнице**. || deadline → к (до пятницы = before Friday)
+> Летом мы жили **у моих друзей**. || at someone's place → у
+> Это лекарство **от головной боли**. || a remedy → от
+
+::: contrast Из or от?
+Use **из** for places (*из банка, из Москвы*), **от** for people (*от мамы, от моего друга*). A letter "from the bank" is *из банка*; a letter "from my mum" is *от мамы*.
+:::
+
+::: mistakes Typical slips
+!> иду у врача || иду к врачу || going → к + dative
+!> я был к врачу || я был у врача || being there → у + genitive
+!> письмо из мамы || письмо от мамы || people → от
+!> относится к китайский язык || относится к китайскому языку || к → dative, every word
+!> к мне || ко мне || к → ко before мне
+:::
+@endlesson
+
+@stage A
+#C
+Q: Завтра я иду ___ стоматолог__.
+H: куда? к кому?
+A: к стоматологу
+W: Going to a person → «к» + dative: стоматолог → стоматологу (-у).
+
+#C
+Q: Сейчас я сижу ___ стоматолог__ и жду свою очередь.
+H: где? у кого?
+A: у стоматолога
+W: Being at someone's place → «у» + genitive: стоматолог → стоматолога (-а).
+
+#C
+Q: Я только что вышел ___ стоматолог__ и иду домой.
+H: откуда? от кого?
+A: от стоматолога
+W: Coming from a person → «от» + genitive: стоматолог → стоматолога.
+
+#A
+Q: Это лекарство от головн__ бол__.
+H: от чего? → genitive
+A: головной боли
+W: «Лекарство от чего?» (a remedy against) → от + genitive: головная боль → головной боли (feminine -ь → -и).
+
+#A
+Q: Я купил словарь для сво__ сын__.
+H: для кого? → genitive
+A: своего сына
+W: «Для» (for, intended for) → genitive: свой сын → своего сына (-его, -а). The son is the subject's own, so «свой».
+
+#A
+Q: Как ты относишься к китайск__ язык__?
+H: к чему? → dative
+A: китайскому языку
+W: «Относиться к» → к + dative: китайский язык → китайскому языку (-ому, -у).
+
+#B
+Q: Мы готовимся к __________ (трудный экзамен).
+H: к чему? → dative
+A: трудному экзамену
+W: «Готовиться к» → к + dative: трудный → трудному, экзамен → экзамену.
+
+#B
+Q: Я не могу работать без __________ (крепкий кофе).
+H: без чего? → genitive
+A: крепкого кофе
+W: «Без» → genitive: крепкий → крепкого. «Кофе» never changes, but it is masculine, so the adjective shows the case.
+
+@stage B
+#C
+Q: Каждое воскресенье мы ездим ___ бабушк__ ___ деревню.
+A: к бабушке в деревню
+W: To a person → «к» + dative: бабушке. To a place → «в» + accusative: деревню.
+
+#C
+Q: Мой брат живёт далеко ___ центр__.
+A: от центра
+W: «Далеко от» (far from) → genitive: центр → центра. The opposite, «недалеко от», takes the genitive too.
+
+#C
+Q: Я получил подарок ___ сво__ студент__.
+A: от своих студентов
+W: From people → «от» + genitive plural: свои студенты → своих студентов.
+
+#C
+Q: Мы всю неделю жили ___ мо__ друз__ в Сочи.
+A: у моих друзей
+W: Staying at people's home → «у» + genitive plural: мои друзья → моих друзей.
+
+#A
+Q: Я очень устал от эт__ шумн__ город__.
+A: этого шумного города
+W: «Устать от чего?» → от + genitive: этот шумный город → этого шумного города.
+
+#B
+Q: Мы быстро привыкли к __________ (русская зима).
+A: русской зиме
+W: «Привыкнуть к» → к + dative: русская зима → русской зиме.
+
+#C
+Q: Это учебник ___ начинающ__ студент__.
+A: для начинающих студентов
+W: «Для» (intended for) → genitive plural: начинающие студенты → начинающих студентов.
+
+#A
+Q: Анна подошла к окн__ и открыла его.
+A: окну
+W: «Подойти к» (approach) → к + dative: окно → окну.
+
+@stage C
+#C
+Q: Утром я пошёл ___ врач__, два часа сидел ___ врач__, а потом пошёл ___ врач__ в аптеку.
+A: к врачу; у врача; от врача
+W: The people triangle: «к» + dative (to the doctor), «у» + genitive (at the doctor's), «от» + genitive (from the doctor).
+
+#C
+Q: Вечером мы идём в гости ___ Анн__, а утром вернёмся ___ Анн__.
+A: к Анне; от Анны
+W: To a person → «к» + dative: Анне. From a person → «от» + genitive: Анны.
+
+#C
+Q: Мы были ___ театр__, а потом заехали ___ друг__.
+A: в театре; к другу
+W: A place → «в» + prepositional (где?): в театре. A person → «к» + dative (куда?): к другу.
+
+#C
+Q: Письмо пришло ___ банк__, а посылка — ___ мам__.
+A: из банка; от мамы
+W: From an institution as a place → «из» + genitive: из банка. From a person → «от» + genitive: от мамы.
+
+#C
+Q: ___ мне вчера приходил новый студент.
+A: Ко мне
+W: «К» becomes «ко» before «мне» (and «всем»): ко мне приходил … = came to see me.
+
+#B
+Q: У меня нет __________ (свободное время) для __________ (спорт).
+A: свободного времени; спорта
+W: «Нет» → genitive: свободного времени. «Для» → genitive: спорт → спорта.
+
+#A
+Q: Мы готовимся к нов__ учебн__ год__.
+A: новому учебному году
+W: «Готовиться к» → к + dative: новый учебный год → новому учебному году (-ому, -ому, -у).
+
+#B
+Q: Мы с мужем часто ходим в гости к __________ (наши соседи).
+A: нашим соседям
+W: «К» + dative plural: наши соседи → нашим соседям.
+
+@stage D
+#F
+Q: я / ходить / к / врач / вчера / мой
+N: Build the sentence "Yesterday I went to my doctor." The speaker is a woman.
+A: Вчера я ходила к своему врачу.
+V: Вчера я ходила к моему врачу.
+W: «Ходила» = went there and came back. To a person → «к» + dative: своему (моему) врачу.
+
+#F
+Q: этот / подарок / для / ты / от / мой / родители
+N: Build the sentence "This present is for you from my parents."
+A: Этот подарок для тебя от моих родителей.
+W: «Для» → genitive: тебя. «От» → genitive plural: моих родителей.
+
+#G
+Q: Сегодня я иду у врача, а потом к работе.
+N: Find and correct 2 errors.
+A: Сегодня я иду к врачу, а потом на работу.
+W: Going to a person → «к врачу» (dative); «у врача» means being there. Going to work → «на работу» (на + accusative).
+
+#H
+Q: Я иду к сестре.
+N: Say "I'm coming back from my sister's."
+A: Я иду от сестры.
+V: Я возвращаюсь от сестры.
+W: «К» + dative (to a person) becomes «от» + genitive (from a person): к сестре → от сестры.
+
+#I
+Q: Вечером я __________ (зайти) ___ сво__ друг__, и мы __________ (поговорить) о нашей поездке.
+N: The speaker is a man.
+A: зашёл; к своему другу; поговорили
+W: «Зайти» has the irregular past зашёл. To a person → «к» + dative: своему другу. Plural past: поговорили.
+
+#I
+Q: Мои родители __________ (жить) далеко ___ мен__, поэтому я редко ___ них бываю.
+A: живут; от меня; у
+W: «Жить» → они живут. «Далеко от» → genitive: меня. «Бывать у кого?» (to be at someone's place) → «у» + genitive: у них.
+
+#C
+Q: У тебя есть лекарство ___ кашл__?
+A: от кашля
+W: A remedy against something → «от» + genitive: кашель → кашля (the е drops out).
+
+#C
+Q: Я сделаю эту работу ___ пятниц__.
+A: к пятнице
+V: до пятницы (= before Friday)
+W: «К» + dative of time means "by" a deadline: к пятнице. «До пятницы» (before / until Friday) is also correct with a slightly different focus.
+
+@stage E
+#A
+Q: Я написал письмо в банк и теперь жду ответ от банк__.
+A: банка
+W: «От» → genitive: банк → банка (here the bank is the sender, like a person).
+
+#A
+Q: Я ничего не делаю без тво__ совет__.
+A: твоего совета
+W: «Без» → genitive: твой совет → твоего совета.
+
+#A
+Q: Мы купили игрушки для наш__ дет__.
+A: наших детей
+W: «Для» → genitive plural: наши дети → наших детей.
+
+#B
+Q: Я всегда хорошо отношусь к __________ (новые люди).
+A: новым людям
+W: «Относиться к» → к + dative plural: новые люди → новым людям.
+
+#B
+Q: Летом мы жили у __________ (моя тётя) на даче.
+A: моей тёти
+W: «У» + genitive (at someone's place): моя тётя → моей тёти.
+
+#C
+Q: Студенты обратились ___ декан__ с просьбой.
+A: к декану
+W: «Обратиться к кому?» (to turn to someone) → «к» + dative: декан → декану.
+
+#F
+Q: как / ты / относиться / к / этот / идея
+N: Build the question "What do you think of this idea?"
+A: Как ты относишься к этой идее?
+W: «Относиться к» → к + dative: эта идея → этой идее. «Относиться» (second conjugation): ты относишься.
+
+#F
+Q: я / не / мочь / жить / без / мой / друзья
+N: Build a present-tense sentence.
+A: Я не могу жить без своих друзей.
+V: Я не могу жить без моих друзей.
+W: «Без» → genitive plural: своих (моих) друзей. «Мочь» → я могу.

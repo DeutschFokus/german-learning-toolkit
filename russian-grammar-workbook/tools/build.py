@@ -527,7 +527,7 @@ def check_gaps(ref, q, a, warns):
     gi = [i for i, t in enumerate(qtok) if "_" in t]
     if not gi:
         return
-    span = qtok
+    span = qtok[gi[0]:]
     ans = [t for t in re.split(r"[\s;,]+", a.replace("(", " ").replace(")", " ")) if t and WORD.fullmatch(t)]
     j = 0
     for t in span:

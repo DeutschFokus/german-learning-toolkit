@@ -1,0 +1,288 @@
+@module 15
+@part III
+@title Time expressions
+@ru Когда? Как долго? — через две недели, на следующей неделе, в прошлом году
+@learn Say when: в пятницу, в семь часов, на этой неделе, в мае, в прошлом году, летом.
+@learn Say "in", "ago", "until", "after", "since" and "by": через, назад, до, после, с, к.
+@learn Say how long and how often: два часа, всю неделю, на неделю, за два дня, каждую неделю, по субботам.
+@learn Use the present tense for actions that started earlier and are still going on: Как давно ты работаешь здесь?
+@target через две недели
+@target через два месяца
+@target на следующей неделе
+@target в прошлом году
+@target Как давно ты работаешь здесь?
+@remix Redo Stage A moving every sentence one step in time: в пятницу → в следующую пятницу, на этой неделе → на прошлой неделе.
+@remix Turn items 9–16 into questions with Когда? Как долго? Как часто? and answer them about your own life.
+@remix Write your week plan in Russian: one sentence per day, each with a different time expression.
+
+@lesson
+## The time-expression map
+Russian time phrases look random until you see the system: each kind of time unit has its own preposition and case.
+
+| When? | Construction | Examples |
+|---|---|---|
+| day of the week | в + accusative | в понедельник, во вторник, в среду, в пятницу |
+| clock time | в + accusative | в семь часов, в два часа, в час |
+| week | на + prepositional | на этой / прошлой / следующей неделе |
+| month | в + prepositional | в мае, в этом месяце |
+| year | в + prepositional (год → году) | в прошлом году, в следующем году |
+| season, part of day | instrumental, no preposition | летом, зимой, утром, вечером |
+
+| Relation | Construction | Examples |
+|---|---|---|
+| in (from now) | через + accusative | через две недели, через два месяца |
+| ago | accusative + назад | два дня назад, неделю назад |
+| until, before | до + genitive | до пятницы, до вечера |
+| after | после + genitive | после урока, после обеда |
+| from … to | с + genitive … до + genitive | с девяти до пяти |
+| since | с + genitive | с прошлого года |
+| by (deadline) | к + dative | к пятнице, к утру |
+
+| How long / how often? | Construction | Examples |
+|---|---|---|
+| duration | accusative, no preposition | два часа, всю неделю, целый год |
+| planned length | на + accusative | на неделю, на два дня |
+| time it took | за + accusative | за два дня |
+| every | каждый + accusative | каждый день, каждую неделю, каждое утро |
+| regularly | по + dative plural | по понедельникам, по выходным |
+
+::: rule Как давно …? — the present tense
+When something started in the past and is **still going on**, Russian uses the **present** tense where English uses "have been doing": *Как давно ты работаешь здесь? — Я работаю здесь уже три года. Я учу русский два года.*
+:::
+
+> **Через две недели** я поеду в Россию. || неделя is feminine: две недели
+> **Через два месяца** мой китайский станет лучше. || месяц: два месяца
+> **На следующей неделе** у меня экзамен. || weeks take на
+> **В прошлом году** я был в Китае. || год → году
+> Я работаю **с девяти до пяти**. || both genitive
+> **По выходным** мы спим долго. || regular → по + dative plural
+
+::: mistakes Your real mistakes
+!> через два неделм || через две недели || неделя is feminine → две; after две → genitive singular
+!> в следующей неделе || на следующей неделе || weeks take на
+!> в прошлом годе || в прошлом году || год → в году
+!> в понедельнике || в понедельник || days: в + accusative
+!> Как давно ты работал здесь? || Как давно ты работаешь здесь? || still working → present tense
+:::
+@endlesson
+
+@stage A
+#C
+Q: Я вернусь ___ две недели.
+H: in two weeks
+A: через две недели
+W: «Через» + accusative = in (a period from now): через две недели. «Неделя» is feminine, so «две»; after «две» the noun is genitive singular: недели.
+
+#C
+Q: Мы встречаемся ___ пятниц__.
+H: on Friday
+A: в пятницу
+W: Days of the week take «в» + accusative: пятница → пятницу.
+
+#C
+Q: Я родился ___ ма__.
+H: in May
+A: в мае
+W: Months take «в» + prepositional: май → мае (-й → -е). Compare: в январе, в сентябре.
+
+#C
+Q: ___ эт__ недел__ у меня много работы.
+H: this week
+A: На этой неделе
+W: Weeks take «на» + prepositional: на этой неделе (-ой, -е).
+
+#A
+Q: Я работаю с девят__ до пят__.
+H: from … till → genitive
+A: девяти; пяти
+W: «С … до …» (from … till) → both genitive: девять → девяти, пять → пяти (numbers in -ь decline like feminine -ь nouns).
+
+#B
+Q: Я обязательно вернусь до __________ (вечер).
+H: до → genitive
+A: вечера
+W: «До» (before, until) → genitive: вечер → вечера.
+
+#B
+Q: Мы позвоним тебе после __________ (обед).
+H: после → genitive
+A: обеда
+W: «После» (after) → genitive: обед → обеда. The same pattern: после урока, после работы.
+
+#B
+Q: Я болел __________ (вся неделя).
+H: how long? → accusative
+A: всю неделю
+W: Duration (how long?) uses the accusative without a preposition: вся неделя → всю неделю.
+
+@stage B
+#C
+Q: ___ два месяц__ мой испанский станет намного лучше.
+A: Через два месяца
+W: «Через» + accusative = in (from now). After «два» the noun takes the genitive singular: два месяца. «Станет» (perfective) points to the future.
+
+#A
+Q: Я начал учить русский два год__ назад.
+A: года
+W: «Назад» (ago) follows the time phrase. After «два» the noun is genitive singular: два года.
+
+#A
+Q: В прошл__ год__ мы ездили в Китай, а в следующ__ год__ поедем в Японию.
+A: прошлом году; следующем году
+W: Years take «в» + prepositional, and «год» takes the special -у: в прошлом году, в следующем году (-ем after щ).
+
+#C
+Q: Я хожу в бассейн ___ понедельник__ и ___ четверг__.
+A: по понедельникам; по четвергам
+W: Regular days → «по» + dative plural: по понедельникам, по четвергам (every Monday and Thursday).
+
+#B
+Q: Мы уезжаем в отпуск на __________ (неделя).
+A: неделю
+W: A planned length of time → «на» + accusative: неделя → неделю (for a week).
+
+#A
+Q: Каждое утр__ я пью кофе, а каждую суббот__ хожу на рынок.
+A: утро; субботу
+W: «Каждый» + accusative for repetition: каждое утро (neuter, unchanged), каждую субботу (feminine -у).
+
+#C
+Q: Я прочитал эту книгу ___ два дня.
+A: за два дня
+W: «За» + accusative = the time it took to finish something: за два дня (in two days).
+
+#A
+Q: Как давно ты работа__ здесь? — Я работа__ здесь уже три года.
+A: работаешь; работаю
+W: For something that started in the past and is still going on, Russian uses the present tense: «Как давно ты работаешь здесь?» — «Я работаю здесь уже три года».
+
+@stage C
+#C
+Q: Я был в Москве ___ прошл__ недел__, а ___ прошл__ месяц__ — в Казани.
+A: на прошлой неделе; в прошлом месяце
+W: Weeks take «на»: на прошлой неделе. Months take «в»: в прошлом месяце. Both are prepositional.
+
+#C
+Q: Урок начинается ___ семь час__, а заканчивается ___ восемь.
+A: в семь часов; в
+W: Clock time → «в» + accusative: в семь часов (after семь → genitive plural часов). In the second part «часов» is understood: в восемь.
+
+#C
+Q: Я уезжаю ___ пятницу, а вернусь ___ неделю.
+A: в пятницу; через неделю
+W: A day → «в» + accusative: в пятницу. "In a week" (from now) → «через» + accusative: через неделю.
+
+#C
+Q: Мы были в Испании два года ___, а снова поедем туда ___ два года.
+A: назад; через
+W: «Два года назад» = two years ago; «через два года» = in two years. «Назад» follows the phrase, «через» comes before it.
+
+#B
+Q: Я ждал твоего звонка __________ (целая неделя)!
+A: целую неделю
+W: Duration → accusative without a preposition: целая неделя → целую неделю.
+
+#B
+Q: Я закончу проект к __________ (утро).
+A: утру
+W: «К» + dative = by (a deadline): утро → утру (by the morning).
+
+#C
+Q: Мы поедем на дачу ___ выходн__.
+A: на выходные
+W: «На выходные» (for the weekend) → «на» + accusative plural: выходные (a plural thing, unchanged).
+
+#A
+Q: Летом мы отдыхаем на море, а зим__ катаемся на лыжах.
+A: зимой
+W: Seasons use the instrumental without a preposition: летом, зимой, весной, осенью.
+
+@stage D
+#F
+Q: через / два / месяц / мой / китайский / стать / лучше
+N: Build the sentence "In two months my Chinese will get better."
+A: Через два месяца мой китайский станет лучше.
+W: «Через» + accusative: через два месяца (after «два» → genitive singular месяца). «Стать» (perfective) → станет = future. «Лучше» = better.
+
+#F
+Q: как / давно / ты / работать / здесь
+N: Build the question "How long have you been working here?"
+A: Как давно ты работаешь здесь?
+V: Как давно ты здесь работаешь?
+W: For an action that started in the past and continues, Russian uses the present tense: ты работаешь. English "have been working" → Russian present.
+
+#G
+Q: Я вернусь через две неделях, в понедельнике.
+N: Find and correct 2 errors.
+A: Я вернусь через две недели, в понедельник.
+W: After «две» the noun is genitive singular: две недели. Days of the week take «в» + accusative: в понедельник.
+
+#H
+Q: Я был в Москве на прошлой неделе.
+N: Change it to the future: next week.
+A: Я буду в Москве на следующей неделе.
+W: The future of «быть» is «буду». «На прошлой неделе» → «на следующей неделе» (на + prepositional; -ей after щ).
+
+#I
+Q: ___ среду я __________ (работать) с утр__ до вечер__.
+A: В; работаю; утра; вечера
+W: Days → «в» + accusative: в среду. Present я-form: работаю. «С … до …» → genitive: с утра до вечера.
+
+#I
+Q: Мой брат __________ (приехать) к нам ___ две недели ___ неделю.
+A: приедет; через; на
+W: «Приехать» (perfective) → он приедет = future. «Через две недели» = when he arrives (in two weeks); «на неделю» = how long he plans to stay.
+
+#B
+Q: Мы не виделись с __________ (прошлое лето).
+A: прошлого лета
+W: «С» + genitive = since: прошлое лето → прошлого лета.
+
+#B
+Q: В __________ (следующий месяц) я начну новый курс.
+A: следующем месяце
+W: Months take «в» + prepositional: следующий месяц → следующем месяце (-ем after щ).
+
+@stage E
+#A
+Q: Магазин закрыт до понедельник__.
+A: понедельника
+W: «До» (until) → genitive: понедельник → понедельника. «Закрыт до понедельника» = closed until Monday.
+
+#A
+Q: Я позвоню тебе после урок__ или вечер__.
+A: урока; вечером
+W: «После» → genitive: урока. «Вечером» (in the evening) is the instrumental used as a time word, without a preposition.
+
+#A
+Q: По выходн__ мы спим до десяти.
+A: выходным
+W: Regular time → «по» + dative plural: по выходным (on weekends). «До десяти» → genitive.
+
+#B
+Q: Я сдам работу к __________ (конец недели).
+A: концу недели
+W: «К» + dative = by: конец → концу (the е drops); «недели» stays genitive (of the week).
+
+#B
+Q: Мы переехали в Германию в __________ (сентябрь).
+A: сентябре
+W: Months take «в» + prepositional: сентябрь → сентябре.
+
+#B
+Q: Я работаю в этой школе с __________ (прошлый год).
+A: прошлого года
+W: «С» + genitive = since: прошлый год → прошлого года. The present tense «работаю» shows it still continues.
+
+#F
+Q: на / следующий / неделя / у / я / быть / экзамен
+N: Build the sentence "Next week I'll have an exam."
+A: На следующей неделе у меня будет экзамен.
+W: Weeks → «на» + prepositional: на следующей неделе. «У меня будет» + the nominative subject: экзамен.
+
+#F
+Q: я / учить / русский / уже / два / год
+N: Build the sentence "I've been learning Russian for two years."
+A: Я учу русский уже два года.
+V: Я уже два года учу русский.
+W: An action that started in the past and continues → present tense: учу. Duration without a preposition: два года (after «два» → genitive singular).

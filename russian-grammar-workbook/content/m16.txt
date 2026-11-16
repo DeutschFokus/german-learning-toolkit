@@ -1,0 +1,286 @@
+@module 16
+@part III
+@title Numbers and noun endings
+@ru Числительные и существительные — один год, два года, пять лет
+@learn Choose the noun form after a number: 1 → nominative singular, 2–4 → genitive singular, 5+ → genitive plural.
+@learn Follow the last word of compound numbers (21, 22, 25) and treat 11–14 as "5+".
+@learn Use один / одна / одно and два / две correctly, and the adjective after 2–4.
+@learn Handle the special forms: год → года → лет, человек, раз, час, неделя, месяц, рубль, день.
+@target через две недели
+@target через два месяца
+@target двадцать два года
+@target пять человек
+@target двенадцать студентов
+@remix Redo Stage B with new numbers: change every 2–4 to 5+ and every 5+ to 1, then fix the nouns.
+@remix Say your age, the age of three family members and how long you have lived in your city.
+@remix Count objects around you aloud from 1 to 25 with one noun (одна ручка, две ручки … двадцать пять ручек).
+
+@lesson
+## The rule of three
+After a number, the noun form depends on the **last word** of the number:
+
+| Number ends in | Noun form | Examples |
+|---|---|---|
+| 1 (21, 31 … but not 11) | nominative singular | один студент, одна неделя, двадцать один год |
+| 2, 3, 4 (22, 23, 24 … but not 12–14) | genitive singular | два студента, две недели, три года |
+| 5–20, 25–30 …, and 11–14 | genitive plural | пять студентов, десять минут, двенадцать лет |
+
+**Сколько, много, мало, несколько** take the genitive plural as well: *сколько студентов, много лет.*
+
+## One and two agree
+**Один / одна / одно / одни** behaves like an adjective: *один час, одна чашка, одно слово, одни часы (one watch).* **Два** goes with masculine and neuter nouns, **две** with feminine ones: *два брата, два окна, две сестры, две недели.*
+
+## Words you count every day
+| | 1 | 2–4 | 5+ |
+|---|---|---|---|
+| год | год | года | лет |
+| человек | человек | человека | человек |
+| раз | раз | раза | раз |
+| час | час | часа | часов |
+| неделя | неделя | недели | недель |
+| месяц | месяц | месяца | месяцев |
+| день | день | дня | дней |
+| рубль | рубль | рубля | рублей |
+
+::: rule An adjective after 2, 3, 4
+With masculine and neuter nouns the adjective takes the **genitive plural**: *два новых студента, три больших окна.* With feminine nouns it is usually **nominative plural**: *две новые книги* (две новых книги is also heard).
+:::
+
+> **Через две недели** я поеду домой. || неделя is feminine: две
+> **Через два месяца** мой китайский станет лучше. || 2 → genitive singular
+> Мне **двадцать один год**, брату **двадцать три года**. || the last word decides
+> В группе **двенадцать студентов**. || 11–14 behave like 5+
+> На вечеринку пришли **пять человек**. || not «пять людей»
+> Я был в России **два раза**. || раз → раза → раз
+
+::: mistakes Your real mistakes
+!> через два неделм || через две недели || feminine → две; 2–4 → genitive singular
+!> пять студента || пять студентов || 5+ → genitive plural
+!> двенадцать студента || двенадцать студентов || 11–14 → genitive plural
+!> пять годов || пять лет || год → лет after 5+
+!> двадцать один года || двадцать один год || 21 ends in один → nominative
+:::
+@endlesson
+
+@stage A
+#A
+Q: У меня два брат__ и две сестр__.
+H: 2 → genitive singular
+A: брата; сестры
+W: After «два / две» the noun is genitive singular: брат → брата, сестра → сестры. «Две» is used because «сестра» is feminine.
+
+#A
+Q: В нашей группе двенадцать студент__.
+H: 11–14 → genitive plural
+A: студентов
+W: 11–14 always take the genitive plural, even though they end in -надцать with 1–4 inside: двенадцать студентов.
+
+#A
+Q: Моей дочери три год__.
+H: 3 → genitive singular
+A: года
+W: After 2, 3, 4 → genitive singular: год → года (1 год, 2–4 года, 5+ лет). Age is dative: моей дочери.
+
+#B
+Q: Я жду тебя уже пять __________ (минута)!
+H: 5+ → genitive plural
+A: минут
+W: From 5 on → genitive plural: минута → минут (feminine: zero ending).
+
+#B
+Q: Я вернусь через две __________ (неделя).
+H: две + genitive singular
+A: недели
+W: «Неделя» is feminine, so the number is «две»; after 2–4 the noun is genitive singular: недели.
+
+#B
+Q: В этой комнате четыре __________ (окно).
+H: 4 → genitive singular
+A: окна
+W: After 2–4 → genitive singular: окно → окна. «Окно» is neuter, so the number is «четыре» as for masculine nouns (два окна, not две).
+
+#B
+Q: Мы прожили в Германии десять __________ (год).
+H: 5+ → special form
+A: лет
+W: From 5 on, «год» uses the special form «лет»: десять лет (1 год, 2–4 года).
+
+#A
+Q: Я выпил одн__ чашк__ кофе и сразу проснулся.
+H: один agrees like an adjective
+A: одну чашку
+W: «Один» agrees with the noun like an adjective: одна чашка → одну чашку (accusative after «выпить что?»).
+
+@stage B
+#B
+Q: Билет стоит двести __________ (рубль).
+A: рублей
+W: «Двести» (200) behaves like 5+ → genitive plural: рубль → рублей (-ь → -ей).
+
+#B
+Q: Мой брат старше меня на три __________ (год).
+A: года
+W: After 3 → genitive singular: года. «На три года» = by three years.
+
+#B
+Q: У нас в семье пять __________ (человек).
+A: человек
+W: After numbers from 5 the genitive plural of «человек» is «человек» (not «людей»): пять человек.
+
+#B
+Q: Я был в России два __________ (раз).
+A: раза
+W: After 2 → genitive singular: раз → раза. After 5+ the form is «раз»: пять раз.
+
+#B
+Q: В нашей школе двадцать один __________ (учитель).
+A: учитель
+W: Compound numbers follow their last word: 21 ends in «один» → nominative singular: двадцать один учитель.
+
+#B
+Q: Мне нужно купить три __________ (тетрадь) и две __________ (ручка).
+A: тетради; ручки
+W: After 2–4 → genitive singular: тетрадь → тетради, ручка → ручки. «Ручка» is feminine → «две».
+
+#A
+Q: Поезд отправляется через сорок три минут__.
+A: минуты
+W: The last word is «три» → genitive singular: сорок три минуты.
+
+#B
+Q: У меня в группе двадцать два __________ (студент).
+A: студента
+W: The last word is «два» → genitive singular: двадцать два студента.
+
+@stage C
+#A
+Q: В понедельник пришёл один студент, во вторник — два студент__, а в среду — пять студент__.
+A: студента; студентов
+W: 1 → nominative singular (студент); 2–4 → genitive singular (студента); 5+ → genitive plural (студентов).
+
+#A
+Q: Мне двадцать один год, моей сестре двадцать три год__, а брату двадцать шесть лет.
+A: года
+W: Age follows the last word: 21 → год, 23 → года, 26 → лет. The last word here is «три» → года.
+
+#B
+Q: Я учусь здесь уже два __________ (месяц), а мой друг — пять __________ (месяц).
+A: месяца; месяцев
+W: 2 → genitive singular: месяца. 5 → genitive plural: месяцев (after ц an unstressed -ов is spelled -ев).
+
+#B
+Q: В этом доме одиннадцать __________ (этаж), а в том — двадцать один __________ (этаж).
+A: этажей; этаж
+W: 11–14 → genitive plural: этажей (after ж → -ей). 21 ends in «один» → nominative singular: двадцать один этаж.
+
+#B
+Q: Я купил две __________ (новая книга).
+A: новые книги
+V: две новых книги (also heard in speech)
+W: With feminine nouns after 2–4, the adjective is usually nominative plural (новые) and the noun genitive singular (книги): две новые книги.
+
+#B
+Q: В класс вошли два __________ (новый студент).
+A: новых студента
+W: With masculine nouns after 2–4, the adjective takes the genitive plural (новых) and the noun the genitive singular (студента): два новых студента.
+
+#C
+Q: Я позвоню тебе ___ две минут__.
+A: через две минуты
+W: «Через» + accusative (in, from now); after «две» the noun is genitive singular: минуты.
+
+#C
+Q: Я вернусь ___ пять дн__.
+A: через пять дней
+W: «Через» + accusative; after 5 → genitive plural: день → дней (the е drops out).
+
+@stage D
+#F
+Q: в / наш / группа / двенадцать / студент / из / разный / страны
+N: Build the sentence "There are twelve students from different countries in our group."
+A: В нашей группе двенадцать студентов из разных стран.
+W: 11–14 → genitive plural: двенадцать студентов. «Из» → genitive plural: разных стран.
+
+#F
+Q: мой / дочь / четыре / год / уже
+N: Build the sentence "My daughter is already four."
+A: Моей дочери уже четыре года.
+W: Age uses the dative: моя дочь → моей дочери. After 4 → genitive singular: года.
+
+#G
+Q: Через два неделм я поеду к родителям на пять дня.
+N: Find and correct 2 errors.
+A: Через две недели я поеду к родителям на пять дней.
+W: «Неделя» is feminine: две недели (genitive singular after 2–4). After 5 → genitive plural: пять дней.
+
+#H
+Q: У меня один брат.
+N: Change it to three brothers.
+A: У меня три брата.
+W: After 3 → genitive singular: брат → брата. «У меня» + a number phrase works like «у меня есть»: the number phrase is the subject.
+
+#I
+Q: Мне __________ (быть) тогда двадцать два год__, и я __________ (жить) в Москве три месяц__.
+N: The speaker is a man.
+A: было; года; жил; месяца
+W: Age in the past uses neuter «было»: мне было … 22 → года. Masculine past: жил. After 3 → genitive singular: месяца.
+
+#I
+Q: Каждый день я __________ (проводить) четыре урок__ и __________ (проверять) двадцать тетрад__.
+A: провожу; урока; проверяю; тетрадей
+W: «Проводить» → я провожу (д → ж). After 4 → genitive singular: урока. «Проверять» → проверяю. After 20 → genitive plural: тетрадей (feminine -ь → -ей).
+
+#A
+Q: Этот телефон стоит триста евро, а тот — четыреста пятьдесят доллар__.
+A: долларов
+W: The last word is «пятьдесят» → genitive plural: долларов. «Евро» never changes.
+
+#A
+Q: Мы ждали автобус двадцать минут, а потом ещё одн__ минут__.
+A: одну минуту
+W: «Один» agrees with the noun like an adjective. Duration is accusative, and «минута» is feminine: одна минута → одну минуту.
+
+@stage E
+#A
+Q: В году двенадцать месяц__, а в месяце примерно четыре недел__.
+A: месяцев; недели
+W: 12 → genitive plural: месяцев. 4 → genitive singular: недели.
+
+#A
+Q: Мой сын учится в школе уже пять лет, а дочь — только два год__.
+A: года
+W: After 2 → genitive singular: года (5 лет but 2 года).
+
+#A
+Q: Сегодня я выучил тридцать нов__ слов__.
+A: новых слов
+W: After 30 → genitive plural: новых слов (neuter -о nouns have a zero ending: слово → слов).
+
+#B
+Q: Мне нужно три __________ (час), чтобы закончить работу.
+A: часа
+W: After 3 → genitive singular: час → часа (1 час, 2–4 часа, 5+ часов).
+
+#B
+Q: Сколько у тебя __________ (учебник) по русскому? — Два __________ (учебник).
+A: учебников; учебника
+W: «Сколько» → genitive plural: учебников. After 2 → genitive singular: учебника.
+
+#B
+Q: Я живу в этом городе двадцать четыре __________ (год).
+A: года
+W: The last word is «четыре» → genitive singular: двадцать четыре года.
+
+#F
+Q: на / вечеринка / прийти / только / три / человек
+N: Build the sentence "Only three people came to the party."
+A: На вечеринку пришли только три человека.
+V: На вечеринку пришло только три человека.
+W: After 2–4 → genitive singular: три человека. The verb is usually plural (пришли); the neuter singular (пришло) is also possible. «На вечеринку» answers куда? → accusative.
+
+#F
+Q: через / пять / минута / начаться / урок
+N: Build the sentence "The lesson starts in five minutes."
+A: Урок начнётся через пять минут.
+V: Через пять минут начнётся урок.
+W: «Через» + accusative; after 5 → genitive plural: минут. «Начаться» (perfective) → начнётся = future.
