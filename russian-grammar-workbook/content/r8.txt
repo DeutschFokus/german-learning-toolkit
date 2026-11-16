@@ -1,0 +1,197 @@
+@review 8
+@title Final review: the whole workbook
+@covers Modules 1–30
+@intro The last test covers every part of the workbook, with all nine exercise types. Twenty of these sentences were the very first exercises designed for this book; now they come back without hints. Aim for 32 / 35 or more — and compare your score with Review 1.
+
+@block 1 | Endings and forms
+#A
+Q: Я живу в больш__ нов__ дом__ недалеко от центра.
+A: большом новом доме
+W: «Жить в…» answers где?, so the place is prepositional. Masculine singular: большой → большом (stressed -ом), новый → новом, дом → доме (-е).
+
+#A
+Q: Каждую неделю я разговариваю со всеми мо__ русскоязычн__ студент__.
+A: моими русскоязычными студентами
+W: «Разговаривать с кем?» → instrumental. «Всеми» signals plural, so every word takes instrumental plural: мои → моими, русскоязычные → русскоязычными, студенты → студентами (-ами).
+
+#A
+Q: Анна, у меня была плох__ связ__, поэтому ты меня не услышал__.
+A: плохая связь; услышала
+W: «Связь» is feminine (-ь) and is the subject after «у меня была», so it stays nominative: плохая связь. «Ты» is Анна, so the past tense is feminine: услышала («услышать» = to catch, perceive).
+
+#A
+Q: Я долго не мог найти нужн__ информаци__ на сайт__ университета.
+A: нужную информацию; сайте
+W: «Найти что?» → accusative feminine: нужную информацию (-ую, -ию). Websites take «на»: на сайте (prepositional).
+
+#A
+Q: Вчера я разговаривал с преподавател__ китайск__ язык__ обо всех мо__ ошибк__.
+A: преподавателем китайского языка; моих ошибках
+W: «С кем?» → instrumental: преподавателем; "of Chinese" stays genitive: китайского языка. «Обо всех» → prepositional plural: моих ошибках.
+
+#A
+Q: Моя дочь занимается музык__ с пят__ лет.
+A: музыкой; пяти
+W: «Заниматься чем?» → instrumental: музыкой. «С пяти лет» (since the age of five) → с + genitive: пять → пяти.
+
+#B
+Q: Я часто помогаю __________ (мой младший брат) с домашним заданием.
+A: моему младшему брату
+W: «Помогать кому?» → dative. Masculine singular: мой → моему, младший → младшему (-ему: the stem ends in ш and the ending is unstressed), брат → брату (-у).
+
+#B
+Q: У меня нет __________ (свободное время) на этой неделе.
+A: свободного времени
+W: «Нет» (absence) → genitive. Neuter singular: свободное → свободного; «время» has the special genitive «времени» (nouns in -мя insert -ен-: имя → имени).
+
+#B
+Q: Мы долго говорили о __________ (наш новый проект).
+A: нашем новом проекте
+W: «Говорить о чём?» → prepositional. Masculine singular: наш → нашем, новый → новом, проект → проекте (-е).
+
+#B
+Q: Я написал письмо __________ (наш новый директор) и попросил его о __________ (короткий отпуск).
+A: нашему новому директору; коротком отпуске
+W: «Написать кому?» → dative: нашему новому директору. «Попросить о чём?» → prepositional: коротком отпуске.
+
+#B
+Q: Мы ждали __________ (ваш звонок) весь вечер.
+A: вашего звонка
+V: ваш звонок (common in speech)
+W: With an abstract thing «ждать» usually takes the genitive: вашего звонка.
+
+@block 2 | Prepositions, verbs and aspect
+#C
+Q: Я каждый день думаю ___ мо__ будущ__ работ__.
+A: о моей будущей работе
+W: «Думать о чём?» → «о» + prepositional. Feminine singular: моя → моей, будущая → будущей (soft-type ending after щ), работа → работе (-е).
+
+#C
+Q: Я работаю ___ ноутбук__, а мой брат работает ___ офис__.
+A: на ноутбуке; в офисе
+W: Both answer где? → prepositional (-е). A laptop is the device you work on → «на ноутбуке»; an office is an enclosed space → «в офисе».
+
+#C
+Q: В семь часов я вернулся ___ работ__ и сразу лёг спать.
+A: с работы
+W: Russians say «на работе» (где?) and «на работу» (куда?), so «from» is «с» + genitive: работа → работы. Places that take «на» take «с» for origin; places with «в» take «из».
+
+#C
+Q: Студенты вышли ___ аудитори__ и пошли ___ столов__.
+A: из аудитории; в столовую
+W: «Выйти откуда?» → из + genitive: аудитории (-ия → -ии). «Пойти куда?» → в + accusative: столовую («столовая» declines like an adjective).
+
+#D
+Q: Каждый день я __________ (писать) студентам короткие сообщения.
+A: пишу
+W: Present tense, я-form. «Писать» switches to the stem пиш- in every present-tense form: пишу, пишешь, пишет … пишут.
+
+#D
+Q: Ты __________ (мочь) позвонить мне завтра утром?
+A: можешь
+W: Present tense, ты-form of «мочь»: могу, можешь, может, можем, можете, могут. The г of the я- and они-forms becomes ж in all the other forms.
+
+#D
+Q: Вчера мои друзья __________ (прийти) на вечеринку очень поздно.
+A: пришли
+W: Past tense with a plural subject («друзья») → -ли. «Прийти» has an irregular past stem: пришёл, пришла, пришли.
+
+#D
+Q: Завтра я __________ (встать) в пять, потому что мой поезд __________ (отправляться) в шесть.
+A: встану; отправляется
+W: «Встать» is perfective → встану = one future event. A timetable uses the imperfective present: поезд отправляется.
+
+#E
+Q: Вчера я два часа __________ (читать / прочитать) статью, но так и не закончил её.
+A: читал
+W: «Два часа» measures how long the activity lasted, and «не закончил» rules out a finished result, so imperfective «читал». «Прочитал» would claim the whole article was read.
+
+#E
+Q: Вчера вечером я наконец __________ (писать / написать) отчёт и отправил его начальнику.
+A: написал
+W: «Наконец» and the next step («отправил») present the writing as a finished whole with a result → perfective «написал». In a chain of single completed actions, each verb is perfective.
+
+#E
+Q: Завтра я __________ (покупать / купить) билеты и сразу пришлю тебе фотографию.
+A: куплю
+W: One specific future purchase whose result matters for the next step → perfective. Conjugating the perfective gives the future: куплю (п → пл in the я-form).
+
+#E
+Q: Сначала я __________ (проверять / проверить) домашние задания, а потом __________ (отвечать / ответить) на письма студентов.
+N: The speaker is a man.
+A: проверил; ответил
+W: «Сначала … потом» = a sequence of completed actions → perfective: проверил, then ответил.
+
+#E
+Q: Обычно я __________ (проверять / проверить) домашние задания по вечерам.
+A: проверяю
+W: «Обычно» = a habit → imperfective, present tense: проверяю.
+
+#E
+Q: Когда я __________ (заканчивать / закончить) этот курс, я начну изучать китайский.
+A: закончу
+W: One completion in the future, after which the next step follows → perfective future after «когда»: закончу.
+
+@block 3 | Whole sentences
+#F
+Q: вчера / встретиться / мой / с / хороший друг / я
+N: Build a natural past-tense sentence. The speaker is a man.
+A: Вчера я встретился со своим хорошим другом.
+V: Вчера я встретился с моим хорошим другом. · Я вчера встретился со своим хорошим другом.
+W: «Встретиться с кем?» → instrumental: мой хороший друг → своим (or моим) хорошим другом. Masculine past with -ся: встретился. «С» becomes «со» before «св-». Neutral order: time – subject – verb – partner.
+
+#F
+Q: я / пользоваться / телефон / и / ноутбук / одновременно / мочь
+N: Build a present-tense sentence.
+A: Я могу пользоваться телефоном и ноутбуком одновременно.
+V: Я могу одновременно пользоваться телефоном и ноутбуком.
+W: «Мочь» + infinitive: я могу пользоваться. «Пользоваться чем?» → instrumental: телефон → телефоном, ноутбук → ноутбуком (-ом). «Одновременно» can stand before the infinitive or at the end.
+
+#F
+Q: я / не / знать / что / ты / уже / вернуться / из / отпуск
+N: Build a past-tense sentence. The speaker is a man and is talking to a woman.
+A: Я не знал, что ты уже вернулась из отпуска.
+W: «Не знал» describes a state in the past → imperfective. «Вернуться» → вернулась (feminine). «Из отпуска» → из + genitive. A comma before «что».
+
+#F
+Q: мы / с / коллеги / обсудить / новый / программа / вчера
+N: Build a past-tense sentence.
+A: Вчера мы с коллегами обсудили новую программу.
+V: Мы с коллегами вчера обсудили новую программу.
+W: «Мы с коллегами» → instrumental plural; the verb is plural. One completed discussion → perfective: обсудили. «Обсудить что?» → accusative: новую программу.
+
+#G
+Q: Завтра я позвоню мой старый друг и расскажу ему о мой план.
+N: Find and correct 2 errors (each error is a whole phrase).
+A: Завтра я позвоню моему старому другу и расскажу ему о моём плане.
+W: «Позвонить кому?» → dative: моему старому другу (-ему, -ому, -у). «Рассказать о чём?» → prepositional: мой план → моём плане.
+
+#G
+Q: Я уже два года изучаю русский язык, но ещё ни разу не был в Россию.
+N: Find and correct 1 error. The speaker is a man.
+A: Я уже два года изучаю русский язык, но ещё ни разу не был в России.
+W: «Быть где?» → в + prepositional: в России. «В Россию» answers куда? and needs a verb of motion.
+
+#G
+Q: Мы с друзьями ходим в кино каждый пятница и смотрим фильмы на английскому.
+N: Find and correct 2 errors.
+A: Мы с друзьями ходим в кино каждую пятницу и смотрим фильмы на английском.
+W: «Каждую пятницу» → accusative feminine (-ую, -у). «На английском (языке)» → на + prepositional: английском.
+
+#H
+Q: Я помогаю своему новому студенту.
+N: Make «студент» plural.
+A: Я помогаю своим новым студентам.
+W: «Помогать кому?» stays dative; dative plural: своим новым (-ым) студентам (-ам). Careful: «своим новым» also looks like instrumental singular — the noun ending -ам shows it is dative plural.
+
+#H
+Q: Я пользуюсь этим приложением.
+N: Replace «пользуюсь» with «использую».
+A: Я использую это приложение.
+W: «Пользоваться» takes the instrumental (этим приложением); «использовать» takes the accusative (это приложение — neuter, unchanged).
+
+#I
+Q: Вчера я __________ (встретиться) с мо__ стар__ подруг__ и __________ (рассказать) ей о сво__ нов__ работ__.
+N: The speaker is a man.
+A: встретился; моей старой подругой; рассказал; своей новой работе
+W: «Вчера» → past; male speaker → встретился. «С кем?» → instrumental feminine: моей старой подругой. «Рассказал» presents one completed telling (perfective). «О чём?» → prepositional feminine: своей новой работе.

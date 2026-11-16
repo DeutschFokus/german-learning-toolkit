@@ -1,0 +1,294 @@
+@module 29
+@part V
+@title Correct the mistakes
+@ru Найдите и исправьте ошибки
+@learn Hunt errors systematically with a seven-point checklist instead of rereading and hoping.
+@learn Fix your ten signature mistakes in new sentences until they no longer appear in your speech.
+@learn Correct whole phrases: pronoun, adjective and noun together.
+@learn Catch verb errors too: person, gender, aspect and the right verb of motion.
+@target с моим учителем
+@target с моими студентами
+@target помогаю моему другу
+@target на этот вопрос
+@target через две недели
+@remix Retype each wrong sentence from memory with the error still in it, then correct it without looking.
+@remix Record yourself reading the corrected sentences aloud — the ear remembers what the eye skips.
+@remix Collect your own mistakes from your next three lessons and add them to the table below.
+
+@lesson
+## The error-hunting checklist
+Rereading a sentence "to see if it sounds right" does not work in a foreign language: the wrong version often sounds fine to you. Check instead, in this order:
+- **1. Every preposition.** Which case does it demand? Is the whole phrase in that case?
+- **2. Every verb.** Which case does it govern (помогать кому?, пользоваться чем?)?
+- **3. Agreement.** Do pronouns and adjectives match the noun in case, gender and number?
+- **4. Numbers.** 1 / 2–4 / 5+ — and год → года → лет.
+- **5. Verb form.** Person, past-tense gender, -ся / -сь.
+- **6. Aspect and motion.** Process or result? Once or regularly? On foot or by transport?
+- **7. Small words.** со, об, ко; не before the negated word; свой or его.
+
+## Your ten signature mistakes
+| What you said | Correct | Module |
+|---|---|---|
+| с моя учитель | с моим учителем | 7 |
+| с моим студентом (many) | с моими студентами | 7, 11 |
+| пользуюсь ноутбук | пользуюсь ноутбуком | 7, 17 |
+| помогаю мой друг | помогаю моему другу | 6, 17 |
+| думаю о мой план | думаю о моём плане | 8 |
+| на этом вопрос | на этот вопрос | 2, 17 |
+| относится к китайский язык | относится к китайскому языку | 14 |
+| с преподавателем испанском | с преподавателем испанского языка | 4, 18 |
+| через два неделм | через две недели | 15, 16 |
+| у меня нет свободное время | у меня нет свободного времени | 4 |
+
+Each sentence below states how many errors it contains. An "error" may be a whole phrase: if three words are wrong because of one case decision, that counts as one error.
+@endlesson
+
+@stage A
+#G
+Q: Вчера я долго разговаривал с моя учительница о грамматике.
+N: Find and correct 1 error (a whole phrase).
+A: Вчера я долго разговаривал с моей учительницей о грамматике.
+W: «Разговаривать с кем?» → instrumental, and every word changes: моя учительница → моей учительницей (after ц an unstressed ending is -ей).
+
+#G
+Q: На каждом уроке я работаю с моим студентами из Египта.
+N: Find and correct 1 error.
+A: На каждом уроке я работаю с моими студентами из Египта.
+W: «Студентами» is plural, so the pronoun must be instrumental plural as well: моими, not the singular моим.
+
+#G
+Q: Дома я пользуюсь старый компьютер, а на работе — ноутбуком.
+N: Find and correct 1 error (a whole phrase).
+A: Дома я пользуюсь старым компьютером, а на работе — ноутбуком.
+W: «Пользоваться чем?» → instrumental: старый компьютер → старым компьютером. The second half was already right.
+
+#G
+Q: Я всегда помогаю моя мама на кухне.
+N: Find and correct 1 error (a whole phrase).
+A: Я всегда помогаю моей маме на кухне.
+V: Я всегда помогаю своей маме на кухне.
+W: «Помогать кому?» → dative: моя мама → моей маме (-ей, -е).
+
+#G
+Q: Я много думаю о мой будущий отпуск.
+N: Find and correct 1 error (a whole phrase).
+A: Я много думаю о моём будущем отпуске.
+V: Я много думаю о своём будущем отпуске.
+W: «Думать о чём?» → prepositional: мой будущий отпуск → моём будущем отпуске (-ём, -ем, -е).
+
+#G
+Q: Пожалуйста, ответьте на этом вопросе письменно.
+N: Find and correct 1 error (a whole phrase).
+A: Пожалуйста, ответьте на этот вопрос письменно.
+W: «Ответить на что?» → на + accusative: этот вопрос (a thing, unchanged). «На этом вопросе» is the prepositional of location.
+
+#G
+Q: Это правило не относится к русский язык.
+N: Find and correct 1 error (a whole phrase).
+A: Это правило не относится к русскому языку.
+W: «Относиться к» → к + dative: русский язык → русскому языку (-ому, -у).
+
+#G
+Q: Я хочу заниматься с преподавателем французском.
+N: Find and correct 1 error.
+A: Я хочу заниматься с преподавателем французского языка.
+W: "A teacher of French": the subject stays genitive after the noun — французского языка. Only «преподавателем» takes the instrumental after «с».
+
+@stage B
+#G
+Q: Я вернусь через три неделм, в субботу.
+N: Find and correct 1 error.
+A: Я вернусь через три недели, в субботу.
+W: After 2–4 → genitive singular: неделя → недели. «Неделм» is not a Russian form.
+
+#G
+Q: К сожалению, у моего брата нет свободное время на этой неделе.
+N: Find and correct 1 error (a whole phrase).
+A: К сожалению, у моего брата нет свободного времени на этой неделе.
+W: «Нет» → genitive: свободное время → свободного времени.
+
+#G
+Q: Вчера у меня был плохая связь, поэтому ты меня не услышал.
+N: Find and correct 2 errors. You were talking to a woman.
+A: Вчера у меня была плохая связь, поэтому ты меня не услышала.
+W: «Связь» is feminine → была. You were talking to a woman → услышала.
+
+#G
+Q: Это зависит от количество учеников в группах.
+N: Find and correct 1 error.
+A: Это зависит от количества учеников в группах.
+W: «Зависеть от» → genitive: количество → количества (-о → -а).
+
+#G
+Q: Многие мои студенты из арабоязычные страны.
+N: Find and correct 1 error (a whole phrase).
+A: Многие мои студенты из арабоязычных стран.
+W: «Из» → genitive plural: арабоязычные страны → арабоязычных стран (-ых; feminine zero ending).
+
+#G
+Q: Я интересуюсь русский язык уже три года.
+N: Find and correct 1 error (a whole phrase).
+A: Я интересуюсь русским языком уже три года.
+W: «Интересоваться чем?» → instrumental: русский язык → русским языком.
+
+#G
+Q: Я не был ни в одна русскоязычная страна.
+N: Find and correct 1 error (a whole phrase). The speaker is a man.
+A: Я не был ни в одной русскоязычной стране.
+W: «Быть где?» → в + prepositional, and every word changes: одной русскоязычной стране.
+
+#G
+Q: Через два месяца мой китайский будет стать лучше.
+N: Find and correct 1 error.
+A: Через два месяца мой китайский станет лучше.
+W: «Стать» is perfective: its future is «станет», never «будет стать».
+
+@stage C
+#G
+Q: Я разговариваю с моих студентов о их проблемах.
+N: Find and correct 2 errors.
+A: Я разговариваю со своими студентами об их проблемах.
+V: Я разговариваю с моими студентами об их проблемах.
+W: «С кем?» → instrumental plural: своими (моими) студентами. Before the vowel of «их», «о» becomes «об».
+
+#G
+Q: Я звоню моего друга и жду моему другу у метро.
+N: Find and correct 2 errors.
+A: Я звоню моему другу и жду моего друга у метро.
+W: «Звонить кому?» → dative: моему другу. «Ждать кого?» → accusative of a person: моего друга. The two verbs had swapped their cases.
+
+#G
+Q: Мой брат работает врач в больница.
+N: Find and correct 2 errors.
+A: Мой брат работает врачом в больнице.
+W: «Работать кем?» → instrumental: врачом. «Где?» → в + prepositional: больнице.
+
+#G
+Q: Каждый день я иду в спортзал, а вчера я ходил в бассейн и потом шёл домой.
+N: Find and correct 2 errors.
+A: Каждый день я хожу в спортзал, а вчера я ходил в бассейн и потом пошёл домой.
+W: Regular trips («каждый день») → хожу. Setting off home after the pool is one event → пошёл.
+
+#G
+Q: Анна позвонила своему брату и спросила его помочь ей.
+N: Find and correct 1 error.
+A: Анна позвонила своему брату и попросила его помочь ей.
+W: A request to do something is «попросить», not «спросить» (which is for questions).
+
+#G
+Q: Мне нравятся эта книга, но не нравится эти фильмы.
+N: Find and correct 2 errors.
+A: Мне нравится эта книга, но не нравятся эти фильмы.
+W: «Нравиться» agrees with the thing liked: эта книга (singular) → нравится; эти фильмы (plural) → нравятся.
+
+#G
+Q: Девушка, которая я вчера видел, работает в нашем банке.
+N: Find and correct 1 error.
+A: Девушка, которую я вчера видел, работает в нашем банке.
+W: In its own clause «который» is the object of «видел» (кого?) → accusative feminine: которую.
+
+#G
+Q: Мы живём в этим доме уже пять годов.
+N: Find and correct 2 errors.
+A: Мы живём в этом доме уже пять лет.
+W: «Где?» → prepositional: в этом доме («этим» is instrumental or dative plural). After 5 → «лет», never «годов».
+
+@stage D
+#G
+Q: Вчера я два часа написал отчёт, но не закончил его.
+N: Find and correct 1 error.
+A: Вчера я два часа писал отчёт, но не закончил его.
+W: «Два часа» and «не закончил» describe a process without its result → imperfective: писал.
+
+#G
+Q: Когда я приеду в Казань, я буду позвонить тебе, и мы встречаемся.
+N: Find and correct 2 errors.
+A: Когда я приеду в Казань, я позвоню тебе, и мы встретимся.
+W: «Позвонить» is perfective, so its future is «позвоню», never «буду позвонить». The meeting is a future event too → perfective future: встретимся.
+
+#G
+Q: Моя сестра пришёл домой поздно, потому что она работал до девяти.
+N: Find and correct 2 errors.
+A: Моя сестра пришла домой поздно, потому что она работала до девяти.
+W: «Сестра» / «она» → feminine past: пришла, работала.
+
+#G
+Q: Я учусь немецкий язык и учу в университете.
+N: Find and correct 2 errors.
+A: Я учу немецкий язык и учусь в университете.
+W: «Учить что?» → учу немецкий язык (an accusative object). «Учиться где?» → учусь в университете (no object).
+
+#G
+Q: Мои дети не хочут спать, а я хочу.
+N: Find and correct 1 error.
+A: Мои дети не хотят спать, а я хочу.
+W: «Хотеть» uses second-conjugation forms in the plural: хотим, хотите, хотят — never «хочут».
+
+#G
+Q: Я часто хожу на работу на метро, а мой брат едет на машине каждый день.
+N: Find and correct 2 errors.
+A: Я часто езжу на работу на метро, а мой брат ездит на машине каждый день.
+W: Travelling by metro or car → «ездить», and regular trips («часто», «каждый день») need the round-trip verb: я езжу, он ездит.
+
+#G
+Q: Мы перестали поговорить с ним после ссоры.
+N: Find and correct 1 error.
+A: Мы перестали разговаривать с ним после ссоры.
+W: After «перестать» Russian uses an imperfective infinitive: перестали разговаривать.
+
+#G
+Q: Ты уже писал отчёт? Покажи мне его, пожалуйста!
+N: Find and correct 1 error.
+A: Ты уже написал отчёт? Покажи мне его, пожалуйста!
+W: The speaker needs the result («покажи мне его») → perfective: написал.
+
+@stage E
+#G
+Q: В прошлом годе мы ездили в Испанию на две неделях.
+N: Find and correct 2 errors.
+A: В прошлом году мы ездили в Испанию на две недели.
+W: «Год» takes the special ending -у after «в»: в прошлом году. After «две» → genitive singular: недели.
+
+#G
+Q: Олег любит его жену и часто дарит ей цветами.
+N: Find and correct 2 errors.
+A: Олег любит свою жену и часто дарит ей цветы.
+W: His own wife, with Олег as the subject → «свою жену» («его жену» would be another man's wife). «Дарить что?» → accusative: цветы (a plural thing, unchanged).
+
+#G
+Q: Я спросил у преподавательницы о новом слове, и она объясняла мне его значение.
+N: Find and correct 1 error.
+A: Я спросил у преподавательницы о новом слове, и она объяснила мне его значение.
+W: One complete explanation in a sequence of events → perfective: объяснила.
+
+#G
+Q: Я пишу сообщения всем мои студентам, когда урок отменяется.
+N: Find and correct 1 error.
+A: Я пишу сообщения всем моим студентам, когда урок отменяется.
+W: «Писать кому?» → dative plural: всем моим студентам (-им, -ам).
+
+#G
+Q: Мы с мой брат договорились встретиться у вход в кино.
+N: Find and correct 2 errors.
+A: Мы с моим братом договорились встретиться у входа в кино.
+W: «Мы с кем?» → instrumental: с моим братом. «У» → genitive: у входа.
+
+#G
+Q: Сколько студенты в твоей группе? — У меня двенадцать студента.
+N: Find and correct 2 errors.
+A: Сколько студентов в твоей группе? — У меня двенадцать студентов.
+W: «Сколько» and 12 (any number 11–14) take the genitive plural: студентов.
+
+#G
+Q: Я хочу благодарить мою учительнице за её помощь.
+N: Find and correct 2 errors.
+A: Я хочу поблагодарить мою учительницу за её помощь.
+V: Я хочу поблагодарить свою учительницу за её помощь.
+W: One concrete act of thanking → perfective infinitive: поблагодарить. «Благодарить кого?» → accusative: мою учительницу.
+
+#G
+Q: Вчера я ходила к моя подруга, и мы говорили до полночь.
+N: Find and correct 2 errors. The speaker is a woman.
+A: Вчера я ходила к моей подруге, и мы говорили до полуночи.
+V: Вчера я ходила к своей подруге, и мы разговаривали до полуночи.
+W: «К кому?» → dative: моей подруге. «До» → genitive: полночь → полуночи (a special form).

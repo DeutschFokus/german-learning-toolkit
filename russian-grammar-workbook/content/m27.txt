@@ -1,0 +1,299 @@
+@module 27
+@part V
+@title Natural word order
+@ru Порядок слов — от известного к новому
+@learn Put new information at the end: Мой брат живёт в Москве · В Москве живёт мой брат.
+@learn Use the neutral patterns for statements, possession, existence, adverbs and owners.
+@learn Build questions: yes/no questions with intonation only, question words first, formal ли.
+@learn Place не right before the word it negates and short pronouns before the verb.
+@target Я тебя люблю · Я его не видел
+@target В Москве много музеев
+@target Это не я сделал
+@target Как давно вы здесь работаете?
+@remix For each Stage C sentence, write two versions answering two different questions (кто? / где?).
+@remix Read Stage B aloud and stress the last word; notice how it carries the new information.
+@remix Write five questions you ask your students every week and check the word order.
+
+@lesson
+## Free, but not random
+Because endings show who does what to whom, Russian words can move. The order is decided by **information flow**: what is already known (the topic) comes first, and what is **new** (the focus) comes **at the end**.
+
+> Мой брат живёт **в Москве**. || answers "Where does your brother live?"
+> В Москве живёт **мой брат**. || answers "Who lives in Moscow?"
+> Книга лежит **на столе**. || answers "Where is the book?"
+> На столе лежит **книга**. || answers "What is on the table?"
+
+## Neutral patterns
+| Situation | Natural order | Example |
+|---|---|---|
+| plain statement | subject – verb – object / place | Анна читает книгу. |
+| time or place as background | time / place first | Вчера в парке я встретил друга. |
+| possession | у кого – есть – what | У меня есть машина. |
+| existence | place – (verb) – what | В Москве много музеев. На столе лежит книга. |
+| manner and frequency | adverb before the verb | Он хорошо говорит по-русски. Я часто туда хожу. |
+| owner, "of" | noun + genitive | машина моего брата |
+
+## Questions
+A **yes/no question** keeps the statement order and only changes the intonation: *Ты пойдёшь завтра в кино?* A **question word** comes first: *Где ты живёшь? Где живут твои родители?* The formal particle **ли** follows the word being asked about: *Знаете ли вы, где вокзал?* — in everyday speech *Вы не знаете, где вокзал?*
+
+## Не and short pronouns
+**Не** stands directly before the word it negates: *Я не видел его* (I didn't see him) — *Это не я разбил вазу* (it wasn't me). Short unstressed pronouns like **тебя, его, мне** usually move in front of the verb: *Я тебя люблю. Я его давно не видел. Мне это нравится.*
+
+::: mistakes Typical slips
+!> Я не его видел. || Я его не видел. || не goes directly before the verb it negates
+!> Где живёшь ты? (neutral) || Где ты живёшь? || pronoun subject before the verb
+!> Есть у меня машина. (neutral) || У меня есть машина. || possession: у меня есть …
+!> Кто пришёл? — Пришёл не Олег, а … || only when you contrast: не + the word you correct
+:::
+@endlesson
+
+@stage A
+#F
+Q: живёт / в / Москве / мой / брат
+N: Build a neutral statement: "My brother lives in Moscow."
+A: Мой брат живёт в Москве.
+W: Neutral order: subject – verb – place. The new information (where he lives) comes at the end.
+
+#F
+Q: мой брат / в Москве / живёт
+N: Answer the question «Кто живёт в Москве?»
+A: В Москве живёт мой брат.
+W: The question asks "who?", so the answer («мой брат») is the new information and goes at the end; the known place moves to the front.
+
+#F
+Q: книга / на / столе / лежит
+N: Answer the question «Что лежит на столе?»
+A: На столе лежит книга.
+W: The new information (what is lying there) goes at the end; the known place comes first.
+
+#F
+Q: на столе / книга / лежит
+N: Answer the question «Где книга?»
+A: Книга лежит на столе.
+V: Книга на столе.
+W: Now the place is the new information, so it goes at the end: Книга лежит на столе.
+
+#F
+Q: ты / завтра / пойдёшь / в кино
+N: Make a yes/no question.
+A: Ты пойдёшь завтра в кино?
+V: Ты завтра пойдёшь в кино?
+W: A yes/no question keeps the statement order; only the intonation rises on the key word. Russian needs no auxiliary verb.
+
+#F
+Q: где / твои / родители / живут
+N: Make a question.
+A: Где живут твои родители?
+V: Где твои родители живут?
+W: The question word comes first. With a noun subject the verb often follows the question word directly: Где живут твои родители?
+
+#F
+Q: я / люблю / тебя
+N: Build the most natural everyday order.
+A: Я тебя люблю.
+V: Я люблю тебя.
+W: Short unstressed object pronouns often stand before the verb: Я тебя люблю. «Я люблю тебя» is also correct, with a little more weight on «тебя».
+
+#F
+Q: не / видел / я / его / давно
+N: Build the sentence "I haven't seen him for a long time." The speaker is a man.
+A: Я его давно не видел.
+V: Я давно его не видел. · Я давно не видел его.
+W: «Не» stands directly before the verb it negates. The short pronoun «его» usually comes before the negated verb.
+
+@stage B
+#F
+Q: хорошо / говорит / по-русски / Анна / очень
+N: Build a neutral statement.
+A: Анна очень хорошо говорит по-русски.
+W: Adverbs of manner («очень хорошо») normally stand before the verb they describe.
+
+#F
+Q: у / моей / сестры / есть / красивая / собака
+N: Build a neutral statement.
+A: У моей сестры есть красивая собака.
+W: Possession: «у кого» first, then «есть», then the new information — what the person has.
+
+#F
+Q: нравится / мне / этот / город / очень
+N: Build the sentence "I like this city very much."
+A: Мне очень нравится этот город.
+V: Этот город мне очень нравится.
+W: The person (dative) usually comes first: «Мне очень нравится …». If the city is already the topic of the conversation, it can open the sentence.
+
+#F
+Q: вчера / в / парке / я / встретил / старого / друга
+N: Build a neutral past-tense statement.
+A: Вчера в парке я встретил старого друга.
+V: Вчера я встретил старого друга в парке.
+W: Time and place often open the sentence as background; the new information (whom I met) comes at the end.
+
+#F
+Q: не / я / разбил / вазу / это
+N: Build the sentence "It wasn't me who broke the vase."
+A: Это не я разбил вазу.
+V: Вазу разбил не я.
+W: «Не» stands directly before the word it negates: не я (not me). «Я не разбил вазу» would deny the action, not the person.
+
+#F
+Q: машина / брата / моего / стоит / во дворе
+N: Build the sentence "My brother's car is parked in the yard."
+A: Машина моего брата стоит во дворе.
+W: The genitive owner follows the noun it describes: машина моего брата. The place comes at the end.
+
+#F
+Q: сколько / стоит / этот / свитер
+N: Make a question.
+A: Сколько стоит этот свитер?
+W: The question word first, then the verb, then the subject — the natural order for «Сколько стоит …?».
+
+#F
+Q: давно / вы / здесь / работаете
+N: Ask "Have you been working here long?" as a yes/no question.
+A: Вы давно здесь работаете?
+V: Вы давно работаете здесь?
+W: A yes/no question keeps the statement order. Present tense for a situation that is still going on: работаете.
+
+@stage C
+#H
+Q: Олег пришёл.
+N: Answer the question «Кто пришёл?»
+A: Пришёл Олег.
+W: The answer to «кто?» is the new information, so it moves to the end: Пришёл Олег.
+
+#H
+Q: Мой друг работает в банке.
+N: Ask your friend whether their friend works in a bank.
+A: Твой друг работает в банке?
+W: A yes/no question needs no change of order — only the question mark and rising intonation on «в банке». «Мой» becomes «твой» because you ask about the other person's friend.
+
+#F
+Q: в / Москве / много / музеев
+N: Build the sentence "There are many museums in Moscow."
+A: В Москве много музеев.
+W: Existence: the place comes first, the new information («много музеев») last. With «много» no verb is needed.
+
+#F
+Q: я / тебе / позвоню / завтра
+N: Stress "tomorrow" (when I'll call).
+A: Я позвоню тебе завтра.
+V: Я тебе позвоню завтра.
+W: The most important new element goes at the end: «завтра» at the end answers "when?".
+
+#F
+Q: завтра / я / позвоню / тебе
+N: Neutral statement where «завтра» is just background.
+A: Завтра я тебе позвоню.
+V: Завтра я позвоню тебе.
+W: A time word at the start sets the scene; the short pronoun can stand before or after the verb.
+
+#H
+Q: Анна купила новую машину.
+N: Answer the question «Кто купил новую машину?»
+A: Новую машину купила Анна.
+W: «Кто?» asks for the person, so «Анна» becomes the new information and moves to the end. The verb agrees with Анна: купила.
+
+#A
+Q: В нашем город__ открыл__ новый музей.
+A: городе; открылся
+W: «Где?» → prepositional: городе. The museum is the subject and the new information at the end; «открыться» → открылся (masculine, agreeing with «музей»).
+
+#A
+Q: Мне не нрав__, когда студенты опазд__.
+A: нравится; опаздывают
+W: «Мне не нравится» + a когда-clause → a singular verb. «Студенты» → они опаздывают.
+
+@stage D
+#F
+Q: ли / знаете / вы / где / находится / вокзал
+N: Build a formal polite question with «ли»: "Do you know where the station is?"
+A: Знаете ли вы, где находится вокзал?
+V: Вы не знаете, где находится вокзал?
+W: «Ли» follows the first word, the one being asked about (here the verb): Знаете ли вы …? In everyday speech «Вы не знаете, где …?» is more common.
+
+#F
+Q: что / ты / делаешь / сегодня / вечером
+N: Make a question.
+A: Что ты делаешь сегодня вечером?
+V: Что ты сегодня вечером делаешь?
+W: The question word first; with a pronoun subject the verb usually follows the subject: что ты делаешь …?
+
+#G
+Q: Я не его видел вчера.
+N: Find and correct the word-order error. The speaker is a man.
+A: Я его вчера не видел.
+V: Я не видел его вчера. · Вчера я его не видел.
+W: «Не» must stand directly before the verb it negates: не видел. «Не его» would mean "it was not him that I saw".
+
+#H
+Q: Я живу в Берлине.
+N: Answer the question «Кто живёт в Берлине?» with «я».
+A: В Берлине живу я.
+W: The new information («я») goes to the end; the known place moves to the front: В Берлине живу я.
+
+#H
+Q: Мой брат работает врачом.
+N: Ask your friend what their brother works as.
+A: Кем работает твой брат?
+V: Кем твой брат работает?
+W: «Работать кем?» → the question word «кем» (instrumental) comes first. With a noun subject, the verb often follows the question word.
+
+#I
+Q: Вчера в магазин__ я __________ (встретить) свою учительниц__.
+N: The speaker is a man.
+A: магазине; встретил; учительницу
+W: «Где?» → prepositional: магазине. Masculine past: встретил. «Встретить кого?» → accusative: учительницу. The person met is the new information at the end.
+
+#I
+Q: У меня нет __________ (свободное время), поэтому я __________ (заниматься) русским только по выходн__.
+A: свободного времени; занимаюсь; выходным
+W: «Нет» → genitive: свободного времени. «Заниматься» → я занимаюсь. «По выходным» → по + dative plural.
+
+#B
+Q: Кому вы рассказали об этом? — Я рассказал об этом только __________ (мой брат).
+A: моему брату
+W: The answer to «кому?» is dative and stands at the end as the new information: только моему брату.
+
+@stage E
+#A
+Q: Смотри, в окн__ сидит кошк__!
+A: окне; кошка
+W: «В окне» (где?) → prepositional. «Кошка» is the subject and the new information, so it stands at the end.
+
+#A
+Q: О чём вы говорили? — Мы говорили о наш__ нов__ проект__.
+A: нашем новом проекте
+W: The answer to «о чём?» is prepositional and comes at the end: о нашем новом проекте.
+
+#B
+Q: С кем ты ходил в кино? — Я ходил в кино с __________ (моя сестра).
+A: моей сестрой
+W: «С кем?» → instrumental: моей сестрой. In the answer the new information stands at the end.
+
+#B
+Q: Чья это сумка? — Это сумка __________ (наша учительница).
+A: нашей учительницы
+W: "Whose?" → the owner follows the noun in the genitive: сумка нашей учительницы.
+
+#B
+Q: Кого ты ждёшь? — Я жду __________ (мой старый друг).
+A: моего старого друга
+W: «Кого?» → accusative of a person: моего старого друга, placed at the end as the new information.
+
+#F
+Q: на / этой / неделе / у / меня / много / работы
+N: Build a neutral statement.
+A: На этой неделе у меня много работы.
+V: У меня на этой неделе много работы.
+W: Time («на этой неделе») and the possessor («у меня») set the scene; the new information («много работы») comes last.
+
+#F
+Q: студенты / мои / почти / всегда / приходят / вовремя
+N: Build a neutral statement.
+A: Мои студенты почти всегда приходят вовремя.
+W: The possessive stands before the noun (мои студенты); frequency adverbs before the verb (почти всегда приходят); «вовремя» at the end.
+
+#I
+Q: Кто __________ (написать) эту статью? — Эту статью __________ (написать) моя коллег__.
+A: написал; написала; коллега
+W: «Кто?» takes a masculine verb: кто написал? In the answer the verb agrees with the female colleague: написала. The person (new information) stands at the end: моя коллега.

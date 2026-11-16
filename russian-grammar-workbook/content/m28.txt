@@ -1,0 +1,302 @@
+@module 28
+@part V
+@title Unjumble challenge
+@ru Соберите предложение — порядок слов, падежи и спряжение
+@learn Build complete sentences from dictionary forms: find the verb, conjugate it, attach its case partners.
+@learn Make every noun phrase agree (свой, adjectives, plurals) and choose со / об / ко where needed.
+@learn Order the result naturally: background → verb → new information.
+@learn Handle longer sentences with когда, если, пока, потому что and который.
+@target со своими студентами
+@target зависит от погоды
+@target Когда я приду домой, я позвоню тебе.
+@target Девушка, о которой я тебе рассказывал …
+@remix Redo each stage a week later without looking: write the sentence first, then compare.
+@remix Change the tense of every Stage B sentence (present → past → future).
+@remix Swap the subject in Stage D (я → она, мы → они) and rebuild every verb and every свой.
+
+@lesson
+## The six-step routine
+The chunks are dictionary forms: verbs in the infinitive, nouns and adjectives in the nominative. Building a sentence means taking the same decisions as in every other module, in a fixed order:
+
+- **1. Verb and subject.** Find the verb and the word that does the action.
+- **2. Tense and form.** Read the instruction: present, past (gender!), future (aspect!). Conjugate.
+- **3. The verb's partners.** Which case does the verb or preposition demand? (помогать кому?, пользоваться чем?, думать о чём?)
+- **4. Agreement.** Build every noun phrase completely: pronoun + adjective + noun in the same case, gender and number. Decide между мой and свой.
+- **5. Small words.** с → со, о → об / обо, к → ко; не right before the negated word; commas before что, когда, потому что, который.
+- **6. Order.** Background (time, place, у меня) → verb → new information at the end.
+
+## A worked example
+Chunks: *я / разговаривать / с / мой / студенты / каждый / вечер* — present tense.
+
+| Step | Decision |
+|---|---|
+| verb + subject | я разговариваю |
+| partner | разговаривать с кем? → instrumental |
+| agreement | мои студенты → своими (моими) студентами |
+| small words | с → со before «св-»: со своими |
+| order | Каждый вечер я разговариваю со своими студентами. |
+
+Russian word order is flexible, so several answers are often right. The model answer shows the most neutral order; the grey "also correct" line shows common alternatives.
+@endlesson
+
+@stage A
+#F
+Q: я / помогать / мой / брат
+N: Present tense.
+A: Я помогаю моему брату.
+V: Я помогаю своему брату.
+W: «Помогать кому?» → dative: моему (своему) брату. «Помогать» → я помогаю.
+
+#F
+Q: мы / жить / в / большой / город
+N: Present tense.
+A: Мы живём в большом городе.
+W: «Жить где?» → в + prepositional: большом городе. «Жить» → мы живём.
+
+#F
+Q: она / любить / свой / работа
+N: Present tense.
+A: Она любит свою работу.
+W: «Любить что?» → accusative feminine: свою работу. «Свою», because the work belongs to the subject.
+
+#F
+Q: у / я / нет / машина
+N: Present tense.
+A: У меня нет машины.
+W: «У» + the genitive pronoun: у меня. «Нет» → genitive: машины.
+
+#F
+Q: я / пользоваться / ноутбук / каждый / день
+N: Present tense.
+A: Я пользуюсь ноутбуком каждый день.
+V: Я каждый день пользуюсь ноутбуком. · Каждый день я пользуюсь ноутбуком.
+W: «Пользоваться чем?» → instrumental: ноутбуком. -ова- → -у-: я пользуюсь.
+
+#F
+Q: мы / поехать / в / Россия / летом
+N: Future tense.
+A: Летом мы поедем в Россию.
+V: Мы поедем в Россию летом.
+W: «Поехать» is perfective → мы поедем = future. «Куда?» → в + accusative: Россию.
+
+#F
+Q: я / думать / о / мой / план
+N: Present tense.
+A: Я думаю о моём плане.
+V: Я думаю о своём плане.
+W: «Думать о чём?» → prepositional: моём (своём) плане.
+
+#F
+Q: ты / хотеть / чай / или / кофе
+N: Make a question.
+A: Ты хочешь чай или кофе?
+V: Ты хочешь чаю или кофе?
+W: «Хотеть» → ты хочешь. A choice question keeps the statement order. «Чаю» (a partitive genitive: some tea) is also common.
+
+@stage B
+#F
+Q: я / разговаривать / с / мой / студенты / каждый / вечер
+N: Present tense.
+A: Каждый вечер я разговариваю со своими студентами.
+V: Я разговариваю со своими студентами каждый вечер. · Каждый вечер я разговариваю с моими студентами.
+W: «Разговаривать с кем?» → instrumental plural: со своими (с моими) студентами; «с» → «со» before «св-».
+
+#F
+Q: мой / подруга / работать / переводчик / в / большой / компания
+N: Present tense.
+A: Моя подруга работает переводчиком в большой компании.
+W: «Работать кем?» → instrumental: переводчиком. «Где?» → prepositional: в большой компании.
+
+#F
+Q: вчера / мы / ходить / в / гости / к / наш / соседи
+N: Past tense.
+A: Вчера мы ходили в гости к нашим соседям.
+W: A completed round trip → ходили. «К кому?» → dative plural: нашим соседям.
+
+#F
+Q: я / интересоваться / русский / культура / и / история
+N: Present tense.
+A: Я интересуюсь русской культурой и историей.
+W: «Интересоваться чем?» → instrumental: русской культурой и историей (one adjective for both nouns).
+
+#F
+Q: студенты / задавать / преподаватель / много / вопросы
+N: Present tense.
+A: Студенты задают преподавателю много вопросов.
+W: «Задавать кому?» → dative: преподавателю. «Много» → genitive plural: вопросов. «Задавать» → они задают.
+
+#F
+Q: через / две / неделя / у / мы / начаться / каникулы
+N: Future tense.
+A: Через две недели у нас начнутся каникулы.
+V: У нас через две недели начнутся каникулы.
+W: «Через две недели» (after «две» → недели). «Каникулы» is plural → perfective future: начнутся.
+
+#F
+Q: это / зависеть / от / погода
+N: Present tense.
+A: Это зависит от погоды.
+W: «Зависеть от» → genitive: погоды. «Это» takes the он / оно-form: зависит.
+
+#F
+Q: я / не / быть / в / Россия / никогда
+N: Past tense. The speaker is a woman.
+A: Я никогда не была в России.
+W: «Никогда» needs «не» before the verb. Feminine past: была. «Быть где?» → в + prepositional: России.
+
+@stage C
+#F
+Q: я / ждать / мой / друг / у / метро
+N: Present tense.
+A: Я жду моего друга у метро.
+V: Я жду своего друга у метро.
+W: «Ждать кого?» → accusative of a person = genitive form: моего (своего) друга. «У метро» = next to the metro station.
+
+#F
+Q: я / звонить / мой / друг / каждый / вечер
+N: Present tense.
+A: Я звоню моему другу каждый вечер.
+V: Каждый вечер я звоню своему другу.
+W: «Звонить кому?» → dative: моему (своему) другу. Compare «ждать кого?» (accusative) in the previous sentence.
+
+#F
+Q: мы / говорить / о / наш / новый / преподаватель
+N: Past tense.
+A: Мы говорили о нашем новом преподавателе.
+W: «Говорить о ком?» → prepositional: нашем новом преподавателе.
+
+#F
+Q: мы / говорить / с / наш / новый / преподаватель
+N: Past tense.
+A: Мы говорили с нашим новым преподавателем.
+W: «Говорить с кем?» → instrumental: нашим новым преподавателем. Same words as before — only the preposition changed the case.
+
+#F
+Q: я / идти / в / библиотека / сейчас
+N: Present tense, right now.
+A: Я сейчас иду в библиотеку.
+V: Сейчас я иду в библиотеку.
+W: Right now, one direction → «идти»: иду. «Куда?» → в + accusative: библиотеку.
+
+#F
+Q: я / ходить / в / библиотека / по / суббота
+N: Present tense, regularly.
+A: Я хожу в библиотеку по субботам.
+V: По субботам я хожу в библиотеку.
+W: Regular trips → «ходить»: хожу. «По субботам» → по + dative plural.
+
+#F
+Q: вчера / я / весь / вечер / писать / письмо
+N: Past tense — the activity. The speaker is a man.
+A: Вчера я весь вечер писал письмо.
+W: «Весь вечер» describes the activity over time → imperfective: писал.
+
+#F
+Q: вчера / я / написать / письмо / и / отправить / его
+N: Past tense — finished results. The speaker is a man.
+A: Вчера я написал письмо и отправил его.
+W: Two completed actions in sequence → perfective: написал, отправил.
+
+@stage D
+#F
+Q: мой / сын / уже / два / год / учиться / в / школа
+N: Present tense.
+A: Мой сын уже два года учится в школе.
+V: Мой сын учится в школе уже два года.
+W: Still going on → present: учится. «Два года» (after 2 → genitive singular). «Где?» → в школе.
+
+#F
+Q: в / наш / группа / пятнадцать / студенты / из / разный / страны
+N: Present tense (no verb needed).
+A: В нашей группе пятнадцать студентов из разных стран.
+W: «Где?» → prepositional: в нашей группе. 15 → genitive plural: студентов. «Из» → genitive plural: разных стран.
+
+#F
+Q: когда / я / прийти / домой / я / позвонить / ты
+N: Future tense.
+A: Когда я приду домой, я позвоню тебе.
+V: Когда я приду домой, я тебе позвоню.
+W: Future after «когда»: приду. One future call → perfective: позвоню. «Кому?» → тебе.
+
+#F
+Q: я / хотеть / поблагодарить / вы / за / ваш / помощь
+N: Present tense.
+A: Я хочу поблагодарить вас за вашу помощь.
+V: Я хочу поблагодарить вас за помощь.
+W: «Благодарить кого?» → accusative: вас. «За что?» → за + accusative: вашу помощь.
+
+#F
+Q: мой / родители / жить / в / деревня / недалеко / от / Казань
+N: Present tense.
+A: Мои родители живут в деревне недалеко от Казани.
+W: «Где?» → в деревне (prepositional). «Недалеко от» → genitive: Казань → Казани (feminine -ь → -и).
+
+#F
+Q: мы / с / жена / познакомиться / в / университет / десять / лет / назад
+N: Past tense.
+A: Мы с женой познакомились в университете десять лет назад.
+V: Десять лет назад мы с женой познакомились в университете.
+W: «Мы с женой» → plural verb: познакомились. «Где?» → в университете. «Десять лет назад» (10 → лет).
+
+#F
+Q: у / мой / студентка / быть / плохой / интернет / вчера
+N: Past tense.
+A: Вчера у моей студентки был плохой интернет.
+V: У моей студентки вчера был плохой интернет.
+W: «У» + genitive: моей студентки. «Интернет» (masculine) is the subject → был плохой интернет.
+
+#F
+Q: я / не / мочь / прийти / потому что / болеть
+N: Past tense. The speaker is a woman.
+A: Я не могла прийти, потому что болела.
+W: Feminine past: могла (irregular), болела. Russian puts a comma before «потому что».
+
+@stage E
+#F
+Q: это / правило / относиться / только / к / китайский / язык
+N: Present tense.
+A: Это правило относится только к китайскому языку.
+W: «Относиться к» → dative: китайскому языку. «Только» stands directly before the phrase it limits.
+
+#F
+Q: мой / преподаватель / помогать / я / исправлять / мой / ошибки / всегда
+N: Present tense.
+A: Мой преподаватель всегда помогает мне исправлять мои ошибки.
+W: «Помогать кому?» → dative: мне, + infinitive. «Мои ошибки» (not «свои»: they are mine, not the teacher's). «Всегда» before the verb.
+
+#F
+Q: девушка / о / который / я / рассказывать / ты / работать / в / наш / школа
+N: Build the sentence "The girl I told you about works at our school." The speaker is a man.
+A: Девушка, о которой я тебе рассказывал, работает в нашей школе.
+W: «Рассказывать о ком?» → о + prepositional: о которой (feminine, agreeing with «девушка»). The imperfective «рассказывал» names the fact of telling. The который-clause sits between commas.
+
+#F
+Q: если / завтра / быть / хороший / погода / мы / поехать / на / море
+N: Future tense.
+A: Если завтра будет хорошая погода, мы поедем на море.
+W: Future after «если»: будет хорошая погода. «Поехать» → поедем. «Куда?» → на + accusative: море.
+
+#F
+Q: я / ни разу / не / быть / ни в одной / арабоязычный / страна
+N: Past tense. The speaker is a man.
+A: Я ни разу не был ни в одной арабоязычной стране.
+W: «Ни разу» and «ни в одной» both need «не» before the verb. «Где?» → в + prepositional: одной арабоязычной стране.
+
+#F
+Q: пока / я / готовить / ужин / дети / делать / уроки
+N: Past tense. The speaker is a man.
+A: Пока я готовил ужин, дети делали уроки.
+W: «Пока» links two simultaneous activities → imperfective: готовил, делали.
+
+#F
+Q: я / начать / учить / русский / два / год / назад / и / уже / мочь / говорить / с / мой / студенты / по-русски
+N: Past tense, then the present. The speaker is a man.
+A: Я начал учить русский два года назад и уже могу говорить со своими студентами по-русски.
+V: … и уже могу говорить с моими студентами по-русски.
+W: «Начать» + an imperfective infinitive: начал учить. «Два года назад». A present ability: могу говорить. «С кем?» → instrumental plural: со своими студентами.
+
+#F
+Q: как / давно / ты / заниматься / русский / язык
+N: Make a question.
+A: Как давно ты занимаешься русским языком?
+W: Still going on → present tense: занимаешься. «Заниматься чем?» → instrumental: русским языком.

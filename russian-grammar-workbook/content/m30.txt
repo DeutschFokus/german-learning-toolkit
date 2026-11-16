@@ -1,0 +1,259 @@
+@module 30
+@part V
+@title Complete A1–A2 grammar integration
+@ru Итоговый модуль — все решения сразу
+@learn Make every A1–A2 decision independently: case, agreement, number, conjugation, aspect, motion, word order.
+@learn Work through long, realistic sentences from your teaching life and everyday life.
+@learn Test yourself under exam conditions: no hints, no tables, one attempt.
+@learn Use your result to plan a targeted review of the modules that still cost you points.
+@target Я работаю учителем немецкого языка
+@target помогаю всем своим студентам
+@target Через два месяца мой русский станет лучше
+@target Если ты не поймёшь, я объясню ещё раз
+@remix Mark every mistake with the module number it belongs to, then redo only those modules' Stage E.
+@remix Rewrite Stage D about yourself: change every person, place and time so that the sentences are true for you.
+@remix Repeat this module in a month; aim for 38 / 40.
+
+@lesson
+## How to use the final module
+This module has no new grammar. Every sentence asks you to make several decisions that you have trained separately. Work in exam conditions: cover the answers, do not look at any table, and give yourself one attempt per sentence. Then mark each mistake with the module that trains it — that list is your personal revision plan.
+
+## The decision map
+| Question | Where you trained it |
+|---|---|
+| Which case does this preposition or verb demand? | Modules 2–8, 13–17 |
+| Do pronoun, adjective and noun agree? | Modules 1, 9, 10, 11 |
+| What happens after this number? | Module 16 |
+| Which person, gender, tense? | Modules 19–21, 24 |
+| Process or result, once or regularly? | Modules 22–23 |
+| Which verb: слушать or слышать, учить or учиться, идти or ходить? | Modules 25–26 |
+| What goes at the end of the sentence? | Modules 27–28 |
+
+## What 90% means now
+In the earlier modules, 36 / 40 meant you had control of one rule. Here it means you can combine all of them under pressure — which is exactly what happens in a real conversation with your students. If you score lower, do not repeat this module straight away. Go back to the modules in your mistake list, redo their Stage E, and return to this module a week later.
+@endlesson
+
+@stage A
+#A
+Q: В прошл__ месяц__ я ездил в Казань к сво__ стар__ друг__.
+A: прошлом месяце; своему старому другу
+W: «В прошлом месяце» → в + prepositional. «К кому?» → dative: своему старому другу (-ему, -ому, -у).
+
+#A
+Q: Каждое утро я пью кофе с молок__ и читаю новост__ на телефон__.
+A: молоком; новости; телефоне
+W: «С чем?» → instrumental: молоком. «Читать что?» → accusative plural of a thing = nominative: новости. «Где?» → на + prepositional: телефоне.
+
+#A
+Q: Я помогаю всем сво__ студент__ готовиться к экзамен__ по немецк__ язык__.
+A: своим студентам; экзамену; немецкому языку
+W: «Помогать кому?» → dative plural: всем своим студентам. «Готовиться к» → dative: экзамену. «Экзамен по» + dative: немецкому языку.
+
+#B
+Q: Мы долго искали подарок для __________ (наша учительница) и наконец нашли книгу о __________ (русская живопись).
+A: нашей учительницы; русской живописи
+W: «Для» → genitive: нашей учительницы. «О чём?» → prepositional: русской живописи (feminine -ь → -и).
+
+#B
+Q: У __________ (мой старший брат) три сына и одна дочь.
+A: моего старшего брата
+W: «У» + genitive names the owner: моего старшего брата (-его after ш). «Три сына»: after 3 → genitive singular.
+
+#A
+Q: Я не видел мо__ родител__ уже два месяц__.
+A: моих родителей; месяца
+V: своих родителей
+W: «Видеть кого?» → accusative plural of people = genitive plural: моих родителей. «Два месяца»: after 2 → genitive singular.
+
+#B
+Q: Мой сосед работает __________ (водитель) автобуса и очень гордится __________ (своя работа).
+A: водителем; своей работой
+W: «Работать кем?» → instrumental: водителем. «Гордиться чем?» → instrumental: своей работой.
+
+#A
+Q: Мы с муж__ мечтаем о больш__ дом__ у мор__.
+A: мужем; большом доме; моря
+W: «Мы с мужем» → instrumental: мужем (-ем after ж). «Мечтать о чём?» → prepositional: большом доме. «У» + genitive: у моря (by the sea).
+
+@stage B
+#C
+Q: Сегодня я ___ работ__ до шести, а потом пойду ___ сво__ друз__.
+A: на работе; к своим друзьям
+W: «Где?» → на + prepositional: на работе. Going to people → к + dative plural: к своим друзьям.
+
+#C
+Q: Я узнал эту новость ___ сво__ сестр__, а она — ___ интернет__.
+A: от своей сестры; из интернета
+W: From a person → «от» + genitive: своей сестры. From a source → «из» + genitive: интернета.
+
+#D
+Q: Мы __________ (жить) здесь уже пять лет и __________ (знать) всех соседей.
+A: живём; знаем
+W: Both situations are still going on → present tense: живём, знаем. «Всех соседей» is the accusative of people (= genitive plural).
+
+#D
+Q: Когда мой брат __________ (быть) маленький, он __________ (хотеть) стать космонавтом.
+A: был; хотел
+W: Masculine past: был, хотел. «Стать кем?» → instrumental: космонавтом.
+
+#E
+Q: Вчера я __________ (встречать / встретить) Анну у метро, и мы вместе пошли в кино.
+N: The speaker is a man.
+A: встретил
+W: One meeting followed by the next action («и мы пошли») → perfective: встретил.
+
+#E
+Q: Я каждый день __________ (встречать / встретить) соседа у лифта.
+A: встречаю
+W: «Каждый день» = repetition → imperfective, present tense: встречаю.
+
+#B
+Q: Мне очень нравится __________ (ваш новый учебник), но он слишком дорогой для __________ (мои студенты).
+A: ваш новый учебник; моих студентов
+W: With «нравится» the thing liked is the nominative subject: ваш новый учебник. «Для» → genitive plural: моих студентов.
+
+#B
+Q: Я посоветовал __________ (мои студенты) смотреть русские фильмы с __________ (субтитры).
+A: моим студентам; субтитрами
+W: «Посоветовать кому?» → dative plural: моим студентам. «С чем?» → instrumental plural: субтитрами.
+
+@stage C
+#E
+Q: Я __________ (учить / выучить) эти слова два часа, но так и не __________ (учить / выучить) их.
+N: The speaker is a woman.
+A: учила; выучила
+W: «Два часа» presents the effort as a process → imperfective: учила. «Так и не» → the expected result was never reached → negated perfective: не выучила.
+
+#E
+Q: Когда ты __________ (возвращаться / вернуться) из отпуска, позвони мне.
+A: вернёшься
+W: One future return, after which the call should follow → perfective future after «когда»: вернёшься.
+
+#C
+Q: Мы вернулись ___ дач__ и сразу поехали ___ бабушк__.
+A: с дачи; к бабушке
+W: «На даче» → "from" is «с дачи» (genitive). To a person → «к» + dative: бабушке.
+
+#C
+Q: Мой друг приехал ___ Китай ___ два год__.
+A: в Китай на два года
+W: «Куда?» → в + accusative: Китай. A planned period of stay → на + accusative: на два года (after 2 → года).
+
+#A
+Q: Я думаю о т__ человек__, с котор__ я познакомился вчера.
+A: том человеке; которым
+W: «Думать о ком?» → prepositional: том человеке. «Познакомиться с кем?» → instrumental: с которым (masculine, agreeing with «человек»).
+
+#D
+Q: Мои студенты уже __________ (ждать) меня, а я ещё __________ (ехать) в метро.
+A: ждут; еду
+W: «Ждать» → они ждут. Right now, on the way by transport → «ехать»: я еду.
+
+#D
+Q: Ты __________ (мочь) объяснить мне это правило? — Конечно, я __________ (объяснить).
+A: можешь; объясню
+W: «Мочь» → ты можешь. «Объяснить» is perfective → объясню = future.
+
+#A
+Q: Я оставил телефон в такси и теперь не могу позвонить сво__ жен__.
+A: своей жене
+V: моей жене
+W: «Позвонить кому?» → dative: своей жене. With «я» as the subject, «моей» is also correct.
+
+@stage D
+#F
+Q: я / работать / учитель / немецкий / язык / уже / десять / лет
+N: Present tense.
+A: Я работаю учителем немецкого языка уже десять лет.
+V: Я уже десять лет работаю учителем немецкого языка.
+W: «Работать кем?» → instrumental: учителем; «немецкого языка» stays genitive (of German). Still going on → present tense. 10 → лет.
+
+#F
+Q: мой / студенты / из / разный / страны / поэтому / мы / говорить / на / урок / по-немецки
+N: Present tense.
+A: Мои студенты из разных стран, поэтому мы говорим на уроке по-немецки.
+V: Мои студенты из разных стран, поэтому на уроке мы говорим по-немецки.
+W: «Из» → genitive plural: разных стран. «На уроке» → prepositional. «Говорить по-немецки» = to speak German.
+
+#F
+Q: если / ты / не / понять / правило / я / объяснить / оно / ещё / раз
+N: Future tense.
+A: Если ты не поймёшь правило, я объясню его ещё раз.
+W: Future after «если»: не поймёшь («понять» → пойму, поймёшь). «Объяснить» → объясню. «Оно» as an object → его.
+
+#G
+Q: Вчера я встретил с мой друг в кафе, и мы говорили о наш план.
+N: Find and correct 3 errors.
+A: Вчера я встретился с моим другом в кафе, и мы говорили о нашем плане.
+V: Вчера я встретился со своим другом в кафе, и мы говорили о нашем плане.
+W: Meeting with someone needs -ся: встретился. «С кем?» → instrumental: моим другом. «О чём?» → prepositional: нашем плане.
+
+#H
+Q: Я живу в маленьком городе и работаю в школе.
+N: Put it in the past and change the subject to «мы».
+A: Мы жили в маленьком городе и работали в школе.
+W: Plural past: жили, работали. The places stay prepositional.
+
+#I
+Q: Через две недел__ я __________ (поехать) в Москву, __________ (встретиться) с друзь__ и __________ (сходить) в Большой театр.
+A: недели; поеду; встречусь; друзьями; схожу
+W: After «две» → недели. A chain of single future events → perfective futures: поеду, встречусь, схожу («сходить» = to go there and back once). «С кем?» → instrumental plural: друзьями.
+
+#I
+Q: Мой брат __________ (жить) в Германи__ уже три год__, но всё ещё __________ (учить) немецкий.
+A: живёт; Германии; года; учит
+W: Still going on → present: живёт, учит. «Где?» → prepositional: Германии. After 3 → года.
+
+#I
+Q: Вчера я __________ (позвонить) мо__ преподавательниц__, но она не __________ (ответить), потому что __________ (быть) на уроке.
+N: The speaker is a man.
+A: позвонил; моей преподавательнице; ответила; была
+W: One call → позвонил. «Позвонить кому?» → dative: моей преподавательнице. One expected answer that did not come → не ответила. Feminine past: была.
+
+@stage E
+#A
+Q: Анна хорошо говорит на трёх язык__: на русск__, немецк__ и английск__.
+A: языках; русском; немецком; английском
+W: «Говорить на каком языке?» → на + prepositional: на трёх языках (plural), на русском, немецком и английском (the noun «языке» is understood).
+
+#B
+Q: Я очень благодарен __________ (все мои студенты) за __________ (их терпение).
+A: всем моим студентам; их терпение
+W: «Благодарен кому?» → dative plural: всем моим студентам. «За что?» → за + accusative: их терпение (neuter, unchanged).
+
+#F
+Q: я / надеяться / что / через / два / месяц / мой / русский / стать / намного / лучше
+N: Present tense, then the future.
+A: Я надеюсь, что через два месяца мой русский станет намного лучше.
+W: «Надеяться» → я надеюсь. «Через два месяца» (after 2 → месяца). «Стать» is perfective → станет = future.
+
+#F
+Q: как / давно / вы / жить / в / Германия / и / почему / вы / переехать / туда
+N: Make a question: present, then past.
+A: Как давно вы живёте в Германии и почему вы переехали туда?
+V: Как давно вы живёте в Германии и почему вы туда переехали?
+W: Still going on → present: живёте. One move in the past → perfective: переехали. «Где?» → в Германии.
+
+#G
+Q: Мне нужна новый ноутбук, потому что старый ноутбук работает очень медленно и я не могу пользоваться ним на уроках.
+N: Find and correct 2 errors.
+A: Мне нужен новый ноутбук, потому что старый ноутбук работает очень медленно, и я не могу пользоваться им на уроках.
+W: «Нужен» agrees with the masculine subject «ноутбук». After a verb without a preposition the instrumental pronoun is «им» — н- is added only after prepositions (с ним). Note the comma before «и я не могу».
+
+#H
+Q: Я каждый день звоню маме.
+N: Make it one call yesterday. The speaker is a woman.
+A: Вчера я позвонила маме.
+W: Repetition («каждый день») takes the imperfective; one call yesterday takes the perfective: позвонила.
+
+#I
+Q: Когда я __________ (учиться) в университете, я __________ (жить) в общежитии вместе со сво__ лучш__ друг__.
+N: The speaker is a man.
+A: учился; жил; своим лучшим другом
+W: Situations over a period in the past → imperfective: учился, жил. «Вместе с кем?» → instrumental: своим лучшим другом; «со» before «св-».
+
+#I
+Q: Я __________ (хотеть) поблагодарить вас за эту книгу: я её уже __________ (прочитать) и __________ (узнать) много нового о русск__ истори__.
+N: The speaker is a woman.
+A: хочу; прочитала; узнала; русской истории
+W: Present: хочу. Results of completed actions → perfective: прочитала, узнала. «О чём?» → prepositional: русской истории.
