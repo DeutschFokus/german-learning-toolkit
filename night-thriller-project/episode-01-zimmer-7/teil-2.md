@@ -9,6 +9,8 @@
 [BILD-PROMPT] Medium cinematic 16:9 shot. Thomas Berger (German man, 52, silver temples, salt-and-pepper stubble, bumped nose, charcoal-grey work jacket, rust-red wool scarf, brass keys on belt – match the uploaded reference sheet exactly) knocks firmly on the dark wooden compartment door numbered 7 at the end of a narrow old sleeper train corridor, his ear close to the door, listening, tense expression, faint lantern light from behind. Character in the right third, darker calm space on the left. Graphic novel illustration, clean ink linework with subtle crosshatching, muted earthy palette, warm amber lamplight vs cool blue-grey night shadows, aged parchment paper texture, cinematic noir lighting, no text, no letters, no signs
 
 [VOICEOVER]
+Eine Tür, die dreißig Jahre lang verschlossen war. Ein Schloss, das jemand heute ausgetauscht hat. Und dahinter: Musik.
+Was würdest du jetzt tun? Weggehen? Oder die Tür öffnen?
 Die Musik spielte weiter. Eine Frauenstimme sang, leise und weit weg, wie aus einem anderen Jahrhundert.
 Thomas **klopfte** an die Tür. Einmal. Zweimal.
 „Hallo? Ist da jemand?"
@@ -128,6 +130,8 @@ Er **brach** das Siegel. Im Umschlag lag eine kleine Karte. Nur ein Satz stand d
 Darunter ein einziger Buchstabe: J.
 Thomas las den Satz einmal. Zweimal. Dreimal.
 J. Wie Johanna.
+Thomas dachte an Frau Brandt. An das Foto in ihren Händen. An sein **Versprechen**.
+Sieben Jahre lang hatte er sich gesagt, dass es vorbei ist. Dass er nichts mehr tun kann. Aber jetzt hielt er diesen Brief in der Hand. Und plötzlich war die alte Wunde wieder offen.
 
 ---
 
@@ -163,7 +167,10 @@ Diesmal war die Pause länger. „Wo bist du?"
 Thomas drehte sich zu Leopold um. „Im Herbst 1994. Wer hat damals hier gearbeitet?"
 Der alte Mann überlegte. „Nur ich. Und ein junges Mädchen, das die Zimmer geputzt hat. Sie hieß … Petra. Petra Lindner."
 Thomas hob den Kopf. Petra Lindner. Er kannte diesen Namen sehr gut.
-Petra war seine **Vermieterin**. Seit sieben Jahren wohnte er in ihrem Haus. Und nie hatte sie von diesem Hotel erzählt.
+Petra war seine **Vermieterin**. Seit sieben Jahren wohnte er in ihrem Haus.
+Und jetzt erinnerte er sich an etwas. Vor sieben Jahren, eine Woche nachdem er seinen Dienstausweis abgeben musste, hatte Petra ihn angesprochen. Einfach so, auf der Straße. Sie hatte ihm eine Wohnung angeboten. Billig. Mit einem kleinen Laden im Erdgeschoss. Perfekt für eine Werkstatt.
+Damals hatte er gedacht: Was für ein **Zufall**.
+Jetzt war er nicht mehr so sicher.
 
 ---
 
@@ -186,6 +193,8 @@ Petra stand in der Tür und schaute in den langen Gang. Sie hielt ihren Schirm g
 „Ich war seit dreißig Jahren nicht mehr hier", sagte sie leise. „Ich habe mir geschworen, nie wieder herzukommen."
 „Warum?", fragte Thomas.
 Petra schaute ihn an. „Weil ich damals etwas gesehen habe. Und niemand wollte es hören."
+Thomas schaute ihr in die Augen. „Petra. Die Wohnung. Vor sieben Jahren. War das ein Zufall?"
+Petra schwieg lange. Dann schüttelte sie langsam den Kopf. „Jemand hat mich damals gebeten, auf Sie aufzupassen. Eine Frau. Am Telefon. Sie hat ihren Namen nicht gesagt."
 
 ---
 

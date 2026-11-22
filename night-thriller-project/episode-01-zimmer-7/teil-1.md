@@ -44,6 +44,18 @@ Also arbeitete er. Er reparierte alte **Schlösser**, und er machte neue **Schl�
 Früher war Thomas Kommissar bei der **Kriminalpolizei**. Früher hatte er Menschen gesucht, nicht Schlüssel.
 Aber das war vorbei. Seit sieben Jahren.
 
+
+---
+
+[SZENE 4b – 01:05 | Rückblende: die Mutter von Laura]
+[BILD-PROMPT] Wide cinematic 16:9 flashback in cold desaturated blue tones: seven years ago, a grey-haired woman in her sixties in a worn coat holds a small framed photograph against her chest and looks pleadingly at a younger detective with dark hair in a dim police corridor at night, rain on the windows behind them. Faces half in shadow, soft blurred edges. Graphic novel illustration, clean ink linework with subtle crosshatching, cold blue-grey palette, aged parchment paper texture, cinematic noir lighting, no text, no letters
+
+[VOICEOVER]
+Manchmal, wenn er nachts arbeitete, sah er ein Gesicht vor sich. Nicht das Gesicht eines Täters. Das Gesicht einer Mutter.
+Sie hieß Frau Brandt. Ihre Tochter Laura war die fünfte Person, die damals **verschwunden** war. Frau Brandt war jeden Tag zur Polizei gekommen. Jeden Tag mit demselben Foto in der Hand.
+„Versprechen Sie mir, dass Sie sie finden", hatte sie gesagt.
+Und Thomas hatte es **versprochen**.
+Er hatte Laura nie gefunden. Und dieses **Versprechen** trug er seit sieben Jahren mit sich herum. Wie einen Schlüssel, der zu keiner Tür passt.
 ---
 
 [SZENE 5 – 01:10 | Thomas hält den Hörer, misstrauisch]
@@ -84,6 +96,7 @@ Er nahm seine alte **Werkzeugtasche**, seinen Mantel und seinen Schal. Dann schl
 
 [VOICEOVER]
 Lindenburg schlief. Die Straßen waren leer, die Fenster dunkel. Nur das Wasser lief über das alte **Kopfsteinpflaster**.
+Er mochte diese Stunde. Die Stadt gehörte dann niemandem. Kein Verkehr, keine Stimmen, nur der Regen und das leise Summen der alten Laternen. In solchen Nächten konnte man glauben, dass die Zeit stehen bleibt.
 Thomas ging schnell. Er kannte den Weg. Jeder in Lindenburg kannte das Hotel am alten Bahnhof.
 
 ---
@@ -103,7 +116,9 @@ Früher kamen Touristen. Heute kam fast niemand mehr.
 
 [VOICEOVER]
 In der Tür stand ein alter Mann mit einer **Laterne**. Groß, sehr dünn, mit einer alten Uniform. Burgunderrot, mit Knöpfen aus Messing.
-„Herr Berger. Danke, dass Sie gekommen sind." Seine Hand zitterte. Das Licht der **Laterne** zitterte mit.
+„Herr Berger. Danke, dass Sie gekommen sind." Seine Hand zitterte.
+„Woher haben Sie meine Nummer?", fragte Thomas.
+„Sie stand heute Abend auf einem Zettel. Unter meiner Tür." Der alte Mann schluckte. „Nur Ihre Nummer. Sonst nichts." Das Licht der **Laterne** zitterte mit.
 
 ---
 

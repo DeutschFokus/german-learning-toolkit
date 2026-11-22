@@ -9,6 +9,7 @@
 [BILD-PROMPT] Medium cinematic 16:9 two-shot in a narrow sleeper train corridor at night, tense confrontation. Left-center: Ruth Bauer (German woman, 47, ash-blonde hair in a tight low knot, angular face, thin pale scar across her chin, camel-brown trench coat with collar up, black roll-neck – match the uploaded reference sheet exactly) with arms crossed, cold expression. Right third: Thomas Berger (German man, 52, silver temples, salt-and-pepper stubble, bumped nose, charcoal-grey work jacket, rust-red wool scarf, brass keys on belt – match the uploaded reference sheet exactly) facing her, jaw tight, holding a cream envelope. Brass wall lamps, blue light flickering through the rainy window. Graphic novel illustration, clean ink linework with subtle crosshatching, muted earthy palette, warm amber lamplight vs cool blue-grey night shadows, aged parchment paper texture, cinematic noir lighting, no text, no letters, no signs
 
 [VOICEOVER]
+Ein Brief mit seinem Namen. Ein Gesicht aus der Vergangenheit. Und jetzt stand die Frau vor ihm, die damals seine Karriere beendet hatte.
 Sieben Jahre lang hatten sie nicht miteinander gesprochen. Kein Wort.
 „Was machst du hier, Ruth?", fragte Thomas.
 „Das wollte ich dich fragen." Sie kam näher. „Vor einer Stunde hat jemand bei der Polizei angerufen. Ohne Namen. Eine Frauenstimme. Sie hat nur einen Satz gesagt: ‚Heute Nacht wird Zimmer 7 geöffnet.' Dann hat sie aufgelegt."
@@ -83,6 +84,10 @@ Mila verstand als Erste. „Johanna ist nicht verschwunden. Johanna ist **gefloh
 „Aber warum?", fragte Ruth.
 Thomas schaute auf die Karte. Du hast damals aufgehört zu suchen. Ich nicht.
 „Weil sie will, dass ich ihn finde."
+Er dachte an den Zettel unter Leopolds Tür. Nur eine Nummer. Seine Nummer.
+„Sie hat alles geplant", sagte er. „Das neue Schloss, damit Leopold nicht hineinkommt. Meine Nummer, damit er mich anruft und keinen anderen. Und die Polizei, damit es diesmal Zeugen gibt."
+Mila schaute ihn an. „Und die Wohnung bei Petra … dann hat sie dich schon vor sieben Jahren beobachtet."
+„Nein", sagte Thomas leise. „Nicht beobachtet. **Beschützt**."
 
 ---
 
@@ -133,6 +138,19 @@ Er erreichte es. Er leuchtete um die Ecke.
 Niemand.
 Sie war weg. Wie vor dreißig Jahren.
 
+
+---
+
+[SZENE 53b – 26:00 | Die weiße Lilie im Stellwerk]
+[BILD-PROMPT] Close-up cinematic 16:9 of a single fresh white lily lying on the dusty broken windowsill of an abandoned railway signal box at night, raindrops on its petals, a flashlight beam falling on it, darkness and fog outside the broken glass. Eerie and threatening. Graphic novel illustration, clean ink linework with subtle crosshatching, muted earthy palette, warm amber lamplight vs cool blue-grey night shadows, aged parchment paper texture, cinematic noir lighting, no text, no letters, no signs
+
+[VOICEOVER]
+Thomas wollte schon gehen. Dann sah er es. Auf dem kaputten Fensterbrett des Stellwerks.
+Eine weiße **Lilie**. Frisch. Die Tropfen lagen noch auf den Blüten.
+Johanna hatte keine Blumen dabei gehabt. Thomas war sich ganz sicher.
+Ihm wurde kalt. Kälter als der Regen.
+Jemand anderes war heute Nacht auch hier gewesen. Jemand, der weiße Lilien mitbringt.
+Johanna war nicht nur zurückgekommen. Johanna wurde **verfolgt**.
 ---
 
 [SZENE 54 – 26:10 | Der zweite Schlüssel im Schlamm]
@@ -152,6 +170,7 @@ Sie hatte ihn nicht verloren. Sie hatte ihn für ihn **hinterlassen**.
 
 [VOICEOVER]
 Als er zurückkam, hörte der Regen langsam auf. Der Himmel im Osten wurde grau.
+Er zeigte den anderen die Lilie. Niemand sagte ein Wort. Petra hielt sich die Hand vor den Mund. Leopold schloss die Augen.
 Ruth stand an der Tür. „Ich muss einen **Bericht** schreiben", sagte sie.
 Thomas schaute sie lange an. „Das hast du schon einmal getan, Ruth."
 Sie sagte nichts. Aber sie drehte den Kopf weg. Und Thomas fragte sich, zum ersten Mal, was genau in ihrem Bericht von damals stand.
