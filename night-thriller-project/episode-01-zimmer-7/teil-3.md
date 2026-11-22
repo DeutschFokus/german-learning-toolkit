@@ -1,24 +1,24 @@
 # Nachtschlüssel – Folge 1: „Zimmer 7"
-## Teil 3 von 3 (20:00 – 30:00) · Niveau B1
+## Teil 3 von 3 (19:12 – 30:00) · Niveau B1
 
 **Tension Teil 3:** 7 → 8 → 9 (Höhepunkt ~24:00–26:00) → 4 → 3
 
 ---
 
-[SZENE 43 – 20:00 | Thomas und Ruth, Konfrontation]
+[SZENE 43 – 19:12 | Thomas und Ruth, Konfrontation]
 [BILD-PROMPT] Medium cinematic 16:9 two-shot in a narrow sleeper train corridor at night, tense confrontation. Left-center: Ruth Bauer (German woman, 47, ash-blonde hair in a tight low knot, angular face, thin pale scar across her chin, camel-brown trench coat with collar up, black roll-neck – match the uploaded reference sheet exactly) with arms crossed, cold expression. Right third: Thomas Berger (German man, 52, silver temples, salt-and-pepper stubble, bumped nose, charcoal-grey work jacket, rust-red wool scarf, brass keys on belt – match the uploaded reference sheet exactly) facing her, jaw tight, holding a cream envelope. Brass wall lamps, blue light flickering through the rainy window. Graphic novel illustration, clean ink linework with subtle crosshatching, muted earthy palette, warm amber lamplight vs cool blue-grey night shadows, aged parchment paper texture, cinematic noir lighting, no text, no letters, no signs
 
 [VOICEOVER]
 Ein Brief mit seinem Namen. Ein Gesicht aus der Vergangenheit. Und jetzt stand die Frau vor ihm, die damals seine Karriere beendet hatte.
 Sieben Jahre lang hatten sie nicht miteinander gesprochen. Kein Wort.
 „Was machst du hier, Ruth?", fragte Thomas.
-„Das wollte ich dich fragen." Sie kam näher. „Vor einer Stunde hat jemand bei der Polizei angerufen. Ohne Namen. Eine Frauenstimme. Sie hat nur einen Satz gesagt: ‚Heute Nacht wird Zimmer 7 geöffnet.' Dann hat sie aufgelegt."
+„Das wollte ich dich fragen." Sie kam näher. Vor einer Stunde, erklärte sie, hatte jemand bei der Polizei angerufen. Ohne Namen. Eine Frauenstimme. Sie hatte nur einen Satz gesagt: Heute Nacht wird Zimmer 7 geöffnet. Dann hatte sie aufgelegt.
 Thomas und Mila schauten sich an.
 Jemand wollte, dass sie alle heute Nacht hier waren. Thomas. Die Polizei. Alle zusammen.
 
 ---
 
-[SZENE 44 – 20:40 | Ruth liest die Karte, erstarrt]
+[SZENE 44 – 20:00 | Ruth liest die Karte, erstarrt]
 [BILD-PROMPT] Close-up cinematic 16:9 portrait of Ruth Bauer (German woman, 47, ash-blonde hair in a tight low knot, angular face, thin pale scar across her chin, camel-brown trench coat with collar up, black roll-neck – match the uploaded reference sheet exactly) reading a small handwritten card, her face freezing, a flicker of guilt in her hazel eyes, the scar on her chin catching the light. Character in the right third, darker calm space on the left. Graphic novel illustration, clean ink linework with subtle crosshatching, muted earthy palette, warm amber lamplight vs cool blue-grey night shadows, aged parchment paper texture, cinematic noir lighting, no text, no letters, no signs
 
 [VOICEOVER]
@@ -30,7 +30,7 @@ Sie gab ihm die Karte zurück. Sie schaute ihm nicht in die Augen.
 
 ---
 
-[SZENE 45 – 21:20 | Kalte Luft am Boden, Teppich]
+[SZENE 45 – 20:36 | Kalte Luft am Boden, Teppich]
 [BILD-PROMPT] Close-up 16:9 of an old worn red carpet on the floor of a dusty train compartment, one corner slightly lifted, a candle flame or a strand of dust nearby being pulled downward by a cold draft, flashlight beam, mysterious mood. Graphic novel illustration, clean ink linework with subtle crosshatching, muted earthy palette, warm amber lamplight vs cool blue-grey night shadows, aged parchment paper texture, cinematic noir lighting, no text, no letters, no signs
 
 [VOICEOVER]
@@ -40,7 +40,7 @@ Er kniete sich hin. Er hielt die Hand über den Boden. Da. Ein kalter **Luftzug*
 
 ---
 
-[SZENE 46 – 21:50 | Die Falltür im Boden]
+[SZENE 46 – 21:03 | Die Falltür im Boden]
 [BILD-PROMPT] Dramatic cinematic 16:9 shot from above: in a dusty old train compartment, a man's hands pull back a worn red carpet to reveal a square wooden trapdoor in the floor with a small iron ring, cold blue night light coming through the gaps, fresh muddy footprints on the wood. Mila's mustard-yellow coat sleeve and Ruth's camel coat visible at the edge of the frame. Graphic novel illustration, clean ink linework with subtle crosshatching, muted earthy palette, warm amber lamplight vs cool blue-grey night shadows, aged parchment paper texture, cinematic noir lighting, no text, no letters, no signs
 [VIDEO-CLIP] Der Teppich wird zurückgezogen, die Falltür erscheint.
 
@@ -54,7 +54,7 @@ Langsam drehte er sich um. Zu Leopold.
 
 ---
 
-[SZENE 47 – 22:30 | Leopold bricht zusammen]
+[SZENE 47 – 21:40 | Leopold bricht zusammen]
 [BILD-PROMPT] Medium cinematic 16:9 shot. Leopold Graf (German man, 68, tall and thin, completely bald, prominent ears, sad grey-blue eyes, thin grey moustache, faded burgundy railway conductor uniform with brass buttons – match the uploaded reference sheet exactly) sinks down onto a dusty chair in the dim compartment, holding the brass key with the red tassel in both hands against his chest, tears in his sad eyes, finally breaking. Character in the right third, darker calm space on the left. Graphic novel illustration, clean ink linework with subtle crosshatching, muted earthy palette, warm amber lamplight vs cool blue-grey night shadows, aged parchment paper texture, cinematic noir lighting, no text, no letters, no signs
 
 [VOICEOVER]
@@ -65,7 +65,7 @@ Leopold nickte. Eine **Träne** lief über sein Gesicht.
 
 ---
 
-[SZENE 48 – 23:10 | Rückblende: Johanna flieht durch die Luke, 1994]
+[SZENE 48 – 22:12 | Rückblende: Johanna flieht durch die Luke, 1994]
 [BILD-PROMPT] Wide cinematic 16:9 flashback in faded sepia tone: at night in 1994, a young woman with dark wavy hair and a red beret climbs down through an open trapdoor beneath an old train carriage onto the dark tracks, a younger thin man in a burgundy conductor uniform holds a lantern above her, rain and fog, soft dreamlike blurred edges. Graphic novel illustration, clean ink linework with subtle crosshatching, sepia-tinted muted palette, warm lantern light, aged parchment paper texture, no text, no letters
 
 [VOICEOVER]
@@ -75,7 +75,7 @@ Leopold schaute auf den Schlüssel in seiner Hand.
 
 ---
 
-[SZENE 49 – 23:50 | Mila versteht]
+[SZENE 49 – 22:46 | Mila versteht]
 [BILD-PROMPT] Close-up cinematic 16:9 portrait of Mila Sander (German woman, 34, jet-black blunt chin-length bob with fringe, beauty mark under left eye, charcoal pencil behind right ear, mustard-yellow wool coat, black turtleneck – match the uploaded reference sheet exactly) with a sudden realisation, her dark grey eyes wide, sketchbook pressed against her chest, half her face lit by warm lamp light. Character in the right third, darker calm space on the left. Graphic novel illustration, clean ink linework with subtle crosshatching, muted earthy palette, warm amber lamplight vs cool blue-grey night shadows, aged parchment paper texture, cinematic noir lighting, no text, no letters, no signs
 
 [VOICEOVER]
@@ -85,13 +85,13 @@ Mila verstand als Erste. „Johanna ist nicht verschwunden. Johanna ist **gefloh
 Thomas schaute auf die Karte. Du hast damals aufgehört zu suchen. Ich nicht.
 „Weil sie will, dass ich ihn finde."
 Er dachte an den Zettel unter Leopolds Tür. Nur eine Nummer. Seine Nummer.
-„Sie hat alles geplant", sagte er. „Das neue Schloss, damit Leopold nicht hineinkommt. Meine Nummer, damit er mich anruft und keinen anderen. Und die Polizei, damit es diesmal Zeugen gibt."
+Sie hatte alles geplant. Das neue Schloss, damit Leopold nicht hineinkommt. Seine Nummer, damit Leopold ihn anruft und keinen anderen. Und die Polizei, damit es diesmal **Zeugen** gibt.
 Mila schaute ihn an. „Und die Wohnung bei Petra … dann hat sie dich schon vor sieben Jahren beobachtet."
 „Nein", sagte Thomas leise. „Nicht beobachtet. **Beschützt**."
 
 ---
 
-[SZENE 50 – 24:20 | Geräusch draußen: Schritte auf dem Schotter]
+[SZENE 50 – 23:55 | Geräusch draußen: Schritte auf dem Schotter]
 [BILD-PROMPT] Dramatic cinematic 16:9 shot. Thomas Berger (German man, 52, silver temples, salt-and-pepper stubble, bumped nose, charcoal-grey work jacket, rust-red wool scarf, brass keys on belt – match the uploaded reference sheet exactly) freezes and turns his head sharply toward the dark open trapdoor in the floor, listening, flashlight raised, cold blue light from below, tension. Character in the right third, darker calm space on the left. Graphic novel illustration, clean ink linework with subtle crosshatching, muted earthy palette, warm amber lamplight vs cool blue-grey night shadows, aged parchment paper texture, cinematic noir lighting, no text, no letters, no signs
 
 [VOICEOVER]
@@ -103,7 +103,7 @@ Thomas zögerte keine Sekunde. Er nahm die Taschenlampe und kletterte durch die 
 
 ---
 
-[SZENE 51 – 24:40 | Unter dem Zug, Thomas im Regen]
+[SZENE 51 – 24:16 | Unter dem Zug, Thomas im Regen]
 [BILD-PROMPT] Wide low-angle cinematic 16:9 shot under an old train carriage at night: Thomas Berger (German man, 52, silver temples, salt-and-pepper stubble, bumped nose, charcoal-grey work jacket, rust-red wool scarf, brass keys on belt – match the uploaded reference sheet exactly) crouches between the rails on wet gravel, flashlight beam cutting through the rain and fog, the dark underside of the carriage above him, puddles reflecting light. Character in the right third, darker calm space on the left. Graphic novel illustration, clean ink linework with subtle crosshatching, muted earthy palette, warm amber lamplight vs cool blue-grey night shadows, aged parchment paper texture, cinematic noir lighting, no text, no letters, no signs
 [VIDEO-CLIP] Thomas kriecht unter dem Waggon hervor, Regen, Taschenlampe.
 
@@ -115,7 +115,7 @@ Da. Fünfzig Meter entfernt. Eine **Gestalt**. Ein langer dunkler Mantel. Und au
 
 ---
 
-[SZENE 52 – 25:10 | Die Gestalt mit roter Mütze im Nebel]
+[SZENE 52 – 24:43 | Die Gestalt mit roter Mütze im Nebel]
 [BILD-PROMPT] Wide cinematic 16:9 shot of abandoned railway tracks disappearing into thick fog at night, a lone slim figure in a long dark coat and a red beret standing between the rails far away with her back half turned, an old signal box silhouette behind her, a single flashlight beam reaching toward her but not quite. Mysterious, beautiful, eerie. Graphic novel illustration, clean ink linework with subtle crosshatching, muted earthy palette, warm amber lamplight vs cool blue-grey night shadows, aged parchment paper texture, cinematic noir lighting, no text, no letters, no signs
 [VIDEO-CLIP] Die Gestalt dreht sich langsam um und geht in den Nebel.
 
@@ -127,7 +127,7 @@ Dann drehte sie sich um und ging in den Nebel.
 
 ---
 
-[SZENE 53 – 25:40 | Thomas rennt über die Gleise]
+[SZENE 53 – 25:09 | Thomas rennt über die Gleise]
 [BILD-PROMPT] Dynamic cinematic 16:9 shot. Thomas Berger (German man, 52, silver temples, salt-and-pepper stubble, bumped nose, charcoal-grey work jacket, rust-red wool scarf, brass keys on belt – match the uploaded reference sheet exactly) runs along wet railway tracks into thick fog at night, flashlight beam bouncing, rust-red scarf flying behind him, rain everywhere, the old signal box ahead. Character in the right third, darker calm space on the left. Graphic novel illustration, clean ink linework with subtle crosshatching, muted earthy palette, warm amber lamplight vs cool blue-grey night shadows, aged parchment paper texture, cinematic noir lighting, no text, no letters, no signs
 [VIDEO-CLIP] Thomas rennt, die Kamera folgt ihm über die Schienen.
 
@@ -141,7 +141,7 @@ Sie war weg. Wie vor dreißig Jahren.
 
 ---
 
-[SZENE 53b – 26:00 | Die weiße Lilie im Stellwerk]
+[SZENE 53b – 25:33 | Die weiße Lilie im Stellwerk]
 [BILD-PROMPT] Close-up cinematic 16:9 of a single fresh white lily lying on the dusty broken windowsill of an abandoned railway signal box at night, raindrops on its petals, a flashlight beam falling on it, darkness and fog outside the broken glass. Eerie and threatening. Graphic novel illustration, clean ink linework with subtle crosshatching, muted earthy palette, warm amber lamplight vs cool blue-grey night shadows, aged parchment paper texture, cinematic noir lighting, no text, no letters, no signs
 
 [VOICEOVER]
@@ -153,7 +153,7 @@ Jemand anderes war heute Nacht auch hier gewesen. Jemand, der weiße Lilien mitb
 Johanna war nicht nur zurückgekommen. Johanna wurde **verfolgt**.
 ---
 
-[SZENE 54 – 26:10 | Der zweite Schlüssel im Schlamm]
+[SZENE 54 – 26:04 | Der zweite Schlüssel im Schlamm]
 [BILD-PROMPT] Close-up cinematic 16:9 of an old brass key with a red silk tassel lying in a muddy puddle between railway sleepers at night, a flashlight beam falling on it, raindrops making rings in the water. It looks exactly like Leopold's key. Graphic novel illustration, clean ink linework with subtle crosshatching, muted earthy palette, warm amber lamplight vs cool blue-grey night shadows, aged parchment paper texture, cinematic noir lighting, no text, no letters, no signs
 
 [VOICEOVER]
@@ -165,7 +165,7 @@ Sie hatte ihn nicht verloren. Sie hatte ihn für ihn **hinterlassen**.
 
 ---
 
-[SZENE 55 – 26:40 | Zurück am Waggon, Morgengrauen]
+[SZENE 55 – 26:31 | Zurück am Waggon, Morgengrauen]
 [BILD-PROMPT] Wide cinematic 16:9 scene at the first blue light before dawn: the old sleeper train carriage on abandoned tracks, rain stopping, fog thinning. Thomas Berger (German man, 52, silver temples, salt-and-pepper stubble, bumped nose, charcoal-grey work jacket, rust-red wool scarf, brass keys on belt – match the uploaded reference sheet exactly) walks back toward it, soaked, holding a key with a red tassel. Small figures of Mila Sander (German woman, 34, jet-black blunt chin-length bob with fringe, beauty mark under left eye, charcoal pencil behind right ear, mustard-yellow wool coat, black turtleneck – match the uploaded reference sheet exactly) and Ruth Bauer (German woman, 47, ash-blonde hair in a tight low knot, angular face, thin pale scar across her chin, camel-brown trench coat with collar up, black roll-neck – match the uploaded reference sheet exactly) waiting by the door. Character in the right third, darker calm space on the left. Graphic novel illustration, clean ink linework with subtle crosshatching, muted earthy palette, warm amber lamplight vs cool blue-grey night shadows, aged parchment paper texture, cinematic noir lighting, no text, no letters, no signs
 
 [VOICEOVER]
@@ -177,7 +177,7 @@ Sie sagte nichts. Aber sie drehte den Kopf weg. Und Thomas fragte sich, zum erst
 
 ---
 
-[SZENE 56 – 27:10 | Mila schaut auf ihre Skizze]
+[SZENE 56 – 27:12 | Mila schaut auf ihre Skizze]
 [BILD-PROMPT] Close-up cinematic 16:9 of Mila Sander (German woman, 34, jet-black blunt chin-length bob with fringe, beauty mark under left eye, charcoal pencil behind right ear, mustard-yellow wool coat, black turtleneck – match the uploaded reference sheet exactly) alone at the window of the train compartment in the cold blue dawn light, looking down at the charcoal sketch in her sketchbook with a troubled, searching expression, as if the face reminds her of something personal. Character in the right third, darker calm space on the left. Graphic novel illustration, clean ink linework with subtle crosshatching, muted earthy palette, warm amber lamplight vs cool blue-grey night shadows, aged parchment paper texture, cinematic noir lighting, no text, no letters, no signs
 
 [VOICEOVER]
@@ -200,7 +200,7 @@ Er öffnete eine **Schublade**. Darin lagen Umschläge. Cremefarben. Mit rotem S
 
 ---
 
-[SZENE 58 – 28:00 | Thomas hängt den Schlüssel an seine Wand]
+[SZENE 58 – 28:04 | Thomas hängt den Schlüssel an seine Wand]
 [BILD-PROMPT] Medium cinematic 16:9 shot. Thomas Berger (German man, 52, silver temples, salt-and-pepper stubble, bumped nose, charcoal-grey work jacket, rust-red wool scarf, brass keys on belt – match the uploaded reference sheet exactly) in his locksmith workshop at dawn, cold blue morning light through the window, hangs a brass key with a red silk tassel on a hook among hundreds of old keys on the wall, looking at it with quiet determination. Character in the right third, darker calm space on the left. Graphic novel illustration, clean ink linework with subtle crosshatching, muted earthy palette, warm amber lamplight vs cool blue-grey night shadows, aged parchment paper texture, cinematic noir lighting, no text, no letters, no signs
 
 [VOICEOVER]
@@ -212,7 +212,7 @@ Manche Türen öffnet man nie. Und manche Türen … öffnen sich von selbst.
 
 ---
 
-[SZENE 59 – 28:30 | VOKABELMOMENT: Schlüssel, Tür, Brief]
+[SZENE 59 – 28:37 | VOKABELMOMENT: Schlüssel, Tür, Brief]
 [BILD-PROMPT] Calm still-life 16:9 composition on a dark wooden table in warm amber lamp light: an old brass key with a red silk tassel, a cream envelope with a broken red wax seal, a small antique gramophone, a charcoal pencil and an open sketchbook. Peaceful, cosy, nighttime mood. Darker calm space on the left. Graphic novel illustration, clean ink linework with subtle crosshatching, muted earthy palette, warm amber lamplight vs cool blue-grey night shadows, aged parchment paper texture, cinematic noir lighting, no text, no letters, no signs
 
 [VOICEOVER]
@@ -223,7 +223,7 @@ Manchmal ist die Wahrheit nicht hinter der Tür. Sondern darunter.
 
 ---
 
-[SZENE 60 – 29:30 | OUTRO: Altstadt im Morgenlicht]
+[SZENE 60 – 29:06 | OUTRO: Altstadt im Morgenlicht]
 [BILD-PROMPT] Wide cinematic 16:9 establishing shot of a small German old town at dawn after rain, wet cobblestones reflecting the first soft golden light, the gothic church tower, mist lifting, one window still lit, peaceful and quiet. Darker calm space on the left. Graphic novel illustration, clean ink linework with subtle crosshatching, muted earthy palette, soft golden dawn light vs cool blue shadows, aged parchment paper texture, no text, no letters, no signs
 
 [VOICEOVER]
@@ -257,15 +257,15 @@ Eine Tür, die seit 30 Jahren verschlossen ist. Ein Lied, das plötzlich wieder 
 In dieser deutschen Hörgeschichte (Niveau B1) begleitest du den ehemaligen Kommissar Thomas Berger in die erste Nacht von „Nachtschlüssel". Perfekt zum Deutschlernen, Zuhören und Einschlafen.
 
 00:00 Der Anruf um Mitternacht
-03:20 Das Hotel am alten Bahnhof
+03:14 Das Hotel am alten Bahnhof
 06:00 Die Tür von Zimmer 7
-10:00 Hinter der Tür
-14:00 Ein Brief für Thomas
-17:00 Das Gesicht aus der Erinnerung
-20:00 Die Falltür
-24:20 Die Gestalt im Nebel
+10:22 Hinter der Tür
+12:22 Ein Brief für Thomas
+17:03 Das Gesicht aus der Erinnerung
+20:36 Die Falltür
+24:16 Die Gestalt im Nebel
 27:30 Dr. Viktor Lang
-28:30 Vokabeln
+28:37 Vokabeln
 
 ---
 

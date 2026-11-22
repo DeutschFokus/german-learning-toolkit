@@ -1,5 +1,5 @@
 # Nachtschlüssel – Folge 1: „Zimmer 7"
-## Teil 1 von 3 (00:00 – 10:00) · Niveau B1
+## Teil 1 von 3 (00:00 – 08:49) · Niveau B1
 
 **Figuren in dieser Folge:** Thomas Berger, Leopold Graf, Mila Sander, Petra Lindner, Ruth Bauer, Dr. Viktor Lang (kurz)
 **Hook-Typ:** Mystery Hook
@@ -28,7 +28,7 @@ Es war kurz vor Mitternacht, als das Telefon **klingelte**.
 
 ---
 
-[SZENE 3 – 00:30 | Thomas in seiner Werkstatt, Lupe, Schloss]
+[SZENE 3 – 00:24 | Thomas in seiner Werkstatt, Lupe, Schloss]
 [BILD-PROMPT] Wide cinematic 16:9 scene. Thomas Berger (German man, 52, silver temples, salt-and-pepper stubble, bumped nose, charcoal-grey work jacket, rust-red wool scarf, brass key ring on belt – match the uploaded reference sheet exactly) sits alone at a wooden workbench in his small locksmith workshop at night, repairing an old brass lock with fine tools and a magnifying glass, hundreds of keys on the wall, green desk lamp, rain on the window. Character in the right third, darker space on the left. Graphic novel illustration, clean ink linework with subtle crosshatching, muted earthy palette with rust-red accent, warm amber lamplight vs cool blue-grey night shadows, aged parchment paper texture, cinematic noir lighting, no text, no letters, no signs
 
 [VOICEOVER]
@@ -37,7 +37,7 @@ Also arbeitete er. Er reparierte alte **Schlösser**, und er machte neue **Schl�
 
 ---
 
-[SZENE 4 – 00:55 | Schlüsselwand, Detail]
+[SZENE 4 – 00:46 | Schlüsselwand, Detail]
 [BILD-PROMPT] Detail shot 16:9 of a dark wall covered with hundreds of old keys of all sizes hanging on small hooks, brass and iron, warm lamp light catching some of them, deep shadows. Graphic novel illustration, clean ink linework with subtle crosshatching, muted earthy palette, warm amber lamplight vs cool blue-grey shadows, aged parchment paper texture, no text, no letters
 
 [VOICEOVER]
@@ -47,7 +47,7 @@ Aber das war vorbei. Seit sieben Jahren.
 
 ---
 
-[SZENE 4b – 01:05 | Rückblende: die Mutter von Laura]
+[SZENE 4b – 00:56 | Rückblende: die Mutter von Laura]
 [BILD-PROMPT] Wide cinematic 16:9 flashback in cold desaturated blue tones: seven years ago, a grey-haired woman in her sixties in a worn coat holds a small framed photograph against her chest and looks pleadingly at a younger detective with dark hair in a dim police corridor at night, rain on the windows behind them. Faces half in shadow, soft blurred edges. Graphic novel illustration, clean ink linework with subtle crosshatching, cold blue-grey palette, aged parchment paper texture, cinematic noir lighting, no text, no letters
 
 [VOICEOVER]
@@ -58,7 +58,7 @@ Und Thomas hatte es **versprochen**.
 Er hatte Laura nie gefunden. Und dieses **Versprechen** trug er seit sieben Jahren mit sich herum. Wie einen Schlüssel, der zu keiner Tür passt.
 ---
 
-[SZENE 5 – 01:10 | Thomas hält den Hörer, misstrauisch]
+[SZENE 5 – 01:40 | Thomas hält den Hörer, misstrauisch]
 [BILD-PROMPT] Medium cinematic 16:9 shot. Thomas Berger (German man, 52, silver temples, salt-and-pepper stubble, bumped nose, charcoal-grey work jacket, rust-red wool scarf – match the uploaded reference sheet exactly) holds the receiver of an old black telephone to his ear, frowning suspiciously, half his face in shadow, green desk lamp, keys on the wall behind. Character in the right third. Graphic novel illustration, clean ink linework with subtle crosshatching, muted earthy palette with rust-red accent, warm amber lamplight vs cool blue-grey night shadows, aged parchment paper texture, cinematic noir lighting, no text, no letters
 
 [VOICEOVER]
@@ -72,7 +72,7 @@ Eine lange Pause.
 
 ---
 
-[SZENE 6 – 01:50 | Thomas legt auf, schaut zum Fenster]
+[SZENE 6 – 02:12 | Thomas legt auf, schaut zum Fenster]
 [BILD-PROMPT] Wide cinematic 16:9 scene. Thomas Berger (German man, 52, silver temples, salt-and-pepper stubble, charcoal-grey work jacket, rust-red scarf – match the uploaded reference sheet exactly) stands at the rain-streaked window of his dark workshop, looking out at the empty wet street, hands in his jacket pockets, the telephone back on its cradle behind him. Character in the right third. Graphic novel illustration, clean ink linework with subtle crosshatching, muted earthy palette with rust-red accent, warm amber lamplight vs cool blue-grey night shadows, aged parchment paper texture, cinematic noir lighting, no text, no letters
 
 [VOICEOVER]
@@ -82,7 +82,7 @@ Und Thomas kannte **Angst**. Er hatte sie oft gehört, damals, bei der **Polizei
 
 ---
 
-[SZENE 7 – 02:15 | Thomas nimmt die Werkzeugtasche, Schlüsselbund]
+[SZENE 7 – 02:31 | Thomas nimmt die Werkzeugtasche, Schlüsselbund]
 [BILD-PROMPT] Close-up 16:9 of a man's hands, rough and older, picking up a worn brown leather tool bag from a workbench and clipping a ring of old brass keys to his belt, rust-red scarf end visible, warm lamp light. Graphic novel illustration, clean ink linework with subtle crosshatching, muted earthy palette with rust-red accent, warm amber lamplight vs cool blue-grey shadows, aged parchment paper texture, no text, no letters
 
 [VOICEOVER]
@@ -90,7 +90,7 @@ Er nahm seine alte **Werkzeugtasche**, seinen Mantel und seinen Schal. Dann schl
 
 ---
 
-[SZENE 8 – 02:30 | Thomas allein auf der nassen Straße]
+[SZENE 8 – 02:42 | Thomas allein auf der nassen Straße]
 [BILD-PROMPT] Wide cinematic 16:9 scene. Thomas Berger (German man, 52, charcoal-grey work jacket with collar up, rust-red scarf, leather tool bag – match the uploaded reference sheet exactly) walks alone down a narrow wet cobblestone street at night in the rain, seen from behind and slightly to the side, gas-style street lamps making pools of amber light, old houses with dark windows. Character in the right third. Graphic novel illustration, clean ink linework with subtle crosshatching, muted earthy palette with rust-red accent, warm amber lamplight vs cool blue-grey night shadows, aged parchment paper texture, cinematic noir lighting, no text, no letters, no signs
 [VIDEO-CLIP] Thomas geht durch den Regen, Kamera folgt langsam.
 
@@ -101,7 +101,7 @@ Thomas ging schnell. Er kannte den Weg. Jeder in Lindenburg kannte das Hotel am 
 
 ---
 
-[SZENE 9 – 02:55 | Alter Bahnhof, stillgelegte Gleise]
+[SZENE 9 – 03:14 | Alter Bahnhof, stillgelegte Gleise]
 [BILD-PROMPT] Wide cinematic 16:9 establishing shot of an abandoned old German railway station at night in the rain, rusty tracks overgrown with weeds, a single old sleeper train carriage from the 1930s converted into a small hotel, warm light in only one of its windows, one old lantern by the door, fog. Darker calm space on the left. Graphic novel illustration, clean ink linework with subtle crosshatching, muted earthy palette, warm amber lamplight vs cool blue-grey night shadows, aged parchment paper texture, cinematic noir lighting, no text, no letters, no signs
 
 [VOICEOVER]
@@ -111,7 +111,7 @@ Früher kamen Touristen. Heute kam fast niemand mehr.
 
 ---
 
-[SZENE 10 – 03:20 | Leopold in der Tür mit Laterne]
+[SZENE 10 – 03:34 | Leopold in der Tür mit Laterne]
 [BILD-PROMPT] Medium cinematic 16:9 shot. Leopold Graf (German man, 68, tall and thin, completely bald, prominent ears, sad grey-blue eyes, thin grey moustache, faded burgundy railway conductor's uniform jacket with brass buttons – match the uploaded reference sheet exactly) stands in the narrow doorway of an old train carriage at night, holding an oil lantern up, rain falling in front of him, nervous expression. Character in the right third. Graphic novel illustration, clean ink linework with subtle crosshatching, muted earthy palette with burgundy accent, warm amber lantern light vs cool blue-grey night shadows, aged parchment paper texture, cinematic noir lighting, no text, no letters
 
 [VOICEOVER]
@@ -122,7 +122,7 @@ In der Tür stand ein alter Mann mit einer **Laterne**. Groß, sehr dünn, mit e
 
 ---
 
-[SZENE 11 – 03:40 | Schmaler Gang im Schlafwagen]
+[SZENE 11 – 04:06 | Schmaler Gang im Schlafwagen]
 [BILD-PROMPT] Wide cinematic 16:9 interior of a narrow old 1930s sleeper train corridor at night, dark polished wood panels, worn red carpet, small brass wall lamps with weak amber light, a row of closed compartment doors with brass numbers, the far end disappearing into darkness. No people. Graphic novel illustration, clean ink linework with subtle crosshatching, muted earthy palette, warm amber lamplight vs cool blue-grey shadows, aged parchment paper texture, cinematic noir lighting, no readable text
 
 [VOICEOVER]
@@ -131,11 +131,11 @@ Die Lampen an den Wänden waren schwach. Thomas hatte das Gefühl, dass der Gang
 
 ---
 
-[SZENE 12 – 04:00 | Leopold und Thomas im Gang, Gespräch]
+[SZENE 12 – 04:27 | Leopold und Thomas im Gang, Gespräch]
 [BILD-PROMPT] Medium cinematic 16:9 two-shot in a narrow old sleeper train corridor at night. Left-center: Leopold Graf (68, bald, thin grey moustache, burgundy conductor uniform – match reference) holding an oil lantern, looking anxious. Right third: Thomas Berger (52, silver temples, stubble, charcoal-grey work jacket, rust-red scarf – match reference) listening with a skeptical frown. Dark wood panels, small brass lamps. Graphic novel illustration, clean ink linework with subtle crosshatching, muted earthy palette, warm amber lantern light vs cool blue-grey shadows, aged parchment paper texture, cinematic noir lighting, no text, no letters
 
 [VOICEOVER]
-„Ich führe dieses Hotel seit vierzig Jahren", sagte Leopold leise. „Es gibt sieben **Abteile**. Sechs davon vermiete ich. Eins nicht. Nie."
+Leopold führte dieses Hotel seit vierzig Jahren, erzählte er leise. Es gab sieben **Abteile**. Sechs davon vermietete er. Eins nicht. Nie.
 „Zimmer 7", sagte Thomas.
 Der alte Mann nickte. „Seit dreißig Jahren ist es verschlossen. Ich habe es selbst **abgeschlossen**. Im Herbst 1994. Und ich habe es nie wieder geöffnet."
 „Warum nicht?"
@@ -143,24 +143,24 @@ Leopold antwortete nicht sofort. Er schaute auf den Boden.
 
 ---
 
-[SZENE 13 – 04:40 | Erinnerung: Frau mit Koffer, 1994]
+[SZENE 13 – 04:57 | Erinnerung: Frau mit Koffer, 1994]
 [BILD-PROMPT] Wide cinematic 16:9 flashback scene with a faded sepia tone: a young elegant woman in her early thirties with dark wavy hair, a long cream coat and a red beret, seen from behind and the side, carrying a small vintage suitcase as she steps up into an old sleeper train carriage at dusk, autumn leaves on the platform. Soft, dreamlike, slightly blurred edges. Graphic novel illustration, clean ink linework with subtle crosshatching, sepia-tinted muted palette, warm amber dusk light, aged parchment paper texture, no text, no letters
 
 [VOICEOVER]
-„Im Oktober 1994 kam eine Frau", sagte er schließlich. „Johanna Keller. Sie war jung, freundlich, und sie lachte viel. Sie wollte drei Nächte bleiben. Ich gab ihr Zimmer 7."
+Dann erzählte er. Im Oktober 1994 kam eine junge Frau ins Hotel. Johanna Keller. Sie war freundlich, und sie lachte viel. Sie wollte drei Nächte bleiben, und Leopold gab ihr Zimmer 7.
 Er machte eine Pause.
-„Am dritten Morgen war sie weg. Ihr Koffer war noch da. Ihr Mantel war noch da. Aber Johanna war **verschwunden**. Die Tür war von innen verschlossen."
+Am dritten Morgen war sie weg. Ihr Koffer stand noch da. Ihr Mantel hing noch am Haken. Aber Johanna war **verschwunden**. Und die Tür war von innen verschlossen.
 
 ---
 
-[SZENE 14 – 05:20 | Thomas reagiert, nachdenklich]
+[SZENE 14 – 05:28 | Thomas reagiert, nachdenklich]
 [BILD-PROMPT] Close-up cinematic 16:9 portrait of Thomas Berger (German man, 52, silver temples, salt-and-pepper stubble, bumped nose, deep frown lines, rust-red scarf – match the uploaded reference sheet exactly) in a dim train corridor, his eyes narrowed in thought, amber lamp light on one side of his face, blue shadow on the other. Character in the right third. Graphic novel illustration, clean ink linework with subtle crosshatching, muted earthy palette with rust-red accent, warm amber lamplight vs cool blue-grey shadows, aged parchment paper texture, cinematic noir lighting, no text, no letters
 
 [VOICEOVER]
 Thomas spürte etwas Kaltes im Rücken. Eine verschlossene Tür. Eine Person, die einfach **verschwindet**.
 So etwas hatte er schon einmal gehört. Vor sieben Jahren. In seinem letzten Fall. Dem Fall, den er nie **gelöst** hatte.
 „Und die Polizei?", fragte er.
-„Die Polizei hat gesucht. Ein paar Wochen. Dann hat man gesagt, sie ist einfach **abgereist**. Ohne Koffer. Ohne Mantel." Leopold lachte bitter. „Niemand hat mir geglaubt."
+Die Polizei hatte gesucht, ein paar Wochen lang. Dann hieß es, sie sei einfach **abgereist**. Ohne Koffer. Ohne Mantel. Leopold lachte bitter. Niemand hatte ihm geglaubt.
 
 ---
 
@@ -175,18 +175,18 @@ Thomas sah sofort etwas. Unter der Tür war ein dünner Streifen Licht.
 
 ---
 
-[SZENE 16 – 06:40 | Leopold mit dem Schlüssel mit roter Quaste]
+[SZENE 16 – 06:26 | Leopold mit dem Schlüssel mit roter Quaste]
 [BILD-PROMPT] Close-up cinematic 16:9 of Leopold Graf (German man, 68, bald, prominent ears, sad grey-blue eyes, thin grey moustache, burgundy conductor uniform – match the uploaded reference sheet exactly) holding up an old brass key with a red silk tassel in his trembling hand, staring at it with fear, oil lantern glow from below. Character in the right third. Graphic novel illustration, clean ink linework with subtle crosshatching, muted earthy palette with burgundy and red accent, warm amber lantern light vs cool blue-grey shadows, aged parchment paper texture, cinematic noir lighting, no text, no letters
 
 [VOICEOVER]
 „Welche Musik?"
-„Ein altes Lied. Auf einem **Grammofon**. Johanna hatte ein kleines Grammofon in ihrem Koffer. Sie hat jeden Abend dasselbe Lied gespielt." Seine Stimme brach fast. „Heute um elf Uhr habe ich es wieder gehört. Durch die Tür. Dasselbe Lied."
+Ein altes Lied, erklärte Leopold. Johanna hatte damals ein kleines **Grammofon** in ihrem Koffer gehabt. Jeden Abend hatte sie dasselbe Lied gespielt. Seine Stimme brach fast. „Heute um elf Uhr habe ich es wieder gehört. Durch die Tür."
 Er holte etwas aus seiner Tasche. Einen alten Schlüssel aus Messing, mit einer roten **Quaste**.
 „Das ist der einzige Schlüssel für Zimmer 7. Ich habe ihn dreißig Jahre lang aufbewahrt. Niemand sonst hat einen."
 
 ---
 
-[SZENE 17 – 07:20 | Thomas nimmt den Schlüssel]
+[SZENE 17 – 07:02 | Thomas nimmt den Schlüssel]
 [BILD-PROMPT] Close-up 16:9 of two hands: an old thin trembling hand in a burgundy uniform sleeve giving an old brass key with a red silk tassel to a rougher hand with a charcoal-grey work jacket sleeve, warm lantern light between them, dark corridor background. Graphic novel illustration, clean ink linework with subtle crosshatching, muted earthy palette with red accent, warm amber lantern light vs cool blue-grey shadows, aged parchment paper texture, no text, no letters
 
 [VOICEOVER]
@@ -196,7 +196,7 @@ Thomas nahm den Schlüssel. Er war schwer und kalt.
 
 ---
 
-[SZENE 18 – 07:40 | Thomas kniet vor dem Schloss mit Taschenlampe]
+[SZENE 18 – 07:18 | Thomas kniet vor dem Schloss mit Taschenlampe]
 [BILD-PROMPT] Medium cinematic 16:9 shot. Thomas Berger (German man, 52, silver temples, stubble, charcoal-grey work jacket, rust-red scarf – match the uploaded reference sheet exactly) kneels in front of the dark wooden door numbered 7 in a narrow train corridor, shining a small flashlight on the old brass lock, examining it closely with intense concentration, his leather tool bag open on the floor. Character in the right third. Graphic novel illustration, clean ink linework with subtle crosshatching, muted earthy palette with rust-red accent, warm flashlight beam vs cool blue-grey shadows, aged parchment paper texture, cinematic noir lighting, no text, no letters
 
 [VOICEOVER]
@@ -205,7 +205,7 @@ Thomas schaute sich das **Schloss** genau an. Ein altes Schloss, wie man sie fr�
 
 ---
 
-[SZENE 19 – 08:10 | Makro: frische Kratzer am Schloss]
+[SZENE 19 – 07:41 | Makro: frische Kratzer am Schloss]
 [BILD-PROMPT] Extreme macro close-up 16:9 of an old dusty brass door lock in a flashlight beam, with fresh shiny scratches around the keyhole that contrast clearly with the old dark patina and dust, a few tiny metal shavings on the wood below. Graphic novel illustration, clean ink linework with subtle crosshatching, muted earthy palette, bright flashlight beam vs deep shadows, aged parchment paper texture, cinematic noir lighting, no text, no letters, no numbers
 
 [VOICEOVER]
@@ -214,7 +214,7 @@ Thomas kannte diese Spuren. Er hatte sie hundertmal gesehen.
 
 ---
 
-[SZENE 20 – 08:40 | Thomas schaut zu Leopold hoch, ernst]
+[SZENE 20 – 07:56 | Thomas schaut zu Leopold hoch, ernst]
 [BILD-PROMPT] Medium cinematic 16:9 shot from a low angle. Thomas Berger (52, silver temples, stubble, rust-red scarf, charcoal work jacket – match reference) still kneeling by the door numbered 7, looking up over his shoulder with a grave, alarmed expression, flashlight in his hand. In the soft background, the tall silhouette of Leopold with a lantern. Character in the right third. Graphic novel illustration, clean ink linework with subtle crosshatching, muted earthy palette with rust-red accent, warm amber light vs cool blue-grey shadows, aged parchment paper texture, cinematic noir lighting, no text, no letters
 
 [VOICEOVER]
@@ -224,7 +224,7 @@ Er stand auf.
 
 ---
 
-[SZENE 21 – 09:10 | Leopold erschrocken]
+[SZENE 21 – 08:16 | Leopold erschrocken]
 [BILD-PROMPT] Close-up cinematic 16:9 portrait of Leopold Graf (German man, 68, bald, prominent ears, thin grey moustache, burgundy uniform – match the uploaded reference sheet exactly) with wide frightened eyes, his face pale, the lantern trembling below his chin casting upward shadows. Character in the right third. Graphic novel illustration, clean ink linework with subtle crosshatching, muted earthy palette with burgundy accent, warm amber lantern light vs cool blue-grey shadows, aged parchment paper texture, cinematic noir lighting, no text, no letters
 
 [VOICEOVER]
@@ -233,7 +233,7 @@ Leopold wurde **blass**. „Das ist unmöglich. Ich war den ganzen Tag hier. Ich
 
 ---
 
-[SZENE 22 – 09:30 | Die Tür, Licht unter der Tür geht aus]
+[SZENE 22 – 08:29 | Die Tür, Licht unter der Tür geht aus]
 [BILD-PROMPT] Dramatic cinematic 16:9 shot of the closed dark wooden train compartment door numbered 7 at the end of the corridor, the thin line of light under the door just going out into darkness, two figures' shadows on the wall in the foreground, extreme suspense. Graphic novel illustration, clean ink linework with subtle crosshatching, muted earthy palette, very dark cool blue-grey shadows with a last faint amber glow, aged parchment paper texture, cinematic noir lighting, no other text or letters
 [VIDEO-CLIP] Lichtstreifen unter der Tür erlischt langsam. Stille.
 
@@ -245,7 +245,7 @@ Und das Licht unter der Tür … ging aus.
 
 ---
 
-## ENDE TEIL 1 (10:00)
+## ENDE TEIL 1 (08:49)
 Weiter mit Teil 2: Thomas öffnet die Tür.
 
 ### Vokabeln Teil 1 (fett im Text)
